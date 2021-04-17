@@ -1,0 +1,1091 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1"><title>
+	Arktec.S.A. Software para arquitectura ingeniería y construcción
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link href="../../../../Styles/Site.css" rel="stylesheet" type="text/css" /><link href="../../../../Styles/menu.css" rel="stylesheet" type="text/css" /><link href="../../../../Styles/submenu.css" rel="stylesheet" type="text/css" /><link href="../../../../Styles/Formularios.css" rel="stylesheet" type="text/css" /><link href="../../../../Styles/pageInicio.css" rel="stylesheet" type="text/css" /><link href="../../../../Styles/Paginas.css" rel="stylesheet" type="text/css" /><link href="../../../../Styles/coin-slider-styles.css" rel="stylesheet" type="text/css" /><link href="../../../../Styles/store.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        .cookies-wrapper{font-family: "Ubuntu" , "Trebuchet MS" , Arial, Helvetica, sans-serif !important;font-size: 12px !important;font-weight: 400 !important;padding: 0px 0 !important;position: fixed !important;z-index: 999999999 !important;color: #232323 !important;background-color: #FAF9F5 !important;bottom: 0px !important;width: 100% !important;left: 0px !important;right: 0px !important;}
+        .truncate{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+        .cookies-policy .bold{font-weight: bold;}
+        .cookies-policy .cookies-layout{position: relative;display: flex;flex-direction: row;align-items: center;padding: 10px 10px;}
+        .cookies-policy #cookies-content{overflow: auto;padding-right: 48px;}
+        .cookies-policy .cookies-title h2{font-size: 15px;text-transform: uppercase;font-weight: bold;margin-bottom: 10px;}
+        .cookies-policy p{margin: 0;margin-bottom: 1em;font-size: 12px;}
+        .cookies-policy p a{color: #242424;text-decoration: underline;}
+        .cookies-policy .cookies-buttons{overflow: hidden;display: block;min-width: 180px;}
+        .cookies-policy #cookiesagree{width: 100%;display: inline-block;text-align: center;text-decoration: none;font-size: 12px;letter-spacing: 1px;font-weight: bold;color: #FFFFFF;background: #242424;border: none;padding: 10px 24px;cursor: pointer;}
+        .vp{position: relative;margin: 0 auto;padding: 0 .5em;max-width: 82em;}.vp:after, .vp:before{overflow: hidden;height: 0;content: '';display: block;}.vp:after{clear: both;}.vp._no_padding{padding: 0;}
+        @media only screen and (max-width: 48em){.cookies-wrapper{padding: 24px 32px;}.cookies-policy .cookies-layout{display: block;}.cookies-policy #cookies-content{padding: 0;}.cookies-policy p{font-size: 0.7em;margin-bottom: 16px;}.cookies-policy .cookies-buttons{display: flex;margin-top: 8px;}.cookies-policy #cookiesagree{flex: 50%;margin: 0;font-size: 12px;padding: 8px 18px;}}
+        
+        
+        .style13
+        {
+            text-align: right;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+        .style1
+        {
+            border-width: 0;
+        }
+        .style14
+        {
+            width: 100%;
+        }
+    </style>
+
+    <script src=" ../../../../Scripts/jquery-1.4.1.js " type="text/javascript"></script>
+    <script src=" ../../../../Scripts/jquery-ui.min.js " type="text/javascript"></script>
+    <script src=" ../../../../Scripts/jquery.bpopup.min.js " type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        var intervaloPublicidad = 0;
+
+        $(document).ready(function () {
+            $(window).resize(function () {
+                $('#overlayPublicidad').css({
+                    width:($(window).width()),
+                    height:(5*$(window).height())
+                });
+                $('#ContenedorPublicidad').css({
+                    left: ($(window).width() - $("#ContenedorPublicidad").outerWidth()) / 2
+                });
+
+                $('#overlayCall').css({
+                    width: ($(window).width()),
+                    height: (5 * $(window).height())
+                });
+                $('#ContenedorCall').css({
+                    left: ($(window).width() - $("#ContenedorCall").outerWidth()) / 2,
+                    top: ($(window).height() - $("#ContenedorCall").outerHeight()) / 2
+                });
+
+                $('#overlayWhastapp').css({
+                    width: ($(window).width()),
+                    height: (5 * $(window).height())
+                });
+                $('#ContenedorWhastapp').css({
+                    left: ($(window).width() - $("#ContenedorWhastapp").outerWidth()) / 2,
+                    top: ($(window).height() - $("#ContenedorWhastapp").outerHeight()) / 2
+                });
+                
+            });
+
+            // Ejecutamos la función
+            $(window).resize();
+        });
+
+        function OcultarPublic() {
+            document.getElementById("overlayPublicidad").style.display = "none";
+        }
+
+        function MostrarPublic() {
+            intervaloPublicidad = setTimeout("Mostrar()", 2000);
+        }
+
+        function Mostrar() {
+            clearTimeout(intervaloPublicidad);
+            document.getElementById("overlayPublicidad").style.display = "block";
+            $(window).resize();
+        }
+
+        function MostrarCall() {
+            document.getElementById("overlayCall").style.display = "block";
+            $(window).resize();
+        }
+
+        function OcultarCall() {
+            document.getElementById("overlayCall").style.display = "none";
+        }
+
+        function MostrarWhastapp(TextWhastapp1, TextWhastapp2) {
+            document.getElementById("overlayWhastapp").style.display = "block";
+            $(window).resize();
+            var div1 = document.getElementById("Whastapp1");
+            div1.innerHTML = TextWhastapp1;
+            var div2 = document.getElementById("Whastapp2");
+            div2.innerHTML = TextWhastapp2;
+        }
+
+        function OcultarWhastapp() {
+            document.getElementById("overlayWhastapp").style.display = "none";
+        }
+        
+        function RedirectVideo() {
+
+            var src = document.getElementById('video').src;
+
+            window.open('/Comun/VideoMP4.aspx?Item1=' + src, '_blank');
+
+        }
+
+        function MostrarPublicVideo() {
+
+            var video = document.getElementById('video');
+            var x = 0;
+            var y = 0;
+
+            getVideoHeight(video.src, function (w, h) {
+                x = ($(window).width() - w) / 2;
+                y = ($(window).height() - h) / 2;
+
+                $('#popupVideo').bPopup({
+                    escClose: true,
+                    position: [x, y] 
+                });
+
+                video.play();
+            });   // show
+
+
+        }
+
+        function getVideoHeight(url, fnCallback) {
+
+            var video = document.createElement("video");
+            video.autoplay = true;
+            video.oncanplay = function () {
+                fnCallback(this.offsetWidth, this.offsetHeight);
+                this.src = "about:blank";
+                document.body.removeChild(video);
+            };
+
+            document.body.appendChild(video);
+            video.src = url;
+
+        }
+
+    </script>
+
+
+</head>
+
+<body id="PageBody" class="bodyESP class_body" style="background-image:url(/Imagenes/FondoFijoTricalc.jpg);"> 
+
+    <div id="popupVideo" style="display: none;">
+        <span class="button b-close close"><span>X</span></span>
+        <video id="video" autoplay="" loop="" onClick="RedirectVideo();">
+            <source id="mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+   
+
+    <form method="post" action="./Caracteristicas.aspx" id="Form1" style="height: 0px;">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwMDUyNjYzMjgPZBYCZg9kFgJmD2QWAmYPZBYCZg9kFgICAw8WAh4Fc3R5bGUFNWJhY2tncm91bmQtaW1hZ2U6dXJsKC9JbWFnZW5lcy9Gb25kb0Zpam9UcmljYWxjLmpwZyk7FgICAw9kFgYCGQ8WAh4FY2xhc3MFBmFjdGl2ZWQCKw9kFgQCAQ8WAh8BBQZhY3RpdmVkAgsPZBYSZg8WAh8ABUdjb2xvcjojNjJCNEVCO2JhY2tncm91bmQtaW1hZ2U6dXJsKC9JbWFnZW5lcy9sZWZ0TmF2SXRlbUJHVHJpY2FsYy5naWYpO2QCAQ8WAh8ABTliYWNrZ3JvdW5kLWltYWdlOnVybCgvSW1hZ2VuZXMvbGVmdE5hdkl0ZW1CR1RyaWNhbGMuZ2lmKTtkAgIPFgIfAAU5YmFja2dyb3VuZC1pbWFnZTp1cmwoL0ltYWdlbmVzL2xlZnROYXZJdGVtQkdUcmljYWxjLmdpZik7ZAIDDxYCHwAFOWJhY2tncm91bmQtaW1hZ2U6dXJsKC9JbWFnZW5lcy9sZWZ0TmF2SXRlbUJHVHJpY2FsYy5naWYpO2QCBA8WAh8ABTliYWNrZ3JvdW5kLWltYWdlOnVybCgvSW1hZ2VuZXMvbGVmdE5hdkl0ZW1CR1RyaWNhbGMuZ2lmKTtkAgUPFgIfAAU5YmFja2dyb3VuZC1pbWFnZTp1cmwoL0ltYWdlbmVzL2xlZnROYXZJdGVtQkdUcmljYWxjLmdpZik7ZAIGDxYCHwAFOWJhY2tncm91bmQtaW1hZ2U6dXJsKC9JbWFnZW5lcy9sZWZ0TmF2SXRlbUJHVHJpY2FsYy5naWYpO2QCBw8WAh8ABTliYWNrZ3JvdW5kLWltYWdlOnVybCgvSW1hZ2VuZXMvbGVmdE5hdkl0ZW1CR1RyaWNhbGMuZ2lmKTtkAggPZBYCAgEPFgIfAQUGYWN0aXZlZAIvDxYCHwAFDmRpc3BsYXk6YmxvY2s7ZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WBQUgY3RsMDAkY3RsMDAkY3RsMDAkY3RsMDAkSWRpb21hRVMFIGN0bDAwJGN0bDAwJGN0bDAwJGN0bDAwJElkaW9tYVBUBSBjdGwwMCRjdGwwMCRjdGwwMCRjdGwwMCRJZGlvbWFNWAUgY3RsMDAkY3RsMDAkY3RsMDAkY3RsMDAkSWRpb21hQlIFIGN0bDAwJGN0bDAwJGN0bDAwJGN0bDAwJElkaW9tYUVO0lhklFB/0pRj1iJhoMno5QTrmD9fkD26Pd/wDJBcfZY=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9AD9D60B" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAfC/9F80qZ7NDyHBZLNu9k4oPUWNHxJfydY8gKRJCNq4rxGargXZrqo32265SP7/jaUgkzlAIyMlzRjvkShzMUjZ6LSWGS0VuvPhtvK2tmR77piEZ9nIOv8Y3ihpr/w6sHIkE7yvNNDTEjWWNA7UmiCoD4+L2swdbkNeLJ0suO6IINlRgYuv5JfUpig532hepc=" />
+    <div class="page">
+
+
+        <div class="header" style="top: 0px; width: 1000px; height: 112px;">
+
+            <table style="padding: 10px 10px 0px 10px; width:100%;" cellpadding="0" cellspacing="0"">
+                <tr>
+                    <td>
+                        <table style="width:100%;" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="left"  valign="top">
+                                    
+                                    <img id="Image1" src="../../../../Imagenes/RGB_Arktec_Graitec_Group_Logo-70.jpg" />
+                                    &nbsp;</td>
+                                <td align="right"  valign="top">
+
+			<table cellpadding="2" cellspacing="0">
+				<tr class="style13">
+					
+					<td  valign="top" class="style2">
+        			    <a href="http://www.facebook.com/arktec" target="_blank">
+                        <img src="../../../../Imagenes/redes/facebook16.png" title="Arktec en FaceBook" class="style1" align="top" /></a>
+                    </td>
+					<td  valign="top" class="style2">
+        			    <a href="http://twitter.com/ArktecSA" target="_blank">
+					    <img src="../../../../Imagenes/redes/twitter16.png" title="Arktec en Twitter" width="16" height="16" class="style1" align="top" /></a>
+                    </td>
+                    <td  valign="top" class="style2">
+        			    <a href="http://www.linkedin.com/company/arktec" target="_blank">
+					    <img src="../../../../Imagenes/redes/linkedin16.png" id="Img1" title="Arktec en Linkedin" width="16" height="16" class="style1" align="top" /></a>
+                    </td>
+					<td  valign="top" class="style2">
+        			    <a href="http://www.youtube.com/user/arktecsa" target="_blank">
+                        <img src="../../../../Imagenes/redes/youtube16.png" title="Canal Arktec en YouTube" width="16" height="16" class="style1" align="top" /></a>
+                    </td>
+					<td  valign="top" class="style2">
+
+                    </td>
+				    <td  valign="top" class="style15">
+                            &nbsp;</td>
+					    <td  valign="top" class="style2">
+                            &nbsp;</td>
+					    <td  valign="top" class="style2">
+                            <input type="image" name="ctl00$ctl00$ctl00$ctl00$IdiomaES" id="IdiomaES" title="España" src="../../../../Imagenes/BanderaES.jpeg" />
+                            </td>
+					    <td  valign="top" class="style2">
+                            <input type="image" name="ctl00$ctl00$ctl00$ctl00$IdiomaPT" id="IdiomaPT" title="Portugal" src="../../../../Imagenes/BanderaPT.jpg" />
+                            </td>
+					    <td  valign="top" class="style2">
+                            <input type="image" name="ctl00$ctl00$ctl00$ctl00$IdiomaMX" id="IdiomaMX" title="México" src="../../../../Imagenes/BanderaMX.jpeg" />
+                        </td>
+                        <td  valign="top" class="style2">
+                            <input type="image" name="ctl00$ctl00$ctl00$ctl00$IdiomaBR" id="IdiomaBR" title="Brasil" src="../../../../Imagenes/BanderaBR.jpeg" />
+                        </td>
+                        <td  valign="top" class="style2">
+                            <input type="image" name="ctl00$ctl00$ctl00$ctl00$IdiomaEN" id="IdiomaEN" title="English" src="../../../../Imagenes/BanderaUK.png" />
+                        </td>
+
+				    </tr>
+                   
+				</table>
+    
+               <table cellpadding="0" cellspacing="0">
+				<tr>
+					<td  valign="top" align="left">
+                        <div OnClick="MostrarCall()">
+                        <a href="skype:arktec.comercial?call">
+                            <img src="../../../../Imagenes/skype60.png" id="Img2" border="0" alt="skype:arktec.comercial" title="skype:arktec.comercial" />
+                        </a>
+                            
+                        </div>                      
+                    </td>
+					<td  valign="top" align="left">
+                        <div OnClick="MostrarWhastapp('WhatsApp1: +34 648 690 219', 'WhatsApp2: +34 689 680 609')">
+                        <a href="#">
+                            <img src="/Imagenes/redes/whatsapp.jpg" width="28" height="28" alt="WhatsApp1: +34 648 690 219 WhatsApp2: +34 689 680 609" title="WhatsApp1: +34 648 690 219 WhatsApp2: +34 689 680 609" />
+                        </a>
+                        </div>                      
+                    </td>
+
+				    </tr>
+                   
+				</table>
+        </td> 
+                            </tr>  
+                        </table>
+                    </td>
+                </tr>
+                <tr align="left"  valign="top">
+                    <td style="height: 28px">
+                        <table style="width:100%;" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="left"  valign="top">
+
+
+                                    <ul id="navMenu">
+                                        <li id="Menu1" class="top"><a href="../../../Inicio/Inicio.aspx" id="A3" style="background-image: url(&#39;/Imagenes/MenuInicio.jpg&#39;); background-repeat: no-repeat" class="top_link">
+                                            <span style="padding-left: 15px;">INICIO</span></a></li>
+	                                    <li id="Menu2" class="active"><a href="../../Productos.aspx" class="top_link"><span class="down">PRODUCTOS</span></a>
+	                                    </li>
+                                        <li id="Menu3" class="top"><a href="../../../Bim/Bim/Caracteristicas/BimHoy.aspx" class="top_link"><span class="down">BIM</span></a>
+	                                    </li>
+
+	                                    <li id="Menu4" class="top"><a href="../../../Formacion/Seminarios/CaracteristicasSeminarios.aspx" class="top_link"><span class="down">FORMACIÓN</span></a>
+	                                    </li>
+	                                    <li id="Menu5" class="top"><a href="../../../Demostracion/Descargas/Tricalc/DemoTricalcDemostracionDescargasTricalc.aspx" class="top_link"><span class="down">DESCARGAS</span></a>
+	                                    </li>
+	                                    <li id="Menu6" class="top"><a href="../../../Soporte/Ayuda/SoporteTecnicoSoporteAyuda.aspx" class="top_link"><span class="down">POSTVENTA</span></a>
+
+	                                    </li>
+	                                    <li id="Menu7" class="top">
+                                            <a href="../../../Comprar/Online/ProductosCompra.aspx" class="top_link"><span class="down">COMPRAR</span></a>
+
+	                                    </li>
+	                                    <li id="Menu8" class="top">
+                                            <a href="../../../Empresa/Actualidad/Noticias/NoticiasUltimas.aspx" class="top_link"><span class="down">EMPRESA</span></a>
+
+	                                    </li>
+	                                    <li id="Menu9" class="top"><a href="../../../Clientes/Cliente.aspx" class="top_link"><span>CLIENTES</span></a>
+
+                                        </li>
+                                        <li id="Menu10" class="top"><a href="../../../Contacto/Contacto.aspx" id="A1" class="top_link"><span>CONTACTO</span></a></li>
+                                            
+                                      </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>    
+        <div class="main">
+            
+    <div id='contentSubMenu'>
+        <ul id="navSubMenu">
+            <li id="MainContent_SubMenu1" class="active"><a href="Caracteristicas.aspx" class="top_link">
+                <span style="padding-left: 15px;">Tricalc</span></a></li>
+            <li id="MainContent_SubMenu2" class="top"><a href="../../Gest/Caracteristicas/CaracteristicasGest.aspx" class="top_link">
+                <span style="padding-left: 15px;">Gest</span></a></li>
+            <li id="MainContent_SubMenu3" class="top"><a href="../../Constructo/Caracteristicas/CaracteristicasConstructo.aspx" class="top_link">
+                <span style="padding-left: 15px;">Constructo ERP</span></a></li>
+            <li id="MainContent_SubMenu4" class="top"><a href="../../ConstructoPromo/Caracteristicas/CaracteristicasConstructoPromo.aspx" class="top_link">
+                <span style="padding-left: 15px;">Constructo Promociones</span></a></li>
+                <li id="MainContent_SubMenu5" class="top"><a href="../../Arktecad/Caracteristicas/CaracteristicasArktecad.aspx" class="top_link">
+                <span style="padding-left: 15px;">ArkteCad</span></a></li>
+        </ul>
+    </div>   
+    
+
+    <style type="text/css">
+        .style3
+        {
+            width: 188px;
+        }
+        .style5
+        {
+            width: 188px;
+            height: 263px;
+        }
+    </style>
+
+    <div id="ContentedorMain">
+        <table style="width:100%; " cellpadding="0" cellspacing="0">
+            <tr>
+                <td align="left" class="style5" valign="top">
+                    <div id="SideBar_PanelNav"
+                         class="leftMenu" 
+                         style="background-repeat:no-repeat;
+                         width: 210px; background-image: url('/Imagenes/TabMenuBgTricalc.jpg');" 
+                         align="left">
+	                    <div class="items" id="idItems">
+                            <a href="Caracteristicas.aspx" id="MainContent_ContentSubMain_Panel1" style="color:#62B4EB;background-image:url(/Imagenes/leftNavItemBGTricalc.gif);">Características</a>
+                            <a href="../Novedades/Tricalc130.aspx" id="MainContent_ContentSubMain_Panel2" style="background-image:url(/Imagenes/leftNavItemBGTricalc.gif);">Novedades-Versiones</a>
+                            <a href="../Modulos/Modulos.aspx" id="MainContent_ContentSubMain_Panel3" style="background-image:url(/Imagenes/leftNavItemBGTricalc.gif);">Módulos</a>
+                            <a href="../Videos/VideosLiveTricalc.aspx" id="MainContent_ContentSubMain_Panel4" style="background-image:url(/Imagenes/leftNavItemBGTricalc.gif);">Vídeos</a>
+                           <a href="../Descargas/demoTricalc.aspx" id="MainContent_ContentSubMain_Panel5" style="background-image:url(/Imagenes/leftNavItemBGTricalc.gif);">Descargas</a>
+                           <a href="../Galer%C3%ADa/GaleriaTricalc.aspx" id="MainContent_ContentSubMain_Panel6" style="background-image:url(/Imagenes/leftNavItemBGTricalc.gif);">Galería-Ejemplos</a>
+                           <a href="../Documentos/ManualesTricalc.aspx" id="MainContent_ContentSubMain_Panel7" style="background-image:url(/Imagenes/leftNavItemBGTricalc.gif);">Documentos</a>
+                            <a href="../../../Formacion/Universidades/Ayudas%20al%20profesor/UniversidadesManualProfesor.aspx" id="MainContent_ContentSubMain_Panel8" style="background-image:url(/Imagenes/leftNavItemBGTricalc.gif);">Manual paso a paso</a>
+                        </div>
+                    </div> 
+                </td>
+                <td align="left" rowspan="2" valign="top">
+                    
+    <div id="SubContentedorMain">
+        <table style="width:100%; " cellpadding="0" cellspacing="0">
+            <tr>
+                <td align="left" valign="top">
+                    <div style="background-color:#EBEBEB">
+                        <ul id="css3menu1" class="topmenu">
+                            <li class="topfirst"><a href="Caracteristicas.aspx" id="MainContent_ContentSubMain_SubContent_Item1" class="active">Tricalc</a></li>
+                            <li class="topmenu">
+                                <a href="TConnect.aspx" id="MainContent_ContentSubMain_SubContent_Item2">T-Connect</a></li>
+                            <li class="topmenu">
+                                <a href="TricalcBasico.aspx" id="MainContent_ContentSubMain_SubContent_Item3">Tricalc LT</a></li>
+                            <li class="topmenu">
+                                <a href="TricalcPorticos.aspx" id="MainContent_ContentSubMain_SubContent_Item4">Tricalc Pórticos+</a></li>
+                            <li class="toplast">
+                                <a href="Cmtl.aspx" id="MainContent_ContentSubMain_SubContent_Item5">CMT+L Termoarcilla</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" valign="top">
+                    
+    
+    <table border="0" cellpadding="0" cellspacing="0" width="760" style="padding-right: 0px">
+    <tr> <td>
+    <a href="../Novedades/Tricalc110.aspx"> <img alt="" width="760px" height="446" 
+            border="0" src="../Imagenes/t110/InicioTricalc1024.bmp"" /></a>
+    
+      </td>
+      </tr>
+    </table>
+    
+    <table border="0" cellpadding="0" cellspacing="0" width="760" style="padding-right: 0px">
+        
+           
+     <tr>
+       <td valign="top" width="200" >
+       
+           &nbsp;</td>
+
+        <td  width="40" >&nbsp;</td>
+
+        <td valign="top" width="520">
+       
+            &nbsp;</td>
+      </tr>
+        
+           
+     <tr>
+       <td valign="top" width="200" >
+       
+        <p class="footpage_a" >
+            <br />
+            <a href="../Imagenes/t120/1.png" target="_blank" >
+                <img src="../Imagenes/t120/1.png" alt="Tricalc" width="200" height="125"></a><br />
+                Un único programa para calcular estructuras de acero, de hormigón 
+	            y de cualquier material, incluso estructuras de hormigón con cerchas de 
+	            acero y naves de acero con forjados</p>
+        <p>&nbsp;</p>
+
+
+        <p class="footpage_a">
+            <a href="../Imagenes/t120/2.png" target="_blank" >
+                <img src="../Imagenes/t120/2.png" alt="Tricalc" width="200" height="125"></a><br />
+                Composición automática de planos, incluso incluyendo detalles 
+	            constructivos, sin perder las composiciones ya creadas cuando se recalcula 
+	            la estructura <br />
+                Todos los planos se obtienen en formato DWG 2000 a 2013</p>
+        <p>&nbsp;</p>
+
+        <p class="footpage_a">
+            <a href="../Imagenes/t120/3.png" target="_blank" >
+                <img src="../Imagenes/t120/3.png" alt="Tricalc" width="200" height="125"></a><br />
+        El módulos Tricalc.4 perite calcular cimentaciones por zapatas y vigas. El módulo Tricalc.11 permite calcular pilotes, encepados y vigas de cimentación. </p>
+        <p>&nbsp;</p>
+
+                <p class="footpage_a">
+            <a href="../Imagenes/t120/4.png" target="_blank" >
+                <img src="../Imagenes/t120/4.png" alt="Tricalc" width="200" height="125"></a><br />
+        Permite la definición de las estructuras sobre cualquier 
+	    plano, no sólo horizontal -en planta-, sino también vertical -en alzado o 
+	    sección- e inclinado</p>
+        <p>&nbsp;</p>
+        <p class="footpage_a" >
+            <a href="../Imagenes/t120/5.png" target="_blank" >
+                <img src="../Imagenes/t120/5.png" alt="Tricalc" width="200" height="125"></a><br />
+        El módulo Tricalc.10 permite calcular muros resistentes de cualquier material por elementos finitos, con 
+	    cualquier orientación en planta, incluso con huecos y lados inclinados</p>
+        <p>&nbsp;</p>
+
+        <p class="footpage_a">
+            <a href="../Imagenes/t120/6.png" target="_blank" >
+                <img src="../Imagenes/t120/6.png" alt="Tricalc" width="200" height="125"></a><br />
+        Calcula estructuras con forjados inclinados, considerando la 
+	    componente horizontal de las cargas. Secciones trasnversales del forjado</p>
+        <p>&nbsp;</p>
+
+        <p class="footpage_a">
+            <a href="../Imagenes/t120/7.png" target="_blank" >
+                <img src="../Imagenes/t120/7.png" alt="Tricalc" width="200" height="125"></a><br />
+        Cálculo avanzado y transparente que permite conocer los 
+	    cálculos intermedios. Cálculo en 2º orden por el método P-Delta</p>
+        <p>&nbsp;</p>
+
+        <p class="footpage_a">
+            <a href="../Imagenes/t120/8.png" target="_blank" >
+                <img src="../Imagenes/t120/8.png" alt="Tricalc" width="200" height="125"></a><br />
+        Opciones particulares de armado y de comprobación para cada 
+	    barra, cada planta o cada pórtico, en hormigón y en acero</p>
+        <p>&nbsp;</p>
+
+        <p class="footpage_a">
+            <a href="../Imagenes/t120/9.png" target="_blank" >    
+                <img src="../Imagenes/t120/9.png" alt="Tricalc" width="200" height="125"></a><br />
+        Mediante el módulo Tricalc.9 cálcula de forma integrada las losas de cimentación con la estructura 
+	    considerando su interacción</p>
+        <p>&nbsp;</p>
+
+        <p class="footpage_a">
+            <a href="../Imagenes/t120/10.png" target="_blank" >
+                <img src="../Imagenes/t120/10.png" alt="Tricalc" width="200" height="125"></a><br />
+        El módulo Tricalc.Cad es un editor de planos que permite modificar los aspectos gráficos sin necesidad de otros 
+	    programas externos</p>
+        <p>&nbsp;</p>
+
+        <p class="footpage_a">
+            <a href="../Imagenes/t120/11.png" target="_blank" >
+                <img src="../Imagenes/t120/11.png" alt="Tricalc" width="200" height="125"></a><br />
+        El módulo Tricalc.11 realiza el cálculo de pilotes 'in situ' y de pilotes prefabricados </p>
+        <p>&nbsp;</p>
+
+        <p class="footpage_a">
+            <a href="../Imagenes/t120/12.png" target="_blank" >
+                <img src="../Imagenes/t120/12.png" alt="Tricalc" width="200" height="125"></a><br />
+        En cada una sus hasta 10 ventanas gráficas pueden definirse 
+	    distintos planos de trabajo, lo que posibilita trabajar simultáneamente en 
+	    planta y en alzado</p>
+        <p>&nbsp;</p>
+
+        <p class="footpage_a">
+            <a href="../Imagenes/t120/14.png" target="_blank" >
+                <img src="../Imagenes/t120/14.png" alt="Tricalc" width="200" height="125"></a><br />
+        Las gráficas de isovalores permiten obtener diagramas de 
+	    esfuerzos, desplazamientos y tensiones de forjados, losas y muros 
+	    resistentes</p>
+        <p>&nbsp;
+     </td>
+
+    <!-- COLUMNA EN BLANCO  -->
+        <td  width="40" ></td>
+
+        <td valign="top" width="520">
+       
+            <p class="header_3_a">            
+                <span class="header_2">Un único programa</span><br />
+                <span class="header_3_c">Tricalc</span> 
+                    calcula estructuras de acero, de hormigón y de cualquier material, incluso 
+	                estructuras de hormigón con cerchas de acero, y naves de acero con forjados, 
+	                losas, muros resistentes y muros de contención o pilotes; en <span class="header_3_b">un 
+	                único programa</span>, con una misma forma de trabajo y con todas sus 
+	                prestaciones, <span class="header_3_b">sin necesidad de cambiar de programa</span> y de 
+	                forma de trabajo dependiendo del material de la estructura.<br />
+                <span class="header_2"><br />Integrado hace más de veinte años</span><br />
+                <span class="header_3_c">Tricalc</span> superó hace más de veinte años 
+	                la división entre programas para <span class="header_3_b">estructuras de hormigón</span> y 
+	                para <span class="header_3_b">estructuras de acero</span>, algo que era habitual en los 
+	                antiguos programas de los años 80.<br />
+                <br />
+                <span class="header_2">No solamente en planta</span><br />
+                <span class="header_3_c">Tricalc</span> permite la definición de 
+	                las estructuras sobre cualquier plano, no sólo horizontal -en planta-, sino 
+	                también <span class="header_3_b">vertical -en alzado o sección- e inclinado</span>, y 
+                <span class="header_3_b">globalmente</span>, reduciéndose el riesgo de cometer errores en la definición de la geometría. 
+            </p>
+
+            <p class="header_3_a">
+                <span class="header_2">Planos y pórticos de trabajo múltiples</span><br />
+                    Utilizando la opción &quot;<span class="header_3_a_italic">planos múltiples</span>&quot; pueden 
+	                activarse simultáneamente <span class="header_3_b">varios planos de trabajo en cada ventana</span>, 
+	                como por ejemplo, dos plantas, dos alzados, o una planta y un alzado.<br />
+                <span class="header_2"><br />Trabajo en hasta 10 ventanas gráficas </span><br />
+                    En cada una de sus ventanas gráficas se pueden definir 
+	                distintos planos de trabajo, lo que posibilita trabajar <span class="header_3_b">
+	                simultáneamente en planta y en alzado</span>, o incluso en plantas a 
+	                distinta cota, sin la limitación de trabajar en una única ventana.<br />
+                <span class="header_2"><br />
+                    Más de 700 iconos personalizables</span><br />
+                    <span><span class="header_3_c">Tricalc</span></span> incluye más de 700 iconos 
+	                organizados en ‘toolbars’ ya definidas. Es posible <span class="header_3_b">personalizar 
+	                nuevas ‘toolbars</span>’, así como almacenar y recuperar distintas 
+	                configuraciones en función del trabajo a realizar con el programa.<br />
+                <span class="header_2"><br />Predimensionado automático</span><br />
+                    <span class="header_3_c">Tricalc</span> realiza el predimensionado 
+	                de las barras de acero y de hormigón, proponiendo <span class="header_3_b">automáticamente la 
+	                sección</span> en función de sus <span class="header_3_b">cargas y opciones</span>. 
+	                Algunos otros programas a día de hoy todavía carecen de esta prestación, 
+	                de la que no sólo <span><span class="header_3_c">Tricalc</span></span>
+                    ya disponía en 1991, sino que lo estaba en programas de cálculo de los 
+                    <span class="header_3_b">años 80</span>, como Eph y Epa de <span class="header_3_b">Arktec</span>. <br />
+                <span class="header_2"><br />Cálculo de muros de contención o ménsula en el mismo programa<br />
+                    </span> <span class="header_3_c">Tricalc</span>
+	                permite la definición y cálculo de muros de contención en el mismo programa, 
+	                utilizando todas sus prestaciones en la entrada y salida de resultados, sin 
+	                necesidad de utilizar programas independientes o no integrados. Los muros 
+	                ménsula pueden tener sus caras verticales o inclinadas, de espesor variable 
+	                o constante, con puntera, talón y tacón opcionales, dentro de las opciones 
+	                de <span class="header_3_c">Tricalc.6.</span>
+            </p>
+    
+            <p class="header_3_a">
+                <span class="header_2">Cálculo avanzado y transparente</span><br />        
+                    <span class="header_3_c">Tricalc</span> emplea un método de cálculo 
+	                matricial espacial, calcula de una forma transparente, permite 
+	                conocer los cálculos intermedios y sobre todo 
+	                dispone de múltiples opciones de cálculo que el usuario puede modificar 
+	                fácilmente según sus necesidades.<br />
+                <span class="header_2"><br />Ampliamente documentado</span><br />
+                    <span class="header_3_c">Tricalc</span> se 
+	                completa con <span class="header_3_b">una amplia memoria de cálculo</span> que explica los 
+	                métodos y los coeficientes utilizados en el cálculo, y que puede entregarse 
+	                junto con la memoria del proyecto. <br />
+                <span class="header_2"><br />Otros son como una ‘caja negra’</span><br />
+                    Rechace los programas de cálculo de estructuras que son como 
+                    <span class="header_3_b">
+	                cajas oscuras</span>, en las que por un lado se introducen datos y por 
+	                otro se obtienen resultados, dejando ocultos los métodos de cálculo 
+	                empleados y las simplificaciones realizadas.
+            </p>
+
+            <p class="header_3_a">
+                <span class="header_2">Resultados fiables</span><br />
+                    <span class="header_3_c">Tricalc</span> dispone de potentes funciones para el 
+	                chequeo y verificación de la geometría, y facilita <span class="header_3_b">planos de 
+	                armaduras de fácil ejecución y modificación;</span> algunos otros 
+	                programas exigen en ocasiones el empleo de <span class="header_3_b">tablas correctoras </span>
+	                para modificar manualmente los propios resultados obtenidos. <br />
+                <span class="header_2"><br />Ejes geométricos</span><br />
+                    <span class="header_3_c">Tricalc</span> considera los ejes 
+	                geométricos de las secciones y las luces de cálculo de las barras utilizando 
+	                exclusivamente los <span class="header_3_b">criterios recogidos en cada normativa</span>, 
+	                sin utilizar criterios no documentados. Las funciones de visualización y 
+	                análisis de los ejes permiten conocer exactamente la posición y los valores 
+	                utilizados.<br />
+                <span class="header_2"><br />No todos los programas para&nbsp; Windows son iguales</span><br />
+                    <span class="header_3_c">Tricalc</span> está desarrollado según la 
+	                guía de estilo de Windows, y con el estilo de Microsoft Office 2007, utilizando <span class="header_3_b">multiventanas, barras de 
+	                iconos personalizables, cajas de diálogo con solapas…</span>, algo 
+	                habitual en programas como Word®, Excel®, Project® e incluso AutoCad®. 
+	                Rechace los programas que utilizan un entorno propio no estándar, 
+	                y que recuerda a los programas para MS-DOS de los 
+	                años 80.
+            </p> 
+
+            <p class="header_3_a">
+                <span class="header_2">Cálculo automático de secciones</span><br />
+                    <span class="header_3_c">Tricalc</span> dispone de un asistente 
+	                para <span class="header_3_b">calcular las características de las nuevas secciones.</span> 
+	                Además permite importar desde Excel® los valores allí definidos e 
+	                incorporarlos al programa.<br />
+                <span class="header_2"><br />Opciones de armado particulares</span><br />
+                    Con <span class="header_3_c">Tricalc</span> pueden utilizarse 
+	                opciones <span class="header_3_b">para cada barra, cada planta o cada pórtico:</span> 
+	                diámetros, separaciones, redistribuciones, limitaciones de flecha, opciones 
+	                de pandeo... adecuando los armados a cada necesidad. Otros programas obligan 
+	                a utilizar siempre las mismas tablas y opciones para todas las barras.<br />
+                <span class="header_2"><br />Peritaje detallado</span><br />
+                    <span class="header_3_c">Tricalc</span> permite la modificación de las armaduras 
+	                obtenidas y su peritaje, obteniéndose para cada sección <span class="header_3_b">el nuevo 
+	                coeficiente de seguridad</span>. Otros programas dan información escasa o 
+	                nula sobre la seguridad final de las modificaciones realizadas.
+            </p>
+
+            <p class="header_3_a">
+                <span class="header_2">Vigas inclinadas</span><br />
+                    <span class="header_3_c">Tricalc</span> realiza el armado de vigas 
+	                inclinadas y genera sus planos con <span class="header_3_b">las armaduras despiezadas y en su 
+	                verdadera posición, acotando anclajes y doblados.</span> Otros programas 
+	                simplifican el cálculo con un armado continuo, y de forma numérica sin 
+	                realizar planos de estas vigas inclinadas.<br /><br />
+                <span class="header_2">Armaduras de espera de pilares</span><br />
+                    Para obtener una <span class="header_3_b">medición completa de la estructura</span>, 
+                    <span class="header_3_c">Tricalc</span>
+                    calcula y dibuja las armaduras de espera de los pilares. Puede condicionarse 
+	                el canto de las zapatas por la longitud de anclaje de las armaduras de 
+	                los pilares.<br />
+                <span class="header_2"><br />Planos directamente en DWG</span><br />
+                    <span class="header_3_c">Tricalc</span> obtiene todos los dibujos, 
+	                gráficas y planos de composición <span class="header_3_b">directamente en el formato DWG 
+                2013 </span>
+	                de AutoCad®. Otros programas menos desarrollados sólo disponen del formato 
+	                DXF, no resolviendo los problemas de transformación ni las limitaciones de 
+	                este formato.
+            </p>
+
+            <p class="header_3_a">
+                <span class="header_2">Forjados inclinados</span><br />
+                    <span class="header_3_c">Tricalc</span> calcula estructuras con 
+	                forjados situados tanto en planos horizontales como inclinados, 
+                        <span class="header_3_b">
+	                considerando la componente horizontal de las cargas.</span> Rechace usar 
+	                simplificaciones como la de abatir los forjados sobre la horizontal como 
+	                obligan otros programas.<br />
+                <span class="header_2"><br />
+                    Forjados calculados por paños</span><br />
+                    <span class="header_3_c">Tricalc</span> agrupa las armaduras de las 
+	                viguetas <span class="header_3_b">por paños de iguales características, según especifica la 
+	                normativa</span>, lo que simplifica el dibujo y la construcción, 
+	                permitiendo seleccionar entre los métodos elástico, plástico e isostático 
+	                para el reparto de cargas. Otros programas no agrupan los resultados, 
+	                mostrando todas las viguetas diferentes, sin atender a ningún criterio 
+	                geométrico.<br /><br />
+                <span class="header_2"> Distribución en zonas</span><br />
+                    <span class="header_3_c">Tricalc</span> dispone de 
+	                funciones de agrupación automática de nervios y de <span class="header_3_b">distribución en 
+	                zonas de las cuantías</span>, no siendo necesaria la modificación manual 
+	                de los resultados, como en otros programas.
+            </p>
+
+            <p class="header_3_a">
+                <span class="header_2">Cálculo sísmico<br />
+                    <span class="header_3_c">Tricalc </span></span>
+                    realiza un cálculo sísmico avanzado por sobreposición modal 
+	                espectral con espectros definibles, y dispone de opciones como masa 
+	                rotacional opcional o cálculo por direcciones separadas. Diversos espectros 
+                de normativas de varios países ya disponibles en el programa. Se obtiene 
+                    <span class="header_3_b">
+	                una gráfica animada de modos</span> en la pantalla y en formato de video AVI.<br />
+                <span class="header_2"><br />Losas de cimentación</span><br />
+                    <span class="header_3_c">Tricalc</span> realiza su cálculo de forma 
+                    <span class="header_3_b">integrada</span>
+                    con la estructura considerando la <span class="header_3_b">interacción losa-estructura</span>, 
+	                efecto que otros programas no consideran al realizar cálculos por separado.<br />
+                <span class="header_2"><br />Punzonamiento integrado</span><br />
+                    <span class="header_3_c">Tricalc</span> realiza la comprobación de 
+	                punzonamiento en forjados de <span class="header_3_b">forma integrada</span>, sin necesidad 
+	                de utilizar programas externos con simplificaciones.
+            </p>
+
+            <p class="header_3_a">
+                <span class="header_2">Imágenes renderizadas</span><br />
+                    Imprime imágenes ‘render’ de la estructura, incluso con 
+	                sombras y texturas, que pueden <span class="header_3_b">añadirse a los planos de composición. </span><br />
+                <span  class="header_2"><br />Exclusivo modo sólido-alambre</span><br />
+                    Su modo de trabajo mixto en sólido y en alambre permite 
+	                verificar la <span class="header_3_b">posición exacta de los crecimientos</span> de los 
+	                elementos.<br />
+                <span class="header_2"><br />Detalles constructivos incluidos</span><br />
+                    <span class="header_3_c">Tricalc</span> incluye detalles de los 
+	                distintos elementos estructurales que calcula, sin <span class="header_3_b">coste adicional</span>. 
+	                Pueden introducirse en los planos de composición e imprimirse conjuntamente 
+	                con los demás dibujos.<br />
+            </p>
+
+            <p class="header_3_a">
+                <span class="header_2">Cajetines y marcos de planos</span><br />
+                    <span class="header_3_c">Tricalc</span>también 
+	                incorpora una biblioteca de <span class="header_3_b">cajetines normalizados</span> de 
+	                distintos tamaños y formatos.<br />
+                <span class="header_2"><br />Mediciones </span> <br />
+                    <span class="header_3_c">Tricalc</span> genera 
+	                automáticamente la <span class="header_3_b">medición desglosada</span> de todos los 
+	                elementos de la estructura, en los formatos ASCII, Gest, y en FIEBDC 2012. <br />
+                <span class="header_2"><br />Conexión bidireccional con <span>Gest</span></span><br />
+                    <span class="header_3_c">Tricalc</span> dispone de una conexión con 
+	                el programa <span class="header_3_c">Gest</span>
+                    y con otros programas de presupuestos, permitiendo seleccionar 
+                    <span class="header_3_b">las unidades de obra directamente</span> en el programa de presupuestos.
+            </p>
+
+            <p class="header_3_a">
+                <span class="header_2"><br />Editor integrado de planos</span><br />
+                    El editor de planos integrado de <span>
+                    <span class="header_3_c">Tricalc</span></span> 
+	                permite la edición, composición, modificación, acotado e <span class="header_3_b">
+	                introducción de información adiciona</span>l en los planos de estructura, 
+	                sin necesidad de utilizar otro programa. Es la herramienta idónea para que 
+	                el calculista incorpore rápidamente modificaciones a los planos, antes de 
+	                enviarlos a delinear.<br /><span class="header_3_c"><br />
+                    Tricalc.Cad</span> es un editor de planos 
+	                creado específicamente para el dibujo de planos de estructura, lo que le 
+	                diferencia de <span class="header_3_b">otros programas de CAD genéricos</span>. Permite 
+	                modificar textos, colores, fuentes y rayados, así como introducir símbolos y 
+	                cotas, definir hasta 13 grosores de línea distintos e incorporar tablas de 
+	                fabricación y cajetines de planos.<br />
+                <span class="header_2"><br />Arktec, empresa especializada en software para AEC</span><br />
+                    <span class="header_3_c">Tricalc</span> está desarrollado por la 
+	                única empresa <span class="header_3_b">multinacional española especializada </span>en el 
+	                desarrollo, comercialización y soporte técnico de software para 
+	                arquitectura, ingeniería y construcción. <br />
+                <span class="header_2"><br />Invierte todos sus recursos</span><br />
+                    <span class="header_3_b"><span>Arktec, S.A</span>. invierte todos sus recursos en 
+	                el desarrollo y mejora </span>de sus programas para proporcionar siempre a 
+	                sus clientes las herramientas más avanzadas de cada momento, sin 
+	                compaginarlo con otras actividades, como hacen otras empresas, lo que tiene 
+	                como consecuencia el escaso desarrollo de sus productos.
+            </p>
+
+            <p class="header_3_a">
+                <span class="header_2">Miles de usuarios ya han sabido elegir</span><br />
+                    Por todo eso, <span><span class="header_3_c">Tricalc</span></span> es el 
+	                programa utilizado por <span class="header_3_b">miles de arquitectos e ingenieros en España, 
+	                Portugal y América Latina </span>y por las principales empresas de 
+	                ingeniería y los departamentos de ingeniería de las grandes empresas y 
+	                organismos, incluso multinacionales norteamericanas, alemanas o británicas.<br />
+                <span class="header_2"><br />Exija personal cualificado</span><br />
+                    <span><span class="header_3_c">Tricalc</span></span> está desarrollado por un equipo 
+	                multidisciplinar de <span class="header_3_b">arquitectos e ingenieros</span>, y tanto las 
+                    <span class="header_3_b">demostraciones</span> como el soporte técnico son realizados por 
+	                arquitectos e ingenieros, que entienden las necesidades de cada cliente.<br />
+                <br /><span class="header_2">Tricalc es diferente de otros programas de cálculo </span><br />
+                    ¿Qué pensaría si le ofrecieran programas de CAD diseñados por 
+	                oficinas de arquitectura, hojas de cálculo creadas por bancos o editores de 
+	                textos concebidos por editoriales para <span class="header_3_b">su propio uso?</span>.
+            </p>
+
+            <p class="header_3_a">
+                <span class="header_2">Programas profesionales</span><br />
+                    Exija entonces programas de cálculo de estructuras 
+	                profesionales, desarrollados por <span class="header_3_b">empresas especializadas en software</span>, 
+	                y rechace aquéllos otros de empresas para las que el software es una 
+	                actividad complementaria o incluso marginal, y que le ofrezcan agresivamente 
+	                comerciales con escasa cualificación técnica.<br />
+                    <br />
+                <span>No se conforme con menos.</span>
+            </p>
+        </td>
+      </tr>
+</table>
+
+<p>
+    &nbsp;</p>
+
+                </td>
+            </tr>
+        </table>
+    </div>                
+
+                </td>
+            </tr>
+            <tr>
+                <td align="left" valign="top" class="style3">
+                    &nbsp;</td>
+            </tr>
+            </table>
+    </div>   
+
+
+        </div>
+    </div>
+
+    <div class="page">
+    <div id="ContentedorMainFooter">
+      <div id="PanelInicio">
+       <div id="CuartoLevel">
+          <div id="footer">
+                    <div id="columns_container" class="container clearfix">
+                        <div id="columns-inner-container">
+                            <div class="column">
+                                <H4>Quienes Somos</H4>
+                                <ul>
+                                  <li><a href="/ES/Empresa/QuienesSomos/Arktec/Arktec.aspx"><span>Empresa</span></a></li>
+                                  <li><a href="/ES/Empresa/Historia/Arktec/Arktec.aspx"><span>Historia</span></a></li>
+                                  <li><a href="/ES/Comprar/Donde/CompraArktec.aspx"><span>Oficinas</span></a></li>
+                                  <li><a href="/ES/Comprar/Donde/Worldwide/MapaWorldwide.aspx"><span>WorldWide</span></a></li>
+                                  <li><a href="/ES/Empresa/Actualidad/Noticias/NoticiasUltimas.aspx"><span>Notas de Prensa</span></a></li>
+                                  <li><a href="/ES/Contacto/Contacto.aspx"><span>Contacto</span></a></li>
+               
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <H4>Productos</H4>
+                                <ul>
+                                  <li class="uppercase strong">Tricalc, T-Connect</li>
+                                    <li class="indented"><a href="/ES/Productos/Tricalc/Caracteristicas/Caracteristicas.aspx">Características</a></li>
+                                    <li class="indented"><a href="/ES/Productos/Tricalc/Novedades/Tricalc81.aspx">Novedades</a></li>
+                                    <li class="indented"><a href="/ES/Productos/Tricalc/Modulos/Modulos.aspx">Módulos</a></li>
+                                    <li class="indented"><a href="/ES/BIM/BIM/Tricalc/Tricalc.aspx">BIM</a></li>
+                                  <li class="uppercase strong">Gest</li>
+                                     <li class="indented"><a href="/ES/Productos/Gest/Caracteristicas/CaracteristicasGest.aspx">Características</a></li>
+                                     <li class="indented"><a href="/ES/Productos/Gest/Novedades/110Gest.aspx">Novedades</a></li>
+                                     <li class="indented"><a href="/ES/Productos/Gest/Modulos/ModulosGest.aspx">Módulos</a></li>
+                                     <li class="indented"><a href="/ES/BIM/BIM/Gest/MidePlan.aspx">BIM</a></li>
+                                  <li class="uppercase strong">Constructo ERP</li>
+                                     <li class="indented"><a href="/ES/Productos/Constructo/Caracteristicas/CaracteristicasConstructo.aspx">Características</a></li>
+                                     <li class="indented"><a href="/ES/Productos/Constructo/Novedades/110Constructo.aspx">Novedades</a></li>
+                                     <li class="indented"><a href="/ES/Productos/Constructo/Caracteristicas/EsquemaConstructo.aspx">Esquema ERP</a></li>
+                                     
+                                  <li class="uppercase strong">Constructo Promociones</li>
+                                     <li class="indented"><a href="/ES/Productos/ConstructoPromo/Caracteristicas/CaracteristicasConstructoPromo.aspx">Características</a></li>
+                                     <li class="indented"><a href="/ES/Productos/ConstructoPromo/Caracteristicas/EsquemaConstructoPromo.aspx">Esquema ERP</a></li>
+                                  
+                                  <li class="uppercase strong">ArkteCad</li>
+                                     <li class="indented"><a href="/ES/Productos/Arktecad/Caracteristicas/CaracteristicasArktecad.aspx">Características</a></li>
+                                     <li class="indented"><a href="/ES/Productos/Arktecad/Novedades/NovedadesArktecad.aspx">Novedades</a></li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <H4>Areas</H4>
+                                <ul>
+                                  <li class="uppercase strong">Comprar</li>
+                                    <li class="indented"><a href="/ES/Comprar/Online/ProductosCompra.aspx"><span>Compra online</span></a></li>
+                                    <li class="indented"><a href="/ES/Comprar/Donde/CompraArktec.aspx"><span>Puntos de venta</span></a></li>
+                                    <li class="indented"><a href="/ES/Contacto/Contacto.aspx"><span>Solicitar Oferta</span></a></li>
+                                 <li class="uppercase strong">Formación</li>
+                                    <li class="indented"><a href="/ES/Formacion/Seminarios/SeminariosProximos.aspx"><span>Seminarios</span></a></li>
+                                    <li class="indented"><a href="/ES/Formacion/Seminarios/CursosProximos.aspx"><span>Cursos</span></a></li>
+                                    <li class="indented">
+                                        <a href="/ES/Formacion/educARK/Caracteristicas/CaracteristicasEducARKCaracteristicas.aspx"><span>educARK, formación online</span></a></li>
+                                  <li class="uppercase strong">Recursos</li>
+                                    <li class="indented"><a href="/ES/Demostracion/Descargas/Tricalc/DemoTricalcDemostracionDescargasTricalc.aspx"><span>Descargar Demos</span></a></li>
+                                    <li class="indented"><a href="/ES/Demostracion/Videos/Tricalc/LiveDemoTricalcDemostracionVideosTricalc.aspx"><span>Videos</span></a></li>
+                                    <li class="indented"><a href="/ES/Formacion/Documentacion/Tricalc/TricalcFormacionDocumentacionManual.aspx"><span>Documentación</span></a></li>
+                                 <li class="uppercase strong">UNIVERSIDADES</li>
+                                    <li class="indented"><a href="/ES/Formacion/Universidades/Convenios/UniversidadesConvenios.aspx"><span>Convenios y Licencias</span></a></li>
+                                    <li class="indented"><a href="/ES/Formacion/Universidades/Ayudas%20al%20profesor/UniversidadesManualProfesor.aspx"><span>Manual Paso a Paso</span></a></li>
+                                 <li class="uppercase strong">ESTUDIANTES</li>
+                                   <li class="indented"><a href="/ES/Formacion/Estudiantes/Licencia%20Estudiante/CaracteristicasEducARKEstudiantesLicenciaEstudiante.aspx"><span>Licencia</span></a></li>
+                                 <li class="uppercase strong">Soporte Técnico</li>
+                                   <li class="indented"><a href="/ES/Soporte/Ayuda/SoporteTecnicoSoporteAyuda.aspx"><span>Ayuda</span></a></li>
+                                    <li class="indented"><a href="/ES/Soporte/Ayuda/TutoriasSoporteAyuda.aspx"><span>Tutorías</span></a></li>
+                                </ul>
+                                
+                            </div>
+                            <div class="column">
+                                <H4>REDES SOCIALES</H4>
+                                <ul>
+                                  <li><a href="http://www.facebook.com/arktec" rel="nofollow" target="_blank">
+                                    <div style="background-image: url('/Imagenes/redes/facebook16.png');" 
+                                          class="image-link"></div>
+                                    <span class="image-link-span">Facebook</span></a></li>
+                                  <li><a href="http://twitter.com/ArktecSA" rel="nofollow" target="_blank">
+                                    <div style="background-image: url('/Imagenes/redes/twitter16.png');"
+                                          class="image-link"></div>
+                                    <span class="image-link-span">Twitter</span></a></li>
+                                  <li><a href="http://www.linkedin.com/company/arktec" rel="nofollow" target="_blank">
+                                    <div style="background-image: url('/Imagenes/redes/linkedin16.png');" 
+                                          class="image-link"></div>
+                                    <span class="image-link-span">LinkedIn</span></a></li>
+                                  <li><a href="http://www.youtube.com/user/arktecsa" rel="nofollow" target="_blank">
+                                    <div style="background-image: url('/Imagenes/redes/youtube16.png');" 
+                                          class="image-link"></div>
+                                    <span class="image-link-span">YouTube</span></a></li>
+              
+                                  <li>
+                                     <div style="background-image: url('/Imagenes/skype16.jpg'); cursor: pointer;" OnClick="MostrarCall()"
+                                          class="image-link"></div>
+                                    <span class="image-link-span">Skype</span></li>
+                                  <li>
+                                     <div style="background-image: url('/Imagenes/redes/whatsapp16.png'); cursor: pointer;" OnClick="MostrarWhastapp('WhatsApp1: +34 648 690 219', 'WhatsApp2: +34 689 680 609')"
+                                          class="image-link"></div>
+                                    <span class="image-link-span">WhatsApp1: +34 648 690 219</span>
+                                    </li>
+                                   <li>
+                                     <div style="background-image: url('/Imagenes/redes/whatsapp16.png'); cursor: pointer;" OnClick="MostrarWhastapp('WhatsApp1: +34 648 690 219', 'WhatsApp2: +34 689 680 609')"
+                                          class="image-link"></div>
+                                    <span class="image-link-span">WhatsApp2: +34 689 680 609</span>
+                                    </li>
+                                  <li>
+                                     <div style="background-image: url('');
+                                          class="image-link"></div>
+                                    <span class="image-link-span"></span></li>
+                                </ul>
+
+                                <H4>APPs</H4>
+                                <ul>
+                                  <li><a href="http://www.arktec.com/ES/Empresa/Apps/apps_android.aspx" rel="nofollow">
+                                    <div style="background-image: url('/Imagenes/redes/android16.png');" 
+                                          class="image-link"></div>
+                                    <span class="image-link-span">Android</span></a></li>
+                                  <li><a href="http://www.arktec.com/ES/Empresa/Apps/apps_android.aspx" rel="nofollow">
+                                    <div style="background-image: url('/Imagenes/redes/apple16.jpg');"
+                                          class="image-link"></div>
+                                    <span class="image-link-span">Apple iOS</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        <p align="center">
+            <font color="#808080" face="Tahoma" size="2">© Arktec, S.A. 1985-2021</font>
+            <font color="#808080" face="Tahoma" size="2">|</font>
+            <a href="http://www.arktec.com/ES/Inicio/legal.aspx" target="_blank"><font color="#808080" face="Tahoma" size="2">Legal</font></a>
+            <font color="#808080" face="Tahoma" size="2">|</font>
+            <a href="http://www.arktec.com/ES/Inicio/privacidad.aspx" target="_blank"><font color="#808080" face="Tahoma" size="2">Declaración de Privacidad </font></a>
+            <font color="#808080" face="Tahoma" size="2">|</font>
+            <a href="http://www.arktec.com/ES/Inicio/politica-cookies.aspx" target="_blank"><font color="#808080" face="Tahoma" size="2">Política de Cookies</font></a>
+            </p>
+        <p align="center">
+      <font color="#808080" face="Tahoma" size="2">_</font>
+        </p>
+
+    </div>
+       <div id="PopupCookie" style="display:block;" class="cookies-wrapper" data-gtm-vis-recent-on-screen-9429424_380="919" data-gtm-vis-first-on-screen-9429424_380="919" data-gtm-vis-total-visible-time-9429424_380="100" data-gtm-vis-has-fired-9429424_380="1">
+            <div class="cookies-policy vp">
+                <div class="cookies-layout">
+                    <div id="cookies-content">
+                        <div class="cookies-title">
+                        <h2 id="cookies-main-title" class="truncate">Política de cookies</h2></div>
+                        <div class="cookies-text-container">
+                            <div id="cookies-text" class="cookies-text">
+                                <p>Arktec S.A. utiliza cookies propias para fines estrictamente funcionales, permitiendo la navegación en la web de los usuarios. Puede obtener <a id="policy-link" class="bold" href="/ES/Inicio/politica-cookies.aspx">más información aquí.</a><br/><br/>
+                                Pulsa el botón Aceptar para confirmar que has leído y aceptado la información presentada.<br/><span class="bold">Después de aceptar, no volveremos a mostrarte este mensaje, excepto en el caso de que borres las cookies de tu dispositivo.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cookies-buttons">
+                        <input type="submit" name="ctl00$ctl00$ctl00$ctl00$cookiesagree" value="Aceptar" id="cookiesagree" class="truncate" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+    </div>
+--%>
+    </form>
+
+    <div id="overlayPublicidad" style="display: none;">
+        <div id="ContenedorPublicidad">
+            <a id="hrefPublicidad">
+                <img id="ImgPublicidad" />
+            </a>
+            <div>
+                <div class="boton_cerrar" OnClick="OcultarPublic()">
+                    <img src="../../../../Imagenes/ico_x_52x45.png" id="Img_cerrar" border="0" />
+                </div>
+            </div>
+        </div>
+    </div>     
+
+    
+    <div id="overlayCall" style="display: none;">
+        <div id="ContenedorCall" class="popupConfirmation">
+            <div class="popup_Titlebar" id="PopupHeader">
+                <div class="TitlebarLeft">
+                    Llámanos ahora por Skype a arktec.comercial
+                </div>
+                <div class="TitlebarRight" onclick="OcultarCall();">
+                </div>
+            </div>
+            <div class="popup_Body">
+                <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                <div id="SkypeButton_Call_arktec.comercial_1" class="skyp_Buttons">
+                    <script type="text/javascript">
+                        Skype.ui({
+                            "name": "call",
+                            "element": "SkypeButton_Call_arktec.comercial_1",
+                            "participants": ["arktec.comercial"],
+                            "imageSize": 32
+                        });
+                    </script>
+                </div>                    
+                <div id="SkypeButton_Call_arktec.comercial_2" class="skyp_Buttons">
+                    <script type="text/javascript">
+                        Skype.ui({
+                            "name": "chat",
+                            "element": "SkypeButton_Call_arktec.comercial_2",
+                            "participants": ["arktec.comercial"],
+                            "imageSize": 32
+                        });
+                    </script>
+                </div> 
+            </div>
+        </div>
+    </div>     
+
+    
+    <div id="overlayWhastapp" style="display: none;">
+        <div id="ContenedorWhastapp" class="popupConfirmation">
+            <div class="popup_Titlebar" id="PopupHeaderWhastapp">
+                <div class="TitlebarLeft">
+                    Contáctenos por WhatsApp
+                </div>
+                <div class="TitlebarRight" onclick="OcultarWhastapp();">
+                </div>
+            </div>
+            <div class="popup_Body">
+                <div id="DivWhastapp">
+                    <br /> <br /> <br /> <br />
+                    <table class="style14">
+                        <tr>
+                            <td>
+                                <img id="Img3" src="/Imagenes/redes/whatsapp.jpg" alt="WhatsApp" width="30" height="30" title="WhatsApp"/>
+                            </td>
+                            <td align="left">
+                                <span id="Whastapp1"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img id="Img4" src="/Imagenes/redes/whatsapp.jpg" alt="WhatsApp" width="30" height="30" title="WhatsApp"/>
+                            </td>
+                            <td align="left">
+                                <span id="Whastapp2"></span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>                    
+            </div>
+        </div>
+    </div>     
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6397621-1', 'auto');
+  ga('require', 'linkid');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+
+

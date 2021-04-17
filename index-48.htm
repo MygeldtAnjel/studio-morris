@@ -1,0 +1,1164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>axonométrica | representación de una idea referida a tres ejes ortogonales: la teoría, la práctica y la docencia de la arquitectura</title>
+<link rel="pingback" href="https://axonometrica.blog/xmlrpc.php" />
+
+<script type="text/javascript">
+  WebFontConfig = {"google":{"families":["Overpass:i:latin,latin-ext","Overpass:r,i,b,bi:latin,latin-ext"]}};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://s0.wp.com/wp-content/plugins/custom-fonts/js/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+	})();
+</script><style id="jetpack-custom-fonts-css">.wf-active #header h1{font-family:"Overpass",sans-serif;font-style:italic;font-weight:400}.wf-active body{font-size:14.2px;font-family:"Overpass",sans-serif}.wf-active #navbar, .wf-active .navbar{font-size:13px;font-family:"Overpass",sans-serif}.wf-active #homepagetop p{font-size:14.2px}.wf-active #content #homepagetop .textwidget a{font-family:"Overpass",sans-serif}.wf-active #fcg p{font-size:14.2px}.wf-active blockquote{font-size:16.5px}.wf-active .postmeta{font-size:13px}.wf-active .wp-caption p.wp-caption-text{font-size:13px}.wf-active #sidebar_left .widget ul li a, .wf-active #sidebar_right .widget ul li a{font-size:14.2px;font-family:"Overpass",sans-serif}.wf-active .footertop{font-size:14.2px}.wf-active .footerbottom{font-size:13px}.wf-active .postform{font-size:14.2px;font-family:"Overpass",sans-serif}.wf-active #searchbox{font-family:"Overpass",sans-serif}.wf-active #searchbutton{font-family:"Overpass",sans-serif}.wf-active #s{font-size:14.2px;font-family:"Overpass",sans-serif}.wf-active #searchsubmit{font-family:"Overpass",sans-serif;font-size:13px}.wf-active #submit{font-family:"Overpass",sans-serif;font-size:13px}.wf-active #author, .wf-active #email, .wf-active #url{font-size:14.2px;font-family:"Overpass",sans-serif}.wf-active #comment{font-size:14.2px;font-family:"Overpass",sans-serif}.wf-active .commentlist li ul li{font-size:14.2px}.wf-active .commentlist cite, .wf-active .commentlist cite a{font-size:14.2px}.wf-active #commentform .form-label{font-size:11.8px}.wf-active .reply a, .wf-active .reply a:visited{font-family:"Overpass",sans-serif;font-size:13px}.wf-active .commentmetadata{font-size:11.8px}.wf-active #homepagetop .textbanner h3{font-family:"Overpass",sans-serif;font-weight:400;font-style:italic}.wf-active #homepagetop .textbanner h3 a, .wf-active #homepagetop .textbanner h3 a:visited{font-style:italic;font-weight:400}.wf-active #content h1, .wf-active #content h2{font-family:"Overpass",sans-serif;font-weight:400;font-style:italic}.wf-active #content h3, .wf-active #content h4{font-family:"Overpass",sans-serif;font-weight:400;font-style:italic}.wf-active #content h3 a, .wf-active #content h4 a{font-style:italic;font-weight:400}.wf-active #content h5, .wf-active #content h6{font-family:"Overpass",sans-serif;font-weight:400;font-style:italic}.wf-active #footertop h4{font-family:"Overpass",sans-serif;font-weight:400;font-style:italic}</style>
+<meta name='robots' content='max-image-preview:large' />
+
+<!-- Async WordPress.com Remote Login -->
+<script id="wpcom_remote_login_js">
+var wpcom_remote_login_extra_auth = '';
+function wpcom_remote_login_remove_dom_node_id( element_id ) {
+	var dom_node = document.getElementById( element_id );
+	if ( dom_node ) { dom_node.parentNode.removeChild( dom_node ); }
+}
+function wpcom_remote_login_remove_dom_node_classes( class_name ) {
+	var dom_nodes = document.querySelectorAll( '.' + class_name );
+	for ( var i = 0; i < dom_nodes.length; i++ ) {
+		dom_nodes[ i ].parentNode.removeChild( dom_nodes[ i ] );
+	}
+}
+function wpcom_remote_login_final_cleanup() {
+	wpcom_remote_login_remove_dom_node_classes( "wpcom_remote_login_msg" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_validate" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_js" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_iframe" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_styles" );
+}
+
+// Watch for messages back from the remote login
+window.addEventListener( "message", function( e ) {
+	if ( e.origin === "https://r-login.wordpress.com" ) {
+		var data = {};
+		try {
+			data = JSON.parse( e.data );
+		} catch( e ) {
+			wpcom_remote_login_final_cleanup();
+			return;
+		}
+
+		if ( data.msg === 'LOGIN' ) {
+			// Clean up the login check iframe
+			wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+
+			var id_regex = new RegExp( /^[0-9]+$/ );
+			var token_regex = new RegExp( /^.*|.*|.*$/ );
+			if (
+				token_regex.test( data.token )
+				&& id_regex.test( data.wpcomid )
+			) {
+				// We have everything we need to ask for a login
+				var script = document.createElement( "script" );
+				script.setAttribute( "id", "wpcom_remote_login_validate" );
+				script.src = '/remote-login.php?wpcom_remote_login=validate'
+					+ '&wpcomid=' + data.wpcomid
+					+ '&token=' + encodeURIComponent( data.token )
+					+ '&host=' + window.location.protocol
+						+ '//' + window.location.hostname;
+				document.body.appendChild( script );
+			}
+
+			return;
+		}
+
+		// Safari ITP, not logged in, so redirect
+		if ( data.msg === 'LOGIN-REDIRECT' ) {
+			window.location = 'https://wordpress.com/log-in?redirect_to=' + window.location.href;
+			return;
+		}
+
+		// Safari ITP, storage access failed, remove the request
+		if ( data.msg === 'LOGIN-REMOVE' ) {
+			var css_zap = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } @media screen and ( max-width: 782px ) { html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } }';
+			var style_zap = document.createElement( 'style' );
+			style_zap.type = 'text/css';
+			style_zap.appendChild( document.createTextNode( css_zap ) );
+			document.body.appendChild( style_zap );
+
+			var e = document.getElementById( 'wpcom_request_access_iframe' );
+			e.parentNode.removeChild( e );
+
+			document.cookie = 'wordpress_com_login_access=denied; path=/; max-age=31536000';
+
+			return;
+		}
+
+		// Safari ITP
+		if ( data.msg === 'REQUEST_ACCESS' ) {
+			console.log( 'request access: safari' );
+
+			// Check ITP iframe enable/disable knob
+			if ( wpcom_remote_login_extra_auth !== 'safari_itp_iframe' ) {
+				return;
+			}
+
+			// If we are in a "private window" there is no ITP.
+			var private_window = false;
+			try {
+				var opendb = window.openDatabase( null, null, null, null );
+			} catch( e ) {
+				private_window = true;
+			}
+
+			if ( private_window ) {
+				console.log( 'private window' );
+				return;
+			}
+
+			var iframe = document.createElement( 'iframe' );
+			iframe.id = 'wpcom_request_access_iframe';
+			iframe.setAttribute( 'scrolling', 'no' );
+			iframe.setAttribute( 'sandbox', 'allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-top-navigation-by-user-activation' );
+			iframe.src = 'https://r-login.wordpress.com/remote-login.php?wpcom_remote_login=request_access&origin=' + encodeURIComponent( data.origin ) + '&wpcomid=' + encodeURIComponent( data.wpcomid );
+
+			var css = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 46px !important; } * html body { margin-top: 46px !important; } @media screen and ( max-width: 660px ) { html { margin-top: 71px !important; } * html body { margin-top: 71px !important; } #wpcom_request_access_iframe { display: block; height: 71px !important; } } #wpcom_request_access_iframe { border: 0px; height: 46px; position: fixed; top: 0; left: 0; width: 100%; min-width: 100%; z-index: 99999; background: #23282d; } ';
+
+			var style = document.createElement( 'style' );
+			style.type = 'text/css';
+			style.id = 'wpcom_request_access_styles';
+			style.appendChild( document.createTextNode( css ) );
+			document.body.appendChild( style );
+
+			document.body.appendChild( iframe );
+		}
+
+		if ( data.msg === 'DONE' ) {
+			wpcom_remote_login_final_cleanup();
+		}
+	}
+}, false );
+
+// Inject the remote login iframe after the page has had a chance to load
+// more critical resources
+window.addEventListener( "DOMContentLoaded", function( e ) {
+	var iframe = document.createElement( "iframe" );
+	iframe.style.display = "none";
+	iframe.setAttribute( "scrolling", "no" );
+	iframe.setAttribute( "id", "wpcom_remote_login_key" );
+	iframe.src = "https://r-login.wordpress.com/remote-login.php"
+		+ "?wpcom_remote_login=key"
+		+ "&origin=aHR0cHM6Ly9heG9ub21ldHJpY2EuYmxvZw%3D%3D"
+		+ "&wpcomid=33425058"
+		+ "&time=1615684136";
+	document.body.appendChild( iframe );
+}, false );
+</script>
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//axonometrica.wordpress.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="axonométrica &raquo; Feed" href="https://axonometrica.blog/feed/" />
+<link rel="alternate" type="application/rss+xml" title="axonométrica &raquo; RSS de los comentarios" href="https://axonometrica.blog/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s2.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1612197847h&ver=5.7"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0-1' href='https://s0.wp.com/_static/??-eJydkOtOwzAMhV8I14TBpP1APEuSmuCRm3LZ1LfHXQEVmAriT5TjnM+xD54z2BQbxYahQ/bdcax4zjYFqIE9Td/UYGu9wRX2wbgu0lBx8lIIT+p2UINC09mPaHyyr+DZFF0mrG3y9IdGF6rikVrWM66n1Bu4wuN/WxTdOLr6C27TO3Y3PAw7HLm2zxpcR1fhzetLPWTdZkegkTV5CmLbwpaUjcmFagU5A/cA7UXAn6EvZczdyCql29Yl8uuTXbVytIsdLt9uzeUogWwuwaX4RcCz11y20EKSmZOrQ3Gt5Aw9hUe1V/fqoHb7w/ENbZ30BQ==?cssminify=yes' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify {
+	text-align:justify;
+}
+</style>
+<link rel='stylesheet' id='print-css-1-1' href='https://s2.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035h&cssminify=yes' type='text/css' media='print' />
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<link rel='stylesheet' id='all-css-4-1' href='https://s1.wp.com/_static/??-eJxti0EKgCAQAD+ULUaJl+gtJqbG6opr9P3o0CHqNAzMwFmEpdxcbpAOUfDwMTMU4iY2NLECB1Nj9g97y9zB/8Vko0GB5Oktn6kFlxxDGMEjrQbvYEmzVHIclNZy2i9lFDfR?cssminify=yes' type='text/css' media='all' />
+<script id='wpcom-actionbar-placeholder-js-extra'>
+var actionbardata = {"siteID":"33425058","siteName":"axonom\u00e9trica","siteURL":"https:\/\/axonometrica.blog","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/617036e6efd9cff1da314d1a472c334b?s=50&d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/structure","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Faxonometrica.blog%2F2020%2F12%2F31%2Ffelices-multitudes%2F&signup_flow=account&domain=axonometrica.blog","themeURL":"","xhrURL":"https:\/\/axonometrica.blog\/wp-admin\/admin-ajax.php","nonce":"bf2a5e26e4","isSingular":"","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"7cca736a7f\" \/>","referer":"https:\/\/axonometrica.blog\/","canFollow":"1","feedID":"102631538","statusMessage":"","customizeLink":"https:\/\/axonometrica.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Faxonometrica.wordpress.com%2F","i18n":{"view":"Ver sitio web","follow":"Seguir","following":"Siguiendo","edit":"Editar","login":"Acceder","signup":"Reg\u00edstrate","customize":"Personalizar","report":"Denunciar este contenido","themeInfo":"Obtener el tema: Structure","shortlink":"Copiar enlace corto","copied":"Copiado","followedText":"Las entradas nuevas de este sitio aparecer\u00e1n ahora en tu <a href=\"https:\/\/wordpress.com\/read\">Lector<\/a>","foldBar":"Contraer esta barra","unfoldBar":"Expandir esta barra","editSubs":"Gestionar las suscripciones","viewReader":"Ver sitio web en el Lector","viewReadPost":"View post in Reader","subscribe":"Suscr\u00edbeme","enterEmail":"Introduce tu email","followers":"\u00danete a otros 1.608 seguidores","alreadyUser":"\u00bfYa tienes una cuenta de WordPress.com? <a href=\"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Faxonometrica.blog%2F2020%2F12%2F31%2Ffelices-multitudes%2F&signup_flow=account&domain=axonometrica.blog\">Accede ahora<\/a>.","stats":"Estad\u00edsticas"}};
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJyFzsEKwjAMBuAXsiurMPEgPopsNaspa1qbBPXt7cCBnjzlkO9PfvsoxmcSILGRbcksCZjHAF3knf3dpjzhAkYZagMkBmnOm0Pyi16BVxjvCvX1GV1C+otMwlBHgW+8fZYbtE626GRZqnrRCusBhEJhxudFWqsptNg5nfqhd/uDOw4uvgHU+lGh'></script>
+<link rel='stylesheet' id='all-css-0-2' href='https://s0.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1530132353h&cssminify=yes' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://axonometrica.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel='shortlink' href='https://wp.me/2gfnQ' />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="axonométrica" />
+<meta property="og:description" content="representación de una idea referida a tres ejes ortogonales: la teoría, la práctica y la docencia de la arquitectura" />
+<meta property="og:url" content="https://axonometrica.blog/" />
+<meta property="og:site_name" content="axonométrica" />
+<meta property="og:image" content="https://secure.gravatar.com/blavatar/617036e6efd9cff1da314d1a472c334b?s=200&amp;ts=1615684136" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="og:locale" content="es_ES" />
+<meta name="twitter:creator" content="@miquelacasta" />
+<meta name="twitter:site" content="@miquelacasta" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/617036e6efd9cff1da314d1a472c334b?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/617036e6efd9cff1da314d1a472c334b?s=32" sizes="16x16" />
+<link rel="apple-touch-icon" href="https://secure.gravatar.com/blavatar/617036e6efd9cff1da314d1a472c334b?s=114" />
+<link rel='openid.server' href='https://axonometrica.blog/?openidserver=1' />
+<link rel='openid.delegate' href='https://axonometrica.blog/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://axonometrica.blog/osd.xml" title="axonométrica" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+<meta name="theme-color" content="#fcfcfc" />
+		<style id="wpcom-hotfix-masterbar-style">
+			@media screen and (min-width: 783px) {
+				#wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
+					margin-top: 5px;
+				}
+			}
+		</style>
+		<style type="text/css">
+.widget_twitter li {
+	word-wrap: break-word;
+}
+</style>
+<meta name="application-name" content="axonométrica" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="representación de una idea referida a tres ejes ortogonales: la teoría, la práctica y la docencia de la arquitectura" /><meta name="msapplication-task" content="name=Suscribirse;action-uri=https://axonometrica.blog/feed/;icon-uri=https://secure.gravatar.com/blavatar/617036e6efd9cff1da314d1a472c334b?s=16" /><meta name="msapplication-task" content="name=Registrar un blog gratuito;action-uri=http://wordpress.com/signup/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Ayuda de WordPress.com;action-uri=http://support.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Foros de WordPress.com;action-uri=http://forums.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="description" content="representación de una idea referida a tres ejes ortogonales: la teoría, la práctica y la docencia de la arquitectura" />
+	<style type="text/css">
+				#header h1 a, #header h1 a:visited {
+			background: url(https://axonometrica.files.wordpress.com/2012/06/cropped-423627_322793547771341_158877384162959_1021699_1435522558_n.jpg) no-repeat top;
+		}
+		
+				#header h1 a, #header h1 a:visited {
+			color: #ffffff !important;
+		}
+			</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #fcfcfc; }
+</style>
+	<style type="text/css" id="custom-colors-css">#wrap {
+	background: #fff;
+	border-style: solid;
+	border-width: 0 2px;
+}
+#footer {
+	color: rgba(255,255,255,0.4);
+	padding: 0 15px;
+}
+#searchbox,
+#footer,
+.footertop,
+.footerbottom {
+	color: rgba(255,255,255,0.4);
+}
+.ot-menu li li:hover, .ot-menu li li.sfHover,
+.ot-menu ul li a:hover ,
+.navbar ul ul :hover > a{
+	color: rgba(255,255,255,0.8);
+}
+#footerbg {
+	border-color: rgba(0,0,0, 0.2)
+}
+#footer { border-top-color: #000;}
+#footer { border-top-color: rgba( 0, 0, 0, 0.1 );}
+#wrap { background-color: #fff;}
+body { background-color: #fff;}
+body { background-color: rgba( 255, 255, 255, 0.3 );}
+.footerbottom a { color: #666;}
+body { background-color: #fcfcfc;}
+body { background-color: rgba( 252, 252, 252, 0.2 );}
+#wrap { border-color: #fcfcfc;}
+.ot-menu li li:hover, .ot-menu li li.sfHover,.reply a:hover,#commentform #submit:hover,#commentform #submit:active,.commentlist li .avatar,#searchbox, #footerbg, #footertop, #footertopbg, .headerright,.ot-menu li li:hover, .ot-menu li li.sfHover { background: #A9B0B3;}
+.ot-menu a:focus, .ot-menu a:hover, .ot-menu a:active,#sidebar_right h4, #sidebar_left h4,.postmeta,#content,#content #homepagetop h4, #homepagetop,#homepagetop .textbanner, #navbar,.navbar,.ot-menu .current_page_item a,.posttitle { border-color: #A9B0B3;}
+.ot-menu a:hover, .ot-menu a:active,#sidebar_right .widget ul li a:hover, #sidebar_left .widget ul li a:hover, #footer { color: #A9B0B3;}
+#homepagetop .featuredimage,.homepagecontent { background: ;}
+#homepagetop .featuredimage,.homepagecontent { background: rgba( 0, 0, 0, 0.1 );}
+#homepagetop .textbanner h3 a, #homepagetop .textbanner h3 a:visited, #sitename { color: ;}
+a:link,a:visited, #sidebar_right .widget ul li a, #sidebar_left .widget ul li a, .featuredimage .admin-tip a, .ot-menu a, .ot-menu a:visited { color: #404749;}
+.posttitle, .posttitle a, #content h3, #content h4, #content h3 a, #content h4 a,#content h5, #content h6,#content h5 a, #content h6 a { color: #20293F;}
+</style>
+<!-- Your Google Analytics Plugin is missing the tracking ID -->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+	var $j = jQuery.noConflict();
+
+	$j(document).ready(function() {
+		$j('ul.ot-menu').superfish();
+	});
+/* ]]> */
+</script>
+
+</head>
+
+<body class="home blog custom-background customizer-styles-applied highlander-enabled highlander-light custom-colors">
+
+<div id="wrap">
+		<div id="header">
+
+		<div class="headerleft">
+			<h1 id="title"><a href="https://axonometrica.blog/" title="Home"><span id="sitename">axonométrica</span></a></h1>
+		</div>
+
+			</div>
+
+	<div id="ot-menu"><ul class="ot-menu">
+<li class="current_page_item"><a href="https://axonometrica.blog/">Inicio</a></li><li class="page_item page-item-2"><a href="https://axonometrica.blog/about/">About</a></li>
+</ul></div>
+
+	<div style="clear:both;"></div>
+
+<div id="content">
+
+		<div id="homepagetop">
+
+		<div class="textbanner">
+						<h3><a href="https://axonometrica.blog/2020/12/31/felices-multitudes/" rel="bookmark">Felices Multitudes</a></h3>
+        </div>
+
+        <div class="featuredimage">
+
+			
+				<a href="https://axonometrica.blog/2020/12/31/felices-multitudes/" rel="bookmark"><img width="620" height="380" src="https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg?w=620&amp;h=380&amp;crop=1" class="attachment-structure-medium size-structure-medium wp-post-image" alt="" loading="lazy" srcset="https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg?w=620&amp;h=380&amp;crop=1 620w, https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg?w=150&amp;h=92&amp;crop=1 150w, https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg?w=300&amp;h=184&amp;crop=1 300w, https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg 640w" sizes="(max-width: 620px) 100vw, 620px" data-attachment-id="1674" data-permalink="https://axonometrica.blog/2020/12/31/felices-multitudes/axonometrica-0287-feliz-2021/" data-orig-file="https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg" data-orig-size="640,392" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="axonometrica 0287 FELIZ 2021" data-image-description="" data-medium-file="https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg?w=300" data-large-file="https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg?w=640" /></a>
+
+                                </div>
+
+        <div class="homewidgets">
+
+            <ul class="listwidgets">
+            <li id="wp_tag_cloud-2" class="widget wp_widget_tag_cloud"><h4 class="widget-title">Etiquetas</h4><div style="overflow:hidden"><a href="https://axonometrica.blog/tag/alberto-campo-baeza/" class="tag-cloud-link tag-link-5026220 tag-link-position-1" style="font-size: 10.058823529412pt;" aria-label="Alberto Campo Baeza (4 elementos)">Alberto Campo Baeza</a>
+<a href="https://axonometrica.blog/tag/andre-comte-sponville/" class="tag-cloud-link tag-link-670185 tag-link-position-2" style="font-size: 14.176470588235pt;" aria-label="André Comte-Sponville (7 elementos)">André Comte-Sponville</a>
+<a href="https://axonometrica.blog/tag/archigram/" class="tag-cloud-link tag-link-1292092 tag-link-position-3" style="font-size: 10.058823529412pt;" aria-label="Archigram (4 elementos)">Archigram</a>
+<a href="https://axonometrica.blog/tag/arthur-drexler/" class="tag-cloud-link tag-link-81293458 tag-link-position-4" style="font-size: 8pt;" aria-label="Arthur Drexler (3 elementos)">Arthur Drexler</a>
+<a href="https://axonometrica.blog/tag/belleza/" class="tag-cloud-link tag-link-56357 tag-link-position-5" style="font-size: 13.147058823529pt;" aria-label="Belleza (6 elementos)">Belleza</a>
+<a href="https://axonometrica.blog/tag/byung-chul-han/" class="tag-cloud-link tag-link-58503457 tag-link-position-6" style="font-size: 17.882352941176pt;" aria-label="Byung-Chul Han (11 elementos)">Byung-Chul Han</a>
+<a href="https://axonometrica.blog/tag/carlos-pereda/" class="tag-cloud-link tag-link-28584406 tag-link-position-7" style="font-size: 16.235294117647pt;" aria-label="Carlos Pereda (9 elementos)">Carlos Pereda</a>
+<a href="https://axonometrica.blog/tag/ciencias-de-la-complejidad/" class="tag-cloud-link tag-link-14674448 tag-link-position-8" style="font-size: 10.058823529412pt;" aria-label="Ciencias de la complejidad (4 elementos)">Ciencias de la complejidad</a>
+<a href="https://axonometrica.blog/tag/ciudad/" class="tag-cloud-link tag-link-38556 tag-link-position-9" style="font-size: 11.705882352941pt;" aria-label="ciudad (5 elementos)">ciudad</a>
+<a href="https://axonometrica.blog/tag/complejidad/" class="tag-cloud-link tag-link-374952 tag-link-position-10" style="font-size: 19.323529411765pt;" aria-label="complejidad (13 elementos)">complejidad</a>
+<a href="https://axonometrica.blog/tag/conmociones/" class="tag-cloud-link tag-link-60163115 tag-link-position-11" style="font-size: 8pt;" aria-label="conmociones (3 elementos)">conmociones</a>
+<a href="https://axonometrica.blog/tag/darcy-thompson/" class="tag-cloud-link tag-link-6866417 tag-link-position-12" style="font-size: 13.147058823529pt;" aria-label="D&#039;Arcy Thompson (6 elementos)">D&#039;Arcy Thompson</a>
+<a href="https://axonometrica.blog/tag/edgar-morin/" class="tag-cloud-link tag-link-933684 tag-link-position-13" style="font-size: 14.176470588235pt;" aria-label="Edgar Morín (7 elementos)">Edgar Morín</a>
+<a href="https://axonometrica.blog/tag/frank-lloyd-wright/" class="tag-cloud-link tag-link-490092 tag-link-position-14" style="font-size: 11.705882352941pt;" aria-label="Frank Lloyd Wright (5 elementos)">Frank Lloyd Wright</a>
+<a href="https://axonometrica.blog/tag/felix-guattari/" class="tag-cloud-link tag-link-254090 tag-link-position-15" style="font-size: 8pt;" aria-label="Félix Guattari (3 elementos)">Félix Guattari</a>
+<a href="https://axonometrica.blog/tag/ignasi-sola-morales/" class="tag-cloud-link tag-link-24930808 tag-link-position-16" style="font-size: 13.147058823529pt;" aria-label="Ignasi Solà-Morales (6 elementos)">Ignasi Solà-Morales</a>
+<a href="https://axonometrica.blog/tag/ilya-prigogine/" class="tag-cloud-link tag-link-1134377 tag-link-position-17" style="font-size: 15.205882352941pt;" aria-label="Ilya Prigogine (8 elementos)">Ilya Prigogine</a>
+<a href="https://axonometrica.blog/tag/isabelle-stengers/" class="tag-cloud-link tag-link-21320269 tag-link-position-18" style="font-size: 13.147058823529pt;" aria-label="Isabelle Stengers (6 elementos)">Isabelle Stengers</a>
+<a href="https://axonometrica.blog/tag/inaki-abalos/" class="tag-cloud-link tag-link-3895954 tag-link-position-19" style="font-size: 10.058823529412pt;" aria-label="Iñaki Ábalos (4 elementos)">Iñaki Ábalos</a>
+<a href="https://axonometrica.blog/tag/jane-jacobs/" class="tag-cloud-link tag-link-234410 tag-link-position-20" style="font-size: 14.176470588235pt;" aria-label="Jane Jacobs (7 elementos)">Jane Jacobs</a>
+<a href="https://axonometrica.blog/tag/jaume-prat-ortells/" class="tag-cloud-link tag-link-115432802 tag-link-position-21" style="font-size: 10.058823529412pt;" aria-label="Jaume Prat-Ortells (4 elementos)">Jaume Prat-Ortells</a>
+<a href="https://axonometrica.blog/tag/javier-creus/" class="tag-cloud-link tag-link-137288731 tag-link-position-22" style="font-size: 10.058823529412pt;" aria-label="Javier Creus (4 elementos)">Javier Creus</a>
+<a href="https://axonometrica.blog/tag/joaquim-espanol/" class="tag-cloud-link tag-link-47924031 tag-link-position-23" style="font-size: 8pt;" aria-label="Joaquím Español (3 elementos)">Joaquím Español</a>
+<a href="https://axonometrica.blog/tag/jose-luis-mateo/" class="tag-cloud-link tag-link-19226700 tag-link-position-24" style="font-size: 8pt;" aria-label="José Luís Mateo (3 elementos)">José Luís Mateo</a>
+<a href="https://axonometrica.blog/tag/le-corbusier/" class="tag-cloud-link tag-link-698375 tag-link-position-25" style="font-size: 17.882352941176pt;" aria-label="Le Corbusier (11 elementos)">Le Corbusier</a>
+<a href="https://axonometrica.blog/tag/luis-moreno-mansilla/" class="tag-cloud-link tag-link-16723863 tag-link-position-26" style="font-size: 10.058823529412pt;" aria-label="Luís Moreno Mansilla (4 elementos)">Luís Moreno Mansilla</a>
+<a href="https://axonometrica.blog/tag/manuel-gausa/" class="tag-cloud-link tag-link-19020649 tag-link-position-27" style="font-size: 13.147058823529pt;" aria-label="Manuel Gausa (6 elementos)">Manuel Gausa</a>
+<a href="https://axonometrica.blog/tag/marta-garcia-orte/" class="tag-cloud-link tag-link-128816102 tag-link-position-28" style="font-size: 17.882352941176pt;" aria-label="Marta García-Orte (11 elementos)">Marta García-Orte</a>
+<a href="https://axonometrica.blog/tag/matila-ghyka/" class="tag-cloud-link tag-link-21397936 tag-link-position-29" style="font-size: 13.147058823529pt;" aria-label="Matila Ghyka (6 elementos)">Matila Ghyka</a>
+<a href="https://axonometrica.blog/tag/mies-van-der-rohe/" class="tag-cloud-link tag-link-185346 tag-link-position-30" style="font-size: 11.705882352941pt;" aria-label="Mies van der Rohe (5 elementos)">Mies van der Rohe</a>
+<a href="https://axonometrica.blog/tag/peter-buchanan/" class="tag-cloud-link tag-link-30575237 tag-link-position-31" style="font-size: 11.705882352941pt;" aria-label="Peter Buchanan (5 elementos)">Peter Buchanan</a>
+<a href="https://axonometrica.blog/tag/peter-cook/" class="tag-cloud-link tag-link-194323 tag-link-position-32" style="font-size: 8pt;" aria-label="Peter Cook (3 elementos)">Peter Cook</a>
+<a href="https://axonometrica.blog/tag/peter-eisenman/" class="tag-cloud-link tag-link-4255674 tag-link-position-33" style="font-size: 22pt;" aria-label="Peter Eisenman (18 elementos)">Peter Eisenman</a>
+<a href="https://axonometrica.blog/tag/relacional/" class="tag-cloud-link tag-link-311508 tag-link-position-34" style="font-size: 8pt;" aria-label="relacional (3 elementos)">relacional</a>
+<a href="https://axonometrica.blog/tag/rem-koolhaas/" class="tag-cloud-link tag-link-245686 tag-link-position-35" style="font-size: 14.176470588235pt;" aria-label="Rem Koolhaas (7 elementos)">Rem Koolhaas</a>
+<a href="https://axonometrica.blog/tag/richard-sennett/" class="tag-cloud-link tag-link-1843539 tag-link-position-36" style="font-size: 14.176470588235pt;" aria-label="Richard Sennett (7 elementos)">Richard Sennett</a>
+<a href="https://axonometrica.blog/tag/robert-venturi/" class="tag-cloud-link tag-link-2740423 tag-link-position-37" style="font-size: 19.323529411765pt;" aria-label="Robert Venturi (13 elementos)">Robert Venturi</a>
+<a href="https://axonometrica.blog/tag/stan-allen/" class="tag-cloud-link tag-link-2369245 tag-link-position-38" style="font-size: 8pt;" aria-label="Stan Allen (3 elementos)">Stan Allen</a>
+<a href="https://axonometrica.blog/tag/teoria-critica/" class="tag-cloud-link tag-link-268478 tag-link-position-39" style="font-size: 8pt;" aria-label="Teoria crítica (3 elementos)">Teoria crítica</a>
+<a href="https://axonometrica.blog/tag/tiempo/" class="tag-cloud-link tag-link-87837 tag-link-position-40" style="font-size: 11.705882352941pt;" aria-label="Tiempo (5 elementos)">Tiempo</a>
+<a href="https://axonometrica.blog/tag/urbanismo/" class="tag-cloud-link tag-link-51424 tag-link-position-41" style="font-size: 13.147058823529pt;" aria-label="Urbanismo (6 elementos)">Urbanismo</a>
+<a href="https://axonometrica.blog/tag/utopia/" class="tag-cloud-link tag-link-42896 tag-link-position-42" style="font-size: 8pt;" aria-label="Utopía (3 elementos)">Utopía</a>
+<a href="https://axonometrica.blog/tag/vacio/" class="tag-cloud-link tag-link-13507 tag-link-position-43" style="font-size: 8pt;" aria-label="vacío (3 elementos)">vacío</a>
+<a href="https://axonometrica.blog/tag/verano/" class="tag-cloud-link tag-link-168354 tag-link-position-44" style="font-size: 11.705882352941pt;" aria-label="verano (5 elementos)">verano</a>
+<a href="https://axonometrica.blog/tag/zygmunt-bauman/" class="tag-cloud-link tag-link-1414385 tag-link-position-45" style="font-size: 8pt;" aria-label="Zygmunt Bauman (3 elementos)">Zygmunt Bauman</a></div></li>
+            </ul>
+
+        </div>
+
+    </div>
+    
+    <div id="homepage">
+
+    	
+<div id="sidebar_left">
+
+	<ul>
+		<li id="gravatar-2" class="widget widget_gravatar"><p><img alt='' src='https://2.gravatar.com/avatar/e1167f2423ece7cf062e58023835f7e4?s=64&#038;d=identicon&#038;r=G' class='avatar avatar-64 grav-widget-none' height='64' width='64' /></p>
+<p>axonométrica · representación de una idea referida a tres ejes ortogonales: la teoría, la práctica y la docencia de la arquitectura. El cuarto eje es el tiempo que todo lo envuelve.<br />
+Un post cada 15 días es suficiente, los lunes a las 7.30am<br />
+Un blog de Miquel Lacasta. </p>
+</li>
+<li id="widget_contact_info-2" class="widget widget_contact_info"><h4>Miquel Lacasta Architect Ph.D</h4><div itemscope itemtype="http://schema.org/LocalBusiness"><div class="confit-address" itemscope itemtype="http://schema.org/PostalAddress" itemprop="address"><a href="https://maps.google.com/maps?z=16&#038;q=lu%C3%ADs%2Bantunez%2Bn%C2%BA6%2B08006%2Bbarcelona" target="_blank" rel="noopener noreferrer">Luís Antunez nº6<br/>08006 Barcelona</a></div><div class="confit-phone"><span itemprop="telephone">+34 638 762 150</span></div><div class="confit-hours" itemprop="openingHours">mlacasta@archikubik.com</div></div></li>
+<li id="media_gallery-3" class="widget widget_media_gallery"><h4>IBSN BARE CODE</h4><div class="tiled-gallery type-rectangular tiled-gallery-unresized" data-original-width="640" data-carousel-extra='{&quot;blog_id&quot;:33425058,&quot;permalink&quot;:&quot;https:\/\/axonometrica.blog\/2020\/12\/31\/felices-multitudes\/&quot;,&quot;likes_blog_id&quot;:33425058}' itemscope itemtype="http://schema.org/ImageGallery" > <div class="gallery-row" style="width: 640px; height: 339px;" data-original-width="640" data-original-height="339" > <div class="gallery-group images-1" style="width: 640px; height: 339px;" data-original-width="640" data-original-height="339" > <div class="tiled-gallery-item tiled-gallery-item-large" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"> <a href="https://axonometrica.blog/1103-19-65-00-ibsn-bare-code/" border="0" itemprop="url"> <meta itemprop="width" content="636"> <meta itemprop="height" content="335"> <img data-attachment-id="993" data-orig-file="https://axonometrica.files.wordpress.com/2015/03/1103-19-65-00-ibsn-bare-code.jpg" data-orig-size="190,100" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="1103-19-65-00 IBSN BARE CODE" data-image-description="" data-medium-file="https://axonometrica.files.wordpress.com/2015/03/1103-19-65-00-ibsn-bare-code.jpg?w=190" data-large-file="https://axonometrica.files.wordpress.com/2015/03/1103-19-65-00-ibsn-bare-code.jpg?w=190" src="https://axonometrica.files.wordpress.com/2015/03/1103-19-65-00-ibsn-bare-code.jpg?w=636&#038;h=335" width="636" height="335" data-original-width="636" data-original-height="335" itemprop="http://schema.org/image" title="1103-19-65-00 IBSN BARE CODE" alt="1103-19-65-00 IBSN BARE CODE" style="width: 636px; height: 335px;" /> </a> </div> </div> <!-- close group --> </div> <!-- close row --> </div></li>
+	</ul>
+
+</div><!-- end #sidebar_left -->
+        <div class="homepagemid">
+
+						
+			
+			<div id="post-1672" class="post-1672 post type-post status-publish format-standard has-post-thumbnail hentry category-teoria-critica-3 tag-feliz-2021 tag-juan-genoves">
+
+            	<div class="homepagethumb">
+                	                	<a href="https://axonometrica.blog/2020/12/31/felices-multitudes/" rel="bookmark"><img width="440" height="240" src="https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg?w=440&amp;h=240&amp;crop=1" class="attachment-structure-small size-structure-small wp-post-image" alt="" loading="lazy" srcset="https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg?w=440&amp;h=240&amp;crop=1 440w, https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg?w=150&amp;h=82&amp;crop=1 150w, https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg?w=300&amp;h=164&amp;crop=1 300w" sizes="(max-width: 440px) 100vw, 440px" data-attachment-id="1674" data-permalink="https://axonometrica.blog/2020/12/31/felices-multitudes/axonometrica-0287-feliz-2021/" data-orig-file="https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg" data-orig-size="640,392" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="axonometrica 0287 FELIZ 2021" data-image-description="" data-medium-file="https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg?w=300" data-large-file="https://axonometrica.files.wordpress.com/2020/12/axonometrica-0287-feliz-2021.jpg?w=640" /></a>
+                                    </div>
+
+            	<div class="homepagecontent">
+
+                                        	<h4><a href="https://axonometrica.blog/2020/12/31/felices-multitudes/" rel="bookmark">Felices Multitudes</a></h4>
+                	
+                	<p>Felices Multitudes Para el 2021 os deseo felices encuentros, abrazos, besos, roces, caricias y achuchones, con los cercanos, los lejanos y los desconocidos. Con los mayores y con los pequeños. Con los grandes, los medianos y los chiquitos. Con los ricos, con los pobres, con los generosos y con los mezquinos. Y, sobre todo, el&nbsp;&hellip; <a href="https://axonometrica.blog/2020/12/31/felices-multitudes/">Sigue leyendo <span class="meta-nav">&rarr;</span></a></p>
+
+                	<div class="postmeta">
+                		<p>
+	                		                			<span class="cat-links">Filed under <a href="https://axonometrica.blog/category/teoria-critica-3/" rel="category tag">teoría crítica</a></span> <span class="tags-links">&middot; Tagged with <a href="https://axonometrica.blog/tag/feliz-2021/" rel="tag">feliz 2021</a>, <a href="https://axonometrica.blog/tag/juan-genoves/" rel="tag">Juan Genovés</a></span>                		</p>
+                	</div>
+
+                </div>
+
+            </div>
+
+            
+			<div id="post-1666" class="post-1666 post type-post status-publish format-standard has-post-thumbnail hentry category-contribuciones tag-antonin-artaud tag-bruno-latour tag-jose-maria-torres-nadal tag-paul-b-preciado tag-rachel-carson tag-rosi-braidotti">
+
+            	<div class="homepagethumb">
+                	                	<a href="https://axonometrica.blog/2020/12/14/contribuciones-jose-maria-torres-nadal-la-vida-el-espacio-publico-la-pandemia-y-la-arquitectura/" rel="bookmark"><img width="440" height="240" src="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0286-contribuciones-00s-jose-maria-torrres-nadal-la-vida-el-espacio-publico-la-pandemia-y-la-arquitectura-ok.jpg?w=440&amp;h=240&amp;crop=1" class="attachment-structure-small size-structure-small wp-post-image" alt="" loading="lazy" srcset="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0286-contribuciones-00s-jose-maria-torrres-nadal-la-vida-el-espacio-publico-la-pandemia-y-la-arquitectura-ok.jpg?w=440&amp;h=240&amp;crop=1 440w, https://axonometrica.files.wordpress.com/2020/11/axonometrica-0286-contribuciones-00s-jose-maria-torrres-nadal-la-vida-el-espacio-publico-la-pandemia-y-la-arquitectura-ok.jpg?w=150&amp;h=82&amp;crop=1 150w, https://axonometrica.files.wordpress.com/2020/11/axonometrica-0286-contribuciones-00s-jose-maria-torrres-nadal-la-vida-el-espacio-publico-la-pandemia-y-la-arquitectura-ok.jpg?w=300&amp;h=164&amp;crop=1 300w" sizes="(max-width: 440px) 100vw, 440px" data-attachment-id="1668" data-permalink="https://axonometrica.blog/2020/12/14/contribuciones-jose-maria-torres-nadal-la-vida-el-espacio-publico-la-pandemia-y-la-arquitectura/axonometrica-0286-contribuciones-00s-jose-maria-torrres-nadal-la-vida-el-espacio-publico-la-pandemia-y-la-arquitectura-ok/" data-orig-file="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0286-contribuciones-00s-jose-maria-torrres-nadal-la-vida-el-espacio-publico-la-pandemia-y-la-arquitectura-ok.jpg" data-orig-size="640,392" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="axonometrica 0286 CONTRIBUCIONES 00S JOSE MARIA TORRRES NADAL LA VIDA EL ESPACIO PUBLICO LA PANDEMIA Y LA ARQUITECTURA ok" data-image-description="" data-medium-file="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0286-contribuciones-00s-jose-maria-torrres-nadal-la-vida-el-espacio-publico-la-pandemia-y-la-arquitectura-ok.jpg?w=300" data-large-file="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0286-contribuciones-00s-jose-maria-torrres-nadal-la-vida-el-espacio-publico-la-pandemia-y-la-arquitectura-ok.jpg?w=640" /></a>
+                                    </div>
+
+            	<div class="homepagecontent">
+
+                                        	<h4><a href="https://axonometrica.blog/2020/12/14/contribuciones-jose-maria-torres-nadal-la-vida-el-espacio-publico-la-pandemia-y-la-arquitectura/" rel="bookmark">Contribuciones: José María Torres Nadal. La Vida, el Espacio Público, la Pandemia y la&nbsp;Arquitectura</a></h4>
+                	
+                	<p>La Vida, el Espacio Público, la Pandemia y la Arquitectura Son muchas las voces que están tratando de entender y repensar, en las actuales condiciones de pandemia, la idea de lo público.  Por evidentes afinidades, y también por el papel que han jugado en el diseño y la construcción del espacio público, gran parte de&nbsp;&hellip; <a href="https://axonometrica.blog/2020/12/14/contribuciones-jose-maria-torres-nadal-la-vida-el-espacio-publico-la-pandemia-y-la-arquitectura/">Sigue leyendo <span class="meta-nav">&rarr;</span></a></p>
+
+                	<div class="postmeta">
+                		<p>
+	                		                			<span class="cat-links">Filed under <a href="https://axonometrica.blog/category/contribuciones/" rel="category tag">contribuciones</a></span> <span class="tags-links">&middot; Tagged with <a href="https://axonometrica.blog/tag/antonin-artaud/" rel="tag">Antonin Artaud</a>, <a href="https://axonometrica.blog/tag/bruno-latour/" rel="tag">Bruno Latour</a>, <a href="https://axonometrica.blog/tag/jose-maria-torres-nadal/" rel="tag">José María Torres Nadal</a>, <a href="https://axonometrica.blog/tag/paul-b-preciado/" rel="tag">Paul B. Preciado</a>, <a href="https://axonometrica.blog/tag/rachel-carson/" rel="tag">Rachel Carson</a>, <a href="https://axonometrica.blog/tag/rosi-braidotti/" rel="tag">Rosi Braidotti</a></span>                		</p>
+                	</div>
+
+                </div>
+
+            </div>
+
+            
+			<div id="post-1656" class="post-1656 post type-post status-publish format-standard has-post-thumbnail hentry category-teoria-critica-3 tag-gilles-ivain tag-internacional-situacionista tag-urbanismo-tactico">
+
+            	<div class="homepagethumb">
+                	                	<a href="https://axonometrica.blog/2020/11/30/1656/" rel="bookmark"><img width="440" height="240" src="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0285-tacticas-practicas.jpg?w=440&amp;h=240&amp;crop=1" class="attachment-structure-small size-structure-small wp-post-image" alt="" loading="lazy" srcset="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0285-tacticas-practicas.jpg?w=440&amp;h=240&amp;crop=1 440w, https://axonometrica.files.wordpress.com/2020/11/axonometrica-0285-tacticas-practicas.jpg?w=150&amp;h=82&amp;crop=1 150w, https://axonometrica.files.wordpress.com/2020/11/axonometrica-0285-tacticas-practicas.jpg?w=300&amp;h=164&amp;crop=1 300w" sizes="(max-width: 440px) 100vw, 440px" data-attachment-id="1658" data-permalink="https://axonometrica.blog/2020/11/30/1656/axonometrica-0285-tacticas-practicas/" data-orig-file="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0285-tacticas-practicas.jpg" data-orig-size="640,392" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="axonometrica 0285 TACTICAS PRACTICAS" data-image-description="" data-medium-file="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0285-tacticas-practicas.jpg?w=300" data-large-file="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0285-tacticas-practicas.jpg?w=640" /></a>
+                                    </div>
+
+            	<div class="homepagecontent">
+
+                                        	<h4><a href="https://axonometrica.blog/2020/11/30/1656/" rel="bookmark">Tácticas Prácticas</a></h4>
+                	
+                	<p>Tácticas Prácticas La arquitectura es el modo más sencillo de articular el tiempo y el espacio, de modular la realidad, de hacer soñar. No se trata tan solo de articulaciones y modulaciones plásticas, expresiones de una belleza pasajera, sino de una modulación influyente, que se inscribe en el eterno arco de los deseos humanos y&nbsp;&hellip; <a href="https://axonometrica.blog/2020/11/30/1656/">Sigue leyendo <span class="meta-nav">&rarr;</span></a></p>
+
+                	<div class="postmeta">
+                		<p>
+	                		                			<span class="cat-links">Filed under <a href="https://axonometrica.blog/category/teoria-critica-3/" rel="category tag">teoría crítica</a></span> <span class="tags-links">&middot; Tagged with <a href="https://axonometrica.blog/tag/gilles-ivain/" rel="tag">Gilles Ivain</a>, <a href="https://axonometrica.blog/tag/internacional-situacionista/" rel="tag">Internacional Situacionista</a>, <a href="https://axonometrica.blog/tag/urbanismo-tactico/" rel="tag">Urbanismo Táctico</a></span>                		</p>
+                	</div>
+
+                </div>
+
+            </div>
+
+            
+			<div id="post-1652" class="post-1652 post type-post status-publish format-standard has-post-thumbnail hentry category-english-texts category-teoremas tag-architects-drawings tag-alvaro-siza tag-kendra-schank-smith">
+
+            	<div class="homepagethumb">
+                	                	<a href="https://axonometrica.blog/2020/11/16/teorema-010-process-sketch-galician-center-for-contemporary-art-santiago-de-compostela-spain-alvaro-siza/" rel="bookmark"><img width="440" height="240" src="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0284-teorema-10_alvaro-siza.jpg?w=440&amp;h=240&amp;crop=1" class="attachment-structure-small size-structure-small wp-post-image" alt="" loading="lazy" srcset="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0284-teorema-10_alvaro-siza.jpg?w=440&amp;h=240&amp;crop=1 440w, https://axonometrica.files.wordpress.com/2020/11/axonometrica-0284-teorema-10_alvaro-siza.jpg?w=150&amp;h=82&amp;crop=1 150w, https://axonometrica.files.wordpress.com/2020/11/axonometrica-0284-teorema-10_alvaro-siza.jpg?w=300&amp;h=164&amp;crop=1 300w" sizes="(max-width: 440px) 100vw, 440px" data-attachment-id="1654" data-permalink="https://axonometrica.blog/2020/11/16/teorema-010-process-sketch-galician-center-for-contemporary-art-santiago-de-compostela-spain-alvaro-siza/axonometrica-0284-teorema-10_alvaro-siza/" data-orig-file="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0284-teorema-10_alvaro-siza.jpg" data-orig-size="640,392" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="axonometrica 0284 TEOREMA 10_ALVARO SIZA" data-image-description="" data-medium-file="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0284-teorema-10_alvaro-siza.jpg?w=300" data-large-file="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0284-teorema-10_alvaro-siza.jpg?w=640" /></a>
+                                    </div>
+
+            	<div class="homepagecontent">
+
+                                        	<h4><a href="https://axonometrica.blog/2020/11/16/teorema-010-process-sketch-galician-center-for-contemporary-art-santiago-de-compostela-spain-alvaro-siza/" rel="bookmark">Teorema 010: Process sketch, Galician Center for Contemporary Art, Santiago de Compostela, Spain, Alvaro&nbsp;Siza.</a></h4>
+                	
+                	<p>Teorema 010: Process sketch, Galician Center for Contemporary Art, Santiago de Compostela, Spain, Alvaro Siza. This sketch for the Centro Galego Arte Contemporanea (CGAC – Galician Centre for Contemporary Art) reflects Siza’s concern for the exterior massing and façade articulation of this building. He writes that the project represents a study of volumes, materials and&nbsp;&hellip; <a href="https://axonometrica.blog/2020/11/16/teorema-010-process-sketch-galician-center-for-contemporary-art-santiago-de-compostela-spain-alvaro-siza/">Sigue leyendo <span class="meta-nav">&rarr;</span></a></p>
+
+                	<div class="postmeta">
+                		<p>
+	                		                			<span class="cat-links">Filed under <a href="https://axonometrica.blog/category/english-texts/" rel="category tag">english texts</a>, <a href="https://axonometrica.blog/category/teoremas/" rel="category tag">teoremas</a></span> <span class="tags-links">&middot; Tagged with <a href="https://axonometrica.blog/tag/architects-drawings/" rel="tag">Architects Drawings</a>, <a href="https://axonometrica.blog/tag/alvaro-siza/" rel="tag">Álvaro Siza</a>, <a href="https://axonometrica.blog/tag/kendra-schank-smith/" rel="tag">Kendra Schank Smith</a></span>                		</p>
+                	</div>
+
+                </div>
+
+            </div>
+
+            
+			<div id="post-1644" class="post-1644 post type-post status-publish format-standard has-post-thumbnail hentry category-archikubik-toolkit category-metateoria tag-alexandre-labasse tag-issablle-delannoy tag-rebbeca-solnit tag-richard-sennett">
+
+            	<div class="homepagethumb">
+                	                	<a href="https://axonometrica.blog/2020/11/02/y-manana/" rel="bookmark"><img width="440" height="240" src="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0283-archikubik-toolkit-c2bfy-manana.jpg?w=440&amp;h=240&amp;crop=1" class="attachment-structure-small size-structure-small wp-post-image" alt="" loading="lazy" srcset="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0283-archikubik-toolkit-c2bfy-manana.jpg?w=440&amp;h=240&amp;crop=1 440w, https://axonometrica.files.wordpress.com/2020/11/axonometrica-0283-archikubik-toolkit-c2bfy-manana.jpg?w=150&amp;h=82&amp;crop=1 150w, https://axonometrica.files.wordpress.com/2020/11/axonometrica-0283-archikubik-toolkit-c2bfy-manana.jpg?w=300&amp;h=164&amp;crop=1 300w" sizes="(max-width: 440px) 100vw, 440px" data-attachment-id="1646" data-permalink="https://axonometrica.blog/2020/11/02/y-manana/axonometrica-0283-archikubik-toolkit-y-manana/" data-orig-file="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0283-archikubik-toolkit-c2bfy-manana.jpg" data-orig-size="640,392" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="axonometrica 0283 ARCHIKUBIK TOOLKIT ¿Y MAÑANA?" data-image-description="" data-medium-file="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0283-archikubik-toolkit-c2bfy-manana.jpg?w=300" data-large-file="https://axonometrica.files.wordpress.com/2020/11/axonometrica-0283-archikubik-toolkit-c2bfy-manana.jpg?w=640" /></a>
+                                    </div>
+
+            	<div class="homepagecontent">
+
+                                        	<h4><a href="https://axonometrica.blog/2020/11/02/y-manana/" rel="bookmark">¿Y Mañana?</a></h4>
+                	
+                	<p>¿Y Mañana? Nota: este texto surge a partir de la invitación, en plena primera ola de la pandemia del Covid19, por parte del Pavillon de L’Arsenal a todos aquellos arquitectos y urbanistas que estuvieran interesados en expresar su posicionamiento acerca del futuro que a todas luces ha quedado alterado. Bajo el marco de una pregunta muy explicita Et&nbsp;&hellip; <a href="https://axonometrica.blog/2020/11/02/y-manana/">Sigue leyendo <span class="meta-nav">&rarr;</span></a></p>
+
+                	<div class="postmeta">
+                		<p>
+	                		                			<span class="cat-links">Filed under <a href="https://axonometrica.blog/category/archikubik-toolkit/" rel="category tag">archikubik toolkit</a>, <a href="https://axonometrica.blog/category/metateoria/" rel="category tag">metateoría</a></span> <span class="tags-links">&middot; Tagged with <a href="https://axonometrica.blog/tag/alexandre-labasse/" rel="tag">Alexandre Labasse</a>, <a href="https://axonometrica.blog/tag/issablle-delannoy/" rel="tag">Issablle Delannoy</a>, <a href="https://axonometrica.blog/tag/rebbeca-solnit/" rel="tag">Rebbeca Solnit</a>, <a href="https://axonometrica.blog/tag/richard-sennett/" rel="tag">Richard Sennett</a></span>                		</p>
+                	</div>
+
+                </div>
+
+            </div>
+
+            
+			<div id="post-1639" class="post-1639 post type-post status-publish format-standard has-post-thumbnail hentry category-teoria-critica-3 tag-urbanismo tag-usos-ciudadanos tag-william-j-mitchell">
+
+            	<div class="homepagethumb">
+                	                	<a href="https://axonometrica.blog/2020/10/19/urbanismo-de-usos-urbanismo-de-tubos/" rel="bookmark"><img width="440" height="240" src="https://axonometrica.files.wordpress.com/2020/10/axonometrica-0282-urbanismo-de-tubos-urbanismo-de-usos.jpg?w=440&amp;h=240&amp;crop=1" class="attachment-structure-small size-structure-small wp-post-image" alt="" loading="lazy" srcset="https://axonometrica.files.wordpress.com/2020/10/axonometrica-0282-urbanismo-de-tubos-urbanismo-de-usos.jpg?w=440&amp;h=240&amp;crop=1 440w, https://axonometrica.files.wordpress.com/2020/10/axonometrica-0282-urbanismo-de-tubos-urbanismo-de-usos.jpg?w=150&amp;h=82&amp;crop=1 150w, https://axonometrica.files.wordpress.com/2020/10/axonometrica-0282-urbanismo-de-tubos-urbanismo-de-usos.jpg?w=300&amp;h=164&amp;crop=1 300w" sizes="(max-width: 440px) 100vw, 440px" data-attachment-id="1643" data-permalink="https://axonometrica.blog/2020/10/19/urbanismo-de-usos-urbanismo-de-tubos/axonometrica-0282-urbanismo-de-tubos-urbanismo-de-usos/" data-orig-file="https://axonometrica.files.wordpress.com/2020/10/axonometrica-0282-urbanismo-de-tubos-urbanismo-de-usos.jpg" data-orig-size="640,392" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="axonometrica 0282 URBANISMO DE TUBOS URBANISMO DE USOS" data-image-description="" data-medium-file="https://axonometrica.files.wordpress.com/2020/10/axonometrica-0282-urbanismo-de-tubos-urbanismo-de-usos.jpg?w=300" data-large-file="https://axonometrica.files.wordpress.com/2020/10/axonometrica-0282-urbanismo-de-tubos-urbanismo-de-usos.jpg?w=640" /></a>
+                                    </div>
+
+            	<div class="homepagecontent">
+
+                                        	<h4><a href="https://axonometrica.blog/2020/10/19/urbanismo-de-usos-urbanismo-de-tubos/" rel="bookmark">Urbanismo de Usos, Urbanismo de&nbsp;Tubos</a></h4>
+                	
+                	<p>Urbanismo de Usos, Urbanismo de Tubos&nbsp; Desde el panorama disciplinar del urbanismo, desde principios del siglo XXI han surgido no pocas e interesantes posiciones, que, si bien no son necesariamente ideas contrapuestas, si que ponen el acento en situaciones muy polarizadas y distantes. Voy a intentar explicarme. 1.- Antecedente: urbanismo de tejidos En primer lugar,&nbsp;&hellip; <a href="https://axonometrica.blog/2020/10/19/urbanismo-de-usos-urbanismo-de-tubos/">Sigue leyendo <span class="meta-nav">&rarr;</span></a></p>
+
+                	<div class="postmeta">
+                		<p>
+	                		                			<span class="cat-links">Filed under <a href="https://axonometrica.blog/category/teoria-critica-3/" rel="category tag">teoría crítica</a></span> <span class="tags-links">&middot; Tagged with <a href="https://axonometrica.blog/tag/urbanismo/" rel="tag">Urbanismo</a>, <a href="https://axonometrica.blog/tag/usos-ciudadanos/" rel="tag">usos ciudadanos</a>, <a href="https://axonometrica.blog/tag/william-j-mitchell/" rel="tag">William J. Mitchell</a></span>                		</p>
+                	</div>
+
+                </div>
+
+            </div>
+
+            
+			<div id="post-1631" class="post-1631 post type-post status-publish format-standard has-post-thumbnail hentry category-archikubik-toolkit tag-archikubik tag-barcelona-global tag-movilidad">
+
+            	<div class="homepagethumb">
+                	                	<a href="https://axonometrica.blog/2020/10/05/de-la-movilidad-urbana/" rel="bookmark"><img width="440" height="240" src="https://axonometrica.files.wordpress.com/2020/10/axonometrica-0281-archikubik-toolkit-de-la-movilidad.jpg?w=440&amp;h=240&amp;crop=1" class="attachment-structure-small size-structure-small wp-post-image" alt="" loading="lazy" srcset="https://axonometrica.files.wordpress.com/2020/10/axonometrica-0281-archikubik-toolkit-de-la-movilidad.jpg?w=440&amp;h=240&amp;crop=1 440w, https://axonometrica.files.wordpress.com/2020/10/axonometrica-0281-archikubik-toolkit-de-la-movilidad.jpg?w=150&amp;h=82&amp;crop=1 150w, https://axonometrica.files.wordpress.com/2020/10/axonometrica-0281-archikubik-toolkit-de-la-movilidad.jpg?w=300&amp;h=164&amp;crop=1 300w" sizes="(max-width: 440px) 100vw, 440px" data-attachment-id="1633" data-permalink="https://axonometrica.blog/2020/10/05/de-la-movilidad-urbana/axonometrica-0281-archikubik-toolkit-de-la-movilidad/" data-orig-file="https://axonometrica.files.wordpress.com/2020/10/axonometrica-0281-archikubik-toolkit-de-la-movilidad.jpg" data-orig-size="640,392" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="axonometrica 0281 ARCHIKUBIK TOOLKIT DE LA MOVILIDAD" data-image-description="" data-medium-file="https://axonometrica.files.wordpress.com/2020/10/axonometrica-0281-archikubik-toolkit-de-la-movilidad.jpg?w=300" data-large-file="https://axonometrica.files.wordpress.com/2020/10/axonometrica-0281-archikubik-toolkit-de-la-movilidad.jpg?w=640" /></a>
+                                    </div>
+
+            	<div class="homepagecontent">
+
+                                        	<h4><a href="https://axonometrica.blog/2020/10/05/de-la-movilidad-urbana/" rel="bookmark">archikubik toolkit: De la Movilidad&nbsp;Urbana</a></h4>
+                	
+                	<p>De la Movilidad Urbana El cambio profundo de paradigma y los grandes retos a los cuales nuestra sociedad se está afrontando desde hace varias décadas ha despertado las consciencias ya claramente y de manera dramática con la crisis global provocada por la pandemia del Covid19. Toda crisis es una oportunidad para aprender, corregir y ser&nbsp;&hellip; <a href="https://axonometrica.blog/2020/10/05/de-la-movilidad-urbana/">Sigue leyendo <span class="meta-nav">&rarr;</span></a></p>
+
+                	<div class="postmeta">
+                		<p>
+	                		                			<span class="cat-links">Filed under <a href="https://axonometrica.blog/category/archikubik-toolkit/" rel="category tag">archikubik toolkit</a></span> <span class="tags-links">&middot; Tagged with <a href="https://axonometrica.blog/tag/archikubik/" rel="tag">archikubik</a>, <a href="https://axonometrica.blog/tag/barcelona-global/" rel="tag">Barcelona Global</a>, <a href="https://axonometrica.blog/tag/movilidad/" rel="tag">movilidad</a></span>                		</p>
+                	</div>
+
+                </div>
+
+            </div>
+
+            
+			<div id="post-1625" class="post-1625 post type-post status-publish format-standard has-post-thumbnail hentry category-teoria-contemporanea tag-crisis-climatica tag-crisis-social tag-hans-hollein tag-ilya-prigogine tag-isabelle-stengers tag-javier-creus">
+
+            	<div class="homepagethumb">
+                	                	<a href="https://axonometrica.blog/2020/09/21/la-paradoja-del-portaviones/" rel="bookmark"><img width="440" height="240" src="https://axonometrica.files.wordpress.com/2020/09/axonometrica-0280-la-paradoja-del-portaviones.jpg?w=440&amp;h=240&amp;crop=1" class="attachment-structure-small size-structure-small wp-post-image" alt="" loading="lazy" srcset="https://axonometrica.files.wordpress.com/2020/09/axonometrica-0280-la-paradoja-del-portaviones.jpg?w=440&amp;h=240&amp;crop=1 440w, https://axonometrica.files.wordpress.com/2020/09/axonometrica-0280-la-paradoja-del-portaviones.jpg?w=150&amp;h=82&amp;crop=1 150w, https://axonometrica.files.wordpress.com/2020/09/axonometrica-0280-la-paradoja-del-portaviones.jpg?w=300&amp;h=164&amp;crop=1 300w" sizes="(max-width: 440px) 100vw, 440px" data-attachment-id="1627" data-permalink="https://axonometrica.blog/2020/09/21/la-paradoja-del-portaviones/axonometrica-0280-la-paradoja-del-portaviones/" data-orig-file="https://axonometrica.files.wordpress.com/2020/09/axonometrica-0280-la-paradoja-del-portaviones.jpg" data-orig-size="640,392" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="axonometrica 0280 LA PARADOJA DEL PORTAVIONES" data-image-description="" data-medium-file="https://axonometrica.files.wordpress.com/2020/09/axonometrica-0280-la-paradoja-del-portaviones.jpg?w=300" data-large-file="https://axonometrica.files.wordpress.com/2020/09/axonometrica-0280-la-paradoja-del-portaviones.jpg?w=640" /></a>
+                                    </div>
+
+            	<div class="homepagecontent">
+
+                                        	<h4><a href="https://axonometrica.blog/2020/09/21/la-paradoja-del-portaviones/" rel="bookmark"> La Paradoja del&nbsp;Portaviones</a></h4>
+                	
+                	<p> La Paradoja del Portaviones La inmediatez es el peor envoltorio para las grandes decisiones. En el actual estado de convulsión constante y de emergencia prolongada nos convertimos en un pollo sin cabeza que corretea histéricamente buscando soluciones mágicas, golpeándonos con cualquier obstáculo. Así hasta caer definitivamente. Es lógico, estamos aterrados, y nuestra primera reacción es&nbsp;&hellip; <a href="https://axonometrica.blog/2020/09/21/la-paradoja-del-portaviones/">Sigue leyendo <span class="meta-nav">&rarr;</span></a></p>
+
+                	<div class="postmeta">
+                		<p>
+	                		                			<span class="cat-links">Filed under <a href="https://axonometrica.blog/category/teoria-contemporanea/" rel="category tag">teoría contemporánea</a></span> <span class="tags-links">&middot; Tagged with <a href="https://axonometrica.blog/tag/crisis-climatica/" rel="tag">Crisis Climática</a>, <a href="https://axonometrica.blog/tag/crisis-social/" rel="tag">Crisis Social</a>, <a href="https://axonometrica.blog/tag/hans-hollein/" rel="tag">Hans Hollein</a>, <a href="https://axonometrica.blog/tag/ilya-prigogine/" rel="tag">Ilya Prigogine</a>, <a href="https://axonometrica.blog/tag/isabelle-stengers/" rel="tag">Isabelle Stengers</a>, <a href="https://axonometrica.blog/tag/javier-creus/" rel="tag">Javier Creus</a></span>                		</p>
+                	</div>
+
+                </div>
+
+            </div>
+
+            
+			<div id="post-1619" class="post-1619 post type-post status-publish format-standard has-post-thumbnail hentry category-teoria-critica-3 tag-alberto-campo-baeza tag-alvaro-siza tag-franck-gerhy tag-simplejidad">
+
+            	<div class="homepagethumb">
+                	                	<a href="https://axonometrica.blog/2020/09/07/esquinas-de-aire/" rel="bookmark"><img width="440" height="240" src="https://axonometrica.files.wordpress.com/2020/09/axonometrica-0279-esquinas-de-aire.jpg?w=440&amp;h=240&amp;crop=1" class="attachment-structure-small size-structure-small wp-post-image" alt="" loading="lazy" srcset="https://axonometrica.files.wordpress.com/2020/09/axonometrica-0279-esquinas-de-aire.jpg?w=440&amp;h=240&amp;crop=1 440w, https://axonometrica.files.wordpress.com/2020/09/axonometrica-0279-esquinas-de-aire.jpg?w=150&amp;h=82&amp;crop=1 150w, https://axonometrica.files.wordpress.com/2020/09/axonometrica-0279-esquinas-de-aire.jpg?w=300&amp;h=164&amp;crop=1 300w" sizes="(max-width: 440px) 100vw, 440px" data-attachment-id="1621" data-permalink="https://axonometrica.blog/2020/09/07/esquinas-de-aire/axonometrica-0279-esquinas-de-aire/" data-orig-file="https://axonometrica.files.wordpress.com/2020/09/axonometrica-0279-esquinas-de-aire.jpg" data-orig-size="640,392" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="axonometrica 0279 ESQUINAS DE AIRE" data-image-description="" data-medium-file="https://axonometrica.files.wordpress.com/2020/09/axonometrica-0279-esquinas-de-aire.jpg?w=300" data-large-file="https://axonometrica.files.wordpress.com/2020/09/axonometrica-0279-esquinas-de-aire.jpg?w=640" /></a>
+                                    </div>
+
+            	<div class="homepagecontent">
+
+                                        	<h4><a href="https://axonometrica.blog/2020/09/07/esquinas-de-aire/" rel="bookmark"> Esquinas de Aire</a></h4>
+                	
+                	<p> Esquinas de Aire Hace poco me preguntaron por mi esquina preferida en una charla con Adrián Gasparoni para Beat Revista. Me vinieron como un torrente imágenes de esquinas queridas, esquinas muy construidas, esquinas rotas como las que hacía Coderch al emplazar justo en el encuentro entre dos muros una ventana con dos planos de vidrio&nbsp;&hellip; <a href="https://axonometrica.blog/2020/09/07/esquinas-de-aire/">Sigue leyendo <span class="meta-nav">&rarr;</span></a></p>
+
+                	<div class="postmeta">
+                		<p>
+	                		                			<span class="cat-links">Filed under <a href="https://axonometrica.blog/category/teoria-critica-3/" rel="category tag">teoría crítica</a></span> <span class="tags-links">&middot; Tagged with <a href="https://axonometrica.blog/tag/alberto-campo-baeza/" rel="tag">Alberto Campo Baeza</a>, <a href="https://axonometrica.blog/tag/alvaro-siza/" rel="tag">Álvaro Siza</a>, <a href="https://axonometrica.blog/tag/franck-gerhy/" rel="tag">Franck Gerhy</a>, <a href="https://axonometrica.blog/tag/simplejidad/" rel="tag">Simplejidad</a></span>                		</p>
+                	</div>
+
+                </div>
+
+            </div>
+
+            
+			<div id="post-1613" class="post-1613 post type-post status-publish format-standard has-post-thumbnail hentry category-metateoria tag-le-corbusier tag-verano">
+
+            	<div class="homepagethumb">
+                	                	<a href="https://axonometrica.blog/2020/07/27/feliz-verano-2020/" rel="bookmark"><img width="440" height="240" src="https://axonometrica.files.wordpress.com/2020/07/axonometrica-0278-feliz-verano.jpg?w=440&amp;h=240&amp;crop=1" class="attachment-structure-small size-structure-small wp-post-image" alt="" loading="lazy" srcset="https://axonometrica.files.wordpress.com/2020/07/axonometrica-0278-feliz-verano.jpg?w=440&amp;h=240&amp;crop=1 440w, https://axonometrica.files.wordpress.com/2020/07/axonometrica-0278-feliz-verano.jpg?w=150&amp;h=82&amp;crop=1 150w, https://axonometrica.files.wordpress.com/2020/07/axonometrica-0278-feliz-verano.jpg?w=300&amp;h=164&amp;crop=1 300w" sizes="(max-width: 440px) 100vw, 440px" data-attachment-id="1615" data-permalink="https://axonometrica.blog/2020/07/27/feliz-verano-2020/axonometrica-0278-feliz-verano/" data-orig-file="https://axonometrica.files.wordpress.com/2020/07/axonometrica-0278-feliz-verano.jpg" data-orig-size="640,392" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="axonometrica 0278 FELIZ VERANO" data-image-description="" data-medium-file="https://axonometrica.files.wordpress.com/2020/07/axonometrica-0278-feliz-verano.jpg?w=300" data-large-file="https://axonometrica.files.wordpress.com/2020/07/axonometrica-0278-feliz-verano.jpg?w=640" /></a>
+                                    </div>
+
+            	<div class="homepagecontent">
+
+                                        	<h4><a href="https://axonometrica.blog/2020/07/27/feliz-verano-2020/" rel="bookmark"> Feliz Verano 2020</a></h4>
+                	
+                	<p> Feliz Verano 2020 Hace tiempo que la realidad nos supera por las costuras. No llegamos a comprender el alcance de los desequilibrios que nos rodean, ya sean medioambientales, sociales, económicos o de cualquier otra índole. Tampoco hace falta ahora tomar la brutal emergencia sanitaria como ejemplo de una abrumadora situación que nos desgasta y que&nbsp;&hellip; <a href="https://axonometrica.blog/2020/07/27/feliz-verano-2020/">Sigue leyendo <span class="meta-nav">&rarr;</span></a></p>
+
+                	<div class="postmeta">
+                		<p>
+	                		                			<span class="cat-links">Filed under <a href="https://axonometrica.blog/category/metateoria/" rel="category tag">metateoría</a></span> <span class="tags-links">&middot; Tagged with <a href="https://axonometrica.blog/tag/le-corbusier/" rel="tag">Le Corbusier</a>, <a href="https://axonometrica.blog/tag/verano/" rel="tag">verano</a></span>                		</p>
+                	</div>
+
+                </div>
+
+            </div>
+
+            
+                                    				<div id="nav-below" class="navigation">
+            					<div class="nav-previous"><a href="https://axonometrica.blog/page/2/" ><span class="meta-nav">&larr;</span> Entradas más antiguas</a></div>
+            					<div class="nav-next"></div>
+            				</div><!-- #nav-below -->
+            
+        </div>
+
+        
+<div id="sidebar_right">
+	
+	<ul>
+		<li id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://axonometrica.blog/">
+				<div>
+					<label class="screen-reader-text" for="s">Buscar:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Buscar" />
+				</div>
+			</form></li>
+<li id="categories-2" class="widget widget_categories"><h4>Categorías</h4>
+			<ul>
+					<li class="cat-item cat-item-705797378"><a href="https://axonometrica.blog/category/archikubik-toolkit/" title="Textos que surgen en archikubik fruto de la intensidad y la vibración de intercambios con Carmen Santana y Marc Chalamanch">archikubik toolkit</a>
+</li>
+	<li class="cat-item cat-item-661306"><a href="https://axonometrica.blog/category/contribuciones/" title="Contribuciones pretende abrir el espacio de reflexión sobre teoría de la arquitectura a otras maneras de pensar. Cada cierto número de post propios, aparecerá una contribución de algún arquitecto contrastado, que por alguna razón y sin necesariamente coincidir con las posiciones e ideas sobre las que suelo escribir, me interesan especialmente. ">contribuciones</a>
+</li>
+	<li class="cat-item cat-item-27553"><a href="https://axonometrica.blog/category/conversaciones/" title="Ocasiones donde el espacio y el tiempo colapsan sobre un diálogo a múltiples voces, provocando un flujo de ideas">conversaciones</a>
+</li>
+	<li class="cat-item cat-item-296909"><a href="https://axonometrica.blog/category/english-texts/" title="The aim of axonometrica is to translate the posts into english and step by step create the english version of this blog. ">english texts</a>
+</li>
+	<li class="cat-item cat-item-819"><a href="https://axonometrica.blog/category/food-for-thought/" title="Food for Thought section aims to publish top texts from open mind and open origin thinkers that are at the backyard of axonométrica ecosystem of ideas and concepts. Some are physically in my library, others became an inspiring part of my own articles, or simply I search, edit and publish because I deeply believe they are brilliant and disruptive, both the authors and the texts. As much as I can, I will publish articles based on Creative Commons license and I’ll preserve the original language of the text or translated into English.
+">food for thought</a>
+</li>
+	<li class="cat-item cat-item-24969027"><a href="https://axonometrica.blog/category/metateoria/" title="Teoría sobre la teoría, espacio reflexivo a medio camino entre el ejercicio crítico y el ejercicio creativo">metateoría</a>
+</li>
+	<li class="cat-item cat-item-8871482"><a href="https://axonometrica.blog/category/teoria-contemporanea/" title="Teoría de nuestro tiempo, sea este el que decidamos que sea. ">teoría contemporánea</a>
+</li>
+	<li class="cat-item cat-item-115431137"><a href="https://axonometrica.blog/category/teoria-critica-3/" title="Teoría basada en un posicionamiento claro y contundente, a la vez que no concluyente por intencionadamente abierto">teoría crítica</a>
+</li>
+	<li class="cat-item cat-item-54638"><a href="https://axonometrica.blog/category/teoremas/" title="Teoremas son ensayos gráficos, imágenes como puños que impactan en la estructura intelectual de la arquitectura. Dibujos de arquitectura que sintetizan un pensamiento abierto.">teoremas</a>
+</li>
+			</ul>
+
+			</li>
+
+		<li id="recent-posts-2" class="widget widget_recent_entries">
+		<h4>Entradas recientes</h4>
+		<ul>
+											<li>
+					<a href="https://axonometrica.blog/2020/12/31/felices-multitudes/">Felices Multitudes</a>
+									</li>
+											<li>
+					<a href="https://axonometrica.blog/2020/12/14/contribuciones-jose-maria-torres-nadal-la-vida-el-espacio-publico-la-pandemia-y-la-arquitectura/">Contribuciones: José María Torres Nadal. La Vida, el Espacio Público, la Pandemia y la&nbsp;Arquitectura</a>
+									</li>
+											<li>
+					<a href="https://axonometrica.blog/2020/11/30/1656/">Tácticas Prácticas</a>
+									</li>
+											<li>
+					<a href="https://axonometrica.blog/2020/11/16/teorema-010-process-sketch-galician-center-for-contemporary-art-santiago-de-compostela-spain-alvaro-siza/">Teorema 010: Process sketch, Galician Center for Contemporary Art, Santiago de Compostela, Spain, Alvaro&nbsp;Siza.</a>
+									</li>
+											<li>
+					<a href="https://axonometrica.blog/2020/11/02/y-manana/">¿Y Mañana?</a>
+									</li>
+											<li>
+					<a href="https://axonometrica.blog/2020/10/19/urbanismo-de-usos-urbanismo-de-tubos/">Urbanismo de Usos, Urbanismo de&nbsp;Tubos</a>
+									</li>
+											<li>
+					<a href="https://axonometrica.blog/2020/10/05/de-la-movilidad-urbana/">archikubik toolkit: De la Movilidad&nbsp;Urbana</a>
+									</li>
+											<li>
+					<a href="https://axonometrica.blog/2020/09/21/la-paradoja-del-portaviones/"> La Paradoja del&nbsp;Portaviones</a>
+									</li>
+											<li>
+					<a href="https://axonometrica.blog/2020/09/07/esquinas-de-aire/"> Esquinas de Aire</a>
+									</li>
+											<li>
+					<a href="https://axonometrica.blog/2020/07/27/feliz-verano-2020/"> Feliz Verano 2020</a>
+									</li>
+											<li>
+					<a href="https://axonometrica.blog/2020/07/02/food-for-thought-the-urban-forest-of-the-future-how-to-turn-our-cities-into-treetopias-by-alan-simson/">Food for Thought: The Urban Forest of the Future: How to Turn Our Cities into Treetopias by Alan&nbsp;Simson</a>
+									</li>
+											<li>
+					<a href="https://axonometrica.blog/2020/06/15/teorema-009-drawing-of-an-early-concept-of-arcosanti-april-1971-paolo-soleri/">Teorema 009: Drawing of an early concept of Arcosanti, April 1971, Paolo&nbsp;Soleri.</a>
+									</li>
+											<li>
+					<a href="https://axonometrica.blog/2020/06/01/towards-cities/">Towards Cities</a>
+									</li>
+											<li>
+					<a href="https://axonometrica.blog/2020/05/18/1593/">Formulario por un Urbanismo&nbsp;Nuevo</a>
+									</li>
+											<li>
+					<a href="https://axonometrica.blog/2020/04/28/cuando-mi-barrio-es-mi-balcon/">Cuando mi Barrio es mi&nbsp;Balcón</a>
+									</li>
+					</ul>
+
+		</li>
+<li id="blog_subscription-2" class="widget widget_blog_subscription jetpack_subscription_widget"><h4><label for="subscribe-field">Sigue el blog por Email</label></h4>
+			<form
+				action="https://subscribe.wordpress.com"
+				method="post"
+				accept-charset="utf-8"
+				id=""
+			>
+				<p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
+				<p id="subscribe-email">
+					<label
+						id="subscribe-field-label"
+						for="subscribe-field"
+						class="screen-reader-text"
+					>
+						Dirección de correo electrónico:					</label>
+
+					<input
+							type="text"
+							name="email"
+							
+							style="width: 95%; padding: 1px 10px"
+							placeholder="Introduce tu dirección de correo electrónico"
+							value=""
+							id="subscribe-field"
+						/>				</p>
+
+				<p id="subscribe-submit">
+                    <input type="hidden" name="action" value="subscribe"/>
+                    <input type="hidden" name="blog_id" value="33425058"/>
+                    <input type="hidden" name="source" value="https://axonometrica.blog/"/>
+                    <input type="hidden" name="sub-type" value="widget"/>
+                    <input type="hidden" name="redirect_fragment" value="blog_subscription-2"/>
+					<input type="hidden" id="_wpnonce" name="_wpnonce" value="7cca736a7f" />                    <button type="submit"
+	                    		                	                >
+	                    Seguir                    </button>
+                </p>
+            </form>
+			
+</li>
+<li id="twitter-2" class="widget widget_twitter"><h4><a href='http://twitter.com/miquelacasta'>tweet me</a></h4><ul class='tweets'>
+			<li>
+				RT @<a href='http://twitter.com/parislima'>parislima</a>: @<a href='http://twitter.com/miquelacasta'>miquelacasta</a> Hay otro <a href='http://twitter.com/search?q=%23urbanismo_nacido_a_caballo_de_bits_y_megas'>#urbanismo_nacido_a_caballo_de_bits_y_megas</a> que ha ido imponiendo una iconografía al servicio de la #… 				<a href="http://twitter.com/miquelacasta/statuses/1369889678124531719" class="timesince">2&nbsp;days&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				RT @<a href='http://twitter.com/parislima'>parislima</a>: .@<a href='http://twitter.com/miquelacasta'>miquelacasta</a> ::: <a href='http://twitter.com/search?q=%23Urbanismo'>#Urbanismo</a> de <a href='http://twitter.com/search?q=%23USOS'>#USOS</a>, <a href='http://twitter.com/search?q=%23Urbanismo_de_TUBOS'>#Urbanismo_de_TUBOS</a>...1.- Antecedente: <a href='http://twitter.com/search?q=%23urbanismo_de_tejidos'>#urbanismo_de_tejidos</a> 2.- El <a href='http://twitter.com/search?q=%23urbanismo_de_tu'>#urbanismo_de_tu</a>… 				<a href="http://twitter.com/miquelacasta/statuses/1369889425400946689" class="timesince">2&nbsp;days&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				RT @<a href='http://twitter.com/veredes'>veredes</a>: Oscuridad y Sombra | Miquel Lacasta @<a href='http://twitter.com/miquelacasta'>miquelacasta</a> <a href='http://twitter.com/search?q=%23arquitectura'>#arquitectura</a> <a href='http://twitter.com/search?q=%23luz'>#luz</a> <a href="http://ow.ly/Gg0350DKynK"> ow.ly/Gg0350DKynK</a> <a href="https://t.co/LVrUehqwrT" rel="nofollow">https://t.co/LVrUehqwrT</a> 				<a href="http://twitter.com/miquelacasta/statuses/1365349995751309322" class="timesince">2&nbsp;weeks&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				RT @<a href='http://twitter.com/ARCHIKUBIK'>ARCHIKUBIK</a>: Le 13 février à 10h30, aura lieu une réunion publique organisée par @<a href='http://twitter.com/mairieivry'>mairieivry</a>  et l&#039;<a href='http://twitter.com/search?q=%23EPAORSA'>#EPAORSA</a>, autour de l&#039;<a href='http://twitter.com/search?q=%23Agrocit%C3%A9'>#Agrocité</a> Gagar… 				<a href="http://twitter.com/miquelacasta/statuses/1359562778973995010" class="timesince">1&nbsp;month&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				RT @<a href='http://twitter.com/oscarmiguelares'>oscarmiguelares</a>: XV BEAU. Abierta convocatoria a arquitectos.Os animamos a participar en este ilusionante proyecto bajo el lema: España… 				<a href="http://twitter.com/miquelacasta/statuses/1359496316863340546" class="timesince">1&nbsp;month&nbsp;ago</a>
+			</li>
+
+			</ul><a href="http://twitter.com/miquelacasta"  class='twitter-follow-button' data-show-count='false' data-link-color='#000000' data-text-color='#666666'>Follow @miquelacasta</a></li>
+<li id="archives-2" class="widget widget_archive"><h4>Archivos</h4>
+			<ul>
+					<li><a href='https://axonometrica.blog/2020/12/'>diciembre 2020</a></li>
+	<li><a href='https://axonometrica.blog/2020/11/'>noviembre 2020</a></li>
+	<li><a href='https://axonometrica.blog/2020/10/'>octubre 2020</a></li>
+	<li><a href='https://axonometrica.blog/2020/09/'>septiembre 2020</a></li>
+	<li><a href='https://axonometrica.blog/2020/07/'>julio 2020</a></li>
+	<li><a href='https://axonometrica.blog/2020/06/'>junio 2020</a></li>
+	<li><a href='https://axonometrica.blog/2020/05/'>mayo 2020</a></li>
+	<li><a href='https://axonometrica.blog/2020/04/'>abril 2020</a></li>
+	<li><a href='https://axonometrica.blog/2020/03/'>marzo 2020</a></li>
+	<li><a href='https://axonometrica.blog/2020/02/'>febrero 2020</a></li>
+	<li><a href='https://axonometrica.blog/2020/01/'>enero 2020</a></li>
+	<li><a href='https://axonometrica.blog/2019/12/'>diciembre 2019</a></li>
+	<li><a href='https://axonometrica.blog/2019/11/'>noviembre 2019</a></li>
+	<li><a href='https://axonometrica.blog/2019/10/'>octubre 2019</a></li>
+	<li><a href='https://axonometrica.blog/2019/09/'>septiembre 2019</a></li>
+	<li><a href='https://axonometrica.blog/2019/07/'>julio 2019</a></li>
+	<li><a href='https://axonometrica.blog/2019/06/'>junio 2019</a></li>
+	<li><a href='https://axonometrica.blog/2019/05/'>mayo 2019</a></li>
+	<li><a href='https://axonometrica.blog/2019/04/'>abril 2019</a></li>
+	<li><a href='https://axonometrica.blog/2019/03/'>marzo 2019</a></li>
+	<li><a href='https://axonometrica.blog/2019/02/'>febrero 2019</a></li>
+	<li><a href='https://axonometrica.blog/2019/01/'>enero 2019</a></li>
+	<li><a href='https://axonometrica.blog/2018/12/'>diciembre 2018</a></li>
+	<li><a href='https://axonometrica.blog/2018/11/'>noviembre 2018</a></li>
+	<li><a href='https://axonometrica.blog/2018/10/'>octubre 2018</a></li>
+	<li><a href='https://axonometrica.blog/2018/09/'>septiembre 2018</a></li>
+	<li><a href='https://axonometrica.blog/2018/07/'>julio 2018</a></li>
+	<li><a href='https://axonometrica.blog/2018/06/'>junio 2018</a></li>
+	<li><a href='https://axonometrica.blog/2018/05/'>mayo 2018</a></li>
+	<li><a href='https://axonometrica.blog/2018/04/'>abril 2018</a></li>
+	<li><a href='https://axonometrica.blog/2018/03/'>marzo 2018</a></li>
+	<li><a href='https://axonometrica.blog/2018/02/'>febrero 2018</a></li>
+	<li><a href='https://axonometrica.blog/2018/01/'>enero 2018</a></li>
+	<li><a href='https://axonometrica.blog/2017/01/'>enero 2017</a></li>
+	<li><a href='https://axonometrica.blog/2016/12/'>diciembre 2016</a></li>
+	<li><a href='https://axonometrica.blog/2016/11/'>noviembre 2016</a></li>
+	<li><a href='https://axonometrica.blog/2016/10/'>octubre 2016</a></li>
+	<li><a href='https://axonometrica.blog/2016/09/'>septiembre 2016</a></li>
+	<li><a href='https://axonometrica.blog/2016/05/'>mayo 2016</a></li>
+	<li><a href='https://axonometrica.blog/2016/04/'>abril 2016</a></li>
+	<li><a href='https://axonometrica.blog/2016/03/'>marzo 2016</a></li>
+	<li><a href='https://axonometrica.blog/2016/02/'>febrero 2016</a></li>
+	<li><a href='https://axonometrica.blog/2016/01/'>enero 2016</a></li>
+	<li><a href='https://axonometrica.blog/2015/12/'>diciembre 2015</a></li>
+	<li><a href='https://axonometrica.blog/2015/11/'>noviembre 2015</a></li>
+	<li><a href='https://axonometrica.blog/2015/10/'>octubre 2015</a></li>
+	<li><a href='https://axonometrica.blog/2015/09/'>septiembre 2015</a></li>
+	<li><a href='https://axonometrica.blog/2015/07/'>julio 2015</a></li>
+	<li><a href='https://axonometrica.blog/2015/06/'>junio 2015</a></li>
+	<li><a href='https://axonometrica.blog/2015/05/'>mayo 2015</a></li>
+	<li><a href='https://axonometrica.blog/2015/04/'>abril 2015</a></li>
+	<li><a href='https://axonometrica.blog/2015/03/'>marzo 2015</a></li>
+	<li><a href='https://axonometrica.blog/2015/02/'>febrero 2015</a></li>
+	<li><a href='https://axonometrica.blog/2015/01/'>enero 2015</a></li>
+	<li><a href='https://axonometrica.blog/2014/12/'>diciembre 2014</a></li>
+	<li><a href='https://axonometrica.blog/2014/11/'>noviembre 2014</a></li>
+	<li><a href='https://axonometrica.blog/2014/10/'>octubre 2014</a></li>
+	<li><a href='https://axonometrica.blog/2014/09/'>septiembre 2014</a></li>
+	<li><a href='https://axonometrica.blog/2014/07/'>julio 2014</a></li>
+	<li><a href='https://axonometrica.blog/2014/06/'>junio 2014</a></li>
+	<li><a href='https://axonometrica.blog/2014/05/'>mayo 2014</a></li>
+	<li><a href='https://axonometrica.blog/2014/04/'>abril 2014</a></li>
+	<li><a href='https://axonometrica.blog/2014/03/'>marzo 2014</a></li>
+	<li><a href='https://axonometrica.blog/2014/02/'>febrero 2014</a></li>
+	<li><a href='https://axonometrica.blog/2014/01/'>enero 2014</a></li>
+	<li><a href='https://axonometrica.blog/2013/12/'>diciembre 2013</a></li>
+	<li><a href='https://axonometrica.blog/2013/11/'>noviembre 2013</a></li>
+	<li><a href='https://axonometrica.blog/2013/10/'>octubre 2013</a></li>
+	<li><a href='https://axonometrica.blog/2013/09/'>septiembre 2013</a></li>
+	<li><a href='https://axonometrica.blog/2013/08/'>agosto 2013</a></li>
+	<li><a href='https://axonometrica.blog/2013/07/'>julio 2013</a></li>
+	<li><a href='https://axonometrica.blog/2013/06/'>junio 2013</a></li>
+	<li><a href='https://axonometrica.blog/2013/05/'>mayo 2013</a></li>
+	<li><a href='https://axonometrica.blog/2013/04/'>abril 2013</a></li>
+	<li><a href='https://axonometrica.blog/2013/03/'>marzo 2013</a></li>
+	<li><a href='https://axonometrica.blog/2013/02/'>febrero 2013</a></li>
+	<li><a href='https://axonometrica.blog/2013/01/'>enero 2013</a></li>
+	<li><a href='https://axonometrica.blog/2012/12/'>diciembre 2012</a></li>
+	<li><a href='https://axonometrica.blog/2012/11/'>noviembre 2012</a></li>
+	<li><a href='https://axonometrica.blog/2012/10/'>octubre 2012</a></li>
+	<li><a href='https://axonometrica.blog/2012/09/'>septiembre 2012</a></li>
+	<li><a href='https://axonometrica.blog/2012/07/'>julio 2012</a></li>
+	<li><a href='https://axonometrica.blog/2012/06/'>junio 2012</a></li>
+	<li><a href='https://axonometrica.blog/2012/05/'>mayo 2012</a></li>
+	<li><a href='https://axonometrica.blog/2012/04/'>abril 2012</a></li>
+	<li><a href='https://axonometrica.blog/2012/03/'>marzo 2012</a></li>
+			</ul>
+
+			</li>
+<li id="meta-2" class="widget widget_meta"><h4>Meta</h4>
+		<ul>
+			<li><a href="https://wordpress.com/start/es?ref=wplogin">Registrarse</a></li>			<li><a href="https://axonometrica.wordpress.com/wp-login.php">Acceder</a></li>
+			<li><a href="https://axonometrica.blog/feed/">Feed de entradas</a></li>
+			<li><a href="https://axonometrica.blog/comments/feed/">Feed de comentarios</a></li>
+
+			<li><a href="https://wordpress.com/" title="Gestionado con WordPress, una avanzada plataforma semántica de publicación personal.">WordPress.com</a></li>
+		</ul>
+
+		</li>
+    </ul>
+
+</div><!-- end #sidebar_right -->
+	</div>
+
+</div>
+
+<!-- The main column ends  -->
+
+
+<div style="clear:both;"></div>
+
+<div id="footertopbg">
+
+	<div id="footertop">
+
+			<div class="footertopleft widget-area">
+				<ul>
+								</ul>
+			</div>
+
+			<div class="footertopmidleft widget-area">
+				<ul>
+								</ul>
+			</div>
+
+			<div class="footertopmidright widget-area">
+				<ul>
+								</ul>
+			</div>
+
+			<div class="footertopright widget-area">
+				<ul>
+								</ul>
+			</div>
+
+	</div>
+
+
+</div>
+
+<div id="footerbg">
+
+	<div id="footer">
+
+		<div class="footerleft">
+			<div class="footertop">
+				<p><a href="https://axonometrica.blog/" title="Home">axonométrica</a> &middot; representación de una idea referida a tres ejes ortogonales: la teoría, la práctica y la docencia de la arquitectura</p>
+			</div>
+
+			<div class="footerbottom">
+				<p><a href="https://wordpress.com/?ref=footer_blog" rel="nofollow">Blog de WordPress.com.</a> </p>
+			</div>
+		</div>
+
+		<div class="footerright">
+		</div>
+
+	</div>
+
+</div>
+
+</div>
+
+<!--  -->
+<script src='//0.gravatar.com/js/gprofiles.js?ver=202110y' id='grofiles-cards-js'></script>
+<script id='wpgroho-js-extra'>
+var WPGroHo = {"my_hash":""};
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1610363240h'></script>
+
+	<script>
+		// Initialize and attach hovercards to all gravatars
+		( function() {
+			function init() {
+				if ( typeof Gravatar === 'undefined' ) {
+					return;
+				}
+
+				if ( typeof Gravatar.init !== 'function' ) {
+					return;
+				}
+
+				Gravatar.profile_cb = function ( hash, id ) {
+					WPGroHo.syncProfileData( hash, id );
+				};
+
+				Gravatar.my_hash = WPGroHo.my_hash;
+				Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+			}
+
+			if ( document.readyState !== 'loading' ) {
+				init();
+			} else {
+				document.addEventListener( 'DOMContentLoaded', init );
+			}
+		} )();
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-e1167f2423ece7cf062e58023835f7e4">
+	</div>
+	</div>
+<script id='highlander-comments-js-extra'>
+var HighlanderComments = {"loggingInText":"Iniciando sesi\u00f3n\u2026","submittingText":"Publicando comentario\u2026","postCommentText":"Publicar comentario","connectingToText":"Conectando a %s","commentingAsText":"%1$s: Est\u00e1s comentando usando tu cuenta de %2$s.","logoutText":"Cerrar sesi\u00f3n","loginText":"Acceder","connectURL":"https:\/\/axonometrica.wordpress.com\/public.api\/connect\/?action=request&domain=axonometrica.blog","logoutURL":"https:\/\/axonometrica.wordpress.com\/wp-login.php?action=logout&_wpnonce=aab3e94f22","homeURL":"https:\/\/axonometrica.blog\/","postID":"1672","gravDefault":"identicon","enterACommentError":"Por favor, introduce un comentario","enterEmailError":"Por favor introduce tu direcci\u00f3n de correo electr\u00f3nico aqu\u00ed","invalidEmailError":"Direcci\u00f3n de correo electr\u00f3nico no v\u00e1lida","enterAuthorError":"Por favor, introduce tu nombre aqu\u00ed","gravatarFromEmail":"Esta imagen se mostrar\u00e1 cuando dejes un comentario. Haz clic para cambiarla.","logInToExternalAccount":"Inicia sesi\u00f3n para usar los datos de una de estas cuentas.","change":"Cambiar","changeAccount":"Cambiar cuenta","comment_registration":"1","userIsLoggedIn":"","isJetpack":"","text_direction":"ltr"};
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1573483029j'></script>
+
+<script>
+window.addEventListener( "load", function( event ) {
+	var link = document.createElement( "link" );
+	link.href = "https://s0.wp.com/wp-content/mu-plugins/actionbar/actionbar.css?v=20201002";
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	document.head.appendChild( link );
+
+	var script = document.createElement( "script" );
+	script.src = "https://s0.wp.com/wp-content/mu-plugins/actionbar/actionbar.js?v=20201002";
+	script.defer = true;
+	document.body.appendChild( script );
+} );
+</script>
+
+	
+	<div id="carousel-reblog-box">
+		<form action="#" name="carousel-reblog">
+			<label for="carousel-reblog-content" id="carousel-reblog-lblogcontent" class="screen-reader-text">Añade tus pensamientos aquí... (opcional)</label>
+			<textarea id="carousel-reblog-content" name="carousel-reblog-content" placeholder="Añade tus pensamientos aquí... (opcional)"></textarea>
+			<label for="carousel-reblog-to-blog-id" id="carousel-reblog-lblogid">Publicar en</label>
+			<select name="carousel-reblog-to-blog-id" id="carousel-reblog-to-blog-id">
+						</select>
+
+			<div class="submit">
+				<span class="canceltext"><a href="#" class="cancel">Cancelar</a></span>
+				<input type="submit" name="carousel-reblog-submit" class="button" id="carousel-reblog-submit" value="Rebloguear entrada" />
+				<input type="hidden" id="carousel-reblog-blog-id" value="33425058" />
+				<input type="hidden" id="carousel-reblog-blog-url" value="https://axonometrica.blog" />
+				<input type="hidden" id="carousel-reblog-blog-title" value="axonométrica" />
+				<input type="hidden" id="carousel-reblog-post-url" value="" />
+				<input type="hidden" id="carousel-reblog-post-title" value="" />
+			</div>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="3cafd3c244" /><input type="hidden" name="_wp_http_referer" value="/" />		</form>
+
+		<div class="arrow"></div>
+	</div>
+
+		<div
+			class="jp-carousel-wrap jp-carousel-transitions"
+			itemscope
+			itemtype="https://schema.org/ImageGallery"
+			style="display: none;">
+			<div class="jp-carousel-overlay"></div>
+			<div class="jp-carousel"></div>
+			<div class="jp-carousel-fadeaway"></div>
+			<div class="jp-carousel-info">
+				<div class="jp-carousel-photo-info">
+					<h2 class="jp-carousel-caption" itemprop="caption description"></h2>
+				</div>
+				<div class="jp-carousel-info-columns">
+					<div class="jp-carousel-left-column-wrapper">
+						<div class="jp-carousel-titleanddesc"></div>
+						<!-- Intentional duplicate -->
+						<div class="jp-carousel-photo-info">
+							<h2 class="jp-carousel-caption" itemprop="caption description"></h2>
+						</div>
+													<div id="jp-carousel-comment-form-container">
+																											<div id="jp-carousel-comment-form-commenting-as">
+											<p id="jp-carousel-commenting-as">
+												Debe estar <a href="#" class="jp-carousel-comment-login">conectado</a> para enviar un comentario.											</p>
+										</div>
+																								</div>
+							<div class="jp-carousel-comments"></div>
+							<div id="jp-carousel-comments-loading">
+								<span>Cargando comentarios...</span>
+							</div>
+											</div>
+					<div class="jp-carousel-image-meta">
+						<div class="jp-carousel-buttons">
+														<a class="jp-carousel-commentlink" href="#">Comentario</a>
+																				</div>
+						<ul class="jp-carousel-image-exif" style="display: none;"></ul>
+						<a class="jp-carousel-image-download" style="display: none;"></a>
+						<div class="jp-carousel-image-map" style="display: none;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="jp-carousel-next-button" style="display: none;">
+				<span></span>
+			</div>
+			<div class="jp-carousel-previous-button" style="display: none;">
+				<span></span>
+			</div>
+			<div class="jp-carousel-close-hint"><span>&times;</span></div>
+		</div>
+
+		<script src='https://platform.twitter.com/widgets.js?ver=20111117' id='twitter-widgets-js'></script>
+<link rel='stylesheet' id='all-css-0-3' href='https://s0.wp.com/_static/??/wp-content/mu-plugins/carousel/jetpack-carousel.css,/wp-content/mu-plugins/tiled-gallery/tiled-gallery.css?m=1614628167j&cssminify=yes' type='text/css' media='all' />
+<script id='jetpack-carousel-js-extra'>
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"es","ajaxurl":"https:\/\/axonometrica.blog\/wp-admin\/admin-ajax.php","nonce":"515335d32c","display_exif":"1","display_comments":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comentario","post_comment":"Publicar comentario","write_comment":"Escribe un comentario...","loading_comments":"Cargando comentarios...","download_original":"Ver tama\u00f1o completo <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Por favor, aseg\u00farate de enviar el texto con tu comentario.","no_comment_email":"Por favor, proporciona una direcci\u00f3n de correo electr\u00f3nico para comentar.","no_comment_author":"Por favor, a\u00f1ade tu nombre al comentario.","comment_post_error":"Lo sentimos, pero ha habido un error al publicar tu comentario. Por favor, vuelve a intentarlo m\u00e1s tarde.","comment_approved":"Se ha aprobado tu comentario.","comment_unapproved":"Tu comentario est\u00e1 en moderaci\u00f3n.","camera":"C\u00e1mara","aperture":"Abertura","shutter_speed":"Velocidad de obturaci\u00f3n","focal_length":"Longitud focal","copyright":"Derechos de autor","comment_registration":"1","require_name_email":"1","login_url":"https:\/\/axonometrica.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Faxonometrica.blog%2F2020%2F12%2F31%2Ffelices-multitudes%2F","blog_id":"33425058","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"reblog":"Rebloguear","reblogged":"Reblogueado","reblog_add_thoughts":"A\u00f1ade tus pensamientos aqu\u00ed... (opcional)","reblogging":"Reblogueando...","post_reblog":"Reblog de entrada","stats_query_args":"blog=33425058&v=wpcom&tz=0&user_id=0&subd=axonometrica","is_public":"1","reblog_enabled":""};
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyVi8kOgjAURX/I+oIx6Ma49jNKeUJrW5o3gP69aGIcFiTu7nAOTMW4IQtmgcDQ4ugdlus68Ao+LukxIUPRBlhInSjhg2ctSGfP/Tv9r/bDiHR60r9yUlOidj4z2Db5bBpLkCwL0pyMkHUXXpCcpUEZIwSUMrPmNSw44iO2prMxIt2+22wd06Gqq2292Vf1LtwBLI138g=='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="//stats.wp.com/w.js?61" defer></script> <script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'33425058','blog_tz':'0','user_lang':'es','blog_lang':'es','user_id':'0'}]);
+_stq.push(['view', {'blog':'33425058','v':'wpcom','tz':'0','user_id':'0','subd':'axonometrica'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1TaVhzUzFMbjdWNHpwZGhTayxPSUFCMGNrd29+Smw0TDhnZmRTK0hlRi9QSGh6bi9GXVhBJWIlZlR5U1JMLU8/MkNtblkvY1dDVGk2YTljZy1xeTRYWlo9TUNLRkd2LkguSnFiVSZDOF1BN19nTVVia1R2P3BYZCt3NV1oaGJKVWp5PUFEb1Ewb1twWGVNSz9OZCUlN0tDNVplb2djandObz9sLG9xW1ZYJWUtb2NNMEtZSER2UzU1MUtqcG9uNW94ZnZyTFFlck9zY11qXVE0Q2ZHOUdzUktVJXVqakp2P1toWXxSYlRWSmVScTB2ZTh8dzJDdVRLVzFVL2QlLmVkNWZuZWY1QzBZOC1LQys3N1VLWHQmXUU2Wm1KMGQ/RV9JVCx1P2gsW0d3YTMwYi11UFY='}]);
+_stq.push([ 'clickTrackerInit', '33425058', '0' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:1px;width:1px;overflow:hidden;position:absolute;bottom:1px;" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>
+<!--
+	generated in 1.148 seconds
+	106976 bytes batcached for 300 seconds
+-->

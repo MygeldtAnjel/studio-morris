@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>reinvención &#8211; ARQcoaching</title>
+	<atom:link href="https://www.coachingarquitectos.com/tag/reinvencion/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.coachingarquitectos.com</link>
+	<description>Coaching para arquitectos por arquitectos</description>
+	<lastBuildDate>Mon, 24 Jun 2019 18:13:07 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+
+<image>
+	<url>https://www.coachingarquitectos.com/wp-content/uploads/2018/10/logo-ARQcoaching-fav-icon-1.png</url>
+	<title>reinvención &#8211; ARQcoaching</title>
+	<link>https://www.coachingarquitectos.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>REINVENCIÓN PROFESIONAL EN ARQUITECTURA. 4 ARQUITECTAS NOS CUENTAN SUS EXPERIENCIAS</title>
+		<link>https://www.coachingarquitectos.com/reinvencion-profesional-en-arquitectura/</link>
+					<comments>https://www.coachingarquitectos.com/reinvencion-profesional-en-arquitectura/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 15 Aug 2017 06:30:16 +0000</pubDate>
+				<category><![CDATA[empleo]]></category>
+		<category><![CDATA[emprendimiento]]></category>
+		<category><![CDATA[estrategia]]></category>
+		<category><![CDATA[PEPA]]></category>
+		<category><![CDATA[profesión]]></category>
+		<category><![CDATA[reinvención]]></category>
+		<category><![CDATA[sociedad]]></category>
+		<guid isPermaLink="false">http://www.coachingarquitectos.com/?p=4492</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/reinvencion-profesional-en-arquitectura/">REINVENCIÓN PROFESIONAL EN ARQUITECTURA. 4 ARQUITECTAS NOS CUENTAN SUS EXPERIENCIAS</a></p>
+<p>La reinvención profesional en arquitectura es posible y en muchos casos recomendable. Los arquitectos tenemos habilidades y conocimientos que nos permiten aportar valor en distintos campos. Veamos cuatro buenos ejemplos de ello.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/reinvencion-profesional-en-arquitectura/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>4 SENCILLOS PASOS PARA TU REINVENCIÓN PROFESIONAL. SISTEMA PEPA</title>
+		<link>https://www.coachingarquitectos.com/4-sencillos-pasos-reinvencion-profesional/</link>
+					<comments>https://www.coachingarquitectos.com/4-sencillos-pasos-reinvencion-profesional/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Mon, 19 Sep 2016 22:15:08 +0000</pubDate>
+				<category><![CDATA[empleo]]></category>
+		<category><![CDATA[cambio]]></category>
+		<category><![CDATA[paro]]></category>
+		<category><![CDATA[PEPA]]></category>
+		<category><![CDATA[reinvención]]></category>
+		<guid isPermaLink="false">http://www.coachingarquitectos.com/?p=2097</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/4-sencillos-pasos-reinvencion-profesional/">4 SENCILLOS PASOS PARA TU REINVENCIÓN PROFESIONAL. SISTEMA PEPA</a></p>
+<p>La reinvención profesional de los arquitectos se ha convertido en algo muy habitual hoy en día. Te muestro en este artículo mi sistema PEPA para que la afrontes con las mayores garantías. Son cuatro sencillos pasos que te ayudarán a decidir tu camino y a ponerte en marcha.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/4-sencillos-pasos-reinvencion-profesional/feed/</wfw:commentRss>
+			<slash:comments>18</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

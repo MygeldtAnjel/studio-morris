@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>interrupciones &#8211; ARQcoaching</title>
+	<atom:link href="https://www.coachingarquitectos.com/tag/interrupciones/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.coachingarquitectos.com</link>
+	<description>Coaching para arquitectos por arquitectos</description>
+	<lastBuildDate>Fri, 19 Apr 2019 17:13:28 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+
+<image>
+	<url>https://www.coachingarquitectos.com/wp-content/uploads/2018/10/logo-ARQcoaching-fav-icon-1.png</url>
+	<title>interrupciones &#8211; ARQcoaching</title>
+	<link>https://www.coachingarquitectos.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>CUANDO TRABAJAR CON PERSONAS NO TE PERMITE TRABAJAR. APRENDER A DECIR NO</title>
+		<link>https://www.coachingarquitectos.com/aprender-a-decir-no/</link>
+					<comments>https://www.coachingarquitectos.com/aprender-a-decir-no/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 03 Apr 2018 06:30:32 +0000</pubDate>
+				<category><![CDATA[estudio]]></category>
+		<category><![CDATA[delegar]]></category>
+		<category><![CDATA[efectividad personal]]></category>
+		<category><![CDATA[equipos]]></category>
+		<category><![CDATA[interrupciones]]></category>
+		<category><![CDATA[liderazgo]]></category>
+		<category><![CDATA[productividad]]></category>
+		<category><![CDATA[reuniones]]></category>
+		<guid isPermaLink="false">https://www.coachingarquitectos.com/?p=5070</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/aprender-a-decir-no/">CUANDO TRABAJAR CON PERSONAS NO TE PERMITE TRABAJAR. APRENDER A DECIR NO</a></p>
+<p>Cuando trabajas con otras personas ganas muchas cosas, pero también necesitas generar otras, por ejemplo tiempo para interactuar. Como ese tiempo no es infinito, es necesario aprender a decir NO a veces, puesto que los objetivos del equipo se pueden resentir.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/aprender-a-decir-no/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CONSEJOS PARA EVITAR LAS INTERRUPCIONES EN EL ESTUDIO DE ARQUITECTURA</title>
+		<link>https://www.coachingarquitectos.com/evitar-las-interrupciones-en-el-estudio/</link>
+					<comments>https://www.coachingarquitectos.com/evitar-las-interrupciones-en-el-estudio/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 10 Oct 2017 06:30:33 +0000</pubDate>
+				<category><![CDATA[estudio]]></category>
+		<category><![CDATA[efectividad personal]]></category>
+		<category><![CDATA[equipos]]></category>
+		<category><![CDATA[GTD]]></category>
+		<category><![CDATA[interrupciones]]></category>
+		<category><![CDATA[productividad]]></category>
+		<guid isPermaLink="false">http://www.coachingarquitectos.com/?p=4633</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/evitar-las-interrupciones-en-el-estudio/">CONSEJOS PARA EVITAR LAS INTERRUPCIONES EN EL ESTUDIO DE ARQUITECTURA</a></p>
+<p>Evitar las interrupciones en el estudio de arquitectura es difícil, pero también muy importante. Esto pasa en los entornos de trabajo del conocimiento, y se magnifica con la tecnología. Vamos a ver algunos consejos para evitarlas y para que no destruyan nuestra productividad.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/evitar-las-interrupciones-en-el-estudio/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

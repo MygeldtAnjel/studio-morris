@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>     <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>     <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" href="/favicon.png"> <!-- Favicon -->
+    <link rel="icon" href="/favicon.png">
+	
+	<title>Visual scripting environment for designers | Dynamo</title>
+
+	<link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>	<link rel="stylesheet" href="https://dynamobim.org//wp-content/themes/dynamo/css/font-awesome.min.css">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://dynamobim.org/xmlrpc.php">	
+	<!--wordpress head-->
+
+<style>
+.image-details .column-settings {
+width: 32% !important;
+position: absolute !important;
+top: 20px !important;
+left: 230px !important;
+}
+</style>
+	
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-49664594-1', 'dynamobim.org');
+  ga('send', 'pageview');
+ 
+</script>
+<script>
+
+function collectStableReleaseDownloads()
+{
+    setTimeout(function(){ga('send', 'event', 'stablereleaseDownload', 'click');}, 1500);
+}
+
+function collectDailyBuildDownloads()
+{
+    setTimeout(function(){ga('send', 'event', 'dailyBuildDownload', 'click');}, 1500);
+}
+function fixGalleryHeight(){
+	var galleryElements = document.getElementsByClassName('rtmedia-list-item');
+
+	for (i = 0; i < galleryElements.length; i++) { 
+		galleryElements[i].style.height="20vw";
+	}
+
+}
+</script>
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v15.9.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Dynamo is a simple, coherent, and capable programming tool for people who make things, enabling users at every level of ability to create and share graphs" />
+	<link rel="canonical" href="https://dynamobim.org/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Visual scripting environment for designers | Dynamo" />
+	<meta property="og:description" content="Dynamo is a simple, coherent, and capable programming tool for people who make things, enabling users at every level of ability to create and share graphs" />
+	<meta property="og:url" content="https://dynamobim.org/" />
+	<meta property="og:site_name" content="Dynamo BIM" />
+	<meta property="article:modified_time" content="2020-06-15T19:30:42+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://dynamobim.org/#website","url":"https://dynamobim.org/","name":"Dynamo BIM","description":"","potentialAction":[{"@type":"SearchAction","target":"https://dynamobim.org/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://dynamobim.org/#webpage","url":"https://dynamobim.org/","name":"Visual scripting environment for designers | Dynamo","isPartOf":{"@id":"https://dynamobim.org/#website"},"datePublished":"2015-11-04T01:07:46+00:00","dateModified":"2020-06-15T19:30:42+00:00","description":"Dynamo is a simple, coherent, and capable programming tool for people who make things, enabling users at every level of ability to create and share graphs","breadcrumb":{"@id":"https://dynamobim.org/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://dynamobim.org/"]}]},{"@type":"BreadcrumbList","@id":"https://dynamobim.org/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://dynamobim.org/","url":"https://dynamobim.org/","name":"Home"}}]}]}</script>
+	<meta name="google-site-verification" content="nMFEfM-UY8m3CbpCE7AH8naDAOjW7aafHRO3NaJKEgc" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Dynamo BIM &raquo; Feed" href="https://dynamobim.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dynamo BIM &raquo; Comments Feed" href="https://dynamobim.org/comments/feed/" />
+<link rel="alternate" type="text/calendar" title="Dynamo BIM &raquo; iCal Feed" href="https://dynamobim.org/events/?ical=1" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/dynamobim.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='tribe-common-skeleton-style-css'  href='https://dynamobim.org/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=4.12.18' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe-tooltip-css'  href='https://dynamobim.org/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css?ver=4.12.18' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://dynamobim.org/wp-includes/css/dist/block-library/style.min.css?ver=5.7' type='text/css' media='all' />
+<link rel='stylesheet' id='foobox-free-min-css'  href='https://dynamobim.org/wp-content/plugins/foobox-image-lightbox/free/css/foobox.free.min.css?ver=2.7.16' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-style-css'  href='https://dynamobim.org/wp-content/themes/dynamo/css/bootstrap.min.css?ver=5.7' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-theme-style-css'  href='https://dynamobim.org/wp-content/themes/dynamo/css/bootstrap-theme.css?ver=5.7' type='text/css' media='all' />
+<link rel='stylesheet' id='main-style-css'  href='https://dynamobim.org/wp-content/themes/dynamo/css/main-dyn.css?ver=5.7' type='text/css' media='all' />
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=1.10.2' id='jquery-js'></script>
+<script type='text/javascript' src='https://dynamobim.org/wp-content/themes/dynamo/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js?ver=5.7' id='modernizr-script-js'></script>
+<script type='text/javascript' src='https://dynamobim.org/wp-content/themes/dynamo/js/vendor/html5shiv.js?ver=5.7' id='html5-shiv-script-js'></script>
+<script type='text/javascript' src='https://dynamobim.org/wp-content/themes/dynamo/js/vendor/bootstrap.min.js?ver=5.7' id='bootstrap-script-js'></script>
+<script type='text/javascript' src='https://dynamobim.org/wp-content/themes/dynamo/js/main.js?ver=5.7' id='main-script-js'></script>
+<script type='text/javascript' id='foobox-free-min-js-before'>
+/* Run FooBox FREE (v2.7.16) */
+var FOOBOX = window.FOOBOX = {
+	ready: true,
+	disableOthers: false,
+	o: {wordpress: { enabled: true }, countMessage:'image %index of %total', excludes:'.fbx-link,.nofoobox,.nolightbox,a[href*="pinterest.com/pin/create/button/"]', affiliate : { enabled: false }},
+	selectors: [
+		".gallery", ".wp-block-gallery", ".wp-caption", ".wp-block-image", "a:has(img[class*=wp-image-])", ".foobox"
+	],
+	pre: function( $ ){
+		// Custom JavaScript (Pre)
+		
+	},
+	post: function( $ ){
+		// Custom JavaScript (Post)
+		
+		// Custom Captions Code
+		
+	},
+	custom: function( $ ){
+		// Custom Extra JS
+		
+	}
+};
+</script>
+<script type='text/javascript' src='https://dynamobim.org/wp-content/plugins/foobox-image-lightbox/free/js/foobox.free.min.js?ver=2.7.16' id='foobox-free-min-js'></script>
+<link rel="https://api.w.org/" href="https://dynamobim.org/wp-json/" /><link rel="alternate" type="application/json" href="https://dynamobim.org/wp-json/wp/v2/pages/32412" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dynamobim.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://dynamobim.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.7" />
+<link rel='shortlink' href='https://dynamobim.org/' />
+<link rel="alternate" type="application/json+oembed" href="https://dynamobim.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdynamobim.org%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://dynamobim.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdynamobim.org%2F&#038;format=xml" />
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://dynamobim.org"><link rel="https://theeventscalendar.com/" href="https://dynamobim.org/wp-json/tribe/events/v1/" /><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+<body class="home page-template page-template-page-homepage page-template-page-homepage-php page page-id-32412 tribe-no-js tribe-bar-is-disabled" onload="fixGalleryHeight()">
+	<div id="fb-root"></div>
+	
+	
+	 
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+       
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> -->
+                  <button class="button-toggle-navigation" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				    <span>Toggle Navigation</span>
+				  </button>
+
+				<a href="https://dynamobim.org/" title="Dynamo BIM" rel="home" class="navbar-brand">
+				  <img src="https://dynamobim.org/wp-content/themes/dynamo/img/logo.png" alt="Dynamo BIM" title="Dynamo" height="30">
+				</a>
+            </div>
+
+
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="menu-menu-2-container"><ul id="menu-menu-2" class="nav navbar-nav"><li id="menu-item-32414" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32414"><a href="/learn/">Learn</a></li>
+<li id="menu-item-32415" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32415"><a href="/explore/">Explore</a></li>
+<li id="menu-item-32418" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32418"><a href="/blog/">Blog</a></li>
+<li id="menu-item-32420" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32420"><a href="https://forum.dynamobim.com/">Forum</a></li>
+<li id="menu-item-49426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49426"><a href="http://developer.dynamobim.org">Developer</a></li>
+<li id="menu-item-49427" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-has-children menu-item-49427 active dropdown"><a href="/" aria-current="page">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-49428" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49428"><a href="http://primer.dynamobim.org">Primer</a></li>
+	<li id="menu-item-49430" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49430"><a href="http://dictionary.dynamobim.com">Dictionary</a></li>
+	<li id="menu-item-49429" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49429"><a href="http://dynamobuilds.com/">Builds</a></li>
+	<li id="menu-item-48665" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48665"><a href="/events">Events</a></li>
+</ul>
+</li>
+</ul></div>
+				<div class="menu-right-menu-container">
+					<ul id="menu-right-menu" class="nav navbar-nav navbar-right">
+						<li class="a-tw"><a target="_blank" href="https://twitter.com/DynamoBIM"></a></li>
+						<li class="a-fb"><a target="_blank" href="https://www.facebook.com/DynamoBIM"></a></li>
+						<li class="a-download"><a href="/download/">Get Dynamo</a></li>
+					</ul>
+				</div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        
+        <!-- /.container -->
+    </nav>
+
+
+
+	
+	<div class="container">
+
+
+	
+    
+</div>
+
+<!-- Page Header -->
+    <header class="intro-header" style="background-image: url(https://dynamobim.org/wp-content/uploads/forum-assets/yu-keautodesk-com/11/04/20150713-Hero-1.png)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading text-left">
+                        <h3><i>Community-driven</i></h3>
+                        <h1>Open source graphical programming for design</h1>
+                        <br>
+                        <p class="text-center">
+                            <a href="#" data-embed="h0Sk1w7xU4Q" class="btn btn-primary embed-link">Watch Video <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></a>
+                            <a href="/download/" class="btn btn-link">Get Dynamo <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </p>
+                    </div>
+                    <p class="text-center">
+                        <a href="#explore" class="btn btn-link learn-more internal">Learn More <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Explore Section -->
+    <section class="hm-explore container-fluid" id="explore">
+        <div class="container">
+            <h1 class="section-title text-center">Explore Dynamo</h1>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="inner">
+                        <p><img loading="lazy" class="alignleft wp-image-47195 size-full" src="/wp-content/uploads/forum-assets/capitolfoundry/11/04/exp-1.png" alt="exp-1" width="91" height="90" /></p>
+<h4>Computational Design</h4>
+<p>Dynamo extends building information modeling with the data and logic environment of a graphical algorithm editor. <a class="dl-link" href="download">GET DYNAMO➝</a></p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="inner">
+                        <p class="text-center"><img loading="lazy" class="alignleft wp-image-47201 size-full" src="/wp-content/uploads/forum-assets/capitolfoundry/11/04/exp-2.png" alt="exp-2" width="90" height="87" /></p>
+<h4></h4>
+<h4>Open-Source Community</h4>
+<p>Dynamo is an open source tool, built on a community that contributes to making it better. <a class="dl-link" href="https://forum.dynamobim.com/">Get Involved ➝</a></p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="inner">
+                        <p class="text-center"><img loading="lazy" class="alignleft wp-image-47202 size-full" src="/wp-content/uploads/forum-assets/capitolfoundry/11/04/exp-3.png" alt="exp-3" width="117" height="87" /></p>
+<h4></h4>
+<h4>Tutorials from Experts</h4>
+<p>Learn from our community of architects, engineers, programmers, and designers. <a href="learn">Learn ➝ </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / Explore Section -->
+
+   <!-- How is -->
+    <div class="hm-how container-fluid">
+        <img src="https://dynamobim.org/wp-content/themes/dynamo/img/icon.png" alt="">
+        <h1>How Dynamo Is Used</h1>
+    </div>
+    <!-- / How is -->
+
+    <!-- Use Cases -->
+                    <div class="container-fluid use-case st" style="background-image:url(https://dynamobim.org/wp-content/uploads/forum-assets/racel-williamsautodesk-com/10/17/Image-004_Final_ParkingConfigurator_FormIt.png)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4 pull-right">
+                                <h3>MT Højgaard automates modeling and pricing using Dynamo Studio </h3>
+                                <p>
+                                    Dynamo Studio let us use computational design and a data-driven process to generate thousands of potential geometries for the garage. The idea is to explore as many options as possible without having to manually model each one<br />
+<br />
+-- Jesper Wallaert, VDC Specialist, MT Højgaard<br />
+                                </p>
+                                <div class="clearfix"></div>
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <img class="thumb" src="https://dynamobim.org/wp-content/uploads/forum-assets/racel-williamsautodesk-com/10/17/Image-006_ParkingConfigurator_Revit.png" alt="">
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h4> MT Højgaard</h4>
+                                        <a href=" https://dynamobim.org/home_usecases/use-case-3/">See More <span>&#10141;</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!-- / Use Cases -->
+
+    <!-- Get Started -->
+    <div class="container-fluid hm-started">
+        <p class="text-center">
+            Get started with Dynamo
+            <a href="/download/" class="btn btn-primary btn-lg">Get Dynamo</a>
+        </p>
+    </div>
+    <!-- / Get Started -->
+		
+        <div>
+		
+		<div class="modal-iframe hide">
+			<div class="container">
+				<div class="inner">
+					<a href="#" class="close-modal">&times;</a>
+					<iframe width="853" height="480" src="//" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>	
+		
+				
+
+</div>
+
+			<footer class="main-footer">
+        <div class="container">
+            <div class="col-sm-2">
+                <img src="https://dynamobim.org/wp-content/themes/dynamo/img/icon.png" alt="">
+            </div>
+            <div class="col-sm-8 text-center">
+
+
+                <div class="list-unstyled list-inline"><ul id="menu-footer-menu" class="menu"><li id="menu-item-32425" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32425"><a href="/learn/">Learn</a></li>
+<li id="menu-item-32426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32426"><a href="/explore/">Explore</a></li>
+<li id="menu-item-32518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32518"><a href="/blog/">Blog</a></li>
+<li id="menu-item-32427" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32427"><a href="https://forum.dynamobim.com/">Forum</a></li>
+<li id="menu-item-49425" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49425"><a href="http://developer.dynamobim.org">Developer</a></li>
+<li id="menu-item-32429" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32429"><a href="/about/">About</a></li>
+<li id="menu-item-32430" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32430"><a href="/help-center/">Help Center</a></li>
+<li id="menu-item-32431" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32431"><a href="/terms-conditions/">Terms &#038; Conditions</a></li>
+<li id="menu-item-32432" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32432"><a href="/credits/">Credits</a></li>
+<li id="menu-item-51407" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51407"><a href="https://www.autodesk.com/company/legal-notices-trademarks/privacy-statement">Privacy</a></li>
+</ul></div>               
+            </div>
+            <div class="col-sm-2 text-right">
+                <p>&copy; 2020 Autodesk, Inc</p>
+            </div>
+        </div>
+    </footer>
+		
+				<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script type='text/javascript' src='https://dynamobim.org/wp-includes/js/wp-embed.min.js?ver=5.7' id='wp-embed-js'></script>
+ 
+	</body>
+</html> 

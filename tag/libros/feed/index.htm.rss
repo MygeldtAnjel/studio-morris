@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>libros &#8211; ARQcoaching</title>
+	<atom:link href="https://www.coachingarquitectos.com/tag/libros/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.coachingarquitectos.com</link>
+	<description>Coaching para arquitectos por arquitectos</description>
+	<lastBuildDate>Mon, 08 Jun 2020 16:03:58 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+
+<image>
+	<url>https://www.coachingarquitectos.com/wp-content/uploads/2018/10/logo-ARQcoaching-fav-icon-1.png</url>
+	<title>libros &#8211; ARQcoaching</title>
+	<link>https://www.coachingarquitectos.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>LIBROS DE ARQUITECTURA. LOS 50 QUE YO LEERÍA</title>
+		<link>https://www.coachingarquitectos.com/libros-de-arquitectura/</link>
+					<comments>https://www.coachingarquitectos.com/libros-de-arquitectura/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 29 Oct 2019 06:30:23 +0000</pubDate>
+				<category><![CDATA[personal]]></category>
+		<category><![CDATA[hábitos]]></category>
+		<category><![CDATA[libros]]></category>
+		<guid isPermaLink="false">https://www.coachingarquitectos.com/?p=8904</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/libros-de-arquitectura/">LIBROS DE ARQUITECTURA. LOS 50 QUE YO LEERÍA</a></p>
+<p>Aquí tienes los 50 libros de arquitectura imprescindibles, los que más te ayudarán en la profesión y en otras áreas (por ejemplo, a atraer a otras personas a la secta). Están ordenados por categorías y filtrados para ti.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/libros-de-arquitectura/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

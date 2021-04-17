@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>evolución &#8211; ARQcoaching</title>
+	<atom:link href="https://www.coachingarquitectos.com/tag/evolucion/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.coachingarquitectos.com</link>
+	<description>Coaching para arquitectos por arquitectos</description>
+	<lastBuildDate>Sun, 23 Jun 2019 19:01:36 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+
+<image>
+	<url>https://www.coachingarquitectos.com/wp-content/uploads/2018/10/logo-ARQcoaching-fav-icon-1.png</url>
+	<title>evolución &#8211; ARQcoaching</title>
+	<link>https://www.coachingarquitectos.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>ARQUITECTOS ONLINE. SOBREVIVIR A LA GLACIACIÓN</title>
+		<link>https://www.coachingarquitectos.com/arquitectos-online/</link>
+					<comments>https://www.coachingarquitectos.com/arquitectos-online/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Sun, 25 Jun 2017 08:00:57 +0000</pubDate>
+				<category><![CDATA[estudio]]></category>
+		<category><![CDATA[canales]]></category>
+		<category><![CDATA[creencias limitantes]]></category>
+		<category><![CDATA[evolución]]></category>
+		<category><![CDATA[innovación]]></category>
+		<category><![CDATA[modelo de negocio]]></category>
+		<category><![CDATA[networking]]></category>
+		<category><![CDATA[profesión]]></category>
+		<category><![CDATA[web]]></category>
+		<guid isPermaLink="false">http://www.coachingarquitectos.com/?p=4296</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/arquitectos-online/">ARQUITECTOS ONLINE. SOBREVIVIR A LA GLACIACIÓN</a></p>
+<p>Los arquitectos online están mejor preparados para sobrevivir a una glaciación. ¿Por qué la profesión sigue siendo en gran parte reacia a potenciar su presencia estratégica en internet? Las múltiples ventajas que nos ofrece no pueden ser dejadas de lado.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/arquitectos-online/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>EL CAMBIO, ESA MANÍA</title>
+		<link>https://www.coachingarquitectos.com/el-cambio-esa-mania/</link>
+					<comments>https://www.coachingarquitectos.com/el-cambio-esa-mania/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Mon, 15 Aug 2016 22:05:40 +0000</pubDate>
+				<category><![CDATA[personal]]></category>
+		<category><![CDATA[cambio]]></category>
+		<category><![CDATA[evolución]]></category>
+		<category><![CDATA[miedo]]></category>
+		<guid isPermaLink="false">http://www.coachingarquitectos.com/?p=1697</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/el-cambio-esa-mania/">EL CAMBIO, ESA MANÍA</a></p>
+<p>Una reflexión sobre la naturaleza del cambio y la necesidad de saber afrontarlo sin miedo en el mundo que nos rodea hoy en día. Existen técnicas y herramientas que te harán más fácil el cambio, imprescindible para adaptarte y para mejorar.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/el-cambio-esa-mania/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>portafolio &#8211; ARQcoaching</title>
+	<atom:link href="https://www.coachingarquitectos.com/tag/portafolio/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.coachingarquitectos.com</link>
+	<description>Coaching para arquitectos por arquitectos</description>
+	<lastBuildDate>Thu, 23 Jan 2020 10:49:45 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+
+<image>
+	<url>https://www.coachingarquitectos.com/wp-content/uploads/2018/10/logo-ARQcoaching-fav-icon-1.png</url>
+	<title>portafolio &#8211; ARQcoaching</title>
+	<link>https://www.coachingarquitectos.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>CÓMO HACER UNA CARTA DE PRESENTACIÓN DE ARQUITECTO PARA CONSEGUIR EMPLEO</title>
+		<link>https://www.coachingarquitectos.com/carta-de-presentacion-arquitecto/</link>
+					<comments>https://www.coachingarquitectos.com/carta-de-presentacion-arquitecto/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 21 Jan 2020 06:30:05 +0000</pubDate>
+				<category><![CDATA[empleo]]></category>
+		<category><![CDATA[carta de presentación]]></category>
+		<category><![CDATA[CV]]></category>
+		<category><![CDATA[empleabilidad]]></category>
+		<category><![CDATA[portafolio]]></category>
+		<category><![CDATA[propuesta de valor]]></category>
+		<guid isPermaLink="false">https://www.coachingarquitectos.com/?p=9088</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/carta-de-presentacion-arquitecto/">CÓMO HACER UNA CARTA DE PRESENTACIÓN DE ARQUITECTO PARA CONSEGUIR EMPLEO</a></p>
+<p>La carta de presentación es un elemento que se sigue pidiendo en los procesos de contratación y búsqueda de empleo para arquitectos, ya sea en pdf o con formato email. Te muestro cómo hacerla, qué elementos debe contener, una estructura y un ejemplo válido y efectivo para conseguir empleo.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/carta-de-presentacion-arquitecto/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CÓMO HACER UN PORTAFOLIO DE ARQUITECTURA PARA CONSEGUIR EMPLEO</title>
+		<link>https://www.coachingarquitectos.com/portafolio-arquitectura/</link>
+					<comments>https://www.coachingarquitectos.com/portafolio-arquitectura/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 26 Mar 2019 07:30:30 +0000</pubDate>
+				<category><![CDATA[destacados]]></category>
+		<category><![CDATA[empleo]]></category>
+		<category><![CDATA[competencias]]></category>
+		<category><![CDATA[CV]]></category>
+		<category><![CDATA[empleabilidad]]></category>
+		<category><![CDATA[portafolio]]></category>
+		<category><![CDATA[propuesta de valor]]></category>
+		<category><![CDATA[valores]]></category>
+		<guid isPermaLink="false">https://www.coachingarquitectos.com/?p=7046</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/portafolio-arquitectura/">CÓMO HACER UN PORTAFOLIO DE ARQUITECTURA PARA CONSEGUIR EMPLEO</a></p>
+<p>El portafolio de arquitectura sigue siendo un elemento muy importante en la búsqueda de empleo en el sector. Aquí tienes criterios precisos, ideas y herramientas para que te ayude en este cometido y te diferencie del resto de candidatos.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/portafolio-arquitectura/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

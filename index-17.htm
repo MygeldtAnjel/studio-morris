@@ -1,0 +1,1588 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html lang="en" xmlns:fb="http://developers.facebook.com/schema/" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" xmlns:fb="http://developers.facebook.com/schema/" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js lt-ie9 lt-ie8"> <![endif]--> <!--[if IE 8]>         <html lang="en" xmlns:fb="http://developers.facebook.com/schema/" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html lang="en" xmlns:fb="http://developers.facebook.com/schema/" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en" xmlns:fb="http://developers.facebook.com/schema/" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js"> <!--<![endif]-->
+  <head>
+    
+  <link rel="alternate" href="https://www.brusheezy.com" hreflang="en" />
+
+
+  <link rel="alternate" href="https://es.brusheezy.com" hreflang="es" />
+
+
+  <link rel="alternate" href="https://pt.brusheezy.com" hreflang="pt-BR" />
+
+
+  <link rel="alternate" href="https://de.brusheezy.com" hreflang="de" />
+
+
+  <link rel="alternate" href="https://fr.brusheezy.com" hreflang="fr" />
+
+
+  <link rel="alternate" href="https://nl.brusheezy.com" hreflang="nl" />
+
+
+  <link rel="alternate" href="https://sv.brusheezy.com" hreflang="sv" />
+
+<link rel="alternate" href="https://www.brusheezy.com" hreflang="x-default" />
+
+    
+    <link rel="dns-prefetch" href="//static.brusheezy.com">
+    <link href="https://static.brusheezy.com/assets/home-c88fe92a56530bdfe9442c8d106a5ce1.css" media="all" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-e38a0a5d9f3d7a161d2","applicationID":"682498450","transactionName":"J1kMFkBaWF9cREoKXQlTTQtcUVFL","queueTime":0,"applicationTime":47,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-e38a0a5d9f3d7a161d2",applicationID:"682498450"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="initial-scale = 1.0, user-scalable = no">
+    <title>Free Photoshop Brushes at Brusheezy!</title>
+<meta content="Photoshop Brushes - Brusheezy is a HUGE collection of Photoshop Brushes, Photoshop Patterns, Textures, PSDs, Actions, Shapes, Styles, &amp; Gradients to download, or share!" name="description" />
+<meta content="Brusheezy" property="og:site_name" />
+<meta content="Photoshop resources for everyone." property="og:title" />
+<meta content="Download millions of free and premium photoshop resources instantly." property="og:description" />
+<meta content="https://www.brusheezy.com/" property="og:url" />
+<meta content="en_US" property="og:locale" />
+<meta content="de_DE" property="og:locale:alternate" />
+<meta content="es_ES" property="og:locale:alternate" />
+<meta content="fr_FR" property="og:locale:alternate" />
+<meta content="nl_NL" property="og:locale:alternate" />
+<meta content="pt_BR" property="og:locale:alternate" />
+<meta content="sv_SE" property="og:locale:alternate" />
+<meta content="https://static.brusheezy.com/assets/brusheezy-logo-opengraph.png" property="og:image" />
+    <link href="/favicon.ico" rel="shortcut icon"></link><link href="/favicon.png" rel="icon" sizes="48x48" type="image/png"></link><link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed"></link>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="https://static.brusheezy.com/assets/modernizr.custom.83825-93372fb200ead74f1d44254d993c5440.js" type="text/javascript"></script>
+    <link href="https://feeds.feedburner.com/eezyinc/brusheezy-images" rel="alternate" title="RSS" type="application/rss+xml" />
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="cMvNtuVr+Z/Nk1T/ggdH4cWtsRuHkiZCMrgluaHBC0k=" name="csrf-token" />
+    <!-- Begin TextBlock "HTML - Head" -->
+<meta name="google-site-verification" content="pfGHD8M12iD8MZoiUsSycicUuSitnj2scI2cB_MvoYw" />
+<meta name="google-site-verification" content="b4_frnI9j9l6Hs7d1QntimjvrZOtJ8x8ykl7RfeJS2Y" />
+<meta name="tinfoil-site-verification" content="6d4a376b35cc11699dd86a787c7b5ae10b5c70f0" />
+<meta name="msvalidate.01" content="9E7A3F56C01FB9B69FCDD1FBD287CAE4" />
+<meta name="p:domain_verify" content="e95f03b955f8191de30e476f8527821e"/>
+<meta property="fb:page_id" content="111431139680" />
+<meta name="google" content="nositelinkssearchbox" />
+<meta name="referrer" content="unsafe-url" />
+<!--<script type="text/javascript" src="http://api.xeezy.com/api.min.js"></script>-->
+<meta name="google-site-verification" content="MB7xMARPo0IZMJi0Co9fEsMCijJV7pR_Xa2IUoqYDh4" />
+<!--<script async src="//cdn-s2s.buysellads.net/pub/brusheezy.js" data-cfasync="false"></script>-->
+<link href="https://plus.google.com/116840303500574370724" rel="publisher" />
+
+<script>
+  var iStockCoupon = { 
+    // --- ADMIN CONIG----
+    Code: 'EEZYOFF14', 
+    Message: 'Hurry! Offer Expires 10/31/2013',
+    // -------------------
+
+    showPopup: function() {
+      var win = window.open("", "istock-sale", "width=520,height=320");
+      var wrap = win.document.createElement('div'); 
+      wrap.setAttribute('class', 'sale-wrapper');
+      
+      var logo = win.document.createElement('img');
+      logo.setAttribute('src', '//static.vecteezy.com/system/assets/asset_files/000/000/171/original/new-istock-logo.jpg');
+      wrap.appendChild(logo);
+      
+      var code = win.document.createElement('div');
+      code.setAttribute('class','code');
+      code.appendChild(win.document.createTextNode(iStockCoupon.Code));
+      wrap.appendChild(code);
+      
+      var expires = win.document.createElement('div');
+      expires.setAttribute('class','expire');
+      expires.appendChild(win.document.createTextNode(iStockCoupon.Message));
+      wrap.appendChild(expires);
+      
+      var close = win.document.createElement('a');
+      close.setAttribute('href', '#');
+      close.appendChild(win.document.createTextNode('Close Window'));
+      wrap.appendChild(close);
+      
+      var style = win.document.createElement('style');
+      close.setAttribute('onclick', 'window.close()');
+  
+      style.appendChild(win.document.createTextNode("a{margin-top: 40px;display:block;font-size:12px;color:rgb(73,149,203);text-decoration:none;} .expire{margin-top:16px;color: rgb(81,81,81);font-size:24px;} .code{margin-top:20px;font-size:50px;font-weight:700;text-transform:uppercase;} img{margin-top:44px;} body{padding:0;margin:0;text-align:center;font-family:sans-serif;} .sale-wrapper{height:288px;border:16px solid #a1a1a1;}"));
+      win.document.body.appendChild(style);
+      win.document.body.appendChild(wrap);        
+    },
+  };
+
+</script>
+<meta name="google-site-verification" content="e28lNuryAN73PQNcJTdGCG4KOVQ5lM0vq2TdYYWu-yo" />
+<script src="https://cdn.optimizely.com/js/168948327.js"></script>
+
+<script>var AdminHideEezyPremiumPopup = false</script>
+<!-- TradeDoubler site verification 2802548 -->
+
+
+
+<!-- End TextBlock "HTML - Head" -->
+      <script type="text/javascript">
+    var is_home_page = true;
+  </script>
+
+  <link rel="canonical" href="https://www.brusheezy.com" />
+
+  <script type="application/ld+json">
+    {
+       "@context": "http://schema.org",
+       "@type": "WebSite",
+       "name": "brusheezy",
+       "url": "http://www.brusheezy.com/",
+       "potentialaction": {
+         "@type": "SearchAction",
+         "target": "http://www.brusheezy.com/free/{search_term_string}",
+         "query-input": "required name=search_term_string"
+       }
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "url": "brusheezy.com",
+    "logo": "https://static.brusheezy.com/assets/structured_data/brusheezy-logo-63a0370ba72197d03d41c8ee2a3fe30d.svg",
+    "sameAs": [
+      "https://www.facebook.com/brusheezy",
+      "https://twitter.com/brusheezy",
+      "https://pinterest.com/brusheezy/",
+      "https://www.youtube.com/EezyInc",
+      "https://instagram.com/eezy/",
+      "https://www.snapchat.com/add/eezy",
+      "https://google.com/+brusheezy"
+    ]
+    }
+  </script>
+
+
+  </head>
+
+  <body class="  home">
+    <script>
+(function(){
+window.googlefc = window.googlefc || {};
+window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];
+
+/*
+Copyright The Closure Library Authors.
+SPDX-License-Identifier: Apache-2.0
+*/
+'use strict';var g=function(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}},l=this||self,m=/^[\w+/_-]+[=]{0,2}$/,p=null,q=function(){},r=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";
+if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";else if("function"==b&&"undefined"==typeof a.call)return"object";return b},u=function(a,b){function c(){}c.prototype=b.prototype;a.prototype=new c;a.prototype.constructor=a};var v=function(a,b){Object.defineProperty(l,a,{configurable:!1,get:function(){return b},set:q})};var y=function(a,b){this.b=a===w&&b||"";this.a=x},x={},w={};var aa=function(a,b){a.src=b instanceof y&&b.constructor===y&&b.a===x?b.b:"type_error:TrustedResourceUrl";if(null===p)b:{b=l.document;if((b=b.querySelector&&b.querySelector("script[nonce]"))&&(b=b.nonce||b.getAttribute("nonce"))&&m.test(b)){p=b;break b}p=""}b=p;b&&a.setAttribute("nonce",b)};var z=function(){return Math.floor(2147483648*Math.random()).toString(36)+Math.abs(Math.floor(2147483648*Math.random())^+new Date).toString(36)};var A=function(a,b){b=String(b);"application/xhtml+xml"===a.contentType&&(b=b.toLowerCase());return a.createElement(b)},B=function(a){this.a=a||l.document||document};B.prototype.appendChild=function(a,b){a.appendChild(b)};var C=function(a,b,c,d,e,f){try{var k=a.a,h=A(a.a,"SCRIPT");h.async=!0;aa(h,b);k.head.appendChild(h);h.addEventListener("load",function(){e();d&&k.head.removeChild(h)});h.addEventListener("error",function(){0<c?C(a,b,c-1,d,e,f):(d&&k.head.removeChild(h),f())})}catch(n){f()}};var ba=l.atob("aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vaW1hZ2VzL2ljb25zL21hdGVyaWFsL3N5c3RlbS8xeC93YXJuaW5nX2FtYmVyXzI0ZHAucG5n"),ca=l.atob("WW91IGFyZSBzZWVpbmcgdGhpcyBtZXNzYWdlIGJlY2F1c2UgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlIGlzIGludGVyZmVyaW5nIHdpdGggdGhpcyBwYWdlLg=="),da=l.atob("RGlzYWJsZSBhbnkgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlLCB0aGVuIHJlbG9hZCB0aGlzIHBhZ2Uu"),ea=function(a,b,c){this.b=a;this.f=new B(this.b);this.a=null;this.c=[];this.g=!1;this.i=b;this.h=c},F=function(a){if(a.b.body&&!a.g){var b=
+function(){D(a);l.setTimeout(function(){return E(a,3)},50)};C(a.f,a.i,2,!0,function(){l[a.h]||b()},b);a.g=!0}},D=function(a){for(var b=G(1,5),c=0;c<b;c++){var d=H(a);a.b.body.appendChild(d);a.c.push(d)}b=H(a);b.style.bottom="0";b.style.left="0";b.style.position="fixed";b.style.width=G(100,110).toString()+"%";b.style.zIndex=G(2147483544,2147483644).toString();b.style["background-color"]=I(249,259,242,252,219,229);b.style["box-shadow"]="0 0 12px #888";b.style.color=I(0,10,0,10,0,10);b.style.display=
+"flex";b.style["justify-content"]="center";b.style["font-family"]="Roboto, Arial";c=H(a);c.style.width=G(80,85).toString()+"%";c.style.maxWidth=G(750,775).toString()+"px";c.style.margin="24px";c.style.display="flex";c.style["align-items"]="flex-start";c.style["justify-content"]="center";d=A(a.f.a,"IMG");d.className=z();d.src=ba;d.style.height="24px";d.style.width="24px";d.style["padding-right"]="16px";var e=H(a),f=H(a);f.style["font-weight"]="bold";f.textContent=ca;var k=H(a);k.textContent=da;J(a,
+e,f);J(a,e,k);J(a,c,d);J(a,c,e);J(a,b,c);a.a=b;a.b.body.appendChild(a.a);b=G(1,5);for(c=0;c<b;c++)d=H(a),a.b.body.appendChild(d),a.c.push(d)},J=function(a,b,c){for(var d=G(1,5),e=0;e<d;e++){var f=H(a);b.appendChild(f)}b.appendChild(c);c=G(1,5);for(d=0;d<c;d++)e=H(a),b.appendChild(e)},G=function(a,b){return Math.floor(a+Math.random()*(b-a))},I=function(a,b,c,d,e,f){return"rgb("+G(Math.max(a,0),Math.min(b,255)).toString()+","+G(Math.max(c,0),Math.min(d,255)).toString()+","+G(Math.max(e,0),Math.min(f,
+255)).toString()+")"},H=function(a){a=A(a.f.a,"DIV");a.className=z();return a},E=function(a,b){0>=b||null!=a.a&&0!=a.a.offsetHeight&&0!=a.a.offsetWidth||(fa(a),D(a),l.setTimeout(function(){return E(a,b-1)},50))},fa=function(a){var b=a.c;var c="undefined"!=typeof Symbol&&Symbol.iterator&&b[Symbol.iterator];b=c?c.call(b):{next:g(b)};for(c=b.next();!c.done;c=b.next())(c=c.value)&&c.parentNode&&c.parentNode.removeChild(c);a.c=[];(b=a.a)&&b.parentNode&&b.parentNode.removeChild(b);a.a=null};var ia=function(a,b,c,d,e){var f=ha(c),k=function(n){n.appendChild(f);l.setTimeout(function(){f?(0!==f.offsetHeight&&0!==f.offsetWidth?b():a(),f.parentNode&&f.parentNode.removeChild(f)):a()},d)},h=function(n){document.body?k(document.body):0<n?l.setTimeout(function(){h(n-1)},e):b()};h(3)},ha=function(a){var b=document.createElement("div");b.className=a;b.style.width="1px";b.style.height="1px";b.style.position="absolute";b.style.left="-10000px";b.style.top="-10000px";b.style.zIndex="-10000";return b};var K={},L=null;var M=function(){},N="function"==typeof Uint8Array,O=function(a,b){a.b=null;b||(b=[]);a.j=void 0;a.f=-1;a.a=b;a:{if(b=a.a.length){--b;var c=a.a[b];if(!(null===c||"object"!=typeof c||Array.isArray(c)||N&&c instanceof Uint8Array)){a.g=b-a.f;a.c=c;break a}}a.g=Number.MAX_VALUE}a.i={}},P=[],Q=function(a,b){if(b<a.g){b+=a.f;var c=a.a[b];return c===P?a.a[b]=[]:c}if(a.c)return c=a.c[b],c===P?a.c[b]=[]:c},R=function(a,b,c){a.b||(a.b={});if(!a.b[c]){var d=Q(a,c);d&&(a.b[c]=new b(d))}return a.b[c]};
+M.prototype.h=N?function(){var a=Uint8Array.prototype.toJSON;Uint8Array.prototype.toJSON=function(){var b;void 0===b&&(b=0);if(!L){L={};for(var c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split(""),d=["+/=","+/","-_=","-_.","-_"],e=0;5>e;e++){var f=c.concat(d[e].split(""));K[e]=f;for(var k=0;k<f.length;k++){var h=f[k];void 0===L[h]&&(L[h]=k)}}}b=K[b];c=[];for(d=0;d<this.length;d+=3){var n=this[d],t=(e=d+1<this.length)?this[d+1]:0;h=(f=d+2<this.length)?this[d+2]:0;k=n>>2;n=(n&
+3)<<4|t>>4;t=(t&15)<<2|h>>6;h&=63;f||(h=64,e||(t=64));c.push(b[k],b[n],b[t]||"",b[h]||"")}return c.join("")};try{return JSON.stringify(this.a&&this.a,S)}finally{Uint8Array.prototype.toJSON=a}}:function(){return JSON.stringify(this.a&&this.a,S)};var S=function(a,b){return"number"!==typeof b||!isNaN(b)&&Infinity!==b&&-Infinity!==b?b:String(b)};M.prototype.toString=function(){return this.a.toString()};var T=function(a){O(this,a)};u(T,M);var U=function(a){O(this,a)};u(U,M);var ja=function(a,b){this.c=new B(a);var c=R(b,T,5);c=new y(w,Q(c,4)||"");this.b=new ea(a,c,Q(b,4));this.a=b},ka=function(a,b,c,d){b=new T(b?JSON.parse(b):null);b=new y(w,Q(b,4)||"");C(a.c,b,3,!1,c,function(){ia(function(){F(a.b);d(!1)},function(){d(!0)},Q(a.a,2),Q(a.a,3),Q(a.a,1))})};var la=function(a,b){V(a,"internal_api_load_with_sb",function(c,d,e){ka(b,c,d,e)});V(a,"internal_api_sb",function(){F(b.b)})},V=function(a,b,c){a=l.btoa(a+b);v(a,c)},W=function(a,b,c){for(var d=[],e=2;e<arguments.length;++e)d[e-2]=arguments[e];e=l.btoa(a+b);e=l[e];if("function"==r(e))e.apply(null,d);else throw Error("API not exported.");};var X=function(a){O(this,a)};u(X,M);var Y=function(a){this.h=window;this.a=a;this.b=Q(this.a,1);this.f=R(this.a,T,2);this.g=R(this.a,U,3);this.c=!1};Y.prototype.start=function(){ma();var a=new ja(this.h.document,this.g);la(this.b,a);na(this)};
+var ma=function(){var a=function(){if(!l.frames.googlefcPresent)if(document.body){var b=document.createElement("iframe");b.style.display="none";b.style.width="0px";b.style.height="0px";b.style.border="none";b.style.zIndex="-1000";b.style.left="-1000px";b.style.top="-1000px";b.name="googlefcPresent";document.body.appendChild(b)}else l.setTimeout(a,5)};a()},na=function(a){var b=Date.now();W(a.b,"internal_api_load_with_sb",a.f.h(),function(){var c;var d=a.b,e=l[l.btoa(d+"loader_js")];if(e){e=l.atob(e);
+e=parseInt(e,10);d=l.btoa(d+"loader_js").split(".");var f=l;d[0]in f||"undefined"==typeof f.execScript||f.execScript("var "+d[0]);for(;d.length&&(c=d.shift());)d.length?f[c]&&f[c]!==Object.prototype[c]?f=f[c]:f=f[c]={}:f[c]=null;c=Math.abs(b-e);c=1728E5>c?0:c}else c=-1;0!=c&&(W(a.b,"internal_api_sb"),Z(a,Q(a.a,6)))},function(c){Z(a,c?Q(a.a,4):Q(a.a,5))})},Z=function(a,b){a.c||(a.c=!0,a=new l.XMLHttpRequest,a.open("GET",b,!0),a.send())};(function(a,b){l[a]=function(c){for(var d=[],e=0;e<arguments.length;++e)d[e-0]=arguments[e];l[a]=q;b.apply(null,d)}})("__d3lUW8vwsKlB__",function(a){"function"==typeof window.atob&&(a=window.atob(a),a=new X(a?JSON.parse(a):null),(new Y(a)).start())});}).call(this);
+
+
+window.__d3lUW8vwsKlB__("WyI3ZmQ1M2QyNTZhY2Y5NWYxIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2YvQUdTS1d4WG80d3dOMERmeTlNZUhONkdacmxxalF4NzFrXzNpTlNDV2JXMTgtcXMxUS1ZZm5ZeEZJeUtUTjZkOHZaTS0yQ29UMmNKTFlETXVKcTRCdGpDQi1rWVx1MDAzZCJdCixbMjAsImRpdi1ncHQtYWQiLDEwMCwiTjJaa05UTmtNalUyWVdObU9UVm1NUVx1MDAzZFx1MDAzZCIsW251bGwsbnVsbCxudWxsLCJodHRwczovL3d3dy5nc3RhdGljLmNvbS8wZW1uL2YvcC83ZmQ1M2QyNTZhY2Y5NWYxLmpzP3VzcXBcdTAwM2RDQVEiXQpdCiwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vbC9BR1NLV3hXeWlQc1c5SDJOdHNDZHNuSm1xemFsS0wwc21nNTVSMlJ2N3ZHRVB2NjdjSm1MSHNlYkc5bFd4Rl9rXzZOZnFrYjZRSGVCUlhzVndDSUIyN1FiP2FiXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2wvQUdTS1d4VVpmT2Z0NGREQ09VMTZGalFxbGRYZXd4enpkcHU3aFdFblFjWHRxQm45N0FJZ2pzejVPOWRISkNpRTg1RkFLYXQyUlRKYy02dHVCOUVKX3dtLT9hYlx1MDAzZDJcdTAwMjZzYmZcdTAwM2QxIiwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vbC9BR1NLV3hVblE5Q0dyMVBvS3hRQlNhR1hCSk9wai1keVJ3ZTg3eGV1UGNLY2pzVkNjeGFTa29qR0pIU3owRVlmTDVwNXdkLU95R0VuQTd0Qnh6TjhqRkxXP3NiZlx1MDAzZDIiXQo=");</script>
+
+  <script type="text/javascript">
+    var properSpecialOps = properSpecialOps || {};
+  
+    properSpecialOps['spa_settings'] = {
+      enabled: true,
+    }
+
+    properSpecialOps.tags = [
+      'page_type:home',
+    ];
+
+    properSpecialOps.post_id = '';
+    properSpecialOps.isolated = [0];
+  </script>
+
+  <script type="text/javascript">
+    var propertag = propertag || {};
+    propertag.cmd = propertag.cmd || [];
+    (function() {
+    var pm = document.createElement('script');
+    pm.async = true; pm.type = 'text/javascript';
+    var is_ssl = 'https:' == document.location.protocol;
+    pm.src = (is_ssl ? 'https:' : 'http:') + '//global.proper.io/brusheezy.min.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(pm, node);
+    })();
+  </script>
+
+
+    
+    <div class="ez-locale-prompt ez-locale-prompt--header-nag" data-action="ez-locale-prompt"
+          data-locale-current="en" 
+          data-locale-recommended="es" >
+        
+
+      <div class="ez-locale-prompt--container">
+        <div class="ez-locale-prompt--text">
+          <h4>
+            ¿Quieres usar Brusheezy en Español?
+          </h4>
+
+          <span class="ez-locale-prompt--view-in-different-language" data-action="toggle-language-switcher" data-switcher-target="locale-prompt-locale-switcher">
+            Ver en idioma diferente
+            <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 11.9 7.1" style="enable-background:new 0 0 11.9 7.1;" xml:space="preserve">
+<polygon points="11.9,1.5 10.6,0 6,4.3 1.4,0 0,1.5 6,7.1 "></polygon>
+</svg>
+
+
+            
+<div id="locale-prompt-locale-switcher" class="ez-language-switcher ez-tooltip ez-tooltip--arrow-top">
+  <div class="ez-tooltip__arrow ez-tooltip__arrow--middle"></div>
+  <div class="ez-tooltip__content">
+    <ul>
+        <li>
+          
+            <span class="nested-locale-switcher-link en current">
+              English
+              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 11.93 9.39"><polygon points="11.93 1.76 10.17 0 4.3 5.87 1.76 3.32 0 5.09 4.3 9.39 11.93 1.76"></polygon></svg>
+
+            </span>
+        </li>
+        <li>
+          <a href="https://es.brusheezy.com/" class="nested-locale-switcher-link es" data-locale="es">Español</a>        </li>
+        <li>
+          <a href="https://pt.brusheezy.com/" class="nested-locale-switcher-link pt" data-locale="pt">Português</a>        </li>
+        <li>
+          <a href="https://de.brusheezy.com/" class="nested-locale-switcher-link de" data-locale="de">Deutsch</a>        </li>
+        <li>
+          <a href="https://fr.brusheezy.com/" class="nested-locale-switcher-link fr" data-locale="fr">Français</a>        </li>
+        <li>
+          <a href="https://nl.brusheezy.com/" class="nested-locale-switcher-link nl" data-locale="nl">Nederlands</a>        </li>
+        <li>
+          <a href="https://sv.brusheezy.com/" class="nested-locale-switcher-link sv" data-locale="sv">Svenska</a>        </li>
+    </ul>
+  </div>
+</div>
+
+  <span class="ez-language-switcher__overlay"></span>
+
+          </span>
+        </div>
+
+        <div class="ez-locale-prompt--buttons">
+          <button class="ez-btn ez-btn--secondary" data-action="ez-locale-prompt--no-thanks">
+            No gracias, me quedaré aquí
+</button>
+          <button class="ez-btn ez-btn--primary" data-action="ez-locale-prompt--visit-site-in-locale-button" data-route="https://es.brusheezy.com/">
+            Usar el Brusheezy en Español
+</button>        </div>
+      </div>
+    </div>
+
+    <script defer="defer" src="https://static.brusheezy.com/assets/alerts/locale-prompt-alert-7180e094ef6f8866acea06b6464e256d.js" type="text/javascript"></script>
+
+    
+
+    <div id="fb-root"></div>
+
+
+
+    <section class="header-masthead">
+        
+<header class="ez-site-header ez-site-header--home">
+  <div class="max-inner is-logged-out">
+    <div class='ez-site-header__logo'>
+  <a href="https://www.brusheezy.com/" title="Brusheezy"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 248 57.8"><title>brusheezy-logo-color</title><path class="cls-1" d="M32.4,29.6c0,9.9-9.2,15.3-21.1,15.3-3.9,0-11-.6-11.3-.6L6.3,3.9A61.78,61.78,0,0,1,18,2.7c9.6,0,14.5,3,14.5,8.8a12.42,12.42,0,0,1-5.3,10.2A7.9,7.9,0,0,1,32.4,29.6Zm-11.3.1c0-2.8-1.7-3.9-4.6-3.9-1,0-2.1.1-3.2.2L11.7,36.6c.5,0,1,.1,1.5.1C18.4,36.7,21.1,34,21.1,29.7ZM15.6,10.9l-1.4,9h2.2c3.1,0,5.1-2.9,5.1-6,0-2.1-1.1-3.1-3.4-3.1A10.87,10.87,0,0,0,15.6,10.9Z" transform="translate(0 0)"></path><path class="cls-1" d="M55.3,14.4c2.6,0,4,1.6,4,4.4a8.49,8.49,0,0,1-3.6,6.8,3,3,0,0,0-2.7-2c-4.5,0-6.3,10.6-6.4,11.2L46,38.4l-.9,5.9c-3.1,0-6.9.3-8.1.3a4,4,0,0,1-2.2-1l.8-5.2,2-13,.1-.8c.8-5.4-.7-7.7-.7-7.7a9.11,9.11,0,0,1,6.1-2.5c3.4,0,5.2,2,5.3,6.3,1.2-3.1,3.2-6.3,6.9-6.3Z" transform="translate(0 0)"></path><path class="cls-1" d="M85.4,34.7c-.8,5.4.7,7.7.7,7.7A9.11,9.11,0,0,1,80,44.9c-3.5,0-5.3-2.2-5.3-6.7-2.4,3.7-5.6,6.7-9.7,6.7-4.4,0-6.4-3.7-5.3-11.2L61,25.6c.8-5,1-9,1-9,3.2-.6,7.3-2.1,8.8-2.1a4,4,0,0,1,2.2,1L71.4,25.7l-1.5,9.4c-.1.9,0,1.3.8,1.3,3.7,0,5.8-10.7,5.8-10.7.8-5,1-9,1-9,3.2-.6,7.3-2.1,8.8-2.1a4,4,0,0,1,2.2,1L86.9,25.8l-1.3,8.3Z" transform="translate(0 0)"></path><path class="cls-1" d="M103.3,14.4c4.5,0,7.8,1.6,7.8,4.5,0,3.2-3.9,4.5-3.9,4.5s-1.2-2.9-3.7-2.9a2,2,0,0,0-2.2,2,2.41,2.41,0,0,0,1.3,2.2l3.2,2a8.39,8.39,0,0,1,3.9,7.5c0,6.1-4.9,10.7-12.5,10.7-4.6,0-8.8-2-8.8-5.8,0-3.5,3.5-5.4,3.5-5.4S93.8,38,96.8,38A2,2,0,0,0,99,35.8a2.42,2.42,0,0,0-1.3-2.2l-3-1.9a7.74,7.74,0,0,1-3.8-7c.3-5.9,4.8-10.3,12.4-10.3Z" transform="translate(0 0)"></path><path class="cls-1" d="M138.1,34.8c-1.1,5.4.9,7.7.9,7.7a9.28,9.28,0,0,1-6.1,2.4c-4.3,0-6.3-3.2-5-10l.2-.9,1.8-9.6a.94.94,0,0,0-1-1.3c-3.6,0-5.7,10.9-5.7,11l-.7,4.5-.9,5.9c-3.1,0-6.9.3-8.1.3a4,4,0,0,1-2.2-1l.8-5.2,4.3-27.5c.8-5,1-9,1-9,3.2-.6,7.3-2.1,8.8-2.1a4,4,0,0,1,2.2,1l-3.1,19.9c2.4-3.5,5.5-6.3,9.5-6.3,4.4,0,6.8,3.8,5.3,11.2l-1.8,8.4Z" transform="translate(0 0)"></path><path class="cls-1" d="M167.1,22.9c0,4.4-2.4,7.3-8.4,8.5l-6.3,1.3c.5,2.8,2.2,4.1,5,4.1a8.32,8.32,0,0,0,5.8-2.7,3.74,3.74,0,0,1,1.8,3.1c0,3.7-5.5,7.6-11.9,7.6s-10.8-4.2-10.8-11.2c0-8.2,5.7-19.2,15.8-19.2,5.6,0,9,3.3,9,8.5Zm-10.6,4.2a2.63,2.63,0,0,0,1.7-2.8c0-1.2-.4-3-1.8-3-2.5,0-3.6,4.1-4,7.2Z" transform="translate(0 0)"></path><path class="cls-1" d="M192.9,22.9c0,4.4-2.4,7.3-8.4,8.5l-6.3,1.3c.5,2.8,2.2,4.1,5,4.1a8.32,8.32,0,0,0,5.8-2.7,3.74,3.74,0,0,1,1.8,3.1c0,3.7-5.5,7.6-11.9,7.6s-10.8-4.2-10.8-11.2c0-8.2,5.7-19.2,15.8-19.2,5.5,0,9,3.3,9,8.5Zm-10.7,4.2a2.63,2.63,0,0,0,1.7-2.8c0-1.2-.4-3-1.8-3-2.5,0-3.6,4.1-4,7.2Z" transform="translate(0 0)"></path><path class="cls-1" d="M213.9,33.8a7.72,7.72,0,0,1,2.2,5.4c0,4.5-3.7,5.7-6.9,5.7-4.1,0-7.1-2-10.2-3-.9,1-1.7,2-2.5,3,0,0-4.6-.1-4.6-3.3,0-3.9,6.4-10.5,13.3-18.1a19.88,19.88,0,0,0-2.2-.2c-3.9,0-5.4,2-5.4,2a8.19,8.19,0,0,1-1.8-5.4c.2-4.2,4.2-5.4,7.3-5.4,3.3,0,5.7,1.3,8.1,2.4l1.9-2.4s4.7.1,4.7,3.3c0,3.7-6.2,10.3-12.9,17.6a14.65,14.65,0,0,0,4,.7,6.22,6.22,0,0,0,5-2.3Z" transform="translate(0 0)"></path><path class="cls-1" d="M243.8,42.3c-1.7,10.3-8.6,15.5-17.4,15.5-5.6,0-9.8-3-9.8-6.4a3.85,3.85,0,0,1,1.9-3.3,8.58,8.58,0,0,0,5.7,1.8c3.5,0,8.3-1.5,9.1-6.9l.7-4.2c-2.4,3.5-5.5,6.3-9.5,6.3-4.4,0-6.4-3.7-5.3-11.2l1.3-8.1c.8-5,1-9,1-9,3.2-.6,7.3-2.1,8.8-2.1a4,4,0,0,1,2.2,1l-1.6,10.2-1.5,9.4c-.1.9,0,1.3.8,1.3,3.7,0,5.8-10.7,5.8-10.7.8-5,1-9,1-9,3.2-.6,7.3-2.1,8.8-2.1a4,4,0,0,1,2.2,1L246.4,26Z" transform="translate(0 0)"></path></svg>
+</a>
+</div>
+
+
+      <nav class="ez-site-header__main-nav logged-out-nav">
+    <ul class="ez-site-header__header-menu">
+        <div class="ez-site-header__app-links-wrapper" data-target="ez-mobile-menu.appLinksWrapper">
+          <li class="ez-site-header__menu-item ez-site-header__menu-item--app-link "
+              data-target="ez-mobile-menu.appLink" >
+            <a href="https://www.vecteezy.com" target="_blank">Vectors</a>
+          </li>
+
+          <li class="ez-site-header__menu-item ez-site-header__menu-item--app-link "
+              data-target="ez-mobile-menu.appLink" >
+            <a href="https://www.videezy.com" target="_blank">Video</a>
+          </li>
+
+          <li class="ez-site-header__menu-item ez-site-header__menu-item--app-link active-menu-item"
+              data-target="ez-mobile-menu.appLink" >
+            <a href="https://www.brusheezy.com" target="_blank">Brushes</a>
+          </li>
+        </div>
+
+        <div class="ez-site-header__separator"></div>
+
+        <li class="ez-site-header__locale_prompt ez-site-header__menu-item"
+            data-action="toggle-language-switcher"
+            data-switcher-target="ez-site-header__lang_selector">
+          <span>
+            English
+            <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 11.9 7.1" style="enable-background:new 0 0 11.9 7.1;" xml:space="preserve" class="ez-site-header__menu-arrow">
+<polygon points="11.9,1.5 10.6,0 6,4.3 1.4,0 0,1.5 6,7.1 "></polygon>
+</svg>
+
+          </span>
+
+          
+<div id="ez-site-header__lang_selector" class="ez-language-switcher ez-tooltip ez-tooltip--arrow-top">
+  <div class="ez-tooltip__arrow ez-tooltip__arrow--middle"></div>
+  <div class="ez-tooltip__content">
+    <ul>
+        <li>
+          
+            <span class="nested-locale-switcher-link en current">
+              English
+              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 11.93 9.39"><polygon points="11.93 1.76 10.17 0 4.3 5.87 1.76 3.32 0 5.09 4.3 9.39 11.93 1.76"></polygon></svg>
+
+            </span>
+        </li>
+        <li>
+          <a href="https://es.brusheezy.com/" class="nested-locale-switcher-link es" data-locale="es">Español</a>        </li>
+        <li>
+          <a href="https://pt.brusheezy.com/" class="nested-locale-switcher-link pt" data-locale="pt">Português</a>        </li>
+        <li>
+          <a href="https://de.brusheezy.com/" class="nested-locale-switcher-link de" data-locale="de">Deutsch</a>        </li>
+        <li>
+          <a href="https://fr.brusheezy.com/" class="nested-locale-switcher-link fr" data-locale="fr">Français</a>        </li>
+        <li>
+          <a href="https://nl.brusheezy.com/" class="nested-locale-switcher-link nl" data-locale="nl">Nederlands</a>        </li>
+        <li>
+          <a href="https://sv.brusheezy.com/" class="nested-locale-switcher-link sv" data-locale="sv">Svenska</a>        </li>
+    </ul>
+  </div>
+</div>
+
+
+        </li>
+
+          <li class="ez-site-header__menu-item ez-site-header__menu-item--join-pro-link"
+              data-target="ez-mobile-menu.joinProLink">
+            <a href="/signups/join_premium">Go Premium</a>
+          </li>
+
+          <li class="ez-site-header__menu-item"
+              data-target="ez-mobile-menu.logInBtn">
+            <a href="/login" class="login-link" data-remote="true" onclick="track_header_login_click();">Log in</a>
+          </li>
+
+          <li class="ez-site-header__menu-item ez-site-header__menu-item--btn ez-site-header__menu-item--sign-up-btn"
+              data-target="ez-mobile-menu.signUpBtn">
+            <a href="/signup" class="ez-btn ez-btn--primary ez-btn--tiny ez-btn--sign-up" data-remote="true" onclick="track_header_join_eezy_click();">Sign up</a>
+          </li>
+
+
+      
+
+        <li class="ez-site-header__menu-item ez-site-header__mobile-menu">
+          <button class="ez-site-header__mobile-menu-btn"
+                  data-controller="ez-mobile-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14"><g id="Layer_2" data-name="Layer 2"><g id="Account_Pages_Mobile_Menu_Open" data-name="Account Pages Mobile Menu Open"><g id="Account_Pages_Mobile_Menu_Open-2" data-name="Account Pages Mobile Menu Open"><path class="cls-1" d="M0,0V2H20V0ZM0,8H20V6H0Zm0,6H20V12H0Z"></path></g></g></g></svg>
+
+          </button>
+        </li>
+    </ul>
+
+  </nav>
+
+  <script src="https://static.brusheezy.com/assets/header_mobile_menu-bbe8319134d6d4bb7793c9fdffca257c.js" type="text/javascript"></script>
+
+
+  </div><!-- .max-inner -->
+
+</header>
+
+        <section class="masthead">
+  <div class="max-inner">
+
+    <h1>
+        Free Photoshop Brushes <span class="amp">&amp;</span> PSDs!
+    </h1>
+
+      
+<form accept-charset="UTF-8" action="/free" class="ez-search-form" data-action="new-search" data-behavior="" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="cMvNtuVr+Z/Nk1T/ggdH4cWtsRuHkiZCMrgluaHBC0k=" /></div>
+  <input id="from" name="from" type="hidden" value="mainsite" />
+  <input id="in_se" name="in_se" type="hidden" value="true" />
+
+  <div class="ez-input">
+      <input class="ez-input__field ez-input__field--basic ez-input__field--text ez-search-form__input" id="search" name="search" placeholder="Search" type="text" value="" />
+
+    <button class="ez-search-form__submit" title="Search" type="submit">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 14.39 14.39"><title>search</title><path d="M14,12.32,10.81,9.09a5.87,5.87,0,1,0-1.72,1.72L12.32,14A1.23,1.23,0,0,0,14,14,1.23,1.23,0,0,0,14,12.32ZM2.43,5.88A3.45,3.45,0,1,1,5.88,9.33,3.46,3.46,0,0,1,2.43,5.88Z"></path></svg>
+
+</button>  </div>
+</form>
+
+
+    <p class="masthead-cta">
+      <a href="/top" class="masthead-btn btn primary flat brusheezy">Top Brushes</a>
+      <a href="/browse" class="masthead-btn btn primary flat brusheezy">Browse by Category</a>
+    </p>
+
+
+  </div>
+
+</section>
+
+
+  <div class="masthead__bg-image">
+    <picture>
+      <source media="(min-width: 1001px)" srcset="https://static.brusheezy.com/assets/brusheezy/masthead_images/brusheezy_strokes_1680x400-e5474ec27664547770159e157392baca.jpg, https://static.brusheezy.com/assets/brusheezy/masthead_images/brusheezy_strokes_1680x400@2x-cdecabb636b0364f856ebe0926468817.jpg 2x">
+      <source media="(min-width: 601px)" srcset="https://static.brusheezy.com/assets/brusheezy/masthead_images/brusheezy_strokes_800x400-ecad9404585ff45807958cc842964e96.jpg, https://static.brusheezy.com/assets/brusheezy/masthead_images/brusheezy_strokes_800x400@2x-90c8467dbbf62280814f0a7f2b0d78bf.jpg 2x">
+      <source media="(max-width: 600px)" srcset="https://static.brusheezy.com/assets/brusheezy/masthead_images/brusheezy_strokes_530x400-d5c4c394efb1999996e29debb9fffae5.jpg, https://static.brusheezy.com/assets/brusheezy/masthead_images/brusheezy_strokes_530x400@2x-e6cb2574e4ac5d7dc48c3b1f3944bef6.jpg 2x">
+      <img src="https://static.brusheezy.com/assets/brusheezy/masthead_images/brusheezy_strokes_800x400@2x-90c8467dbbf62280814f0a7f2b0d78bf.jpg" srcset="https://static.brusheezy.com/assets/brusheezy/masthead_images/brusheezy_strokes_800x400-ecad9404585ff45807958cc842964e96.jpg, https://static.brusheezy.com/assets/brusheezy/masthead_images/brusheezy_strokes_800x400@2x-90c8467dbbf62280814f0a7f2b0d78bf.jpg 2x">
+    </picture>
+  </div>
+
+
+
+    </section>
+
+    
+
+    <main class="content-wrapper">
+      <div class="max-inner">
+        
+        
+
+
+      <section class="box home-featured grid_index_1 ">
+      <h2 class="home-featured__headline">Popular New Graphics
+      </h2>
+
+    <ul class="ez-resource-grid ">
+              <li data-height="220" data-width="300"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/1476-splatter" class="ez-resource-thumb__link sponsored-premium-resource" title="Splatter"><img alt="Splatter" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/001/476/small/Super_Crazy_Splatter_Brushe.jpg?nocache=true&cachebuster=10a73495-377e-4515-9b32-0867880d5240" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/001/476/small_2x/Super_Crazy_Splatter_Brushe.jpg?nocache=true&cachebuster=7db365d6-3164-4b7b-9fac-09d1f8ce36f0 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/001/476/small/Super_Crazy_Splatter_Brushe.jpg?nocache=true&cachebuster=10a73495-377e-4515-9b32-0867880d5240 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Splatter
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="220" data-width="300"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/1771-finger-paints" class="ez-resource-thumb__link sponsored-premium-resource" title="Finger Paints"><img alt="Finger Paints" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/001/771/small/sml.jpg?nocache=true&cachebuster=c00cffd4-ca73-4e69-a268-8ba5bad680de" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/001/771/small_2x/sml.jpg?nocache=true&cachebuster=41966e95-fe12-4726-ba2d-a6356e75c229 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/001/771/small/sml.jpg?nocache=true&cachebuster=c00cffd4-ca73-4e69-a268-8ba5bad680de 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Finger Paints
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="300" data-width="450"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/1990-free-hi-resolution-paint-stroke-photoshop-brushes" class="ez-resource-thumb__link sponsored-premium-resource" title="Free Hi-Resolution Paint Stroke Photoshop Brushes"><img alt="Free Hi-Resolution Paint Stroke Photoshop Brushes" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/001/990/small/graphic.jpg?nocache=true&cachebuster=2d03fe21-94e2-48e2-8413-4b2a52b827df" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/001/990/small_2x/graphic.jpg?nocache=true&cachebuster=1f1203a3-772d-46c8-98de-c32145a24934 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/001/990/small/graphic.jpg?nocache=true&cachebuster=2d03fe21-94e2-48e2-8413-4b2a52b827df 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Free Hi-Resolution Paint Stroke Photoshop Brushes
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="220" data-width="300"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/2772-watercolor-splatters" class="ez-resource-thumb__link sponsored-premium-resource" title="Watercolor Splatters"><img alt="Watercolor Splatters" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/002/772/small/300x220.jpg?nocache=true&cachebuster=c9972b5d-cf6c-43ce-9714-49b4de4424fd" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/002/772/small_2x/300x220.jpg?nocache=true&cachebuster=e6e144ce-1810-451e-858a-9e2e71ddf203 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/002/772/small/300x220.jpg?nocache=true&cachebuster=c9972b5d-cf6c-43ce-9714-49b4de4424fd 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Watercolor Splatters
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="220" data-width="300"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/6697-splatters-and-stains-photoshop-brushes" class="ez-resource-thumb__link sponsored-premium-resource" title="Splatters and Stains Photoshop Brushes"><img alt="Splatters and Stains Photoshop Brushes" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/006/697/small/splatter_and_staines300.jpg?nocache=true&cachebuster=7d4f4f5b-70fa-4b32-affc-ffbf67199a1f" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/006/697/small_2x/splatter_and_staines300.jpg?nocache=true&cachebuster=a1d5821b-2c24-4f3e-b6ab-f99070383cf3 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/006/697/small/splatter_and_staines300.jpg?nocache=true&cachebuster=7d4f4f5b-70fa-4b32-affc-ffbf67199a1f 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Splatters and Stains Photoshop Brushes
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="410" data-width="533"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/12765-watercolor-splatters-drips-brushes" class="ez-resource-thumb__link sponsored-premium-resource" title="Watercolor Splatters &amp; Drips Brushes"><img alt="Watercolor Splatters &amp; Drips Brushes" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/012/765/small/Untitled-2.jpg?nocache=true&cachebuster=3f882d31-8ce1-425e-a297-0a1759822da9" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/012/765/small_2x/Untitled-2.jpg?nocache=true&cachebuster=cd74b4c0-b093-4c81-adf9-94cc2258a1c6 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/012/765/small/Untitled-2.jpg?nocache=true&cachebuster=3f882d31-8ce1-425e-a297-0a1759822da9 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Watercolor Splatters & Drips Brushes
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="220" data-width="300"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/21821-spray-paint" class="ez-resource-thumb__link sponsored-premium-resource" title="Spray Paint"><img alt="Spray Paint" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/021/821/small/spray-paint.jpg?nocache=true&cachebuster=ba6832b9-8d83-40fe-9a59-47f69e0d7271" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/021/821/small_2x/spray-paint.jpg?nocache=true&cachebuster=eb87b640-0d85-48b7-a2b8-fccc4ca72fac 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/021/821/small/spray-paint.jpg?nocache=true&cachebuster=ba6832b9-8d83-40fe-9a59-47f69e0d7271 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Spray Paint
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="220" data-width="300"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/textures/23219-drips-and-splats-texture" class="ez-resource-thumb__link sponsored-premium-resource" title="Drips and Splats Texture"><img alt="Drips and Splats Texture" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/023/219/small/previewSM.jpg?nocache=true&cachebuster=664c6e80-b7f7-4b0a-8f33-e37566d463dc" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/023/219/small_2x/previewSM.jpg?nocache=true&cachebuster=054ca11e-13cb-4a67-90c1-331510d87026 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/023/219/small/previewSM.jpg?nocache=true&cachebuster=664c6e80-b7f7-4b0a-8f33-e37566d463dc 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Drips and Splats Texture
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="220" data-width="300"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/25498-real-paint-strokes-drips-splatters-brushes" class="ez-resource-thumb__link sponsored-premium-resource" title="Real Paint Strokes, Drips &amp; Splatters Brushes "><img alt="Real Paint Strokes, Drips &amp; Splatters Brushes " class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/025/498/small/Untitled-3.jpg?nocache=true&cachebuster=aff5df05-eec0-4436-8739-fc1902ef7aa9" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/025/498/small_2x/Untitled-3.jpg?nocache=true&cachebuster=3a403c07-0ce2-4765-8537-0ecd1072f9af 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/025/498/small/Untitled-3.jpg?nocache=true&cachebuster=aff5df05-eec0-4436-8739-fc1902ef7aa9 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Real Paint Strokes, Drips & Splatters Brushes 
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="560" data-width="800"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/57478-20-splatter-ps-brushes-abr-vol-4" class="ez-resource-thumb__link sponsored-premium-resource" title="20 Splatter PS Brushes abr.vol.4"><img alt="20 Splatter PS Brushes abr.vol.4" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/057/478/small/20_Splatter_PS_Brushes_abr._preview.jpg?nocache=true&cachebuster=eed30386-f767-436f-99b8-23f449ddf088" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/057/478/small_2x/20_Splatter_PS_Brushes_abr._preview.jpg?nocache=true&cachebuster=865d1d09-086b-4564-ab9d-7b7e6eb1fa41 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/057/478/small/20_Splatter_PS_Brushes_abr._preview.jpg?nocache=true&cachebuster=eed30386-f767-436f-99b8-23f449ddf088 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      20 Splatter PS Brushes abr.vol.4
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="560" data-width="800"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/59054-free-paint-splatter-photoshop-brushes-3" class="ez-resource-thumb__link sponsored-premium-resource" title="Free Paint Splatter Photoshop Brushes 3"><img alt="Free Paint Splatter Photoshop Brushes 3" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/059/054/small/paint_splatter_prev_3.jpg?nocache=true&cachebuster=f253ce27-2324-450d-a6a9-fbb5ef782cd5" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/059/054/small_2x/paint_splatter_prev_3.jpg?nocache=true&cachebuster=efc3d958-764d-4c21-a0ce-84913d22a179 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/059/054/small/paint_splatter_prev_3.jpg?nocache=true&cachebuster=f253ce27-2324-450d-a6a9-fbb5ef782cd5 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Free Paint Splatter Photoshop Brushes 3
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="560" data-width="800"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/59062-free-paint-splatter-photoshop-brushes-20" class="ez-resource-thumb__link sponsored-premium-resource" title="Free Paint Splatter Photoshop Brushes 20"><img alt="Free Paint Splatter Photoshop Brushes 20" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/059/062/small/paint_splatter_prev_20.jpg?nocache=true&cachebuster=b3cf84bd-d077-45ca-824d-c9acb6668719" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/059/062/small_2x/paint_splatter_prev_20.jpg?nocache=true&cachebuster=f7f19b5c-64d0-45f3-8ea7-407215f2adb3 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/059/062/small/paint_splatter_prev_20.jpg?nocache=true&cachebuster=b3cf84bd-d077-45ca-824d-c9acb6668719 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Free Paint Splatter Photoshop Brushes 20
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="560" data-width="800"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/59066-free-painter-photoshop-brushes-2" class="ez-resource-thumb__link sponsored-premium-resource" title="Free Painter Photoshop Brushes 2"><img alt="Free Painter Photoshop Brushes 2" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/059/066/small/painter2.jpg?nocache=true&cachebuster=5c091b9f-d29e-4f1d-b649-e26a9c6da0fa" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/059/066/small_2x/painter2.jpg?nocache=true&cachebuster=639f04ff-b7e0-44c9-ad92-92d9738e201e 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/059/066/small/painter2.jpg?nocache=true&cachebuster=5c091b9f-d29e-4f1d-b649-e26a9c6da0fa 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Free Painter Photoshop Brushes 2
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="560" data-width="800"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/59077-free-paint-splatter-photoshop-brushes-16" class="ez-resource-thumb__link sponsored-premium-resource" title="Free Paint Splatter Photoshop Brushes 16"><img alt="Free Paint Splatter Photoshop Brushes 16" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/059/077/small/paint_splatter_prev_16.jpg?nocache=true&cachebuster=0513deda-5776-4876-8c35-c2ec8d069dc6" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/059/077/small_2x/paint_splatter_prev_16.jpg?nocache=true&cachebuster=5ae2a2fd-74f4-472b-8114-d14bf548c1fe 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/059/077/small/paint_splatter_prev_16.jpg?nocache=true&cachebuster=0513deda-5776-4876-8c35-c2ec8d069dc6 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Free Paint Splatter Photoshop Brushes 16
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="560" data-width="800"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/59176-20-splatter-color-ps-brushes-abr-vol-3" class="ez-resource-thumb__link sponsored-premium-resource" title="20 Splatter Color PS Brushes abr vol.3"><img alt="20 Splatter Color PS Brushes abr vol.3" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/059/176/small/20_Splatter_Color_Brushes_vol.3_preview.jpg?nocache=true&cachebuster=4caf9f9c-7f1a-4d5e-b223-c1b76b83d2b1" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/059/176/small_2x/20_Splatter_Color_Brushes_vol.3_preview.jpg?nocache=true&cachebuster=330bdb6e-bf4f-4f8d-bd40-8dafdb0bcb60 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/059/176/small/20_Splatter_Color_Brushes_vol.3_preview.jpg?nocache=true&cachebuster=4caf9f9c-7f1a-4d5e-b223-c1b76b83d2b1 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      20 Splatter Color PS Brushes abr vol.3
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/62881-paint-splash-brushes-2" class="ez-resource-thumb__link sponsored-premium-resource" title="Paint Splash Brushes 2"><img alt="Paint Splash Brushes 2" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/062/881/small/paint_splash2.jpg?nocache=true&cachebuster=def1ea32-4459-4134-9b27-28b8d5a69d45" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/062/881/small_2x/paint_splash2.jpg?nocache=true&cachebuster=596a0cc7-640f-4113-8a1c-f4b3541ec36d 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/062/881/small/paint_splash2.jpg?nocache=true&cachebuster=def1ea32-4459-4134-9b27-28b8d5a69d45 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Paint Splash Brushes 2
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/63082-20-easter-rabbit-ps-brushes-abr-vol-1" class="ez-resource-thumb__link sponsored-premium-resource" title="20 Easter Rabbit PS Brushes abr. vol.1 "><img alt="20 Easter Rabbit PS Brushes abr. vol.1 " class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/063/082/small/20_Easter_Rabbit_Brushes_vol.1_Preview.jpg?nocache=true&cachebuster=29ac25b4-358d-4a7a-920d-03128ab79680" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/063/082/small_2x/20_Easter_Rabbit_Brushes_vol.1_Preview.jpg?nocache=true&cachebuster=34ec1e8a-a1d9-4c6e-a3af-2f349d8458f8 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/063/082/small/20_Easter_Rabbit_Brushes_vol.1_Preview.jpg?nocache=true&cachebuster=29ac25b4-358d-4a7a-920d-03128ab79680 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      20 Easter Rabbit PS Brushes abr. vol.1 
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/65056-20-spray-paint-ps-brushes-abr" class="ez-resource-thumb__link sponsored-premium-resource" title="20 Spray Paint PS Brushes abr. "><img alt="20 Spray Paint PS Brushes abr. " class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/065/056/small/20-spray-paint-ps-brushes-abr.jpg?nocache=true&cachebuster=e05e3166-3949-4126-8fb4-93ea03c62deb" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/065/056/small_2x/20-spray-paint-ps-brushes-abr.jpg?nocache=true&cachebuster=4df8c076-6fe7-4a6c-8032-29beed73e753 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/065/056/small/20-spray-paint-ps-brushes-abr.jpg?nocache=true&cachebuster=e05e3166-3949-4126-8fb4-93ea03c62deb 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      20 Spray Paint PS Brushes abr. 
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/65062-spray-photoshop-brushes" class="ez-resource-thumb__link sponsored-premium-resource" title="Spray Photoshop Brushes"><img alt="Spray Photoshop Brushes" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/065/062/small/spray-photoshop-brushes.jpg?nocache=true&cachebuster=1548de95-2e18-4dd1-bc66-08c86e12fc42" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/065/062/small_2x/spray-photoshop-brushes.jpg?nocache=true&cachebuster=42846704-7c0c-45bd-93df-40bef40f825f 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/065/062/small/spray-photoshop-brushes.jpg?nocache=true&cachebuster=1548de95-2e18-4dd1-bc66-08c86e12fc42 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Spray Photoshop Brushes
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/65066-spray-photoshop-brushes" class="ez-resource-thumb__link sponsored-premium-resource" title="Spray Photoshop Brushes"><img alt="Spray Photoshop Brushes" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/065/066/small/spray-photoshop-brushes.jpg?nocache=true&cachebuster=5271fdb0-958a-4957-b962-e3d6fc6000ac" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/065/066/small_2x/spray-photoshop-brushes.jpg?nocache=true&cachebuster=15651318-4816-46bc-a675-0f800a7e92e8 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/065/066/small/spray-photoshop-brushes.jpg?nocache=true&cachebuster=5271fdb0-958a-4957-b962-e3d6fc6000ac 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Spray Photoshop Brushes
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+    </ul>
+  </section>
+
+
+        <section class="box home-featured grid_index_2 ">
+      <h2 class="home-featured__headline">New Graphics
+      </h2>
+
+    <ul class="ez-resource-grid ">
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/textures/53435-metal-psd-textures" class="ez-resource-thumb__link sponsored-premium-resource" title="Metal PSD Textures"><img alt="Metal PSD Textures" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/053/435/small/metal-psd-textures.jpg?nocache=true&cachebuster=4baaca53-6207-4c3f-9a48-bf26c15efb9a" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/053/435/small_2x/metal-psd-textures.jpg?nocache=true&cachebuster=66daf31f-9b25-4702-bf86-925409b09c0f 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/053/435/small/metal-psd-textures.jpg?nocache=true&cachebuster=4baaca53-6207-4c3f-9a48-bf26c15efb9a 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Metal PSD Textures
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/backgrounds/53962-abstract-wavy-blue-background-psd" class="ez-resource-thumb__link sponsored-premium-resource" title="Abstract Wavy Blue Background PSD"><img alt="Abstract Wavy Blue Background PSD" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/053/962/small/abstract-wavy-blue-background-psd-photoshop-backgrounds.jpg?nocache=true&cachebuster=26678a28-d9bd-485b-8118-9c46bf1843d1" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/053/962/small_2x/abstract-wavy-blue-background-psd-photoshop-backgrounds.jpg?nocache=true&cachebuster=9e87f62f-f928-4d48-a687-09031f620062 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/053/962/small/abstract-wavy-blue-background-psd-photoshop-backgrounds.jpg?nocache=true&cachebuster=26678a28-d9bd-485b-8118-9c46bf1843d1 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Abstract Wavy Blue Background PSD
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/63284-neon-text-effect-psd-vol-1" class="ez-resource-thumb__link sponsored-premium-resource" title="Neon Text Effect PSD Vol.1"><img alt="Neon Text Effect PSD Vol.1" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/063/284/small/Neon_Text_Effect_PSD_High_Res__Vol.1_Preview.jpg?nocache=true&cachebuster=be1b6dcd-d67d-4a32-8f52-cf440f0b4c3f" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/063/284/small_2x/Neon_Text_Effect_PSD_High_Res__Vol.1_Preview.jpg?nocache=true&cachebuster=3ce08469-57f3-4b1d-b080-402b1bbd29ab 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/063/284/small/Neon_Text_Effect_PSD_High_Res__Vol.1_Preview.jpg?nocache=true&cachebuster=be1b6dcd-d67d-4a32-8f52-cf440f0b4c3f 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Neon Text Effect PSD Vol.1
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/63466-halftone-photoshop-brushes-5" class="ez-resource-thumb__link sponsored-premium-resource" title="Halftone Photoshop Brushes 5"><img alt="Halftone Photoshop Brushes 5" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/063/466/small/Halftone_5.jpg?nocache=true&cachebuster=3fb0b7dc-dc16-4b85-8348-b4743f77dbec" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/063/466/small_2x/Halftone_5.jpg?nocache=true&cachebuster=5808b879-ba31-4dbb-8427-e1ad6ded65d7 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/063/466/small/Halftone_5.jpg?nocache=true&cachebuster=3fb0b7dc-dc16-4b85-8348-b4743f77dbec 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Halftone Photoshop Brushes 5
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/brushes/64760-80-s-text-effect-psd" class="ez-resource-thumb__link sponsored-premium-resource" title="80&#x27;s Text Effect PSD  "><img alt="80&#x27;s Text Effect PSD  " class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/064/760/small/80-s-text-effect-psd.jpg?nocache=true&cachebuster=1315cda1-acfc-42e9-86f5-f2cbcbe1583f" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/064/760/small_2x/80-s-text-effect-psd.jpg?nocache=true&cachebuster=0158679a-8783-41b3-afd6-c54fee8d783b 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/064/760/small/80-s-text-effect-psd.jpg?nocache=true&cachebuster=1315cda1-acfc-42e9-86f5-f2cbcbe1583f 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      80's Text Effect PSD  
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/brushes/64762-80-s-text-effect-psd" class="ez-resource-thumb__link sponsored-premium-resource" title="80&#x27;s Text Effect PSD "><img alt="80&#x27;s Text Effect PSD " class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/064/762/small/80-s-text-effect-psd.jpg?nocache=true&cachebuster=c08f4540-d7d0-48db-ade8-331d5d3243ce" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/064/762/small_2x/80-s-text-effect-psd.jpg?nocache=true&cachebuster=706925ec-750c-4b0b-aafa-729dc6c935b8 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/064/762/small/80-s-text-effect-psd.jpg?nocache=true&cachebuster=c08f4540-d7d0-48db-ade8-331d5d3243ce 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      80's Text Effect PSD 
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/brushes/64789-vaporwave-text-effect-psd" class="ez-resource-thumb__link sponsored-premium-resource" title="Vaporwave Text Effect PSD"><img alt="Vaporwave Text Effect PSD" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/064/789/small/vaporwave-text-effect-psd.jpg?nocache=true&cachebuster=aeb44d3e-8ab4-4c7d-ab90-f779c0fe1c74" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/064/789/small_2x/vaporwave-text-effect-psd.jpg?nocache=true&cachebuster=2e1a52d6-6264-475b-b363-9bb887648cb5 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/064/789/small/vaporwave-text-effect-psd.jpg?nocache=true&cachebuster=aeb44d3e-8ab4-4c7d-ab90-f779c0fe1c74 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Vaporwave Text Effect PSD
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/64873-gold-foil-text-effect-psd" class="ez-resource-thumb__link sponsored-premium-resource" title="Gold Foil Text Effect PSD "><img alt="Gold Foil Text Effect PSD " class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/064/873/small/gold-foil-text-effect-psd.jpg?nocache=true&cachebuster=2c9340c8-9f79-4ddf-9235-9e0c654be59e" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/064/873/small_2x/gold-foil-text-effect-psd.jpg?nocache=true&cachebuster=1055b0b3-dcca-49f8-acac-4ebc2506e3c7 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/064/873/small/gold-foil-text-effect-psd.jpg?nocache=true&cachebuster=2c9340c8-9f79-4ddf-9235-9e0c654be59e 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Gold Foil Text Effect PSD 
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/65612-4-holographic-gradient-full-psd-file" class="ez-resource-thumb__link sponsored-premium-resource" title="4 Holographic Gradient Full PSD File"><img alt="4 Holographic Gradient Full PSD File" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/065/612/small/4-holographic-gradient-full-psd-file.jpg?nocache=true&cachebuster=1e81a8a5-f97a-43db-80bb-3e9569e0520e" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/065/612/small_2x/4-holographic-gradient-full-psd-file.jpg?nocache=true&cachebuster=25fc6eea-433a-4c23-8f67-4d189cf939d8 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/065/612/small/4-holographic-gradient-full-psd-file.jpg?nocache=true&cachebuster=1e81a8a5-f97a-43db-80bb-3e9569e0520e 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      4 Holographic Gradient Full PSD File
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/66478-neon-light-particles-stripes-seamless-pattern-design" class="ez-resource-thumb__link sponsored-premium-resource" title="Neon Light Particles Stripes Seamless Pattern Design"><img alt="Neon Light Particles Stripes Seamless Pattern Design" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/066/478/small/neon-light-particles-stripes-seamless-pattern-design.jpg?nocache=true&cachebuster=2bebf580-d6bf-42c0-ab77-dab68b9cfe4e" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/066/478/small_2x/neon-light-particles-stripes-seamless-pattern-design.jpg?nocache=true&cachebuster=05687f63-2561-499d-b506-4392c5db3e59 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/066/478/small/neon-light-particles-stripes-seamless-pattern-design.jpg?nocache=true&cachebuster=2bebf580-d6bf-42c0-ab77-dab68b9cfe4e 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Neon Light Particles Stripes Seamless Pattern Design
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/brushes/67012-fashion-instagram-story-template-psd" class="ez-resource-thumb__link sponsored-premium-resource" title="Fashion Instagram Story Template PSD "><img alt="Fashion Instagram Story Template PSD " class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/067/012/small/Fashion_Instagram_Story_Template_PSD_Preview.jpg?nocache=true&cachebuster=74d5f514-2698-4c21-8054-2654be78f71b" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/067/012/small_2x/Fashion_Instagram_Story_Template_PSD_Preview.jpg?nocache=true&cachebuster=b33adfdf-d09d-4a55-970d-be85ef5c37e4 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/067/012/small/Fashion_Instagram_Story_Template_PSD_Preview.jpg?nocache=true&cachebuster=74d5f514-2698-4c21-8054-2654be78f71b 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Fashion Instagram Story Template PSD 
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/67427-summer-bright-party-concert-poster-template" class="ez-resource-thumb__link sponsored-premium-resource" title="Summer Bright Party Concert Poster Template"><img alt="Summer Bright Party Concert Poster Template" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/067/427/small/Concert-Poster15_RF_RMPL.jpg?nocache=true&cachebuster=56aaf7d3-e46f-4cc6-ae31-8d8c4ed770e5" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/067/427/small_2x/Concert-Poster15_RF_RMPL.jpg?nocache=true&cachebuster=e1250fe5-ba46-48d0-968b-df59662f4aab 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/067/427/small/Concert-Poster15_RF_RMPL.jpg?nocache=true&cachebuster=56aaf7d3-e46f-4cc6-ae31-8d8c4ed770e5 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Summer Bright Party Concert Poster Template
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="139" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/67441-web-elements-ui-kit" class="ez-resource-thumb__link sponsored-premium-resource" title="Web Elements UI Kit"><img alt="Web Elements UI Kit" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/067/441/small/WEB_ELEMENTS_UI_KIT_04.jpg?nocache=true&cachebuster=2d6bf6c1-9b14-43d6-a061-41617dc502e8" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/067/441/small_2x/WEB_ELEMENTS_UI_KIT_04.jpg?nocache=true&cachebuster=dfa916e0-6fed-45a7-adda-489d5e2c8d24 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/067/441/small/WEB_ELEMENTS_UI_KIT_04.jpg?nocache=true&cachebuster=2d6bf6c1-9b14-43d6-a061-41617dc502e8 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Web Elements UI Kit
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/67447-professional-elegant-corporate-flyer-template-mock-up" class="ez-resource-thumb__link sponsored-premium-resource" title="Professional Elegant Corporate Flyer Template Mock Up"><img alt="Professional Elegant Corporate Flyer Template Mock Up" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/067/447/small/CORPORATE_FLYER_NOV_18_EEZY_04.jpg?nocache=true&cachebuster=2af93298-fd65-42de-803f-a88d8f12ac1e" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/067/447/small_2x/CORPORATE_FLYER_NOV_18_EEZY_04.jpg?nocache=true&cachebuster=ae17752e-66e6-452d-b490-faa492c1f447 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/067/447/small/CORPORATE_FLYER_NOV_18_EEZY_04.jpg?nocache=true&cachebuster=2af93298-fd65-42de-803f-a88d8f12ac1e 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Professional Elegant Corporate Flyer Template Mock Up
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+    </ul>
+  </section>
+
+
+        <section class="box home-featured grid_index_3 ">
+      <h2 class="home-featured__headline">Team Favorites
+      </h2>
+
+    <ul class="ez-resource-grid ">
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/9210-400-photoshop-style-pack" class="ez-resource-thumb__link sponsored-premium-resource" title="400+ Photoshop Style Pack"><img alt="400+ Photoshop Style Pack" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/009/210/small/400styles.jpg?nocache=true&cachebuster=9689bff9-60f3-40d3-a115-bbd28793049d" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/009/210/small_2x/400styles.jpg?nocache=true&cachebuster=254eca32-049f-4f4d-9679-8e38563caf6b 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/009/210/small/400styles.jpg?nocache=true&cachebuster=9689bff9-60f3-40d3-a115-bbd28793049d 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      400+ Photoshop Style Pack
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="221" data-width="300"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/patterns/26462-geometric-escher-pattern" class="ez-resource-thumb__link sponsored-premium-resource" title="Geometric Escher Pattern"><img alt="Geometric Escher Pattern" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/026/462/small/thumb.jpg?nocache=true&cachebuster=8fe0dd33-9ffb-428d-a75d-01d2996a9ce5" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/026/462/small_2x/thumb.jpg?nocache=true&cachebuster=54a19f8f-d19e-479e-911e-13d462d7db72 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/026/462/small/thumb.jpg?nocache=true&cachebuster=8fe0dd33-9ffb-428d-a75d-01d2996a9ce5 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Geometric Escher Pattern
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/backgrounds/49797-retro-background-pack" class="ez-resource-thumb__link sponsored-premium-resource" title="Retro Background Pack"><img alt="Retro Background Pack" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/049/797/small/retro-background-pack-photoshop-backgrounds.jpg?nocache=true&cachebuster=7c30c642-97aa-42e2-b8d2-cd1efd8fa6cc" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/049/797/small_2x/retro-background-pack-photoshop-backgrounds.jpg?nocache=true&cachebuster=3fd2d562-5cd7-45c4-8872-b0ab0c413ab5 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/049/797/small/retro-background-pack-photoshop-backgrounds.jpg?nocache=true&cachebuster=7c30c642-97aa-42e2-b8d2-cd1efd8fa6cc 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Retro Background Pack
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/backgrounds/50858-vintage-rose-banner-background-pack" class="ez-resource-thumb__link sponsored-premium-resource" title="Vintage Rose Banner Background Pack"><img alt="Vintage Rose Banner Background Pack" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/050/858/small/vintage-rose-banner-background-pack-photoshop-backgrounds.jpg?nocache=true&cachebuster=d7bbc372-9e72-4cc2-b34b-5819bafddcaf" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/050/858/small_2x/vintage-rose-banner-background-pack-photoshop-backgrounds.jpg?nocache=true&cachebuster=4b4ef243-327a-46a8-8d57-054d7c75c57a 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/050/858/small/vintage-rose-banner-background-pack-photoshop-backgrounds.jpg?nocache=true&cachebuster=d7bbc372-9e72-4cc2-b34b-5819bafddcaf 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Vintage Rose Banner Background Pack
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/backgrounds/53890-polygonal-speech-bubble-background-psd" class="ez-resource-thumb__link sponsored-premium-resource" title="Polygonal Speech Bubble Background PSD"><img alt="Polygonal Speech Bubble Background PSD" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/053/890/small/polygonal-speech-bubble-background-psd-photoshop-backgrounds.jpg?nocache=true&cachebuster=ea774f54-23e2-491f-b842-ec61675c7788" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/053/890/small_2x/polygonal-speech-bubble-background-psd-photoshop-backgrounds.jpg?nocache=true&cachebuster=4fbc2bca-54b8-4b4e-a91d-d9853151fbfd 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/053/890/small/polygonal-speech-bubble-background-psd-photoshop-backgrounds.jpg?nocache=true&cachebuster=ea774f54-23e2-491f-b842-ec61675c7788 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Polygonal Speech Bubble Background PSD
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/backgrounds/54067-script-and-flower-backgrounds-psd" class="ez-resource-thumb__link sponsored-premium-resource" title="Script and Flower Backgrounds PSD"><img alt="Script and Flower Backgrounds PSD" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/054/067/small/script-and-flower-backgrounds-psd.jpg?nocache=true&cachebuster=7c169b21-914e-46a1-9834-e4c05e1dfe28" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/054/067/small_2x/script-and-flower-backgrounds-psd.jpg?nocache=true&cachebuster=3c275a45-982e-4d2f-9384-e0b4bdf919ba 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/054/067/small/script-and-flower-backgrounds-psd.jpg?nocache=true&cachebuster=7c169b21-914e-46a1-9834-e4c05e1dfe28 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Script and Flower Backgrounds PSD
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/backgrounds/54124-glowing-abstract-bubble-background-psd" class="ez-resource-thumb__link sponsored-premium-resource" title="Glowing Abstract Bubble Background PSD"><img alt="Glowing Abstract Bubble Background PSD" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/054/124/small/glowing-abstract-bubble-background-psd-photoshop-backgrounds.jpg?nocache=true&cachebuster=6baafe87-95c2-42d5-b6bf-16aed7097aeb" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/054/124/small_2x/glowing-abstract-bubble-background-psd-photoshop-backgrounds.jpg?nocache=true&cachebuster=dcb4bb09-6cb9-4841-ae2a-b1422945448f 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/054/124/small/glowing-abstract-bubble-background-psd-photoshop-backgrounds.jpg?nocache=true&cachebuster=6baafe87-95c2-42d5-b6bf-16aed7097aeb 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Glowing Abstract Bubble Background PSD
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/psds/54182-glossy-speech-bubbles-two-psd-pack" class="ez-resource-thumb__link sponsored-premium-resource" title="Glossy Speech Bubbles Two PSD Pack"><img alt="Glossy Speech Bubbles Two PSD Pack" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/054/182/small/glossy-speech-bubbles-two-psd-pack-photoshop-psds.jpg?nocache=true&cachebuster=9a83890c-1e15-4267-baed-c84c671a25ba" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/054/182/small_2x/glossy-speech-bubbles-two-psd-pack-photoshop-psds.jpg?nocache=true&cachebuster=1babdff8-9ee3-45f4-b47c-4d5b07ad1e88 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/054/182/small/glossy-speech-bubbles-two-psd-pack-photoshop-psds.jpg?nocache=true&cachebuster=9a83890c-1e15-4267-baed-c84c671a25ba 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Glossy Speech Bubbles Two PSD Pack
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/brushes/57539-floral-fabric-photoshop-brushes-3" class="ez-resource-thumb__link sponsored-premium-resource" title="Floral Fabric Photoshop Brushes 3"><img alt="Floral Fabric Photoshop Brushes 3" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/057/539/small/free-floral-fabric-photoshop-brushes-3.jpg?nocache=true&cachebuster=79a48580-69fc-4998-ad6b-43c82de9f04c" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/057/539/small_2x/free-floral-fabric-photoshop-brushes-3.jpg?nocache=true&cachebuster=3a8bdaed-e852-4fb2-8ac6-b77967194a6a 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/057/539/small/free-floral-fabric-photoshop-brushes-3.jpg?nocache=true&cachebuster=79a48580-69fc-4998-ad6b-43c82de9f04c 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Floral Fabric Photoshop Brushes 3
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/backgrounds/57603-watercolor-backgrounds" class="ez-resource-thumb__link sponsored-premium-resource" title="Watercolor Backgrounds"><img alt="Watercolor Backgrounds" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/057/603/small/watercolor-backgrounds.jpg?nocache=true&cachebuster=67f941cf-1375-42f2-bd19-42d0eedf5b7e" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/057/603/small_2x/watercolor-backgrounds.jpg?nocache=true&cachebuster=2507406c-cc5b-4341-a6a3-47c922b1fa11 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/057/603/small/watercolor-backgrounds.jpg?nocache=true&cachebuster=67f941cf-1375-42f2-bd19-42d0eedf5b7e 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Watercolor Backgrounds
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="560" data-width="800"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/57812-free-tartan-photoshop-brushes" class="ez-resource-thumb__link sponsored-premium-resource" title="Free Tartan Photoshop Brushes"><img alt="Free Tartan Photoshop Brushes" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/057/812/small/tartan.jpg?nocache=true&cachebuster=b808a176-c970-4744-b4e1-87282a20356e" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/057/812/small_2x/tartan.jpg?nocache=true&cachebuster=426ff0d6-cdfa-4742-ab6a-ba64ab4bfa25 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/057/812/small/tartan.jpg?nocache=true&cachebuster=b808a176-c970-4744-b4e1-87282a20356e 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Free Tartan Photoshop Brushes
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="560" data-width="800"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/actions/58328-orange-and-teal-actions" class="ez-resource-thumb__link sponsored-premium-resource" title="Orange and Teal Actions"><img alt="Orange and Teal Actions" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/058/328/small/58328.jpg?nocache=true&cachebuster=11335537-63fb-44be-91fc-fe1665828299" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/058/328/small_2x/58328.jpg?nocache=true&cachebuster=3236a70f-1c56-4aa6-b6dd-c0dc60dba15d 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/058/328/small/58328.jpg?nocache=true&cachebuster=11335537-63fb-44be-91fc-fe1665828299 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Orange and Teal Actions
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/62634-retro-backgrounds" class="ez-resource-thumb__link sponsored-premium-resource" title="Retro Backgrounds"><img alt="Retro Backgrounds" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/062/634/small/retro_1.jpg?nocache=true&cachebuster=b01e956c-4e84-47ac-a36b-e4cae4789cba" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/062/634/small_2x/retro_1.jpg?nocache=true&cachebuster=9cd31b32-d929-4b7c-afca-0753c67eba32 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/062/634/small/retro_1.jpg?nocache=true&cachebuster=b01e956c-4e84-47ac-a36b-e4cae4789cba 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Retro Backgrounds
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/63388-neon-text-effect-psd-vol-4" class="ez-resource-thumb__link sponsored-premium-resource" title="Neon Text Effect PSD Vol.4"><img alt="Neon Text Effect PSD Vol.4" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/063/388/small/Neon_Text_Effect_PSD_Vol.4_Preview.jpg?nocache=true&cachebuster=59a0f185-706f-432a-ad06-b71a3e257c5f" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/063/388/small_2x/Neon_Text_Effect_PSD_Vol.4_Preview.jpg?nocache=true&cachebuster=e3615f97-e271-4ad6-80cf-9195e9134ee5 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/063/388/small/Neon_Text_Effect_PSD_Vol.4_Preview.jpg?nocache=true&cachebuster=59a0f185-706f-432a-ad06-b71a3e257c5f 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Neon Text Effect PSD Vol.4
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/65066-spray-photoshop-brushes" class="ez-resource-thumb__link sponsored-premium-resource" title="Spray Photoshop Brushes"><img alt="Spray Photoshop Brushes" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/065/066/small/spray-photoshop-brushes.jpg?nocache=true&cachebuster=a48785d4-d0a6-4e2d-8deb-26bf0333406a" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/065/066/small_2x/spray-photoshop-brushes.jpg?nocache=true&cachebuster=31644089-2cee-4120-9ae5-aa9ca1748e0f 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/065/066/small/spray-photoshop-brushes.jpg?nocache=true&cachebuster=a48785d4-d0a6-4e2d-8deb-26bf0333406a 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Spray Photoshop Brushes
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/66004-retro-text-effects-psd" class="ez-resource-thumb__link sponsored-premium-resource" title="Retro Text Effects PSD "><img alt="Retro Text Effects PSD " class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/066/004/small/retro-text-effects-psd.jpg?nocache=true&cachebuster=98a021be-ced9-4a67-afc6-88893f9f2bc5" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/066/004/small_2x/retro-text-effects-psd.jpg?nocache=true&cachebuster=3042cdc6-2d18-4ce0-a5c7-30a4a555738d 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/066/004/small/retro-text-effects-psd.jpg?nocache=true&cachebuster=98a021be-ced9-4a67-afc6-88893f9f2bc5 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Retro Text Effects PSD 
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb is-premium-resource ">
+                <a href="/brushes/66481-neon-light-particles-seamless-pattern-design" class="ez-resource-thumb__link sponsored-premium-resource" title="Neon Light Particles Seamless Pattern Design"><img alt="Neon Light Particles Seamless Pattern Design" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/066/481/small/neon-light-particles-seamless-pattern-design.jpg?nocache=true&cachebuster=381fd1b0-f920-4c66-9f56-9d0d488c3575" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/066/481/small_2x/neon-light-particles-seamless-pattern-design.jpg?nocache=true&cachebuster=eaaa9d55-dddc-43b4-84f5-9844add86235 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/066/481/small/neon-light-particles-seamless-pattern-design.jpg?nocache=true&cachebuster=381fd1b0-f920-4c66-9f56-9d0d488c3575 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Neon Light Particles Seamless Pattern Design
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li data-height="140" data-width="200"
+                  class="ez-resource-grid__item ez-resource-thumb  ">
+                <a href="/brushes/66663-singer-tribute-flyer-template" class="ez-resource-thumb__link sponsored-premium-resource" title="Singer Tribute Flyer Template"><img alt="Singer Tribute Flyer Template" class="ez-resource-thumb__img" src="https://static.brusheezy.com/system/resources/thumbnails/000/066/663/small/singer-tribute-flyer-template.jpg?nocache=true&cachebuster=ffcc80cf-edc5-4a47-9a1d-ee160d76a57d" srcset="https://static.brusheezy.com/system/resources/thumbnails/000/066/663/small_2x/singer-tribute-flyer-template.jpg?nocache=true&cachebuster=8728244c-6a78-4420-9c19-f153ec12010d 2x,
+                https://static.brusheezy.com/system/resources/thumbnails/000/066/663/small/singer-tribute-flyer-template.jpg?nocache=true&cachebuster=ffcc80cf-edc5-4a47-9a1d-ee160d76a57d 1x" /></a>
+
+                <div class="ez-resource-thumb__hover-state">
+                  <div class="ez-resource-thumb__gray-dient">
+                    <div class="ez-resource-thumb__name-content">
+                      Singer Tribute Flyer Template
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+    </ul>
+  </section>
+
+
+
+      </div>
+    </main>
+
+    
+
+
+    
+
+
+      <section class="featured-members">
+  <div class="max-inner">
+      <div class="box">
+        <h2><span class="translation_missing" title="translation missing: en.popular_community_members">Popular Community Members</span></h2>
+        <ul class="grid members">
+            <li><a href="/members/axeraider70"><img alt="The_inc_avatar" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/000/005/sidebar/the_inc_avatar.png" width="68" /></a></li>
+            <li><a href="/members/photoshoptutorials"><img alt="Brusheezy" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/000/006/sidebar/brusheezy.jpg" width="68" /></a></li>
+            <li><a href="/members/webdesignerlab"><img alt="Avatar" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/000/016/sidebar/avatar.jpg" width="68" /></a></li>
+            <li><a href="/members/jasongaylor"><img class="gravatar" alt="" width="68" height="68" src="https://www.gravatar.com/avatar/aa92c2930be86fb23b3ff15299e9dfb7?rating=PG&size=68" /></a></li>
+            <li><a href="/members/chain"><img alt="Ghost-toy" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/000/146/sidebar/ghost-toy.png" width="68" /></a></li>
+            <li><a href="/members/jaaaiiro"><img alt="Web_cam_i" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/000/152/sidebar/Web_Cam_I.jpg" width="68" /></a></li>
+            <li><a href="/members/hawksmont"><img class="gravatar" alt="" width="68" height="68" src="https://www.gravatar.com/avatar/5843fbe10a6c9f54ea4b55c95c6a6036?rating=PG&size=68" /></a></li>
+            <li><a href="/members/gaudi"><img alt="3" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/000/303/sidebar/3.jpg" width="68" /></a></li>
+            <li><a href="/members/coydreamer"><img alt="Onew5" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/001/044/sidebar/onew5.png" width="68" /></a></li>
+            <li><a href="/members/ashitaka"><img class="gravatar" alt="" width="68" height="68" src="https://www.gravatar.com/avatar/07083bd79d5352e0dbcc2db795d8f941?rating=PG&size=68" /></a></li>
+            <li><a href="/members/tom82"><img alt="1264467572783192" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/028/590/sidebar/1264467572783192.jpg" width="68" /></a></li>
+            <li><a href="/members/majapi"><img alt="Maja" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/083/557/sidebar/maja.jpg" width="68" /></a></li>
+            <li><a href="/members/craftsquid"><img alt="Picture0064" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/089/863/sidebar/Picture0064.jpg" width="68" /></a></li>
+            <li><a href="/members/witchy_13"><img alt="Neon-disco-ball_2649660256_o" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/103/704/sidebar/neon-disco-ball_2649660256_o.jpg" width="68" /></a></li>
+            <li><a href="/members/suztv"><img alt="Suztv-logo-2" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/141/559/sidebar/SUZTV-logo-2.png" width="68" /></a></li>
+            <li><a href="/members/goodtextures"><img alt="Simonsmall" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/148/654/sidebar/SimonSmall.jpg" width="68" /></a></li>
+            <li><a href="/members/mandyfloss"><img alt="1ghdsnju" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/176/578/sidebar/1GHdSNju.jpeg" width="68" /></a></li>
+            <li><a href="/members/crestfalleen"><img alt="Krist_design_1" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/224/414/sidebar/Krist_design_1.jpg" width="68" /></a></li>
+            <li><a href="/members/succodesign"><img class="gravatar" alt="" width="68" height="68" src="https://www.gravatar.com/avatar/d5d7e5a04e8f6a914fed331c9c2b8292?rating=PG&size=68" /></a></li>
+            <li><a href="/members/pinkpueblo"><img alt="Pinkpuebloavatar_in_jungle_animals" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/266/820/sidebar/PinkPuebloAvatar_in_Jungle_Animals.jpg" width="68" /></a></li>
+            <li><a href="/members/sue_escaped"><img alt="Dsc04841_1_320x200_" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/270/253/sidebar/DSC04841_1_320x200_.jpg" width="68" /></a></li>
+            <li><a href="/members/kaotika"><img alt="Breezy" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/295/719/sidebar/breezy.jpg" width="68" /></a></li>
+            <li><a href="/members/alex-zhang"><img alt="My-" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/307/323/sidebar/MY-.jpg" width="68" /></a></li>
+            <li><a href="/members/jschill"><img alt="Conceptart_logo_large" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/525/440/sidebar/conceptart_logo_large.png" width="68" /></a></li>
+            <li><a href="/members/pixor"><img alt="Pixor_logo" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/542/304/sidebar/Pixor_logo.jpg" width="68" /></a></li>
+            <li><a href="/members/titimontoya"><img alt="426351_10151225496409406_1862802408_n" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/555/731/sidebar/426351_10151225496409406_1862802408_n.jpg" width="68" /></a></li>
+            <li><a href="/members/helenartathome"><img alt="Id" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/640/948/sidebar/ID.jpg" width="68" /></a></li>
+            <li><a href="/members/brushchick"><img alt="Screen_shot_2013-06-19_at_8.25.16_am" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/683/130/sidebar/Screen_Shot_2013-06-19_at_8.25.16_AM.jpg" width="68" /></a></li>
+            <li><a href="/members/tijo"><img alt="Capture" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/000/886/809/sidebar/Capture.PNG" width="68" /></a></li>
+            <li><a href="/members/hikergal"><img alt="Lacy&#x27;s_championship_cropped" class="avatar" height="68" src="https://static.brusheezy.com/system/users/avatars/001/090/729/sidebar/Lacy&#x27;s_Championship_cropped.jpg" width="68" /></a></li>
+        </ul>
+      </div>
+  </div>
+</section>
+
+
+    <section class="sponsors">
+  <div class="max-inner">
+      <div class="sponsors-wrapper">
+            
+  <div class="proper-ad-unit adunit bottom-728" style="">        
+      <div id="proper-ad-brusheezy_home_bottom"> <script> propertag.cmd.push(function() { proper_display('brusheezy_home_bottom'); }); </script> </div>
+  </div>
+
+
+      </div>
+  </div>
+</section>
+
+    <footer class="site-footer new">
+  <div class="max-inner">
+
+    <div class="footer-nav row">
+      <div class="col">
+        <h4>Our network</h4>
+        <ul>
+          <li><a href="https://www.brusheezy.com">Brusheezy</a></li>
+          <li><a href="https://www.vecteezy.com">Vecteezy</a></li>
+          <li><a href="https://www.videezy.com">Videezy</a></li>
+          <li><a href="https://www.themezy.com">Themezy</a></li>
+          <li><a href="http://www.eezy.com/contributors">Become a Contributor</a><li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4>Site links</h4>
+        <ul>
+          <li><a href="/deals">Deals</a></li>
+          <li><a href="/advertising">Advertise</a></li>
+          <li><a href="https://support.brusheezy.com" class="" target="_blank">Support</a></li>
+              <li><a href="/dmca">DMCA</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4>Languages</h4>
+        <ul>
+
+            <li>
+              <a href="https://www.brusheezy.com/" class="locale-footer-link en">English</a>
+            </li>
+            <li>
+              <a href="https://es.brusheezy.com/" class="locale-footer-link es">Español</a>
+            </li>
+            <li>
+              <a href="https://pt.brusheezy.com/" class="locale-footer-link pt">Português</a>
+            </li>
+            <li>
+              <a href="https://de.brusheezy.com/" class="locale-footer-link de">Deutsch</a>
+            </li>
+          <li class="more-languages" data-action="toggle-language-switcher" data-switcher-target="footer-locale-switcher">
+            <a href="#" class="footer-locale-more-link">More...</a>
+
+            
+<div id="footer-locale-switcher" class="ez-language-switcher ez-tooltip ez-tooltip--arrow-bottom">
+  <div class="ez-tooltip__arrow ez-tooltip__arrow--middle"></div>
+  <div class="ez-tooltip__content">
+    <ul>
+        <li>
+          
+            <span class="nested-locale-switcher-link en current">
+              English
+              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 11.93 9.39"><polygon points="11.93 1.76 10.17 0 4.3 5.87 1.76 3.32 0 5.09 4.3 9.39 11.93 1.76"></polygon></svg>
+
+            </span>
+        </li>
+        <li>
+          <a href="https://es.brusheezy.com/" class="nested-locale-switcher-link es" data-locale="es">Español</a>        </li>
+        <li>
+          <a href="https://pt.brusheezy.com/" class="nested-locale-switcher-link pt" data-locale="pt">Português</a>        </li>
+        <li>
+          <a href="https://de.brusheezy.com/" class="nested-locale-switcher-link de" data-locale="de">Deutsch</a>        </li>
+        <li>
+          <a href="https://fr.brusheezy.com/" class="nested-locale-switcher-link fr" data-locale="fr">Français</a>        </li>
+        <li>
+          <a href="https://nl.brusheezy.com/" class="nested-locale-switcher-link nl" data-locale="nl">Nederlands</a>        </li>
+        <li>
+          <a href="https://sv.brusheezy.com/" class="nested-locale-switcher-link sv" data-locale="sv">Svenska</a>        </li>
+    </ul>
+  </div>
+</div>
+
+  <span class="ez-language-switcher__overlay"></span>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="col col_about">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="http://www.eezy.com/team">Our Team</a></li>
+          <li><a href="/blog">Our Blog</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom row">
+      <div class="footer-bottom-inner">
+        <a href="http://eezy.com" class="eezy-logo" title="Eezy Inc."><img alt="Eezy-logo" src="https://static.brusheezy.com/assets/eezy-logo-3ea26c89a4ddb6c0d835c64e0fc6679c.svg" /></a>
+
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/brusheezy" target="_blank" title="facebook"><i aria="{:hidden=&gt;&quot;true&quot;}" class="fa fa-facebook-square"></i></a></li>
+          <li><a href="https://twitter.com/brusheezy" target="_blank" title="twitter"><i aria="{:hidden=&gt;&quot;true&quot;}" class="fa fa-twitter"></i></a></li>
+          <li><a href="https://pinterest.com/brusheezy/" target="_blank" title="pinterest"><i aria="{:hidden=&gt;&quot;true&quot;}" class="fa fa-pinterest"></i></a></li>
+          <li><a href="https://instagram.com/eezy/" target="_blank" title="instagram"><i aria="{:hidden=&gt;&quot;true&quot;}" class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.snapchat.com/add/eezy" target="_blank" title="snapchat"><i aria="{:hidden=&gt;&quot;true&quot;}" class="fa fa-snapchat-ghost"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/eezy.com" target="_blank" title="linkedin"><i aria="{:hidden=&gt;&quot;true&quot;}" class="fa fa-linkedin-square"></i></a></li>
+          
+        </ul>
+
+        <div class="footer-aux">
+          <p class="footer-copyright">&copy; 2021 Eezy Inc. All rights reserved</p>
+          <span class="bullet-sep"> &bullet; </span>
+          <ul>
+            <li><a href="/terms">Terms of Use</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+      
+
+    
+
+    
+    <script src="https://static.brusheezy.com/assets/essential_top_scripts-2e116b2cc8298c1103c17117bf854d1a.js" type="text/javascript"></script>
+    <script defer="defer" src="https://static.brusheezy.com/assets/home_scripts-9be4de14f7a1465b6950be653e057469.js" type="text/javascript"></script>
+    <script defer="defer" src="https://static.brusheezy.com/assets/application-69704de57475d54420ec8f6e5a4fcc9d.js" type="text/javascript"></script>
+      <script defer="defer" src="https://static.brusheezy.com/assets/shutterstock-presentation-a934acfcca4f4ea0bacc2f6cd73e4322.js" type="text/javascript"></script>
+    <script defer="defer" src="https://static.brusheezy.com/assets/redesign-functionality-c66abedabdc263cc2a6d2731ebad82ee.js" type="text/javascript"></script>
+
+      <script src="https://static.brusheezy.com/assets/shared/search-form-f4c05be75a3d83dac31b135c1371597c.js" type="text/javascript"></script>
+
+  <script>
+    function connected_to_facebook() {
+      FB.login(function(response) {
+        if (response.authResponse) {
+         console.log('Welcome!  Fetching your information.... ');
+         FB.api('/me', function(response) {
+           console.log('Good to see you, ' + response.name + '.');
+         });
+          trackFacebookLogin();
+          var isDLReachedModal = false;
+          if($('.download-limit-reached').length) {
+            isDLReachedModal = true;
+          }
+          if (isDLReachedModal) {
+            /* We need to explicitly check for session[:last_viewed_resource_id] being
+            present even though it will never be accessed by the client in a situation where
+            it would be nil because Rails will throw an exception when trying to generate
+            this template otherwise. */
+          } else {
+            window.location.href = "/auth/facebook/callback?" + $.param({ signed_request: response.authResponse.signedRequest });
+          }
+        } else {
+         console.log('User cancelled login or did not fully authorize.');
+        }
+      }, {scope: 'email,public_profile'}); // todo: confirm scope
+    }
+
+    function initFacebookSignin() {
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '247323205309962', // App ID
+          channelUrl : '//www.brusheezy.com/channel.html', // Channel File
+          status     : true, // check login status
+          cookie     : true, // enable cookies to allow the server to access the session
+          version    : 'v2.7',
+          xfbml      : true  // parse XFBML
+        });
+
+        FB.Event.subscribe('edge.create', function(href, widget) {
+          pageTracker._trackEvent('facebook', 'like', href);
+        });
+        FB.Event.subscribe('auth.login', function(e) {
+          return false;
+        });
+      };
+
+      // Load the SDK Asynchronously
+      (function(d){
+         var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement('script'); js.id = id; js.async = true;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         ref.parentNode.insertBefore(js, ref);
+       }(document));
+    }
+
+      initFacebookSignin();
+  </script>
+
+
+    
+      <!-- Begin TextBlock "Top Banner" -->
+<script type="text/javascript">
+
+  // Use these toggles to turn banner/countdown on and off. 
+  
+  var TopBannerConfig = {
+    countDownOn: true,
+    topBannerOn: false,
+  };
+
+</script>
+
+<!-- Don't touch the HTML below except to change its content and link. -->
+<div class="premium-top-banner sticky-footer">
+  <div class="wrapper">
+            
+    <a href="/join?sale=39-unlimited-19-trial&ref=shawn&sub=brushsliver090517" target="_self" class="link-wrapper" onclick="ga('send', 'event', 'sliver', 'PostLaborDaySale', window.location.href);">
+      <div class="catch">
+      <b>Today Only!</b> Get 3 Months of Unlimited Premium Graphics for only $19
+      </div>
+      <div class="countdown" style="display:none">Hurry! Ends in <span class="cd-time">02</span>:<span class="cd-time">04</span>:<span class="cd-time">47</span></div>
+    </a> 
+    
+    <a href="/join?sale=39-unlimited-19-trial&ref=shawn&sub=brushsliver090517" target="_self" class="btn" onclick="ga('send', 'event', 'sliver', 'PostLaborDaySale', window.location.href);">Learn More</a>
+  </div>
+  <span class="sticky-footer-closure"><i class="fa fa-close"></i></span>
+</div>
+<!-- End TextBlock "Top Banner" --> 
+      <script type="text/javascript">
+
+  $(document).ready(function() {
+    if (typeof(TopBannerConfig) == 'undefined') return;
+    
+    if (TopBannerConfig.topBannerOn) {
+      // $('.premium-top-banner').show();
+
+      $('head').append('<link href="https://static.brusheezy.com/assets/sticky-footer-3514c6c1c352e901c7b70b2d82e98ea0.css" media="screen" rel="stylesheet" type="text/css" />');
+
+      // show: slide (sticky-footer) banner into view
+      if( $.cookies.get('hideStickyFooterBanner') != '1' ) {
+        setTimeout(function() {
+          $('.premium-top-banner.sticky-footer').addClass('show-sticky-footer');
+        }, 3000);
+      }  
+
+      // hide: slide (sticky-footer) banner out of view 
+      $('.sticky-footer-closure').on('click', function(e) {
+        $('.premium-top-banner.sticky-footer').removeClass('show-sticky-footer');
+        $.cookies.set('hideStickyFooterBanner', '1'); 
+        e.preventDefault();
+      });
+
+
+      if ($("body").not(".premium").find("#sidebar").length > 0) $('.premium-top-banner').show();
+      if ($("body.premium.resources-show").find("#sidebar").length > 0 ) $('.premium-top-banner').show();
+      
+      if (TopBannerConfig.countDownOn) {
+         $('.countdown').show();
+         $('.premium-top-banner').addClass('has-countdown');
+     
+        if ($("body").not(".premium").find("#sidebar").length > 0) $('.premium-top-banner').show();
+        var date = $.cookies.get('countdown_date');
+    
+        if (!date) {
+          // If date not set in cookie, set end date to be ~2 hours away?
+      
+          date = new Date();
+          date.setTime(date.getTime() + 2*60*60*1000 + 6*60*1000 + 7000);
+          $.cookies.set('countdown_date', date);
+        } else {
+          var new_date = new Date();
+          if (new Date(date) < new_date) {
+            // If past date in cookie, remove count down clock, but don't actually remove banner? Looks like countdown is just for show.
+        
+            //$('a#premium-banner-link').attr('href', /premium/about?sale_over=true);
+            $('.countdown').remove();
+            $('.premium-top-banner').removeClass('has-countdown');
+          }
+        }
+    
+        // Start count down animation
+        $('.countdown').countdown({
+          "date" : date,
+          "leadingZero" : true,
+          "htmlTemplate" : "Hurry! Ends in <span class='cd-time'>%h</span>:<span class='cd-time'>%i</span>:<span class='cd-time'>%s</span>"
+        });
+        
+      } 
+    } else {
+      $('.premium-top-banner').hide();
+    }
+  }); 
+
+</script>
+
+
+
+    
+      
+    <script defer="defer" src="https://static.brusheezy.com/assets/animated_inputs_hacks-729dc697616e3ca215afee5392b42fca.js" type="text/javascript"></script>
+      <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '359443887835602');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=359443887835602&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+    
+    
+    
+
+    
+  </body>
+</html>

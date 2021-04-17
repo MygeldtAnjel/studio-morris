@@ -1,0 +1,868 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Portal de empleo - Insertia.net</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<meta http-equiv="cache-Control" content="no-cache,no store,must-revalidate" />
+	<meta name="google-site-verification" content="enSsZsRNmKaKu25argfpvIn61d-nB65Qyy4xcvIeDNs" />
+	<meta name="title" content="Portal de empleo - Insertia.net" />
+	<meta name="description" content="Portal de empleo donde puede buscar empleo o bien publicar ofertas de empleo gratis" />
+	<meta name="Robots" content="index, follow">
+    <meta name="revisit-after" content="1 days">
+	<meta name="keywords" content="Portal de empleo" />
+	
+	<!--[if !IE]>--><link href="css/styles.css" rel="stylesheet" type="text/css"><!--<![endif]-->
+	<!--[if lt IE 9]><link href="css/stylesIE.css" rel="stylesheet" type="text/css"><![endif]-->
+	<!--[if IE 9]><link href="css/styles.css" rel="stylesheet" type="text/css"><![endif]-->
+	<link rel="stylesheet" type="text/css" href="css/jqtransform.css" />
+	<script language="JavaScript">		
+		function abrirEnlaces(url1){
+		  window.open('redireccionar.php?url=http://'+url1,'_blank');
+		}
+		function setUrlPublisher(url1){
+			$("#urlredirect").attr("href", url1); 
+		} 
+	</script>
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<!--[if lt IE 9]><script type="text/javascript" src="js/jquery.curvycorners.packed.js"></script><![endif]-->
+	<script type="text/javascript" src="css/jquery.jqtransform.js"></script>
+	<script type="text/javascript" src="js/funciones.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+		<script type="text/javascript">     
+		$(document).ready(function(){
+			$("#e_registro").fancybox({'scrolling': 'no','padding': 0,'centerOnScroll': false,showCloseButton:true,'width' :  700,'onClosed': function() {$("#md_errora").hide();}});
+			$('#search').jqTransform();
+						$(".redirect").fancybox({
+				'scrolling'		: 'no',
+				'titleShow'		: false,
+				'centerOnScroll': false,
+				'onStart'		: function() {
+					if ($("#urlredirect").attr("href")!=''){ 
+						if ($("#urlredirect").attr("href")!=undefined)
+							setTimeout(function() { 
+								window.location.href = $("#urlredirect").attr("href");
+							}, 2000);
+					}
+				}
+			});
+		});
+		function ActualizarClicksWidget (URL,idw,orient){ 
+			 $.ajax({
+				type: "POST",
+				url: "includes/actualizarclickswidget.php",
+				data: { id: idw,tipo:orient},
+				success: function(datos){
+				   window.location= URL;
+			   }
+		   });	 
+		};
+	</script>
+</head>
+<body> <script type="text/javascript" src="/empleo/js/jquery.cookie.js"></script>
+<script type="text/javascript">
+	function VerCookie (caducidad){ 
+	   var valor = parseInt(caducidad);
+	   var visited = $.cookie('webemergente')
+		if (visited == 'yes'){
+			return false;
+		}else{
+			$.cookie('webemergente', 'yes',{ expires: valor });
+			AbrirWebEmergente ();
+		}
+	}
+	function AbrirWebEmergente (){ 
+		$.ajax({
+			type: "POST",
+			url: "/empleo/includes/webemergente.php",
+			success: function(datos){
+				if (datos!=-1) {  
+					window.open(datos);
+				}   
+			}
+		});
+	}
+	$(document).ready(function(){
+		$.ajax({
+			type: "POST",
+			url: "/empleo/includes/caducidad.php",
+			success: function(datos){
+			   VerCookie (datos);                       
+			} 
+		});   
+	})
+</script>
+<div id="web_header">
+<!--<p>Nota: Se avisa a los usuarios que por motivos de mantenimiento, vamos a suspender el servicio temporalmente y en los proximos 5 minutos. Disculpen por las Molestias Ocasionadas.</p>-->
+	<div class="center">
+		<div id="logotipo"><a href="/" title="Portal de Empleo"><img style="border:0" src="/empleo/img/portal-de-empleo.gif" width="292" height="110" alt="Portal de empleo" title="Portal de Empleo" class="pos_logo" /></a></div>
+		<div id="fecha"><p class="txt_fecha">Domingo, 14 de Marzo de 2021</p></div>
+	</div>
+</div><!-- END OF DIV WEB_HEADER -->
+	<div id="web_content">
+		<div class="center">	
+			<div id="col_left">
+				<div id="fb-root"></div>
+<script type="text/javascript">
+	function GuardarVariableSesion (){ 
+		$.ajax({
+		type: "POST",
+		url: "/empleo/includes/variablesesion.php",
+		data: { popup: "1"},
+		success: function(datos){
+		detectarNav();
+		window.location= "index.php";
+		}
+		}); 
+	};
+	function LanzarEncuesta(encuestaid){
+	var opcion =$("input[name='opencuesta']:checked").val();
+	if(typeof(opcion) != "undefined"){ 
+			$.ajax({
+			type: "POST",
+			url: "/empleo/includes/actualizarencuesta.php",
+			data: { idopcion: opcion},
+			success: function(datos){
+			window.location= "encuesta.php?id="+encuestaid;
+			}
+			});
+	} else { 
+	alert("No ha seleccionado ninguna opción en la encuesta"); 
+	}
+	}
+</script>
+
+	<div id="botones">
+		<div class="btn_empleo">
+			<a href="/empleo/" title="Empleo">
+				<img style="border:0" src="/empleo/img/btn_empleo.gif" alt="Ofertas de empleo" width="130" height="47" />
+			</a>
+		</div>
+		<div class="btn_forma">
+			<a href="/formacion/" title="Formacion">
+				<img style="border:0" src="/empleo/img/btn_formacion.gif" alt="Cursos de formación" width="130" height="47" />
+			</a>
+		</div>
+	</div>
+	<div class="banda-izq-panel"></div> 		<div id="titulo-panel-usu"><img src="/empleo/img/titulo-panel-usuario.png" alt="Insertia.net" /></div>
+		<form action="login.php" enctype="application/x-www-form-urlencoded" method="post" name="fmlogin" id="fmlogin">
+			<div id="campo_email" class="campo_email" style="cursor:pointer;" >
+					<div class="campo_email_left" style="cursor:pointer;"></div>
+					<div class="campo_email_bg" style="cursor:pointer;">
+						<input name="sel_mail" id="sel_mail" type="email" placeholder="E-mail" class="campo_txt_login" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail'" style="width:205px;cursor:pointer;" required/>
+					</div>
+					<div class="campo_email_rigth" style="cursor:pointer;"></div>
+			</div>
+			<div id="campo_pass" class="campo_pass" style="cursor:pointer;">
+					<div class="campo_pass_left" style="cursor:pointer;"></div>
+					<div class="campo_pass_bg" style="cursor:pointer;width:147px;">
+						<input placeholder="Contraseña" name="sel_pass" id="sel_pass" type="password" class="campo_txt_login" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'" style="width:135px;cursor:pointer;" required/>
+					</div>
+					<div class="campo_pass_btn" style="cursor:pointer;" >
+						<input name="dologin" type="submit" style="float:left; width:74px; height:47px; margin:0; padding:0; border:0; background:transparent; cursor:pointer;" value=" " />
+					</div>
+					<div class="campo_email_rigth" style="cursor:pointer;"></div>
+					<!--<div class="campo_pass_key">
+						<img src="/empleo/img/btn_teclado.gif" border="0" id="mostrar_tecladosel_pass" style="cursor:pointer;" />
+					</div>-->
+			</div> 			<!--funcionalidad weblink-->
+			<div style="float:left; width:250px; height:auto; margin:auto 0; padding:0; border:0;text-align:center;margin:15px 0 5px 13px;">
+				<div style="float:left;height:auto; border-right: 1px solid #ADADAD;width:150px;">
+					<span style="line-height:27px;height:auto;  padding:0; border:0; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#ADADAD;"  ><a href="/empleo/recuperar.php"  title="Olvid&eacute; Mi Contrase&ntilde;a" class="linkrecupera" style="margin:0;padding:0;">Olvid&eacute; Mi Contrase&ntilde;a</a></span>  
+					<br />
+				<span style="line-height:27px;height:auto;  padding:0; border:0; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#ADADAD;" ><span class="txt_reg_azul" style="margin:0;padding:0;"><a href="/empleo/registro.php" title="Registrarme" class="linkrecuperab"  >Registrarme</a></span> </span>  
+				</div>
+				<div style="float:left;width:40px;;text-align:center;">
+				<a href="https://www.youtube.com/watch?v=kySfoew0bKs&list=PLek4Mug9ihS5ShnCMoIlO83fiCz9movit" target="_blank" rel="nofollow"><img style="margin:5px 0 0 5px;" alt="Ofertas de empleo" src="/empleo/img/ayuda.png" /></a>
+				</div>
+			</div>
+		</form> 
+<script type="text/javascript" src="https://www.google.es/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>			<div style="float:left; width:300px; height:250px; margin:0 0 5px 1px; padding:0; border:0; background-color:#FCFCFC;"> 
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- Cuadrado 300x250 Insertia Abajo. -->
+				<ins class="adsbygoogle"
+					style="display:inline-block;width:300px;height:250px"
+					data-ad-client="ca-pub-4828301650721937"
+					data-ad-slot="8415023841"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div> 				<div style="float:left; width:300px; height:600px; margin:0 0 5px 1px; padding:0; border:0; background-color:#FCFCFC;">
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- Vertical 300x600 Insertia -->
+					<ins class="adsbygoogle"
+						style="display:inline-block;width:300px;height:600px"
+						data-ad-client="ca-pub-4828301650721937"
+						data-ad-slot="5777785047"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div> 			</div><!-- END OF DIV COL_LEFT -->
+			<div id="col_content">
+				<script type="text/javascript">
+  var rv = 1;
+  var navegador = navigator.userAgent;
+   if ((navigator.userAgent.indexOf('Chrome') !=-1) || (navigator.userAgent.indexOf('Safari') !=-1)) {
+    rv = -1;
+   }
+   function Buscar (){ 
+		cadbusq=document.getElementById('sel_c').value;
+		var existe=cadbusq.indexOf('@');
+		if ((cadbusq.indexOf('@')==-1) &&  (cadbusq.indexOf('.')==-1)) { 
+			document.getElementById('search').submit();
+		}else {
+			alert('Carácter introducido no válido')
+		}
+		/*     cadena = Base64.encode('w00t')*/   
+   };
+	$(document).ready(function(){ 
+	  if (rv==-1){ 
+		 $("#sel_c").css("margin-top","10px");
+	  }
+	});
+	function ActualizarClicksMarquesina (URL,idm){  
+		 $.ajax({
+			type: "POST",
+			url: "/empleo/includes/actualizarclicksmarquesina.php",
+			data: { id: idm },
+			success: function(datos){
+			   window.location= URL;
+			}
+	   });    
+	};	
+</script>
+	<form action="/empleo/buscartodos.php" enctype="application/x-www-form-urlencoded" id="search" method="get" name="search">
+		<div id="search_box">
+			<img alt="Buscador de empleo" src="/empleo/img/tit_buscador.png" style="margin:15px 0 0 16px;" />
+			<div class="campo" style="margin-top:30px;">
+				<div class="campo_left"></div>
+				<div class="campo_bg" style="width:265px; min-width:200px; background-image:url(/empleo/img/campo-bg.png); background-repeat:repeat-x;"><input name="sel_c" id="sel_c" type="text" value="Escriba aqu&iacute; su Palabra de b&uacute;squeda"  style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#575757;float:left;height:auto; width:200px;" size="25" onClick="escribe('sel_c');" onBlur="noescribe('sel_c','Escriba aqu&iacute; su Palabra de b&uacute;squeda');" /></div>
+				<div style="float:left; width:15px; height:100px; margin:0; padding:0; border:0; background-image:url(/empleo/img/campo-derb.png); background-repeat:no-repeat;"></div>
+			</div>
+			<div class="campo"  style="margin-top:30px;">
+				<div class="campo_left"></div>
+				<div class="campo_bg">
+				<select name="sel_b" id="sel_b" size="1" style="width:228px;">
+					<option value="">Seleccione la Provincia.</option>
+					<option value="Toda_España" >Toda España</option>							<option value="Álava" >
+								Álava							</option>
+											<option value="Albacete" >
+								Albacete							</option>
+											<option value="Alicante" >
+								Alicante							</option>
+											<option value="Almería" >
+								Almería							</option>
+											<option value="Asturias" >
+								Asturias							</option>
+											<option value="Ávila" >
+								Ávila							</option>
+											<option value="Badajoz" >
+								Badajoz							</option>
+											<option value="Barcelona" >
+								Barcelona							</option>
+											<option value="Burgos" >
+								Burgos							</option>
+											<option value="Cáceres" >
+								Cáceres							</option>
+											<option value="Cádiz" >
+								Cádiz							</option>
+											<option value="Cantabria" >
+								Cantabria							</option>
+											<option value="Castellón" >
+								Castellón							</option>
+											<option value="Ceuta" >
+								Ceuta							</option>
+											<option value="Ciudad Real" >
+								Ciudad Real							</option>
+											<option value="Córdoba" >
+								Córdoba							</option>
+											<option value="Cuenca" >
+								Cuenca							</option>
+											<option value="Girona" >
+								Girona							</option>
+											<option value="Granada" >
+								Granada							</option>
+											<option value="Guadalajara" >
+								Guadalajara							</option>
+											<option value="Guipúzcoa" >
+								Guipúzcoa							</option>
+											<option value="Huelva" >
+								Huelva							</option>
+											<option value="Huesca" >
+								Huesca							</option>
+											<option value="Islas Baleares" >
+								Islas Baleares							</option>
+											<option value="Jaén" >
+								Jaén							</option>
+											<option value="La Coruña" >
+								La Coruña							</option>
+											<option value="La Rioja" >
+								La Rioja							</option>
+											<option value="Las Palmas" >
+								Las Palmas							</option>
+											<option value="León" >
+								León							</option>
+											<option value="Lleida" >
+								Lleida							</option>
+											<option value="Lugo" >
+								Lugo							</option>
+											<option value="Madrid" >
+								Madrid							</option>
+											<option value="Málaga" >
+								Málaga							</option>
+											<option value="Melilla" >
+								Melilla							</option>
+											<option value="Murcia" >
+								Murcia							</option>
+											<option value="Navarra" >
+								Navarra							</option>
+											<option value="Ourense" >
+								Ourense							</option>
+											<option value="Palencia" >
+								Palencia							</option>
+											<option value="Pontevedra" >
+								Pontevedra							</option>
+											<option value="Salamanca" >
+								Salamanca							</option>
+											<option value="S.C. de Tenerife" >
+								S.C. de Tenerife							</option>
+											<option value="Segovia" >
+								Segovia							</option>
+											<option value="Sevilla" >
+								Sevilla							</option>
+											<option value="Soria" >
+								Soria							</option>
+											<option value="Tarragona" >
+								Tarragona							</option>
+											<option value="Teruel" >
+								Teruel							</option>
+											<option value="Toledo" >
+								Toledo							</option>
+											<option value="Valencia" >
+								Valencia							</option>
+											<option value="Valladolid" >
+								Valladolid							</option>
+											<option value="Vizcaya" >
+								Vizcaya							</option>
+											<option value="Zamora" >
+								Zamora							</option>
+											<option value="Zaragoza" >
+								Zaragoza							</option>
+								</select>
+				</div>
+			</div>	
+			<button id="btnbuscar" type="button" style="margin-top:15px;" onClick="Buscar();">Encuentra empleo ahora</button>
+		</div>
+	</form> 
+		<div id="marquesina" style="float:left; width:644px;margin-top:40px ; padding:0; border:0;background-color:white;">
+			<marquee direction="left" style="text-align: center;background-color:white;" onMouseOver="this.stop()" onMouseOut="this.start()" scrollamount="2" >							<a id="1_14" onclick="javascript:ActualizarClicksMarquesina('https://www.insertia.net/empleo/cursos-de-formacion-online.php','14');return false;"  href="https://www.insertia.net/empleo/cursos-de-formacion-online.php" style="padding-right:20px;" >Consulta el listado de cursos de formación online que tenemos disponibles para ti a un precio muy económico</a>			</marquee>
+		</div> 	
+				<div id="content_box" >
+					<div id="content_box_bg">
+						<div class="col_listado">
+							<p class="txt_tit" style="margin-top:15px;">
+								<img src="img/tit-ultimos-empleos.png" /><br />Consulta nuestras ofertas de empleo m&aacute;s recientes.
+							</p>
+							<div class="listados" style="margin-bottom:0;">
+								<div class="listado_cab">
+									<div class="cols_cab" style="margin-left:20px;text-align:left;width:350px;">Puesto vacante</div>
+									<div class="cols_cab" style="width:95px;">Provincia</div>
+								</div>							
+										<a href="oferta-de-empleo_carretilleros-con-discapacidad-pedrola--en-zaragoza_ref_28698693.html" title="Carretilleros con discapacidad pedrola " style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Carretilleros con discapacidad pedrola </div>
+												<div class="cols_fila" style="width:95px;">Zaragoza</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_personal-con-discapacidad--en-zaragoza_ref_28696480.html" title="Personal con discapacidad " style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Personal con discapacidad </div>
+												<div class="cols_fila" style="width:95px;">Zaragoza</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_asesora-de-belleza--en-toda-espana_ref_28701248.html" title="Asesor/a de belleza " style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Asesor/a de belleza </div>
+												<div class="cols_fila" style="width:95px;">Toda España</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_actividad-desde-casa--en-toda-espana_ref_28701532.html" title="Actividad desde casa " style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Actividad desde casa </div>
+												<div class="cols_fila" style="width:95px;">Toda España</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_consultora-de-belleza-y-bienestar--en-toda-espana_ref_28702003.html" title="Consultora de belleza y bienestar " style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Consultora de belleza y bienestar </div>
+												<div class="cols_fila" style="width:95px;">Toda España</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_vendedora-de-cosmetica--en-toda-espana_ref_28702002.html" title="Vendedor/a de cosmética " style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Vendedor/a de cosmética </div>
+												<div class="cols_fila" style="width:95px;">Toda España</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_urge-cubrir-auxiliar-de-ayuda-a-domicilio-zona-alboraia-en-valencia_ref_28702659.html" title="Urge cubrir auxiliar de ayuda a domicilio zona alboraia" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Urge cubrir auxiliar de ayuda a domicilio zona alboraia</div>
+												<div class="cols_fila" style="width:95px;">Valencia</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_asesora-ventas---comercial-ventanas-de-pvc-en-valencia_ref_28702634.html" title="Asesor/a ventas - comercial ventanas de pvc" style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Asesor/a ventas - comercial ventanas de pvc</div>
+												<div class="cols_fila" style="width:95px;">Valencia</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_instalador-de-ventanas-de-pvc-en-valencia_ref_28702635.html" title="Instalador de ventanas de pvc" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Instalador de ventanas de pvc</div>
+												<div class="cols_fila" style="width:95px;">Valencia</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_asesora-ventas---comercial-ventanas-de-pvc-en-madrid_ref_28702633.html" title="Asesor/a ventas - comercial ventanas de pvc" style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Asesor/a ventas - comercial ventanas de pvc</div>
+												<div class="cols_fila" style="width:95px;">Madrid</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_personal-de-limpieza-de-vehiculos-con-discapacidad-en-sevilla_ref_28702609.html" title="Personal de limpieza de vehículos con discapacidad" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Personal de limpieza de vehículos con discapacidad</div>
+												<div class="cols_fila" style="width:95px;">Sevilla</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_jefea-de-obra-hoteleria-en-valencia_ref_28702624.html" title="Jefe/a de obra hoteleria" style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Jefe/a de obra hoteleria</div>
+												<div class="cols_fila" style="width:95px;">Valencia</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_operarioa-manipulados-con-discapacidad-zona-yeles-en-toledo_ref_28702622.html" title="Operario/a manipulados con discapacidad zona yeles" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Operario/a manipulados con discapacidad zona yeles</div>
+												<div class="cols_fila" style="width:95px;">Toledo</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_instalador-de-ventanas-de-pvc-en-madrid_ref_28702636.html" title="Instalador de ventanas de pvc" style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Instalador de ventanas de pvc</div>
+												<div class="cols_fila" style="width:95px;">Madrid</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_operarioa-conductora-de-remolcadora-en-valencia_ref_28702603.html" title="Operario/a conductor/a de remolcadora" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Operario/a conductor/a de remolcadora</div>
+												<div class="cols_fila" style="width:95px;">Valencia</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_ayudante-para-copisteria-centro-de-impresion-en-las-palmas_ref_28702590.html" title="Ayudante para copisteria-centro de impresión" style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Ayudante para copisteria-centro de impresión</div>
+												<div class="cols_fila" style="width:95px;">Las Palmas</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_comercial-inmobiliario-en-malaga_ref_28692614.html" title="Comercial inmobiliario" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Comercial inmobiliario</div>
+												<div class="cols_fila" style="width:95px;">Málaga</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_personal-de-limpieza-con-discapacidad-en-malaga_ref_28702610.html" title="Personal de limpieza con discapacidad" style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Personal de limpieza con discapacidad</div>
+												<div class="cols_fila" style="width:95px;">Málaga</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_administrativo-en-sevilla_ref_28702062.html" title="Administrativo" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Administrativo</div>
+												<div class="cols_fila" style="width:95px;">Sevilla</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_game-tester-traditional-chinese-en-malaga_ref_28702600.html" title="Game tester: traditional chinese" style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Game tester: traditional chinese</div>
+												<div class="cols_fila" style="width:95px;">Málaga</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_asesora-inmobiliario-en-sevilla_ref_28697157.html" title="Asesor/a inmobiliario" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Asesor/a inmobiliario</div>
+												<div class="cols_fila" style="width:95px;">Sevilla</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_jefea-de-obra-hoteleria-en-islas-baleares_ref_28702623.html" title="Jefe/a de obra hoteleria" style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Jefe/a de obra hoteleria</div>
+												<div class="cols_fila" style="width:95px;">Islas Baleares</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_bibliotecario-tecnicoa-biblioteca---imprescindible-inmagic-en-madrid_ref_28702650.html" title="Bibliotecario técnico/a biblioteca - imprescindible inmagic" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Bibliotecario técnico/a biblioteca - imprescindible inmagic</div>
+												<div class="cols_fila" style="width:95px;">Madrid</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_asesora-inmobiliario-en-sevilla_ref_28681205.html" title="Asesor/a inmobiliario" style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Asesor/a inmobiliario</div>
+												<div class="cols_fila" style="width:95px;">Sevilla</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_operarioa-sector-alimentacion-en-murcia_ref_28702658.html" title="Operario/a sector alimentación" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Operario/a sector alimentación</div>
+												<div class="cols_fila" style="width:95px;">Murcia</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_empleada-de-hogar-en-la-coruna_ref_28702657.html" title="Empleada de hogar" style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Empleada de hogar</div>
+												<div class="cols_fila" style="width:95px;">La Coruña</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_bibliotecario--tecnicoa-biblioteca---imprescindible-inmagic-en-barcelona_ref_28702649.html" title="Bibliotecario / técnico/a biblioteca - imprescindible inmagic" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Bibliotecario / técnico/a biblioteca - imprescindible inmagi...</div>
+												<div class="cols_fila" style="width:95px;">Barcelona</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_medico-intensivista-para-almeria-en-almeria_ref_28702661.html" title="Médico intensivista para almería" style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Médico intensivista para almería</div>
+												<div class="cols_fila" style="width:95px;">Almería</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_conductora-de-camion-en-guadalajara_ref_28702660.html" title="Conductor/a de camión" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Conductor/a de camión</div>
+												<div class="cols_fila" style="width:95px;">Guadalajara</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_odontologoa-general-oviedo-en-asturias_ref_28696017.html" title="Odontólogo/a general oviedo" style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Odontólogo/a general oviedo</div>
+												<div class="cols_fila" style="width:95px;">Asturias</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_recepcionista-de-clinica-en-asturias_ref_28702662.html" title="Recepcionista de clínica" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Recepcionista de clínica</div>
+												<div class="cols_fila" style="width:95px;">Asturias</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_auxiliar-de-dentista-en-alava_ref_28699642.html" title="Auxiliar de dentista" style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Auxiliar de dentista</div>
+												<div class="cols_fila" style="width:95px;">Álava</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_auxiliar-d-odontologa-en-asturias_ref_28698136.html" title="Auxiliar d odontóloga" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Auxiliar d odontóloga</div>
+												<div class="cols_fila" style="width:95px;">Asturias</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_higienista-bucodental-en-asturias_ref_28699470.html" title="Higienista bucodental" style="text-decoration:none;">
+											<div class="fila_listado" >
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Higienista bucodental</div>
+												<div class="cols_fila" style="width:95px;">Asturias</div>
+											</div>
+										</a>							
+										<a href="oferta-de-empleo_auxiliar--higienista-dental-en-alava_ref_28699471.html" title="Auxiliar / higienista dental" style="text-decoration:none;">
+											<div class="fila_listado" style="background-color:#E5E5E5;">
+												<div class="cols_fila" style="width:350px;padding-left:20px; text-align:left;">&nbsp;Auxiliar / higienista dental</div>
+												<div class="cols_fila" style="width:95px;">Álava</div>
+											</div>
+										</a>									</p> 								<div class="banner" style="margin-bottom:0px; height:60px;margin-left: 10px;">
+									<script type="text/javascript">
+										google_ad_client = "ca-pub-4828301650721937";
+										google_ad_slot = "5763392307";
+										google_ad_width = 468;
+										google_ad_height = 60;
+										//-->
+									</script>
+									<script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+								</div>
+							</div>
+						</div>
+						<div class="col_banner_der">
+							<style title="text/css">
+<!--
+/*******  INICIO ESTILOS DE BANNER HTML  *******/
+#pbanTop {
+width:98px;
+height:auto;
+margin:0 0 10px 0;
+padding:10px;
+background:#ffffff;
+border:1px solid #0065A9;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*******  titular  *******/
+#pbanTop #ptiTop {
+margin:0 0 13px 0;
+line-height:24px;
+color:#0065A9;
+}
+#pbanTop #ptiTop #pp1 {font-size:18px; letter-spacing:-0.05em; margin:0;}
+#pbanTop #ptiTop #pp2 {font-size:22px;letter-spacing:-0.06em; margin:0;}
+
+/*******  listado tematicas  *******/
+#pbanTop #ptemTop {
+margin: 0 0 10px 0;
+font-size:13px;
+}
+
+#pbanTop #ptemTop p {
+margin: 0 0 6px 0;
+}
+
+/*******  GUIONCITO  *******/
+#pbanTop #ptemTop p span {
+font-weight:bolder;
+padding:0px 4px;
+color:#FFF;
+background:#B0B1B3;
+}
+
+
+/*******  ENLACES TEMATICAS   *******/
+#pbanTop #ptemTop p a {text-decoration:none;color:#000000;}
+#pbanTop #ptemTop p a:hover {text-decoration:underline;color:#0065A9;}
+
+/*******  enlace canal generico  *******/
+#penlTop {padding:5px; background:#0065A9; text-align:center;
+font-size:16px; letter-spacing:-0.05em;  line-height:18px;}
+#penlTop  a {color:#ffffff; text-decoration:none;}
+#penlTop  a:hover {color:#B0B1B3;}
+
+/*******  /////////FIN ESTILOS DE BANNER HTML////////  *******/
+-->
+</style>
+				<div style="float:left; margin:5px 0 0 -7px;">
+					<div id="pbanTop">
+						<!--///////// TITULAR /////////-->
+						<div id="ptiTop">
+							<p id="pp1">Cursos, M&aacute;sters, Grados... </p>
+						</div>
+
+						<!--///////// LISTADO TEMATICAS /////////-->
+						<div id="ptemTop">								<p><span>&#8250;</span> 
+									<a  style="word-break: break-word;" href="http://www.insertia.net/formacion/carnet-de-carretillero-presencial-toda-espana-presencial_ref_249472.html" onclick="javascript:ActualizarClicksWidget('http://www.insertia.net/formacion/carnet-de-carretillero-presencial-toda-espana-presencial_ref_249472.html','1844023','v');return false;" > Carnet de carretillero presencial (Toda España) </a>
+								</p>								<p><span>&#8250;</span> 
+									<a  style="word-break: break-word;" href="http://www.insertia.net/formacion/curso-de-carretillero-en-cadiz-presencial_ref_24604.html" onclick="javascript:ActualizarClicksWidget('http://www.insertia.net/formacion/curso-de-carretillero-en-cadiz-presencial_ref_24604.html','1835834','v');return false;" > Curso de carretillero en Cadiz </a>
+								</p>								<p><span>&#8250;</span> 
+									<a  style="word-break: break-word;" href="http://www.insertia.net/formacion/curso-de-carretillero-en-melilla-presencial_ref_24627.html" onclick="javascript:ActualizarClicksWidget('http://www.insertia.net/formacion/curso-de-carretillero-en-melilla-presencial_ref_24627.html','1835686','v');return false;" > Curso de carretillero en Melilla </a>
+								</p>								<p><span>&#8250;</span> 
+									<a  style="word-break: break-word;" href="http://www.insertia.net/formacion/curso-de-carretillero-en-lleida-presencial_ref_24623.html" onclick="javascript:ActualizarClicksWidget('http://www.insertia.net/formacion/curso-de-carretillero-en-lleida-presencial_ref_24623.html','1847203','v');return false;" > Curso de carretillero en Lleida </a>
+								</p>								<p><span>&#8250;</span> 
+									<a  style="word-break: break-word;" href="http://www.insertia.net/formacion/curso-de-carretillero-en-malaga--presencial_ref_24626.html" onclick="javascript:ActualizarClicksWidget('http://www.insertia.net/formacion/curso-de-carretillero-en-malaga--presencial_ref_24626.html','1847690','v');return false;" > Curso de carretillero en Málaga  </a>
+								</p>								<p><span>&#8250;</span> 
+									<a  style="word-break: break-word;" href="http://www.insertia.net/formacion/curso-de-carretillero-en-pontevedra-presencial_ref_24632.html" onclick="javascript:ActualizarClicksWidget('http://www.insertia.net/formacion/curso-de-carretillero-en-pontevedra-presencial_ref_24632.html','1847212','v');return false;" > Curso de carretillero en Pontevedra </a>
+								</p>								<p><span>&#8250;</span> 
+									<a  style="word-break: break-word;" href="http://www.insertia.net/formacion/curso-de-carretillero-en-las-palmas-presencial_ref_24621.html" onclick="javascript:ActualizarClicksWidget('http://www.insertia.net/formacion/curso-de-carretillero-en-las-palmas-presencial_ref_24621.html','1835693','v');return false;" > Curso de carretillero en Las Palmas </a>
+								</p>								<p><span>&#8250;</span> 
+									<a  style="word-break: break-word;" href="http://www.insertia.net/formacion/curso-de-carretillero-en-cuenca-presencial_ref_24610.html" onclick="javascript:ActualizarClicksWidget('http://www.insertia.net/formacion/curso-de-carretillero-en-cuenca-presencial_ref_24610.html','1835682','v');return false;" > Curso de carretillero en Cuenca </a>
+								</p>								<p><span>&#8250;</span> 
+									<a  style="word-break: break-word;" href="http://www.insertia.net/formacion/curso-de-carretillero-en-burgos-presencial_ref_24602.html" onclick="javascript:ActualizarClicksWidget('http://www.insertia.net/formacion/curso-de-carretillero-en-burgos-presencial_ref_24602.html','1835672','v');return false;" > Curso de carretillero en Burgos </a>
+								</p>								<p><span>&#8250;</span> 
+									<a  style="word-break: break-word;" href="http://www.insertia.net/formacion/curso-de-carretillero-en-la-coruna-presencial_ref_24619.html" onclick="javascript:ActualizarClicksWidget('http://www.insertia.net/formacion/curso-de-carretillero-en-la-coruna-presencial_ref_24619.html','1835697','v');return false;" > Curso de carretillero en La Coruña </a>
+								</p>								<p><span>&#8250;</span> 
+									<a  style="word-break: break-word;" href="http://www.insertia.net/formacion/curso-de-carretillero-en-huelva-presencial_ref_24615.html" onclick="javascript:ActualizarClicksWidget('http://www.insertia.net/formacion/curso-de-carretillero-en-huelva-presencial_ref_24615.html','1835680','v');return false;" > Curso de carretillero en Huelva </a>
+								</p>								<p><span>&#8250;</span> 
+									<a  style="word-break: break-word;" href="http://www.insertia.net/formacion/curso-de-carretillero-en-jaen-presencial_ref_24618.html" onclick="javascript:ActualizarClicksWidget('http://www.insertia.net/formacion/curso-de-carretillero-en-jaen-presencial_ref_24618.html','1835696','v');return false;" > Curso de carretillero en Jaén </a>
+								</p>								<p><span>&#8250;</span> 
+									<a  style="word-break: break-word;" href="http://www.insertia.net/formacion/curso-de-carretillero-en-sevilla-presencial_ref_24636.html" onclick="javascript:ActualizarClicksWidget('http://www.insertia.net/formacion/curso-de-carretillero-en-sevilla-presencial_ref_24636.html','1847691','v');return false;" > Curso de carretillero en Sevilla </a>
+								</p>						</div>
+						<!--///////// ENELACE EGENRICO AL CANAL /////////-->
+						<div id="penlTop">
+							<a href="/formacion/">&iexcl;Toda la formaci&oacute;n en <strong>Insertia.net</strong>!</a>
+						</div>
+					</div>
+				</div> 						</div>
+					</div>
+				</div><!-- END OF DIV CONTENT_BOX -->
+			</div><!-- END OF DIV COL_CONTENT -->
+		</div><!-- END OF DIV CENTER -->
+	</div><!-- END OF DIV WEB_CONTENT -->
+	<script type="text/javascript">
+	// Script para agragar a Favoritos
+	function agregar(){
+		//Para internet explorer
+		if ((navigator.appName=="Microsoft Internet Explorer") && (parseInt(navigator.appVersion)>=4)) {
+		var url="http://www.insertia.net/";
+		var titulo="Insertia.net - Portal de empleo y formacion";
+		window.external.AddFavorite(url,titulo);
+		} else {
+		alert ("Presione Crtl+D para agregar a este sitio en sus Favoritos");  //Puedes personalizar este mensaje
+		}
+	}
+    function CerrarBarra(valor){
+          $.ajax({
+            type: "POST",
+            url: "/empleo/includes/setvarsession.php",
+            success: function(res){
+               if (valor=="1")
+                 $('#barracookies').slideToggle("slow");
+               else
+                 window.location.href = '/empleo/politica.php'; 
+             }           
+       });
+    }
+	 function CerrarPopUp(valor){
+          $.ajax({
+            type: "POST",
+            url: "/empleo/includes/sessionpopup.php",
+            success: function(res){
+               if (valor=="1") {
+                   $("#fijo").delay(350).slideToggle(500, 'swing');
+                   cerrar = 1;
+               }
+             }       
+       });
+    }          
+	$(document).ready(function(){
+		$("#cerrarbarra").click(function(){
+			CerrarBarra("1");
+		});
+		$("#politicabarra").click(function(event){
+			event.preventDefault();
+			CerrarBarra("2");
+		});
+		$("#fijo").css( "display", "none" );
+		var lastScrollTop = 0;
+		var mostrar = 0;
+		var cerrar = 0;
+		$(window).scroll(function(event){
+			if (cerrar==0) { 
+				var st = $(this).scrollTop();
+				if ((st > lastScrollTop) && (st>140)){
+					if (mostrar==0){
+						$("#fijo").delay(350).slideToggle(500, 'swing');
+					}
+					mostrar=1;
+				} else if ((st <= lastScrollTop) && (st<=140)){
+					if (mostrar==1){
+						$("#fijo").delay(350).slideToggle(500, 'swing');
+					}
+					mostrar=0;
+				}
+				lastScrollTop = st;
+			}
+	   });
+		$( ".close" ).click(function() {
+			event.preventDefault();
+			cerrar=1;
+			CerrarPopUp("1");
+		});
+	});
+	function ActualizarClicksPopUp (URL,idb){ 
+		$.ajax({
+			type: "POST",
+			url: "/empleo/includes/actualizarclickspopup.php",
+			data: { id: idb },
+			success: function(datos){
+			   window.location= URL;
+		   }
+	   });  
+	};
+</script>
+<div id="web_footer" style="background: #7db9e8; /* Old browsers */ height:initial;
+	background: -moz-linear-gradient(top,  #7db9e8 0%, #1d81f7 23%, #2989d8 50%, #1e5799 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(23%,#1d81f7), color-stop(50%,#2989d8), color-stop(100%,#1e5799)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7db9e8 0%,#1d81f7 23%,#2989d8 50%,#1e5799 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7db9e8 0%,#1d81f7 23%,#2989d8 50%,#1e5799 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7db9e8 0%,#1d81f7 23%,#2989d8 50%,#1e5799 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7db9e8 0%,#1d81f7 23%,#2989d8 50%,#1e5799 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 );
+	border-top:1px solid white;border-bottom:1px solid white;
+	padding-bottom:75px" >
+	
+  	<p class="txt_footer" style="margin-top:5px; line-height:16px;">
+	    <a href="/" title="Inicio" class="linkpie">Inicio</a> - 
+		<a href="/empleo/aviso_legal.php" title="Aviso legal" class="linkpie">Aviso legal</a> - 
+		<a href="/empleo/condiciones_uso.php" title="Condiciones de uso" class="linkpie">Condiciones de uso</a> -
+		<a href="/empleo/insertia.php" title="Sobre Insertia.net" class="linkpie">Sobre Insertia.net</a> - 
+		<a href="/empleo/contacto.php" title="Contáctenos" class="linkpie">Cont&aacute;ctenos</a> -
+		<a href="/empleo/privacidad.php" title="Pol&iacute;tica de privacidad" class="linkpie">Pol&iacute;tica de privacidad</a> - 
+		<a href="/empleo/politica.php" title="Pol&iacute;tica de cookies" class="linkpie">Pol&iacute;tica de cookies</a>
+		<br /><br/>
+		
+		<span>
+			<a rel="nofollow" target="_blank" href="https://www.facebook.com/Insertia.net"><img alt="Insertia.net en Facebook" src="/empleo/img/facebook.png"/></a>
+			<a rel="nofollow" target="_blank" href="https://twitter.com/insertiaonline"><img alt="Insertia.net en Twitter" src="/empleo/img/twitter.png"/></a>
+		</span>
+	</p> 	<div style="display:none;"> 	</div>
+</div>		<div id="barracookies" style="width:100%;position:fixed;bottom:0%;background-color:#2F251C;">        
+			<div id="barracookiesizq" style="width:75%;height:33px;float:left;">     
+				<span style='display:block;margin:10px 0 0 10px;font-family:OpenSans-Semibold;font-size:13px;color:white;'>Utilizamos cookies propias y de terceros para poder ofrecer nuestros servicios. Si continua navegando consideramos que acepta el uso de cookies.</span>
+			</div>
+			<div id="barracookiescen" style="margin:10px 0 0 40px;width:150px;height:33px;float:left;">     
+				<a id="politicabarra" href="#" style='font-family:OpenSans-Semibold;font-size:13px;color:white;'>Más información</a>
+			</div>
+			<div id="barracookiesder" style="margin:8px ;height:33px;float:right;">     
+				<img id="cerrarbarra" src="/empleo/img/button_cancel.png" style="cursor:pointer" alt="cerrar" height="24" width="24">
+			</div>	
+		</div> 	<a id="recovery" href="#cuenta"></a>
+	<div style="display:none">
+		<div id="cuenta" style="width:550px;height:225px;">
+			<p style="width:480px; position:absolute; height:200px; margin:22px 0 0 32px; line-height:16px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#333333; ">
+				<span style="font-weight:bold; font-size:14px;">Enhorabuena! </span>
+				<br /><br />
+				Su nueva contrase&ntilde;a ya ha sido activada correctamente.
+				<br /><br />
+				Cierre esta ventana para empezar a usar su cuenta.
+				<br /><br />
+				Estamos a su disposici&oacute;n, para dar respuesta a cualquiera de sus dudas, comentarios y sugerencias, gracias por su confianza.
+				<br /><br />
+				Un cordial saludo. Equipo Insertia.net<br />
+				Atenci&oacute;n a usuarios: <span style="color:#0084DA;">info@insertia.net</span><br />
+			</p>
+		</div>
+	</div>
+	<a id="recovery2" href="#cuenta2"></a>
+	<div style="display:none">
+		<div id="cuenta2" style="width:550px;height:225px;">
+		<p style="width:480px; position:absolute; height:200px; margin:22px 0 0 32px; line-height:16px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#333333; ">
+		<span style="font-weight:bold; font-size:14px;">Enhorabuena! </span>
+		<br /><br />
+		Su nueva direcci&oacute;n de correo electr&oacute;nico ya ha sido activada correctamente.
+		<br /><br />
+		Cierre esta ventana para empezar a usar su cuenta.
+		<br /><br />
+		Estamos a su disposici&oacute;n, para dar respuesta a cualquiera de sus dudas, comentarios y sugerencias, gracias por su confianza.
+		<br /><br />
+		Un cordial saludo. Equipo Insertia.net<br />
+		Atenci&oacute;n a usuarios: <span style="color:#0084DA;">info@insertia.net</span><br />
+		</p>
+		</div>
+	</div>	<div style="display:none;">
+		<form id="e_redirect"  method="post" action="" >
+		   <div id="curi_cuerpo" class="txtregistro" style="height:350px;width:600px;text-align:center;" >
+				<span style="display:block;width:auto;font-size:27px;font-weight:bold; margin-top:50px;">Le estamos redireccionando a la oferta</span>
+				<br />
+				<span style="display:block;width:550px;font-size:20px;line-height:25px; margin-top:45px;">Si en 9 segundos no redirecciona, haz click en el siguiente enlace:</span>
+				<a id="urlredirect" style="display:block;width:550px;font-size:20px;line-height:25px; margin-top:30px;" target="_blank" href="" >Ir a la oferta</a>	
+		   </div> 	
+		</form> 
+	</div>
+	<div style="display:none;">
+		<form id="e_registro" method="post" action="">
+			<p class="txtregistro" style="width:545px; margin-top:10px;">
+				Debe ser usuario registrado en <strong>Insertia.net</strong> y estar conectado a su cuenta para poder acceder a esta oferta.
+				Reg&iacute;strese desde <a href="/registro_candidatos.php" title="Registro candidatos">aqu&iacute;
+				<br />
+			</p><br clear="all" />
+		</form>
+	</div>
+</body>
+</html>

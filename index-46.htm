@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://arquitextonica.net/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://arquitextonica.net/wp-content/themes/twentyfifteen/js/html5.js?ver=3.7.0"></script>
+	<![endif]-->
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>arquitextonica.net &#8211; arquitectura informacional, dise&ntilde;o computacional y otros&#8230;</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//v0.wordpress.com' />
+<link rel='dns-prefetch' href='//i0.wp.com' />
+<link rel='dns-prefetch' href='//i1.wp.com' />
+<link rel='dns-prefetch' href='//i2.wp.com' />
+<link rel='dns-prefetch' href='//c0.wp.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="arquitextonica.net &raquo; Feed" href="http://arquitextonica.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="arquitextonica.net &raquo; Feed de los comentarios" href="http://arquitextonica.net/comments/feed/" />
+		<script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/arquitextonica.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='twentyfifteen-jetpack-css'  href='https://c0.wp.com/p/jetpack/9.5/modules/theme-tools/compat/twentyfifteen.css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://c0.wp.com/c/5.7/wp-includes/css/dist/block-library/style.min.css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://c0.wp.com/c/5.7/wp-includes/css/dist/block-library/theme.min.css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;display=fallback' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='https://c0.wp.com/p/jetpack/9.5/_inc/genericons/genericons/genericons.css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css'  href='http://arquitextonica.net/wp-content/themes/twentyfifteen/style.css?ver=20201208' media='all' />
+<link rel='stylesheet' id='twentyfifteen-block-style-css'  href='http://arquitextonica.net/wp-content/themes/twentyfifteen/css/blocks.css?ver=20190102' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='http://arquitextonica.net/wp-content/themes/twentyfifteen/css/ie.css?ver=20170916' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='http://arquitextonica.net/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141210' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='jetpack_css-css'  href='https://c0.wp.com/p/jetpack/9.5/css/jetpack.css' media='all' />
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="http://arquitextonica.net/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://arquitextonica.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://arquitextonica.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.7" />
+<link rel='shortlink' href='https://wp.me/51KNC' />
+<style type='text/css'>img#wpstats{display:none}</style><style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>			<style type="text/css">
+				/* If html does not have either class, do not show lazy loaded images. */
+				html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
+					display: none;
+				}
+			</style>
+			<script>
+				document.documentElement.classList.add(
+					'jetpack-lazy-images-js-enabled'
+				);
+			</script>
+		
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="arquitextonica.net" />
+<meta property="og:description" content="arquitectura informacional, dise&ntilde;o computacional y otros..." />
+<meta property="og:url" content="http://arquitextonica.net/" />
+<meta property="og:site_name" content="arquitextonica.net" />
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg" />
+<meta property="og:locale" content="es_ES" />
+
+<!-- End Jetpack Open Graph Tags -->
+			<style type="text/css" id="wp-custom-css">
+				#main {
+	padding-top: 0px;
+}			</style>
+		</head>
+
+<body class="home blog wp-embed-responsive elementor-default elementor-kit-5600">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Saltar al contenido</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+										<h1 class="site-title"><a href="http://arquitextonica.net/" rel="home">arquitextonica.net</a></h1>
+											<p class="site-description">arquitectura informacional, dise&ntilde;o computacional y otros&#8230;</p>
+										<button class="secondary-toggle">Menú y widgets</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+
+			<div id="secondary" class="secondary">
+
+		
+		
+					<div id="widget-area" class="widget-area" role="complementary">
+				<aside id="media_image-2" class="widget widget_media_image"><img width="300" height="300" src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2019/01/3A82F381-A589-4521-B67B-7895670AE1CB.jpeg?fit=300%2C300" class="image wp-image-7  attachment-medium size-medium jetpack-lazy-image" alt="" loading="lazy" style="max-width: 100%; height: auto;" data-attachment-id="7" data-permalink="http://arquitextonica.net/3a82f381-a589-4521-b67b-7895670ae1cb/" data-orig-file="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2019/01/3A82F381-A589-4521-B67B-7895670AE1CB.jpeg?fit=400%2C400" data-orig-size="400,400" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="3A82F381-A589-4521-B67B-7895670AE1CB" data-image-description="" data-medium-file="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2019/01/3A82F381-A589-4521-B67B-7895670AE1CB.jpeg?fit=300%2C300" data-large-file="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2019/01/3A82F381-A589-4521-B67B-7895670AE1CB.jpeg?fit=400%2C400" data-lazy-srcset="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2019/01/3A82F381-A589-4521-B67B-7895670AE1CB.jpeg?w=400 400w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2019/01/3A82F381-A589-4521-B67B-7895670AE1CB.jpeg?resize=150%2C150 150w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2019/01/3A82F381-A589-4521-B67B-7895670AE1CB.jpeg?resize=300%2C300 300w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2019/01/3A82F381-A589-4521-B67B-7895670AE1CB.jpeg?fit=300%2C300&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></aside><aside id="eu_cookie_law_widget-2" class="widget widget_eu_cookie_law_widget">
+<div
+	class="hide-on-button"
+	data-hide-timeout="30"
+	data-consent-expiration="180"
+	id="eu-cookie-law"
+>
+	<form method="post">
+		<input type="submit" value="Cerrar y aceptar" class="accept" />
+	</form>
+
+	Privacidad y cookies: este sitio utiliza cookies. Al continuar utilizando esta web, aceptas su uso. <br />
+Para obtener más información, incluido cómo controlar las cookies, consulta aquí:
+		<a href="https://automattic.com/cookies/" rel="nofollow">
+		Política de cookies	</a>
+</div>
+</aside><aside id="search-4" class="widget widget_search"><h2 class="widget-title">buscar&#8230;</h2><form role="search" method="get" class="search-form" action="http://arquitextonica.net/">
+				<label>
+					<span class="screen-reader-text">Buscar:</span>
+					<input type="search" class="search-field" placeholder="Buscar &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit screen-reader-text" value="Buscar" />
+			</form></aside>
+		<aside id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widget-title">Entradas recientes</h2><nav role="navigation" aria-label="Entradas recientes">
+		<ul>
+											<li>
+					<a href="http://arquitextonica.net/research/arquitectura-informacional-resumen-del-estado-de-la-investigacion-20201018/">arquitectura informacional </br> resumen del estado de la investigación 20201018</a>
+									</li>
+											<li>
+					<a href="http://arquitextonica.net/research/informational-architecture-20201018-summary-of-research-status/">Informational Architecture </br> 20201018 summary of research status</a>
+									</li>
+											<li>
+					<a href="http://arquitextonica.net/arquitectura/arquitectura-informacional-20200927/">arquitectura informacional </br>presentación 20200927</a>
+									</li>
+											<li>
+					<a href="http://arquitextonica.net/uncategorized/arquitectura-informacional-experimento-2-0/">Arquitectura Informacional experimento 2.0</a>
+									</li>
+											<li>
+					<a href="http://arquitextonica.net/arquitectura/informational-architecture-a-brief-opinion-about-hypar-io-and-what-i-hope-comes-afterwards/">Informational architecture.</br>A brief opinion about Hypar.io and what I hope comes afterwards&#8230;</a>
+									</li>
+					</ul>
+
+		</nav></aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widget-title">Comentarios recientes</h2><nav role="navigation" aria-label="Comentarios recientes"><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='https://blogfundacion.arquia.es/2014/10/colectivos-dices-mucho-esa-palabra-1-de-2/' rel='external nofollow ugc' class='url'>“Colectivos”. Dices mucho esa palabra. 1 de 2 : Blog de Fundación Arquia | Blog de arquitectura y arquitectos</a></span> en <a href="http://arquitextonica.net/arquitectura/revistas-arquitectura-viva-145-colectivos-espanoles/#comment-2619">Revistas: Arquitectura Viva 145. Colectivos españoles.</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.neuroarquitectura.net' rel='external nofollow ugc' class='url'>Pablo</a></span> en <a href="http://arquitextonica.net/research/004-information-is-information/#comment-353">004. Information is <em>information</em>.</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.kennyarnold.com' rel='external nofollow ugc' class='url'>Kenny Arnold</a></span> en <a href="http://arquitextonica.net/arquitectura/003-algunas-claves-para-entender-el-trabajo-de-wework/#comment-352">003. Algunas claves para entender el trabajo de WeWork.</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://jongarbizu.com/txp/matar-al-movimiento/' rel='external nofollow ugc' class='url'>¿MATAR AL MOVIMIENTO? &#8211; Todo Por La Praxis · TXP</a></span> en <a href="http://arquitextonica.net/arquitectura/revistas-arquitectura-viva-145-colectivos-espanoles/#comment-2437">Revistas: Arquitectura Viva 145. Colectivos españoles.</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.stepienybarno.es/blog/2017/09/20/10-ideas-para-tener-un-curriculum-de-arquitectura-10/' rel='external nofollow ugc' class='url'>10 IDEAS PARA TENER UN CURRICULUM DE ARQUITECTURA 10. | Blog de STEPIEN Y BARNO - publicación digital sobre arquitectura</a></span> en <a href="http://arquitextonica.net/arquitectura/buscar-trabajo-como-arquitecto-joven-unas-cuantas-sugerencias/#comment-2367">Buscar trabajo como arquitecto joven:  Unas cuantas sugerencias.</a></li></ul></nav></aside><aside id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categorías</h2><nav role="navigation" aria-label="Categorías">
+			<ul>
+					<li class="cat-item cat-item-86"><a href="http://arquitextonica.net/category/arquitectura/la-profesion/noalalsp/">#NOalaLSP</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="http://arquitextonica.net/category/aec/">AEC</a>
+</li>
+	<li class="cat-item cat-item-87"><a href="http://arquitextonica.net/category/arquitextonica/arquiapps/">ArquiApps</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://arquitextonica.net/category/arquitectura/">Arquitectura</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="http://arquitextonica.net/category/arquitectura/arquitectura-andaluza/">Arquitectura Andaluza</a>
+</li>
+	<li class="cat-item cat-item-38"><a href="http://arquitextonica.net/category/arquitectura-genetica/">arquitectura genética</a>
+</li>
+	<li class="cat-item cat-item-39"><a href="http://arquitextonica.net/category/arquitectura-informacional/" title="Sobre la información como fuente de productividad en la arquitectura y las herramientas digitales para su uso.">arquitectura informacional</a>
+</li>
+	<li class="cat-item cat-item-40"><a href="http://arquitextonica.net/category/arquitextonica/">ARQUITEXTONICA</a>
+</li>
+	<li class="cat-item cat-item-41"><a href="http://arquitextonica.net/category/arte/">Arte</a>
+</li>
+	<li class="cat-item cat-item-42"><a href="http://arquitextonica.net/category/arquitextonica/articulos/">artículos</a>
+</li>
+	<li class="cat-item cat-item-43"><a href="http://arquitextonica.net/category/arquitextonica/asi-trabajamos/">asi trabajamos</a>
+</li>
+	<li class="cat-item cat-item-44"><a href="http://arquitextonica.net/category/arquitextonica/axiomas/">axiomas</a>
+</li>
+	<li class="cat-item cat-item-88"><a href="http://arquitextonica.net/category/arquitextonica/proyectos/bio-logicas-proyectos/">Bio-Lógicas</a>
+</li>
+	<li class="cat-item cat-item-45"><a href="http://arquitextonica.net/category/breves/">breves</a>
+</li>
+	<li class="cat-item cat-item-46"><a href="http://arquitextonica.net/category/arquitectura/call-for-papers/">call for papers</a>
+</li>
+	<li class="cat-item cat-item-47"><a href="http://arquitextonica.net/category/arquitextonica/capturas/">capturas</a>
+</li>
+	<li class="cat-item cat-item-89"><a href="http://arquitextonica.net/category/arquitextonica/proyectos/casa-bb-proyectos/">Casa BB</a>
+</li>
+	<li class="cat-item cat-item-90"><a href="http://arquitextonica.net/category/arquitextonica/proyectos/casa-lt/">Casa LT</a>
+</li>
+	<li class="cat-item cat-item-91"><a href="http://arquitextonica.net/category/arquitextonica/proyectos/casa-mi/">Casa MI</a>
+</li>
+	<li class="cat-item cat-item-48"><a href="http://arquitextonica.net/category/arquitectura/citas-para-la-arquitectura/">CITAS para la arquitectura</a>
+</li>
+	<li class="cat-item cat-item-49"><a href="http://arquitextonica.net/category/ciudad/">Ciudad</a>
+</li>
+	<li class="cat-item cat-item-92"><a href="http://arquitextonica.net/category/el-colegio/coas2014/" title="Objetivos y propuestas para la Candidatura a Vocal de Actividades en las elecciones al COAS2014 de Miguel Villegas Ballesta.">COAS2014</a>
+</li>
+	<li class="cat-item cat-item-93"><a href="http://arquitextonica.net/category/el-colegio/coas2015/">COAS2015</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="http://arquitextonica.net/category/arquitectura/concursosdearquitectura/">Concursos de arquitectura</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="http://arquitextonica.net/category/arquitectura/construccion/">Construcción</a>
+</li>
+	<li class="cat-item cat-item-94"><a href="http://arquitextonica.net/category/arquitextonica/investigacion/convocatoria/">convocatoria</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="http://arquitextonica.net/category/arquitextonica/cosas-de-la-red/">cosas de la Red</a>
+</li>
+	<li class="cat-item cat-item-53"><a href="http://arquitextonica.net/category/critica/">Crítica</a>
+</li>
+	<li class="cat-item cat-item-95"><a href="http://arquitextonica.net/category/arquitectura-informacional/tesis/cronologia-de-lo-informacional-y-la-arquitectura/">Cronología de lo Informacional y la Arquitectura</a>
+</li>
+	<li class="cat-item cat-item-54"><a href="http://arquitextonica.net/category/cursos/">cursos</a>
+</li>
+	<li class="cat-item cat-item-55"><a href="http://arquitextonica.net/category/diseo/">Diseño</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="http://arquitextonica.net/category/diseo/diseno-andaluz/">Diseño andaluz</a>
+</li>
+	<li class="cat-item cat-item-57"><a href="http://arquitextonica.net/category/arquitextonica/docencia/">docencia</a>
+</li>
+	<li class="cat-item cat-item-58"><a href="http://arquitextonica.net/category/el-colegio/" title="Sobre el Colegio Oficial de Arquitectos de Sevilla. COAS.
+Tratamos sobre nuestras propias iniciativas, inquietudes y todo lo que nos parece relevante de la vida colegial.">el colegio</a>
+</li>
+	<li class="cat-item cat-item-59"><a href="http://arquitextonica.net/category/emprendedores-creativos/">Emprendedores Creativos</a>
+</li>
+	<li class="cat-item cat-item-60"><a href="http://arquitextonica.net/category/eventos/">eventos</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="http://arquitextonica.net/category/formacion/">formación</a>
+</li>
+	<li class="cat-item cat-item-62"><a href="http://arquitextonica.net/category/arquitextonica/fotografia-arquitextonica/">fotografía</a>
+</li>
+	<li class="cat-item cat-item-63"><a href="http://arquitextonica.net/category/foto/">fotografia de arquitectura</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://arquitextonica.net/category/research/generative-design-research/">Generative Design</a>
+</li>
+	<li class="cat-item cat-item-64"><a href="http://arquitextonica.net/category/arquitextonica/hipoarquitectura/">hipoarquitectura</a>
+</li>
+	<li class="cat-item cat-item-96"><a href="http://arquitextonica.net/category/ser-red/identidad-digital-ser-red/">Identidad Digital</a>
+</li>
+	<li class="cat-item cat-item-65"><a href="http://arquitextonica.net/category/imagen/">Imagen</a>
+</li>
+	<li class="cat-item cat-item-66"><a href="http://arquitextonica.net/category/arquitextonica/investigacion/">investigación</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="http://arquitextonica.net/category/arquitectura/la-profesion/">la profesión</a>
+</li>
+	<li class="cat-item cat-item-68"><a href="http://arquitextonica.net/category/arquitectura/libros-y-textos/">libros y textos</a>
+</li>
+	<li class="cat-item cat-item-69"><a href="http://arquitextonica.net/category/linkdumps/">linkdumps</a>
+</li>
+	<li class="cat-item cat-item-70"><a href="http://arquitextonica.net/category/arquitectura/materiales/">Materiales</a>
+</li>
+	<li class="cat-item cat-item-71"><a href="http://arquitextonica.net/category/diseo/mobiliario-diseo/">mobiliario</a>
+</li>
+	<li class="cat-item cat-item-72"><a href="http://arquitextonica.net/category/nos_gusta_lo_que_hacen/">nos gusta lo que hacen</a>
+</li>
+	<li class="cat-item cat-item-73"><a href="http://arquitextonica.net/category/ocio/">Ocio</a>
+</li>
+	<li class="cat-item cat-item-74"><a href="http://arquitextonica.net/category/arquitextonica/proyectos/">Proyectos</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://arquitextonica.net/category/research/proyectos-arquitectonicos/">Proyectos Arquitectónicos</a>
+</li>
+	<li class="cat-item cat-item-75"><a href="http://arquitextonica.net/category/arquitectura/proyectos-externos/">Proyectos externos</a>
+</li>
+	<li class="cat-item cat-item-76"><a href="http://arquitextonica.net/category/publi/">publi</a>
+</li>
+	<li class="cat-item cat-item-77"><a href="http://arquitextonica.net/category/arquitectura/publicaciones-arquitectura/">publicaciones</a>
+</li>
+	<li class="cat-item cat-item-97"><a href="http://arquitextonica.net/category/ser-red/redes-sociales-ser-red/">Redes Sociales</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://arquitextonica.net/category/research/">Research</a>
+</li>
+	<li class="cat-item cat-item-78"><a href="http://arquitextonica.net/category/ser-red/">Ser Red</a>
+</li>
+	<li class="cat-item cat-item-79"><a href="http://arquitextonica.net/category/ser-red/sociedad-de-la-informacion-ser-red/">Sociedad de la Información</a>
+</li>
+	<li class="cat-item cat-item-80"><a href="http://arquitextonica.net/category/tecnologia/">Tecnologí­a</a>
+</li>
+	<li class="cat-item cat-item-81"><a href="http://arquitextonica.net/category/arquitectura-informacional/tesis/">tesis</a>
+</li>
+	<li class="cat-item cat-item-82"><a href="http://arquitextonica.net/category/arquitectura/la-profesion/trabajo/">trabajo</a>
+</li>
+	<li class="cat-item cat-item-83"><a href="http://arquitextonica.net/category/tutoriales/">Tutoriales</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://arquitextonica.net/category/uncategorized/">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-84"><a href="http://arquitextonica.net/category/arquitextonica/video/">video</a>
+</li>
+	<li class="cat-item cat-item-85"><a href="http://arquitextonica.net/category/zoo/">ZOO</a>
+</li>
+			</ul>
+
+			</nav></aside><aside id="meta-2" class="widget widget_meta"><h2 class="widget-title">Meta</h2><nav role="navigation" aria-label="Meta">
+		<ul>
+						<li><a href="http://arquitextonica.net/wp-login.php">Acceder</a></li>
+			<li><a href="http://arquitextonica.net/feed/">Feed de entradas</a></li>
+			<li><a href="http://arquitextonica.net/comments/feed/">Feed de comentarios</a></li>
+
+			<li><a href="https://es.wordpress.org/">WordPress.org</a></li>
+		</ul>
+
+		</nav></aside>			</div><!-- .widget-area -->
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			
+			
+<article id="post-5612" class="post-5612 post type-post status-publish format-standard has-post-thumbnail hentry category-arquitectura category-arquitectura-informacional category-arquitextonica category-asi-trabajamos category-investigacion category-research category-tecnologia category-tesis tag-arquitectura tag-arquitectura-informacional tag-espacio tag-informational tag-informational-design tag-investigacion tag-sistemas-abstractos tag-tesis">
+	
+	<a class="post-thumbnail" href="http://arquitextonica.net/research/arquitectura-informacional-resumen-del-estado-de-la-investigacion-20201018/" aria-hidden="true">
+		<img width="825" height="510" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?resize=825%2C510" class="attachment-post-thumbnail size-post-thumbnail wp-post-image jetpack-lazy-image" alt="arquitectura informacional &lt;/br&gt; resumen del estado de la investigación 20201018" loading="lazy" data-attachment-id="5613" data-permalink="http://arquitextonica.net/research/arquitectura-informacional-resumen-del-estado-de-la-investigacion-20201018/attachment/lars-plougmann/" data-orig-file="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?fit=1416%2C997" data-orig-size="1416,997" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;Lars Plougmann&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="LARS-PLOUGMANN" data-image-description="" data-medium-file="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?fit=300%2C211" data-large-file="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?fit=660%2C465" data-lazy-src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?resize=825%2C510&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />	</a>
+
+		
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://arquitextonica.net/research/arquitectura-informacional-resumen-del-estado-de-la-investigacion-20201018/" rel="bookmark">arquitectura informacional </br> resumen del estado de la investigación 20201018</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<figure class="wp-block-image size-large is-style-default"><img data-attachment-id="5613" data-permalink="http://arquitextonica.net/research/arquitectura-informacional-resumen-del-estado-de-la-investigacion-20201018/attachment/lars-plougmann/" data-orig-file="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?fit=1416%2C997" data-orig-size="1416,997" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;Lars Plougmann&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="LARS-PLOUGMANN" data-image-description data-medium-file="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?fit=300%2C211" data-large-file="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?fit=660%2C465" loading="lazy" width="660" height="465" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?resize=660%2C465" alt class="wp-image-5613 jetpack-lazy-image" data-recalc-dims="1" data-lazy-srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?resize=1024%2C721 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?resize=300%2C211 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?resize=768%2C541 768w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?w=1416 1416w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?w=1320 1320w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?resize=660%2C465&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-attachment-id="5613" data-permalink="http://arquitextonica.net/research/arquitectura-informacional-resumen-del-estado-de-la-investigacion-20201018/attachment/lars-plougmann/" data-orig-file="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?fit=1416%2C997" data-orig-size="1416,997" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;Lars Plougmann&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="LARS-PLOUGMANN" data-image-description="" data-medium-file="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?fit=300%2C211" data-large-file="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?fit=660%2C465" loading="lazy" width="660" height="465" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?resize=660%2C465" alt="" class="wp-image-5613" srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?resize=1024%2C721 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?resize=300%2C211 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?resize=768%2C541 768w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?w=1416 1416w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/10/LARS-PLOUGMANN.jpg?w=1320 1320w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript><figcaption><a href="https://www.flickr.com/photos/criminalintent/33660084635/"><em>imagen Code Lars Plougmann. cc-by-sa</em></a></figcaption></figure>
+
+
+<h1 id="propuesta">Propuesta</h1>
+<section id="mksection-propuesta">
+<p>Esta investigación doctoral propone el modelado de los procesos creativos del proyecto arquitectónico mediante sistemas de alto nivel de abstracción basados en estrategias de pensamiento informacional.</p>
+<h2 id="origen">Origen</h2>
+</section><section id="mksection-origen">
+<ul>
+<li>
+<p>El origen de esta investigación la fusión de un interés y una intuición:</p>
+<ul>
+<li>
+<p>La arquitectura como sistema de pensamiento y creación de espacio.</p>
+</li>
+<li>
+<p>La intuición de que el pensamiento informacional tiene un potencial poco explorado en el campo del pensamiento abstracto.</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<h2 id="oportunidad">Oportunidad</h2>
+<section id="mksection-oportunidad">
+<ul>
+<li>
+<p>Para conseguir la fusión de este interés y de la intuición, la propuesta trabaja con la incorporación del espacio como objeto abstracto a las herramientas digitales contemporáneas aplicando estrategias informacionales de pensamiento.</p>
+</li>
+<li>
+<p>Este planteamiento se diferencia de las dinámicas actuales de la mayoría de las líneas de trabajo e investigación con herramientas digitales en arquitectura en dos aspectos fundamentales:</p>
+<ul>
+<li>
+<p>que estas se están centrando especialmente en los procesos técnicos, en los gerenciales, en los de generación formal y fabricación experimental.</p>
+</li>
+<li>
+<p>que las dinámicas de trabajo computacionales están, en su generalidad basadas en la aplicación de las herramientas digitales, con su particular idiosincrasia, sobre los objetos del trabajo. Este enfoque <em>bottom-up</em> genera una gran dependencia instrumental que pretendemos desmontar.</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<h2 id="arquitecturacomosistema">arquitectura como sistema</h2>
+<section id="mksection-arquitecturacomosistema">
+<ul>
+<li>
+<p>Además de enfatizar nuestro interés por el pensamiento abstracto sobre el espacio, tenemos que precisar que el sistema de producción de arquitectura objeto de nuestro trabajo es el que sigue la siguiente secuencia :</p>
+<ul>
+<li>
+<p>Pensamiento espacial (objetivos propios)</p>
+</li>
+<li>
+<p>Incorporación de la técnica (requerimientos impuestos)</p>
+</li>
+<li>
+<p>Producción de documentación (instrucciones de producción)</p>
+</li>
+<li>
+<p>Comunicación con los agentes productores (traducción de las instrucciones en acciones materiales)</p>
+</li>
+<li>
+<p>Construcción <span class="mkalt">material</span> (proceso de realización)</p>
+</li>
+<li>
+<p>A medida que esta secuencia avanza se producen bucles de iteración.</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<h2 id="problemas">Problemas</h2>
+<section id="mksection-problemas">
+<ul>
+<li>
+<p>Detectamos en este sistema varios puntos que consideramos problemáticos:</p>
+<ul>
+<li>
+<p>El pensamiento espacial abstracto se produce generalmente en soportes analógicos y tiene una enorme abstracción (croquis, bocetos, maquetas de trabajo, diagramas, etc.)</p>
+</li>
+<li>
+<p>La incorporación de la técnica introduce cada vez más una complejidad difícil de abarcar y sincronizar con el pensamiento abstracto sobre el espacio.</p>
+</li>
+<li>
+<p>La producción de documentación gráfica (2D y 3D) se ha informacionalizado en un sistema de herramientas, procesos y <em>metodologías</em> que van desde el diseño computacional al BIM.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>En nuestra opinión estos puntos son razón y causa de la distancia, desaprovechamiento y desafección entre los dos extremos del proceso arquitectónico que estamos trabajando.</p>
+</li>
+</ul>
+</section>
+<h2 id="hipC3B3tesis" data-orig-id="hip%C3%B3tesis">Hipótesis</h2>
+<p data-orig-id="hip%C3%B3tesis">Desde la transdisciplinaridad de la investigación, planteamos la hipótesis base de la propuesta:</p>
+<section id="mksection-hipC3B3tesis">
+<blockquote>
+<p>Al igual que los lenguajes de programación, que encarnan los procesos de pensamiento, diseño y producción en el campo de la ingeniería de software, los procesos en arquitectura también se pueden clasificar en sistemas de alto nivel de abstracción y de bajo nivel de abstracción; y se pueden integrar ambos tipos con un proceso de <em>compilación</em> intermedio.</p>
+</blockquote>
+</section>
+
+
+
+ <a href="http://arquitextonica.net/research/arquitectura-informacional-resumen-del-estado-de-la-investigacion-20201018/#more-5612" class="more-link">Sigue leyendo <span class="screen-reader-text">arquitectura informacional  resumen del estado de la investigación 20201018</span></a>	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Publicado el </span><a href="http://arquitextonica.net/research/arquitectura-informacional-resumen-del-estado-de-la-investigacion-20201018/" rel="bookmark"><time class="entry-date published updated" datetime="2020-10-19T19:51:56+00:00">octubre 19, 2020</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Autor </span><a class="url fn n" href="http://arquitextonica.net/author/admin/">Miguel Villegas-Ballesta</a></span></span><span class="cat-links"><span class="screen-reader-text">Categorías </span><a href="http://arquitextonica.net/category/arquitectura/" rel="category tag">Arquitectura</a>, <a href="http://arquitextonica.net/category/arquitectura-informacional/" rel="category tag">arquitectura informacional</a>, <a href="http://arquitextonica.net/category/arquitextonica/" rel="category tag">ARQUITEXTONICA</a>, <a href="http://arquitextonica.net/category/arquitextonica/asi-trabajamos/" rel="category tag">asi trabajamos</a>, <a href="http://arquitextonica.net/category/arquitextonica/investigacion/" rel="category tag">investigación</a>, <a href="http://arquitextonica.net/category/research/" rel="category tag">Research</a>, <a href="http://arquitextonica.net/category/tecnologia/" rel="category tag">Tecnologí­a</a>, <a href="http://arquitextonica.net/category/arquitectura-informacional/tesis/" rel="category tag">tesis</a></span><span class="tags-links"><span class="screen-reader-text">Etiquetas </span><a href="http://arquitextonica.net/tag/arquitectura/" rel="tag">arquitectura</a>, <a href="http://arquitextonica.net/tag/arquitectura-informacional/" rel="tag">arquitectura informacional</a>, <a href="http://arquitextonica.net/tag/espacio/" rel="tag">espacio</a>, <a href="http://arquitextonica.net/tag/informational/" rel="tag">informational</a>, <a href="http://arquitextonica.net/tag/informational-design/" rel="tag">informational design</a>, <a href="http://arquitextonica.net/tag/investigacion/" rel="tag">investigación</a>, <a href="http://arquitextonica.net/tag/sistemas-abstractos/" rel="tag">sistemas abstractos</a>, <a href="http://arquitextonica.net/tag/tesis/" rel="tag">tesis</a></span><span class="comments-link"><a href="http://arquitextonica.net/research/arquitectura-informacional-resumen-del-estado-de-la-investigacion-20201018/#respond">Deja un comentario<span class="screen-reader-text"> en arquitectura informacional </br> resumen del estado de la investigación 20201018</span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-5612 -->
+
+<article id="post-5606" class="post-5606 post type-post status-publish format-standard hentry category-arquitectura category-arquitectura-informacional category-arquitextonica category-investigacion category-research category-tesis tag-architecture tag-informational tag-informational-design">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://arquitextonica.net/research/informational-architecture-20201018-summary-of-research-status/" rel="bookmark">Informational Architecture </br> 20201018 summary of research status</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p><em>This is a self-translated/enhanced summary of the <a rel="noreferrer noopener" href="https://bit.ly/arqtxt_infarq_20200927" target="_blank">presentation made on September the 27th</a>. Feel free to leave constructive criticism! </em></p>
+
+
+<section id="mksection-presenpknstyle20201003eng"></section>
+<h1 id="proposal">Proposal</h1>
+<section id="mksection-proposal">
+<p>This doctoral research proposes the modelling of the creative processes of architectural design through high abstraction level systems based on informational thinking strategies. The models are virtualized into interactive digital constructs developed with visual scripting tools for the integration of all systems of the architecture process.</p>
+<h2 id="origin3Ainterestintuition" data-orig-id="origin%3Ainterestintuition">Origin: Interest+intuition</h2>
+</section><section id="mksection-origin3Ainterestintuition">
+<p>The origin of this research comes from the merge of an interest and an intuition:</p>
+<ul>
+<li>
+<p>We are interested in architecture as a thinking system whose main goal is the creation of human space.</p>
+</li>
+<li>
+<p>We believe that abstract thinking in architectural design can benefit from informational thinking.</p>
+</li>
+</ul>
+</section>
+<h2 id="opportunity">Opportunity</h2>
+<section id="mksection-opportunity">
+<p>To achieve the merging of this intuition and interest, the proposal works by embodying space as an abstract object into contemporary digital tools by means of informational thinking strategies.</p>
+<p>This approach is different from current dynamics in most of the research lines and work fields on digital tools in that:</p>
+<ul>
+<li>
+<p>These are specially focused on the technical, management, form-generation and experimental fabrication aspects.</p>
+</li>
+<li>
+<p>The computational work dynamics are generally based on the use of digital tools on the work object. This bottom-up approach produces a strong instrumental dependency we strive to dismantle.</p>
+</li>
+</ul>
+</section>
+<h2 id="architectureasasystem">Architecture as a system</h2>
+<section id="mksection-architectureasasystem">
+<p>Besides emphasizing our interest in abstract thinking about space, we have to specify further in that the architecture creation system object of our research is the one that adheres to the following sequence:</p>
+<ul>
+<li>
+<p>Spatial thinking (self referential goals)</p>
+</li>
+<li>
+<p>Document production (production instructions)</p>
+</li>
+<li>
+<p>Communication with the production agents (translation of the instructions into material actions)</p>
+</li>
+<li>
+<p>Material building (realization process)</p>
+</li>
+</ul>
+<p>With the particularity that as this sequence unfurls, iteration loops happen.</p>
+</section>
+<h2 id="problems">Problems</h2>
+<section id="mksection-problems">
+<p>We detect several points in the mentioned system that we consider problematic:</p>
+<ul>
+<li>
+<p>Abstract spatial thinking is usually produced on analog supports and has a tremendous level of abstraction (sketches, work models, diagrams, etc.)</p>
+</li>
+<li>
+<p>Tech embodiment introduces a kind of complexity that is more and more difficult to cope with and sync with abstract thinking on space.</p>
+</li>
+<li>
+<p>The production of graphic documents (2D and 3D) has been <em>informationalized</em> through a system of tools, processes and methodologies that go from computational design to BIM.</p>
+</li>
+<li>
+<p>In our opinion, these issues are cause and reason of the distance, disaffection and wastefulness between the two extremes of the architectural process we are working on.</p>
+</li>
+</ul>
+</section>
+<h2 id="proposal2">Base hypothesis</h2>
+<section id="mksection-proposal2">
+<p>From the transdisciplinar position of our research we propose the base hypothesis:</p>
+<blockquote>
+<p>Like programming languages, that embody the thinking, design and production processes in software engineering; architecture processes can also be classified in high abstraction level and low abstraction level systems and both types can be integrated with an intermediate compilation system.</p>
+</blockquote>
+</section>
+
+
+
+ <a href="http://arquitextonica.net/research/informational-architecture-20201018-summary-of-research-status/#more-5606" class="more-link">Keep Reading</a>	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Publicado el </span><a href="http://arquitextonica.net/research/informational-architecture-20201018-summary-of-research-status/" rel="bookmark"><time class="entry-date published" datetime="2020-10-18T19:04:16+00:00">octubre 18, 2020</time><time class="updated" datetime="2020-10-18T19:16:22+00:00">octubre 18, 2020</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Autor </span><a class="url fn n" href="http://arquitextonica.net/author/admin/">Miguel Villegas-Ballesta</a></span></span><span class="cat-links"><span class="screen-reader-text">Categorías </span><a href="http://arquitextonica.net/category/arquitectura/" rel="category tag">Arquitectura</a>, <a href="http://arquitextonica.net/category/arquitectura-informacional/" rel="category tag">arquitectura informacional</a>, <a href="http://arquitextonica.net/category/arquitextonica/" rel="category tag">ARQUITEXTONICA</a>, <a href="http://arquitextonica.net/category/arquitextonica/investigacion/" rel="category tag">investigación</a>, <a href="http://arquitextonica.net/category/research/" rel="category tag">Research</a>, <a href="http://arquitextonica.net/category/arquitectura-informacional/tesis/" rel="category tag">tesis</a></span><span class="tags-links"><span class="screen-reader-text">Etiquetas </span><a href="http://arquitextonica.net/tag/architecture/" rel="tag">architecture</a>, <a href="http://arquitextonica.net/tag/informational/" rel="tag">informational</a>, <a href="http://arquitextonica.net/tag/informational-design/" rel="tag">informational design</a></span><span class="comments-link"><a href="http://arquitextonica.net/research/informational-architecture-20201018-summary-of-research-status/#respond">Deja un comentario<span class="screen-reader-text"> en Informational Architecture </br> 20201018 summary of research status</span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-5606 -->
+
+<article id="post-5534" class="post-5534 post type-post status-publish format-standard hentry category-arquitectura category-arquitectura-informacional category-diseo category-emprendedores-creativos category-identidad-digital-ser-red category-nos_gusta_lo_que_hacen category-ser-red category-tecnologia category-tesis category-tutoriales tag-investigacion tag-latesis">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://arquitextonica.net/arquitectura/arquitectura-informacional-20200927/" rel="bookmark">arquitectura informacional </br>presentación 20200927</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<div class="wp-block-jetpack-slideshow aligncenter" data-effect="slide"><div class="wp-block-jetpack-slideshow_container swiper-container"><ul class="wp-block-jetpack-slideshow_swiper-wrapper swiper-wrapper"><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5535 jetpack-lazy-image" data-id="5535" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.001.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.001.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.001.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.001.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.001.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5535" data-id="5535" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.001.png?resize=660%2C495" srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.001.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.001.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.001.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5536 jetpack-lazy-image" data-id="5536" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.002.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.002.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.002.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.002.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.002.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5536" data-id="5536" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.002.png?resize=660%2C495" srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.002.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.002.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.002.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5538 jetpack-lazy-image" data-id="5538" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.003.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.003.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.003.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.003.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.003.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5538" data-id="5538" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.003.png?resize=660%2C495" srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.003.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.003.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.003.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5539 jetpack-lazy-image" data-id="5539" src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.004.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.004.png?w=1024 1024w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.004.png?resize=300%2C225 300w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.004.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.004.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5539" data-id="5539" src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.004.png?resize=660%2C495" srcset="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.004.png?w=1024 1024w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.004.png?resize=300%2C225 300w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.004.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5540 jetpack-lazy-image" data-id="5540" src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.005.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.005.png?w=1024 1024w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.005.png?resize=300%2C225 300w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.005.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.005.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5540" data-id="5540" src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.005.png?resize=660%2C495" srcset="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.005.png?w=1024 1024w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.005.png?resize=300%2C225 300w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.005.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5541 jetpack-lazy-image" data-id="5541" src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.006.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.006.png?w=1024 1024w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.006.png?resize=300%2C225 300w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.006.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.006.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5541" data-id="5541" src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.006.png?resize=660%2C495" srcset="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.006.png?w=1024 1024w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.006.png?resize=300%2C225 300w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.006.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5542 jetpack-lazy-image" data-id="5542" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.007.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.007.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.007.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.007.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.007.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5542" data-id="5542" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.007.png?resize=660%2C495" srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.007.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.007.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.007.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5543 jetpack-lazy-image" data-id="5543" src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.008.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.008.png?w=1024 1024w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.008.png?resize=300%2C225 300w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.008.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.008.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5543" data-id="5543" src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.008.png?resize=660%2C495" srcset="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.008.png?w=1024 1024w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.008.png?resize=300%2C225 300w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.008.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5544 jetpack-lazy-image" data-id="5544" src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.009.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.009.png?w=1024 1024w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.009.png?resize=300%2C225 300w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.009.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.009.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5544" data-id="5544" src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.009.png?resize=660%2C495" srcset="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.009.png?w=1024 1024w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.009.png?resize=300%2C225 300w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.009.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5545 jetpack-lazy-image" data-id="5545" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.010.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.010.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.010.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.010.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.010.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5545" data-id="5545" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.010.png?resize=660%2C495" srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.010.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.010.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.010.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5547 jetpack-lazy-image" data-id="5547" src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.011.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.011.png?w=1024 1024w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.011.png?resize=300%2C225 300w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.011.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.011.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5547" data-id="5547" src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.011.png?resize=660%2C495" srcset="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.011.png?w=1024 1024w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.011.png?resize=300%2C225 300w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.011.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5549 jetpack-lazy-image" data-id="5549" src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.012.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.012.png?w=1024 1024w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.012.png?resize=300%2C225 300w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.012.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.012.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5549" data-id="5549" src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.012.png?resize=660%2C495" srcset="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.012.png?w=1024 1024w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.012.png?resize=300%2C225 300w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.012.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5551 jetpack-lazy-image" data-id="5551" src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.013.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.013.png?w=1024 1024w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.013.png?resize=300%2C225 300w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.013.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.013.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5551" data-id="5551" src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.013.png?resize=660%2C495" srcset="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.013.png?w=1024 1024w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.013.png?resize=300%2C225 300w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.013.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5553 jetpack-lazy-image" data-id="5553" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.014.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.014.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.014.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.014.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.014.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5553" data-id="5553" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.014.png?resize=660%2C495" srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.014.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.014.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.014.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5555 jetpack-lazy-image" data-id="5555" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.015.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.015.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.015.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.015.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.015.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5555" data-id="5555" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.015.png?resize=660%2C495" srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.015.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.015.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.015.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5557 jetpack-lazy-image" data-id="5557" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.016.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.016.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.016.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.016.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.016.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5557" data-id="5557" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.016.png?resize=660%2C495" srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.016.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.016.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.016.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5559 jetpack-lazy-image" data-id="5559" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.017.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.017.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.017.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.017.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.017.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5559" data-id="5559" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.017.png?resize=660%2C495" srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.017.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.017.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.017.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5561 jetpack-lazy-image" data-id="5561" src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.018.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.018.png?w=1024 1024w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.018.png?resize=300%2C225 300w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.018.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.018.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5561" data-id="5561" src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.018.png?resize=660%2C495" srcset="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.018.png?w=1024 1024w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.018.png?resize=300%2C225 300w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.018.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5563 jetpack-lazy-image" data-id="5563" src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.019.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.019.png?w=1024 1024w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.019.png?resize=300%2C225 300w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.019.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.019.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5563" data-id="5563" src="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.019.png?resize=660%2C495" srcset="https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.019.png?w=1024 1024w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.019.png?resize=300%2C225 300w, https://i0.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.019.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li><li class="wp-block-jetpack-slideshow_slide swiper-slide"><figure><img loading="lazy" width="660" height="495" alt class="wp-block-jetpack-slideshow_image wp-image-5565 jetpack-lazy-image" data-id="5565" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.020.png?resize=660%2C495" data-recalc-dims="1" data-lazy-srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.020.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.020.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.020.png?resize=768%2C576 768w" data-lazy-sizes="(max-width: 660px) 100vw, 660px" data-lazy-src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.020.png?resize=660%2C495&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="660" height="495" alt="" class="wp-block-jetpack-slideshow_image wp-image-5565" data-id="5565" src="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.020.png?resize=660%2C495" srcset="https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.020.png?w=1024 1024w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.020.png?resize=300%2C225 300w, https://i2.wp.com/arquitextonica.net/wp-content/uploads/2020/09/PRESEN-JGCL_20200927A.020.png?resize=768%2C576 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /></noscript></figure></li></ul><a class="wp-block-jetpack-slideshow_button-prev swiper-button-prev swiper-button-white" role="button"></a><a class="wp-block-jetpack-slideshow_button-next swiper-button-next swiper-button-white" role="button"></a><a aria-label="Pause Slideshow" class="wp-block-jetpack-slideshow_button-pause" role="button"></a><div class="wp-block-jetpack-slideshow_pagination swiper-pagination swiper-pagination-white"></div></div></div>
+
+
+
+<div class="wp-block-jetpack-markdown"><p>Hoy he presentado a mi director José Luis García del Castillo y López el estado actual de mi investigación doctoral. Todavía no es el guión de la tesis, pero las hipótesis, los objetivos y los bloques de trabajo a desarrollar ya están bastante claros.Ha sido una sesión larga e intensa en la que no ha habido casi peros y si muchas preguntas que he podido contestar y que han servido para delimitar los puntos que hay que reforzar.El siguiente objetivo es modelar un <em><strong>paratipo</strong></em>.<br>
+Para evitar el juicio sobre el objeto construído y centrar el foco en el modelo de conocimiento generado y su instrumentación, voy a trabajar (con el permiso de sus arquitectos) sobre un proyecto precioso y de una calidad indiscutible. Cuando lo termine espero que sea de su agrado y me dejen enseñároslo.<br>
+Aprovecho para enlazaros algunos de los perfiles de José Luis para que podáis disfrutar de su trabajo que comparte con la misma generosidad con la que se vuelca en dirigirme.</p>
+</div>
+
+
+
+<p><a rel="noreferrer noopener" href="http://Perfil docente  de José Luis García del Castillo y López en el Harvard GSD" target="_blank">Perfil docente  de José Luis García del Castillo y López en el Harvard GSD</a></p>
+
+
+
+<p>Su <a rel="noreferrer noopener" href="https://www.youtube.com/watch?v=R9Y54UkkArI" target="_blank">curso de introducción al diseño computacional</a> en el propio GSD está en youtube&#8230;</p>
+
+
+
+<p>Y su canal <a rel="noreferrer noopener" href="https://www.youtube.com/parametriccamp" data-type="URL" data-id="https://www.youtube.com/parametriccamp" target="_blank">Parametric Camp</a>, gracias al que hicimos nuestro primer bolo contando <a rel="noreferrer noopener" href="http://bit.ly/arqtxt_biologicas" target="_blank">bio-lógicas</a> hace mil años&#8230;</p>
+
+
+
+<p>Huelga decir que todos los comentarios y críticas constructivos son muy bien recibidos y agradecidos.<br><br><strong>English version coming soon!</strong></p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Publicado el </span><a href="http://arquitextonica.net/arquitectura/arquitectura-informacional-20200927/" rel="bookmark"><time class="entry-date published" datetime="2020-09-27T20:07:16+00:00">septiembre 27, 2020</time><time class="updated" datetime="2020-09-27T20:10:12+00:00">septiembre 27, 2020</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Autor </span><a class="url fn n" href="http://arquitextonica.net/author/admin/">Miguel Villegas-Ballesta</a></span></span><span class="cat-links"><span class="screen-reader-text">Categorías </span><a href="http://arquitextonica.net/category/arquitectura/" rel="category tag">Arquitectura</a>, <a href="http://arquitextonica.net/category/arquitectura-informacional/" rel="category tag">arquitectura informacional</a>, <a href="http://arquitextonica.net/category/diseo/" rel="category tag">Diseño</a>, <a href="http://arquitextonica.net/category/emprendedores-creativos/" rel="category tag">Emprendedores Creativos</a>, <a href="http://arquitextonica.net/category/ser-red/identidad-digital-ser-red/" rel="category tag">Identidad Digital</a>, <a href="http://arquitextonica.net/category/nos_gusta_lo_que_hacen/" rel="category tag">nos gusta lo que hacen</a>, <a href="http://arquitextonica.net/category/ser-red/" rel="category tag">Ser Red</a>, <a href="http://arquitextonica.net/category/tecnologia/" rel="category tag">Tecnologí­a</a>, <a href="http://arquitextonica.net/category/arquitectura-informacional/tesis/" rel="category tag">tesis</a>, <a href="http://arquitextonica.net/category/tutoriales/" rel="category tag">Tutoriales</a></span><span class="tags-links"><span class="screen-reader-text">Etiquetas </span><a href="http://arquitextonica.net/tag/investigacion/" rel="tag">investigación</a>, <a href="http://arquitextonica.net/tag/latesis/" rel="tag">latesis</a></span><span class="comments-link"><a href="http://arquitextonica.net/arquitectura/arquitectura-informacional-20200927/#respond">Deja un comentario<span class="screen-reader-text"> en arquitectura informacional </br>presentación 20200927</span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-5534 -->
+
+<article id="post-5523" class="post-5523 post type-post status-publish format-standard hentry category-arquitectura category-arquitectura-informacional category-arquitextonica category-asi-trabajamos category-convocatoria category-docencia category-eventos category-formacion category-investigacion category-proyectos-arquitectonicos category-research category-tesis category-uncategorized">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://arquitextonica.net/uncategorized/arquitectura-informacional-experimento-2-0/" rel="bookmark">Arquitectura Informacional experimento 2.0</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p><img data-attachment-id="5525" data-permalink="http://arquitextonica.net/uncategorized/arquitectura-informacional-experimento-2-0/attachment/11390289_10153406275602612_6259924880312745468_n/" data-orig-file="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/08/11390289_10153406275602612_6259924880312745468_n.jpg?fit=620%2C404" data-orig-size="620,404" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="arquitectura informacional" data-image-description data-medium-file="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/08/11390289_10153406275602612_6259924880312745468_n.jpg?fit=300%2C195" data-large-file="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/08/11390289_10153406275602612_6259924880312745468_n.jpg?fit=620%2C404" loading="lazy" class="alignnone size-full wp-image-5525 jetpack-lazy-image" src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/08/11390289_10153406275602612_6259924880312745468_n.jpg?resize=620%2C404" alt width="620" height="404" data-recalc-dims="1" data-lazy-srcset="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/08/11390289_10153406275602612_6259924880312745468_n.jpg?w=620 620w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/08/11390289_10153406275602612_6259924880312745468_n.jpg?resize=300%2C195 300w" data-lazy-sizes="(max-width: 620px) 100vw, 620px" data-lazy-src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/08/11390289_10153406275602612_6259924880312745468_n.jpg?resize=620%2C404&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-attachment-id="5525" data-permalink="http://arquitextonica.net/uncategorized/arquitectura-informacional-experimento-2-0/attachment/11390289_10153406275602612_6259924880312745468_n/" data-orig-file="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/08/11390289_10153406275602612_6259924880312745468_n.jpg?fit=620%2C404" data-orig-size="620,404" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="arquitectura informacional" data-image-description="" data-medium-file="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/08/11390289_10153406275602612_6259924880312745468_n.jpg?fit=300%2C195" data-large-file="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/08/11390289_10153406275602612_6259924880312745468_n.jpg?fit=620%2C404" loading="lazy" class="alignnone size-full wp-image-5525" src="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/08/11390289_10153406275602612_6259924880312745468_n.jpg?resize=620%2C404" alt="" width="620" height="404" srcset="https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/08/11390289_10153406275602612_6259924880312745468_n.jpg?w=620 620w, https://i1.wp.com/arquitextonica.net/wp-content/uploads/2020/08/11390289_10153406275602612_6259924880312745468_n.jpg?resize=300%2C195 300w" sizes="(max-width: 620px) 100vw, 620px" data-recalc-dims="1" /></noscript></p>
+<p>Hace escasamente unas semanas terminé de impartir en el IEK de la Universität Stuttgart un <em>seminario-teórico-práctico</em> sobre las herramientas que <em>estaba</em> desarrollando en la investigación de la tesis.</p>
+<div class="markdown-here-wrapper" data-md-url="arquitextonica.net">
+<p style="margin: 0px 0px 1.2em !important;">Digo <em>estaba</em> porque el el seminario era un experimento para poner a prueba el desarrollo de las herramientas y ha salido tan bien que me ha hecho repensarme muchas cosas.<br />
+Hemos tenido mucha mala suerte y las condiciones de telepresencia con un sistema de cisco que es muy malo, el nivel de expectativas que marqué que creo que fue considerablemente alto, y mi <em>alemán de las Bergen</em> que por videoconferencia empeora varios niveles han hecho que solo tres estudiantes de máster llegaran a la entrega final.<br />
+El resultado ha sido excelente, llegando sobradamente al alto nivel de expectativas que había marcado, pero la cantidad de resultados de la muestra lo hace insuficiente y por eso me he lanzado a intentar este <em>experimento 2.0</em> que os paso a comentar esperando que os interese participar.</p>
+<h2 id="sobre-la-investigaci-n" style="margin: 1.3em 0px 1em; padding: 0px; font-weight: bold; font-size: 1.4em; border-bottom: 1px solid #eeeeee;">Sobre la investigación</h2>
+<p style="margin: 0px 0px 1.2em !important;">La hipótesis de mi investigación es que las herramientas de proyecto en arquitectura (dibujos, maquetas, planos, CAD, renders…) son sistemas icónicos de representación (cf. Mitchell) y aunque contienen una ingente cantidad de conocimiento, este está codificado y <em>sólo</em> puede usarse para su objetivo inicial.<br />
+Desde este punto pasamos a postular que como todo conocimiento humano se puede convertir en información y toda información en datos (la pirámide DIKW que aceptamos como premisa) y la información se puede computerizar y por tanto computar, podemos operar sobre cualquier cosa que se nos ocurra o produzcamos, convirtiéndola en digital y haciéndola de este modo <em><strong>informacional</strong></em>.<br />
+En base a estas premisas estoy construyendo un catálogo abierto de <em>estrategias de pensamiento</em>. Herramientas a fin de cuentas que más allá de formulaciones matemáticas, algoritmos o programación, tratan de conceptualizar qué pasa, cómo pasa y por qué (o más bien, para qué) pasan las cosas que pasan cuando operamos en el ámbito informacional…<br />
+Estas herramientas son <em>pura teoría</em> pero como mi tesis es de <em>proyectos arquitectónicos</em> y no de <em>historia y teoría</em> pues tengo que instrumentalizarlas ¿en qué? pues en unos <em>constructos</em> que llamo (hasta ahora) <em><strong>paratipos</strong></em>.</p>
+<h3 id="-qu-son-los-_-paratipos-_-" style="margin: 1.3em 0px 1em; padding: 0px; font-weight: bold; font-size: 1.3em;">¿Qué son los <em><strong>paratipos</strong></em>?</h3>
+<p style="margin: 0px 0px 1.2em !important;">Son modelos de los procesos de pensamiento del proceso de diseño en arquitectura. Estan construidos mediante grafos acíclicos dirigidos en los que los nodos son los objetos informacionales u operaciones y los bordes entre nodos las relaciones de dependencia o causalidad.<br />
+Este modelo tiene como origen claro las estructuras de <em>visual scripting</em> de programas como Grasshopper, Dynamo, Marionette, etc. pero intenta llegar <em>más profundo</em>.<br />
+Buscamos abstraernos de la ejecución matemática y geométrica para pensar y entender qué pasa en la arquitectura antes de llegar a la formalización (geometría) o la técnica (BIM).<br />
+Para nosotros a esa capa más profunda es a la que se puede llegar con las estrategias informacionales. Hacerlo creemos que tiene dos consecuencias directas:</p>
+<ul style="margin: 1.2em 0px; padding-left: 2em;">
+<li style="margin: 0.5em 0px;"><strong>Incrementa el conocimiento.</strong><br />
+Mientras más conocimiento hagamos <em>explícito</em> mejor funcionan los <em><strong>paratipos</strong></em> y las estrategias y por ende aumenta lo que sabemos de nuestra propia creación.</li>
+<li style="margin: 0.5em 0px;"><strong>Incrementa la capacidad de control. </strong><br />
+Estamos desarrollando un <em>modelo</em> del proceso de pensamiento. Cambiamos así de pensar <em>dentro de nuestra cabeza</em> a pensar fuera. No a representar nuestras ideas como hacemos cuando dibujamos, si no a <em>construir el sistema de nuestras ideas</em>. Si el sistema está objetualizado, lo controlamos mucho mejor.</li>
+<li style="margin: 0.5em 0px;"><strong>Incrementa la potencia creativa.</strong><br />
+Sabemos más y controlamos mejor. Que podemos hacer más (que no necesariamente mejor) arquitectura es una consecuencia casi directa. Además, gracias a la construcción digital con herramientas de visual-scripting incorporamos la virtualización a los modelos construidos poniendo a nuestra disposición este incremento de potencia.</li>
+<li style="margin: 0.5em 0px;"><strong>Incrementa la integración de todas las fases del proyecto.</strong><br />
+El sistema está montado y al igual que podemos convertir objetos analógicos en entidades informacionales, podemos <em>realizar</em> la virtualidad de los modelos en objetos analógicos (<em>producir planos</em> para entendernos…) en cada estado del proceso creativo. Las distintas fases del proyecto se van encadenando entre sí por que por la propia esencia de los modelos hacemos que la información fluya entre ellas.</p>
+<h2 id="-cu-l-es-entonces-el-experimento-" style="margin: 1.3em 0px 1em; padding: 0px; font-weight: bold; font-size: 1.4em; border-bottom: 1px solid #eeeeee;">¿Cuál es entonces el experimento?</h2>
+<p>Si habéis llegado hasta aquí ya os agradezco vuestro interés, pero el experimento todavía necesita ser depurado a partir del anterior.<br />
+Lo que si os puedo anticipar es que, seguramente, necesitaré de los valientes que se atrevan que se graben proyectando un pequeño ejercicio que yo plantearé con la particularidad de que deberán narrar en voz alta sus procesos de pensamiento mientras proyectan.<br />
+La segunda fase es la que tengo que depurar, pero de momento la idea es, una vez revisados los documentos de los participantes, preparar yo una serie de <em><strong>paratipos</strong></em> en forma de definiciones de Grasshopper bien estructuradas y debidamente documentadas, y ponerlas a disposición de los participantes para que <em>las usen</em>, mezclen, transformen, desarrollen, manipulen…<br />
+Yo acompañaría (de forma colectiva o individualizada está por decidir) en este uso, y ayudaría en el desarrollo de los trabajos. <strong>Con esto os lleváis un buen rato de formación especializada como recompensa</strong> y documentaría los procesos creativos que se realicen con ellas.<br />
+El dar los <em><strong>paratipos</strong></em> prefabricados es lo que tengo más en duda pero creo que es lo más operativo. La tesis no va de <em>diseño paramétrico</em> ni de <em>arquitectura algorítmica</em> si no de estrategias y de pensamiento y el dar las <em>herramientas</em> preparadas creo que ayuda a que los participantes se puedan centrar en <em>el uso</em>, es decir <strong>en el diseño</strong> y no en la construcción de las herramientas.</p>
+<h3 id="-qu-os-parece-os-anim-is-a-participar-" style="margin: 1.3em 0px 1em; padding: 0px; font-weight: bold; font-size: 1.3em;">¿Qué os parece? ¿Os animáis a participar?</h3>
+<p>Si es así, aquí tenéis el enlace al formulario de registro.<br />
+<a href="https://forms.gle/MNvCX5Ujs2yANStw8">https://forms.gle/MNvCX5Ujs2yANStw8</a></li>
+</ul>
+<div class="markdown-here-wrapper" data-md-url="arquitextonica.net">
+<p>Si queréis saber más, aquí tienes una colección de tuits con publicaciones mías más cortas y retuits de referencias externas <a href="http://bit.ly/arqtxt_tw_informational">http://bit.ly/arqtxt_tw_informational</a></p>
+</div>
+<h3>Y por último ¡mil gracias a todos por el interés y el apoyo!</h3>
+</div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Publicado el </span><a href="http://arquitextonica.net/uncategorized/arquitectura-informacional-experimento-2-0/" rel="bookmark"><time class="entry-date published updated" datetime="2020-08-26T20:52:20+00:00">agosto 26, 2020</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Autor </span><a class="url fn n" href="http://arquitextonica.net/author/admin/">Miguel Villegas-Ballesta</a></span></span><span class="cat-links"><span class="screen-reader-text">Categorías </span><a href="http://arquitextonica.net/category/arquitectura/" rel="category tag">Arquitectura</a>, <a href="http://arquitextonica.net/category/arquitectura-informacional/" rel="category tag">arquitectura informacional</a>, <a href="http://arquitextonica.net/category/arquitextonica/" rel="category tag">ARQUITEXTONICA</a>, <a href="http://arquitextonica.net/category/arquitextonica/asi-trabajamos/" rel="category tag">asi trabajamos</a>, <a href="http://arquitextonica.net/category/arquitextonica/investigacion/convocatoria/" rel="category tag">convocatoria</a>, <a href="http://arquitextonica.net/category/arquitextonica/docencia/" rel="category tag">docencia</a>, <a href="http://arquitextonica.net/category/eventos/" rel="category tag">eventos</a>, <a href="http://arquitextonica.net/category/formacion/" rel="category tag">formación</a>, <a href="http://arquitextonica.net/category/arquitextonica/investigacion/" rel="category tag">investigación</a>, <a href="http://arquitextonica.net/category/research/proyectos-arquitectonicos/" rel="category tag">Proyectos Arquitectónicos</a>, <a href="http://arquitextonica.net/category/research/" rel="category tag">Research</a>, <a href="http://arquitextonica.net/category/arquitectura-informacional/tesis/" rel="category tag">tesis</a>, <a href="http://arquitextonica.net/category/uncategorized/" rel="category tag">Uncategorized</a></span><span class="comments-link"><a href="http://arquitextonica.net/uncategorized/arquitectura-informacional-experimento-2-0/#respond">Deja un comentario<span class="screen-reader-text"> en Arquitectura Informacional experimento 2.0</span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-5523 -->
+
+<article id="post-5504" class="post-5504 post type-post status-publish format-standard hentry category-arquitectura category-arquitectura-informacional category-arquitextonica category-tesis tag-computational-design tag-informacional tag-informational">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://arquitextonica.net/arquitectura/informational-architecture-a-brief-opinion-about-hypar-io-and-what-i-hope-comes-afterwards/" rel="bookmark">Informational architecture.</br>A brief opinion about Hypar.io and what I hope comes afterwards&#8230;</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' width='660' height='372' src='https://www.youtube.com/embed/FE8BeWSE_WI?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=es-ES&#038;autohide=2&#038;wmode=transparent' allowfullscreen='true' style='border:0;' sandbox='allow-scripts allow-same-origin allow-popups allow-presentation'></iframe></span>
+</div></figure>
+
+
+
+<p></p>
+
+
+
+<p>I invested today&#8217;s holiday morning in watching all the tutorials for using <a href="http://hypar.io">@HyparAEC</a> through <a href="https://twitter.com/search?q=%23gh3d&amp;src=typed_query&amp;f=live">#GH3D</a> (@McNeelEurope &amp; @bobmcneel a GH3D specific twitter account, PLEASE!) and what started as a twitter thread, has become now a whole post. Buckle up!</p>
+
+
+
+<p>First let´s go with what I consider Hypar´s <em>breakthroughs</em>. And I say breaktrhouth because I don&#8217;t like the concept of aradigm shift. I hope, believe and expect architecture future changes don&#8217;t come <em>only</em> from tech.</p>
+
+
+
+<p>Simply put, the main functionality in Hypar is that <em>we have to</em> break down architectural production processes in sub-tasks (called functions) and then chain them in an integrated AEC production workflow.<br>This produces a sort of pipe network that directs the process in a sort of stream. Stream of what? A stream of information.</p>
+
+
+
+<h3>Hypar is purely <a href="https://twitter.com/search?q=%23informational&amp;src=typed_query&amp;f=live">#informational</a>.</h3>
+
+
+
+<p>This information that goes in and out of the functions does it in the form of entities that are called <em>elements</em> and which have properties. As far as I know <strong><em>there is no predefined ontology</em></strong>, and that is for me a HUGE point.<br>Not having a predefined ontology means @HyparAEC could (can) adhere to any thir-party-externally-defined ontology. It just needs a translation schema (I think in a very similar fashion to <a href="https://bhom.xyz/">BHoM</a> approach). In Hypar we can define our own ontology to structure the architectural knowledge we need in our design and then, <em>if need to</em> translate it.</p>
+
+
+
+<p>The hardcore use of Hypar is developed in C#, that means coding… BUT its inner workings are so clear that its implementation on grasshopper seems a walk in the park (just watch Andrew Heumann&#8217;s videos). Wonder why they didn&#8217;t choose Revit first, maybe Heumann had something to do with it…</p>
+
+
+
+<h3>Why do I find Hypar <strong>SO</strong> important?</h3>
+
+
+
+<p>Mainly because it opens up the <em>use <strong>AND</strong> reuse</em> of architectural knowledge. BUT that is no easy feat. To use it first we have to extract this knowledge from our heads. Architecture has worked too much time hiding its musings under the cloack of subjectivity and creativity and embedding it in analog-iconic representation systems that block any form of transformation-operationallity besides the intended construction process.</p>
+
+
+
+<p>In my humble opinion, working with knowledge in architecture will be not anymore about expert knowledge systems, as research on AI and generative design have sought, but about <strong><em>explicit</em> knowledge systems</strong>.</p>
+
+
+
+<p>It doesn&#8217;t matter if the knowledge is expert or novice, not even if it is good or bad, what is important here is that we will be able to work over it. We will be able to work on the true genetic material of architecture.</p>
+
+
+
+<p>This is not about generative design, optionieering, optimization, or even AI. This is about harnessing the enhanced potential of our creative human power after its enhancement with informational infrastructures. But to achieve this goal I see just a couple small, easy to solve caveats.</p>
+
+
+
+<h3>I think Hypar is not working YET with space. And <strong>architecture is space</strong>.</h3>
+
+
+
+<p>Some could argue we just need BIM elements to produce architecture, but that renders plain construction. The A in AEC stands for much more than that. The implementation of <a href="http://topologic.app">topologic</a> into Hypar (<em>coming soon</em>)is a step towards this solution, and I´m eager to see it.</p>
+
+
+
+<p>The second and more important problem for me is that, despite the tools are readily available and the coding barrier is not there anymore (use of HyparAEC and topologic over Grasshopper is proof), there is still no informational architecture thought.</p>
+
+
+
+<p>We/architecture need/s to understand space and translate it into informational substance.</p>
+
+
+
+<p>It&#8217;s not about scientification of creativity, it&#8217;s about decomposing OUR knowledge into information and reworking it into new emergent knowledge.<br>This demands alternative and complementary thinking processes. We have relied for centuries on the cognitional (making knowledge production-resource) power of analog tools but it´s time to move on and strengthen our tools.</p>
+
+
+
+<h3>Just to be clear: I&#8217;m not advocating for the demise of drawing or cardboard models, I&#8217;m rooting for their enhancement.</h3>
+
+
+
+<p>And now I can arrive to what I feel is the draft (I&#8217;ll have to rework it a lot) of my thesis conclussions:</p>
+
+
+
+<blockquote class="wp-block-quote"><p>With the combination of analog entities and information fields in knowledge modelling digital infrastructures, we can think of architectural designs as integrated design systems, spanning from early creative stages based on raw constructionless space to technical production BIM models for 7D architecture management.</p></blockquote>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Publicado el </span><a href="http://arquitextonica.net/arquitectura/informational-architecture-a-brief-opinion-about-hypar-io-and-what-i-hope-comes-afterwards/" rel="bookmark"><time class="entry-date published updated" datetime="2020-06-11T17:10:41+00:00">junio 11, 2020</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Autor </span><a class="url fn n" href="http://arquitextonica.net/author/admin/">Miguel Villegas-Ballesta</a></span></span><span class="cat-links"><span class="screen-reader-text">Categorías </span><a href="http://arquitextonica.net/category/arquitectura/" rel="category tag">Arquitectura</a>, <a href="http://arquitextonica.net/category/arquitectura-informacional/" rel="category tag">arquitectura informacional</a>, <a href="http://arquitextonica.net/category/arquitextonica/" rel="category tag">ARQUITEXTONICA</a>, <a href="http://arquitextonica.net/category/arquitectura-informacional/tesis/" rel="category tag">tesis</a></span><span class="tags-links"><span class="screen-reader-text">Etiquetas </span><a href="http://arquitextonica.net/tag/computational-design/" rel="tag">computational design</a>, <a href="http://arquitextonica.net/tag/informacional/" rel="tag">informacional</a>, <a href="http://arquitextonica.net/tag/informational/" rel="tag">informational</a></span><span class="comments-link"><a href="http://arquitextonica.net/arquitectura/informational-architecture-a-brief-opinion-about-hypar-io-and-what-i-hope-comes-afterwards/#respond">Deja un comentario<span class="screen-reader-text"> en Informational architecture.</br>A brief opinion about Hypar.io and what I hope comes afterwards&#8230;</span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-5504 -->
+
+<article id="post-10" class="post-10 post type-post status-publish format-standard hentry category-arquitectura category-research tag-arquitectura tag-citas tag-doctorado tag-information tag-research">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://arquitextonica.net/research/004-information-is-information/" rel="bookmark">004. Information is <em>information</em>.</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<h4>Wiener, Norbert. 1948. «Cybernetics».</h4>
+
+
+<blockquote style="background: url('http://trazas.arquitextonica.net/wp-content/uploads/2015/12/8166916358_f364ec9656_z.jpg'); margin: 10px; height: 360px;">
+<p> </p>
+<p style="text-align: left;"><span style="color: #ffffff; font-size: 40px;"><em><strong>Information is information, not matter or energy. </strong></em><em><strong>No materialism which does not admit this can survive at the present day. </strong></em><a id="fnref:1" class="footnote" title="see footnote" href="#fn:1"><span style="color: #ffffff;"><em><strong>[1]</strong></em></span></a></span></p>
+</blockquote>
+<p>Image <a href="http://bit.ly/1OLxjBx">All Information by Gisela Giardino</a> CC by-sa.</p>
+<blockquote>
+<p>[La información es información, no es materia o energía. Ningún materialismo que no admita esto puede sobrevivir al presente.]<br />Traducción propia.</p>
+</blockquote>
+<p>Wiener define aquí (usando esa aberración que es la definición por negación del <em>otro</em>) la información como entidad necesaria y equipotente a la materia y la energía, y no como mero complemento circunstancial de modo.</p>
+<p>Para mi, uno de los errores de la arquitectura ha sido transformar la información en materia para operar con ella a través de su representación, en lugar de haber desarrollado modos propios de hacerla productiva.</p>
+<p>Se podría argumentar que todo en la realidad es información, y no sería falso; pero si corto de miras. Nuestro argumento va más allá, en la línea de la definición de Castells de lo que es la “sociedad informacional”:</p>
+<blockquote>
+<p>El término informacional indica el atributo de una forma específica de organización social en la que la generación, el procesamiento y la producción de información se convierten en fuentes fundamentales de productividad. <a id="fnref:2" class="footnote" title="see footnote" href="#fn:2">[2]</a></p>
+</blockquote>
+<h2 id="¿porquépensamosqueestepardecitassontantrascendentes">¿Por qué pensamos que este par de citas son tan trascendentes?</h2>
+<p>Vamos a tratar de aclararlo con otra pregunta.</p>
+<p>Si la información no está sometida a las leyes de la termodinámica, y es capaz de ser multiplicada <em>ad infinitum</em> sin perder valor –incluso ganándolo si esas multiplicaciones implican interacción humana o con otra información– y con un coste infinitesimal; y la información se convierte en materia prima (fuente fundamental de productividad).</p>
+<p>¿Os dais cuenta de cómo podría afectar esta combinación si la aplicamos de forma activa a nuestros procesos creativos? ¿No creéis que el incremento de potencia que hay que explotar hace perentorio el desarrollo de máquinas extra-humanas para poder aprovecharla?</p>
+<p><em>…entran en escena los <strong>esquemas paramétricos</strong></em></p>
+<p><span style="color: #ff0000;"><strong><em>Reedición ampliada de una entrada publicada en arquitextonica.net el 7 de diciembre de 2015</em></strong></span></p>
+<div class="footnotes"><hr />
+<ol>
+<li id="fn:1">
+<p>Wiener, N. (2013). Cybernetics: Or Control and Communication in the Animal and the Machine. Quid Pro, LLC. <a class="reversefootnote" title="return to article" href="#fnref:1"> ↩</a></p>
+</li>
+<li id="fn:2">
+<p>Castells, M. (2005). La era de la informacion/The Era of Information (La sociedad red) (Spanish Edition). Alianza Editorial Sa. p. 51 <a class="reversefootnote" title="return to article" href="#fnref:2"> ↩</a></p>
+</li>
+</ol>
+</div>	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Publicado el </span><a href="http://arquitextonica.net/research/004-information-is-information/" rel="bookmark"><time class="entry-date published" datetime="2019-01-15T21:00:51+00:00">enero 15, 2019</time><time class="updated" datetime="2019-01-15T21:06:21+00:00">enero 15, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Autor </span><a class="url fn n" href="http://arquitextonica.net/author/admin/">Miguel Villegas-Ballesta</a></span></span><span class="cat-links"><span class="screen-reader-text">Categorías </span><a href="http://arquitextonica.net/category/arquitectura/" rel="category tag">Arquitectura</a>, <a href="http://arquitextonica.net/category/research/" rel="category tag">Research</a></span><span class="tags-links"><span class="screen-reader-text">Etiquetas </span><a href="http://arquitextonica.net/tag/arquitectura/" rel="tag">arquitectura</a>, <a href="http://arquitextonica.net/tag/citas/" rel="tag">citas</a>, <a href="http://arquitextonica.net/tag/doctorado/" rel="tag">doctorado</a>, <a href="http://arquitextonica.net/tag/information/" rel="tag">information</a>, <a href="http://arquitextonica.net/tag/research/" rel="tag">research</a></span><span class="comments-link"><a href="http://arquitextonica.net/research/004-information-is-information/#comments">1 comentario<span class="screen-reader-text"> en 004. Information is <em>information</em>.</span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-10 -->
+
+<article id="post-22" class="post-22 post type-post status-publish format-standard hentry category-aec category-arquitectura tag-inspiration tag-lecture tag-tech tag-wework">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://arquitextonica.net/arquitectura/003-algunas-claves-para-entender-el-trabajo-de-wework/" rel="bookmark">003. Algunas claves para entender el trabajo de WeWork.</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' width='660' height='372' src='https://www.youtube.com/embed/Qbdt8kMj2Eo?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=es-ES&#038;autohide=2&#038;wmode=transparent' allowfullscreen='true' style='border:0;' sandbox='allow-scripts allow-same-origin allow-popups allow-presentation'></iframe></span>
+</div></figure>
+
+
+
+<p>Siempre es interesante escuchar a compañeros arquitectos trabajando en una de las <a href="https://twitter.com/WeWork">empresas inmobiliarias más innovadoras del planeta</a>, pero me quedo con los últimos dos minutos de esta charla de <a href="http://Andrew Heumann">Andrew Heumann</a> y <a href="https://twitter.com/gtalarico">Gui Talarico</a> y me váis a permitir que haga una interpretación propia&#8230;<br></p>
+
+
+
+<ol><li>Invest in people and their skills.<ul><li>Porque no podemos seguir solo resolviendo. Si no hay inversión en el talento de las personas, no avanzamos.</li></ul></li><li>Focus on web tech.<ul><li>Todo está en internet. Tu trabajo debería estar también y ser infinitamente accesible.</li></ul></li><li>Your portfolio should be a database.<ul><li>Esto tiene que ver con el orden de nuestro trabajo. Archivar, catalogar, clasificar, ordenar, hacer reciclable, reutilizable, el esfuerzo que realizamos en cada proyecto para multiplicarlo por <strong>n</strong>.</li></ul></li><li>Write code for your business, not your buildings.<ul><li>Es casi un corolario de lo anterior. Si trabajas en el campo de lo digital, piensa a lo grande. Amplía la perspectiva y desarrolla con vistas a futuro. No programes para el ahora, programa de forma sostenible y pensando en lo útil que ese código va a ser en cada nueva iteración.</li></ul></li></ol>
+
+
+
+<p></p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Publicado el </span><a href="http://arquitextonica.net/arquitectura/003-algunas-claves-para-entender-el-trabajo-de-wework/" rel="bookmark"><time class="entry-date published" datetime="2019-01-10T21:40:51+00:00">enero 10, 2019</time><time class="updated" datetime="2019-01-10T21:41:53+00:00">enero 10, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Autor </span><a class="url fn n" href="http://arquitextonica.net/author/admin/">Miguel Villegas-Ballesta</a></span></span><span class="cat-links"><span class="screen-reader-text">Categorías </span><a href="http://arquitextonica.net/category/aec/" rel="category tag">AEC</a>, <a href="http://arquitextonica.net/category/arquitectura/" rel="category tag">Arquitectura</a></span><span class="tags-links"><span class="screen-reader-text">Etiquetas </span><a href="http://arquitextonica.net/tag/inspiration/" rel="tag">inspiration</a>, <a href="http://arquitextonica.net/tag/lecture/" rel="tag">lecture</a>, <a href="http://arquitextonica.net/tag/tech/" rel="tag">tech</a>, <a href="http://arquitextonica.net/tag/wework/" rel="tag">WeWork</a></span><span class="comments-link"><a href="http://arquitextonica.net/arquitectura/003-algunas-claves-para-entender-el-trabajo-de-wework/#comments">1 comentario<span class="screen-reader-text"> en 003. Algunas claves para entender el trabajo de WeWork.</span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-22 -->
+
+<article id="post-19" class="post-19 post type-post status-publish format-standard hentry category-arquitectura category-proyectos-arquitectonicos category-research tag-arquitectura tag-diseno tag-investigacion tag-proyectos">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://arquitextonica.net/research/002-como-se-hace-un-proyecto-de-arquitectura/" rel="bookmark">002. ¿Cómo se hace un proyecto de arquitectura?</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Por enredos –caminos descubiertos dentro de la Red– llego al artículo de Santiago de Molina “¿Cómo se hace un proyecto?” <a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> y me irrito.</p>
+<p>Me irrito porque admiro desde hace años su capacidad de dar donde duele, de decir con pocas palabras cosas muy claras y que, aparentemente, sin contundencia, te dejan noqueado.</p>
+<p>Me irrito tratando de encontrar un argumento para rebatir los suyos y solo encuentro afirmaciones que, aunque propias, carecen de su proverbial contundencia.</p>
+<p>Yo me hago todos los días la pregunta. Constantemente. Entre otras miles que fluyen por mi cabeza, esa se repite. Quizás porque no me la ha contestado nunca nadie. Quizás porque no sea todavía suficientemente arquitecto. Quizás porque mi innegable pereza me haga buscar constantemente el atajo que supla mi falta de brillantez.</p>
+<p>Y le vuelvo a dar la razón a Santiago al darme cuenta que en mis años de docencia yo tampoco la contesté. Y sigo irritándome, porque no le veo belleza alguna a ninguna metáfora que pueda siquiera acercarse a arrojar algo de luz sobre eso que a los <em>brillantes</em>, a los de <em>gran sensibilidad</em>, a los <em>talentosos</em>, les es innato, como caído del cielo.</p>
+<p>Me irrito, y esa irritación me hace recuperar esa máxima de que si no sabes explicar algo es que simplemente no lo sabes. Me niego a pensar que un proyecto es simplemente una serie de hallazgos afortunados basados en la intuición y en la acumulación de horas de vuelo y errores.</p>
+<p>El ser humano no puede ser –no debe ser– tan soberbio como para mantener ocultos los procesos mentales que hacen que las personas puedan habitar bien.</p>
+<p>Ese es el motor de mi investigación. Demostrar que no hay que ser <em>divino</em> para crear arquitectura. Que no somos <em>magos</em> que debamos mantener ocultos nuestros trucos. Que si desencriptamos nuestros procesos creativos, podremos abrirlos a toda la sociedad y hacerlos más ricos, hacerlos capaces de producir mejor arquitectura.</p>
+<p>Me irrito leyendo a Zygmunt Bauman y juego a cambiarle diametralmente el sentido a sus textos y hacerlos líquidamente optimistas. Me aferro al “Los Bárbaros” de Baricco como una revelación de un presente paralelo. Y tengo ya ajada la cita de Hock…</p>
+<blockquote><p>Information becomes knowledge when integrated with other information in a form useful for making decisions and determining actions.</p>
+<p>Knowledge becomes understanding when related to other knowledge in a manner useful in anticipating, judging and acting. <a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a></p></blockquote>
+<p><em>Lo digital</em> nos permite operar con la información, nos hace <em>sociedad informacional</em></p>
+<blockquote><p>Forma específica de organización social en la que la generación, el procesamiento y la producción de información se convierten en fuentes fundamentales de productividad. <a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a></p></blockquote>
+<p>Y es esa productividad la que me interesa, para salvar el vértigo ante el sobreesfuerzo que menciona Santiago. Porque todos, incluso los arquitectos mediocres, tenemos derecho a poder hacer buenos proyectos; pero no proyectos genéricos, si no proyectos que contengan ese núcleo esencial que es común a toda la, si no brillante, si buena arquitectura.</p>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn:1"><a href="http://bit.ly/smolinaproyecto">¿Cómo se hace un proyecto?</a> <a href="#fnref:1" title="return to article" class="reversefootnote">&nbsp;↩</a></li>
+<li id="fn:2"><a href="http://bit.ly/DeeHock">Dee Hock’s 1996 quote</a> <a href="#fnref:2" title="return to article" class="reversefootnote">&nbsp;↩</a></li>
+<li id="fn:3">M. Castells, 1999 pág 51 <a href="#fnref:3" title="return to article" class="reversefootnote">&nbsp;↩</a></li>
+</ol>
+</div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Publicado el </span><a href="http://arquitextonica.net/research/002-como-se-hace-un-proyecto-de-arquitectura/" rel="bookmark"><time class="entry-date published" datetime="2019-01-09T22:09:34+00:00">enero 9, 2019</time><time class="updated" datetime="2019-01-09T22:09:41+00:00">enero 9, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Autor </span><a class="url fn n" href="http://arquitextonica.net/author/admin/">Miguel Villegas-Ballesta</a></span></span><span class="cat-links"><span class="screen-reader-text">Categorías </span><a href="http://arquitextonica.net/category/arquitectura/" rel="category tag">Arquitectura</a>, <a href="http://arquitextonica.net/category/research/proyectos-arquitectonicos/" rel="category tag">Proyectos Arquitectónicos</a>, <a href="http://arquitextonica.net/category/research/" rel="category tag">Research</a></span><span class="tags-links"><span class="screen-reader-text">Etiquetas </span><a href="http://arquitextonica.net/tag/arquitectura/" rel="tag">arquitectura</a>, <a href="http://arquitextonica.net/tag/diseno/" rel="tag">diseño</a>, <a href="http://arquitextonica.net/tag/investigacion/" rel="tag">investigación</a>, <a href="http://arquitextonica.net/tag/proyectos/" rel="tag">proyectos</a></span><span class="comments-link"><a href="http://arquitextonica.net/research/002-como-se-hace-un-proyecto-de-arquitectura/#respond">Deja un comentario<span class="screen-reader-text"> en 002. ¿Cómo se hace un proyecto de arquitectura?</span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-19 -->
+
+<article id="post-11" class="post-11 post type-post status-publish format-standard hentry category-generative-design-research category-research tag-biomorpher tag-compdesign tag-evolutionary tag-generative tag-grasshopper tag-harding tag-video">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://arquitextonica.net/research/001-biomorpher-de-john-harding/" rel="bookmark">001. Biomorpher de John Harding</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' width='660' height='372' src='https://www.youtube.com/embed/EM6uoXW7Yeo?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=es-ES&#038;autohide=2&#038;wmode=transparent' allowfullscreen='true' style='border:0;' sandbox='allow-scripts allow-same-origin allow-popups allow-presentation'></iframe></span>
+</div></figure>
+
+
+
+<p>Una introducción somera pero suficientemente clara sobre las posibilidades del diseño evolutivo. El trabajo de Harding, consolidado en un <a href="http://bit.ly/Biomorpher"><b>plugin para Grasshopper</b></a>  tiene un interés altísimo por la reflexión que supone alrededor de la supuesta incapacidad de las herramientas paramétricas para generar variación, pero para nosotros, y es un tema que discutiremos con más profundidad, un fallo conceptual en el que se soporta su trabajo es la confusión/sustitución de la topología del grafo (Dyrected Acyclic Graph) con la topología espacial del objeto diseñado.</p>
+
+
+
+<p></p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Publicado el </span><a href="http://arquitextonica.net/research/001-biomorpher-de-john-harding/" rel="bookmark"><time class="entry-date published updated" datetime="2019-01-02T20:18:26+00:00">enero 2, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Autor </span><a class="url fn n" href="http://arquitextonica.net/author/admin/">Miguel Villegas-Ballesta</a></span></span><span class="cat-links"><span class="screen-reader-text">Categorías </span><a href="http://arquitextonica.net/category/research/generative-design-research/" rel="category tag">Generative Design</a>, <a href="http://arquitextonica.net/category/research/" rel="category tag">Research</a></span><span class="tags-links"><span class="screen-reader-text">Etiquetas </span><a href="http://arquitextonica.net/tag/biomorpher/" rel="tag">Biomorpher</a>, <a href="http://arquitextonica.net/tag/compdesign/" rel="tag">compdesign</a>, <a href="http://arquitextonica.net/tag/evolutionary/" rel="tag">evolutionary</a>, <a href="http://arquitextonica.net/tag/generative/" rel="tag">Generative</a>, <a href="http://arquitextonica.net/tag/grasshopper/" rel="tag">grasshopper</a>, <a href="http://arquitextonica.net/tag/harding/" rel="tag">Harding</a>, <a href="http://arquitextonica.net/tag/video/" rel="tag">video</a></span><span class="comments-link"><a href="http://arquitextonica.net/research/001-biomorpher-de-john-harding/#respond">Deja un comentario<span class="screen-reader-text"> en 001. Biomorpher de John Harding</span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-11 -->
+
+<article id="post-5" class="post-5 post type-post status-publish format-standard hentry category-uncategorized tag-news tag-nosotros">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="http://arquitextonica.net/uncategorized/000-una-nueva-etapa/" rel="bookmark">000. Una nueva etapa&#8230;</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<h2></h2>
+
+
+
+<p>Después de más de catorce años de vida, hemos decidido empezar una nueva etapa de <strong>arquitextonica</strong>. Ya hicimos un cambio fuerte hace años con la escisión de nuestra actividad profesional a <strong><a href="Http://villegasbueno.net">villegasbueno arquitectura</a></strong>. Ahora la escisión es distinta.  Vamos a sacar de arquitextonica.net todos los temas políticos y profesionales que han empañado <em>ligeramente</em> la importancia de nuestra actividad académica e investigadora. No es que nuestra faceta <em>política</em> no sea importante, pero quizás ahora que estamos en el extranjero y el COAS está en buenas manos, es un tema secundario en comparación con la importancia que tiene para nosotros concentrarnos en la investigación y desarrollo de los temas que nos interesan alrededor de la información y sus implicaciones en la arquitectura.</p>
+
+
+
+<h1>¿Qué vais a encontrar aquí a partir de ahora entonces?</h1>
+
+
+
+<p>Pues arquitexton9ica seguirá siendo un poco cajón de sastre, pero como siempre, haremos un trabajo intenso de categorización y etiquetado para que la información se acerque lo más posible al conocimiento.  Incorporaremos <em><a href="Http://Twitter.com/arquitextonica">tuits</a></em><a href="Http://Twitter.com/arquitextonica"> interesantes que vayamos encontrando</a>, para que se queden archivados, lecturas de papers que trataremos de poner en crisis para fomentar la discusión y el debate, agentes interesantes que vayamos descubriendo… Y en paralelo y en la medida de lo posible, iremos desgranando <em>cachitos</em> de nuestra investigación.</p>
+
+
+
+<h1>¿Y el archivo?</h1>
+
+
+
+<p>En un pequeño <em>homenaje</em>, hemos recuperado el nombre que le dimos en sus orígenes a ese espacio digital de comunicación que tantos años nos resistimos en llamar <strong><em>blog</em></strong>. <strong><a href="http://bit.ly/trazas2019">http://trazas.arquitextonica.net</a></strong> vuelve a ser la URL a la que hemos mudado todo el archivo existente hasta la fecha. Trataremos de hacer, poco a poco, una limpieza fuerte. Eliminar artículos breves cuyos enlaces han fenecido en estos años, arreglar publicaciones que tienen las imágenes desenlazadas, ocultar artículos que ya no vienen a cuento… y puede, solo puede, que sigamos usándolo como <em>speaker’s corner</em> cuando haya algo lo suficientemente relevante como para que no nos podamos quedar callados.</p>
+
+
+
+<p></p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Publicado el </span><a href="http://arquitextonica.net/uncategorized/000-una-nueva-etapa/" rel="bookmark"><time class="entry-date published" datetime="2019-01-01T13:33:24+00:00">enero 1, 2019</time><time class="updated" datetime="2019-02-27T21:55:46+00:00">febrero 27, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Autor </span><a class="url fn n" href="http://arquitextonica.net/author/admin/">Miguel Villegas-Ballesta</a></span></span><span class="cat-links"><span class="screen-reader-text">Categorías </span><a href="http://arquitextonica.net/category/uncategorized/" rel="category tag">Uncategorized</a></span><span class="tags-links"><span class="screen-reader-text">Etiquetas </span><a href="http://arquitextonica.net/tag/news/" rel="tag">news</a>, <a href="http://arquitextonica.net/tag/nosotros/" rel="tag">Nosotros</a></span><span class="comments-link"><a href="http://arquitextonica.net/uncategorized/000-una-nueva-etapa/#respond">Deja un comentario<span class="screen-reader-text"> en 000. Una nueva etapa&#8230;</span></a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-5 -->
+
+	<nav class="navigation pagination" role="navigation" aria-label="Entradas">
+		<h2 class="screen-reader-text">Navegación de entradas</h2>
+		<div class="nav-links"><span aria-current="page" class="page-numbers current"><span class="meta-nav screen-reader-text">Página </span>1</span>
+<a class="page-numbers" href="http://arquitextonica.net/page/2/"><span class="meta-nav screen-reader-text">Página </span>2</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class="page-numbers" href="http://arquitextonica.net/page/78/"><span class="meta-nav screen-reader-text">Página </span>78</a>
+<a class="next page-numbers" href="http://arquitextonica.net/page/2/">Página siguiente</a></div>
+	</nav>
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+									<a href="https://es.wordpress.org/" class="imprint">
+				Funciona gracias a WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+<link rel='stylesheet' id='jetpack-block-slideshow-css'  href='https://c0.wp.com/p/jetpack/9.5/_inc/blocks/slideshow/view.css' media='all' />
+<script src='https://c0.wp.com/p/jetpack/9.5/_inc/build/photon/photon.min.js' id='jetpack-photon-js'></script>
+<script src='http://arquitextonica.net/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141028' id='twentyfifteen-skip-link-focus-fix-js'></script>
+<script id='twentyfifteen-script-js-extra'>
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expande el men\u00fa inferior<\/span>","collapse":"<span class=\"screen-reader-text\">plegar men\u00fa inferior<\/span>"};
+</script>
+<script src='http://arquitextonica.net/wp-content/themes/twentyfifteen/js/functions.js?ver=20171218' id='twentyfifteen-script-js'></script>
+<script src='https://c0.wp.com/p/jetpack/9.5/_inc/build/widgets/eu-cookie-law/eu-cookie-law.min.js' id='eu-cookie-law-script-js'></script>
+<script src='http://arquitextonica.net/wp-content/plugins/jetpack/vendor/automattic/jetpack-lazy-images/src/js/intersectionobserver-polyfill.min.js?ver=1.1.2' id='jetpack-lazy-images-polyfill-intersectionobserver-js'></script>
+<script id='jetpack-lazy-images-js-extra'>
+var jetpackLazyImagesL10n = {"loading_warning":"Images are still loading. Please cancel your print and try again."};
+</script>
+<script src='http://arquitextonica.net/wp-content/plugins/jetpack/vendor/automattic/jetpack-lazy-images/src/js/lazy-images.min.js?ver=1.1.2' id='jetpack-lazy-images-js'></script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/wp-embed.min.js' id='wp-embed-js'></script>
+<script id='jetpack-carousel-js-extra'>
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"es","ajaxurl":"http:\/\/arquitextonica.net\/wp-admin\/admin-ajax.php","nonce":"5de7521ef4","display_exif":"1","display_comments":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comentario","post_comment":"Publicar comentario","write_comment":"Escribe un comentario...","loading_comments":"Cargando comentarios...","download_original":"Ver tama\u00f1o completo <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Por favor, aseg\u00farate de enviar el texto con tu comentario.","no_comment_email":"Por favor, proporciona una direcci\u00f3n de correo electr\u00f3nico para comentar.","no_comment_author":"Por favor, a\u00f1ade tu nombre al comentario.","comment_post_error":"Lo sentimos, pero ha habido un error al publicar tu comentario. Por favor, vuelve a intentarlo m\u00e1s tarde.","comment_approved":"Se ha aprobado tu comentario.","comment_unapproved":"Tu comentario est\u00e1 en moderaci\u00f3n.","camera":"C\u00e1mara","aperture":"Abertura","shutter_speed":"Velocidad de obturaci\u00f3n","focal_length":"Longitud focal","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"http:\/\/arquitextonica.net\/wp-login.php?redirect_to=http%3A%2F%2Farquitextonica.net%2Fresearch%2Farquitectura-informacional-resumen-del-estado-de-la-investigacion-20201018%2F","blog_id":"1","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"local_comments_commenting_as":"<fieldset><label for=\"email\">Correo electr\u00f3nico (Obligatorio)<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Nombre (Obligatorio)<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Web<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>"};
+</script>
+<script src='https://c0.wp.com/p/jetpack/9.5/_inc/build/carousel/jetpack-carousel.min.js' id='jetpack-carousel-js'></script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/dist/vendor/wp-polyfill.min.js' id='wp-polyfill-js'></script>
+<script id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="http://arquitextonica.net/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="http://arquitextonica.net/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="http://arquitextonica.net/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="http://arquitextonica.net/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="http://arquitextonica.net/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="http://arquitextonica.net/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="http://arquitextonica.net/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"></scr' + 'ipt>' );
+</script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/dist/vendor/lodash.min.js' id='lodash-js'></script>
+<script id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/dist/dom-ready.min.js' id='wp-dom-ready-js'></script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/dist/escape-html.min.js' id='wp-escape-html-js'></script>
+<script id='jetpack-block-slideshow-js-extra'>
+var Jetpack_Block_Assets_Base_Url = {"url":"http:\/\/arquitextonica.net\/wp-content\/plugins\/jetpack\/_inc\/blocks\/"};
+</script>
+<script src='https://c0.wp.com/p/jetpack/9.5/_inc/blocks/slideshow/view.js' id='jetpack-block-slideshow-js'></script>
+<script src='https://c0.wp.com/p/jetpack/9.5/modules/theme-tools/responsive-videos/responsive-videos.min.js' id='jetpack-responsive-videos-min-script-js'></script>
+<script src='https://stats.wp.com/e-202110.js' defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:9.5',blog:'74299908',post:'0',tz:'0',srv:'arquitextonica.net'} ]);
+	_stq.push([ 'clickTrackerInit', '74299908', '0' ]);
+</script>
+
+</body>
+</html>

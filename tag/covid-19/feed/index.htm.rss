@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>COVID-19 &#8211; ARQcoaching</title>
+	<atom:link href="https://www.coachingarquitectos.com/tag/covid-19/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.coachingarquitectos.com</link>
+	<description>Coaching para arquitectos por arquitectos</description>
+	<lastBuildDate>Tue, 14 Apr 2020 07:18:03 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+
+<image>
+	<url>https://www.coachingarquitectos.com/wp-content/uploads/2018/10/logo-ARQcoaching-fav-icon-1.png</url>
+	<title>COVID-19 &#8211; ARQcoaching</title>
+	<link>https://www.coachingarquitectos.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>CÓMO AFECTA EL COVID-19 A LA ARQUITECTURA Y QUÉ PODEMOS HACER</title>
+		<link>https://www.coachingarquitectos.com/covid-19-arquitectura/</link>
+					<comments>https://www.coachingarquitectos.com/covid-19-arquitectura/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 14 Apr 2020 06:30:33 +0000</pubDate>
+				<category><![CDATA[estudio]]></category>
+		<category><![CDATA[COVID-19]]></category>
+		<category><![CDATA[estrategia]]></category>
+		<category><![CDATA[gestión]]></category>
+		<category><![CDATA[productividad]]></category>
+		<guid isPermaLink="false">https://www.coachingarquitectos.com/?p=9253</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/covid-19-arquitectura/">CÓMO AFECTA EL COVID-19 A LA ARQUITECTURA Y QUÉ PODEMOS HACER</a></p>
+<p>La llegada del COVID-19 ha provocado una crisis global. También en el sector de la arquitectura, por supuesto. Te cuento en este post qué efectos está teniendo en los estudios y empresas y qué podemos hacer para intentar paliarlos.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/covid-19-arquitectura/feed/</wfw:commentRss>
+			<slash:comments>14</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
