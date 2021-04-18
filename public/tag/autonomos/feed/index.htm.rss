@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>autónomos &#8211; ARQcoaching</title>
+	<atom:link href="https://www.coachingarquitectos.com/tag/autonomos/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.coachingarquitectos.com</link>
+	<description>Coaching para arquitectos por arquitectos</description>
+	<lastBuildDate>Sat, 24 Aug 2019 18:47:23 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+
+<image>
+	<url>https://www.coachingarquitectos.com/wp-content/uploads/2018/10/logo-ARQcoaching-fav-icon-1.png</url>
+	<title>autónomos &#8211; ARQcoaching</title>
+	<link>https://www.coachingarquitectos.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>LA GUÍA BRUCE LEE PARA SER UN ARQUITECTO AUTÓNOMO</title>
+		<link>https://www.coachingarquitectos.com/miedos-del-arquitecto-autonomo/</link>
+					<comments>https://www.coachingarquitectos.com/miedos-del-arquitecto-autonomo/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Mon, 24 Apr 2017 22:05:23 +0000</pubDate>
+				<category><![CDATA[personal]]></category>
+		<category><![CDATA[autónomos]]></category>
+		<category><![CDATA[efectividad personal]]></category>
+		<category><![CDATA[estrategia]]></category>
+		<category><![CDATA[estrés]]></category>
+		<category><![CDATA[freelance]]></category>
+		<category><![CDATA[honorarios]]></category>
+		<category><![CDATA[liderazgo]]></category>
+		<category><![CDATA[miedo]]></category>
+		<category><![CDATA[rentabilidad]]></category>
+		<guid isPermaLink="false">http://www.coachingarquitectos.com/?p=3779</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/miedos-del-arquitecto-autonomo/">LA GUÍA BRUCE LEE PARA SER UN ARQUITECTO AUTÓNOMO</a></p>
+<p>A la hora de afrontar una profesión complicada como es la arquitectura desde la posición del autónomo, es normal que surjan miedos. Veamos cómo podemos reducir esos miedos y también enfrentarnos a los típicos problemas prácticos del arquitecto autónomo.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/miedos-del-arquitecto-autonomo/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>arquitectos famosos &#8211; ARQcoaching</title>
+	<atom:link href="https://www.coachingarquitectos.com/tag/arquitectos-famosos/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.coachingarquitectos.com</link>
+	<description>Coaching para arquitectos por arquitectos</description>
+	<lastBuildDate>Wed, 11 Mar 2020 14:58:37 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+
+<image>
+	<url>https://www.coachingarquitectos.com/wp-content/uploads/2018/10/logo-ARQcoaching-fav-icon-1.png</url>
+	<title>arquitectos famosos &#8211; ARQcoaching</title>
+	<link>https://www.coachingarquitectos.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>¿POR QUÉ SON FAMOSOS LOS ARQUITECTOS FAMOSOS?</title>
+		<link>https://www.coachingarquitectos.com/arquitectos-famosos/</link>
+					<comments>https://www.coachingarquitectos.com/arquitectos-famosos/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 12 Feb 2019 07:30:28 +0000</pubDate>
+				<category><![CDATA[marketing]]></category>
+		<category><![CDATA[arquitectos famosos]]></category>
+		<category><![CDATA[estrategia]]></category>
+		<category><![CDATA[modelo de negocio]]></category>
+		<category><![CDATA[posicionamiento]]></category>
+		<category><![CDATA[promoción]]></category>
+		<guid isPermaLink="false">https://www.coachingarquitectos.com/?p=6991</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/arquitectos-famosos/">¿POR QUÉ SON FAMOSOS LOS ARQUITECTOS FAMOSOS?</a></p>
+<p>Los arquitectos famosos lo son por varias razones y en ámbitos diversos. Sin embargo, hay algo que comparten todos y que explica el por qué de su fama. Veamos qué es, qué significa exactamente la "fama" y cómo llegar a situarte en la tuya particular.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/arquitectos-famosos/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

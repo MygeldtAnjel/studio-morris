@@ -1,0 +1,4438 @@
+<!DOCTYPE html>
+<html lang='es' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='http://purl.org/dc/elements/1.1/' rel='schema.DC'/>
+<meta content='Taller BIM' name='DC.title'/>
+<meta content='https://www.tallerbim.com' name='DC.identifier'/>
+<meta content='Un blog sobre Building Information Modelling (BIM), tecnología y metodología de construcción.' name='DC.description'/>
+<meta content='BIM, Revit, Construcción, Ingeniería, Arquitectura' name='DC.subject'/>
+<meta content='es' name='DC.language' scheme='ISO639-1'/>
+<meta content='https://sites.google.com/view/alfonso-miro-sarda/' name='DC.creator'/>
+<meta content='CC-BY-SA-ND' name='DC.license'/>
+<meta content='http://purl.org/dc/dcmitype/Collection' name='DC.type' scheme='DCMITYPE'/>
+<meta content='http://purl.org/dc/dcmitype/Dataset' name='DC.type' scheme='DCMITYPE'/>
+<meta content='http://purl.org/dc/dcmitype/StillImage' name='DC.type' scheme='DCMITYPE'/>
+<meta content='http://purl.org/dc/dcmitype/Text' name='DC.type' scheme='DCMITYPE'/>
+<!-- Etiqueta global de sitio (gtag.js) de Google Analytics -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=UA-99014335-2'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('set', 'anonymizeIp', true;'config', 'UA-99014335-2');
+</script>
+<script async='async' defer='defer' src='https://platform.linkedin.com/badges/js/profile.js' type='text/javascript'></script>
+<style type='text/css'>@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf)format('truetype');}</style>
+<style class='singleton-element' type='text/css'>
+     .cookie-choices-info{ 
+        background-color: #bf1600 !important;
+ }
+  </style>
+<style class='singleton-element' type='text/css'>
+     #cookieChoiceInfo .cookie-choices-text {
+         font-family: 'Roboto' sans-serif !important;
+         color: #000000;
+     }
+  </style>
+<script type='text/javascript'>(function(){if(document.URL.match(/\.blogspot\.(com\...\/|..\/)/)){var URL=document.URL
+URL=URL.replace(URL.match(/\.blogspot\.(com\...\/|..\/)/)[0],".blogspot.com\/ncr\/")
+document.location=URL}})()</script>
+<script type='application/ld+json'> 
+{
+  "@context": "http://www.schema.org",
+  "@type": "WebSite",
+  "name": "Taller BIM",
+  "url": "http://tallerbim.com"
+}
+ </script>
+<script type='application/ld+json'>
+{
+  "@context": "http://schema.org/",
+  "@type": "Person",
+  "name": "Alfonso Miró Sardá",
+  "jobTitle": "Arquitecto Técnico, Formador y Consultor BIM",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Madrid",
+    "addressRegion": "Spain"
+  }
+}
+</script>
+<link href='http://www.tallerbim.com' rel='canonical'/>
+<link href='http://www.tallerbim.com/?m=1' rel='alternate'/>
+<link href='http://tallerbim.com/' rel='alternate'/>
+<link href='http://www.tallerbim.com/index.html' rel='alternate'/>
+<link href='http:/www.tallerbim.com/?m1' media='only screen and (max-width:640px)' rel='alternate'/>
+<meta content='A2ArtwMiL5Bn1TYmKbiEuKjFYAJAOLJ7-Y4lgeMFjyQ' name='google-site-verification'/>
+<meta content='079E9F195E1682F5023335EA66EB045B' name='msvalidate.01'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='A2ArtwMiL5Bn1TYmKbiEuKjFYAJAOLJ7-Y4lgeMFjyQ' name='google-site-verification'/>
+<meta content='https://1.bp.blogspot.com/-Psn3Wet5tfc/WVPwvjxxtVI/AAAAAAAABAY/4RZ14cI5Npo7Dz6BYTXqfrsMXoyEdF-4QCK4BGAYYCw/s0/Menil-Museum%252C-R.-PianoWEB.png' itemprop='image'/>
+<meta content='Alfonso Miró Sardá' name='author'/>
+<meta content='Taller BIM' name='title'/>
+<meta content='Building Information Modeling, BIM, Revit' name='keywords'/>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'/>
+<link href='/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'/>
+<title>Blogs y bibliotecas BIM</title>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<!-- Chrome, Firefox OS and Opera -->
+<meta content='#ffffff' name='theme-color'/>
+<!-- Windows Phone -->
+<meta content='#ffffff' name='msapplication-navbutton-color'/>
+<meta content='blogger' name='generator'/>
+<link href='https://www.tallerbim.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://www.tallerbim.com/p/blogs-y-paginas-bim.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Taller BIM - Atom" href="https://www.tallerbim.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Taller BIM - RSS" href="https://www.tallerbim.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Taller BIM - Atom" href="https://www.blogger.com/feeds/7839489140860278476/posts/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<meta content='Una recopilación permanentemente actualizada de los mejores blogs sobre BIM &#40;en inglés y en español&#41; y páginas de descarga de objetos BIM.' name='description'/>
+<meta content='https://www.tallerbim.com/p/blogs-y-paginas-bim.html' property='og:url'/>
+<meta content='Blogs y bibliotecas BIM' property='og:title'/>
+<meta content='Una recopilación permanentemente actualizada de los mejores blogs sobre BIM &amp;#40;en inglés y en español&amp;#41; y páginas de descarga de objetos BIM.' property='og:description'/>
+<meta content='https://2.bp.blogspot.com/-s1dZVdaOfJA/WcVVSxaRHEI/AAAAAAAABb8/RD0RrO7H08wsW27n1h1g7Off5ik3UI4NQCKgBGAs/w1200-h630-p-k-no-nu/Menil-Museum%252C-R.-PianoWEB.png' property='og:image'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<style id='page-skin-1' type='text/css'><!--
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+/*!************************************************
+* Blogger Template Style
+* Name: Soho
+**************************************************/
+body{overflow-wrap:break-word;word-break:break-word;word-wrap:break-word}
+.hidden{display:none}
+.invisible{visibility:hidden}
+.container::after,.float-container::after{clear:both;content:'';display:table}
+.clearboth{clear:both}
+.dim-overlay {
+background-color: rgba(0, 0, 0, 0.54);
+height: 100vh;
+left: 0;
+position: fixed;
+top: 0;
+width: 100%;
+}
+#sharing-dim-overlay {
+background-color: transparent;
+}
+.loading-spinner-large {
+-webkit-animation: mspin-rotate 1568.63ms infinite linear;
+animation: mspin-rotate 1568.63ms infinite linear;
+height: 48px;
+overflow: hidden;
+position: absolute;
+width: 48px;
+z-index: 200;
+}
+.loading-spinner-large > div {
+-webkit-animation: mspin-revrot 5332ms infinite steps(4);
+animation: mspin-revrot 5332ms infinite steps(4);
+}
+.loading-spinner-large > div > div {
+-webkit-animation: mspin-singlecolor-large-film 1333ms infinite steps(81);
+animation: mspin-singlecolor-large-film 1333ms infinite steps(81);
+background-size: 100%;
+height: 48px;
+width: 3888px;
+}
+.mspin-black-large > div > div,
+.mspin-grey_54-large > div > div {
+background-image: url(https://www.blogblog.com/indie/mspin_black_large.svg);
+}
+.mspin-white-large > div > div {
+background-image: url(https://www.blogblog.com/indie/mspin_white_large.svg);
+}
+.mspin-grey_54-large {
+opacity: .54;
+}
+@-webkit-keyframes mspin-singlecolor-large-film {
+from {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+to {
+-webkit-transform: translateX(-3888px);
+transform: translateX(-3888px);
+}
+}
+@keyframes mspin-singlecolor-large-film {
+from {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+to {
+-webkit-transform: translateX(-3888px);
+transform: translateX(-3888px);
+}
+}
+@-webkit-keyframes mspin-rotate {
+from {
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+to {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+@keyframes mspin-rotate {
+from {
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+to {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+@-webkit-keyframes mspin-revrot {
+from {
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+to {
+-webkit-transform: rotate(-360deg);
+transform: rotate(-360deg);
+}
+}
+@keyframes mspin-revrot {
+from {
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+to {
+-webkit-transform: rotate(-360deg);
+transform: rotate(-360deg);
+}
+}
+input::-ms-clear {
+display: none;
+}
+.blogger-logo,
+.svg-icon-24.blogger-logo {
+fill: #ffffff;
+opacity: 1.0;
+}
+.skip-navigation {
+background-color: #fff;
+box-sizing: border-box;
+color: #000;
+display: block;
+height: 0;
+left: 0;
+line-height: 50px;
+overflow: hidden;
+padding-top: 0;
+position: fixed;
+text-align: center;
+top: 0;
+-webkit-transition: box-shadow 0.3s, height 0.3s, padding-top 0.3s;
+transition: box-shadow 0.3s, height 0.3s, padding-top 0.3s;
+width: 100%;
+z-index: 900;
+}
+.skip-navigation:focus {
+box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+height: 50px;
+}
+#main {
+outline: none;
+}
+.main-heading {
+position: absolute;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 0;
+border: 0;
+height: 1px;
+width: 1px;
+overflow: hidden;
+}
+.widget.Attribution {
+margin-top: 1em;
+text-align: center;
+}
+.widget.Attribution .blogger img,
+.widget.Attribution .blogger svg {
+vertical-align: bottom;
+}
+.widget.Attribution .blogger img {
+margin-right: 0.5em;
+}
+.widget.Attribution div {
+line-height: 24px;
+margin-top: 0.5em;
+}
+.widget.Attribution .image-attribution,
+.widget.Attribution .copyright {
+font-size: 0.7em;
+margin-top: 1.5em;
+}
+.item-control {
+display: none;
+}
+.BLOG_mobile_video_class {
+display: none;
+}
+.bg-photo {
+background-attachment: scroll !important;
+}
+body .CSS_LIGHTBOX {
+z-index: 900;
+}
+.extendable .show-more,
+.extendable .show-less {
+border-color: #bf1600;
+color: #bf1600;
+margin-top: 8px;
+}
+.extendable .show-more.hidden,
+.extendable .show-less.hidden {
+display: none;
+}
+.inline-ad {
+display: none;
+max-width: 100%;
+overflow: hidden;
+}
+.adsbygoogle {
+display: block;
+}
+#cookieChoiceInfo {
+bottom: 0;
+top: auto;
+}
+iframe.b-hbp-video {
+border: 0;
+}
+.post-body img {
+max-width: 100%;
+}
+.post-body iframe {
+max-width: 100%;
+}
+.post-body a[imageanchor="1"] {
+display: inline-block;
+}
+.byline {
+margin-right: 1em;
+}
+.byline:last-child {
+margin-right: 0;
+}
+.paging-control-container {
+margin-bottom: 16px;
+}
+.paging-control-container .paging-control {
+display: inline-block;
+}
+.paging-control-container .paging-control,
+.paging-control-container .comment-range-text::after {
+color: #bf1600;
+}
+.paging-control-container .paging-control,
+.paging-control-container .comment-range-text {
+margin-right: 8px;
+}
+.paging-control-container .paging-control::after,
+.paging-control-container .comment-range-text::after {
+content: '\00B7';
+cursor: default;
+padding-left: 8px;
+pointer-events: none;
+}
+.paging-control-container .paging-control:last-child::after,
+.paging-control-container .comment-range-text:last-child::after {
+content: none;
+}
+.byline.reactions iframe {
+height: 20px;
+}
+.b-notification {
+color: #000;
+background-color: #fff;
+border-bottom: solid 1px #000;
+box-sizing: border-box;
+padding: 16px 32px;
+text-align: center;
+}
+.b-notification.visible {
+-webkit-transition: margin-top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+transition: margin-top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.b-notification.invisible {
+position: absolute;
+}
+.b-notification-close {
+position: absolute;
+right: 8px;
+top: 8px;
+}
+.no-posts- {
+line-height: 40px;
+text-align: center;
+}
+@media screen and (max-width: 1340px) {
+body.item-view .post-body a[imageanchor="1"][style*="float: left;"],
+body.item-view .post-body a[imageanchor="1"][style*="float: right;"] {
+float: none !important;
+clear: none !important;
+}
+body.item-view .post-body a[imageanchor="1"] img {
+display: block;
+height: auto;
+margin: 0 auto;
+}
+body.item-view .post-body > .separator:first-child > a[imageanchor="1"]:first-child {
+margin-top: 20px;
+}
+.post-body a[imageanchor] {
+display: block;
+}
+body.item-view .post-body a[imageanchor="1"] {
+margin-left: 0 !important;
+margin-right: 0 !important;
+}
+body.item-view .post-body a[imageanchor="1"] + a[imageanchor="1"] {
+margin-top: 16px;
+}
+}
+#comments {
+border-top: 1px dashed rgba(0, 0, 0, 0.54);
+margin-top: 20px;
+padding: 20px;
+}
+#comments .comment-thread ol {
+margin: 0;
+padding-left: 0;
+}
+#comments .comment-thread ol {
+padding-left: 0;
+}
+#comments .comment-thread .comment-replies,
+#comments .comment .comment-replybox-single {
+margin-left: 60px;
+}
+#comments .comment-thread .thread-count {
+display: none;
+}
+#comments .comment {
+list-style-type: none;
+padding: 0 0 30px 0;
+position: relative;
+}
+#comments .comment .comment {
+padding-bottom: 8px;
+}
+.comment .avatar-image-container {
+position: absolute;
+}
+.comment .avatar-image-container img {
+border-radius: 50%;
+}
+.avatar-image-container svg,
+.comment .avatar-image-container .avatar-icon {
+border-radius: 50%;
+border: solid 1px #2f2523;
+box-sizing: border-box;
+fill: #2f2523;
+height: 35px;
+margin: 0;
+padding: 7px;
+width: 35px;
+}
+.comment .comment-block {
+margin-top: 10px;
+padding-bottom: 0;
+}
+.comment .comment-block {
+margin-left: 60px;
+}
+#comments .comment-author-header-wrapper {
+margin-left: 40px;
+}
+#comments .comment .thread-expanded .comment-block {
+padding-bottom: 20px;
+}
+#comments .comment .comment-header .user,
+#comments .comment .comment-header .user a {
+color: #2f2523;
+font-style: normal;
+font-weight: bold;
+}
+#comments .comment .comment-actions {
+background: transparent;
+border: 0;
+box-shadow: none;
+color: #bf1600;
+cursor: pointer;
+font-size: 14px;
+font-weight: bold;
+outline: none;
+text-decoration: none;
+text-transform: uppercase;
+width: auto;
+bottom: 0;
+margin-bottom: 15px;
+position: absolute;
+}
+#comments .comment .comment-actions > * {
+margin-right: 8px;
+}
+#comments .comment .comment-header .datetime {
+bottom: 0;
+color: #2f2523;
+display: inline-block;
+font-size: 13px;
+font-style: italic;
+}
+#comments .comment .comment-header .datetime {
+margin-left: 8px;
+}
+#comments .comment .comment-header .datetime a,
+#comments .comment .comment-footer .comment-timestamp a {
+color: #2f2523;
+}
+.comment .comment-body,
+#comments .comment .comment-content {
+margin-top: 12px;
+word-break: break-word;
+}
+.comment-body {
+margin-bottom: 12px;
+}
+#comments.embed[data-num-comments="0"] {
+border: none;
+margin-top: 0;
+padding-top: 0;
+}
+#comments.embed[data-num-comments="0"] #comment-post-message,
+#comments.embed[data-num-comments="0"] div.comment-form > p,
+#comments.embed[data-num-comments="0"] p.comment-footer {
+display: none;
+}
+#comment-editor-src {
+display: none;
+}
+.comments .comments-content .loadmore.loaded {
+max-height: 0;
+opacity: 0;
+overflow: hidden;
+}
+.extendable .remaining-items {
+height: 0;
+overflow: hidden;
+-webkit-transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.extendable .remaining-items.expanded {
+height: auto;
+}
+.svg-icon-24,
+.svg-icon-24-button {
+cursor: pointer;
+height: 24px;
+width: 24px;
+min-width: 24px;
+}
+.touch-icon {
+margin: -12px;
+padding: 12px;
+}
+.touch-icon:focus, .touch-icon:active {
+background-color: rgba(153, 153, 153, 0.4);
+border-radius: 50%;
+}
+svg:not(:root).touch-icon {
+overflow: visible;
+}
+html[dir=rtl] .rtl-reversible-icon {
+-webkit-transform: scaleX(-1);
+-ms-transform: scaleX(-1);
+transform: scaleX(-1);
+}
+.touch-icon-button,
+.svg-icon-24-button {
+background: transparent;
+border: 0;
+margin: 0;
+outline: none;
+padding: 0;
+}
+.touch-icon-button .touch-icon:focus,
+.touch-icon-button .touch-icon:active {
+background-color: transparent;
+}
+.touch-icon-button:focus .touch-icon,
+.touch-icon-button:active .touch-icon {
+background-color: rgba(153, 153, 153, 0.4);
+border-radius: 50%;
+}
+.Profile .default-avatar-wrapper .avatar-icon {
+border-radius: 50%;
+border: solid 1px #2f2523;
+box-sizing: border-box;
+fill: #2f2523;
+margin: 0;
+}
+.Profile .individual .default-avatar-wrapper .avatar-icon {
+padding: 25px;
+}
+.Profile .individual .profile-img,
+.Profile .individual .avatar-icon {
+height: 120px;
+width: 120px;
+}
+.Profile .team .default-avatar-wrapper .avatar-icon {
+padding: 8px;
+}
+.Profile .team .profile-img,
+.Profile .team .avatar-icon,
+.Profile .team .default-avatar-wrapper {
+height: 40px;
+width: 40px;
+}
+.snippet-container {
+margin: 0;
+position: relative;
+overflow: hidden;
+}
+.snippet-fade {
+bottom: 0;
+box-sizing: border-box;
+position: absolute;
+width: 96px;
+}
+.snippet-fade {
+right: 0;
+}
+.snippet-fade:after {
+content: '\2026';
+}
+.snippet-fade:after {
+float: right;
+}
+.centered-top-container.sticky {
+left: 0;
+position: fixed;
+right: 0;
+top: 0;
+width: auto;
+z-index: 50;
+-webkit-transition-property: opacity, -webkit-transform;
+transition-property: opacity, -webkit-transform;
+transition-property: transform, opacity;
+transition-property: transform, opacity, -webkit-transform;
+-webkit-transition-duration: 0.2s;
+transition-duration: 0.2s;
+-webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.centered-top-placeholder {
+display: none;
+}
+.collapsed-header .centered-top-placeholder {
+display: block;
+}
+.centered-top-container .Header .replaced h1,
+.centered-top-placeholder .Header .replaced h1 {
+display: none;
+}
+.centered-top-container.sticky .Header .replaced h1 {
+display: block;
+}
+.centered-top-container.sticky .Header .header-widget {
+background: none;
+}
+.centered-top-container.sticky .Header .header-image-wrapper {
+display: none;
+}
+.centered-top-container img,
+.centered-top-placeholder img {
+max-width: 100%;
+}
+.collapsible {
+-webkit-transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.collapsible,
+.collapsible > summary {
+display: block;
+overflow: hidden;
+}
+.collapsible > :not(summary) {
+display: none;
+}
+.collapsible[open] > :not(summary) {
+display: block;
+}
+.collapsible:focus,
+.collapsible > summary:focus {
+outline: none;
+}
+.collapsible > summary {
+cursor: pointer;
+display: block;
+padding: 0;
+}
+.collapsible:focus > summary,
+.collapsible > summary:focus {
+background-color: transparent;
+}
+.collapsible > summary::-webkit-details-marker {
+display: none;
+}
+.collapsible-title {
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+}
+.collapsible-title .title {
+-webkit-box-flex: 1;
+-webkit-flex: 1 1 auto;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+-webkit-box-ordinal-group: 1;
+-webkit-order: 0;
+-ms-flex-order: 0;
+order: 0;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+.collapsible-title .chevron-down,
+.collapsible[open] .collapsible-title .chevron-up {
+display: block;
+}
+.collapsible-title .chevron-up,
+.collapsible[open] .collapsible-title .chevron-down {
+display: none;
+}
+.flat-button {
+cursor: pointer;
+display: inline-block;
+font-weight: bold;
+text-transform: uppercase;
+border-radius: 2px;
+padding: 8px;
+margin: -8px;
+}
+.flat-icon-button {
+background: transparent;
+border: 0;
+margin: 0;
+outline: none;
+padding: 0;
+margin: -12px;
+padding: 12px;
+cursor: pointer;
+box-sizing: content-box;
+display: inline-block;
+line-height: 0;
+}
+.flat-icon-button,
+.flat-icon-button .splash-wrapper {
+border-radius: 50%;
+}
+.flat-icon-button .splash.animate {
+-webkit-animation-duration: 0.3s;
+animation-duration: 0.3s;
+}
+.overflowable-container {
+max-height: 32px;
+overflow: hidden;
+position: relative;
+}
+.overflow-button {
+cursor: pointer;
+}
+#overflowable-dim-overlay {
+background: transparent;
+}
+.overflow-popup {
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+background-color: #ffffff;
+left: 0;
+max-width: calc(100% - 32px);
+position: absolute;
+top: 0;
+visibility: hidden;
+z-index: 101;
+}
+.overflow-popup ul {
+list-style: none;
+}
+.overflow-popup li,
+.overflow-popup .tabs li {
+display: block;
+height: auto;
+}
+.overflow-popup .tabs li {
+padding-left: 0;
+padding-right: 0;
+}
+.overflow-button.hidden,
+.overflow-popup li.hidden,
+.overflow-popup .tabs li.hidden {
+display: none;
+}
+.search {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+line-height: 24px;
+width: 24px;
+}
+.search.focused {
+width: 100%;
+}
+.search.focused .section {
+width: 100%;
+}
+.search form {
+z-index: 101;
+}
+.search h3 {
+display: none;
+}
+.search form {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-flex: 1;
+-webkit-flex: 1 0 0;
+-ms-flex: 1 0 0px;
+flex: 1 0 0;
+border-bottom: solid 1px transparent;
+padding-bottom: 8px;
+}
+.search form > * {
+display: none;
+}
+.search.focused form > * {
+display: block;
+}
+.search .search-input label {
+display: none;
+}
+.centered-top-placeholder.cloned .search form {
+z-index: 30;
+}
+.search.focused form {
+border-color: #2f2523;
+position: relative;
+width: auto;
+}
+.collapsed-header .centered-top-container .search.focused form {
+border-bottom-color: transparent;
+}
+.search-expand {
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 auto;
+-ms-flex: 0 0 auto;
+flex: 0 0 auto;
+}
+.search-expand-text {
+display: none;
+}
+.search-close {
+display: inline;
+vertical-align: middle;
+}
+.search-input {
+-webkit-box-flex: 1;
+-webkit-flex: 1 0 1px;
+-ms-flex: 1 0 1px;
+flex: 1 0 1px;
+}
+.search-input input {
+background: none;
+border: 0;
+box-sizing: border-box;
+color: #2f2523;
+display: inline-block;
+outline: none;
+width: calc(100% - 48px);
+}
+.search-input input.no-cursor {
+color: transparent;
+text-shadow: 0 0 0 #2f2523;
+}
+.collapsed-header .centered-top-container .search-action,
+.collapsed-header .centered-top-container .search-input input {
+color: #2f2523;
+}
+.collapsed-header .centered-top-container .search-input input.no-cursor {
+color: transparent;
+text-shadow: 0 0 0 #2f2523;
+}
+.search-input input.no-cursor:focus,
+.collapsed-header .centered-top-container .search-input input.no-cursor:focus {
+outline: none;
+}
+.search-focused > * {
+visibility: hidden;
+}
+.search-focused .search,
+.search-focused .search-icon {
+visibility: visible;
+}
+.search.focused .search-action {
+display: block;
+}
+.search.focused .search-action:disabled {
+opacity: .3;
+}
+.widget.Sharing .sharing-button {
+display: none;
+}
+.widget.Sharing .sharing-buttons li {
+padding: 0;
+}
+.widget.Sharing .sharing-buttons li span {
+display: none;
+}
+.post-share-buttons {
+position: relative;
+}
+.share-buttons .svg-icon-24,
+.centered-bottom .share-buttons .svg-icon-24 {
+fill: #2f2523;
+}
+.sharing-open.touch-icon-button:focus .touch-icon,
+.sharing-open.touch-icon-button:active .touch-icon {
+background-color: transparent;
+}
+.share-buttons {
+background-color: #ffffff;
+border-radius: 2px;
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+color: #2f2523;
+list-style: none;
+margin: 0;
+padding: 8px 0;
+position: absolute;
+top: -11px;
+min-width: 200px;
+z-index: 101;
+}
+.share-buttons.hidden {
+display: none;
+}
+.sharing-button {
+background: transparent;
+border: 0;
+margin: 0;
+outline: none;
+padding: 0;
+cursor: pointer;
+}
+.share-buttons li {
+margin: 0;
+height: 48px;
+}
+.share-buttons li:last-child {
+margin-bottom: 0;
+}
+.share-buttons li .sharing-platform-button {
+box-sizing: border-box;
+cursor: pointer;
+display: block;
+height: 100%;
+margin-bottom: 0;
+padding: 0 16px;
+position: relative;
+width: 100%;
+}
+.share-buttons li .sharing-platform-button:focus,
+.share-buttons li .sharing-platform-button:hover {
+background-color: rgba(128, 128, 128, 0.1);
+outline: none;
+}
+.share-buttons li svg[class^="sharing-"],
+.share-buttons li svg[class*=" sharing-"] {
+position: absolute;
+top: 10px;
+}
+.share-buttons li span.sharing-platform-button,
+.share-buttons li span.sharing-platform-button {
+position: relative;
+top: 0;
+}
+.share-buttons li .platform-sharing-text {
+display: block;
+font-size: 16px;
+line-height: 48px;
+white-space: nowrap;
+}
+.share-buttons li .platform-sharing-text {
+margin-left: 56px;
+}
+.sidebar-container {
+background-color: #f7f7f7;
+max-width: 358px;
+overflow-y: auto;
+-webkit-transition-property: -webkit-transform;
+transition-property: -webkit-transform;
+transition-property: transform;
+transition-property: transform, -webkit-transform;
+-webkit-transition-duration: .3s;
+transition-duration: .3s;
+-webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+width: 358px;
+z-index: 101;
+-webkit-overflow-scrolling: touch;
+}
+.sidebar-container .navigation {
+line-height: 0;
+padding: 16px;
+}
+.sidebar-container .sidebar-back {
+cursor: pointer;
+}
+.sidebar-container .widget {
+background: none;
+margin: 0 16px;
+padding: 16px 0;
+}
+.sidebar-container .widget .title {
+color: #2f2523;
+margin: 0;
+}
+.sidebar-container .widget ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.sidebar-container .widget ul ul {
+margin-left: 1em;
+}
+.sidebar-container .widget li {
+font-size: 16px;
+line-height: normal;
+}
+.sidebar-container .widget + .widget {
+border-top: 1px dashed #ffffff;
+}
+.BlogArchive li {
+margin: 16px 0;
+}
+.BlogArchive li:last-child {
+margin-bottom: 0;
+}
+.Label li a {
+display: inline-block;
+}
+.Label .label-count,
+.BlogArchive .post-count {
+float: right;
+margin-left: .25em;
+}
+.Label .label-count::before,
+.BlogArchive .post-count::before {
+content: '(';
+}
+.Label .label-count::after,
+.BlogArchive .post-count::after {
+content: ')';
+}
+.widget.Translate .skiptranslate > div {
+display: block !important;
+}
+.widget.Profile .profile-link {
+background-image: none !important;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+}
+.widget.Profile .team-member .profile-img,
+.widget.Profile .team-member .default-avatar-wrapper {
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 auto;
+-ms-flex: 0 0 auto;
+flex: 0 0 auto;
+margin-right: 1em;
+}
+.widget.Profile .individual .profile-link {
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-webkit-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;
+}
+.widget.Profile .team .profile-link .profile-name {
+-webkit-align-self: center;
+-ms-flex-item-align: center;
+-ms-grid-row-align: center;
+align-self: center;
+display: block;
+-webkit-box-flex: 1;
+-webkit-flex: 1 1 auto;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+}
+.dim-overlay {
+background-color: rgba(0, 0, 0, 0.54);
+z-index: 100;
+}
+body.sidebar-visible {
+overflow-y: hidden;
+}
+@media screen and (max-width: 1657px) {
+.sidebar-container {
+bottom: 0;
+position: fixed;
+top: 0;
+left: 0;
+right: auto;
+}
+.sidebar-container.sidebar-invisible {
+-webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+transition-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+}
+html[dir=ltr] .sidebar-container.sidebar-invisible {
+-webkit-transform: translateX(-358px);
+-ms-transform: translateX(-358px);
+transform: translateX(-358px);
+}
+html[dir=rtl] .sidebar-container.sidebar-invisible {
+-webkit-transform: translateX(358px);
+-ms-transform: translateX(358px);
+transform: translateX(358px);
+}
+}
+@media screen and (min-width: 1658px) {
+.sidebar-container {
+position: absolute;
+top: 0;
+left: 0;
+right: auto;
+}
+.sidebar-container .navigation {
+display: none;
+}
+}
+.dialog {
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+background: #ffffff;
+box-sizing: border-box;
+padding: 30px;
+position: fixed;
+text-align: center;
+width: calc(100% - 24px);
+z-index: 101;
+}
+.dialog input[type=text],
+.dialog input[type=email] {
+background-color: transparent;
+border: 0;
+border-bottom: solid 1px rgba(47,37,35,0.12);
+color: #2f2523;
+display: block;
+font-family: Roboto;
+font-size: 16px;
+line-height: 24px;
+margin: auto;
+padding-bottom: 7px;
+outline: none;
+text-align: center;
+width: 100%;
+}
+.dialog input[type=text]::-webkit-input-placeholder,
+.dialog input[type=email]::-webkit-input-placeholder {
+color: #2f2523;
+}
+.dialog input[type=text]::-moz-placeholder,
+.dialog input[type=email]::-moz-placeholder {
+color: #2f2523;
+}
+.dialog input[type=text]:-ms-input-placeholder,
+.dialog input[type=email]:-ms-input-placeholder {
+color: #2f2523;
+}
+.dialog input[type=text]::placeholder,
+.dialog input[type=email]::placeholder {
+color: #2f2523;
+}
+.dialog input[type=text]:focus,
+.dialog input[type=email]:focus {
+border-bottom: solid 2px #bf1600;
+padding-bottom: 6px;
+}
+.dialog input.no-cursor {
+color: transparent;
+text-shadow: 0 0 0 #2f2523;
+}
+.dialog input.no-cursor:focus {
+outline: none;
+}
+.dialog input.no-cursor:focus {
+outline: none;
+}
+.dialog input[type=submit] {
+font-family: Roboto;
+}
+.subscribe-popup {
+max-width: 364px;
+}
+.subscribe-popup h3 {
+color: #2f2523;
+font-size: 1.8em;
+margin-top: 0;
+}
+.subscribe-popup .FollowByEmail h3 {
+display: none;
+}
+.subscribe-popup .FollowByEmail .follow-by-email-submit {
+background: transparent;
+border: 0;
+box-shadow: none;
+color: #bf1600;
+cursor: pointer;
+font-size: 14px;
+font-weight: bold;
+outline: none;
+text-decoration: none;
+text-transform: uppercase;
+width: auto;
+color: #bf1600;
+display: inline-block;
+margin: 0 auto;
+margin-top: 24px;
+width: auto;
+white-space: normal;
+}
+.subscribe-popup .FollowByEmail .follow-by-email-submit:disabled {
+cursor: default;
+opacity: .3;
+}
+@media (max-width: 800px) {
+.blog-name div.widget.Subscribe {
+margin-bottom: 16px;
+}
+body.item-view .blog-name div.widget.Subscribe {
+margin: 8px auto 16px auto;
+width: 100%;
+}
+}
+body#layout .bg-photo-overlay,
+body#layout .bg-photo {
+display: none;
+}
+body#layout .page_body {
+padding: 0;
+position: relative;
+top: 0;
+}
+body#layout .page {
+display: inline-block;
+left: inherit;
+position: relative;
+vertical-align: top;
+width: 540px;
+}
+body#layout .centered {
+max-width: 954px;
+}
+body#layout .navigation {
+display: none;
+}
+body#layout .sidebar-container {
+display: inline-block;
+width: 40%;
+}
+body#layout .hamburger-menu,
+body#layout .search {
+display: none;
+}
+body {
+background-color: #ffffff;
+color: #2f2523;
+font: normal normal 20px Roboto;
+height: 100%;
+margin: 0;
+min-height: 100vh;
+}
+h1,
+h4
+h5
+h6{
+font-weight: normal;
+}
+h2,
+h3,
+h4 {
+font-weight: bold;
+}
+a {
+color: #bf1600;
+text-decoration: none;
+}
+.dim-overlay {
+z-index: 100;
+}
+body.sidebar-visible .page_body {
+overflow-y: scroll;
+}
+.widget .title {
+color: #2f2523;
+font: normal normal 12px Roboto;
+}
+.extendable .show-more,
+.extendable .show-less {
+color: #2f2523;
+font: normal normal 10px Roboto;
+margin: 12px -8px 0 -8px;
+text-transform: uppercase;
+}
+.main .widget,
+.footer .widget {
+margin: 50px 0;
+}
+.main .widget .title {
+text-transform: uppercase;
+}
+.inline-ad {
+display: block;
+margin-top: 50px;
+}
+.adsbygoogle {
+text-align: center;
+}
+.page_body {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-webkit-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;
+min-height: 100vh;
+position: relative;
+z-index: 20;
+}
+.page_body > * {
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 auto;
+-ms-flex: 0 0 auto;
+flex: 0 0 auto;
+}
+.page_body > #footer {
+margin-top: auto;
+}
+.centered-bottom,
+.centered-top {
+margin: 0 32px;
+max-width: 100%;
+}
+.centered-top {
+padding-bottom: 12px;
+padding-top: 12px;
+}
+.sticky .centered-top {
+padding-bottom: 0;
+padding-top: 0;
+}
+.centered-top-container,
+.centered-top-placeholder {
+background: #ffffff;
+}
+.centered-top {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+position: relative;
+}
+.sticky .centered-top {
+-webkit-flex-wrap: nowrap;
+-ms-flex-wrap: nowrap;
+flex-wrap: nowrap;
+}
+.centered-top-container .svg-icon-24,
+.centered-top-placeholder .svg-icon-24 {
+fill: #2f2523;
+}
+.back-button-container,
+.hamburger-menu-container {
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 auto;
+-ms-flex: 0 0 auto;
+flex: 0 0 auto;
+height: 48px;
+-webkit-box-ordinal-group: 2;
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+.sticky .back-button-container,
+.sticky .hamburger-menu-container {
+-webkit-box-ordinal-group: 2;
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+.back-button,
+.hamburger-menu,
+.search-expand-icon {
+cursor: pointer;
+margin-top: 0;
+}
+.search {
+-webkit-box-align: start;
+-webkit-align-items: flex-start;
+-ms-flex-align: start;
+align-items: flex-start;
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 auto;
+-ms-flex: 0 0 auto;
+flex: 0 0 auto;
+height: 48px;
+margin-left: 24px;
+-webkit-box-ordinal-group: 4;
+-webkit-order: 3;
+-ms-flex-order: 3;
+order: 3;
+}
+.search,
+.search.focused {
+width: auto;
+}
+.search.focused {
+position: static;
+}
+.sticky .search {
+display: none;
+-webkit-box-ordinal-group: 5;
+-webkit-order: 4;
+-ms-flex-order: 4;
+order: 4;
+}
+.search .section {
+right: 0;
+margin-top: 12px;
+position: absolute;
+top: 12px;
+width: 0;
+}
+.sticky .search .section {
+top: 0;
+}
+.search-expand {
+background: transparent;
+border: 0;
+margin: 0;
+outline: none;
+padding: 0;
+color: #2f2523;
+cursor: pointer;
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 auto;
+-ms-flex: 0 0 auto;
+flex: 0 0 auto;
+font: normal normal 10px Roboto;
+text-transform: uppercase;
+word-break: normal;
+}
+.search.focused .search-expand {
+visibility: hidden;
+}
+.search .dim-overlay {
+background: transparent;
+}
+.search.focused .section {
+max-width: 400px;
+}
+.search.focused form {
+border-color: #2f2523;
+height: 24px;
+}
+.search.focused .search-input {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-flex: 1;
+-webkit-flex: 1 1 auto;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+}
+.search-input input {
+-webkit-box-flex: 1;
+-webkit-flex: 1 1 auto;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+font: normal 400 16px roboto, sans-serif;
+}
+.search input[type='submit'] {
+display: none;
+}
+.subscribe-section-container {
+-webkit-box-flex: 1;
+-webkit-flex: 1 0 auto;
+-ms-flex: 1 0 auto;
+flex: 1 0 auto;
+margin-left: 24px;
+-webkit-box-ordinal-group: 3;
+-webkit-order: 2;
+-ms-flex-order: 2;
+order: 2;
+text-align: right;
+}
+.sticky .subscribe-section-container {
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 auto;
+-ms-flex: 0 0 auto;
+flex: 0 0 auto;
+-webkit-box-ordinal-group: 4;
+-webkit-order: 3;
+-ms-flex-order: 3;
+order: 3;
+}
+.subscribe-button {
+background: transparent;
+border: 0;
+margin: 0;
+outline: none;
+padding: 0;
+color: #2f2523;
+cursor: pointer;
+display: inline-block;
+font: normal normal 10px Roboto;
+line-height: 48px;
+margin: 0;
+text-transform: uppercase;
+word-break: normal;
+}
+.subscribe-popup h3 {
+color: #2f2523;
+font: normal normal 12px Roboto;
+margin-bottom: 24px;
+text-transform: uppercase;
+}
+.subscribe-popup div.widget.FollowByEmail .follow-by-email-address {
+color: #2f2523;
+font: normal normal 12px Roboto;
+}
+.subscribe-popup div.widget.FollowByEmail .follow-by-email-submit {
+color: #2f2523;
+font: normal normal 10px Roboto;
+margin-top: 24px;
+text-transform: uppercase;
+}
+.blog-name {
+-webkit-box-flex: 1;
+-webkit-flex: 1 1 100%;
+-ms-flex: 1 1 100%;
+flex: 1 1 100%;
+-webkit-box-ordinal-group: 5;
+-webkit-order: 4;
+-ms-flex-order: 4;
+order: 4;
+overflow: hidden;
+}
+.sticky .blog-name {
+-webkit-box-flex: 1;
+-webkit-flex: 1 1 auto;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+margin: 0 12px;
+-webkit-box-ordinal-group: 3;
+-webkit-order: 2;
+-ms-flex-order: 2;
+order: 2;
+}
+body.search-view .centered-top.search-focused .blog-name {
+display: none;
+}
+.widget.Header h1 {
+font: normal bold 30px Roboto, sans serif;
+margin: 0;
+text-transform: uppercase;
+}
+.widget.Header h1,
+.widget.Header h1 a {
+color: #2f2523;
+}
+.widget.Header p {
+color: #2f2523;
+font: normal normal 16px Roboto 700;
+line-height: 1.7;
+}
+.sticky .widget.Header h1 {
+font-size: 16px;
+line-height: 48px;
+overflow: hidden;
+overflow-wrap: normal;
+text-overflow: ellipsis;
+white-space: nowrap;
+word-wrap: normal;
+}
+.sticky .widget.Header p {
+display: none;
+}
+.sticky {
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+}
+#page_list_top .widget.PageList {
+font: normal normal 16px Roboto;
+line-height: 32px;
+}
+#page_list_top .widget.PageList .title {
+display: none;
+}
+#page_list_top .widget.PageList .overflowable-contents {
+overflow: hidden;
+}
+#page_list_top .widget.PageList .overflowable-contents ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+#page_list_top .widget.PageList .overflow-popup ul {
+list-style: none;
+margin: 0;
+padding: 0 20px;
+}
+#page_list_top .widget.PageList .overflowable-contents li {
+display: inline-block;
+}
+#page_list_top .widget.PageList .overflowable-contents li.hidden {
+display: none;
+}
+#page_list_top .widget.PageList .overflowable-contents li:not(:first-child):before {
+color: #5f5f5f;
+content: '\00b7';
+}
+#page_list_top .widget.PageList .overflowable-contents li a,
+#page_list_top .widget.PageList .overflow-popup li a,
+#page_list_top .widget.PageList .overflow-button a {
+color: #5f5f5f;
+font: normal normal 16px Roboto;
+line-height: 32px;
+text-transform: uppercase;
+}
+#page_list_top .widget.PageList .overflowable-contents li.selected a,
+#page_list_top .widget.PageList .overflow-popup li.selected a {
+color: #5f5f5f;
+font: normal normal 16px Roboto;
+line-height: 32px;
+}
+#page_list_top .widget.PageList .overflow-button {
+display: inline;
+}
+.sticky #page_list_top {
+display: none;
+}
+body.homepage-view .hero-image.has-image {
+background: #ffffff url(//1.bp.blogspot.com/-Psn3Wet5tfc/WVPwvjxxtVI/AAAAAAAABAY/4RZ14cI5Npo7Dz6BYTXqfrsMXoyEdF-4QCK4BGAYYCw/s0/Menil-Museum%252C-R.-PianoWEB.png) repeat-x scroll top center;
+background-attachment: scroll;
+background-color: #ffffff;
+background-size: cover;
+height: 62.5vw;
+max-height: 75vh;
+min-height: 200px;
+width: 100%;
+}
+.post-filter-message {
+background-color: #bebebe;
+color: #2f2523;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+font: normal normal 11px Roboto;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+margin-top: 50px;
+padding: 18px;
+}
+.post-filter-message .message-container {
+-webkit-box-flex: 1;
+-webkit-flex: 1 1 auto;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+min-width: 0;
+}
+.post-filter-message .home-link-container {
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 auto;
+-ms-flex: 0 0 auto;
+flex: 0 0 auto;
+}
+.post-filter-message .search-label,
+.post-filter-message .search-query {
+color: #2f2523;
+font: normal normal 12px Roboto;
+text-transform: uppercase;
+}
+.post-filter-message .home-link,
+.post-filter-message .home-link a {
+color: #7f7f7f;
+font: normal normal 10px Roboto;
+text-transform: uppercase;
+}
+.widget.FeaturedPost .thumb.hero-thumb {
+background-position: center;
+background-size: cover;
+height: 360px;
+}
+.widget.FeaturedPost .featured-post-snippet:before {
+content: '\2014';
+}
+.snippet-container,
+.snippet-fade {
+font: normal normal 14px Roboto;
+line-height: 23.8px;
+}
+.snippet-container {
+max-height: 166.6px;
+overflow: hidden;
+}
+.snippet-fade {
+background: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 20%, rgba(255, 255, 255, 0) 100%);
+background: linear-gradient(to left, #ffffff 0%, #ffffff 20%, rgba(255, 255, 255, 0) 100%);
+color: #2f2523;
+}
+.post-sidebar {
+display: none;
+}
+.widget.Blog .blog-posts .post-outer-container {
+width: 100%;
+}
+.no-posts {
+text-align: center;
+}
+body.feed-view .widget.Blog .blog-posts .post-outer-container,
+body.item-view .widget.Blog .blog-posts .post-outer {
+margin-bottom: 50px;
+}
+.widget.Blog .post.no-featured-image,
+.widget.PopularPosts .post.no-featured-image {
+background-color: #ffffff;
+padding: 30px;
+}
+.widget.Blog .post > .post-share-buttons-top {
+right: 0;
+position: absolute;
+top: 0;
+}
+.widget.Blog .post > .post-share-buttons-bottom {
+bottom: 0;
+right: 0;
+position: absolute;
+}
+.blog-pager {
+text-align: right;
+}
+.blog-pager a {
+color: #2f2523;
+font: normal normal 10px Roboto;
+text-transform: uppercase;
+}
+.blog-pager .blog-pager-newer-link,
+.blog-pager .home-link {
+display: none;
+}
+.post-title {
+font: normal normal 36px Roboto 700;
+margin: 0;
+text-transform: uppercase;
+}
+.post-title,
+.post-title a {
+color: #2f2523;
+}
+.post.no-featured-image .post-title,
+.post.no-featured-image .post-title a {
+color: #2f2523;
+}
+body.item-view .post-body-container:before {
+content: '\2014';
+}
+.post-body {
+color: #2f2523;
+font: normal normal 14px Roboto;
+line-height: 1.7;
+}
+.post-body blockquote {
+background: #ffffff url(//2.bp.blogspot.com/_qgZA1ny_dAs/Sw66TNQV5hI/AAAAAAAADK4/lALxQAkmQF0/s200/blockquote.png) top left no-repeat;
+margin: 10px 15px 3px 3px;
+padding: 10px 20px 12px 34px;
+border-top: 1px solid #DDD;
+border-right: 1px solid #666;
+border-left: 1px solid #DDD;
+border-bottom: 1px solid #666;
+font-style: italic;
+}
+.post-body img {
+height: auto;
+max-width: 100%;
+}
+.post-body .tr-caption {
+color: #2f2523;
+font: normal normal 12px Roboto;
+line-height: 1.7;
+}
+.snippet-thumbnail {
+position: relative;
+}
+.snippet-thumbnail .post-header {
+background: #ffffff;
+bottom: 0;
+margin-bottom: 0;
+padding-right: 15px;
+padding-bottom: 5px;
+padding-top: 5px;
+position: absolute;
+}
+.snippet-thumbnail img {
+width: 65%;
+}
+.post-header,
+.post-footer {
+margin: 8px 0;
+}
+body.item-view .widget.Blog .post-header {
+margin: 0 0 16px 0;
+}
+body.item-view .widget.Blog .post-footer {
+margin: 50px 0 0 0;
+}
+.widget.FeaturedPost .post-footer {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.widget.FeaturedPost .post-footer > * {
+-webkit-box-flex: 0;
+-webkit-flex: 0 1 auto;
+-ms-flex: 0 1 auto;
+flex: 0 1 auto;
+}
+.widget.FeaturedPost .post-footer,
+.widget.FeaturedPost .post-footer a,
+.widget.FeaturedPost .post-footer button {
+line-height: 1.7;
+}
+.jump-link {
+margin: -8px;
+}
+.post-header,
+.post-header a,
+.post-header button {
+color: #2f2523;
+font: normal normal 30px Roboto 700;
+}
+.post.no-featured-image .post-header,
+.post.no-featured-image .post-header a,
+.post.no-featured-image .post-header button {
+color: #2f2523;
+}
+.post-footer,
+.post-footer a,
+.post-footer button {
+color: #2f2523;
+font: normal 400 12px roboto, sans-serif;
+}
+.post.no-featured-image .post-footer,
+.post.no-featured-image .post-footer a,
+.post.no-featured-image .post-footer button {
+color: #2f2523;
+}
+body.item-view .post-footer-line {
+line-height: 2.3;
+}
+.byline {
+display: inline-block;
+}
+.byline .flat-button {
+text-transform: none;
+}
+.post-header .byline:not(:last-child):after {
+content: '\00b7';
+}
+.post-header .byline:not(:last-child) {
+margin-right: 0;
+}
+.byline.post-labels a {
+display: inline-block;
+word-break: break-all;
+}
+.byline.post-labels a:not(:last-child):after {
+content: ',';
+}
+.byline.reactions .reactions-label {
+line-height: 22px;
+vertical-align: top;
+}
+.post-share-buttons {
+margin-left: 0;
+}
+.share-buttons {
+background-color: #f9f9f9;
+border-radius: 0;
+box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.10);
+color: #2f2523;
+font: normal normal 16px Roboto;
+}
+.share-buttons .svg-icon-24 {
+fill: #be4737;
+}
+#comment-holder .continue {
+display: none;
+}
+#comment-editor {
+margin-bottom: 20px;
+margin-top: 20px;
+}
+.widget.Attribution,
+.widget.Attribution a,
+.widget.Attribution .image-attribution,
+.widget.Attribution .image-attribution a,
+.widget.Attribution .copyright,
+.widget.Attribution .copyright a {
+color: #2f2523;
+font: normal normal 12px Roboto;
+}
+.widget.Attribution svg {
+fill: rgba(0, 0, 0, 0.54);
+}
+.widget.Attribution .blogger a {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-content: center;
+-ms-flex-line-pack: center;
+align-content: center;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+line-height: 24px;
+}
+.widget.Attribution .blogger svg {
+margin-right: 8px;
+}
+.widget.Profile ul {
+list-style: none;
+padding: 0;
+}
+.widget.Profile .individual .default-avatar-wrapper,
+.widget.Profile .individual .profile-img {
+border-radius: 50%;
+display: inline-block;
+height: 120px;
+width: 120px;
+}
+.widget.Profile .individual .profile-data a,
+.widget.Profile .team .profile-name {
+color: #2f2523;
+font: normal normal 30px Roboto 700;
+text-transform: none;
+}
+.widget.Profile .individual dd {
+color: #2f2523;
+font: normal normal 20px Roboto;
+margin: 0 auto;
+}
+.widget.Profile .individual .profile-link,
+.widget.Profile .team .visit-profile {
+color: #2f2523;
+font: normal normal 10px Roboto;
+text-transform: uppercase;
+}
+.widget.Profile .team .default-avatar-wrapper,
+.widget.Profile .team .profile-img {
+border-radius: 50%;
+float: left;
+height: 40px;
+width: 40px;
+}
+.widget.Profile .team .profile-link .profile-name-wrapper {
+-webkit-box-flex: 1;
+-webkit-flex: 1 1 auto;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+}
+.widget.Label li,
+.widget.Label span.label-size {
+color: #2f2523;
+display: inline-block;
+font: normal normal 10px Roboto;
+word-break: break-all;
+}
+.widget.Label li:not(:last-child):after,
+.widget.Label span.label-size:not(:last-child):after {
+content: ',';
+}
+.widget.PopularPosts .post {
+margin-bottom: 50px;
+}
+#comments {
+border-top: none;
+padding: 0;
+}
+#comments .comment .comment-footer,
+#comments .comment .comment-header,
+#comments .comment .comment-header .datetime,
+#comments .comment .comment-header .datetime a {
+color: #2f2523;
+font: normal normal 14px Roboto;
+}
+#comments .comment .comment-author,
+#comments .comment .comment-author a,
+#comments .comment .comment-header .user,
+#comments .comment .comment-header .user a {
+color: #2f2523;
+font: normal normal 14px Roboto;
+}
+#comments .comment .comment-body,
+#comments .comment .comment-content {
+color: #000000;
+font: normal normal 14px Roboto;
+}
+#comments .comment .comment-actions,
+#comments .footer,
+#comments .footer a,
+#comments .loadmore,
+#comments .paging-control {
+color: #7f7f7f;
+font: normal normal 12px Roboto;
+text-transform: uppercase;
+}
+#commentsHolder {
+border-bottom: none;
+border-top: none;
+}
+#comments .comment-form h4 {
+position: absolute;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 0;
+border: 0;
+height: 1px;
+width: 1px;
+overflow: hidden;
+}
+.sidebar-container {
+background-color: #ffffff;
+color: #2f2523;
+font: normal normal 14px Roboto;
+min-height: 100%;
+}
+html[dir=ltr] .sidebar-container {
+box-shadow: 1px 0 3px rgba(0, 0, 0, 0.10);
+}
+html[dir=rtl] .sidebar-container {
+box-shadow: -1px 0 3px rgba(0, 0, 0, 0.10);
+}
+.sidebar-container a {
+color: #2f2523;
+}
+.sidebar-container .svg-icon-24 {
+fill: #2f2523;
+}
+.sidebar-container .widget {
+margin: 0;
+margin-left: 40px;
+padding: 40px;
+padding-left: 0;
+}
+.sidebar-container .widget + .widget {
+border-top: 1px solid #ffffff;
+}
+.sidebar-container .widget .title {
+color: #2f2523;
+font: normal normal 16px Roboto;
+}
+.sidebar-container .widget ul li,
+.sidebar-container .widget.BlogArchive #ArchiveList li {
+font: normal normal 14px Roboto;
+margin: 1em 0 0 0;
+}
+.sidebar-container .BlogArchive .post-count,
+.sidebar-container .Label .label-count {
+float: none;
+}
+.sidebar-container .Label li a {
+display: inline;
+}
+.sidebar-container .widget.Profile .default-avatar-wrapper .avatar-icon {
+border-color: #2f2523;
+fill: #2f2523;
+}
+.sidebar-container .widget.Profile .individual {
+text-align: center;
+}
+.sidebar-container .widget.Profile .individual dd:before {
+content: '\2014';
+display: block;
+}
+.sidebar-container .widget.Profile .individual .profile-data a,
+.sidebar-container .widget.Profile .team .profile-name {
+color: #2f2523;
+font: normal normal 24px Roboto;
+}
+.sidebar-container .widget.Profile .individual dd {
+color: #2f2523;
+font: normal normal 14px Roboto;
+margin: 0 30px;
+}
+.sidebar-container .widget.Profile .individual .profile-link,
+.sidebar-container .widget.Profile .team .visit-profile {
+color: #2f2523;
+font: normal normal 14px Roboto;
+}
+.sidebar-container .snippet-fade {
+background: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 20%, rgba(255, 255, 255, 0) 100%);
+background: linear-gradient(to left, #ffffff 0%, #ffffff 20%, rgba(255, 255, 255, 0) 100%);
+}
+@media screen and (min-width: 640px) {
+.centered-bottom,
+.centered-top {
+margin: 0 auto;
+width: 576px;
+}
+.centered-top {
+-webkit-flex-wrap: nowrap;
+-ms-flex-wrap: nowrap;
+flex-wrap: nowrap;
+padding-bottom: 24px;
+padding-top: 36px;
+}
+.blog-name {
+-webkit-box-flex: 1;
+-webkit-flex: 1 1 auto;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+min-width: 0;
+-webkit-box-ordinal-group: 3;
+-webkit-order: 2;
+-ms-flex-order: 2;
+order: 2;
+}
+.sticky .blog-name {
+margin: 0;
+}
+.back-button-container,
+.hamburger-menu-container {
+margin-right: 36px;
+-webkit-box-ordinal-group: 2;
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+.search {
+margin-left: 36px;
+-webkit-box-ordinal-group: 5;
+-webkit-order: 4;
+-ms-flex-order: 4;
+order: 4;
+}
+.search .section {
+top: 36px;
+}
+.sticky .search {
+display: block;
+}
+.subscribe-section-container {
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 auto;
+-ms-flex: 0 0 auto;
+flex: 0 0 auto;
+margin-left: 36px;
+-webkit-box-ordinal-group: 4;
+-webkit-order: 3;
+-ms-flex-order: 3;
+order: 3;
+}
+.subscribe-button {
+font: normal normal 12px Roboto;
+line-height: 48px;
+}
+.subscribe-popup h3 {
+font: normal normal 14px Roboto;
+}
+.subscribe-popup div.widget.FollowByEmail .follow-by-email-address {
+font: normal normal 14px Roboto;
+}
+.subscribe-popup div.widget.FollowByEmail .follow-by-email-submit {
+font: normal normal 12px Roboto;
+}
+.widget .title {
+font: normal normal 14px Roboto;
+}
+.widget.Blog .post.no-featured-image,
+.widget.PopularPosts .post.no-featured-image {
+padding: 65px;
+}
+.post-title {
+font: normal normal 42px Roboto 700;
+}
+.blog-pager a {
+font: normal normal 12px Roboto;
+}
+.widget.Header h1 {
+font: normal bold 60px Roboto;
+}
+.mobile.Header h1 {
+font: normal bold 60px Roboto;
+}
+.sticky .widget.Header h1 {
+font-size: 24px;
+}
+}
+@media screen and (min-width: 1340px) {
+.centered-bottom,
+.centered-top {
+width: 1100px;
+}
+.back-button-container,
+.hamburger-menu-container {
+margin-right: 48px;
+}
+.search {
+margin-left: 48px;
+}
+.search-expand {
+font: normal normal 12px Roboto;
+line-height: 48px;
+}
+.search-expand-text {
+display: block;
+}
+.search-expand-icon {
+display: none;
+}
+.subscribe-section-container {
+margin-left: 48px;
+}
+.post-filter-message {
+font: normal normal 12px Roboto;
+}
+.post-filter-message .search-label,
+.post-filter-message .search-query {
+font: normal normal 12px Roboto;
+}
+.post-filter-message .home-link {
+font: normal normal 12px Roboto;
+}
+.widget.Blog .blog-posts .post-outer-container {
+width: 540px;
+}
+body.item-view .widget.Blog .blog-posts .post-outer-container {
+width: 100%;
+}
+body.item-view .widget.Blog .blog-posts .post-outer {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+}
+body.item-view .widget.PopularPosts,
+body.item-view .post-outer-container .inline-ad,
+#comments {
+margin-left: 220px;
+width: 860px;
+}
+.post-sidebar {
+box-sizing: border-box;
+display: block;
+font: normal normal 12px Roboto;
+padding-right: 20px;
+width: 220px;
+}
+.post-sidebar-item {
+margin-bottom: 30px;
+}
+.post-sidebar-item ul {
+list-style: none;
+padding: 0;
+}
+.post-sidebar-item .sharing-button {
+color: #2f2523;
+cursor: pointer;
+display: inline-block;
+font: normal normal 12px Roboto;
+line-height: normal;
+word-break: normal;
+}
+.post-sidebar-labels li {
+margin-bottom: 8px;
+}
+body.item-view .widget.Blog .post {
+width: 860px;
+}
+.widget.Blog .post.no-featured-image,
+.widget.PopularPosts .post.no-featured-image {
+padding: 100px 65px;
+}
+.page .widget.FeaturedPost .post-content {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.page .widget.FeaturedPost .thumb-link {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+}
+.page .widget.FeaturedPost .thumb.hero-thumb {
+height: auto;
+min-height: 300px;
+width: 540px;
+}
+.page .widget.FeaturedPost .post-content.has-featured-image .post-text-container {
+width: 425px;
+}
+.page .widget.FeaturedPost .post-content.no-featured-image .post-text-container {
+width: 100%;
+}
+.page .widget.FeaturedPost .post-header {
+margin: 0 0 8px 0;
+}
+.page .widget.FeaturedPost .post-footer {
+margin: 8px 0 0 0;
+}
+.post-body {
+font: normal normal 16px Roboto;
+line-height: 1.7;
+}
+.post-body blockquote {
+font: normal normal 16px Roboto;
+line-height: 1.7;
+}
+.snippet-container,
+.snippet-fade {
+font: normal normal 16px Roboto;
+line-height: 27.2px;
+}
+.snippet-container {
+max-height: 326.4px;
+}
+.widget.Profile .individual .profile-data a,
+.widget.Profile .team .profile-name {
+font: normal normal 40px Roboto 700;
+}
+.widget.Profile .individual .profile-link,
+.widget.Profile .team .visit-profile {
+font: normal normal 12px Roboto;
+}
+}
+@media screen and (min-width: 1658px) {
+body {
+position: relative;
+}
+.page_body {
+margin-left: 358px;
+}
+.sticky .centered-top {
+padding-left: 358px;
+}
+.hamburger-menu-container {
+display: none;
+}
+.sidebar-container {
+overflow: visible;
+z-index: 32;
+}
+#Attribution1 {
+display:none;
+visibility:hidden;
+}#Profile1 {
+margin-bottom: -30px !important;
+}
+#BlogArchiv1 {
+margin-bottom: -5px !important;
+}
+#Label1 {
+margin-bottom: -25px !important;
+}
+@media only screen and (max-width: 640px) {
+#header h1.site-title {
+font-size: 40px;
+font-family: Roboto;
+font-style: bold
+}
+}{
+"@context": "http://schema.org",
+"@type": "WebSite",
+"name": "Taller BIM",
+"alternateName": "The Revit Experience",
+"url": "http://www.tallerbim.com"
+}.post-summary h3 {
+text-align:center;
+}
+.post-summary
+border: 1px solid #610B0B;
+border-radius:1px solid #610B0B;
+-moz-border-radius:0px;
+-webkit-border-radius:0px;
+padding:15px;
+margin: 20px 0;
+}.comment-form{
+color: #5f5f5f !important;
+font-family: Roboto, sans-serif !important;
+font-size: 12px !important;
+}
+.comment-form {
+color: #fff5cc;
+background: #fff0b3;
+border:2px solid #cccccc;
+height:430px;
+margin:0 auto;
+padding:10px;
+width:400px;
+}
+.comment-form p{
+color: #000000;
+border: 1px solid #cc3300;
+background: #fff0b3;
+padding: 10px;
+width: 368px;
+}
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body#layout .hidden,
+body#layout .invisible {
+display: inherit;
+}
+body#layout .page {
+width: 60%;
+}
+body#layout.ltr .page {
+float: right;
+}
+body#layout.rtl .page {
+float: left;
+}
+body#layout .sidebar-container {
+width: 40%;
+}
+body#layout.ltr .sidebar-container {
+float: left;
+}
+body#layout.rtl .sidebar-container {
+float: right;
+}
+--></style>
+<script async='async' src='//www.gstatic.com/external_hosted/imagesloaded/imagesloaded-3.1.8.min.js'></script>
+<script async='async' src='//www.gstatic.com/external_hosted/vanillamasonry-v3_1_5/masonry.pkgd.min.js'></script>
+<script async='async' src='//www.gstatic.com/external_hosted/clipboardjs/clipboard.min.js'></script>
+<script type='text/javascript'>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-99014335-2', 'auto', 'blogger');
+        ga('blogger.send', 'pageview');
+      </script>
+<style>
+    body.homepage-view .hero-image.has-image {background-image:url(\/\/1.bp.blogspot.com\/-Psn3Wet5tfc\/WVPwvjxxtVI\/AAAAAAAABAY\/4RZ14cI5Npo7Dz6BYTXqfrsMXoyEdF-4QCK4BGAYYCw\/s0\/Menil-Museum%252C-R.-PianoWEB.png);}
+    
+@media (max-width: 320px) { body.homepage-view .hero-image.has-image {background-image:url(\/\/1.bp.blogspot.com\/-Psn3Wet5tfc\/WVPwvjxxtVI\/AAAAAAAABAY\/4RZ14cI5Npo7Dz6BYTXqfrsMXoyEdF-4QCK4BGAYYCw\/w320\/Menil-Museum%252C-R.-PianoWEB.png);}}
+@media (max-width: 640px) and (min-width: 321px) { body.homepage-view .hero-image.has-image {background-image:url(\/\/1.bp.blogspot.com\/-Psn3Wet5tfc\/WVPwvjxxtVI\/AAAAAAAABAY\/4RZ14cI5Npo7Dz6BYTXqfrsMXoyEdF-4QCK4BGAYYCw\/w640\/Menil-Museum%252C-R.-PianoWEB.png);}}
+@media (max-width: 800px) and (min-width: 641px) { body.homepage-view .hero-image.has-image {background-image:url(\/\/1.bp.blogspot.com\/-Psn3Wet5tfc\/WVPwvjxxtVI\/AAAAAAAABAY\/4RZ14cI5Npo7Dz6BYTXqfrsMXoyEdF-4QCK4BGAYYCw\/w800\/Menil-Museum%252C-R.-PianoWEB.png);}}
+@media (max-width: 1024px) and (min-width: 801px) { body.homepage-view .hero-image.has-image {background-image:url(\/\/1.bp.blogspot.com\/-Psn3Wet5tfc\/WVPwvjxxtVI\/AAAAAAAABAY\/4RZ14cI5Npo7Dz6BYTXqfrsMXoyEdF-4QCK4BGAYYCw\/w1024\/Menil-Museum%252C-R.-PianoWEB.png);}}
+@media (max-width: 1440px) and (min-width: 1025px) { body.homepage-view .hero-image.has-image {background-image:url(\/\/1.bp.blogspot.com\/-Psn3Wet5tfc\/WVPwvjxxtVI\/AAAAAAAABAY\/4RZ14cI5Npo7Dz6BYTXqfrsMXoyEdF-4QCK4BGAYYCw\/w1440\/Menil-Museum%252C-R.-PianoWEB.png);}}
+@media (max-width: 1680px) and (min-width: 1441px) { body.homepage-view .hero-image.has-image {background-image:url(\/\/1.bp.blogspot.com\/-Psn3Wet5tfc\/WVPwvjxxtVI\/AAAAAAAABAY\/4RZ14cI5Npo7Dz6BYTXqfrsMXoyEdF-4QCK4BGAYYCw\/w1680\/Menil-Museum%252C-R.-PianoWEB.png);}}
+@media (max-width: 1920px) and (min-width: 1681px) { body.homepage-view .hero-image.has-image {background-image:url(\/\/1.bp.blogspot.com\/-Psn3Wet5tfc\/WVPwvjxxtVI\/AAAAAAAABAY\/4RZ14cI5Npo7Dz6BYTXqfrsMXoyEdF-4QCK4BGAYYCw\/w1920\/Menil-Museum%252C-R.-PianoWEB.png);}}
+/* Last tag covers anything over one higher than the previous max-size cap. */
+@media (min-width: 1921px) { body.homepage-view .hero-image.has-image {background-image:url(\/\/1.bp.blogspot.com\/-Psn3Wet5tfc\/WVPwvjxxtVI\/AAAAAAAABAY\/4RZ14cI5Npo7Dz6BYTXqfrsMXoyEdF-4QCK4BGAYYCw\/w2560\/Menil-Museum%252C-R.-PianoWEB.png);}}
+  </style>
+<script type='application/ld+json'>
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://www.tallerbim.com/2017/06/seis-razones-para-no-pasarse-al-bim-1.html"
+  },
+  "headline": "Article headline",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://1.bp.blogspot.com/-0NvxjcthPxo/WU8CYFfoJrI/AAAAAAAAA7o/4pfDaThLMskDHPZsgz9PgA9jBDs8tS40wCLcBGAs/s400/plano.jpeg",
+    "height": 800,
+    "width": 800
+  },
+  "datePublished": "2017-06-22T16:00:00+01:00",
+  "dateModified": "2017-07-05T09:20:00+01:00",
+  "author": {
+    "@type": "Person",
+    "name": "Alfonso Miró Sardá"
+  },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Taller BIM",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://1.bp.blogspot.com/-Psn3Wet5tfc/WVPwvjxxtVI/AAAAAAAABAY/4RZ14cI5Npo7Dz6BYTXqfrsMXoyEdF-4QCK4BGAYYCw/s0/Menil-Museum%252C-R.-PianoWEB.png",
+      "width": 600,
+      "height": 60
+    }
+  },
+  "description": "Razones aducidas para NO implementar BIM (Building Information Modeling) en firmas de arquitectura"
+}
+</script>
+<script type='text/javascript'>
+//<![CDATA[
+  var nW,nH,oH,oW;
+  function zoomToggle(iWideSmall,iHighSmall,iWideLarge,iHighLarge,whichImage){
+    oW=whichImage.style.width;oH=whichImage.style.height;
+    if((oW==iWideLarge)||(oH==iHighLarge)){
+      nW=iWideSmall;nH=iHighSmall;
+    }else{
+      nW=iWideLarge;nH=iHighLarge;
+    }
+    whichImage.style.width=nW;whichImage.style.height=nH;
+  }
+//]]>
+</script>
+<!--START Twitter Card -->
+<meta content='summary' name='twitter:card'/>
+<meta content='@RevitExperience' name='twitter:site'/>
+<meta content='@RevitExperience' name='twitter:creator'/>
+<meta content='https://www.tallerbim.com/' name='twitter:domain'/>
+<meta content='https://www.tallerbim.com/' name='twitter:url'/>
+<meta content='Taller BIM: Blogs y bibliotecas BIM' name='twitter:title'/>
+<meta content='https://1.bp.blogspot.com/-Psn3Wet5tfc/WVPwvjxxtVI/AAAAAAAABAY/4RZ14cI5Npo7Dz6BYTXqfrsMXoyEdF-4QCK4BGAYYCw/s0/Menil-Museum%252C-R.-PianoWEB.png' name='twitter:image'/>
+<meta content='Una recopilación permanentemente actualizada de los mejores blogs sobre BIM &#40;en inglés y en español&#41; y páginas de descarga de objetos BIM.' name='twitter:description'/>
+<!--END Twitter Card -->
+<link href='//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css' rel='stylesheet' type='text/css'/>
+<script src='//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js'></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#aa0000",
+      "text": "#ffdddd"
+    },
+    "button": {
+      "background": "#ff0000"
+    }
+  },
+   "theme": "edgeless",
+   "position": "top",
+  "static": true,
+  "type": "opt-out",
+  "content": {
+    "message": "Este blog usa cookies, como todos.",
+    "dismiss": "Venga cookies",
+    "allow": "Venga cookies",
+    "deny": "No, gracias",
+    "link": "Saber más",
+    "href": "https://www.tallerbim.com/p/cookies-y-privacidad.html"
+  }
+})});
+</script>
+<script>
+function disabletext(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=disabletext
+document.onclick=reEnable
+}
+</script>
+<script>cookieChoices = {};</script>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7839489140860278476&amp;zx=13c70db0-6311-4b34-9121-37f5726aed05' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7839489140860278476&amp;zx=13c70db0-6311-4b34-9121-37f5726aed05' rel='stylesheet'/></noscript>
+
+</head>
+<body class='page-view item-view version-1-1-0'>
+<a class='skip-navigation' href='#main' tabindex='0'>
+Ir al contenido principal
+</a>
+<div class='page'>
+<div class='page_body'>
+<div class='main-page-body-content'>
+<div class='centered-top-placeholder'></div>
+<header class='centered-top-container' role='banner'>
+<div class='centered-top'>
+<div class='hamburger-menu-container'>
+<svg class='svg-icon-24 touch-icon hamburger-menu'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_menu_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+<div class='search'>
+<button aria-label='Buscar' class='search-expand touch-icon-button'>
+<div class='search-expand-text'>Buscar</div>
+<svg class='svg-icon-24 touch-icon search-expand-icon'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_search_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</button>
+<div class='section' id='search_top' name='Search (Top)'><div class='widget BlogSearch' data-version='2' id='BlogSearch1'>
+<h3 class='title'>
+Buscar Taller BIM
+</h3>
+<div class='widget-content' role='search'>
+<form action='https://www.tallerbim.com/search' target='_top'>
+<div class='search-input'>
+<input aria-label='Buscar este blog' autocomplete='off' name='q' placeholder='Buscar este blog' value=''/>
+</div>
+<label>
+<input type='submit'/>
+<svg class='svg-icon-24 touch-icon search-icon'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_search_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</label>
+</form>
+</div>
+</div></div>
+</div>
+<div class='blog-name'>
+<div class='section' id='header' name='Cabecera'><div class='widget Header' data-version='2' id='Header1'>
+<div class='header-widget'>
+<div>
+<h1>
+<a href='https://www.tallerbim.com/'>
+Taller BIM
+</a>
+</h1>
+</div>
+<p>
+Un blog de Alfonso Miró Sardá sobre BIM (Building Information Modelling)
+</p>
+</div>
+</div></div>
+<nav role='navigation'>
+<div class='section' id='page_list_top' name='Lista de páginas (arriba)'><div class='widget PageList' data-version='2' id='PageList1'>
+<div class='widget-content'>
+<div class='overflowable-container'>
+<div class='overflowable-contents'>
+<div class='container'>
+<ul class='tabs'>
+<li class='overflowable-item'>
+<a href='https://www.tallerbim.com/'>Página principal</a>
+</li>
+<li class='overflowable-item'>
+<a href='https://www.tallerbim.com/search?q=BIM'>BIM</a>
+</li>
+<li class='overflowable-item'>
+<a href='https://www.tallerbim.com/search?q=revit'>Revit</a>
+</li>
+</ul>
+</div>
+</div>
+<div class='overflow-button hidden'>
+<a>Más&hellip;</a>
+</div>
+</div>
+</div>
+</div><div class='widget PageList' data-version='2' id='PageList3'>
+<h3 class='title'>
+Páginas
+</h3>
+<div class='widget-content'>
+<div class='overflowable-container'>
+<div class='overflowable-contents'>
+<div class='container'>
+<ul class='tabs'>
+<li class='overflowable-item'>
+<a href='https://www.tallerbim.com/p/motor-de-busqueda-bim.html'>Buscador BIM</a>
+</li>
+<li class='overflowable-item selected'>
+<a href='https://www.tallerbim.com/p/blogs-y-paginas-bim.html'>Blogs y bibliotecas BIM</a>
+</li>
+<li class='overflowable-item'>
+<a href='https://www.tallerbim.com/search?q=open+bim'>Open BIM</a>
+</li>
+<li class='overflowable-item'>
+<a href='https://www.tallerbim.com/p/blogosfera-bim.html'>Últimas noticias BIM</a>
+</li>
+</ul>
+</div>
+</div>
+<div class='overflow-button hidden'>
+<a>Más&hellip;</a>
+</div>
+</div>
+</div>
+</div><div class='widget PageList' data-version='2' id='PageList2'>
+<div class='widget-content'>
+<div class='overflowable-container'>
+<div class='overflowable-contents'>
+<div class='container'>
+<ul class='tabs'>
+<li class='overflowable-item'>
+<a href='https://www.tallerbim.com/p/quien-soy.html'>Quién soy: algunos trabajos</a>
+</li>
+<li class='overflowable-item'>
+<a href='https://www.tallerbim.com/p/cookies-y-privacidad.html'>Cookies y privacidad</a>
+</li>
+</ul>
+</div>
+</div>
+<div class='overflow-button hidden'>
+<a>Más&hellip;</a>
+</div>
+</div>
+</div>
+</div></div>
+</nav>
+</div>
+</div>
+</header>
+<div class='hero-image has-image'>
+</div>
+<main class='centered-bottom' id='main' role='main' tabindex='-1'>
+<div class='main section' id='page_body' name='Cuerpo de la página'>
+<div class='widget Blog' data-version='2' id='Blog1'>
+<div class='blog-posts hfeed container'>
+<div class='post-outer-container'>
+<div class='post-outer'>
+<div class='post-sidebar'>
+<div class='post-sidebar-item post-share-buttons'>
+<div aria-owns='sharing-popup-Blog1-byline-2155885377622918083' class='sharing' data-title=''>
+<button aria-controls='sharing-popup-Blog1-byline-2155885377622918083' aria-label='Compartir' class='sharing-button touch-icon-button' id='sharing-button-Blog1-byline-2155885377622918083' role='button'>
+Compartir
+</button>
+<div class='share-buttons-container'>
+<ul aria-hidden='true' aria-label='Compartir' class='share-buttons hidden' id='sharing-popup-Blog1-byline-2155885377622918083' role='menu'>
+<li>
+<span aria-label='Obtener enlace' class='sharing-platform-button sharing-element-link' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&pageID=2155885377622918083&target=' data-url='https://www.tallerbim.com/p/blogs-y-paginas-bim.html' role='menuitem' tabindex='-1' title='Obtener enlace'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Obtener enlace</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&pageID=2155885377622918083&target=facebook' data-url='https://www.tallerbim.com/p/blogs-y-paginas-bim.html' role='menuitem' tabindex='-1' title='Compartir en Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Twitter' class='sharing-platform-button sharing-element-twitter' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&pageID=2155885377622918083&target=twitter' data-url='https://www.tallerbim.com/p/blogs-y-paginas-bim.html' role='menuitem' tabindex='-1' title='Compartir en Twitter'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&pageID=2155885377622918083&target=pinterest' data-url='https://www.tallerbim.com/p/blogs-y-paginas-bim.html' role='menuitem' tabindex='-1' title='Compartir en Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Correo electrónico' class='sharing-platform-button sharing-element-email' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&pageID=2155885377622918083&target=email' data-url='https://www.tallerbim.com/p/blogs-y-paginas-bim.html' role='menuitem' tabindex='-1' title='Correo electrónico'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Correo electrónico</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Compartir en otras aplicaciones' class='sharing-platform-button sharing-element-other' data-url='https://www.tallerbim.com/p/blogs-y-paginas-bim.html' role='menuitem' tabindex='-1' title='Compartir en otras aplicaciones'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Otras aplicaciones</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='post'>
+<script type='application/ld+json'>{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.tallerbim.com/p/blogs-y-paginas-bim.html"
+  },
+  "headline": "Blogs y bibliotecas BIM","description": "Actualizado 08/05/2020    Traemos, a continuación, una lista de blogs recomendados, en inglés y en español, así como de bibliotec...","datePublished": "2020-05-08T14:27:00+02:00",
+  "dateModified": "2020-05-08T14:27:08+02:00","image": {
+    "@type": "ImageObject","url": "https://2.bp.blogspot.com/-s1dZVdaOfJA/WcVVSxaRHEI/AAAAAAAABb8/RD0RrO7H08wsW27n1h1g7Off5ik3UI4NQCKgBGAs/w1200-h630-p-k-no-nu/Menil-Museum%252C-R.-PianoWEB.png",
+    "height": 630,
+    "width": 1200},"publisher": {
+    "@type": "Organization",
+    "name": "Blogger",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60",
+      "width": 206,
+      "height": 60
+    }
+  },"author": {
+    "@type": "Person",
+    "name": "Alfonso Miró Sardá"
+  }
+}</script>
+<div class='post-header'>
+<div class='post-header-line-1'>
+</div>
+</div>
+<a name='2155885377622918083'></a>
+<h1 class='post-title entry-title' itemprop='name'>Blogs y bibliotecas BIM</h1>
+<div class='post-body-container'>
+<div class='post-body entry-content float-container' id='post-body-2155885377622918083'>
+<!-- Go to www.addthis.com/dashboard to customize your tools --><br />
+<div class="addthis_inline_follow_toolbox">
+</div>
+<!--Start Cookie Script-->
+<script charset="UTF-8" src="https://chs03.cookie-script.com/s/ee81798f1c1baf8991f6300bede12880.js" type="text/javascript">
+<!--End Cookie Script-->
+</script>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://2.bp.blogspot.com/-s1dZVdaOfJA/WcVVSxaRHEI/AAAAAAAABb8/RD0RrO7H08wsW27n1h1g7Off5ik3UI4NQCKgBGAs/s1600/Menil-Museum%252C-R.-PianoWEB.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="901" data-original-width="1600" height="360" src="https://2.bp.blogspot.com/-s1dZVdaOfJA/WcVVSxaRHEI/AAAAAAAABb8/RD0RrO7H08wsW27n1h1g7Off5ik3UI4NQCKgBGAs/s640/Menil-Museum%252C-R.-PianoWEB.png" width="640" /></a></div>
+<br />
+<div style="text-align: right;">
+<br />
+<i>Actualizado 08/05/2020</i></div>
+<br />
+<br />
+Traemos, a continuación, una lista de blogs recomendados, en inglés y en español, así como de bibliotecas de recursos. Todos ellos, entre otros muchos más, están integrados en la base del <a href="http://www.tallerbim.com/p/motor-de-busqueda-bim.html" target="_blank"><b>motor de búsqueda BIM</b></a> que hemos construido y puesto a vuestra disposición. Pretendemos tener esta lista actualizada, de modo que si veis algún error u omisión, os agradeceríamos el comentario o el reporte. Esta lista pretende ser no exhaustiva, pero sí extensa.<br />
+<br />
+<h2>
+<span style="font-size: x-large;">Blogs BIM</span></h2>
+<h3>
+<span style="font-size: large;">En inglés:</span></h3>
+<ul>
+<li><a href="http://adndevblog.typepad.com/aec/" target="_blank"><b>AEC DevBlog</b></a>, para desarrolladores dde software compatibles con Revit, Navisworks y otros productos BIM de Autodesk.</li>
+<li><b><a href="https://revitstructureblog.wordpress.com/" target="_blank">Autodesk Revit Structure</a>,</b> no solo Autodesk, no solo Revit y no solo Estructuras.</li>
+<li><a href="http://beyonddesign.typepad.com/posts/" target="_blank"><b>Beyond Design</b></a>, otro blog de Autodesk.</li>
+<li><a href="http://www.bimthinkspace.com/" target="_blank"><b>BIM Think Space</b></a>, uno de los blogs pioneros sobre BIM.</li>
+<li>The <a href="http://constructioncode.blogspot.com/" target="_blank"><b><span style="color: #990000;">Construction Code</span></b></a>, sobre BIM, construcción y la NBS. Blog de Stephen Hamill, Director of Research and Innovation and Head of BIM at the NBS.</li>
+<li>The <b><a href="http://www.thebimcenter.com/" target="_blank">BIM Center</a></b>, una página sobre BIM y el sector AEC en Nigeria.&nbsp;</li>
+<li><a href="http://bimcrunch.com/" target="_blank"><b>BIM Crunch</b></a>&nbsp;es más que un blog, es un <i>feed </i>diario de noticias BIM.</li>
+<li><a href="https://bimfreak.com/" target="_blank"><b>BIM Freak</b></a>, otro más, por Laura Kay Smith, de Vancouver. Claro, conciso y al grano.</li>
+<li><b><a href="http://augi.typepad.com/augi_news/" target="_blank">BLAUGI</a></b>, el Blog of Autodesk Users Group International.</li>
+<li><a href="https://boostyourbim.wordpress.com/" target="_blank"><b>Boost Your BIM</b></a>, de Harry Mattison, que lleva trabajando con Revit desde 1998 (meses antes del lanzamiento de Revit 1.0). Algo sabe de esto, sí.</li>
+<li><a href="http://cad-3d.blogspot.com/" target="_blank"><b>CAD, BIM &amp; 3D</b></a>, sobre software CAD, BIM y 3D, por Stefan Boeykens.</li>
+<li><b><a href="https://connect.bim360.autodesk.com/" target="_blank">Connect &amp; Construct</a>, </b>el blog de Autodesk sobre Autodesk 360, entre otros muchos temas de actualidad BIM.</li>
+<li><b><a href="http://debunkthebim.blogspot.com/" target="_blank">Debunk the BIM</a></b>, por Zolna Murray, arquitecta en Abu Dabi.</li>
+<li><b><a href="http://dynamobim.org/blog/" target="_blank">Dynamo BIM</a></b>, fundamentalmente sobre Dynamo.</li>
+<li><a href="http://plevit1.blogspot.com/" target="_blank"><b>Enjoy Revit</b></a>, con trucos y consejos sobre Revit y Dynamo, del arquitecto coreano HyunWoo Kim.</li>
+<li><b><a href="http://blogs.rand.com/architectural/" target="_blank">ImaginIT</a></b>, información relevante para los profesionales de AEC y Facility Managers, con consejos sobre Revit y ARCHIBUS (FM).</li>
+<li><a href="http://practicalbim.blogspot.com/" target="_blank"><b>Practical BIM</b></a>, un viejo modelo de blogspot con información muy actual y relevante. Y práctica, sobre todo práctica.</li>
+<li><b><a href="http://puntorevit.blogspot.com/" target="_blank">Punto Revit</a></b>, sobre Revit y Dynamo, de Paolo Emilio Serra (en inglés).</li>
+<li><a href="https://revitbeyondbim.wordpress.com/" target="_blank"><b>Revit beyond BIM</b></a>, otro buen blog sobre Revit y más, por Dieter Vermeulen.</li>
+<li><b><a href="http://revitcat.blogspot.com/" target="_blank">Revit Cat</a></b>, obscure tips and tricks. Cómo hacer las cosas con Revit, pero de otra forma. De Tim Waldock, en Australia.</li>
+<li><b><a href="https://www.revit.news/" target="_blank">Revit News</a></b>, todo noticias sobre Revit y BIM en general.</li>
+<li><a href="http://blogs.autodesk.com/revit/" target="_blank"><b>Revit Official Blog</b></a>, entre tantos blog sobre Revit, alguno tenía que ser el oficial. De Autodesk, por si había que decirlo.</li>
+<li><b><a href="http://revitoped.blogspot.com/" target="_blank">Revit OpEd,</a></b> de Steve Stafford. Otro de los clásicos, este blog apareció en el año 2004. Sí, Revit no es de ahora.</li>
+<li><a href="http://architects-desktop.blogspot.com/" target="_blank"><b>The Architect&#180;s Desktop</b></a>, de David Koch, sobre productos de Autodesk.</li>
+<li><b><a href="http://bim4scottc.blogspot.com/" target="_blank">The BIM Jedi</a></b>, antes llamado Revit Jedi.&nbsp;</li>
+<li><a href="https://thebimsider.com/" target="_blank"><b>The BIMsider</b></a>, otro clásico de blogger, desde 2008. Maravilloso juego de palabras.</li>
+<li><b><a href="http://thebuildingcoder.typepad.com/" target="_blank">The Building Coder</a></b>, para programadores o para aquellos que crean add-ons para Revit y otros programas BIM. A mí se me queda grande, pero los hay por aquí que seguro que le sacan su provecho.</li>
+<li><b><a href="https://bimblog.house/" target="_blank">There's no BIM like home</a></b>, por Dan Rossiter. Interesante blog sobre BIM, de alguien que aplicó la metodología BIM a su propia casa.</li>
+<li>The <b><a href="http://bimobject.com/es/blog" target="_blank">BIMObject Blog</a></b>, el blog de BIM Object, una gran plataforma de objetos BIM.</li>
+<li><b><a href="http://www.thebimr.com/" target="_blank">The BIMr</a></b>, sobre Archicad y sobre BIM en general.</li>
+</ul>
+<div>
+<ul>
+<li><a href="https://blog.allplan.com/en" target="_blank"><b>Allplan&nbsp;</b></a>&nbsp;(pronúnciese [al-pla:n], &#161;es alemán, no inglés!) tiene un blog que va más allá de este software.</li>
+</ul>
+</div>
+Agradecemos a Jorge Hernando Porras el haber llamado nuestra atención sobre estos blogs de BIM que tratan, sobre todo, de <b>Archicad</b>:<br />
+<div>
+<ul>
+<li>El blog de <b><a href="http://www.bim6x.com/blog" target="_blank">BIMx</a></b>, centrado en Archicad.</li>
+<li><b><a href="http://bimblog.bondbryan.com/" target="_blank">BondBryan</a>&nbsp;</b>es un excelente blog, con muchos recursos y enlaces, sobre diferentes aspectos del BIM. En cuanto al software de modelado, se centra en Archicad, pero trabaja muchísimos aspectos de BIM en general.</li>
+<li>Pusimos el blog de <a href="https://blog.graphisoftus.com/" target="_blank"><b>Graphisoft </b></a>en español, pero no en inglés.&nbsp;</li>
+<li>Otro blog de Archicad, esta vez de Australia, <b><a href="http://www.skewed.com.au/blog" target="_blank">Skewed</a></b>.</li>
+<li>Más blogs destacables: <a href="http://www.weareenzyme.com/blog/" style="font-weight: bold;" target="_blank">Weareenzyme</a>,<b> </b><a href="https://asiabim.wordpress.com/" style="font-weight: bold;" target="_blank">Asia BIM</a>,<b>&nbsp;</b><a href="http://www.shoegnome.com/" style="font-weight: bold;" target="_blank">Shoegnome</a>, <a href="https://wwabim.wordpress.com/" style="font-weight: bold;" target="_blank">WWA BIM</a>&nbsp;y <b><a href="https://wowad.in/blog/" target="_blank">WoWad</a></b>, de India.</li>
+</ul>
+<h3>
+<span style="font-size: large;">En español:</span></h3>
+<ul>
+<li>Empezamos con el blog de Enrique Alario, <b><a href="https://enriquealario.com/blog/" target="_blank">Alario Arquitectura</a>.</b> Para los pocos que a estas alturas no le conozcan, es arquitecto técnico, curtido en obra, y sabe mucho de BIM y es un gran comunicador del oficio. Lleva, desde hace años, un <a href="https://enriquealario.com/podcast/" target="_blank">programa en podcast</a> sobre BIM y otros temas de construcción.</li>
+<li>El blog de <b><a href="http://www.apogeavirtualbuilding.com/blog/" target="_blank">Apogea Virtual Building</a></b>, otro de las consultoras pioneras en España, fundada por Jesús Valderrama, Armando Benítez y Agustí Jardí.&nbsp;</li>
+<li>El blog oficial de&nbsp;<b><a href="http://blog.graphisoft.lat/" target="_blank">ArchiCAD</a>&nbsp;</b>en español es mantenido por Graphisoft México.</li>
+<li>El blog de <a href="http://atanga.net/blog/" target="_blank"><b>Atanga BIM&nbsp;+3D</b></a>, aunque poco actualizado, sigue estando vigente. Por Javier Alonso Madrid, arquitecto, director del máster de BIM en la Fundación Laboral y figura de referencia en el campo.</li>
+<li><b><a href="http://bimchannel.net/" target="_blank">BIMChannel</a> </b>es mucho más que un blog, es un medio abierto de difusión de noticias, eventos, artículos técnicos y todo lo relacionado con BIM.&nbsp;</li>
+<li>Casi nos dejábamos en el tintero el blog de <b><a href="http://blog.bimandco.com/es/" target="_blank">BIM &amp; Co</a>.</b> (gracias Muriel Bourgeay por recordárnoslo). BIM &amp; Co. es una plataforma colaborativa de creación de contenido BIM y su blog contiene muy interesantes aportaciones sobre BIM y construcción inteligente en general.</li>
+<li><a href="https://www.bimcommunity.com/" target="_blank"><b>BIM Community</b></a> es un excelente punto de partida para adentrarse en BIM. Se nos había pasado ponerla, de tan obvia, porque es una de nuestras favoritas. De hecho, no es un blog, es mucho más que eso: una comunidad para impulsar BIM en el mundo de la construcción. Con artículos técnicos, <i>tips</i>, bibliografía, tutoriales, y mucho más. (Gracias a Carlos Giménez Belmonte por hacernos ver que no lo habíamos incluido en esta lista).</li>
+<li><a href="http://bimdac.blogspot.com/" target="_blank"><b>BIMDAC</b></a>, por Dídac Borda. También es arquitecto técnico y su blog, aunque incipiente, promete.</li>
+<li>El blog de <a href="https://bimlearning.es/blog-revit-architecture/" target="_blank"><span style="color: #990000;"><b>BIM Learning</b></span></a>, otro blog de referencia, escrito por Miguel Morea y José Manuel Zaragoza. Ambos son tanto arquitectos como aparejadores, entre los pioneros del BIM en España. BIM Learning es un centro autorizado de Autodesk (ATC).</li>
+<li><a href="http://www.bimlevel.com/" target="_blank"><b>BIM level</b></a>, de Iván Guerra. Muy buenos contenidos y magníficos tutoriales. En los ultimos tiempos desarrolla un podcast con contenidos de mucho interés.</li>
+<li>Agradecemos a Javier Andrés Pérez Alba habernos puesto sobre la pista de <b><a href="http://community.bimtool.com/" target="_blank">BIM Tool</a></b>, que nos viene de Chile. Además de contener muy útiles tutoriales de Revit y Archicad, entre otros, tiene un&nbsp; <a href="http://community.bimtool.com/" target="_blank">blog </a>muy interesante.</li>
+<li>Es importante la sección de noticias de&nbsp;<a href="https://www.buildingsmart.es/observatorio-bim/noticias/" target="_blank"><b>Building Smart</b></a>. BuildingSMART Spanish Chapter es&nbsp;una asociación sin ánimo de lucro cuyo principal objetivo es fomentar la&nbsp;eficacia&nbsp;en el sector de la construcción a través del uso de&nbsp;<b>estándares abiertos de interoperabilidad BIM</b></li>
+<li>El blog&nbsp;<a href="http://www.acercas.com/" target="_blank"><b>Acercas.com</b></a>, de Alberto Cerdán, arquitecto técnico, que lleva trabajando con Revit desde hace muchos años y sabe muy bien de lo que habla. Su blog, además de interesantes entradas, nos ofrece muchos recursos y de calidad. Todo un descubrimiento.</li>
+<li>Blog de <b><a href="http://blog.entornobim.org/" target="_blank">Entorno BIM</a></b>, de la Fundación Laboral de la Construcción.</li>
+<li>Blog de&nbsp;<b><a href="http://www.esbim.es/blog/" target="_blank">EsBIM</a>.</b>&nbsp;&nbsp;Es&nbsp;<i><b>el</b>&nbsp;</i>grupo por la implantación del BIM en España. En este blog colectivo escriben Miguel Morea, José Manuel Zaragoza, José Gémez y otros.</li>
+<li>Blog de <a href="https://www.espaciobim.com/blog/" target="_blank"><b>Espacio BIM</b></a>, uno de los primeros centros autorizados Autodesk en España (ATC).</li>
+<li><b><a href="http://www.espacioleanbim.com/" target="_blank">Espacio Lean BIM</a>,</b> con muy buenos artículos sobre ambas metodologías, en el fondo tan complementarias.</li>
+<li><a href="http://daviddelgado-arquitecte.blogspot.com/" style="font-weight: bold;" target="_blank">David Delgado Vendrell</a>&nbsp;es otra figura de referencia en BIM desde hace años. Abanderado del Open BIM, trabaja fundamentalmente con Archicad y en su blog nos da valiosas aportaciones.</li>
+<li>El blog de <b><a href="http://www.garquitectos.com/" target="_blank">GArquitectos</a>,</b> de los arquitectos José Gémez y Eloísa García, también es referente en cuanto a la metodología BIM se refiere desde hace años. Entre otras aportaciones, caben destacar los plugins y añadidos que elabora José Gémez para Revit y pone a disposición de todos nosotros. Contiene, además, valiosas aportaciones sobre ArchiCAD.&nbsp;</li>
+<li><a href="http://manualderevit.blogspot.com/" target="_blank"><b>Manual de Revit,</b></a> un blog de Luis Carlos de la Peña, está entre los imprescindibles. A pesar de su nombre, el blog habla de BIM en general y también de OpenBIM.</li>
+<li>El blog de <a href="https://www.modelical.com/es/archivo/blog/" target="_blank"><b>Modelical</b></a>, empresa de referencia en la creación de herramientas informáticas para el mundo de la construcción. Muy buenos contenidos, enfocados sobre todo a Revit.</li>
+<li><a href="https://www.nuberevit.com/" target="_blank"><b>Nube de Revit</b></a> es una página de una empresa creada por las arquitectas Marta Blanca y Carolina Orellana. Su página aloja un blog muy útil y didáctico sobre Revit, principalmente.</li>
+<li><b><a href="http://qbimgest.blogspot.com/" target="_blank">Q+BIM+GEST Nuevos Modelos /New Models</a></b>, de David Barco. Otro que no necesita presentación: arquitecto entusiasta de las nuevas tecnologías, director técnico de Berrilan, de Gestproject, director de BIMChannel, y director del postgrado en BIM de la Universidad Europea. Impulsor y pionero de BIM en España. Administra, junto con José Gémez, el (muy activo) grupo de Facebook&nbsp;<a href="https://www.facebook.com/groups/revitspanish/members/" rel="nofollow" target="_blank"><b>Revit España</b></a>.</li>
+<li>El blog plural de (BIMAC)&nbsp;<a href="https://online.revitalacarta.com/blog/" style="font-weight: bold;" target="_blank">Revit a la Carta</a>, también es digno de mención.</li>
+<li><b><a href="https://revitparatontos.wordpress.com/" target="_blank">Revit para tontos</a>&nbsp;</b>o Revit para todos. Un blog sobre Revit (y más) con mucho sentido del humor, buenas informaciones y buenas reflexiones. De su autor desconocemos su nombre, pero pulula por Twitter como @revitplayer.</li>
+<li>Otro descubrimiento reciente, sobre arquitectura y diseño paramétrico, de&nbsp;<a href="http://www.studioseed.net/category/blog/" target="_blank"><b>Studio Seed</b></a>.</li>
+<li><b><a href="http://venadorevit.blogspot.com/" target="_blank">Venado Revit</a> </b>es el blog de Luciano Gorosito, creador de <b><a href="http://www.universobim.com/" target="_blank">Universo BIM</a>,</b>&nbsp;y se llama así porque Luciano recibió su título de ingeniería en la escuela de Venado Tuerto, de la Universidad Tecnológica Nacional (Argentina). Ese ciervo o venado dibujado nos acompaña desde hace años por la red y nos ha enseñado muchas cosas a todos.</li>
+<li>Y otro que casi se nos pasa es el de <b><a href="https://www.e-zigurat.com/noticias/" target="_blank">Zigurat Global Institute of Technology</a></b>. Absolutamente recomendable para arquitectura y obra civil, tiene muchísimo de BIM.</li>
+</ul>
+<h2>
+<span style="font-size: x-large;">Podcasts BIM:</span></h2>
+</div>
+<div>
+<ul>
+<li>Al ya citado podcast de <a href="https://enriquealario.com/podcast/" target="_blank"><b>Alario Arquitectura</b></a>, tenemos que añadir el</li>
+<li><b><a href="https://www.bimpodcast.com/" target="_blank">BIM Podcast</a></b> del arquitecto <b>Javier Sánchez-Matamoros</b>, dedicado íntegramente a BIM.</li>
+<li><b><a href="https://www.bimrras.com/" target="_blank">BIMrras</a></b>, mejor escucharlo. Entretenido y riguroso a la vez.</li>
+<li><a href="https://bimlevel.com/Categoria/podcast/" target="_blank">BIMLevel</a>. Iván Guerra</li>
+</ul>
+</div>
+<div>
+<ul>
+</ul>
+<div>
+</div>
+<h2>
+<span style="font-size: x-large;">Descargas BIM</span></h2>
+<h3>
+<span style="font-size: large;">Plugins, add-ons y demás:</span></h3>
+<div>
+<ul>
+<li><b><a href="http://revitaddons.blogspot.com/" target="_blank">Revit add-ons</a></b>, un blog en la plataforma blogger donde se publican constantemente plugins y accesorios para Revit.</li>
+<li style="font-size: medium;"><a href="http://blog.cadimageworld.com/" target="_blank"><b>CadImage</b></a>, lo mismo, pero para ArchiCAD. Y, además, contiene una biblioteca de <i>how-to</i> impresionante.</li>
+</ul>
+</div>
+<h3>
+<span style="font-size: large;">Objetos BIM:</span></h3>
+<ul>
+<li><b><a href="http://www.arcat.com/bim/bim_objects.shtml" target="_blank">Arcat</a></b>. Recursos BIM y CAD. No es necesario registrarse y la página es completamente gratuita.</li>
+<li><a href="http://bim.archiproducts.com/es/productos" style="font-weight: bold;" target="_blank">BIM Archiproducts</a><b>&nbsp;</b>ofrece&nbsp;objetos BIM para distintos softwares. A pesar de su nombre, hay muchos más productos para Revit, para Rhino o para SketchUp que para Archicad.</li>
+<li><a href="http://bimbox.co.uk/" target="_blank"><b>BIMbox &nbsp;Info</b>&nbsp;</a>está especializada en mobiliario de todo tipo e interiorismo, tanto de viviendas como de oficinas o, incluso, teatros y auditorios. No encontrarás aquí objetos MEP, para eso hay otros sitios.</li>
+<li><b><a href="https://www.bimandco.com/es/" target="_blank">BIM &amp; Co</a>.</b>, más que una biblioteca, es una plataforma colaborativa (a nivel mundial) que permite, a todas las partes integradas en el modelo digital, crear, publicar y modificar contenido BIM. Tiene plugins para Revit, Archicad, Allplan y SketchUp. Muy recomendable.</li>
+<li><a href="https://www.bimcommunity.com/resources/" target="_blank"><b>BIM Community</b></a> tiene una amplia variedad de recursos, desde software hasta libros impresos y digitales, así que no podían faltar catálogos de objetos BIM de fabricantes. Hay de todo, pasen y vean.</li>
+<li><a href="http://www.bimetica.com/" target="_blank"><b>Bimetica</b></a>, es una Biblioteca <b>BIM Channel</b> que distribuye objetos BIM (Familias de Revit, Archicad, IFC, AECOsim, etc.), Bloques 3D, Fichad Ténicas en PDF y otros contenidos con información de productos para la construcción. La empresa es española, por cierto,&nbsp;</li>
+<li><b><a href="https://bimobject.com/es" target="_blank">BIMObject,</a></b>&nbsp;la plataforma líder de descarga de objetos BIM. Para descargar objetos BIM específicos de fabricantes (hay más de 200.000).&nbsp;</li>
+<li><b><a href="https://www.bimtool.com/" target="_blank">BIMTool</a></b>, de Chile, también cuenta con objetos y muchos recursos BIM.</li>
+<li>La<b>&nbsp;<a href="https://www.nationalbimlibrary.com/find-bim-objects" target="_blank">NBS National BIM Library</a></b>&nbsp;se ha descrito como la fuente más importante de objetos BIM gratuitos. La página es, desde luego, excelente y la descarga, muy rápida y sencilla gracias al&nbsp;<i>plugin </i>para Revit (y Archicad, en su caso).</li>
+<li><b><a href="https://www.magicloud.com/" target="_blank">Magicloud</a>,</b>&nbsp;excelente biblioteca de objetos BIM MEP. La página requiere suscripción, pero las descargas son gratuitas.</li>
+<li><b><a href="https://www.mepcontent.eu/" target="_blank">MepContent</a></b>, la biblioteca BIM para MEP.</li>
+<li><a href="https://www.polantis.com/" style="font-weight: bold;" target="_blank">Polantis</a>&nbsp;es, aunque más pequeña, una muy buena biblioteca. Requiere suscripción. Su finalidad es la de introducir los diseños de sus clientes en los proyectos de arquitectura.</li>
+<li><b><a href="https://www.revitcity.com/index.php" target="_blank">Revit City</a></b>&nbsp;es una página sobre cualquier aspecto de Revit, en la que también se pueden descargar objetos BIM (solo para Revit). Es necesario registrarse.</li>
+<li><b><a href="http://library.smartbim.com/" target="_blank">SmartBIM</a>. </b>Todo tipio de equipamiento MEP y de interiorismo. Es gratuito y de suscripción.</li>
+</ul>
+<br />
+<span style="font-size: small;">Créditos foto de portada: alzado del <a href="https://www.menil.org/" target="_blank">Menil Museum</a>, de Renzo Piano, elaboración propia.</span></div>
+</div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<div class='byline post-share-buttons goog-inline-block'>
+<div aria-owns='sharing-popup-Blog1-footer-1-2155885377622918083' class='sharing' data-title='Blogs y bibliotecas BIM'>
+<button aria-controls='sharing-popup-Blog1-footer-1-2155885377622918083' aria-label='Compartir' class='sharing-button touch-icon-button' id='sharing-button-Blog1-footer-1-2155885377622918083' role='button'>
+Compartir
+</button>
+<div class='share-buttons-container'>
+<ul aria-hidden='true' aria-label='Compartir' class='share-buttons hidden' id='sharing-popup-Blog1-footer-1-2155885377622918083' role='menu'>
+<li>
+<span aria-label='Obtener enlace' class='sharing-platform-button sharing-element-link' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&pageID=2155885377622918083&target=' data-url='https://www.tallerbim.com/p/blogs-y-paginas-bim.html' role='menuitem' tabindex='-1' title='Obtener enlace'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Obtener enlace</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&pageID=2155885377622918083&target=facebook' data-url='https://www.tallerbim.com/p/blogs-y-paginas-bim.html' role='menuitem' tabindex='-1' title='Compartir en Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Twitter' class='sharing-platform-button sharing-element-twitter' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&pageID=2155885377622918083&target=twitter' data-url='https://www.tallerbim.com/p/blogs-y-paginas-bim.html' role='menuitem' tabindex='-1' title='Compartir en Twitter'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&pageID=2155885377622918083&target=pinterest' data-url='https://www.tallerbim.com/p/blogs-y-paginas-bim.html' role='menuitem' tabindex='-1' title='Compartir en Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Correo electrónico' class='sharing-platform-button sharing-element-email' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&pageID=2155885377622918083&target=email' data-url='https://www.tallerbim.com/p/blogs-y-paginas-bim.html' role='menuitem' tabindex='-1' title='Correo electrónico'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Correo electrónico</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Compartir en otras aplicaciones' class='sharing-platform-button sharing-element-other' data-url='https://www.tallerbim.com/p/blogs-y-paginas-bim.html' role='menuitem' tabindex='-1' title='Compartir en otras aplicaciones'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Otras aplicaciones</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class='comments threaded' data-embed='true' data-num-comments='6' id='comments'>
+<a name='comments'></a>
+<h3 class='title'>Comentarios</h3>
+<div class='comments-content'>
+<script async='async' src='' type='text/javascript'></script>
+<script type='text/javascript'>(function(){/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+var n=this||self,p=/^[\w+/_-]+[=]{0,2}$/,t=null,u=function(a){return(a=a.querySelector&&a.querySelector("script[nonce]"))&&(a=a.nonce||a.getAttribute("nonce"))&&p.test(a)?a:""},x=function(a,b){function e(){}e.prototype=b.prototype;a.superClass_=b.prototype;a.prototype=new e;a.prototype.constructor=a;a.base=function(f,c,k){for(var q=Array(arguments.length-2),r=2;r<arguments.length;r++)q[r-2]=arguments[r];return b.prototype[c].apply(f,q)}},y=function(a){return a};function C(a){if(Error.captureStackTrace)Error.captureStackTrace(this,C);else{var b=Error().stack;b&&(this.stack=b)}a&&(this.message=String(a))}x(C,Error);C.prototype.name="CustomError";var D=function(a,b){a=a.split("%s");for(var e="",f=a.length-1,c=0;c<f;c++)e+=a[c]+(c<b.length?b[c]:"%s");C.call(this,e+a[f])};x(D,C);D.prototype.name="AssertionError";var E=function(a,b){throw new D("Failure"+(a?": "+a:""),Array.prototype.slice.call(arguments,1));};var F;var I=function(a,b){this.privateDoNotAccessOrElseTrustedResourceUrlWrappedValue_=b===H?a:""};I.prototype.toString=function(){return this.privateDoNotAccessOrElseTrustedResourceUrlWrappedValue_+""};var H={},J=function(a){if(void 0===F){var b=null;var e=n.trustedTypes;if(e&&e.createPolicy)try{b=e.createPolicy("goog#html",{createHTML:y,createScript:y,createScriptURL:y})}catch(f){n.console&&n.console.error(f.message)}F=b}a=(b=F)?b.createScriptURL(a):a;return new I(a,H)};var K=function(a,b){a:{try{var e=a&&a.ownerDocument,f=e&&(e.defaultView||e.parentWindow);f=f||n;if(f.Element&&f.Location){var c=f;break a}}catch(q){}c=null}if(c&&"undefined"!=typeof c.HTMLScriptElement&&(!a||!(a instanceof c.HTMLScriptElement)&&(a instanceof c.Location||a instanceof c.Element))){c=typeof a;if("object"==c&&null!=a||"function"==c)try{var k=a.constructor.displayName||a.constructor.name||Object.prototype.toString.call(a)}catch(q){k="<object could not be stringified>"}else k=void 0===
+a?"undefined":null===a?"null":typeof a;E("Argument is not a %s (or a non-Element, non-Location mock); got: %s","HTMLScriptElement",k)}b instanceof I&&b.constructor===I?b=b.privateDoNotAccessOrElseTrustedResourceUrlWrappedValue_:(k=typeof b,E("expected object of type TrustedResourceUrl, got '"+b+"' of type "+("object"!=k?k:b?Array.isArray(b)?"array":k:"null")),b="type_error:TrustedResourceUrl");a.src=b;(b=a.ownerDocument&&a.ownerDocument.defaultView)&&b!=n?b=u(b.document):(null===t&&(t=u(n.document)),
+b=t);b&&a.setAttribute("nonce",b)};var P=function(){var a=document;var b="SCRIPT";"application/xhtml+xml"===a.contentType&&(b=b.toLowerCase());return a.createElement(b)};var Q=function(a,b,e){var f=null;a&&0<a.length&&(f=parseInt(a[a.length-1].timestamp,10)+1);var c=null,k=null,q=void 0,r=null,z=(window.location.hash||"#").substring(1),L,M;/^comment-form_/.test(z)?L=z.substring(13):/^c[0-9]+$/.test(z)&&(M=z.substring(1));var U={id:e.postId,data:a,loadNext:function(m){if(f){var g=e.feed+"?alt=json&v=2&orderby=published&reverse=false&max-results=50";f&&(g+="&published-min="+(new Date(f)).toISOString());window.bloggercomments=function(A){f=null;var v=[];if(A&&A.feed&&
+A.feed.entry)for(var N=0,d;d=A.feed.entry[N];N++){var l={},h=/blog-(\d+).post-(\d+)/.exec(d.id.$t);l.id=h?h[2]:null;h=l;a:{var w=void 0;var O=d&&(d.content&&d.content.$t||d.summary&&d.summary.$t)||"";if(d&&d.gd$extendedProperty)for(w in d.gd$extendedProperty)if("blogger.contentRemoved"==d.gd$extendedProperty[w].name){w='<span class="deleted-comment">'+O+"</span>";break a}w=O}h.body=w;l.timestamp=Date.parse(d.published.$t)+"";d.author&&d.author.constructor===Array&&(h=d.author[0])&&(l.author={name:h.name?
+h.name.$t:void 0,profileUrl:h.uri?h.uri.$t:void 0,avatarUrl:h.gd$image?h.gd$image.src:void 0});d.link&&(d.link[2]&&(l.link=l.permalink=d.link[2].href),d.link[3]&&(h=/.*comments\/default\/(\d+)\?.*/.exec(d.link[3].href))&&h[1]&&(l.parentId=h[1]));l.deleteclass="item-control blog-admin";if(d.gd$extendedProperty)for(var B in d.gd$extendedProperty)"blogger.itemClass"==d.gd$extendedProperty[B].name?l.deleteclass+=" "+d.gd$extendedProperty[B].value:"blogger.displayTime"==d.gd$extendedProperty[B].name&&
+(l.displayTime=d.gd$extendedProperty[B].value);v.push(l)}f=50>v.length?null:parseInt(v[v.length-1].timestamp,10)+1;m(v);window.bloggercomments=null};var G=P();G.type="text/javascript";K(G,J(g+"&callback=bloggercomments"));document.getElementsByTagName("head")[0].appendChild(G)}},hasMore:function(){return!!f},getMeta:function(m,g){return"iswriter"==m?g.author&&g.author.name==e.authorName&&g.author.profileUrl==e.authorUrl?"true":"":"deletelink"==m?e.baseUri+"/delete-comment.g?blogID="+e.blogId+"&postID="+
+g.id:"deleteclass"==m?g.deleteclass:""},onReply:function(m,g){null==c&&(c=document.getElementById("comment-editor"),null!=c&&(r=c.style.height,c.style.display="block",k=c.src.split("#")));c&&m&&m!==q&&(document.getElementById(g).insertBefore(c,null),g=k[0]+(m?"&parentID="+m:""),k[1]&&(g=g+"#"+k[1]),c.src=g,c.style.height=r||c.style.height,q=m,c.removeAttribute("data-resized"),c.dispatchEvent(new Event("iframeMoved")))},rendered:!0,initComment:M,initReplyThread:L,config:{maxDepth:e.maxThreadDepth},
+messages:b};a=function(){window.goog&&window.goog.comments&&window.goog.comments.render(document.getElementById("comment-holder"),U)};window.goog&&window.goog.comments?a():(window.goog=window.goog||{},window.goog.comments=window.goog.comments||{},window.goog.comments.loadQueue=window.goog.comments.loadQueue||[],window.goog.comments.loadQueue.push(a))},R=["blogger","widgets","blog","initThreadedComments"],S=n;R[0]in S||"undefined"==typeof S.execScript||S.execScript("var "+R[0]);
+for(var T;R.length&&(T=R.shift());)R.length||void 0===Q?S=S[T]&&S[T]!==Object.prototype[T]?S[T]:S[T]={}:S[T]=Q;}).call(this);
+</script>
+<script type='text/javascript'>
+    blogger.widgets.blog.initThreadedComments(
+        null,
+        null,
+        {});
+  </script>
+<div id='comment-holder'>
+<div class="comment-thread toplevel-thread"><ol id="top-ra"><li class="comment" id="c6764673260610793207"><div class="avatar-image-container"><img src="//resources.blogblog.com/img/blank.gif" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="http://alarioarquitectura.com" rel="nofollow">Enrique Alario</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://www.tallerbim.com/p/blogs-y-paginas-bim.html">23/9/17 9:24</a></span></div><p class="comment-content">Muchísimas gracias por incluirme en el listado, aunque no merezco estar ni en el último lugar de todos los cracks que has mencionado.  <br><br>En el podcast tengo algunos programas sobre BIM, pero no es exclusivo, hay otros temas relacionados con la construcción, aunque la verdad es que he tenido el gusto de entrevistar a muchos de los que están en la lista.<br><br>Aprovecho para felicitarte por el blog, estás haciendo un gran trabajo, sigue así.</p><span class="comment-actions secondary-text"><a class="comment-reply" target="_self" data-comment-id="6764673260610793207">Responder</a><span class="item-control blog-admin blog-admin pid-1422852990"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7839489140860278476&amp;postID=6764673260610793207">Eliminar</a></span></span></div><div class="comment-replies"><div id="c6764673260610793207-rt" class="comment-thread inline-thread"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Respuestas</a></span></span><ol id="c6764673260610793207-ra" class="thread-chrome thread-expanded"><div><li class="comment" id="c7482471820105067341"><div class="avatar-image-container"><img src="//www.blogger.com/img/blogger_logo_round_35.png" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/12045792178919211826" rel="nofollow">Alfonso Miró Sardá</a></cite><span class="icon user blog-author"></span><span class="datetime secondary-text"><a rel="nofollow" href="https://www.tallerbim.com/p/blogs-y-paginas-bim.html">23/9/17 19:59</a></span></div><p class="comment-content">Bueno, sí lo mereces, tanto por el BIM como por dignificar y divulgar esta profesión nuestra, que buena falta le hace. Muchas gracias por tus palabras&#161;&#161;&#161;</p><span class="comment-actions secondary-text"><span class="item-control blog-admin blog-admin pid-670386152"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7839489140860278476&amp;postID=7482471820105067341">Eliminar</a></span></span></div><div class="comment-replies"><div id="c7482471820105067341-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Respuestas</a></span></span><ol id="c7482471820105067341-ra" class="thread-chrome thread-expanded"><div></div><div id="c7482471820105067341-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="7482471820105067341">Responder</a></div></ol></div></div><div class="comment-replybox-single" id="c7482471820105067341-ce"></div></li><li class="comment" id="c2972209139281763425"><div class="avatar-image-container"><img src="//resources.blogblog.com/img/blank.gif" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="http://alarioarquitectura.com" rel="nofollow">Enrique Alario</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://www.tallerbim.com/p/blogs-y-paginas-bim.html">24/9/17 12:05</a></span></div><p class="comment-content">Te lo agradezco de nuevo, muchísimo, es un honor que me tengas en esa consideración, pero yo no soy más que un divulgador.  De verdad, no puedo estar por delante de grandes profesionales como David Barco, David Vendrell, Miguel Morea, José Gémez... <br><br>Por otro lado, si me permites sugerir también a alguno que considero importante y que me falta en la lista, como Alberto Cerdán y su blog www.acercas.com o el compañero Javier Sánchez-Matamoros y su podcast, realmente dedicado al mundo BIM, BIMPodcast.<br><br>En cualquier caso, como te digo, muy agradecido por tu consideración </p><span class="comment-actions secondary-text"><span class="item-control blog-admin blog-admin pid-1422852990"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7839489140860278476&amp;postID=2972209139281763425">Eliminar</a></span></span></div><div class="comment-replies"><div id="c2972209139281763425-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Respuestas</a></span></span><ol id="c2972209139281763425-ra" class="thread-chrome thread-expanded"><div></div><div id="c2972209139281763425-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="2972209139281763425">Responder</a></div></ol></div></div><div class="comment-replybox-single" id="c2972209139281763425-ce"></div></li><li class="comment" id="c4495655628600471560"><div class="avatar-image-container"><img src="//www.blogger.com/img/blogger_logo_round_35.png" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/12045792178919211826" rel="nofollow">Alfonso Miró Sardá</a></cite><span class="icon user blog-author"></span><span class="datetime secondary-text"><a rel="nofollow" href="https://www.tallerbim.com/p/blogs-y-paginas-bim.html">24/9/17 18:01</a></span></div><p class="comment-content">Muchísimas gracias, Enrique; por supuesto, lo tendré en cuenta. La lista está en continua revisión, ya la he actualizado un par de veces!</p><span class="comment-actions secondary-text"><span class="item-control blog-admin blog-admin pid-670386152"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7839489140860278476&amp;postID=4495655628600471560">Eliminar</a></span></span></div><div class="comment-replies"><div id="c4495655628600471560-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Respuestas</a></span></span><ol id="c4495655628600471560-ra" class="thread-chrome thread-expanded"><div></div><div id="c4495655628600471560-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="4495655628600471560">Responder</a></div></ol></div></div><div class="comment-replybox-single" id="c4495655628600471560-ce"></div></li><li class="comment" id="c935056194986759023"><div class="avatar-image-container"><img src="//www.blogger.com/img/blogger_logo_round_35.png" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/13800640562355378910" rel="nofollow">MaximoOrdoñez</a></cite><span class="icon user "></span><span class="datetime secondary-text"><a rel="nofollow" href="https://www.tallerbim.com/p/blogs-y-paginas-bim.html">1/10/17 4:21</a></span></div><p class="comment-content">Excelente, estoy trabajando en un blog, bimlatino.org dedicado a la difusion del BIM en Latinoamerica me gustaria sus comentarios y apoyo. De antemano muchas gracias.</p><span class="comment-actions secondary-text"><span class="item-control blog-admin blog-admin pid-1381110510"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7839489140860278476&amp;postID=935056194986759023">Eliminar</a></span></span></div><div class="comment-replies"><div id="c935056194986759023-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Respuestas</a></span></span><ol id="c935056194986759023-ra" class="thread-chrome thread-expanded"><div></div><div id="c935056194986759023-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="935056194986759023">Responder</a></div></ol></div></div><div class="comment-replybox-single" id="c935056194986759023-ce"></div></li><li class="comment" id="c7219158104443194974"><div class="avatar-image-container"><img src="//www.blogger.com/img/blogger_logo_round_35.png" alt=""/></div><div class="comment-block"><div class="comment-header"><cite class="user"><a href="https://www.blogger.com/profile/12045792178919211826" rel="nofollow">Alfonso Miró Sardá</a></cite><span class="icon user blog-author"></span><span class="datetime secondary-text"><a rel="nofollow" href="https://www.tallerbim.com/p/blogs-y-paginas-bim.html">3/10/17 17:30</a></span></div><p class="comment-content">Gracias por participar, Máximo. Teniendo en cuenta que tu página aún no está disponible, vamos a esperar a que lo esté para valorar si la incluimos en la lista. Mucha suerte en tu empresa, esperamos ver pronto los resultados de tu trabajo.</p><span class="comment-actions secondary-text"><span class="item-control blog-admin blog-admin pid-670386152"><a target="_self" href="https://www.blogger.com/delete-comment.g?blogID=7839489140860278476&amp;postID=7219158104443194974">Eliminar</a></span></span></div><div class="comment-replies"><div id="c7219158104443194974-rt" class="comment-thread inline-thread hidden"><span class="thread-toggle thread-expanded"><span class="thread-arrow"></span><span class="thread-count"><a target="_self">Respuestas</a></span></span><ol id="c7219158104443194974-ra" class="thread-chrome thread-expanded"><div></div><div id="c7219158104443194974-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="7219158104443194974">Responder</a></div></ol></div></div><div class="comment-replybox-single" id="c7219158104443194974-ce"></div></li></div><div id="c6764673260610793207-continue" class="continue"><a class="comment-reply" target="_self" data-comment-id="6764673260610793207">Responder</a></div></ol></div></div><div class="comment-replybox-single" id="c6764673260610793207-ce"></div></li></ol><div id="top-continue" class="continue"><a class="comment-reply" target="_self">Añadir comentario</a></div><div class="comment-replybox-thread" id="top-ce"></div><div class="loadmore hidden" data-post-id="2155885377622918083"><a target="_self">Cargar más...</a></div></div>
+</div>
+</div>
+<p class='comment-footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<h4 id='comment-post-message'>Publicar un comentario</h4>
+<p>Para poder comentar es necesario que cuentes con una cuenta Google, ya que esto implica que de antemano has aceptado la gestión de tus datos personales por parte de Google LLC, propietario de Blogger. En este caso, el envío del comentario es una aceptación explícita e inequívoca de la gestión de tus datos por parte de Google.&#160; La finalidad de la recogida de los datos, además de permitir mostrar tu comentario, es para poder responderte por este medio. Consulta más información en <a href="https://www.tallerbim.com/p/cookies-y-privacidad.html" rel="nofollow">Cookies y Privacidad</a>.</p>
+<a href='https://www.blogger.com/comment-iframe.g?blogID=7839489140860278476&pageID=2155885377622918083&skin=soho&skin=soho' id='comment-editor-src'></a>
+<iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='90px' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<script src='https://www.blogger.com/static/v1/jsbin/3858658042-comment_from_post_iframe.js' type='text/javascript'></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+</p>
+</section>
+</div>
+</div>
+</div><div class='widget PopularPosts' data-version='2' id='PopularPosts1'>
+<h3 class='title'>
+Por si te lo perdiste:
+</h3>
+<div class='widget-content'>
+<div role='feed'>
+<article class='post' role='article'>
+<div class='post has-featured-image'>
+<div class='snippet-thumbnail'>
+<a href='https://www.tallerbim.com/2019/02/coordenadas-de-posicion-en-revit_10.html'>
+<img alt='Imagen' sizes='(max-width: 660px) 100vw, 660px' src='https://1.bp.blogspot.com/-PFndh2KsXGA/XGCMmYVynmI/AAAAAAAACB4/qSfKpvC7K6kTvNQMjA5dJfHJ2vb_Ny5nwCPcBGAYYCw/s640/Ubicacion.jpeg' srcset='https://1.bp.blogspot.com/-PFndh2KsXGA/XGCMmYVynmI/AAAAAAAACB4/qSfKpvC7K6kTvNQMjA5dJfHJ2vb_Ny5nwCPcBGAYYCw/w330/Ubicacion.jpeg 330w, https://1.bp.blogspot.com/-PFndh2KsXGA/XGCMmYVynmI/AAAAAAAACB4/qSfKpvC7K6kTvNQMjA5dJfHJ2vb_Ny5nwCPcBGAYYCw/w660/Ubicacion.jpeg 660w, https://1.bp.blogspot.com/-PFndh2KsXGA/XGCMmYVynmI/AAAAAAAACB4/qSfKpvC7K6kTvNQMjA5dJfHJ2vb_Ny5nwCPcBGAYYCw/w1320/Ubicacion.jpeg 1320w'/>
+</a>
+<div class='post-header'>
+<div class='post-header-line-1'>
+</div>
+</div>
+</div>
+<h3 class='post-title'><a href='https://www.tallerbim.com/2019/02/coordenadas-de-posicion-en-revit_10.html'>Coordenadas de posición en Revit</a></h3>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-0'>
+<div class='byline post-share-buttons goog-inline-block'>
+<div aria-owns='sharing-popup-PopularPosts1-footer-0-5289464579015641872' class='sharing' data-title='Coordenadas de posición en Revit'>
+<button aria-controls='sharing-popup-PopularPosts1-footer-0-5289464579015641872' aria-label='Compartir' class='sharing-button touch-icon-button' id='sharing-button-PopularPosts1-footer-0-5289464579015641872' role='button'>
+Compartir
+</button>
+<div class='share-buttons-container'>
+<ul aria-hidden='true' aria-label='Compartir' class='share-buttons hidden' id='sharing-popup-PopularPosts1-footer-0-5289464579015641872' role='menu'>
+<li>
+<span aria-label='Obtener enlace' class='sharing-platform-button sharing-element-link' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=5289464579015641872&target=' data-url='https://www.tallerbim.com/2019/02/coordenadas-de-posicion-en-revit_10.html' role='menuitem' tabindex='-1' title='Obtener enlace'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Obtener enlace</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=5289464579015641872&target=facebook' data-url='https://www.tallerbim.com/2019/02/coordenadas-de-posicion-en-revit_10.html' role='menuitem' tabindex='-1' title='Compartir en Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Twitter' class='sharing-platform-button sharing-element-twitter' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=5289464579015641872&target=twitter' data-url='https://www.tallerbim.com/2019/02/coordenadas-de-posicion-en-revit_10.html' role='menuitem' tabindex='-1' title='Compartir en Twitter'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=5289464579015641872&target=pinterest' data-url='https://www.tallerbim.com/2019/02/coordenadas-de-posicion-en-revit_10.html' role='menuitem' tabindex='-1' title='Compartir en Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Correo electrónico' class='sharing-platform-button sharing-element-email' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=5289464579015641872&target=email' data-url='https://www.tallerbim.com/2019/02/coordenadas-de-posicion-en-revit_10.html' role='menuitem' tabindex='-1' title='Correo electrónico'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Correo electrónico</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Compartir en otras aplicaciones' class='sharing-platform-button sharing-element-other' data-url='https://www.tallerbim.com/2019/02/coordenadas-de-posicion-en-revit_10.html' role='menuitem' tabindex='-1' title='Compartir en otras aplicaciones'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Otras aplicaciones</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<span class='byline post-comment-link container'>
+<a class='comment-link' href='https://www.tallerbim.com/2019/02/coordenadas-de-posicion-en-revit_10.html#comments' onclick=''>
+1 comentario
+</a>
+</span>
+</div>
+</div>
+</div>
+</article>
+<article class='post' role='article'>
+<div class='post has-featured-image'>
+<div class='snippet-thumbnail'>
+<a href='https://www.tallerbim.com/2017/06/seis-razones-para-no-pasarse-al-bim-1.html'>
+<img alt='Imagen' sizes='(max-width: 660px) 100vw, 660px' src='https://1.bp.blogspot.com/-0NvxjcthPxo/WU8CYFfoJrI/AAAAAAAAA7o/4pfDaThLMskDHPZsgz9PgA9jBDs8tS40wCLcBGAs/s400/plano.jpeg' srcset='https://1.bp.blogspot.com/-0NvxjcthPxo/WU8CYFfoJrI/AAAAAAAAA7o/4pfDaThLMskDHPZsgz9PgA9jBDs8tS40wCLcBGAs/w330/plano.jpeg 330w, https://1.bp.blogspot.com/-0NvxjcthPxo/WU8CYFfoJrI/AAAAAAAAA7o/4pfDaThLMskDHPZsgz9PgA9jBDs8tS40wCLcBGAs/w660/plano.jpeg 660w, https://1.bp.blogspot.com/-0NvxjcthPxo/WU8CYFfoJrI/AAAAAAAAA7o/4pfDaThLMskDHPZsgz9PgA9jBDs8tS40wCLcBGAs/w1320/plano.jpeg 1320w'/>
+</a>
+<div class='post-header'>
+<div class='post-header-line-1'>
+</div>
+</div>
+</div>
+<h3 class='post-title'><a href='https://www.tallerbim.com/2017/06/seis-razones-para-no-pasarse-al-bim-1.html'>Seis razones para NO pasarse al BIM &#40;1&#47;2&#41;</a></h3>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-0'>
+<div class='byline post-share-buttons goog-inline-block'>
+<div aria-owns='sharing-popup-PopularPosts1-footer-0-8826064377236082442' class='sharing' data-title='Seis razones para NO pasarse al BIM &#40;1&#47;2&#41;'>
+<button aria-controls='sharing-popup-PopularPosts1-footer-0-8826064377236082442' aria-label='Compartir' class='sharing-button touch-icon-button' id='sharing-button-PopularPosts1-footer-0-8826064377236082442' role='button'>
+Compartir
+</button>
+<div class='share-buttons-container'>
+<ul aria-hidden='true' aria-label='Compartir' class='share-buttons hidden' id='sharing-popup-PopularPosts1-footer-0-8826064377236082442' role='menu'>
+<li>
+<span aria-label='Obtener enlace' class='sharing-platform-button sharing-element-link' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=8826064377236082442&target=' data-url='https://www.tallerbim.com/2017/06/seis-razones-para-no-pasarse-al-bim-1.html' role='menuitem' tabindex='-1' title='Obtener enlace'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Obtener enlace</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=8826064377236082442&target=facebook' data-url='https://www.tallerbim.com/2017/06/seis-razones-para-no-pasarse-al-bim-1.html' role='menuitem' tabindex='-1' title='Compartir en Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Twitter' class='sharing-platform-button sharing-element-twitter' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=8826064377236082442&target=twitter' data-url='https://www.tallerbim.com/2017/06/seis-razones-para-no-pasarse-al-bim-1.html' role='menuitem' tabindex='-1' title='Compartir en Twitter'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=8826064377236082442&target=pinterest' data-url='https://www.tallerbim.com/2017/06/seis-razones-para-no-pasarse-al-bim-1.html' role='menuitem' tabindex='-1' title='Compartir en Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Correo electrónico' class='sharing-platform-button sharing-element-email' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=8826064377236082442&target=email' data-url='https://www.tallerbim.com/2017/06/seis-razones-para-no-pasarse-al-bim-1.html' role='menuitem' tabindex='-1' title='Correo electrónico'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Correo electrónico</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Compartir en otras aplicaciones' class='sharing-platform-button sharing-element-other' data-url='https://www.tallerbim.com/2017/06/seis-razones-para-no-pasarse-al-bim-1.html' role='menuitem' tabindex='-1' title='Compartir en otras aplicaciones'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Otras aplicaciones</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<span class='byline post-comment-link container'>
+<a class='comment-link' href='https://www.tallerbim.com/2017/06/seis-razones-para-no-pasarse-al-bim-1.html#comments' onclick=''>
+Publicar un comentario
+</a>
+</span>
+</div>
+</div>
+</div>
+</article>
+<article class='post' role='article'>
+<div class='post has-featured-image'>
+<div class='snippet-thumbnail'>
+<a href='https://www.tallerbim.com/2017/06/infraccion-de-recurso-compartido-en.html'>
+<img alt='Imagen' sizes='(max-width: 660px) 100vw, 660px' src='https://2.bp.blogspot.com/-ClyNNiBwWzs/WVPPzz5kNWI/AAAAAAAAA-0/dlNiZHB31QcIF8CIY0vwZgVM6HwclcU8QCLcBGAs/s400/errores_computer.jpg' srcset='https://2.bp.blogspot.com/-ClyNNiBwWzs/WVPPzz5kNWI/AAAAAAAAA-0/dlNiZHB31QcIF8CIY0vwZgVM6HwclcU8QCLcBGAs/w330/errores_computer.jpg 330w, https://2.bp.blogspot.com/-ClyNNiBwWzs/WVPPzz5kNWI/AAAAAAAAA-0/dlNiZHB31QcIF8CIY0vwZgVM6HwclcU8QCLcBGAs/w660/errores_computer.jpg 660w, https://2.bp.blogspot.com/-ClyNNiBwWzs/WVPPzz5kNWI/AAAAAAAAA-0/dlNiZHB31QcIF8CIY0vwZgVM6HwclcU8QCLcBGAs/w1320/errores_computer.jpg 1320w'/>
+</a>
+<div class='post-header'>
+<div class='post-header-line-1'>
+</div>
+</div>
+</div>
+<h3 class='post-title'><a href='https://www.tallerbim.com/2017/06/infraccion-de-recurso-compartido-en.html'>Infracci&#243;n de recurso compartido en Revit&#174;</a></h3>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-0'>
+<div class='byline post-share-buttons goog-inline-block'>
+<div aria-owns='sharing-popup-PopularPosts1-footer-0-6060670926369752032' class='sharing' data-title='Infracci&#243;n de recurso compartido en Revit&#174;'>
+<button aria-controls='sharing-popup-PopularPosts1-footer-0-6060670926369752032' aria-label='Compartir' class='sharing-button touch-icon-button' id='sharing-button-PopularPosts1-footer-0-6060670926369752032' role='button'>
+Compartir
+</button>
+<div class='share-buttons-container'>
+<ul aria-hidden='true' aria-label='Compartir' class='share-buttons hidden' id='sharing-popup-PopularPosts1-footer-0-6060670926369752032' role='menu'>
+<li>
+<span aria-label='Obtener enlace' class='sharing-platform-button sharing-element-link' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=6060670926369752032&target=' data-url='https://www.tallerbim.com/2017/06/infraccion-de-recurso-compartido-en.html' role='menuitem' tabindex='-1' title='Obtener enlace'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Obtener enlace</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=6060670926369752032&target=facebook' data-url='https://www.tallerbim.com/2017/06/infraccion-de-recurso-compartido-en.html' role='menuitem' tabindex='-1' title='Compartir en Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Twitter' class='sharing-platform-button sharing-element-twitter' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=6060670926369752032&target=twitter' data-url='https://www.tallerbim.com/2017/06/infraccion-de-recurso-compartido-en.html' role='menuitem' tabindex='-1' title='Compartir en Twitter'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=6060670926369752032&target=pinterest' data-url='https://www.tallerbim.com/2017/06/infraccion-de-recurso-compartido-en.html' role='menuitem' tabindex='-1' title='Compartir en Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Correo electrónico' class='sharing-platform-button sharing-element-email' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=6060670926369752032&target=email' data-url='https://www.tallerbim.com/2017/06/infraccion-de-recurso-compartido-en.html' role='menuitem' tabindex='-1' title='Correo electrónico'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Correo electrónico</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Compartir en otras aplicaciones' class='sharing-platform-button sharing-element-other' data-url='https://www.tallerbim.com/2017/06/infraccion-de-recurso-compartido-en.html' role='menuitem' tabindex='-1' title='Compartir en otras aplicaciones'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Otras aplicaciones</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<span class='byline post-comment-link container'>
+<a class='comment-link' href='https://www.tallerbim.com/2017/06/infraccion-de-recurso-compartido-en.html#comments' onclick=''>
+2 comentarios
+</a>
+</span>
+</div>
+</div>
+</div>
+</article>
+<article class='post' role='article'>
+<div class='post has-featured-image'>
+<div class='snippet-thumbnail'>
+<a href='https://www.tallerbim.com/2019/06/gestion-de-coordenadas-utm-en-revit.html'>
+<img alt='Imagen' sizes='(max-width: 660px) 100vw, 660px' src='https://1.bp.blogspot.com/-awNSsFpoTCc/XPQuwolg0LI/AAAAAAAACMo/KSBlCgvIZL8DIbl5b9QKshzfJu41CeRpACLcBGAs/s640/portada.PNG' srcset='https://1.bp.blogspot.com/-awNSsFpoTCc/XPQuwolg0LI/AAAAAAAACMo/KSBlCgvIZL8DIbl5b9QKshzfJu41CeRpACLcBGAs/w330/portada.PNG 330w, https://1.bp.blogspot.com/-awNSsFpoTCc/XPQuwolg0LI/AAAAAAAACMo/KSBlCgvIZL8DIbl5b9QKshzfJu41CeRpACLcBGAs/w660/portada.PNG 660w, https://1.bp.blogspot.com/-awNSsFpoTCc/XPQuwolg0LI/AAAAAAAACMo/KSBlCgvIZL8DIbl5b9QKshzfJu41CeRpACLcBGAs/w1320/portada.PNG 1320w'/>
+</a>
+<div class='post-header'>
+<div class='post-header-line-1'>
+</div>
+</div>
+</div>
+<h3 class='post-title'><a href='https://www.tallerbim.com/2019/06/gestion-de-coordenadas-utm-en-revit.html'>Gestión de coordenadas U.T.M. en Revit</a></h3>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-0'>
+<div class='byline post-share-buttons goog-inline-block'>
+<div aria-owns='sharing-popup-PopularPosts1-footer-0-2267604248424481840' class='sharing' data-title='Gestión de coordenadas U.T.M. en Revit'>
+<button aria-controls='sharing-popup-PopularPosts1-footer-0-2267604248424481840' aria-label='Compartir' class='sharing-button touch-icon-button' id='sharing-button-PopularPosts1-footer-0-2267604248424481840' role='button'>
+Compartir
+</button>
+<div class='share-buttons-container'>
+<ul aria-hidden='true' aria-label='Compartir' class='share-buttons hidden' id='sharing-popup-PopularPosts1-footer-0-2267604248424481840' role='menu'>
+<li>
+<span aria-label='Obtener enlace' class='sharing-platform-button sharing-element-link' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=2267604248424481840&target=' data-url='https://www.tallerbim.com/2019/06/gestion-de-coordenadas-utm-en-revit.html' role='menuitem' tabindex='-1' title='Obtener enlace'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Obtener enlace</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=2267604248424481840&target=facebook' data-url='https://www.tallerbim.com/2019/06/gestion-de-coordenadas-utm-en-revit.html' role='menuitem' tabindex='-1' title='Compartir en Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Twitter' class='sharing-platform-button sharing-element-twitter' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=2267604248424481840&target=twitter' data-url='https://www.tallerbim.com/2019/06/gestion-de-coordenadas-utm-en-revit.html' role='menuitem' tabindex='-1' title='Compartir en Twitter'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label='Compartir en Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=2267604248424481840&target=pinterest' data-url='https://www.tallerbim.com/2019/06/gestion-de-coordenadas-utm-en-revit.html' role='menuitem' tabindex='-1' title='Compartir en Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Correo electrónico' class='sharing-platform-button sharing-element-email' data-href='https://www.blogger.com/share-post.g?blogID=7839489140860278476&postID=2267604248424481840&target=email' data-url='https://www.tallerbim.com/2019/06/gestion-de-coordenadas-utm-en-revit.html' role='menuitem' tabindex='-1' title='Correo electrónico'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Correo electrónico</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Compartir en otras aplicaciones' class='sharing-platform-button sharing-element-other' data-url='https://www.tallerbim.com/2019/06/gestion-de-coordenadas-utm-en-revit.html' role='menuitem' tabindex='-1' title='Compartir en otras aplicaciones'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Otras aplicaciones</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<span class='byline post-comment-link container'>
+<a class='comment-link' href='https://www.tallerbim.com/2019/06/gestion-de-coordenadas-utm-en-revit.html#comments' onclick=''>
+4 comentarios
+</a>
+</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<div align='center'>
+<footer class='footer section' id='footer' name='Pie de página'><div class='widget HTML' data-version='2' id='HTML9'>
+<div class='widget-content'>
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7cb5b9ad-78e9-4731-a600-8c2d29f531b6"></div>
+  <script type="text/javascript">
+    (function() {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//cdn.youracclaim.com/assets/utilities/embed.js';
+      var o = document.getElementsByTagName('script')[0];
+      o.parentNode.insertBefore(s, o);
+      })();
+  </script>
+</div>
+</div><div class='widget HTML' data-version='2' id='HTML8'>
+<div class='widget-content'>
+<a href="https://www.iubenda.com/privacy-policy/29884883" class="iubenda-white iubenda-embed " title="Privacy Policy">Política de privacidad</a> <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+</div>
+</div><div class='widget HTML' data-version='2' id='HTML6'>
+<h3 class='title'>
+Creative Commons
+</h3>
+<div class='widget-content'>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+</div>
+</div><div class='widget HTML' data-version='1' id='HTML5'>
+<h4 class='title'>&#160;</h4>
+<div class='widget-content'>
+<a href="https://www.safecreative.org"><img src="https://resources.safecreative.org/userfeed/1706150273958/label/datamatrix-72" style="border:0;" alt="Safe Creative #1706150273958"/></a>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML5"));' rel='nofollow' target='configHTML5' title='Editar'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget Attribution' data-version='2' id='Attribution1'>
+<div class='widget-content'>
+<div class='blogger'>
+<a href='https://www.blogger.com' rel='nofollow'>
+<svg class='svg-icon-24'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_post_blogger_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+Con la tecnología de Blogger
+</a>
+</div>
+<div class='copyright'>CC Taller BIM</div>
+</div>
+</div></footer>
+</div>
+</div>
+</div>
+<aside class='sidebar-container container sidebar-invisible' role='complementary'>
+<div class='navigation'>
+<svg class='svg-icon-24 touch-icon sidebar-back rtl-reversible-icon'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_arrow_back_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+<div class='section' id='sidebar' name='Barra lateral'><div class='widget HTML' data-version='2' id='HTML3'>
+<div class='widget-content'>
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="vertical" data-theme="light" data-vanity="alfonsomirosarda"><a class="LI-simple-link" href='https://es.linkedin.com/in/alfonsomirosarda?trk=profile-badge'>Alfonso Miró Sardá</a></div>
+</div>
+</div>
+<div class='widget HTML' data-version='2' id='HTML4'>
+<div class='widget-content'>
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7cb5b9ad-78e9-4731-a600-8c2d29f531b6"></div>
+  <script type="text/javascript">
+    (function() {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//cdn.youracclaim.com/assets/utilities/embed.js';
+      var o = document.getElementsByTagName('script')[0];
+      o.parentNode.insertBefore(s, o);
+      })();
+  </script>
+</div>
+</div><div class='widget HTML' data-version='1' id='HTML2'>
+<h4 class='title'>Licencia Creative Commons</h4>
+<div class='widget-content'>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Taller BIM</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://tallerbim.com/" property="cc:attributionName" rel="cc:attributionURL">Alfonso Mir&#243; Sard&#225;</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional License</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' rel='nofollow' target='configHTML2' title='Editar'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' data-version='2' id='BlogArchive1'>
+<details class='collapsible extendable'>
+<summary>
+<div class='collapsible-title'>
+<h3 class='title'>
+Archivo de Taller BIM
+</h3>
+<svg class='svg-icon-24 chevron-down'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_expand_more_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<svg class='svg-icon-24 chevron-up'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_expand_less_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+</summary>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<div class='first-items'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2020/'>
+2020
+<span class='post-count'>4</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2020/12/'>
+diciembre
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2020_12_24_archive.html'>
+dic 24
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='posts hierarchy'>
+<li>
+<a href='https://www.tallerbim.com/2020/12/industry-foundation-classes-ifc.html'>Industry Foundation Classes (IFC). Marco semántico...</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2020/05/'>
+mayo
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2020_05_02_archive.html'>
+may 02
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2020/04/'>
+abril
+<span class='post-count'>2</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2020_04_18_archive.html'>
+abr 18
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2020_04_04_archive.html'>
+abr 04
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class='remaining-items'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2019/'>
+2019
+<span class='post-count'>3</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2019/06/'>
+junio
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2019_06_02_archive.html'>
+jun 02
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2019/02/'>
+febrero
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2019_02_10_archive.html'>
+feb 10
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2019/01/'>
+enero
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2019_01_02_archive.html'>
+ene 02
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018/'>
+2018
+<span class='post-count'>8</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018/12/'>
+diciembre
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018_12_02_archive.html'>
+dic 02
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018/11/'>
+noviembre
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018_11_02_archive.html'>
+nov 02
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018/10/'>
+octubre
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018_10_11_archive.html'>
+oct 11
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018/09/'>
+septiembre
+<span class='post-count'>2</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018_09_25_archive.html'>
+sep 25
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018_09_10_archive.html'>
+sep 10
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018/07/'>
+julio
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018_07_04_archive.html'>
+jul 04
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018/02/'>
+febrero
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018_02_14_archive.html'>
+feb 14
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018/01/'>
+enero
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2018_01_04_archive.html'>
+ene 04
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017/'>
+2017
+<span class='post-count'>41</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017/12/'>
+diciembre
+<span class='post-count'>2</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_12_12_archive.html'>
+dic 12
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_12_01_archive.html'>
+dic 01
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017/10/'>
+octubre
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_10_19_archive.html'>
+oct 19
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017/09/'>
+septiembre
+<span class='post-count'>4</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_09_18_archive.html'>
+sep 18
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_09_07_archive.html'>
+sep 07
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_09_04_archive.html'>
+sep 04
+<span class='post-count'>2</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017/07/'>
+julio
+<span class='post-count'>7</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_07_27_archive.html'>
+jul 27
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_07_18_archive.html'>
+jul 18
+<span class='post-count'>2</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_07_14_archive.html'>
+jul 14
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_07_12_archive.html'>
+jul 12
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_07_07_archive.html'>
+jul 07
+<span class='post-count'>2</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017/06/'>
+junio
+<span class='post-count'>10</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_06_30_archive.html'>
+jun 30
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_06_22_archive.html'>
+jun 22
+<span class='post-count'>2</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_06_21_archive.html'>
+jun 21
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_06_14_archive.html'>
+jun 14
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_06_09_archive.html'>
+jun 09
+<span class='post-count'>2</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_06_06_archive.html'>
+jun 06
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_06_03_archive.html'>
+jun 03
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_06_02_archive.html'>
+jun 02
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017/05/'>
+mayo
+<span class='post-count'>17</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_05_27_archive.html'>
+may 27
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_05_25_archive.html'>
+may 25
+<span class='post-count'>2</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_05_24_archive.html'>
+may 24
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_05_18_archive.html'>
+may 18
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_05_17_archive.html'>
+may 17
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_05_16_archive.html'>
+may 16
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_05_11_archive.html'>
+may 11
+<span class='post-count'>2</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_05_10_archive.html'>
+may 10
+<span class='post-count'>3</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_05_08_archive.html'>
+may 08
+<span class='post-count'>2</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_05_05_archive.html'>
+may 05
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='https://www.tallerbim.com/2017_05_04_archive.html'>
+may 04
+<span class='post-count'>2</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<span class='show-more flat-button'>Mostrar más</span>
+<span class='show-less hidden flat-button'>Mostrar menos</span>
+</div>
+</div>
+</div>
+</details>
+</div><div class='widget Label' data-version='2' id='Label1'>
+<details class='collapsible extendable'>
+<summary>
+<div class='collapsible-title'>
+<h3 class='title'>
+Etiquetas
+</h3>
+<svg class='svg-icon-24 chevron-down'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_expand_more_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<svg class='svg-icon-24 chevron-up'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_expand_less_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+</summary>
+<div class='widget-content cloud-label-widget-content'>
+<div class='first-items'>
+<span class='label-size label-size-5'><a class='label-name' href='https://www.tallerbim.com/search/label/BIM'>BIM<span class='label-count'>29</span></a></span>
+<span class='label-size label-size-5'><a class='label-name' href='https://www.tallerbim.com/search/label/REVIT%C2%AE'>REVIT&#174;<span class='label-count'>26</span></a></span>
+<span class='label-size label-size-4'><a class='label-name' href='https://www.tallerbim.com/search/label/tutoriales%20REVIT%C2%AE'>tutoriales REVIT&#174;<span class='label-count'>19</span></a></span>
+<span class='label-size label-size-3'><a class='label-name' href='https://www.tallerbim.com/search/label/miscel%C3%A1nea'>miscelánea<span class='label-count'>8</span></a></span>
+<span class='label-size label-size-3'><a class='label-name' href='https://www.tallerbim.com/search/label/arquitectura'>arquitectura<span class='label-count'>7</span></a></span>
+<span class='label-size label-size-3'><a class='label-name' href='https://www.tallerbim.com/search/label/trabajo%20colaborativo'>trabajo colaborativo<span class='label-count'>6</span></a></span>
+<span class='label-size label-size-3'><a class='label-name' href='https://www.tallerbim.com/search/label/ejecuci%C3%B3n%20de%20obra'>ejecución de obra<span class='label-count'>5</span></a></span>
+<span class='label-size label-size-3'><a class='label-name' href='https://www.tallerbim.com/search/label/Archicad%C2%AE'>Archicad&#174;<span class='label-count'>4</span></a></span>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/CDE'>CDE<span class='label-count'>3</span></a></span>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/Colaboraciones'>Colaboraciones<span class='label-count'>3</span></a></span>
+</div>
+<div class='remaining-items'>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/Otro%20software%20BIM'>Otro software BIM<span class='label-count'>3</span></a></span>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/divertimento'>divertimento<span class='label-count'>3</span></a></span>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/IFC'>IFC<span class='label-count'>2</span></a></span>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/IPD'>IPD<span class='label-count'>2</span></a></span>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/Noticias%20BIM'>Noticias BIM<span class='label-count'>2</span></a></span>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/about_us'>about_us<span class='label-count'>2</span></a></span>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/coordenadas'>coordenadas<span class='label-count'>2</span></a></span>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/ley'>ley<span class='label-count'>2</span></a></span>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/objetos%20BIM'>objetos BIM<span class='label-count'>2</span></a></span>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/openBIM'>openBIM<span class='label-count'>2</span></a></span>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/punto%20base'>punto base<span class='label-count'>2</span></a></span>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/punto%20de%20reconocimiento'>punto de reconocimiento<span class='label-count'>2</span></a></span>
+<span class='label-size label-size-2'><a class='label-name' href='https://www.tallerbim.com/search/label/seguros'>seguros<span class='label-count'>2</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/Autodesk'>Autodesk<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/BIM%20fases'>BIM fases<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/BIM%20manager'>BIM manager<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/BuildingSmart'>BuildingSmart<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/Categorizaci%C3%B3n'>Categorización<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/Construcci%C3%B3n'>Construcción<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/Est%C3%A1ndares'>Estándares<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/Facility%20Management'>Facility Management<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/Last%20planner%20system'>Last planner system<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/PRL'>PRL<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/Par%C3%A1metros'>Parámetros<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/Propiedades'>Propiedades<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/Realidad%20virtual'>Realidad virtual<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/Tipo'>Tipo<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/UTM'>UTM<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/arqueolog%C3%ADa'>arqueología<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/arquitectura%20escrita'>arquitectura escrita<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/arquitectura%20oral'>arquitectura oral<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/arquitectura%20virtual'>arquitectura virtual<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/clasificaci%C3%B3n'>clasificación<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/construcci%C3%B3n%20industrializada'>construcción industrializada<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/coordinador%20BIM'>coordinador BIM<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/dibujo'>dibujo<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/eficiencia%20energ%C3%A9tica'>eficiencia energética<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/filosof%C3%ADa'>filosofía<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/guBIMclass'>guBIMclass<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/inefectividad'>inefectividad<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/lean%20construction'>lean construction<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/ling%C3%BC%C3%ADstica%20cognitiva'>lingüística cognitiva<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/maquetas'>maquetas<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/m%C3%A9todo%20Toyota'>método Toyota<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/normas%20ISO'>normas ISO<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/patrimonio'>patrimonio<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/prefabricados%20de%20hormig%C3%B3n'>prefabricados de hormigón<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/rejillas'>rejillas<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/trabajo%20BIM'>trabajo BIM<span class='label-count'>1</span></a></span>
+<span class='label-size label-size-1'><a class='label-name' href='https://www.tallerbim.com/search/label/v%C3%ADnculos'>vínculos<span class='label-count'>1</span></a></span>
+</div>
+<span class='show-more flat-button'>Mostrar más</span>
+<span class='show-less hidden flat-button'>Mostrar menos</span>
+</div>
+</details>
+</div><div class='widget HTML' data-version='1' id='HTML1'>
+<h4 class='title'>También estamos en...</h4>
+<div class='widget-content'>
+<a href="https://twitter.com/RevitExperience" target="_blank"><img alt="siguenos en Twitter" height="32" src="//3.bp.blogspot.com/-wlwaJJG-eOY/UiXnHS2jLsI/AAAAAAAAByQ/I2tLyZDLNL4/s1600/Twitter+NEW.png" title="siguenos en Twitter" width="32"></a>
+<a href="https://www.linkedin.com/in/alfonsomirosarda/" target="_blank"><img alt="Sígueme en Likedin" height="32" src="//4.bp.blogspot.com/-6fSS1W1pV5U/UiXnKWhitdI/AAAAAAAABzo/iQ_4U_eJ67o/s1600/linkedin_logo_ok.png" title="Sígueme en Likedin" width="32"></a>
+<a href="https://www.facebook.com/The-Revit-Experience-936466006455868/" target="_blank"><img alt="siguenos en facebook" height="32" src="//1.bp.blogspot.com/-PrByV4NBlSs/UiXnD1FEFnI/AAAAAAAABws/dUhvcAdYRiY/s1600/Facebook+alt+1.png" title="siguenos en facebook" width="32"></a>
+<a href="mailto:alfonso@tallerbim.com" target="_blank"><img alt="sígueme por Correo" height="32" src="//2.bp.blogspot.com/-t8bRdqt67iE/UiXnF39QD8I/AAAAAAAABxY/RxGC9wr-GxA/s1600/Mail.png" title="sígueme por Correo" width="32"></a>
+<a href="https://plus.google.com/105570263463431484920" target="_blank"><img alt="siguenos en Google+" height="32" src="//3.bp.blogspot.com/-fnL839vxuao/UiXnFfyN17I/AAAAAAAABxc/VvcXJlZ65Ko/s1600/Google%252B+alt.png" title="siguenos en Google+" width="32"></a>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' rel='nofollow' target='configHTML1' title='Editar'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget ReportAbuse' data-version='2' id='ReportAbuse1'>
+<h3 class='title'>
+<a class='report_abuse' href='https://www.blogger.com/go/report-abuse' rel='noopener nofollow' target='_blank'>
+Notificar uso inadecuado
+</a>
+</h3>
+</div>
+<div class='widget ContactForm' data-version='2' id='ContactForm1'>
+</div>
+<div class='widget BlogSearch' data-version='2' id='BlogSearch2'>
+<h3 class='title'>
+&#160;Buscar en este blog
+</h3>
+<div class='widget-content' role='search'>
+<form action='https://www.tallerbim.com/search' target='_top'>
+<div class='search-input'>
+<input aria-label='Buscar este blog' autocomplete='off' name='q' placeholder='Buscar este blog' value=''/>
+</div>
+<input class='search-action' type='submit' value='Buscar'/>
+</form>
+</div>
+</div>
+</div>
+</aside>
+<script type="text/javascript" src="https://resources.blogblog.com/blogblog/data/res/620868482-fancy_compiled.js" async="true"></script>
+<!--Start Cookie Script-->
+<script charset="UTF-8" src="//chs03.cookie-script.com/s/ee81798f1c1baf8991f6300bede12880.js" type="text/javascript"></script>
+<!--End Cookie Script-->
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/981256326-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY4CiC3DfaY_6T5ROc58fxvYwW2kbw:1615690793512';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d7839489140860278476','//www.tallerbim.com/p/blogs-y-paginas-bim.html','7839489140860278476');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '7839489140860278476', 'title': 'Taller BIM', 'url': 'https://www.tallerbim.com/p/blogs-y-paginas-bim.html', 'canonicalUrl': 'https://www.tallerbim.com/p/blogs-y-paginas-bim.html', 'homepageUrl': 'https://www.tallerbim.com/', 'searchUrl': 'https://www.tallerbim.com/search', 'canonicalHomepageUrl': 'https://www.tallerbim.com/', 'blogspotFaviconUrl': 'https://www.tallerbim.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': 'UA-99014335-2', 'encoding': 'UTF-8', 'locale': 'es', 'localeUnderscoreDelimited': 'es', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': true, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Taller BIM - Atom\x22 href\x3d\x22https://www.tallerbim.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Taller BIM - RSS\x22 href\x3d\x22https://www.tallerbim.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Taller BIM - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/7839489140860278476/posts/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/e7529e49964a1b02', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Obtener enlace', 'key': 'link', 'shareMessage': 'Obtener enlace', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Compartir en Facebook', 'target': 'facebook'}, {'name': 'Escribe un blog', 'key': 'blogThis', 'shareMessage': 'Escribe un blog', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Compartir en Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Compartir en Pinterest', 'target': 'pinterest'}, {'name': 'Correo electr\xf3nico', 'key': 'email', 'shareMessage': 'Correo electr\xf3nico', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27es\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Leer m\xe1s', 'pageType': 'static_page', 'pageId': '2155885377622918083', 'pageName': 'Blogs y bibliotecas BIM', 'pageTitle': 'Taller BIM: Blogs y bibliotecas BIM', 'metaDescription': 'Una recopilaci\xf3n permanentemente actualizada de los mejores blogs sobre BIM \x26#40;en ingl\xe9s y en espa\xf1ol\x26#41; y p\xe1ginas de descarga de objetos BIM.'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Editar', 'linkCopiedToClipboard': 'El enlace se ha copiado en el Portapapeles.', 'ok': 'Aceptar', 'postLink': 'Enlace de la entrada'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Personalizado', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Blogs y bibliotecas BIM', 'description': 'Una recopilaci\xf3n permanentemente actualizada de los mejores blogs sobre BIM \x26#40;en ingl\xe9s y en espa\xf1ol\x26#41; y p\xe1ginas de descarga de objetos BIM.', 'featuredImage': 'https://2.bp.blogspot.com/-s1dZVdaOfJA/WcVVSxaRHEI/AAAAAAAABb8/RD0RrO7H08wsW27n1h1g7Off5ik3UI4NQCKgBGAs/s640/Menil-Museum%252C-R.-PianoWEB.png', 'url': 'https://www.tallerbim.com/p/blogs-y-paginas-bim.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': true, 'isPost': false, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'pageId': 2155885377622918083}}, {'name': 'widgets', 'data': [{'title': 'Buscar Taller BIM', 'type': 'BlogSearch', 'sectionId': 'search_top', 'id': 'BlogSearch1'}, {'title': 'Taller BIM (cabecera)', 'type': 'Header', 'sectionId': 'header', 'id': 'Header1'}, {'title': '', 'type': 'PageList', 'sectionId': 'page_list_top', 'id': 'PageList1'}, {'title': 'P\xe1ginas', 'type': 'PageList', 'sectionId': 'page_list_top', 'id': 'PageList3'}, {'title': '', 'type': 'PageList', 'sectionId': 'page_list_top', 'id': 'PageList2'}, {'title': 'Entradas del blog', 'type': 'Blog', 'sectionId': 'page_body', 'id': 'Blog1', 'posts': [{'id': '2155885377622918083', 'title': 'Blogs y bibliotecas BIM', 'featuredImage': 'https://2.bp.blogspot.com/-s1dZVdaOfJA/WcVVSxaRHEI/AAAAAAAABb8/RD0RrO7H08wsW27n1h1g7Off5ik3UI4NQCKgBGAs/s640/Menil-Museum%252C-R.-PianoWEB.png', 'showInlineAds': false}], 'headerByline': {'regionName': 'header1', 'items': [{'name': 'timestamp', 'label': ''}]}, 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'share', 'label': ''}, {'name': 'comments', 'label': 'comentarios'}, {'name': 'backlinks', 'label': 'Enlaces a esta entrada'}]}], 'allBylineItems': [{'name': 'timestamp', 'label': ''}, {'name': 'share', 'label': ''}, {'name': 'comments', 'label': 'comentarios'}, {'name': 'backlinks', 'label': 'Enlaces a esta entrada'}]}, {'title': 'Por si te lo perdiste:', 'type': 'PopularPosts', 'sectionId': 'page_body', 'id': 'PopularPosts1', 'posts': [{'title': 'Coordenadas de posici\xf3n en Revit', 'id': 5289464579015641872}, {'title': 'Seis razones para NO pasarse al BIM \x26#40;1\x26#47;2\x26#41;', 'id': 8826064377236082442}, {'title': 'Infracci\x26#243;n de recurso compartido en Revit\x26#174;', 'id': 6060670926369752032}, {'title': 'Gesti\xf3n de coordenadas U.T.M. en Revit', 'id': 2267604248424481840}]}, {'title': '', 'type': 'HTML', 'sectionId': 'footer', 'id': 'HTML9'}, {'title': '', 'type': 'HTML', 'sectionId': 'footer', 'id': 'HTML8'}, {'title': 'Creative Commons', 'type': 'HTML', 'sectionId': 'footer', 'id': 'HTML6'}, {'title': '\xa0', 'type': 'HTML', 'sectionId': 'footer', 'id': 'HTML5'}, {'type': 'Attribution', 'sectionId': 'footer', 'id': 'Attribution1'}, {'title': '', 'type': 'HTML', 'sectionId': 'sidebar', 'id': 'HTML3'}, {'title': '', 'type': 'HTML', 'sectionId': 'sidebar', 'id': 'HTML4'}, {'title': 'Licencia Creative Commons', 'type': 'HTML', 'sectionId': 'sidebar', 'id': 'HTML2'}, {'title': 'Archivo de Taller BIM', 'type': 'BlogArchive', 'sectionId': 'sidebar', 'id': 'BlogArchive1'}, {'title': 'Etiquetas', 'type': 'Label', 'sectionId': 'sidebar', 'id': 'Label1'}, {'title': 'Tambi\xe9n estamos en...', 'type': 'HTML', 'sectionId': 'sidebar', 'id': 'HTML1'}, {'title': '', 'type': 'ReportAbuse', 'sectionId': 'sidebar', 'id': 'ReportAbuse1'}, {'title': 'Formulario de contacto', 'type': 'ContactForm', 'sectionId': 'sidebar', 'id': 'ContactForm1'}, {'title': '\xa0Buscar en este blog', 'type': 'BlogSearch', 'sectionId': 'sidebar', 'id': 'BlogSearch2'}]}]);
+_WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch1', 'search_top', document.getElementById('BlogSearch1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'page_list_top', document.getElementById('PageList1'), {'title': '', 'links': [{'isCurrentPage': false, 'href': 'https://www.tallerbim.com/', 'title': 'P\xe1gina principal'}, {'isCurrentPage': false, 'href': 'https://www.tallerbim.com/search?q\x3dBIM', 'title': 'BIM'}, {'isCurrentPage': false, 'href': 'https://www.tallerbim.com/search?q\x3drevit', 'title': 'Revit'}], 'mobile': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList3', 'page_list_top', document.getElementById('PageList3'), {'title': 'P\xe1ginas', 'links': [{'isCurrentPage': false, 'href': 'https://www.tallerbim.com/p/motor-de-busqueda-bim.html', 'id': '8666562098816388740', 'title': 'Buscador BIM'}, {'isCurrentPage': true, 'href': 'https://www.tallerbim.com/p/blogs-y-paginas-bim.html', 'id': '2155885377622918083', 'title': 'Blogs y bibliotecas BIM'}, {'isCurrentPage': false, 'href': 'https://www.tallerbim.com/search?q\x3dopen+bim', 'title': 'Open BIM'}, {'isCurrentPage': false, 'href': 'https://www.tallerbim.com/p/blogosfera-bim.html', 'id': '6204449922694861255', 'title': '\xdaltimas noticias BIM'}], 'mobile': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList2', 'page_list_top', document.getElementById('PageList2'), {'title': '', 'links': [{'isCurrentPage': false, 'href': 'https://www.tallerbim.com/p/quien-soy.html', 'id': '878945283347136556', 'title': 'Qui\xe9n soy: algunos trabajos'}, {'isCurrentPage': false, 'href': 'https://www.tallerbim.com/p/cookies-y-privacidad.html', 'id': '7203977125096703459', 'title': 'Cookies y privacidad'}], 'mobile': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'page_body', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/2229478777-lbx__es.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/1050234869-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'page_body', document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML9', 'footer', document.getElementById('HTML9'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML8', 'footer', document.getElementById('HTML8'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML6', 'footer', document.getElementById('HTML6'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'footer', document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer', document.getElementById('Attribution1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar', document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'sidebar', document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar', document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Cargando\x26hellip;'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar', document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar', document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ReportAbuseView', new _WidgetInfo('ReportAbuse1', 'sidebar', document.getElementById('ReportAbuse1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ContactFormView', new _WidgetInfo('ContactForm1', 'sidebar', document.getElementById('ContactForm1'), {'contactFormMessageSendingMsg': 'Enviando...', 'contactFormMessageSentMsg': 'Se ha enviado tu mensaje.', 'contactFormMessageNotSentMsg': 'No se ha podido enviar el mensaje. Vuelve a intentarlo dentro de un rato.', 'contactFormInvalidEmailMsg': 'Tienes que escribir una direcci\xf3n de correo electr\xf3nico v\xe1lida.', 'contactFormEmptyMessageMsg': 'No puedes dejar en blanco el cuerpo del mensaje.', 'title': 'Formulario de contacto', 'blogId': '7839489140860278476', 'contactFormNameMsg': 'Nombre', 'contactFormEmailMsg': 'Correo electr\xf3nico', 'contactFormMessageMsg': 'Mensaje', 'contactFormSendMsg': 'Enviar', 'submitUrl': 'https://www.blogger.com/contact-form.do'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch2', 'sidebar', document.getElementById('BlogSearch2'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>
+</html>

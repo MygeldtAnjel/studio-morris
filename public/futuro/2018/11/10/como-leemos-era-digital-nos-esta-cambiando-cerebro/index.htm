@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MWSHBZ');</script>
+    <!-- End Google Tag Manager -->
+
+	    <!-- Didomi -->
+    <script type="text/javascript">window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+        else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+            var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+            if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e){
+            var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target="+document.location.hostname;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("6e7011c3-735d-4a5c-b4d8-c8b97a71fd01")})();</script>
+
+    <script type="text/javascript">
+        !function () {
+            window.didomiOnReady = window.didomiOnReady || [], window.didomiOnReady.push((function (e) {
+                e.shouldConsentBeCollected() && (["notice.clickagree", "notice.clickdisagree", "preferences.clickagreetoall", "preferences.clickdisagreetoall", "preferences.clicksavechoices"].forEach(e => {
+                    window.didomiEventListeners.push({
+                        event: e, listener: function () {
+                            !function () {
+                                console.log("Hide block navigation overlay");
+                                const e = document.getElementById("didomiConsentOverlay");
+                                null !== e && (e.parentElement.removeChild(e), document.body.style.overflow = "")
+                            }()
+                        }
+                    })
+                }), console.log("Show block navigation overlay"), document.querySelector("body").insertAdjacentHTML("beforeend", '<div id="didomiConsentOverlay" style="top: 0; left: 0; right: 0; bottom: 0; z-index: 9999; position: fixed; background-color: rgba(0, 0, 0, 0.35)"></div>'), document.body.style.overflow = "hidden")
+            }));
+        }();
+    </script>
+    <!-- / Didomi -->
+    
+    
+	
+            <link rel="preload" href="https://www.elindependiente.com/wp-content/themes/indp19/fonts/pts55f-webfont.woff2" as="font" crossorigin>
+        <link rel="preload" href="https://www.elindependiente.com/wp-content/themes/indp19/fonts/Austin-Medium-Web.woff2" as="font" crossorigin>
+        <link rel="preload" href="https://www.elindependiente.com/wp-content/themes/indp19/fonts/pts75f-webfont.woff2" as="font" crossorigin>
+        <link rel="preload" href="https://www.elindependiente.com/wp-content/themes/indp19/fonts/IcoElIndependiente.woff" as="font" crossorigin>
+    
+	        <script> var isApp = false </script>
+	
+    <!-- Web App Android Chrome -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Web App iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--Web App iOS bar-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Facebook appid para comentarios -->
+    <meta property="fb:app_id" content="1667940753311310" />
+
+    <meta property="fb:use_automatic_ad_placement" content="enable=true ad_density=default">
+
+	<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+</script>
+
+
+<script>
+    var ei_pag = "noticia";
+    var ei_secc = "ciencia,futuro,cultura,futuro,internet,libros,transformacion-digital";
+</script>
+
+    <script>
+        function EPETBrowserDims() {
+            var viewportwidth = 0;
+            var viewportheight = 0;
+            if (typeof window.innerWidth != 'undefined') {
+                viewportwidth = window.innerWidth,
+                    viewportheight = window.innerHeight
+            }
+            else if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0) {
+                viewportwidth = document.documentElement.clientWidth,
+                    viewportheight = document.documentElement.clientHeight
+            } else {
+                viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+                    viewportheight = document.getElementsByTagName('body')[0].clientHeight
+            }
+            return {
+                "ancho": viewportwidth, "alto": viewportheight
+            };
+        }
+    </script>
+
+    <!-- Para la webview -->
+    <script>
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+
+            var a=document.getElementsByTagName("a");
+            for(var i=0;i<a.length;i++)
+            {
+                a[i].onclick=function()
+                {
+                    window.location=this.getAttribute("href");
+                    return false
+                }
+            }
+        }
+    </script>
+
+	
+	<!-- This site is optimized with the Yoast SEO Premium plugin  - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Cómo leemos en la era digital nos está cambiando el cerebro</title>
+	<meta name="description" content="¿Está de verdad internet haciéndonos más estúpidos? No exactamente. Pero sí que está cambiando el modo en que leemos y procesamos información." />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Cómo leemos en la era digital nos está cambiando el cerebro" />
+	<meta property="og:description" content="¿Está de verdad internet haciéndonos más estúpidos? No exactamente. Pero sí que está cambiando el modo en que leemos y procesamos información." />
+	<meta property="og:url" content="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/" />
+	<meta property="og:site_name" content="El Independiente" />
+	<meta property="article:publisher" content="https://www.facebook.com/indpcom/" />
+	<meta property="article:published_time" content="2018-11-09T23:22:33+00:00" />
+	<meta property="article:modified_time" content="2018-11-10T20:05:10+00:00" />
+	<meta property="og:image" content="https://www.elindependiente.com/wp-content/uploads/2016/11/educacion-libros.jpg" />
+	<meta property="og:image:width" content="1699" />
+	<meta property="og:image:height" content="1129" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://www.elindependiente.com/wp-content/uploads/2016/11/educacion-libros-1440x808.jpg" />
+	<meta name="twitter:creator" content="@garciaaller" />
+	<meta name="twitter:site" content="@elindepcom" />
+	<meta name="twitter:label1" content="Escrito por">
+	<meta name="twitter:data1" content="Marta García Aller">
+	<meta name="twitter:label2" content="Tiempo de lectura">
+	<meta name="twitter:data2" content="18 minutos">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.elindependiente.com/#organization","name":"El Independiente","url":"https://www.elindependiente.com/","sameAs":["https://www.facebook.com/indpcom/","https://www.youtube.com/c/ElIndependientecom","https://twitter.com/elindepcom"],"logo":{"@type":"ImageObject","@id":"https://www.elindependiente.com/#logo","inLanguage":"es","url":"https://www.elindependiente.com/wp-content/uploads/2019/07/elindependiente-logo-mail.png","width":240,"height":20,"caption":"El Independiente"},"image":{"@id":"https://www.elindependiente.com/#logo"}},{"@type":"WebSite","@id":"https://www.elindependiente.com/#website","url":"https://www.elindependiente.com/","name":"El Independiente","description":"Ideado, creado y controlado por periodistas","publisher":{"@id":"https://www.elindependiente.com/#organization"},"inLanguage":"es"},{"@type":"ImageObject","@id":"https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/#primaryimage","inLanguage":"es","url":"https://www.elindependiente.com/wp-content/uploads/2016/11/educacion-libros.jpg","width":1699,"height":1129,"caption":"Libro."},{"@type":"WebPage","@id":"https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/#webpage","url":"https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/","name":"C\u00f3mo leemos en la era digital nos est\u00e1 cambiando el cerebro","isPartOf":{"@id":"https://www.elindependiente.com/#website"},"primaryImageOfPage":{"@id":"https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/#primaryimage"},"datePublished":"2018-11-09T23:22:33+00:00","dateModified":"2018-11-10T20:05:10+00:00","description":"\u00bfEst\u00e1 de verdad internet haci\u00e9ndonos m\u00e1s est\u00fapidos? No exactamente. Pero s\u00ed que est\u00e1 cambiando el modo en que leemos y procesamos informaci\u00f3n.","breadcrumb":{"@id":"https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/"]}]},{"@type":"BreadcrumbList","@id":"https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://www.elindependiente.com/","url":"https://www.elindependiente.com/","name":"Portada"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/","url":"https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/","name":"C\u00f3mo leemos en la era digital nos est\u00e1 cambiando el cerebro"}}]},{"@type":["Article","NewsArticle"],"@id":"https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/#article","isPartOf":{"@id":"https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/#webpage"},"author":{"@id":"https://www.elindependiente.com/#/schema/person/6edb8c2f2fd2b14b9e349c98cbfee89c"},"headline":"C\u00f3mo leemos en la era digital nos est\u00e1 cambiando el cerebro","datePublished":"2018-11-09T23:22:33+00:00","dateModified":"2018-11-10T20:05:10+00:00","mainEntityOfPage":{"@id":"https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/#webpage"},"publisher":{"@id":"https://www.elindependiente.com/#organization"},"image":{"@id":"https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/#primaryimage"},"keywords":"Ciencia,Cultura,Futuro,Internet,Libros,Transformaci\u00f3n digital","articleSection":"Ciencia y Tecnolog\u00eda","inLanguage":"es","copyrightYear":"2018","copyrightHolder":{"@id":"https://www.elindependiente.com/#organization"}},{"@type":"Person","@id":"https://www.elindependiente.com/#/schema/person/6edb8c2f2fd2b14b9e349c98cbfee89c","name":"Marta Garc\u00eda Aller","description":"Periodista. Experta en escribir de econom\u00eda sin que se note. Antes de incorporarse a El Independiente, trabaj\u00f3 en El Mundo, Actualidad Econ\u00f3mica y la Agencia Efe. Colabora en Onda Cero y es profesora asociada de IE Business School. Su \u00faltimo libro es 'El fin del mundo tal y como lo conocemos' (Ed. Planeta)","sameAs":["https://twitter.com/@garciaaller"]}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="El Independiente &raquo; Feed" href="https://www.elindependiente.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="El Independiente &raquo; Feed de los comentarios" href="https://www.elindependiente.com/comments/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.elindependiente.com/wp-includes/css/dist/block-library/style.min.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://www.elindependiente.com/wp-includes/css/dist/block-library/theme.min.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='awsm-ead-public-css'  href='https://www.elindependiente.com/wp-content/plugins/embed-any-document/css/embed-public.min.css?ver=2.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twenty20-style-css'  href='https://www.elindependiente.com/wp-content/plugins/twenty20/assets/css/twenty20.css?ver=1.5.7' type='text/css' media='all' />
+<link rel='stylesheet' id='indp19-style-css'  href='https://www.elindependiente.com/wp-content/themes/indp19/style.css?ver=1615391267' type='text/css' media='all' />
+<link rel='stylesheet' id='indp19-style-single-css'  href='https://www.elindependiente.com/wp-content/themes/indp19/css/single.css?ver=1615388544' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.elindependiente.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.elindependiente.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://www.elindependiente.com/wp-content/themes/indp19/js/base.min.js?ver=1603901692' id='indp19-base-js'></script>
+<link rel="https://api.w.org/" href="https://www.elindependiente.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.elindependiente.com/wp-json/wp/v2/posts/390915" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.elindependiente.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.elindependiente.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://www.elindependiente.com/?p=390915' />
+<link rel="alternate" type="application/json+oembed" href="https://www.elindependiente.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.elindependiente.com%2Ffuturo%2F2018%2F11%2F10%2Fcomo-leemos-era-digital-nos-esta-cambiando-cerebro%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.elindependiente.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.elindependiente.com%2Ffuturo%2F2018%2F11%2F10%2Fcomo-leemos-era-digital-nos-esta-cambiando-cerebro%2F&#038;format=xml" />
+			<meta property="fb:pages" content="322128218118390" />
+							<meta property="ia:markup_url" content="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/?ia_markup=1" />
+				      <meta name="onesignal" content="wordpress-plugin"/>
+            <script>
+
+      window.OneSignal = window.OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+        OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+        OneSignal.SERVICE_WORKER_PARAM = { scope: '/' };
+
+        OneSignal.setDefaultNotificationUrl("https://www.elindependiente.com");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = '7ca2b566-b138-4e33-84be-3e5b4578656d';
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['title'] = "El Independiente";
+oneSignal_options['welcomeNotification']['message'] = "¡Gracias por activar las notificaciones!";
+oneSignal_options['path'] = "https://www.elindependiente.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+oneSignal_options['persistNotification'] = false;
+oneSignal_options['promptOptions'] = { };
+oneSignal_options['promptOptions']['actionMessage'] = 'El Independiente quiere enviarte notificaciones:';
+oneSignal_options['promptOptions']['exampleNotificationTitleDesktop'] = 'Este es un ejemplo de notificación';
+oneSignal_options['promptOptions']['exampleNotificationMessageDesktop'] = 'Las notificaciones aparecerán en tu escritorio';
+oneSignal_options['promptOptions']['exampleNotificationTitleMobile'] = 'Ejemplo de notificación';
+oneSignal_options['promptOptions']['exampleNotificationMessageMobile'] = 'Las notificaciones aparecerán en tu dispositivo.';
+oneSignal_options['promptOptions']['exampleNotificationCaption'] = '(puedes cancelarlo en cualquier momento)';
+oneSignal_options['promptOptions']['acceptButtonText'] = 'CONTINUAR';
+oneSignal_options['promptOptions']['cancelButtonText'] = 'NO, GRACIAS';
+oneSignal_options['promptOptions']['siteName'] = 'http://www.elindependiente.com';
+oneSignal_options['promptOptions']['autoAcceptTitle'] = 'Pincha Continuar';
+oneSignal_options['notifyButton'] = { };
+oneSignal_options['notifyButton']['enable'] = true;
+oneSignal_options['notifyButton']['position'] = 'bottom-left';
+oneSignal_options['notifyButton']['theme'] = 'default';
+oneSignal_options['notifyButton']['size'] = 'medium';
+oneSignal_options['notifyButton']['showCredit'] = false;
+oneSignal_options['notifyButton']['text'] = {};
+oneSignal_options['notifyButton']['text']['tip.state.unsubscribed'] = 'Activar las notificaciones';
+oneSignal_options['notifyButton']['text']['tip.state.subscribed'] = 'Notificaciones activadas';
+oneSignal_options['notifyButton']['text']['tip.state.blocked'] = 'Notificaciones desactivadas';
+oneSignal_options['notifyButton']['text']['message.action.subscribed'] = '¡Gracias por activar las notificaciones!';
+oneSignal_options['notifyButton']['text']['message.action.resubscribed'] = 'Has activado las notificaciones';
+oneSignal_options['notifyButton']['text']['message.action.unsubscribed'] = 'No recibirás más notificaciones';
+oneSignal_options['notifyButton']['text']['dialog.main.title'] = 'Administrar notificaciones';
+oneSignal_options['notifyButton']['text']['dialog.main.button.subscribe'] = 'RECIBIR';
+oneSignal_options['notifyButton']['text']['dialog.main.button.unsubscribe'] = 'NO RECIBIR';
+oneSignal_options['notifyButton']['text']['dialog.blocked.title'] = 'Desbloquear notificaciones';
+oneSignal_options['notifyButton']['text']['dialog.blocked.message'] = 'Sigue estas instrucciones para permitir las notificaciones:';
+oneSignal_options['notifyButton']['colors'] = {};
+oneSignal_options['notifyButton']['colors']['circle.background'] = '#008192';
+oneSignal_options['notifyButton']['colors']['pulse.color'] = '#008192';
+oneSignal_options['notifyButton']['colors']['dialog.button.background'] = '#008192';
+oneSignal_options['notifyButton']['colors']['dialog.button.background.hovering'] = '006370';
+oneSignal_options['notifyButton']['offset'] = {};
+oneSignal_options['notifyButton']['offset']['bottom'] = '64px';
+                OneSignal.init(window._oneSignalInitOptions);
+                OneSignal.showSlidedownPrompt();      });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener("load", function(event){
+               documentInitOneSignal();
+          });
+      }
+    </script>
+<link rel="amphtml" href="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/amp/"><link rel="icon" href="https://www.elindependiente.com/wp-content/uploads/2019/09/logo-220x220.jpg" sizes="32x32" />
+<link rel="icon" href="https://www.elindependiente.com/wp-content/uploads/2019/09/logo-220x220.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.elindependiente.com/wp-content/uploads/2019/09/logo-220x220.jpg" />
+<meta name="msapplication-TileImage" content="https://www.elindependiente.com/wp-content/uploads/2019/09/logo.jpg" />
+
+    		<style>
+	        .single.Full-Coverage .contenedor .wrapper-header .media::before {
+	            background: rgba(0,0,0,0.6) !important;
+	        }
+		</style>
+	
+</head>
+
+
+<body class="post-template post-template-single-reportaje post-template-single-reportaje-php single single-post postid-390915 single-format-standard wp-embed-responsive Article Full-Coverage" data-category="futuro ">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWSHBZ"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script type="text/javascript">
+    (function() {
+        var postTime = 1541880310;
+        var currentTime = Math.floor(Date.now() / 1000);
+        resolution = (currentTime) - postTime;
+
+        if(resolution > (8*3600)) {
+            console.log('hay survey');
+            var ARTICLE_URL = window.location.href;
+            var CONTENT_ID = 'everything';
+            document.write(
+            '<scr'+'ipt '+
+            'src="//survey.g.doubleclick.net/survey?site=_umnzdt32dulszjhzhnzqp7b3ay'+
+            '&amp;url='+encodeURIComponent(ARTICLE_URL)+
+            (CONTENT_ID ? '&amp;cid='+encodeURIComponent(CONTENT_ID) : '')+
+            '&amp;random='+(new Date).getTime()+
+            '" type="text/javascript">'+'\x3C/scr'+'ipt>');
+        }
+    })();
+</script>
+            <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0&appId=1667940753311310&autoLogAppEvents=1" nonce="YIXPjUVE"></script>
+        <div id="container" class="container">
+        <div id="loader_left" class="loader_left" style="display: none">
+                    <img src="/wp-content/themes/indp19/images/spinner.gif" alt='loading' />
+                </div>
+                <div id="loader_right" class="loader_right" style="display: none">
+                    <img src="/wp-content/themes/indp19/images/spinner.gif" alt='loading' />
+                </div>
+        <header id="header">
+                            <div>
+                    <div class="tools" id="tools">
+    <!-- Muestra la hamburguesa para desplegar el menú -->
+    <button class="menu" id="nav-icon"><span>Menú</span></button>
+
+    <p class="top-header__date"></p>
+
+        <a class="header-el-tiempo" href="https://www.elindependiente.com/el-tiempo/?utm_source=web&utm_medium=button&utm_campaign=eltiempo" title="El tiempo en tu localidad">
+            <svg width="30px" height="30px" viewBox="0 0 891 640" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>icono-sol-nube</title>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="icono-sol-nube" fill-rule="nonzero">
+                        <path d="M736,639.6 L308.7,639.6 C244,639.6 191.4,587 191.4,522.3 C191.4,457.6 244,405.1 308.7,405.1 L338.1,405.1 C355.1,309.9 437.4,241 534.3,241 C601.1,241 663.1,274.2 700.2,329.9 L736,329.9 C821.4,329.9 890.9,399.4 890.9,484.8 C890.9,570.2 821.4,639.6 736,639.6 Z M308.7,433.9 C260,433.9 220.3,473.5 220.3,522.3 C220.3,571 259.9,610.7 308.7,610.7 L736,610.7 C805.5,610.7 862,554.2 862,484.7 C862,415.2 805.5,358.7 736,358.7 L684.7,358.7 L676.4,346.2 C644.7,298.4 591.5,269.8 534.3,269.8 C451.2,269.8 380.6,329.1 366.4,410.8 L362.4,433.9 L308.7,433.9 Z" id="Shape" fill="#33BAD1"></path>
+                        <path d="M340.262,112.2 C340.262,121.2 333.062,128.6 323.962,128.6 C314.962,128.6 307.562,121.4 307.562,112.3 C307.562,112.3 307.562,112.2 307.562,112.1 L307.562,17.2 C307.562,8.2 314.762,0.8 323.862,0.8 C332.862,0.8 340.262,8 340.262,17.1 C340.262,17.1 340.262,17.2 340.262,17.3 L340.262,112.2 Z" id="Trazado_18_4_" fill="#33BAD1"></path>
+                        <path d="M160.087,64.047 C155.487,56.247 158.087,46.247 165.887,41.647 C173.687,37.047 183.687,39.647 188.287,47.447 C188.387,47.647 188.587,47.947 188.687,48.147 L234.887,131.147 C239.287,139.047 236.387,148.947 228.587,153.347 C220.687,157.747 210.787,154.847 206.387,147.047 L160.087,64.047 Z" id="Trazado_21_4_" fill="#33BAD1"></path>
+                        <path d="M48.286,187.518 C40.386,183.118 37.686,173.118 42.086,165.218 C46.486,157.318 56.486,154.618 64.386,159.018 L146.986,205.718 C154.886,210.118 157.586,220.118 153.186,228.018 C148.786,235.918 138.786,238.618 130.886,234.218 L48.286,187.518 Z" id="Trazado_23_4_" fill="#33BAD1"></path>
+                        <path d="M16.5,340.747 C7.5,340.747 0.1,333.547 0.1,324.447 C0.1,315.447 7.3,308.047 16.4,308.047 C16.4,308.047 16.5,308.047 16.6,308.047 L111.5,308.047 C120.5,308.047 127.8,315.447 127.8,324.447 C127.8,333.447 120.5,340.647 111.5,340.747 L16.5,340.747 Z" id="Trazado_25_4_" fill="#33BAD1"></path>
+                        <path d="M445.085,149.362 C440.585,157.162 430.485,159.762 422.785,155.262 C415.085,150.762 412.385,140.662 416.885,132.962 L464.685,50.962 C469.185,43.162 479.285,40.562 486.985,45.062 C494.685,49.562 497.385,59.662 492.885,67.362 L445.085,149.362 Z" id="Trazado_28_4_" fill="#33BAD1"></path>
+                        <path d="M515.848,232.21 C508.048,236.71 498.048,234.11 493.548,226.31 C489.048,218.51 491.648,208.51 499.448,204.01 L499.448,204.01 L581.548,156.41 C589.348,151.91 599.348,154.51 603.848,162.31 C608.348,170.11 605.748,180.11 597.948,184.61 L515.848,232.21 Z" id="Trazado_26_4_" fill="#33BAD1"></path>
+                        <path d="M66.248,493.11 C58.448,497.61 48.448,495.01 43.948,487.21 C39.448,479.41 42.048,469.41 49.848,464.91 L49.848,464.91 L131.948,417.31 C139.648,412.51 149.648,414.91 154.448,422.51 C159.248,430.21 156.848,440.21 149.248,445.01 C148.948,445.21 148.648,445.31 148.348,445.51 L66.248,493.11 Z" id="Trazado_27_4_" fill="#33BAD1"></path>
+                        <path d="M323.8,153.3 C229.4,153.3 152.5,230.1 152.5,324.6 C152.5,366.7 167.8,405.4 193.1,435.2 C199.6,427.2 206.9,420.1 214.9,413.9 C194.9,389.6 182.8,358.4 182.8,324.6 C182.8,246.9 246,183.7 323.7,183.7 C369.9,183.7 410.9,206 436.6,240.5 C445,234.4 454.3,229.8 463.9,226.4 C433.1,182.3 381.8,153.3 323.8,153.3 Z" id="Path" fill="#31BAD1"></path>
+                    </g>
+                </g>
+            </svg>
+            El tiempo en tu ciudad
+        </a>
+
+    <div class="logo-fixed only-fixed">
+        <a href="https://www.elindependiente.com/" title="El Independiente"
+           class="logo-fixed__logo" rel="home">
+            <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>icono El Independiente</title>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="icono-plegado-indp" fill-rule="nonzero">
+                        <path d="M0.728,13.992 C0.555418903,14.000388 0.391840668,14.071509 0.268,14.192 C0.104126161,14.343881 0.010077245,14.5565763 0.008,14.78 L0.008,19.245 C-0.0181060631,19.4751341 0.0825581304,19.7013415 0.271,19.836 C0.402,19.967 0.599,19.967 0.731,20.036 L5.331,20.036 C5.5035811,20.027612 5.66715933,19.956491 5.791,19.836 C5.94801213,19.677806 6.04158238,19.4675398 6.054,19.245 L6.054,14.78 C6.08010606,14.5498659 5.97944187,14.3236585 5.791,14.189 C5.66,14.058 5.463,14.058 5.331,13.989 L0.728,13.992 Z"
+                              id="Trazado_70" fill="#008192"></path>
+                        <path d="M7.689,13.992 C7.5164189,14.000388 7.35284067,14.071509 7.229,14.192 C7.07198787,14.350194 6.97841762,14.5604602 6.966,14.783 L6.966,19.248 C6.93989394,19.4781341 7.04055813,19.7043415 7.229,19.839 C7.36,19.97 7.557,19.97 7.689,20.039 L12.289,20.039 C12.4615811,20.030612 12.6251593,19.959491 12.749,19.839 C12.9060121,19.680806 12.9995824,19.4705398 13.012,19.248 L13.012,14.78 C13.0381061,14.5498659 12.9374419,14.3236585 12.749,14.189 C12.618,14.058 12.421,14.058 12.289,13.989 L7.689,13.992 Z"
+                              id="Trazado_71" fill="#008192"></path>
+                        <path d="M14.715,13.992 C14.5424189,14.000388 14.3788407,14.071509 14.255,14.192 C14.0979879,14.350194 14.0044176,14.5604602 13.992,14.783 L13.992,19.248 C13.9658939,19.4781341 14.0665581,19.7043415 14.255,19.839 C14.386,19.97 14.583,19.97 14.715,20.039 L19.315,20.039 C19.4875811,20.030612 19.6511593,19.959491 19.775,19.839 C19.9320121,19.680806 20.0255824,19.4705398 20.038,19.248 L20.038,14.78 C20.0641061,14.5498659 19.9634419,14.3236585 19.775,14.189 C19.644,14.058 19.447,14.058 19.315,13.989 L14.715,13.992 Z"
+                              id="Trazado_72" fill="#008192"></path>
+                        <path d="M0.005,12.351 C0.0133880212,12.5235811 0.0845089929,12.6871593 0.205,12.811 C0.363193996,12.9680121 0.573460223,13.0615824 0.796,13.074 L5.258,13.074 C5.48813414,13.1001061 5.71434151,12.9994419 5.849,12.811 C5.98,12.68 5.98,12.483 6.049,12.351 L6.049,7.751 C6.04061198,7.5784189 5.96949101,7.41484067 5.849,7.291 C5.71434151,7.10255813 5.48813414,7.00189394 5.258,7.028 L0.793,7.028 C0.56310387,7.00390861 0.338158857,7.10605201 0.205,7.295 C0.0845089929,7.41884067 0.0133880212,7.5824189 0.005,7.755 L0.005,12.351 Z"
+                              id="Trazado_73" fill="#008192"></path>
+                        <path d="M12.285,13.008 C12.4575811,12.999612 12.6211593,12.928491 12.745,12.808 C12.9020121,12.649806 12.9955824,12.4395398 13.008,12.217 L13.008,7.817 C13.0318494,7.58890353 12.9314388,7.36555666 12.745,7.232 C12.614,7.101 12.417,7.101 12.285,7.032 L7.685,7.032 C7.5124189,7.04038802 7.34884067,7.11150899 7.225,7.232 C7.06798787,7.390194 6.97441762,7.60046022 6.962,7.823 L6.962,12.288 C6.93589394,12.5181341 7.03655813,12.7443415 7.225,12.879 C7.356,13.01 7.553,13.01 7.685,13.079 L12.285,13.079 L12.285,13.008 Z"
+                              id="Trazado_74" fill="#008192"></path>
+                        <path d="M19.311,13.008 C19.4835811,12.999612 19.6471593,12.928491 19.771,12.808 C19.9280121,12.649806 20.0215824,12.4395398 20.034,12.217 L20.034,7.817 C20.0578494,7.58890353 19.9574388,7.36555666 19.771,7.232 C19.64,7.101 19.443,7.101 19.311,7.032 L14.711,7.032 C14.5384189,7.04038802 14.3748407,7.11150899 14.251,7.232 C14.0939879,7.390194 14.0004176,7.60046022 13.988,7.823 L13.988,12.288 C13.9618939,12.5181341 14.0625581,12.7443415 14.251,12.879 C14.382,13.01 14.579,13.01 14.711,13.079 L19.311,13.079 L19.311,13.008 Z"
+                              id="Trazado_75" fill="#008192"></path>
+                        <path d="M0.727,0.071 C0.554418903,0.0793880212 0.390840668,0.150508993 0.267,0.271 C0.108725133,0.399276063 0.0132794315,0.589438872 0.005,0.793 L0.005,5.259 C0.00702594694,5.48392373 0.102260607,5.69793014 0.268,5.85 C0.399,5.981 0.596,5.981 0.728,6.05 L5.328,6.05 C5.5005811,6.04161198 5.66415933,5.97049101 5.788,5.85 C5.94501213,5.691806 6.03858238,5.48153978 6.051,5.259 L6.051,0.793 C6.07622544,0.562083382 5.97395261,0.335704198 5.784,0.202 C5.65050511,0.106295127 5.48788704,0.0599843298 5.324,0.071 L0.727,0.071 Z"
+                              id="Trazado_76" fill="#008192"></path>
+                        <path d="M12.285,6.046 C12.4575811,6.03761198 12.6211593,5.96649101 12.745,5.846 C12.9020121,5.687806 12.9955824,5.47753978 13.008,5.255 L13.008,0.793 C13.032974,0.563883762 12.9324371,0.33910921 12.745,0.205 C12.614,0.074 12.417,0.074 12.285,0.005 L7.685,0.005 C7.5124189,0.0133880212 7.34884067,0.0845089929 7.225,0.205 C7.07121847,0.363492765 6.98024388,0.572450025 6.969,0.793 L6.969,5.258 C6.94289394,5.48813414 7.04355813,5.71434151 7.232,5.849 C7.363,5.98 7.56,5.98 7.692,6.049 L12.285,6.046 Z"
+                              id="Trazado_77" fill="#008192"></path>
+                        <path d="M19.968,0.728 C19.959612,0.555418903 19.888491,0.391840668 19.768,0.268 C19.6101112,0.112753702 19.4010844,0.0203269058 19.18,0.008 L14.715,0.008 C14.4864656,-0.0176400432 14.261817,0.0816943624 14.127,0.268 C13.996,0.399 13.996,0.596 13.927,0.728 L13.927,5.328 C13.935388,5.5005811 14.006509,5.66415933 14.127,5.788 C14.285194,5.94501213 14.4954602,6.03858238 14.718,6.051 L19.183,6.051 C19.4131341,6.07710606 19.6393415,5.97644187 19.774,5.788 C19.905,5.657 19.905,5.46 19.974,5.328 L19.968,0.728 Z"
+                              id="Trazado_78" fill="#010002"></path>
+                    </g>
+                </g>
+            </svg>
+            <span>
+                El Independiente
+            </span>
+			        </a>
+
+		
+            <div class="logo-fixed__category">
+                <div>
+					<a href="https://www.elindependiente.com/futuro/">Ciencia y Tecnología</a>
+                        <svg width="16px" height="57px" viewBox="0 0 16 57" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Lineas</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Lineas" stroke="#829EA2" stroke-width="0.5">
+                                    <line x1="0.217" y1="56.125" x2="15.217" y2="30.125" id="Línea_55"></line>
+                                    <line x1="3.232" y1="0.093" x2="15.232" y2="30.093" id="Línea_53"></line>
+                                </g>
+                            </g>
+                        </svg>
+					
+                    <div class="logo-fixed__title">
+						Cómo leemos en la era digital nos está cambiando el cerebro                    </div><!-- / .logo-fixed_title -->
+
+                </div>
+            </div><!-- / .logo-fixed_category -->
+
+            <div class="logo-fixed__redes">
+				
+        <ul id="social_share" class="social-share sinavatar">
+            <li class="face-share">
+                <button data-type="social" data-url="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/" data-subtype="facebook" title="Compartir con Facebook">
+                    <span>Facebook</span>
+                    <i class="fb-icon"></i>
+                </button>
+            </li>
+            <li class="twit-share">
+                <button data-type="social" data-url="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/" data-subtype="twitter" title="Compartir con Twitter">
+                    <span>Twitter</span>
+                    <i class="tw-icon"></i>
+                </button>
+            </li>
+            <li class="flipboard-share" style="vertical-align: top; width: 35px;">
+                <a data-flip-widget="shareflip" href="https://flipboard.com">
+                    <svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Logo Flipboard</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Logo-Flipboard" fill-rule="nonzero">
+                                <path d="M13.5,0 L13.5,0 C20.9574,0 27,6.0426 27,13.5 L27,13.5 C27,20.9574 20.9574,27 13.5,27 L13.5,27 C6.0426,27 0,20.9574 0,13.5 L0,13.5 C0,6.0426 6.0426,0 13.5,0 Z" id="Path" fill="#CC0000"></path>
+                                <g id="Group" transform="translate(6.750000, 6.750000)" fill="#FFFFFF">
+                                    <rect id="Rectangle" opacity="0.8" x="4.509" y="4.509" width="4.482" height="4.482"></rect>
+                                    <rect id="Rectangle" opacity="0.9" x="4.509" y="0.027" width="8.964" height="4.482"></rect>
+                                    <rect id="Rectangle" x="0.027" y="0.027" width="4.482" height="13.446"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <script src="https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js" type="text/javascript"></script>
+            </li>
+            <li class="whats-share">
+                <button data-type="social" data-url="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/" data-subtype="whatsapp" title="Compartir con Whatsapp">
+                    <span>Whatsapp</span>
+                    <i class="whats-icon"></i>
+                </button>
+            </li>
+            <li class="link-share">
+                <button data-type="social" data-url="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/" data-subtype="linkedin" title="Compartir con Linkedin">
+                    <span>Linkedin</span>
+                    <i class="link-icon"></i>
+                </button>
+            </li>
+            <li class="mene-share">
+                <button data-type="social" data-url="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/" data-subtype="meneame" title="Compartir con Menéame">
+                    <span>Menéame</span>
+                    <i class="mene-icon"></i>
+                </button>
+            </li>
+            <li class="comentarios">
+                <a href="#entry-footer" title="Escribir un comentario">
+                    <svg width="13px" height="15px" viewBox="0 0 13 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>icono-comentarios</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Trazado-1968" fill="#FFFFFF" fill-rule="nonzero">
+                                <path d="M10.2713225,1.13686838e-13 L2.051,1.13686838e-13 C0.91952655,0.000729643705 0.0027296437,0.91752655 0.002,2.04867752 L0.002,7.537 L0.0077116988,7.68989532 C0.0790123641,8.64897063 0.809787836,9.42414631 1.74802357,9.56361548 L1.83,9.572 L7.19526927,14.9398464 L6.473,9.586 L10.269,9.586 C10.8123712,9.58635078 11.3339361,9.3707057 11.7186337,8.98650413 C12.1033313,8.60230256 12.3196492,8.08101632 12.32,7.53732248 L12.32,2.049 C12.3192704,0.91752655 11.4024734,0.000729643705 10.2713225,1.13686838e-13 Z M2.05132248,0.999999896 L10.271,0.999999896 C10.8500475,1.00037356 11.3196264,1.46995247 11.3200001,2.04932248 L11.3200001,7.537 C11.3198205,7.81515486 11.2090235,8.08215513 11.0119833,8.2789413 C10.814943,8.47572747 10.5478,8.58617982 10.2693227,8.5860001 L5.33011134,8.586 L5.808,12.138 L2.25830611,8.5861336 L2.05132248,8.5860001 C1.47195247,8.58562644 1.00237356,8.11604753 1.0019999,7.53667752 L1.0019999,2.049 C1.00237356,1.46995247 1.47195247,1.00037356 2.05132248,0.999999896 Z" id="Trazado_1968"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    <span>Comentar</span>
+                </a>
+            </li>
+        </ul>
+	            </div><!-- / .logo-fixed_redes -->
+
+		
+    </div><!-- / .logo-fixed -->
+
+    <div class="tools__right">
+        <div id="search" class="search">
+			<div id="full-screen-search-container">
+    <button class="desplegable-buscador"
+            value="Buscar"><span></span></button>
+</div>
+
+        </div>
+
+        <a class="tools__newsletter" href="https://usuarios.elindependiente.com/register/"
+           target="_blank">Newsletter</a>
+
+        <a class="tools__login" href="https://usuarios.elindependiente.com/login" target="_blank">Iniciar sesión</a>
+
+        <a href="https://www.elindependiente.com/suscripcion/"
+           class="boton-suscripcion boton-suscripcion--desktop only-fixed">Suscríbete</a>
+    </div><!-- / .tools-right -->
+
+    <div class="popup--search" aria-label="search" role="dialog" tabindex="-1" id="search-popup">
+		<script async src="https://cse.google.com/cse.js?cx=006393234921177393912:n6zcclgqvae"></script>
+<div class="gcse-search"></div>
+    </div>
+
+    <div class="header-suscripcion-mobile">
+        <a class="header-el-tiempo--mobile" href="https://www.elindependiente.com/el-tiempo/?utm_source=web&utm_medium=button&utm_campaign=eltiempo" title="El tiempo en tu localidad">
+            <svg width="30px" height="30px" viewBox="0 0 891 640" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>icono-sol-nube</title>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="icono-sol-nube" fill-rule="nonzero">
+                        <path d="M736,639.6 L308.7,639.6 C244,639.6 191.4,587 191.4,522.3 C191.4,457.6 244,405.1 308.7,405.1 L338.1,405.1 C355.1,309.9 437.4,241 534.3,241 C601.1,241 663.1,274.2 700.2,329.9 L736,329.9 C821.4,329.9 890.9,399.4 890.9,484.8 C890.9,570.2 821.4,639.6 736,639.6 Z M308.7,433.9 C260,433.9 220.3,473.5 220.3,522.3 C220.3,571 259.9,610.7 308.7,610.7 L736,610.7 C805.5,610.7 862,554.2 862,484.7 C862,415.2 805.5,358.7 736,358.7 L684.7,358.7 L676.4,346.2 C644.7,298.4 591.5,269.8 534.3,269.8 C451.2,269.8 380.6,329.1 366.4,410.8 L362.4,433.9 L308.7,433.9 Z" id="Shape" fill="#33BAD1"></path>
+                        <path d="M340.262,112.2 C340.262,121.2 333.062,128.6 323.962,128.6 C314.962,128.6 307.562,121.4 307.562,112.3 C307.562,112.3 307.562,112.2 307.562,112.1 L307.562,17.2 C307.562,8.2 314.762,0.8 323.862,0.8 C332.862,0.8 340.262,8 340.262,17.1 C340.262,17.1 340.262,17.2 340.262,17.3 L340.262,112.2 Z" id="Trazado_18_4_" fill="#33BAD1"></path>
+                        <path d="M160.087,64.047 C155.487,56.247 158.087,46.247 165.887,41.647 C173.687,37.047 183.687,39.647 188.287,47.447 C188.387,47.647 188.587,47.947 188.687,48.147 L234.887,131.147 C239.287,139.047 236.387,148.947 228.587,153.347 C220.687,157.747 210.787,154.847 206.387,147.047 L160.087,64.047 Z" id="Trazado_21_4_" fill="#33BAD1"></path>
+                        <path d="M48.286,187.518 C40.386,183.118 37.686,173.118 42.086,165.218 C46.486,157.318 56.486,154.618 64.386,159.018 L146.986,205.718 C154.886,210.118 157.586,220.118 153.186,228.018 C148.786,235.918 138.786,238.618 130.886,234.218 L48.286,187.518 Z" id="Trazado_23_4_" fill="#33BAD1"></path>
+                        <path d="M16.5,340.747 C7.5,340.747 0.1,333.547 0.1,324.447 C0.1,315.447 7.3,308.047 16.4,308.047 C16.4,308.047 16.5,308.047 16.6,308.047 L111.5,308.047 C120.5,308.047 127.8,315.447 127.8,324.447 C127.8,333.447 120.5,340.647 111.5,340.747 L16.5,340.747 Z" id="Trazado_25_4_" fill="#33BAD1"></path>
+                        <path d="M445.085,149.362 C440.585,157.162 430.485,159.762 422.785,155.262 C415.085,150.762 412.385,140.662 416.885,132.962 L464.685,50.962 C469.185,43.162 479.285,40.562 486.985,45.062 C494.685,49.562 497.385,59.662 492.885,67.362 L445.085,149.362 Z" id="Trazado_28_4_" fill="#33BAD1"></path>
+                        <path d="M515.848,232.21 C508.048,236.71 498.048,234.11 493.548,226.31 C489.048,218.51 491.648,208.51 499.448,204.01 L499.448,204.01 L581.548,156.41 C589.348,151.91 599.348,154.51 603.848,162.31 C608.348,170.11 605.748,180.11 597.948,184.61 L515.848,232.21 Z" id="Trazado_26_4_" fill="#33BAD1"></path>
+                        <path d="M66.248,493.11 C58.448,497.61 48.448,495.01 43.948,487.21 C39.448,479.41 42.048,469.41 49.848,464.91 L49.848,464.91 L131.948,417.31 C139.648,412.51 149.648,414.91 154.448,422.51 C159.248,430.21 156.848,440.21 149.248,445.01 C148.948,445.21 148.648,445.31 148.348,445.51 L66.248,493.11 Z" id="Trazado_27_4_" fill="#33BAD1"></path>
+                        <path d="M323.8,153.3 C229.4,153.3 152.5,230.1 152.5,324.6 C152.5,366.7 167.8,405.4 193.1,435.2 C199.6,427.2 206.9,420.1 214.9,413.9 C194.9,389.6 182.8,358.4 182.8,324.6 C182.8,246.9 246,183.7 323.7,183.7 C369.9,183.7 410.9,206 436.6,240.5 C445,234.4 454.3,229.8 463.9,226.4 C433.1,182.3 381.8,153.3 323.8,153.3 Z" id="Path" fill="#31BAD1"></path>
+                    </g>
+                </g>
+            </svg>
+            <span>El tiempo en tu ciudad</span>
+        </a>
+        <a href="https://www.elindependiente.com/suscripcion/" class="boton-sabermas">Suscríbete</a>
+        <a class="boton-sabermas boton-sabermas--toggled" href="https://usuarios.elindependiente.com/login"
+           target="_blank">Iniciar sesión</a>
+    </div>
+</div>
+
+    <div class="contenedor">
+        <nav id="site-navigation" class="menu-container">
+            <div class="menu-menu-principal-container"><ul id="menu-menu-principal" class="menu" itemscope itemtype="http://www.schema.org/SiteNavigationElement"><li id="menu-item-346" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Opinión" href="https://www.elindependiente.com/opinion/" itemprop="url">Opinión</a></li>
+<li id="menu-item-1193445" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children" itemprop="name"><a href="https://www.elindependiente.com/espana/" itemprop="url">España</a>
+<ul class="sub-menu nested" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+	<li id="menu-item-1193459" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/espana/madrid/" itemprop="url">Madrid</a></li>
+	<li id="menu-item-1193448" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/espana/andalucia/" itemprop="url">Andalucía</a></li>
+	<li id="menu-item-1193451" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/espana/cataluna/" itemprop="url">Cataluña</a></li>
+	<li id="menu-item-1193456" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/espana/valencia/" itemprop="url">C. Valenciana</a></li>
+	<li id="menu-item-1193460" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/espana/" itemprop="url">Otras</a></li>
+	<li id="menu-item-1193463" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/espana/tribunales/" itemprop="url">Tribunales</a></li>
+</ul>
+</li>
+<li id="menu-item-18" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children" itemprop="name"><a title="Noticias sobre Economía" href="https://www.elindependiente.com/economia/" itemprop="url">Economía</a>
+<ul class="sub-menu nested" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+	<li id="menu-item-337189" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Pymes y Autónomos" href="https://www.elindependiente.com/economia/pymes-autonomos/" itemprop="url">Pymes y Autónomos</a></li>
+	<li id="menu-item-334676" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Empresas" href="https://www.elindependiente.com/economia/empresas/" itemprop="url">Empresas</a></li>
+	<li id="menu-item-1193466" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/economia/finanzas/" itemprop="url">Finanzas</a></li>
+	<li id="menu-item-1193472" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/economia/vivienda/" itemprop="url">Vivienda</a></li>
+	<li id="menu-item-334680" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Trabajo" href="https://www.elindependiente.com/economia/trabajo/" itemprop="url">Trabajo</a></li>
+	<li id="menu-item-334677" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Funcionarios" href="https://www.elindependiente.com/economia/funcionarios/" itemprop="url">Funcionarios</a></li>
+	<li id="menu-item-337891" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Transporte" href="https://www.elindependiente.com/economia/transporte/" itemprop="url">Transporte</a></li>
+</ul>
+</li>
+<li id="menu-item-1193475" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children" itemprop="name"><a href="https://www.elindependiente.com/internacional/" itemprop="url">Internacional</a>
+<ul class="sub-menu nested" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+	<li id="menu-item-1193484" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/internacional/estados-unidos/" itemprop="url">Estados Unidos</a></li>
+	<li id="menu-item-1193487" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/internacional/europa/" itemprop="url">Europa</a></li>
+	<li id="menu-item-1193478" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/internacional/america-latina/" itemprop="url">América Latina</a></li>
+	<li id="menu-item-1193481" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/internacional/asia/" itemprop="url">Asia</a></li>
+</ul>
+</li>
+<li id="menu-item-1193490" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children" itemprop="name"><a href="https://www.elindependiente.com/futuro/" itemprop="url">Ciencia y Tecnología</a>
+<ul class="sub-menu nested" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+	<li id="menu-item-1193493" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/futuro/inteligencia-artificial/" itemprop="url">Inteligencia Artificial</a></li>
+	<li id="menu-item-334820" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Investigación" href="https://www.elindependiente.com/futuro/investigacion/" itemprop="url">Investigación</a></li>
+	<li id="menu-item-334821" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Medio Ambiente" href="https://www.elindependiente.com/futuro/medio-ambiente/" itemprop="url">Medio Ambiente</a></li>
+	<li id="menu-item-1193496" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/futuro/meteorologia/" itemprop="url">Meteorología</a></li>
+	<li id="menu-item-1193498" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/futuro/astronomia/" itemprop="url">Astronomía</a></li>
+</ul>
+</li>
+<li id="menu-item-334741" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children" itemprop="name"><a title="Noticias sobre Sociedad" href="https://www.elindependiente.com/sociedad/" itemprop="url">Sociedad</a>
+<ul class="sub-menu nested" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+	<li id="menu-item-1193513" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/sociedad/sucesos/" itemprop="url">Sucesos</a></li>
+	<li id="menu-item-1193507" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/sociedad/educacion/" itemprop="url">Educación</a></li>
+	<li id="menu-item-1193510" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/sociedad/mujeres/" itemprop="url">Mujeres</a></li>
+	<li id="menu-item-334737" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Consumo" href="https://www.elindependiente.com/sociedad/consumo/" itemprop="url">Consumo</a></li>
+	<li id="menu-item-1193504" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/sociedad/deportes/" itemprop="url">Deportes</a></li>
+</ul>
+</li>
+<li id="menu-item-1193517" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/gente/" itemprop="url">Gente</a></li>
+<li id="menu-item-1193520" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children" itemprop="name"><a href="https://www.elindependiente.com/vida-sana/" itemprop="url">Vida Sana</a>
+<ul class="sub-menu nested" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+	<li id="menu-item-1193526" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/vida-sana/salud/" itemprop="url">Salud</a></li>
+	<li id="menu-item-1193523" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/vida-sana/nutricion/" itemprop="url">Nutrición</a></li>
+</ul>
+</li>
+<li id="menu-item-20" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children" itemprop="name"><a title="Noticias sobre Tendencias" href="https://www.elindependiente.com/tendencias/" itemprop="url">Tendencias</a>
+<ul class="sub-menu nested" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+	<li id="menu-item-335479" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Cultura" href="https://www.elindependiente.com/tendencias/cultura/" itemprop="url">Cultura</a></li>
+	<li id="menu-item-337137" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Arte" href="https://www.elindependiente.com/tendencias/arte/" itemprop="url">Arte</a></li>
+	<li id="menu-item-335478" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Cine" href="https://www.elindependiente.com/tendencias/cine/" itemprop="url">Cine</a></li>
+	<li id="menu-item-335602" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Música" href="https://www.elindependiente.com/tendencias/musica/" itemprop="url">Música</a></li>
+	<li id="menu-item-335480" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Libros" href="https://www.elindependiente.com/tendencias/libros/" itemprop="url">Literatura</a></li>
+	<li id="menu-item-337139" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a title="Noticias sobre Fotografía" href="https://www.elindependiente.com/tendencias/fotografia/" itemprop="url">Fotografía</a></li>
+</ul>
+</li>
+<li id="menu-item-335481" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children" itemprop="name"><a title="Noticias sobre Series y Televisión" href="https://www.elindependiente.com/series-y-television/" itemprop="url">Series y TV</a>
+<ul class="sub-menu nested" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+	<li id="menu-item-1193529" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/series-y-television/comunicacion/" itemprop="url">Comunicación y Medios</a></li>
+	<li id="menu-item-1193532" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/series-y-television/estrenos/" itemprop="url">Estrenos</a></li>
+	<li id="menu-item-1193528" class="menu-item menu-item-type-taxonomy menu-item-object-category" itemprop="name"><a href="https://www.elindependiente.com/series-y-television/programacion/" itemprop="url">Programación</a></li>
+</ul>
+</li>
+<li id="menu-item-1193534" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag" itemprop="name"><a href="https://www.elindependiente.com/etiquetas/conversaciones-el-independiente/" itemprop="url">Conversaciones</a></li>
+</ul></div>
+            <div class="bloque-suscripcion-menu-desktop">
+                <div class="bloque-suscripcion-interior bloque-suscripcion-interior--suscripcion">
+                    <img src="https://www.elindependiente.com/wp-content/themes/indp19/images/montaje-moviles.png" width="120" />
+                    <p><strong>Suscripción</strong></p>
+                    <p>Súmate a nuestro compromiso con la información de calidad.</p>
+                    <a href="https://www.elindependiente.com/suscripcion/" title="Suscríbete al Independiente">Suscríbete</a>
+                </div>
+                <div class="bloque-suscripcion-interior bloque-suscripcion-interior--regitro">
+                    <img src="https://www.elindependiente.com/wp-content/themes/indp19/images/montaje-newsletter.jpg" width="120" />
+                    <p><strong>Newsletter</strong></p>
+                    <p>Sé el primero en saber lo que está pasando.</p>
+                    <a href="https://usuarios.elindependiente.com/register/" title="Regístrate al Independiente">Regístrate</a>
+                </div>
+
+                <div class="menu-container__redes">
+	                <div class="menu-siguenos-container"><ul id="menu-siguenos" class="menu-siguenos"><li id="menu-item-7495" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7495"><a href="https://twitter.com/elindepcom?lang=es">Twitter</a></li>
+<li id="menu-item-7496" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7496"><a href="https://www.facebook.com/indpcom/">Facebook</a></li>
+<li id="menu-item-7497" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7497"><a href="https://www.youtube.com/c/ElIndependientecom">YouTube</a></li>
+<li id="menu-item-7499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7499"><a href="https://www.instagram.com/elindepcom/">Instagram</a></li>
+<li id="menu-item-7502" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7502"><a href="https://www.linkedin.com/company/15163193">Linkedin</a></li>
+</ul></div>                </div>
+
+            </div><!-- / .bloque-suscripcion-menu-desktop -->
+
+        </nav>
+    </div><!-- / .contenedor -->
+                </div>
+                    </header>
+
+        
+        
+                    <div class="sub_header wrapper  ">
+
+	                                <div id="top" class="adv">
+                    </div>
+	            
+                            </div>
+        
+    <div id="content" class="contenedor" data-post-type="reportaje">
+
+		
+
+<article id="post-390915" class="article post-390915 post type-post status-publish format-standard has-post-thumbnail hentry category-futuro tag-ciencia tag-cultura tag-futuro tag-internet tag-libros tag-transformacion-digital">
+
+    <div class="wrapper-header">
+		        <div id="area_interactivo" class="media">
+
+			
+        <picture>
+            <source srcset="https://www.elindependiente.com/wp-content/uploads/2016/11/educacion-libros-1440x808.jpg" media="(min-width: 1200px)">
+            <source srcset="https://www.elindependiente.com/wp-content/uploads/2016/11/educacion-libros-1440x808.jpg" media="(min-width: 992px)">
+            <source srcset="https://www.elindependiente.com/wp-content/uploads/2016/11/educacion-libros-980x550.jpg" media="(min-width: 768px)">
+            <source srcset="https://www.elindependiente.com/wp-content/uploads/2016/11/educacion-libros-723x406.jpg" media="(min-width: 400px)">
+            <source srcset="https://www.elindependiente.com/wp-content/uploads/2016/11/educacion-libros-390x556.jpg" media="(min-width: 100px)">
+            <img src="https://www.elindependiente.com/wp-content/uploads/2016/11/educacion-libros-1440x808.jpg"
+                 class="horizontal"                 loading="lazy"
+                 srcset="https://www.elindependiente.com/wp-content/uploads/2016/11/educacion-libros-1440x808.jpg"
+                 alt="Libro.">
+        </picture>
+	    		        <div class="caption-wrapper">
+            			        <p class="caption"> <span> Libro. </span> <span class="author">iStock</span></p>                            </div><!-- / .caption-wrapper -->
+		            </div>
+	    <header class="content_header cierre-galeria" data-url="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/"
+            data-title="Cómo leemos en la era digital nos está cambiando el cerebro">
+        <!-- Pinta la Categoría y el antetítulo  -->
+        <p class="content_header__categoria">
+			<a href="https://www.elindependiente.com/futuro/" rel="category tag">Ciencia y Tecnología</a>        </p>
+
+        <!-- Pinta el titular  -->
+		<h1 class="entry-title">Cómo leemos en la era digital nos está cambiando el cerebro</h1>
+                <address class="author">
+			
+			
+											
+                        <div class="author__datos">
+
+                                                            <a class="author url fn" rel="author" href="https://www.elindependiente.com/autor/marta-garcia-aller/"
+                                   title="Marta García Aller">
+                                    Marta García Aller                                </a>
+                            
+                            
+                                                            <a href="mailto:marta.g.aller@elindependiente.com" class="email">
+                                    <svg id="Grupo_1294" data-name="Grupo 1294" xmlns="http://www.w3.org/2000/svg" width="16.643" height="10.374" viewBox="0 0 16.643 10.374">
+                                        <title>mail</title>
+                                        <g id="Grupo_1291" data-name="Grupo 1291" transform="translate(0 0)">
+                                            <path id="Trazado_1963" data-name="Trazado 1963" d="M155,328.825l-.02.031,7.337,6.535,7.393-6.527-.02-.039Zm-.016,10.374h14.549l-5-4.372-2.221,1.958c-.052-.044-.091-.075-.127-.107-.656-.584-1.314-1.167-1.965-1.756-.1-.091-.157-.082-.254,0q-2.211,1.9-4.428,3.8Zm15.492-.564.064,0a2.826,2.826,0,0,0,.092-.5c.009-.942,0-1.884,0-2.826q0-2.7,0-5.4a3.756,3.756,0,0,0-.051-.421l-5.256,4.642Zm-16.418-.07.05.009,5.2-4.461-5.253-4.678a3.44,3.44,0,0,0-.06.415c-.007.434,0,.868,0,1.3q0,3.485,0,6.97A3.267,3.267,0,0,0,154.061,338.565Z" transform="translate(-153.998 -328.825)" fill="#2693a2"/>
+                                            <path id="Trazado_1964" data-name="Trazado 1964" d="M170.677,328.825h14.69l.02.039-7.393,6.527-7.337-6.535Z" transform="translate(-169.671 -328.825)" fill="#2693a2"/>
+                                            <path id="Trazado_1965" data-name="Trazado 1965" d="M170.715,434.552l.557-.479q2.215-1.9,4.428-3.8c.1-.084.154-.092.254,0,.651.59,1.309,1.172,1.965,1.756.037.033.075.063.127.108l2.221-1.958,5,4.372Z" transform="translate(-169.725 -424.178)" fill="#2693a2"/>
+                                            <path id="Trazado_1966" data-name="Trazado 1966" d="M350.522,349.181l-5.149-4.5,5.256-4.642a3.766,3.766,0,0,1,.051.421q0,2.7,0,5.4c0,.942,0,1.884,0,2.826a2.827,2.827,0,0,1-.092.5Z" transform="translate(-334.041 -339.371)" fill="#2693a2"/>
+                                            <path id="Trazado_1967" data-name="Trazado 1967" d="M154.061,348.263a3.269,3.269,0,0,1-.059-.442q-.006-3.485,0-6.97c0-.434,0-.868,0-1.3a3.442,3.442,0,0,1,.06-.415l5.253,4.678-5.2,4.46Z" transform="translate(-153.998 -338.523)" fill="#2693a2"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            
+                                                            <a href="https://twitter.com/@garciaaller" target="_blank" class="twitter">
+                                    <svg width="13px" height="10px" viewBox="0 0 13 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>twitter</title>
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="twitter" fill="#0095A4" fill-rule="nonzero">
+                                                <path d="M12.0210526,1.15289982 C11.5805137,1.34973638 11.1048253,1.48096075 10.6080474,1.53954306 C11.1165418,1.23491506 11.5055283,0.752196837 11.6906484,0.178090217 C11.2149601,0.459285296 10.6877193,0.665495021 10.1276724,0.77562976 C9.67776031,0.297598125 9.0380415,0 8.33036722,0 C6.97125767,0 5.86991028,1.10134739 5.86991028,2.46045694 C5.86991028,2.65260691 5.89099991,2.8400703 5.93317917,3.02050381 C3.88748497,2.91739895 2.07377671,1.93790275 0.859951284,0.447568834 C0.649054975,0.810779145 0.527203774,1.23491506 0.527203774,1.68482718 C0.527203774,2.53778559 0.960712854,3.29232572 1.62152129,3.73286467 C1.21847501,3.72114821 0.838861653,3.60867018 0.506114143,3.42589338 C0.506114143,3.43526655 0.506114143,3.44698301 0.506114143,3.45635618 C0.506114143,4.64909197 1.35438596,5.64499121 2.48150957,5.86994728 C2.27529985,5.92618629 2.05737366,5.95664909 1.8324176,5.95664909 C1.67307372,5.95664909 1.52075972,5.94024605 1.36844572,5.91212654 C1.68244689,6.88927944 2.59164431,7.6016403 3.66721549,7.62272994 C2.82363025,8.28353837 1.76446212,8.67721148 0.609219005,8.67721148 C0.410039158,8.67721148 0.215545895,8.66549502 0.0210526316,8.6420621 C1.11302686,9.3427065 2.40652422,9.74809607 3.79609657,9.74809607 C8.32333734,9.74809607 10.8001973,5.99648506 10.8001973,2.74399531 C10.8001973,2.63620387 10.797854,2.53075571 10.7931675,2.42530756 C11.2735424,2.08084359 11.6906484,1.6473345 12.0210526,1.15289982 Z" id="Path"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            
+                        </div><!-- / .author_datos -->
+
+					
+				        </address>
+	
+	<div class="wrapper-time sinavatar">
+
+        <time class='entry-date'>10/11/18 -  00: 22</time>	</div><!-- / .wrapper-time -->
+
+    </header>
+
+    <div id="entry_footer" class="entry_meta">
+
+		
+        <ul id="social_share" class="social-share sinavatar">
+            <li class="face-share">
+                <button data-type="social" data-url="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/" data-subtype="facebook" title="Compartir con Facebook">
+                    <span>Facebook</span>
+                    <i class="fb-icon"></i>
+                </button>
+            </li>
+            <li class="twit-share">
+                <button data-type="social" data-url="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/" data-subtype="twitter" title="Compartir con Twitter">
+                    <span>Twitter</span>
+                    <i class="tw-icon"></i>
+                </button>
+            </li>
+            <li class="flipboard-share" style="vertical-align: top; width: 35px;">
+                <a data-flip-widget="shareflip" href="https://flipboard.com">
+                    <svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Logo Flipboard</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Logo-Flipboard" fill-rule="nonzero">
+                                <path d="M13.5,0 L13.5,0 C20.9574,0 27,6.0426 27,13.5 L27,13.5 C27,20.9574 20.9574,27 13.5,27 L13.5,27 C6.0426,27 0,20.9574 0,13.5 L0,13.5 C0,6.0426 6.0426,0 13.5,0 Z" id="Path" fill="#CC0000"></path>
+                                <g id="Group" transform="translate(6.750000, 6.750000)" fill="#FFFFFF">
+                                    <rect id="Rectangle" opacity="0.8" x="4.509" y="4.509" width="4.482" height="4.482"></rect>
+                                    <rect id="Rectangle" opacity="0.9" x="4.509" y="0.027" width="8.964" height="4.482"></rect>
+                                    <rect id="Rectangle" x="0.027" y="0.027" width="4.482" height="13.446"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <script src="https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js" type="text/javascript"></script>
+            </li>
+            <li class="whats-share">
+                <button data-type="social" data-url="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/" data-subtype="whatsapp" title="Compartir con Whatsapp">
+                    <span>Whatsapp</span>
+                    <i class="whats-icon"></i>
+                </button>
+            </li>
+            <li class="link-share">
+                <button data-type="social" data-url="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/" data-subtype="linkedin" title="Compartir con Linkedin">
+                    <span>Linkedin</span>
+                    <i class="link-icon"></i>
+                </button>
+            </li>
+            <li class="mene-share">
+                <button data-type="social" data-url="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/" data-subtype="meneame" title="Compartir con Menéame">
+                    <span>Menéame</span>
+                    <i class="mene-icon"></i>
+                </button>
+            </li>
+            <li class="comentarios">
+                <a href="#entry-footer" title="Escribir un comentario">
+                    <svg width="13px" height="15px" viewBox="0 0 13 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>icono-comentarios</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Trazado-1968" fill="#FFFFFF" fill-rule="nonzero">
+                                <path d="M10.2713225,1.13686838e-13 L2.051,1.13686838e-13 C0.91952655,0.000729643705 0.0027296437,0.91752655 0.002,2.04867752 L0.002,7.537 L0.0077116988,7.68989532 C0.0790123641,8.64897063 0.809787836,9.42414631 1.74802357,9.56361548 L1.83,9.572 L7.19526927,14.9398464 L6.473,9.586 L10.269,9.586 C10.8123712,9.58635078 11.3339361,9.3707057 11.7186337,8.98650413 C12.1033313,8.60230256 12.3196492,8.08101632 12.32,7.53732248 L12.32,2.049 C12.3192704,0.91752655 11.4024734,0.000729643705 10.2713225,1.13686838e-13 Z M2.05132248,0.999999896 L10.271,0.999999896 C10.8500475,1.00037356 11.3196264,1.46995247 11.3200001,2.04932248 L11.3200001,7.537 C11.3198205,7.81515486 11.2090235,8.08215513 11.0119833,8.2789413 C10.814943,8.47572747 10.5478,8.58617982 10.2693227,8.5860001 L5.33011134,8.586 L5.808,12.138 L2.25830611,8.5861336 L2.05132248,8.5860001 C1.47195247,8.58562644 1.00237356,8.11604753 1.0019999,7.53667752 L1.0019999,2.049 C1.00237356,1.46995247 1.47195247,1.00037356 2.05132248,0.999999896 Z" id="Trazado_1968"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    <span>Comentar</span>
+                </a>
+            </li>
+        </ul>
+	
+    </div>
+
+
+    </div><!-- / .wrapper-header -->
+
+	
+    <div class="article-content">
+
+        <div id="noticia-completa" class="article-body p402_premium">
+	<p>Cuando a Maryanne Wolf, una neurocientífica de la Universidad de Los Ángeles, le dio por releer una de sus novelas favoritas se dio cuenta de que ya no era capaz de leerlo. Le aburría por completo <em>El Juego de los Abalorios</em>, un libro de Herman Hesse que solía fascinarle. El juego intelectual que plantea la novela de pronto le resultaba a Wolf demasiado complejo.</p>
+<p>Si a usted también le cuesta últimamente centrarse en la lectura de una novela sin echar continuamente mano al móvil para leer el último whatsapp o revisar los <em>likes</em> en Instagram seguramente se identifique con Wolf. Preocupada por lo mucho que le costaba concentrarse en la lectura, esta neurocientífica cognitiva, amante de los libros y experta en la relación del cerebro con el lenguaje, se propuso investigar si realmente estaba perdiendo la habilidad de leer en profundidad. El resultado, un libro: <em>Reader, come home</em> [<em>Lector, vuelve a casa]</em> que lleva un elocuente subtítulo: <em>El cerebro lector en el mundo digital</em>.</p>
+<p>Wolf culpa a internet de habernos hecho perder a los lectores «la paciencia cognitiva» que antes nos permitía leer novelas más largas y complejas «y comprender niveles más profundos». ¿Está de verdad internet haciéndonos más estúpidos? No exactamente. Pero sí que está cambiando el modo que procesamos información. Y cómo leemos tiene una importancia capital en la plasticidad de nuestro cerebro.</p>
+<blockquote><p>Wolf culpa a internet de habernos hecho perder «la paciencia cognitiva» que antes nos permitía leer novelas más largas «y comprender niveles más profundos»</p></blockquote>
+<p>Recibir mensajes continuamente en el móvil, ojear redes sociales y leer a trozos noticias en internet está favoreciendo que procesemos más información más rápidamente. Es una competencia útil para surfear un mundo digital. Sin embargo, las interrupciones constantes de las tentaciones que llegan del mundo digital están diezmando nuestra concentración y cada vez dedicamos menos tiempo a esa lectura reposada que supone un mayor reto intelectual. Según las investigaciones de Wolf, corremos el riesgo de atrofiar la parte del cerebro que nos permite hacer los procesos de comprensión más analíticos y complejos.</p>
+<p>Incluso los «buenos» lectores, aquellos con un dilatado currículum de lecturas en su haber, dice que también experimentan en los últimos años cada vez menos «paciencia cognitiva» para leer textos complejos. De tanto leer en diagonal en las pantallas cuesta cada vez más enfrentarse a una lectura reposada. Wolf reconoce que las investigaciones en este campo están empezando y es pronto para llegar a resultados concluyentes, pero su libro pone el foco en lo importante que es no subestimar nuestra creciente tendencia a la distracción.<br />
+
+    <aside class=" related-news">
+        <article id="" class="article" data-section="">
+            <div class="media">
+				                    <a href="https://www.elindependiente.com/vida-sana/2018/02/03/por-que-prohibir-los-moviles-no-es-la-solucion/">
+	                    <span>
+	                        <img width="980" height="550" src="https://www.elindependiente.com/wp-content/uploads/2018/02/simpsons_telefono-980x550.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Móviles en la escuela" loading="lazy" srcset="https://www.elindependiente.com/wp-content/uploads/2018/02/simpsons_telefono-980x550.jpg 980w, https://www.elindependiente.com/wp-content/uploads/2018/02/simpsons_telefono-734x412.jpg 734w, https://www.elindependiente.com/wp-content/uploads/2018/02/simpsons_telefono-990x556.jpg 990w, https://www.elindependiente.com/wp-content/uploads/2018/02/simpsons_telefono-768x431.jpg 768w, https://www.elindependiente.com/wp-content/uploads/2018/02/simpsons_telefono-376x211.jpg 376w, https://www.elindependiente.com/wp-content/uploads/2018/02/simpsons_telefono-350x195.jpg 350w, https://www.elindependiente.com/wp-content/uploads/2018/02/simpsons_telefono-723x406.jpg 723w, https://www.elindependiente.com/wp-content/uploads/2018/02/simpsons_telefono-656x368.jpg 656w, https://www.elindependiente.com/wp-content/uploads/2018/02/simpsons_telefono-390x220.jpg 390w, https://www.elindependiente.com/wp-content/uploads/2018/02/simpsons_telefono.jpg 1440w" sizes="(max-width: 980px) 100vw, 980px" />	                    </span>
+                    </a>
+				            </div>
+            <div class="article-container">
+				                    <div class="article-body">
+                        <header>
+                            <h4 class="kicker">
+								                                    <a id="" href="http://vida-sana">
+										Vida Sana                                    </a>
+								                            </h4>
+                            <h3 class="related-title">
+                                <a href="https://www.elindependiente.com/vida-sana/2018/02/03/por-que-prohibir-los-moviles-no-es-la-solucion/"
+                                   title="Por qué prohibir los móviles en clase no es la solución">
+									Por qué prohibir los móviles en clase no es la solución                                </a>
+                            </h3>
+                        </header>
+                                                    <div class="lead">
+                                <p>
+                                    Bruno, que estudia 1º de la ESO en un colegio público de Madrid, no está en el grupo de whatsapp de la clase. Él y dos compañeros más son los [&hellip;]                                </p>
+                            </div>
+                                            </div>
+				            </div>
+        </article>
+    </aside>
+
+	</p>
+<p>La teoría no es nueva. También advertía Nicholas Carr en <em>Superficiales ¿Qué está haciendo internet con nuestras mentes?</em> que la lectura profunda que solía venir de forma natural se le había convertido en una lucha contra sí mismo. Y eso que cuando Carr escribió su ensayo era 2010 (el año que Apple lanzó el iPad) y todavía las pantallas táctiles y las redes sociales aún no se habían hecho aún omnipresentes en la vida cotidiana. Según Wolf, la creciente dispersión de nuestro cerebro lector no ha hecho más que empezar y eso debería preocuparnos.</p>
+<h2>Leemos más que nunca</h2>
+<p>No todos los expertos, sin embargo, son tan pesimistas. «Siempre ha habido muchos niveles de lectura», opina Amparo Lasén, profesora de Sociología de la Complutense e investigadora de la era digital. «No es lo mismo leer un texto que requiere mucha concentración, que un periódico mientras charlas en el bar que una novela. Antes de lo digital también había diferentes niveles de atención y no conviene mitificar al lector del pasado. No olvidemos que la lectura en nuestro país no ha sido tan extendida como en otros países del entorno. Y nunca ha sido una aptitud masiva ser capaz de leer textos complejos».</p>
+<p>«Uno de los efectos de lo digital es que leemos más», añade Lasén. “Con los móviles leemos continuamente comentarios de otra gente de forma fragmentada y apresurada». Sin embargo, apunta esta socióloga que esta lectura en redes sociales no es justo compararla con la lectura que antes de internet se hacía de un libro. Las redes sociales y las secciones de comentarios de los diarios son más comparables con la oralidad que con libros o periodismo impreso.</p>
+<p>Los Whatsapp que mandas están sustituyendo a conversaciones orales más que a otros ratos de lectura. «Hay que tener cuidado con qué actividades estamos comparando», afirma Lasén. «No tiene nada que ver leer una novela en tu cuarto con levantarte por la mañana y entrar en Facebook. Con internet ha surgido un nuevo tipo de lectura, la que hacemos al comentar los periódicos <em>online</em>, que es una mezcla de oralidad de comentarios que antes hacíamos en alto».</p>
+<blockquote><p>El estadounidense promedio lee el equivalente a 34 gigabytes juntando todos los dispositivos que mira, es decir, unas 100.000 palabras por día</p></blockquote>
+<p>Que en la era digital leemos más de lo que nunca, pero de forma distinta, Wolf lo reconoce en su libro y cita un importante estudio reciente según el cual el estadounidense promedio lee el equivalente a 34 gigabytes juntando todos los dispositivos que ojea, es decir, unas 100.000 palabras por día. “Desafortunadamente, esta forma de lectura rara vez es continua, sostenida o concentrada; más bien, el promedio de 34 gigabytes equivale a una explosión espasmódica», escribe Wolf.</p>
+<p>No todos los expertos están de acuerdo con esta visión catastrofista. «Muchos de los estudios que se están haciendo están bastante sesgados», advierte Salvador Martínez, director del Instituto de Neurociencias de la Universidad Miguel Hernández y el CSIC. «Antes un niño que no leía, no leía nada de nada. Ahora los niños que no leen también están leyendo continuamente sus Whatsapp, sus redes sociales y webs. Eso sí, se acostumbran a lenguaje sencillo y breve. Y cuesta más llevarlos a textos largos. Pero eso no sé si es bueno o malo. Dejarnos de circunloquios puede ser bueno. Lo malo no es la brevedad, sino no tener mucho vocabulario porque esa carencia sí que limitará el pensamiento».</p>
+<p>Según Martínez, «tener un lenguaje rico es fundamental porque es la guía del pensamiento. Si tienes un lenguaje pobre, tu pensamiento es pobre», advierte. «También es importante el pensamiento matemático y el visual. Y lo bueno del mundo digital es que cada vez utiliza más elementos dinámicos que exploran lo visual. No es malo mejorar nuestro pensamiento visual, lo que no tenemos que perder es la capacidad de concentración». Algo que, reconoce, nos está pasando.</p>
+<p>“La comunicación se está haciendo muy visual, pero el texto no está desapareciendo”, coincide Lasén, que prefiere el optimismo. “Incluso Instagram tiene una parte importante de texto para dar contexto. Estamos cultivando nuevas formas de escritura más breves y más orales. Un tipo de escritura diferente, a veces más concisa y más audaz. No creo que necesariamente peor”.</p>
+<p>De lo que no hay duda es de que estamos en un momento de transición. Aunque no esté claro hacia dónde. “Como artefacto para leer tanto las tablet y los <em>smartphones</em> tienen apenas una década”, afirma Enrique Villalba, profesor de Humanidades de la Universidad Carlos III de Madrid y director del seminario de cultura escrita <a href="https://www.uc3m.es/ss/Satellite/UC3MInstitucional/es/Detalle/Organismo_C/1371210337860/1371211779204/Historia_Cultural_Litterae" target="_blank" rel="noopener">Literae</a>. “Estamos viviendo años decisivos que nos están cambiando los hábitos de lectura, pero también nos cambió en el siglo XIX con la novela por entregas. Ahora no solo cambia por estar delante de una pantalla. El mundo digital ha cambiado la forma de leer. Muchos estudiantes de Periodismo me dicen que nunca han leído un libro electrónico, pero están todo el día leyendo delante de una pantalla. Tanto el lector como el escritor están desorientados porque estamos en transición. Hay ansias por saber qué es lo que viene después, pero no lo sabemos. Nuestros textos digitales son los incunables de la era digital. Y van a pasar muchas cosas que cambiarán la forma de leer”.</p>
+<h2>Por qué leer ficción</h2>
+<p>Los neurólogos coinciden en que leer tiene una influencia directa en nuestro cerebro: «Favorece la capacidad de pensar, de reflexionar e imaginar», explica Guillermo García Ribas, neurólogo y portavoz de la Sociedad Española de Neurología. Y, según este doctor que ha estudiado la importancia de la lectura en procesos de deterioro cognitivo como el alzheimer, no todas las lecturas son iguales. «Las personas que leen novelas de ficción tienen menos tendencia al deterioro cognitivo», añade.</p>
+<blockquote><p>Las personas que leen novelas de ficción tienen menos tendencia al deterioro cognitivo</p></blockquote>
+<p>La lectura de ficción, s<a href="http://psycnet.apa.org/buy/2013-29050-004" target="_blank" rel="noopener">egún varios estudios científicos</a>, tiene también beneficios psicológicos como fomentar la empatía y la socialización. «Ese beneficio que no se obtiene de la lectura superficial de noticias o redes sociales», explica García Ribas. «La lectura de ficción que nos mete en una historia y nos hace partícipes de ella activando diferentes áreas del cerebro. Leer textos informativos o ver una película es diferente a una novela, solo la lectura de esta última potencia más la imaginación porque activa zonas del cerebro que no tienen que ver con el lenguaje ni la interpretación de un escrito. Leer ficción en profundidad activa también la parte anterior del cerebro, que es la que se dedica a planificación, las emociones y a focalizar la atención», añade el neurólogo.</p>
+<p>«Los neurocientíficos también coinciden en que el cerebro humano es muy adaptable y trabaja muy bien bajo diferentes impulsos. Tenemos la capacidad para procesar estímulos muy diferentes y muy rápido, por eso nos hemos adaptado rápidamente a la particularidad del mundo digital cuando apenas hace una década no existían ni los <em>smartphones</em>. Sin embargo, eso no quita que estemos subestimando alguno de los riesgos de convivir en un mundo permanentemente conectado.</p>
+<blockquote><p>Si cada vez que recibimos un Whatsapp no somos capaces de priorizar lo que estamos haciendo, estamos dando la respuesta más cercana al reino animal»</p></blockquote>
+<p>«El cerebro humano tiene capacidad de focalizar atención en una sola actividad, es una de las ventajas evolutivas de nuestra especie», explica García Ribas para advertir del riesgo de las interrupciones constantes. «Los animales no son capaces de concentrarse en una sola cosa, en cuanto hay un estímulo externo ese les distrae de lo anterior porque su supervivencia puede depender de ello. Los humanos tenemos la ventaja de que nuestro cerebro es capaz de trabajar con múltiples estímulos a la vez y podemos focalizar la atención y priorizarla». Y advierte: «Con las interrupciones constantes de mensajes y notificaciones estamos poniendo a prueba esa capacidad de focalizar nuestra atención y, si cada vez que hay un Whatsapp no somos capaces de priorizar lo que estamos haciendo, estamos dando la respuesta más cercana al reino animal. Lo más humano sería ser capaces de priorizar y esperar al momento oportuno».</p>
+<p>Es decir, lo que está poniéndonos a prueba nuestra capacidad de concentración no es la lectura digital, sino la recepción constante de interrupciones que no somos capaces de posponer. «El cerebro humano es capaz de gestionar múltiples estímulos», afirma García Ribas. «Tenemos la capacidad de analizar el entorno, reflexionar y posponer una respuesta. Es connatural a la especie humana».</p>
+
+    <aside class=" related-news">
+        <article id="" class="article" data-section="">
+            <div class="media">
+				                    <a href="https://www.elindependiente.com/economia/2018/04/27/el-fin-de-la-paciencia/">
+	                    <span>
+	                        <img width="980" height="550" src="https://www.elindependiente.com/wp-content/uploads/2018/04/fin-de-la-paciencia-980x550.gif" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="imagen cargando" loading="lazy" srcset="https://www.elindependiente.com/wp-content/uploads/2018/04/fin-de-la-paciencia-980x550.gif 980w, https://www.elindependiente.com/wp-content/uploads/2018/04/fin-de-la-paciencia-734x413.gif 734w, https://www.elindependiente.com/wp-content/uploads/2018/04/fin-de-la-paciencia-990x557.gif 990w, https://www.elindependiente.com/wp-content/uploads/2018/04/fin-de-la-paciencia-768x432.gif 768w, https://www.elindependiente.com/wp-content/uploads/2018/04/fin-de-la-paciencia-376x211.gif 376w, https://www.elindependiente.com/wp-content/uploads/2018/04/fin-de-la-paciencia-350x195.gif 350w, https://www.elindependiente.com/wp-content/uploads/2018/04/fin-de-la-paciencia-723x406.gif 723w, https://www.elindependiente.com/wp-content/uploads/2018/04/fin-de-la-paciencia-656x368.gif 656w, https://www.elindependiente.com/wp-content/uploads/2018/04/fin-de-la-paciencia-390x220.gif 390w, https://www.elindependiente.com/wp-content/uploads/2018/04/fin-de-la-paciencia-978x550.gif 978w, https://www.elindependiente.com/wp-content/uploads/2018/04/fin-de-la-paciencia-1440x808.gif 1440w" sizes="(max-width: 980px) 100vw, 980px" />	                    </span>
+                    </a>
+				            </div>
+            <div class="article-container">
+				                    <div class="article-body">
+                        <header>
+                            <h4 class="kicker">
+								                                    <a id="" href="http://economia">
+										Economía                                    </a>
+								                            </h4>
+                            <h3 class="related-title">
+                                <a href="https://www.elindependiente.com/economia/2018/04/27/el-fin-de-la-paciencia/"
+                                   title="El fin de la paciencia">
+									El fin de la paciencia                                </a>
+                            </h3>
+                        </header>
+                                                    <div class="lead">
+                                <p>
+                                    La llamada no puede ser más inoportuna. Cuando Amparo Lasén descuelga el teléfono para la entrevista concertada con El Independiente, está en casa en medio de una bronca con su [&hellip;]                                </p>
+                            </div>
+                                            </div>
+				            </div>
+        </article>
+    </aside>
+
+	
+<p>Si dejamos de pensar lo que hacemos y echamos instintivamente mano al móvil cada vez que se ilumina estamos siendo un poco más animales. «Yo no detecto que mis estudiantes tengan problemas de atención, sino que la interrupción gana a la concentración», afirma Celia Andreu-Sánchez, investigadora en neurociencia Neuro-Com Research Group de Universitat Autònoma de Barcelona. «Si eliminas la interrupción, es decir, si quitas el móvil de encima de la mesa, por mucho contenido en pantallas que estén viendo, cuando se pongan a estudiar se concentrarán sin problemas».</p>
+<p>Andreu-Sánchez no cree que pasar mucho tiempo delante de una pantalla disminuya nuestra capacidad de concentración. Todo lo contrario. Según <a href="https://doi.org/10.1016/j.neuroscience.2018.10.025" target="_blank" rel="noopener">una de sus últimas investigaciones</a>, que mide el parpadeo como termómetro de la atención, prestamos más atención al ver algo en una pantalla que a ver lo mismo en la realidad. Claro, que el experimento medía la atención a una historia de tres minutos. Los estímulos en una pantalla nos atrapan más pero durante un breve espacio de tiempo.</p>
+<p>“Solo tener el teléfono visible en la mesa donde estamos trabajando o leyendo baja la productividad entre un 17% y 30%”, explica Lluis Martínez Rives, profesor de Neuromárketing de Esade. “Si, además del libro, en el campo visual tienes el móvil, aunque no esté recibiendo notificaciones en ese momento, está demostrado que baja tu productividad. Da igual que esté en silencio, simplemente la noción de que algo puede llegar de un momento a otro ya está mermando la concentración. Y cuando suena o se ilumina eso arruina la concentración y hay que volver a empezar. Lo que intentas conseguir, ese estado de flujo en el que cuando lees te olvidas del mundo y no te cuesta esfuerzo hacerlo porque estás concentrado, es muy difícil en un entorno de estímulos externos constantes”.</p>
+<h2>Cerebro disperso vs. cerebro lector</h2>
+<p>¿Cómo luchar contra la creciente dispersión que nos dificulta la capacidad de concentrarnos? «La pérdida de concentración no se debe a que estés menos preparados o que hayamos consumido mucho Youtube, la falta de concentración está más asociada a factores externos que nos están tentando todo el rato», afirma la doctora Andreu-Sánchez. «Lo que hay es que eliminar esas tentaciones durante el rato que queremos dedicar a a algo. La concentración se entrena y lo mismo que se pierde se puede recuperar».</p>
+<p>Lo primero, según Wolf, es prestar más atención a lo que leen los pequeños. A los niños, insiste esta neurocientífica en la importancia de enseñarles a leer de manera profunda y concentrada. Por eso sostiene que es mejor leerles libros en vez de enchufarlos a un iPad para entretenerlos mientras el adulto puede estar mirando su propio móvil. Doble error. Lo primero porque frente a una pantalla táctil el niño rebosa alternativas a un clic que torpedean su capacidad de aprender a concentrarse en una sola cosa y, segundo, por el ejemplo que le está dando el adulto. No se trata tanto de prohibir pantallas como de asegurarse de que existe un rato concentrado exclusivamente en la lectura.</p>
+<p>Sin embargo, las ganas de leer, reconozcámoslo, se encuentran con otro escollo que no tenía en épocas anteriores: la sensación de nunca tener tiempo para nada. «Habría que guardarse unas horas para uno mismo, para cerrar las fuentes de estímulos y dejar los dispositivos en otra información», recomienda Martínez Rives. «Hay que hacer una autocontención de estímulos externos. Cuanto más informado quiero estar menos profundizamos y peor es el resultado. Cada vez más gente dice que le falta tiempo, porque el número de cosas deseables para leer o para ver es tan alto que la lista de deseos es inabarcable. Esto genera una frustración».</p>
+<p>Hay técnicas para que las tecnologías que nos facilitan la vida no se acaben volviendo contra nosotros. «Cada vez que bajas una <em>app</em> por defecto tienes que decir que no aceptas notificaciones», recomienda Martínez Rives. «Dejar de estar sometido a interrupciones constantes hará que te cueste menos lo que tienes que hacer, ya sea leer una novela o cocinar unos macarrones. ¿Por qué voy a tener que recibir los mensajes cuando quiere el que lo envía? ¿No tendrá más sentido recibirlos cuando yo quiero? Podemos bajar mucho el ruido que nos distrae».</p>
+<p>Antes leer era una fuente de entretenimiento primordial para el que quería adentrarse en una obra de ficción y cada vez es mayor la competencia. «Hay que pensar en qué alternativas de ocio tenemos para pasar el rato», dice Lasén. «Incluso para aprender algo antes pasaba necesariamente por leerlo en un libro, aunque fuera de recetas, ahora puedes aprenderlo en tutoriales en Youtube. El incentivo a leer es menor».</p>
+<p>También corremos el riesgo de proyectar en las nuevas generaciones los problemas que estamos teniendo con internet los que crecimos en un mundo sin conectar. «Los adultos nos dispersamos más», afirma Martínez desde el Instituto de Neurociencias de Alicante. Y cita un experimento en el que han medido la capacidad de comprensión de niños y adultos: «Dándole a leer el mismo texto en una tablet y un libro impreso a niños y adultos se comprueba que los adultos se dispersan más en la tablet, pero los niños se concentran mejor con la pantalla. Además les deja más huella cuando  han visto algo en un iPad, porque el que sea interactivo y dinámico a ellos se lo hace más atractivo».</p>
+<p>El neurólogo añade: «Estamos proyectando nuestros conflictos con las pantallas sobre los niños, pero hay que esperar más tiempo para tener resultados concluyentes sobre cómo afecta el mundo digital al cerebro». Y pese a ser más optimista en el largo plazo este científico hay algo que tiene claro: «De lo que no hay duda es de que los adultos estamos cada vez más dispersos y nos aburrimos más fácilmente sin profundizar en casi nada», concluye.</p>
+<p>No solo es culpa de lo digital que estemos perdiendo pensamiento crítico. «Haber quitado durante un tiempo la Filosofía del Bachillerato no va a ayudar a las nuevas generaciones a familiarizarse con textos complejos», afirma Lasén. «No le podemos echar la culpa al móvil de que disminuyan las clases de Humanidades, lógicamente si estas no se toman en serio va a disminuir el interés que la sociedad tiene en ellas».</p>
+<p>Los buenos lectores no solo son los que saben leer, también tiene mucho que ver con el hábito de lectura. Para explicarlo Enrique Villalba recuerda lo que decía Pedro Salinas en <em>El defensor</em> cuando el poeta distinguía entre lectores y <em>leedores</em>: «El lector es el que es capaz de poner interpretación, contexto y crear un mundo propio», recuerda Villalba. «Para eso hay que tener tiempo y reflexión, para interpretar. Y no es fácil en un mundo que vive tan deprisa y sobreestimulado. El <em>leedor</em> es el que es capaz de leer, recupera el texto de forma pragmática pero ahí no hay una interpretación ni una apropiación imaginativa”.</p>
+<blockquote><p>Faltan nuevos formatos por llegar que seduzcan más al lector. Esto no ha hecho más que empezar», afirma Enrique Villalba</p></blockquote>
+<p>Para no perder al lector que llevamos dentro, en el sentido que Salinas daba a la palabra lector, necesitamos desarrollar lo que Wolf llama el cerebro «biliterario», es decir, compaginar diferentes niveles de lectura. El estilo «saltamontes» que va de un sitio a otro digiriendo rápidamente una lectura en diagonal de aquí y allá tan habitual (y necesaria) en el mundo digital no debería ser incompatible con la lectura reflexiva y profunda.</p>
+<p>Si las novelas del siglo XIX se construían con la magnificencia y estructura de una catedral, la lectura <em>online</em> tiene más que ver con el caos de un mercadillo en el que se va picoteando de aquí y allá. La lectura tradicional se está remplazando por algo más volátil y dinámico. Más flexible. Y seguramente esta sea una habilidad necesaria para moverse con rapidez en la red. Y bienvenida sea.</p>
+<p>«El papel de la lectura cambiará en este mundo digital», afirma Villalba. «Los audiolibros por ejemplo están teniendo un auge inesperado. Es parte de la vuelta a la oralidad que estamos viviendo. El lector necesita facilidad de lectura y todavía no la tiene. Faltan nuevos formatos por llegar que seduzcan más al lector. Esto no ha hecho más que empezar».</p>
+<p>Lo que no deberíamos perder de tanto pasear por el mercadillo es el placer de entrar de vez en cuando en la catedral. El problema no es que nos aburra o no Herman Hesse, sino que seamos cada vez menos capaces de un pensamiento crítico y, por tanto, advierte Wolf, más vulnerables a la demagogia.</p>
+<p>Aunque si usted ha llegado al final de este artículo de 3.211 palabras, quién sabe, puede que el libro de Wolf se equivoque. Tal vez los buenos lectores no hayáis cambiado tanto.</p>
+
+    <aside class="break-full related-news">
+        <article id="" class="article" data-section="">
+            <div class="media">
+				                    <a href="https://www.elindependiente.com/economia/2017/01/07/no-hay-wifi-hablen-entre-ustedes/">
+	                    <span>
+	                        <img width="980" height="550" src="https://www.elindependiente.com/wp-content/uploads/2017/01/iStock-505839618-980x550.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://www.elindependiente.com/wp-content/uploads/2017/01/iStock-505839618-980x550.jpg 980w, https://www.elindependiente.com/wp-content/uploads/2017/01/iStock-505839618-376x211.jpg 376w, https://www.elindependiente.com/wp-content/uploads/2017/01/iStock-505839618-350x195.jpg 350w, https://www.elindependiente.com/wp-content/uploads/2017/01/iStock-505839618-723x406.jpg 723w, https://www.elindependiente.com/wp-content/uploads/2017/01/iStock-505839618-656x368.jpg 656w, https://www.elindependiente.com/wp-content/uploads/2017/01/iStock-505839618-390x220.jpg 390w, https://www.elindependiente.com/wp-content/uploads/2017/01/iStock-505839618-1440x808.jpg 1440w" sizes="(max-width: 980px) 100vw, 980px" />	                    </span>
+                    </a>
+				            </div>
+            <div class="article-container">
+				                    <div class="article-body">
+                        <header>
+                            <h4 class="kicker">
+								                                    <a id="" href="http://economia">
+										Economía                                    </a>
+								                            </h4>
+                            <h3 class="related-title">
+                                <a href="https://www.elindependiente.com/economia/2017/01/07/no-hay-wifi-hablen-entre-ustedes/"
+                                   title="&quot;No hay wifi, hablen entre ustedes&quot;">
+									"No hay wifi, hablen entre ustedes"                                </a>
+                            </h3>
+                        </header>
+                                                    <div class="lead">
+                                <p>
+                                    No tenemos wifi, hablen entre ustedes». Es el cartel tras el mostrador de una cafetería en San Cugat del Vallés a la que suele ir a desayunar Santiago Tejedor. Al mirarlo, [&hellip;]                                </p>
+                            </div>
+                                            </div>
+				            </div>
+        </article>
+    </aside>
+
+	
+</div>
+<!-- Encuestas google -->
+<script type="text/javascript">
+    try { _402_Show(); } catch(e) {}
+</script>
+            <div class="entry-footer" id="entry-footer">
+				<div class="tags"><ul><li><a href="https://www.elindependiente.com/etiquetas/ciencia/" rel="tag">Ciencia</a>,</li> <li><a href="https://www.elindependiente.com/etiquetas/cultura/" rel="tag">Cultura</a>,</li> <li><a href="https://www.elindependiente.com/etiquetas/futuro/" rel="tag">Futuro</a>,</li> <li><a href="https://www.elindependiente.com/etiquetas/internet/" rel="tag">Internet</a>,</li> <li><a href="https://www.elindependiente.com/etiquetas/libros/" rel="tag">Libros</a>,</li> <li><a href="https://www.elindependiente.com/etiquetas/transformacion-digital/" rel="tag">Transformación digital</a></li></ul></div>            </div>
+        
+
+		            <div class="article-share clear" id="entry-footer">
+                <div class="load-comments ">
+                    <i id="cmmntrOpen" class="icon-speech-bubble">
+                        <svg width="16px" height="16px" viewBox="0 0 704 704" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="speech-bubble" fill="#ededed" fill-rule="nonzero">
+                                    <path d="M96,0 L608,0 C634.5,0 657.125,9.375 675.875,28.125 C694.625,46.875 704,69.5 704,96 L704,448 C704,474.5 694.625,497.125 675.875,515.875 C657.125,534.625 634.5,544 608,544 L352,544 L128,704 L128,544 L96,544 C69.5,544 46.875,534.625 28.125,515.875 C9.375,497.125 0,474.5 0,448 L0,96 C0,69.5 9.375,46.875 28.125,28.125 C46.875,9.375 69.5,0 96,0 Z M608,64 L96,64 C87.1666667,64 79.625,67.125 73.375,73.375 C67.125,79.625 64,87.1666667 64,96 L64,448 C64,456.833333 67.125,464.375 73.375,470.625 C79.625,476.875 87.1666667,480 96,480 L192,480 L192,579.75 L331.5,480 L608,480 C616.833333,480 624.375,476.875 630.625,470.625 C636.875,464.375 640,456.833333 640,448 L640,96 C640,87.1666667 636.875,79.625 630.625,73.375 C624.375,67.125 616.833333,64 608,64 Z"
+                                          id="Shape"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </i>
+
+                    <span>Comentar (<span class="fb-comments-count" data-href="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/"></span>)</span>
+                    <i class="icon-flecha-down">
+                        <svg width="14px" height="14.5px" viewBox="0 0 552 295" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="chevron-thin-down" fill="#FFFFFF" fill-rule="nonzero">
+                                    <path d="M513.376,6.488 C522.08,-2.088 536.064,-2.088 544.704,6.488 C553.344,15.064 553.376,28.92 544.704,37.496 L291.648,288.056 C283.008,296.632 269.024,296.632 260.32,288.056 L7.264,37.496 C-1.376,28.92 -1.376,15.064 7.264,6.488 C15.936,-2.088 29.952,-2.088 38.592,6.488 L276,235 L513.376,6.488 L513.376,6.488 Z"
+                                          id="Path"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </i>
+                </div>
+            </div>
+
+            <div class="comentarios-articulo">
+                <a href="https://www.elindependiente.com/politica-de-comentarios/" class="comentarios-politica" target="_blank">Consulta aquí la política de comentarios</a>
+                <div class="fb-comments" data-href="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/" data-width="100%" data-numposts="25" data-order-by="reverse_time"></div>
+            </div>
+			
+    </div>
+
+    <aside id="sidebar" class="sidebar">
+		            <div id='right1' class="adv"></div>
+            <div id="right2" class="adv"></div>
+            <div id='right3' class="adv"></div>
+		    </aside>
+
+            <div id='intext'>
+        </div>
+    
+
+</article><!-- #post-390915 -->
+
+		    <aside id="related-aside" class="related-aside">
+        <nav id="nav-below" class="related">
+			                            <div id="nav_previous" class="nav-previous">
+                    <a href="https://www.elindependiente.com/economia/2018/11/10/la-inteligencia-artificial-marcara-una-nueva-la-humanidad/" rel="prev"><article><div class="media"> <img width="1212" height="808" src="https://www.elindependiente.com/wp-content/uploads/2017/11/robot_portada.jpg" class="attachment-small-25 size-small-25 wp-post-image" alt="Recreción artística de un grupo de robots de rescate" loading="lazy" srcset="https://www.elindependiente.com/wp-content/uploads/2017/11/robot_portada.jpg 1212w, https://www.elindependiente.com/wp-content/uploads/2017/11/robot_portada-734x490.jpg 734w, https://www.elindependiente.com/wp-content/uploads/2017/11/robot_portada-990x660.jpg 990w, https://www.elindependiente.com/wp-content/uploads/2017/11/robot_portada-341x227.jpg 341w, https://www.elindependiente.com/wp-content/uploads/2017/11/robot_portada-768x512.jpg 768w, https://www.elindependiente.com/wp-content/uploads/2017/11/robot_portada-825x550.jpg 825w, https://www.elindependiente.com/wp-content/uploads/2017/11/robot_portada-609x406.jpg 609w, https://www.elindependiente.com/wp-content/uploads/2017/11/robot_portada-330x220.jpg 330w" sizes="(max-width: 1212px) 100vw, 1212px" /></div><h3>Por qué la Inteligencia Artificial marcará una nueva era para la humanidad</h3></article></a>                </div>
+                                        <div id="nav_next" class="nav-next">
+                    <a href="https://www.elindependiente.com/economia/2018/11/10/trabajadores-mayores-de-65-anos/" rel="next"><article><div class="media"> <img width="1440" height="960" src="https://www.elindependiente.com/wp-content/uploads/2018/11/jubilacion.jpg" class="attachment-small-25 size-small-25 wp-post-image" alt="" loading="lazy" srcset="https://www.elindependiente.com/wp-content/uploads/2018/11/jubilacion.jpg 1440w, https://www.elindependiente.com/wp-content/uploads/2018/11/jubilacion-734x490.jpg 734w, https://www.elindependiente.com/wp-content/uploads/2018/11/jubilacion-990x660.jpg 990w, https://www.elindependiente.com/wp-content/uploads/2018/11/jubilacion-341x227.jpg 341w, https://www.elindependiente.com/wp-content/uploads/2018/11/jubilacion-768x512.jpg 768w, https://www.elindependiente.com/wp-content/uploads/2018/11/jubilacion-825x550.jpg 825w, https://www.elindependiente.com/wp-content/uploads/2018/11/jubilacion-609x406.jpg 609w, https://www.elindependiente.com/wp-content/uploads/2018/11/jubilacion-330x220.jpg 330w" sizes="(max-width: 1440px) 100vw, 1440px" /></div><h3>No me puedo jubilar</h3></article></a>                </div>
+                    </nav>
+    </aside>
+
+    </div><!-- #content -->
+    <div class="contenedor">
+		    <div class="OUTBRAIN" data-src="https://www.elindependiente.com/futuro/2018/11/10/como-leemos-era-digital-nos-esta-cambiando-cerebro/" data-widget-id="AR_1"
+         data-ob-template="ES_ElIndependiente"></div>
+        <script type="didomi/javascript" data-vendor="iab:164" async="async" src="https://widgets.outbrain.com/outbrain.js"></script>
+    </div>
+
+
+<div class="adv inf" style="overflow: hidden;">
+    <div id='bottom'>
+    </div>
+</div>
+
+    <footer id="footer" class="footer">
+
+        <div class="footer__header">
+            <div class="contenedor">
+                <div class="footer__header__columnas">
+                    <div class="footer__header__redes">
+                        <div class="menu-siguenos-container"><ul id="menu-siguenos-1" class="menu-siguenos"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7495"><a href="https://twitter.com/elindepcom?lang=es">Twitter</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7496"><a href="https://www.facebook.com/indpcom/">Facebook</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7497"><a href="https://www.youtube.com/c/ElIndependientecom">YouTube</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7499"><a href="https://www.instagram.com/elindepcom/">Instagram</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7502"><a href="https://www.linkedin.com/company/15163193">Linkedin</a></li>
+</ul></div>                    </div>
+                    <div class="footer__header__central">
+                    </div>
+                    <div class="footer__header__suscribete">
+                        <a href="https://www.elindependiente.com/suscripcion/" class="footer-boton footer-boton--suscripcion">Suscríbete</a>
+                    </div>
+                </div><!-- / .footer_header_columnas -->
+            </div><!-- / .contenedor -->
+        </div><!-- / .footer_header-->
+
+        <div class="contenedor">
+            <div class="footer__columnas">
+                <div class="footer__columnas__secciones">
+                    <p class="titulo">Secciones</p>
+					<div class="menu-menu-principal-container"><ul id="menu-menu-principal-1" class="menu"><li id="menu-item-346" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-346"><a title="Noticias sobre Opinión" href="https://www.elindependiente.com/opinion/">Opinión</a></li>
+<li id="menu-item-1193445" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1193445"><a href="https://www.elindependiente.com/espana/">España</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-18"><a title="Noticias sobre Economía" href="https://www.elindependiente.com/economia/">Economía</a></li>
+<li id="menu-item-1193475" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1193475"><a href="https://www.elindependiente.com/internacional/">Internacional</a></li>
+<li id="menu-item-1193490" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-1193490"><a href="https://www.elindependiente.com/futuro/">Ciencia y Tecnología</a></li>
+<li id="menu-item-334741" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-334741"><a title="Noticias sobre Sociedad" href="https://www.elindependiente.com/sociedad/">Sociedad</a></li>
+<li id="menu-item-1193517" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1193517"><a href="https://www.elindependiente.com/gente/">Gente</a></li>
+<li id="menu-item-1193520" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1193520"><a href="https://www.elindependiente.com/vida-sana/">Vida Sana</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-20"><a title="Noticias sobre Tendencias" href="https://www.elindependiente.com/tendencias/">Tendencias</a></li>
+<li id="menu-item-335481" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-335481"><a title="Noticias sobre Series y Televisión" href="https://www.elindependiente.com/series-y-television/">Series y TV</a></li>
+<li id="menu-item-1193534" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-1193534"><a href="https://www.elindependiente.com/etiquetas/conversaciones-el-independiente/">Conversaciones</a></li>
+</ul></div>                </div>
+
+                <div class="footer__columnas__corporativo">
+                    <p class="titulo">Corporativo</p>
+					<div class="menu-corporativo-container"><ul id="menu-corporativo" class="menu"><li id="menu-item-7552" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7552"><a href="https://www.elindependiente.com/privacidad-uso/">Política de Privacidad</a></li>
+<li id="menu-item-407947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-407947"><a href="https://www.elindependiente.com/aviso-legal-terminos-uso/">Aviso legal y Términos de uso</a></li>
+<li id="menu-item-1092615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1092615"><a href="https://www.elindependiente.com/condiciones-de-registro-y-suscripcion/">Condiciones de Registro y Suscripción</a></li>
+<li id="menu-item-7536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7536"><a href="https://www.elindependiente.com/politicas-de-cookies/">Políticas de Cookies</a></li>
+</ul></div>                </div>
+
+                <div class="footer__columnas__newsletter">
+                    <p class="titulo">Newsletter</p>
+                    <p>Se el primero en saber lo que está pasando.</p>
+                    <a href="https://usuarios.elindependiente.com/register/" target="_blank" title="Regístrate" class="footer-boton footer-boton--registro">Regístrate</a>
+                </div>
+            </div><!-- / .footer_columnas-->
+        </div><!-- / .contenedor -->
+
+        <div id="copyright" class="copyright">
+            <div class="contenedor">
+		        &copy; 2021 El Independiente.            </div><!-- / .contenedor -->
+        </div><!-- / .copyright -->
+
+    </footer>
+
+
+</div><!-- / #container -->
+
+<script type='text/javascript' src='https://www.elindependiente.com/wp-content/plugins/embed-any-document/js/pdfobject.min.js?ver=2.6.1' id='awsm-ead-pdf-object-js'></script>
+<script type='text/javascript' id='awsm-ead-public-js-extra'>
+/* <![CDATA[ */
+var eadPublic = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.elindependiente.com/wp-content/plugins/embed-any-document/js/embed-public.min.js?ver=2.6.1' id='awsm-ead-public-js'></script>
+<script type='text/javascript' src='https://www.elindependiente.com/wp-content/plugins/twenty20/assets/js/jquery.twenty20.js?ver=1.5.7' id='twenty20-style-js'></script>
+<script type='text/javascript' src='https://www.elindependiente.com/wp-content/plugins/twenty20/assets/js/jquery.event.move.js?ver=1.5.7' id='twenty20-eventmove-style-js'></script>
+<script type='text/javascript' src='https://www.elindependiente.com/wp-content/themes/indp19/js/app.js?ver=2.0.0' id='indp19-app-js'></script>
+<script type='text/javascript' src='https://www.elindependiente.com/wp-includes/js/wp-embed.min.js?ver=5.6.2' id='wp-embed-js'></script>
+<script type='text/javascript' src='https://cdn.onesignal.com/sdks/OneSignalSDK.js?ver=5.6.2' async='async' id='remote_sdk-js'></script>
+
+
+
+    <script>
+        (function ($) {
+
+			
+			                                            $('.sidebar #right1').insertAfter($("#noticia-completa").children('p').eq(0));
+                        $('.sidebar #right2').insertAfter($("#noticia-completa").children('p').eq(2));
+                        $('.sidebar #right3').insertAfter($("#noticia-completa").children('p').eq(4));
+                        $('.sidebar #right4').insertAfter($("#noticia-completa").children('p').eq(6));
+                                    
+        })(jQuery);
+
+    </script>
+
+
+
+
+    <script>
+        (function ($) {
+            $('.comentarios-articulo').hide();
+            $('.load-comments').on('click', function () {
+                $('.comentarios-articulo').toggle();
+                $(this).toggleClass('active');
+            });
+        })(jQuery);
+    </script>
+
+    <script type="didomi/javascript" defer src="https://1millionbot.com/displaybot/db.js"></script>
+    
+
+        <script type="text/javascript">
+            window._seedtagq = window._seedtagq || [];
+            window._seedtagq.push(['_setId', '9380-2797-01']);
+            (function () {
+                var st = document.createElement('script');
+                st.type = 'text/javascript';
+                st.async = true;
+                st.src = ('https:' == document.location.protocol
+                    ? 'https'
+                    : 'http') + '://config.seedtag.com/loader.js?v=' + Math.random();
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(st, s);
+            })();
+        </script>
+
+
+	<script>
+	 document.addEventListener("DOMContentLoaded", function(event) {
+		 var btrid = ("; " + document.cookie).split("; _btrid=").pop().split(";").shift();
+		 var dscript = document.createElement("script");
+		 dscript.src = "https://dmp.citiservi.es/pxtrack.js?mode=external&acc=2018&i=2016";
+		 document.head.appendChild(dscript);
+	 });
+	</script>
+</body>
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+
+Served from: www.elindependiente.com @ 2021-03-12 17:46:48 by W3 Total Cache
+-->

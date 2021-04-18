@@ -1,0 +1,471 @@
+<?require_once './controlador/Analytics.php';?>
+<?include("controlador/Metas.php");?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+    <head>
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-N7DJ28P');</script>
+		<!-- End Google Tag Manager -->
+	    
+        <?
+        if(isset($_REQUEST["codigoElemento"]))
+            echo Metas::metasElemento($_REQUEST["codigoIdioma"],$_REQUEST["codigoElemento"]);
+        else{
+            echo Metas::metasElementoInicio(0,$_REQUEST["codigoElemento"]);
+        }
+        ?>
+
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta http-equiv="content-language" content="es"/>
+        <meta http-equiv="language" content="Spanish"/>
+        <meta name="author" content="AltiplaConsulting"/>
+        <meta name="copyright" content="AltiplaConsulting.com"/>
+        <meta name="revisit-after" content="10 days"/>
+        <meta name="revisit" CONTENT="10 days"/>
+        <meta name="DC.title" content="AltiplaConsulting" />
+        <meta name="geo.region" content="ES-GR" />
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+        <script type="text/javascript" src="/js/funcionesJavaScript.js"></script>
+        <script type="text/javascript" src="/js/carrusel.js"></script>
+		
+		<script type="text/javascript" src = "/js/yahoo-dom-event.js"></script>
+		<script type="text/javascript" src = "/js/ie-select-width-fix.js"></script>
+
+        <!--Calendario-->
+        <script type="text/javascript" src="/calendario/src/js/jscal2.js"></script>
+        <script type="text/javascript" src="/calendario/src/js/lang/es.js"></script>
+        <link rel="stylesheet" type="text/css" href="/calendario/src/css/jscal2.css" />
+        <link rel="stylesheet" type="text/css" href="/calendario/src/css/border-radius.css" />
+        <link rel="stylesheet" type="text/css" href="/calendario/src/css/steel/steel.css" />
+
+        <!--fin Calendario-->
+
+        <script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/shadowbox/shadowbox.css" />
+        <script type="text/javascript" src="/shadowbox/shadowbox.js"></script>
+        <script type="text/javascript">
+			Shadowbox.init();
+	</script>
+
+<!-- jQuery add-ons (optional) -->
+		<script type="text/javascript" src="/js/jquery.easing.1.3.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.mousewheel.min.js"></script>
+<!-- Slider Kit core -->
+		<script type="text/javascript" src="/js/jquery.sliderkit.1.9.2.pack.js"></script>
+		<!-- Slider Kit launch -->
+		<script type="text/javascript">
+			$(window).load(function(){ //$(window).load() must be used instead of $(document).ready() because of Webkit compatibility		
+
+				// Photo slider > Minimal
+				$(".contentslider-std").sliderkit({
+					auto:0,
+					tabs:1,
+					circular:1,
+					panelfx:"sliding",
+					panelfxfirst:"fading",
+					panelfxeasing:"easeInOutExpo",
+					fastchange:0,
+					keyboard:1
+				});
+				
+			});
+		</script>
+
+<!-- Widget styles -->
+		<link rel="stylesheet" type="text/css" href="/css/sliderkit-core.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="/css/sliderkit-demos.css" media="screen, projection" />
+
+<!-- Compatibility fix -->
+		<!--[if IE 6]><link rel="stylesheet" type="text/css" href="/css/sliderkit-demos-ie6.css" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" type="text/css" href="/css/sliderkit-demos-ie7.css" /><![endif]-->
+		<!--[if IE 8]><link rel="stylesheet" type="text/css" href="/css/sliderkit-demos-ie8.css" /><![endif]-->
+
+<!-- Site styles -->
+		<link rel="stylesheet" type="text/css" href="/css/sliderkit-site.css" media="screen, projection" />
+
+        <link rel="STYLESHEET" type="text/css" href="/css/estilosSegura.css"/>
+		<script type="text/javascript" src="/js/cookies.js"></script>
+	<!--Xl1 Libreria de integracion-->
+	<script type="text/javascript" src="http://ts.milenio.es/colectivos24/inc/mcoFWIntegrator.2.4.0.js"></script>
+	<script>
+	$(document).ready(function(){
+	
+	//Crear el objeto
+        var integrator = new mcoFWIntegrator('RCARQUITEC', 'ALTIPLA', document.getElementById('MainFlujoWeb'));
+    
+	//Activar el listener
+	integrator.MessageConsumer(function(msg){
+	    //console.log(msg);
+	});
+    
+	//Sobreescribir evento del boton calcular
+		$('#initFlujo').click(function(event){
+			event.preventDefault();
+		//preparamos un objeto3 con las variables que espera el flujo.
+		//alert($('#iProfesion').val());
+			var vars = {
+				pProfe: $('#iProfesion').val(),
+				iProfe:$('#iProfesion option:selected').text()
+			};
+		//Y lanzamos el mensaje.
+			//console.log (vars);
+			var dum = integrator.callFlujo(vars);
+
+			if( dum !== true )
+				alert(dum);
+			else {
+				document.getElementById('MainFlujoWeb').className = 'InfoVisible';
+			}
+		});
+
+		$('#initFlujo2').click(function(event){
+			event.preventDefault();
+		//preparamos un objeto3 con las variables que espera el flujo.
+		//alert($('#iProfesion').val());
+			var vars = {
+				pProfe: $('#iProfesion2').val(),
+				iProfe:$('#iProfesion2 option:selected').text()
+			};
+		//Y lanzamos el mensaje.
+			//console.log (vars);
+			var dum = integrator.callFlujo(vars);
+
+			if( dum !== true )
+				alert(dum);
+			else {
+				document.getElementById('MainFlujoWeb').className = 'InfoVisible';
+			}
+		});
+	});
+	</script>
+	
+	
+	<!-- fin xl1-->
+        <!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+/*
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//v2.zopim.com/?1PZdvT9WstH1pNq4gvZG17W7MMtoavj4';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+*/
+</script>
+<!--End of Zopim Live Chat Script-->
+
+        <?echo Analytics::get();?>
+    </head>
+    <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7DJ28P"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	    
+    <!--Código HTML de la política de cookies -->
+    <div class="cookiesms" id="cookie1">
+    Esta web utiliza cookies, puedes ver nuestra <a href="/0/40/Uso-de-cookies.html">la política de cookies, aquí</a>
+    Si continuas navegando estás aceptándola
+    <button onclick="controlcookies()">Aceptar</button>
+    <div class="cookies2" onmouseover="document.getElementById('cookie1').style.bottom = '0px';">Política de cookies + </div>
+    </div>
+    <script type="text/javascript">
+    if (localStorage.controlcookie>0){
+    document.getElementById('cookie1').style.bottom = '-50px';
+    }
+    </script>
+    <!-- Fin del código de cookies --->﻿<div class="container">
+            <div class="cuerpo">
+                            
+             <div class="topWeb">                    
+               <div class="topWebContBlanco"  >
+					<div class="logocaixa"></div>
+                     
+                    
+            <div class="subMenuArriba">
+               
+            <a title="Quiénes Somos" id="numMenu0" href="/0/2/Quienes-Somos.html" ><div  class="inactivo" >Quiénes Somos</div></a>
+            <div class="separador"></div>
+            <a title="Contacto" id="numMenu1" href="/0/13/Contacto.html" ><div  class="inactivo" >Contacto</div></a>
+            
+            </div>
+                 
+                    <div class="telefonoReservasCont"><div class="txt">LLÁMENOS</div><div class="telefonoReservas">91 29 07 528</div><div class="horario">Horario de Lunes a Jueves  de  8:30 a 18:00 horas</div><div class="horario">Viernes de 09:00 horas a 15:00 horas</div></div>                                                   
+                                                                  
+                </div>                                      
+                <div class="topWebContAzul"  >    
+                    <a href="/" class="enlaceInicio" title="SegurArquitectos" ><img class="logo" src="/imagenes/logo.png" alt="Segurarquitectos" title="Segurarquitectos"  > </a>                                                                                                                                                                         
+                    
+            <script type="text/javascript">
+                var CLICADO = false;
+                function clicado(){
+                    if(!CLICADO)document.getElementById('idEmailRegistro').value="";
+                    CLICADO = true;
+                }
+                function enviaNews(){
+                    if(CLICADO && document.getElementById('idEmailRegistro').value != "")
+                    document.getElementById('idFormRegistro').submit();
+                }
+            </script>
+            
+            <div class="newsletter">
+                <div class="txt">RECIBA TODAS LAS NOVEDADES</div>
+                    <form action="#" id="idFormRegistro" method="post" style="clear:left;">
+                    <input type="hidden" name="REGISTRAR_BOLETIN" value="REGISTRAR_BOLETIN" >                    
+                    <table>
+                        <tr>
+                            <td class="inputCont"><input class="inputNews" id="idEmailRegistro" name="email" type="text" value="Introduce tu correo eletrónico" onclick="clicado();" /></td>
+                            <td><div class="botonVerde" onclick="enviaNews();" >Suscríbase</div></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            
+                </div>            
+             </div>
+            
+            <div class="menuPrincipal">
+               
+            <a title="Inicio" id="numMenu0" href="/" ><div  class="activo" >Inicio</div></a>
+            <div class="separador"></div>
+            <a title="Actividad Asegurada" id="numMenu1" href="/0/26/Actividad-Asegurada.html" ><div  class="inactivo" >Actividad Asegurada</div></a>
+            <div class="separador"></div>
+            <a title="Asegure todos sus riesgos" id="numMenu2" href="/0/10/Coberturas.html" ><div  class="inactivo" >Coberturas</div></a>
+            <div class="separador"></div>
+            <a title="Preguntas Frecuentes" id="numMenu3" href="/0/3/Preguntas-Frecuentes.html" ><div  class="inactivo" >Preguntas Frecuentes</div></a>
+            <div class="separador"></div>
+            <a title="Obras" id="numMenu4" href="/0/7/Obras.html" ><div  class="inactivo" >Obras</div></a>
+            <div class="separador"></div>
+            <a title="Colegios Profesionales" id="numMenu5" href="/0/27/Colegios-Profesionales.html" ><div  class="inactivo" >Colegios Profesionales</div></a>
+            <div class="separador"></div>
+            <a title="Siniestros" id="numMenu6" href="/0/38/Siniestros.html" ><div  class="inactivo" >Siniestros</div></a>
+            
+            </div>
+            <div id="imagenesdestacadas">
+                            <div id="marcoImagenes" style="background-image:url(/imgElementos/Inicio.jpg);background-position:0px 0px;">
+                                <img src="/imagenes/flechaIzq.png" class="flechaAtras"  onclick="derecha('marcoImagenes',955+POS,POS);" />
+                                <img src="/imagenes/flechaDch.png" class="flechaAdelante" id="idFlechaAdelante"onclick="izquierda('marcoImagenes',POS-955,POS);" />
+                            </div>
+                      </div>
+                      <script type="text/javascript">
+                            setInterval(function(){document.getElementById('idFlechaAdelante').click();},5000);
+                      </script>
+                    
+			<script type="text/javascript">
+				function ValidaProfe(pInp) {
+//alert("calcularPresupuesto "+document.getElementById("iProfesion").value);
+					if (document.getElementById("iProfesion").value=="NA") {
+						alert ("Consulte con Att. al cliente por favor"); 
+						return false;
+					} else {
+//						document.miniform.submit();
+						ga("send", "pageview","/calculoSeguroCabecera.html");
+//*******************************20131223-01***************************
+						document.getElementById("MainFlujoWeb").className="InfoVisible";
+						document.getElementById("MainFlujoWeb").src="http://ts.milenio.es/colectivos24/flujoswebdesa/moch00.html?pro="+document.getElementById("iProfesion").value;
+					}
+				};
+
+				new YAHOO.Hack.FixIESelectWidth( "iProfesion" ); 
+
+			</script>
+
+            <div class="calcularPresupuesto">
+            <form id="miniform" name="miniform" method="post" action="" return false;" >
+                <input type="hidden" id="fecha" name="I6" value="1414/0303/2021202120212021" />
+                <input type="hidden" id="key" name="key" value="STEC23" />
+                <div class="titulo">CALCULE SU PRESUPUESTO</div>
+                <div class="txt">INDIQUE SU PROFESIÓN</div>
+                <div class="inputCont">
+					<span class="select-box">
+						<select name="iProfesion" id="iProfesion" style="width:150px" class="desplegableNaranja">
+							<option value="NA" disabled selected>Seleccione...</option>
+							<option value="arq">Arquitectos</option>
+							<option value="apa">Aparejadores</option>
+							<option value="arqapa">Doble titulación arquitectos y aparejador</option>
+						</select>
+					</span>
+				</div>
+             
+				<div id='initFlujo' class='botonNaranja' >Calcular</div>
+            </form>
+            </div>
+            
+				<iframe id="MainFlujoWeb" src="" scrolling="no" class="InfoHidden" style="width:954px;" >
+					 hola que tal.
+				</iframe>
+			<div class="destacadosHome">
+           <div class="bannerDestacado">
+                <a href="http://www.seguratecnicos.es/"   target="_blank"  title="Faldón Index" class="enlaceBanner" >
+                     <img src="/../banners/7_Banner.jpg" title="Faldón Index" alt="Faldón Index" />
+                </a>
+           </div>
+           
+           <div class="destacadoPreguntasFrecuentes">
+                <img class="icono" src="/imagenes/ico_interrogacion.png" />
+                
+            <a  title="" href="/0/3/.html" ><div class="titulo">Preguntas Frecuentes</div></a>
+                            
+           
+            <a  title="¿Quién puede hacer este seguro?" href="/0/30/Quien-puede-hacer-este-seguro.html" ><div class="pregunta">¿Quién puede hacer este seguro?</div></a>
+            
+            <a  title="¿Qué prima tendría que pagar?" href="/0/36/Que-prima-tendria-que-pagar.html" ><div class="pregunta">¿Qué prima tendría que pagar?</div></a>
+            
+            <a  title="¿Debo regularizar mi prima de seguro a final de año?" href="/0/21/Debo-regularizar-mi-prima-de-seguro-a-final-de-ano.html" ><div class="pregunta">¿Debo regularizar mi prima de seguro a final de año?</div></a>
+            
+            <a  title="¿Debo pagar más primas complementarias?" href="/0/22/Debo-pagar-mas-primas-complementarias.html" ><div class="pregunta">¿Debo pagar más primas complementarias?</div></a>
+            
+            <a  title="¿Quedarían cubiertos todos mis trabajos?" href="/0/15/Quedarian-cubiertos-todos-mis-trabajos.html" ><div class="pregunta">¿Quedarían cubiertos todos mis trabajos?</div></a>
+            
+           
+            <a  title="" href="/0/3/.html" ><div class="botonAzul">LEER MÁS</div></a>
+            
+           </div>
+           
+           <div class="bannerDestacado">
+                <a href="http://www.segurarquitectos.es"   title="Banner Index" class="enlaceBanner" >
+                     <img src="/../banners/1_Banner.jpg" title="Banner Index" alt="Banner Index" />
+                </a>
+           </div>
+           
+			<script type="text/javascript">
+				function ValidaProfe2() {
+//alert("contratarSeguro "+document.getElementById("iProfesion2").value);
+					if (document.getElementById("iProfesion2").value=="NA") {
+						alert ("Consulte con Att. al cliente por favor"); 
+						return false;
+					} else {
+//						document.miniform2.submit();
+						ga("send", "pageview","/calculoSeguroBanner.html");
+//*******************************20131223-01***************************
+						document.getElementById("MainFlujoWeb").className="InfoVisible";
+						document.getElementById("MainFlujoWeb").src="http://ts.milenio.es/mcdesa/flujoswebdesa/moch00.html?pro="+document.getElementById("iProfesion2").value;
+					}
+				};
+
+				new YAHOO.Hack.FixIESelectWidth( "iProfesion2" ); 
+
+			</script>
+            <div class="bannerContratar">
+           
+            
+                <img class="icono" src="/imagenes/ico_lapiz.png" />
+                <div class="titulo">CONTRATE YA SU SEGURO</div>
+                    
+                <div class="texto">Horario de Lunes a Viernes de 9 a 18:00 horas</div>
+                <div class="telefono">91 29 07 528</div>
+<form id="idFormTelefono" name="formTelefono" method="post" action="" >
+                <input type="hidden" name="ENVIAR_CORREO" />
+                <div class="texto">o introduzca su teléfono y nosotros le llamamos sin coste alguno</div>
+                <!-- <div class="txtMini">TELÉFONO</div> -->
+                <div class="inputContMini"><input type="text" name="telefono" id="idTelefonoForm" value="" style="color:#777777;font-style:italic;" /></div>                   
+                <div class="botonNaranja" onclick="enviaFormTelefono();"; return false;">Enviar</div>
+</form>
+
+
+			<form id="miniform2" name="miniform2" method="post" action="" onsubmit="ValidaProfe2(); return false;" >
+				<input type="hidden" id="fecha" name="I6" value="1414/0303/2021202120212021" />
+				<input type="hidden" id="key" name="key" value="STEC23" />
+				<div class="texto">Indique su profesión y contrate online</div>
+				<div class="inputContMini">
+					<span class="select-box">
+						<select name="iProfesion" id="iProfesion2" style="width:150px" class="desplegableNaranja">
+							<option value="NA" disabled selected>Seleccione...</option>
+							<option value="arq">Arquitectos</option>
+							<option value="apa">Aparejadores</option>
+							<option value="arqapa">Doble titulación arquitectos y aparejador</option>
+						</select>
+					</span>
+				</div>
+				<div id="initFlujo2" class="botonNaranja" >Calcular</div>
+			</form>
+
+				</div>
+            
+           <div class="destacadoCoberturas">                
+                <div class="tituloYdescripcion">                
+                
+            <a  title="" href="/0/10/.html" ><div class="titulo">Asegure todos sus riesgos</div></a>
+            
+                <div class="descripcion">En Segurarquitectos, hemos desarrollado un seguro muy completo, con unas amplias garantías y un precio inmejorable, adaptado a la realidad de la actividad actual de los arquitectos y aparejadores.</div>
+                </div>
+           <div class="coberturasCont">
+			<div class="sliderkit contentslider-std">
+				<div class="sliderkit-btn sliderkit-go-btn sliderkit-go-prev"><a href="#" title="Anterior"><span>Anterior</span></a></div>
+				<div class="sliderkit-btn sliderkit-go-btn sliderkit-go-next"><a href="#" title="Siguiente"><span>Siguiente</span></a></div>
+				<div class="sliderkit-panels">
+		
+				<div class="sliderkit-panel">
+            <a  title="Responsabilidad Civil Profesional" href="/0/12/Responsabilidad-Civil-Profesional.html" ><div class="cobertura"><b>Responsabilidad Civil Profesional</b><p>
+Responsabilidad civil directa del Asegurado originada por acción u omisión propia siempre que tenga su origen exclusivamente en su actuación profesional amparada por la normativa en vigor.</div></a>
+            
+				</div>
+				<div class="sliderkit-panel">
+            <a  title="Inhabilitación Profesional" href="/0/24/Inhabilitacion-Profesional.html" ><div class="cobertura"><b>Inhabilitación Profesional</b><p>
+Mediante esta cobertura, se garantiza el pago de la indemnización mensual pactada en póliza, en el supuesto de que el asegurado sea condenado por sentencia judicial firme en un procedimiento penal,...</div></a>
+            
+				</div>
+				<div class="sliderkit-panel">
+            <a  title="Liberación de Gastos de Defensa" href="/0/33/Liberacion-de-Gastos-de-Defensa.html" ><div class="cobertura"><b>Liberación de Gastos de Defensa</b><p>
+La suma asegurada de Responsabilidad Civil se entiende liberada de cualquier deducción por los gastos judiciales si al añadir estos a la indemnización se excede el límite contratado.</div></a>
+            
+				</div>
+				<div class="sliderkit-panel">
+            <a  title="Responsabilidad Civil Explotación     " href="/0/20/Responsabilidad-Civil-Explotacion-----.html" ><div class="cobertura"><b>Responsabilidad Civil Explotación</b><p>
+En los términos y condiciones consignados en la póliza, y hasta el limite de su suma asegurada, se garantiza por esta cobertura, la responsabilidad extracontractual, con sujeción a los limites estipulados</div></a>
+            
+				</div>
+				<div class="sliderkit-panel">
+            <a  title="Daños a Documentos y Expedientes" href="/0/16/Danos-a-Documentos-y-Expedientes.html" ><div class="cobertura"><b>Daños a Documentos y Expedientes</b><p>
+Se cubren los daños materiales, pérdida, o extravío que puedan sufrir los expedientes o documentos, confiados al Asegurado por causa de su profesión</div></a>
+            
+				</div>
+				<div class="sliderkit-panel">
+            <a  title="Defensa y Fianzas" href="/0/35/Defensa-y-Fianzas.html" ><div class="cobertura"><b>Defensa y Fianzas</b><p>
+En cualquier procedimiento judicial que se derive de un siniestro amparado por la póliza, el Asegurador asumirá, a sus expensas, la dirección jurídica frente a la reclamación del perjudicado, </div></a>
+            
+				</div>
+				<div class="sliderkit-panel">
+            <a  title="Sanciones de la Ley de  Protección de Datos" href="/0/32/Sanciones-de-la-Ley-de--Proteccion-de-Datos.html" ><div class="cobertura"><b>Sanciones de la Ley de  Protección de Datos</b><p>
+Esta cobertura, tiene por exclusivo objeto cubrir la responsabilidad civil por daños causados a Terceros (incluidos los empleados del asegurado) en que pueda incurrir el asegurado.</div></a>
+            
+				</div>
+				<div class="sliderkit-panel">
+            <a  title="Responsabilidad Civil Patronal  " href="/0/19/Responsabilidad-Civil-Patronal--.html" ><div class="cobertura"><b>Responsabilidad Civil Patronal</b><p>
+En los términos y condiciones consignados en la póliza, y con sujeción a las exclusiones y los limites de suma asegurada, y el límite establecido por victima.</div></a>
+            
+				</div>
+			</div>
+		</div></div>
+            <a  title="" href="/0/10/.html" ><div class="botonAzul">Más información</div></a>
+            
+           </div>
+           <div><div class="textoHome"><p><strong>El mejor seguro para Arquitectos y Aparejadores<br /></strong>Con el apoyo de uno de los grupos aseguradores m&aacute;s importantes en Espa&ntilde;a, se he desarrollado este producto de responsabilidad Civil Profesional para Arquitectos o de Aparejadores, Arquitectos t&eacute;cnicos e Ingenieros de la edificaci&oacute;n;&nbsp; estableciendo unas condiciones t&eacute;cnicas y econ&oacute;micas totalmente innovadoras&nbsp; y &nbsp;consiguiendo &nbsp;las mejores primas del mercado y las coberturas m&aacute;s amplias a toda su actividad pasada, presente y futura.&nbsp;</p></div>
+            <div class="pieWeb">
+                <div class="pieCont">
+                            
+                <div class="pie">
+                
+                     <!--   <a href="mailto:info@segurarquitectos.es" >info@segurarquitectos.es</a>
+                        <div class="separador">|</div> --> 
+                        <a  href="/0/6/Aviso-Legal.html" title="Aviso Legal" >Aviso Legal</a><span>|</span><a href="/Politica_de_proteccion_de_datos.pdf" target="_blank">Politica de protección de datos</a>
+                        <!--
+                        <div class="separador">|</div>
+                        <a href="http://www.altiplaconsulting.com" target="_black" >Diseño y programación Web</a>
+                        <div class="separador"> Altipla Consulting</div>
+                        <div class="separador">|</div>
+                        <div class="separador"> Segurarquitectos</div>
+                        <div class="separador"> | </div>
+                        <div class="separador">  ()</div>
+                        <div class="separador"> | </div><div class="separador">91 29 07 528</div>
+                        -->
+                </div>
+                
+                </div>
+            </div>
+            </div>
+            </div> </body>
+</html>

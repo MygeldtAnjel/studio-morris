@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ira &#8211; ARQcoaching</title>
+	<atom:link href="https://www.coachingarquitectos.com/tag/ira/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.coachingarquitectos.com</link>
+	<description>Coaching para arquitectos por arquitectos</description>
+	<lastBuildDate>Tue, 03 Jul 2018 06:30:37 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+
+<image>
+	<url>https://www.coachingarquitectos.com/wp-content/uploads/2018/10/logo-ARQcoaching-fav-icon-1.png</url>
+	<title>ira &#8211; ARQcoaching</title>
+	<link>https://www.coachingarquitectos.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>POR QUÉ ES IMPORTANTE LA GESTIÓN EMOCIONAL PARA UN ARQUITECTO</title>
+		<link>https://www.coachingarquitectos.com/gestion-emocional-para-un-arquitecto/</link>
+					<comments>https://www.coachingarquitectos.com/gestion-emocional-para-un-arquitecto/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 03 Jul 2018 06:30:37 +0000</pubDate>
+				<category><![CDATA[personal]]></category>
+		<category><![CDATA[autoconocimiento]]></category>
+		<category><![CDATA[efectividad personal]]></category>
+		<category><![CDATA[emociones]]></category>
+		<category><![CDATA[gestión emocional]]></category>
+		<category><![CDATA[inteligencia emocional]]></category>
+		<category><![CDATA[ira]]></category>
+		<category><![CDATA[miedo]]></category>
+		<guid isPermaLink="false">https://www.coachingarquitectos.com/?p=5556</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/gestion-emocional-para-un-arquitecto/">POR QUÉ ES IMPORTANTE LA GESTIÓN EMOCIONAL PARA UN ARQUITECTO</a></p>
+<p>La gestión emocional para un arquitecto es una competencia fundamental en su día a día. Lo es para cualquiera, pero en nuestra profesión existen muchas situaciones que requieren un adecuado manejo de las emociones. Veamos cómo.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/gestion-emocional-para-un-arquitecto/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CÓMO TRABAJAR CON ALGUIEN A QUIEN NO SOPORTAS</title>
+		<link>https://www.coachingarquitectos.com/como-trabajar-con-alguien-a-quien-no-soportas/</link>
+					<comments>https://www.coachingarquitectos.com/como-trabajar-con-alguien-a-quien-no-soportas/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 19 Dec 2017 07:30:14 +0000</pubDate>
+				<category><![CDATA[personal]]></category>
+		<category><![CDATA[autoconocimiento]]></category>
+		<category><![CDATA[comunicación]]></category>
+		<category><![CDATA[emociones]]></category>
+		<category><![CDATA[equipos]]></category>
+		<category><![CDATA[ira]]></category>
+		<guid isPermaLink="false">http://www.coachingarquitectos.com/?p=4814</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/como-trabajar-con-alguien-a-quien-no-soportas/">CÓMO TRABAJAR CON ALGUIEN A QUIEN NO SOPORTAS</a></p>
+<p>Trabajar con alguien a quien no soportas puede llegar a ser muy complicado y a perjudicar tu desempeño. Muchas veces no podemos elegir a nuestros compañeros, así que es mejor tener herramientas para estar en equipo incluso con gente a la que no soportas.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/como-trabajar-con-alguien-a-quien-no-soportas/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

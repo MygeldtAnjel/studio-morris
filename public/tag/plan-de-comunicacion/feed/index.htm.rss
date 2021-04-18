@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>plan de comunicación &#8211; ARQcoaching</title>
+	<atom:link href="https://www.coachingarquitectos.com/tag/plan-de-comunicacion/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.coachingarquitectos.com</link>
+	<description>Coaching para arquitectos por arquitectos</description>
+	<lastBuildDate>Sun, 23 Jun 2019 19:08:31 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+
+<image>
+	<url>https://www.coachingarquitectos.com/wp-content/uploads/2018/10/logo-ARQcoaching-fav-icon-1.png</url>
+	<title>plan de comunicación &#8211; ARQcoaching</title>
+	<link>https://www.coachingarquitectos.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>ENTREVISTA A AMPARO MARTÍNEZ VIDAL. IMPORTANCIA DE LA MARCA PERSONAL EN ARQUITECTURA</title>
+		<link>https://www.coachingarquitectos.com/entrevista-amparo-martinez-vidal-marca-personal-en-arquitectura/</link>
+					<comments>https://www.coachingarquitectos.com/entrevista-amparo-martinez-vidal-marca-personal-en-arquitectura/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 12 Sep 2017 06:30:19 +0000</pubDate>
+				<category><![CDATA[empleo]]></category>
+		<category><![CDATA[entrevistas]]></category>
+		<category><![CDATA[especialización]]></category>
+		<category><![CDATA[marca personal]]></category>
+		<category><![CDATA[plan de comunicación]]></category>
+		<category><![CDATA[profesión]]></category>
+		<guid isPermaLink="false">http://www.coachingarquitectos.com/?p=4557</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/entrevista-amparo-martinez-vidal-marca-personal-en-arquitectura/">ENTREVISTA A AMPARO MARTÍNEZ VIDAL. IMPORTANCIA DE LA MARCA PERSONAL EN ARQUITECTURA</a></p>
+<p>La marca personal en arquitectura es un concepto que solemos cuidar poco o nada, pero que es fundamental y puede traer grandes alegrías al arquitecto. Nos lo cuenta en esta entrevista Amparo Martínez Vidal, y nos da algunas claves acertadas.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/entrevista-amparo-martinez-vidal-marca-personal-en-arquitectura/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>ArquitectoMarketero (4): EL PLAN DE COMUNICACIÓN DEL ARQUITECTO</title>
+		<link>https://www.coachingarquitectos.com/plan-de-comunicacion-del-arquitecto/</link>
+					<comments>https://www.coachingarquitectos.com/plan-de-comunicacion-del-arquitecto/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Mon, 16 Jan 2017 23:05:34 +0000</pubDate>
+				<category><![CDATA[marketing]]></category>
+		<category><![CDATA[ArquitectoMarketero]]></category>
+		<category><![CDATA[cliente ideal]]></category>
+		<category><![CDATA[estrategia]]></category>
+		<category><![CDATA[objetivos]]></category>
+		<category><![CDATA[plan de comunicación]]></category>
+		<category><![CDATA[propuesta de valor]]></category>
+		<guid isPermaLink="false">http://www.coachingarquitectos.com/?p=3450</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/plan-de-comunicacion-del-arquitecto/">ArquitectoMarketero (4): EL PLAN DE COMUNICACIÓN DEL ARQUITECTO</a></p>
+<p>Una vez tenemos definida nuestra estrategia competitiva, nuestra propuesta de valor y los servicios que vamos a ofrecer con un modelo de negocio coherente, se trata de llevar todo eso a la mente de los clientes potenciales. El plan de comunicación del arquitecto se encarga de ello</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/plan-de-comunicacion-del-arquitecto/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

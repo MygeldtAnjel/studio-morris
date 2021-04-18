@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>titulitis &#8211; ARQcoaching</title>
+	<atom:link href="https://www.coachingarquitectos.com/tag/titulitis/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.coachingarquitectos.com</link>
+	<description>Coaching para arquitectos por arquitectos</description>
+	<lastBuildDate>Sat, 24 Aug 2019 13:56:44 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+
+<image>
+	<url>https://www.coachingarquitectos.com/wp-content/uploads/2018/10/logo-ARQcoaching-fav-icon-1.png</url>
+	<title>titulitis &#8211; ARQcoaching</title>
+	<link>https://www.coachingarquitectos.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>MASTERS DE ARQUITECTURA. ¿ÚTILES? ¿CUÁL ELEGIR? AQUÍ TIENES ALGUNAS OPCIONES</title>
+		<link>https://www.coachingarquitectos.com/masters-arquitectura/</link>
+					<comments>https://www.coachingarquitectos.com/masters-arquitectura/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 29 Jan 2019 07:30:57 +0000</pubDate>
+				<category><![CDATA[empleo]]></category>
+		<category><![CDATA[empleabilidad]]></category>
+		<category><![CDATA[formación]]></category>
+		<category><![CDATA[masters]]></category>
+		<category><![CDATA[titulitis]]></category>
+		<guid isPermaLink="false">https://www.coachingarquitectos.com/?p=6956</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/masters-arquitectura/">MASTERS DE ARQUITECTURA. ¿ÚTILES? ¿CUÁL ELEGIR? AQUÍ TIENES ALGUNAS OPCIONES</a></p>
+<p>Los masters a de arquitectura siguen siendo una opción muy útil para mejorar tu carrera profesional. ¿Útil de qué modo? ¿Cuál elijo? Aquí tienes respuestas a estas preguntas y algunas buenas opciones que han significado cambios a mejor en profesionales que conozco o han sido clientes míos.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/masters-arquitectura/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,1624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/plantilla_programa.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>CYPECAD. Diseño y cálculo de estructuras</title>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" -->
+<meta name="Description" content="CYPECAD. Software para cálculo de estructuras. Programa de CYPE Ingenieros que dimensiona elementos estructurales y obtiene planos precisos. Edición de armados y cálculo sísmico con CYPECAD" />
+<meta name="Keywords" content="CYPE,cype,cypecad,software,cálculo,arquitectura,ingeniería,construcción,detalles,constructivos,metal 3d,arquimedes,estructura,CAD,dimensionado" />
+<script src="../Scripts/AC_ActiveX.js" type="text/javascript"></script>
+<script src="../Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<style type="text/css">
+<!--
+.titulo_nivel_2 {	margin:0;
+	color:#3670BE;
+	font-size:14px;
+	line-height: 14px;
+	font-weight:normal;
+	padding-top: 18px;
+}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<link href="http://www.cype.es/estilos/programas.css" rel="stylesheet" type="text/css"/>
+<link href="http://www.cype.es/estilos/impresion.css" rel="stylesheet" type="text/css" media="print"/>
+<script language="JavaScript" src="http://www.cype.es/scripts/jquery-ultimo.min.js" type="text/javascript"></script>
+<script language="JavaScript" src="http://www.cype.es/scripts/general.js" type="text/javascript"></script>
+<!-- InstanceParam name="no_programas" type="boolean" value="true" --><!-- InstanceParam name="programas" type="boolean" value="false" -->
+</head>
+
+<body>
+	<div id="contenedor">
+	  <div id="borde">
+		  <div  id="sub_contenedor">
+		  	<div id="cabecera">
+				<div id="cabecera_seccion"><a name="inicio" id="inicio"></a><a href="http://programas.cype.es/">PROGRAMAS</a></div>
+				<div id="cabecera_cype"><a href="http://www.cype.es/"><img src="http://www.cype.es/principal/imagen/cype_ingenieros.gif" alt="CYPE Ingenieros, S.A." width="192" height="23" border="0" /><br />
+				</a><a href="http://programas.cype.es/"><strong>Software</strong><em> para</em> <strong>Arquitectura</strong>, <strong>Ingeniería</strong><em> y </em><strong>Construcción</strong></a> </div>
+			</div>
+			<div id="secciones">
+				<ul>
+					<li>| <a href="http://www.cype.es/">Home</a>  | </li>
+					<li><a href="http://www.cype.es/cypeingenieros/">CYPE Ingenieros</a>  | </li>
+					<li><a href="http://novedades.cype.es/">Novedades</a> |</li>
+					<li><a href="http://programas.cype.es/"><strong>Productos</strong></a> | </li>
+					<li><a href="http://www.cype.es/posventa/servicioposventa/">Posventa</a> | </li>
+					<li><a href="http://www.cype.es/formacion/">Formaci&oacute;n</a> | </li>
+					<li><a href="http://soporte.cype.es/">Soporte T&eacute;cnico</a> | </li>
+					<li><a href="http://www.cype.es/principal/contacte/formulario_contacte_con_cype.htm" style="color:#3A76AC;"><img src="http://www.cype.es/principal/imagen/Botones/b_Sobre_a.gif" alt="Imagen contacto CYPE" name="btnSobre" width="20" height="20" border="0" align="top" id="btnSobre" title="Contactar con CYPE" /> Contacto</a></li>
+					<li><a href="http://www.cype.es/principal/telefonos"><img src="http://www.cype.es/principal/imagen/Botones/b_telefono_a.gif" alt="Imagen telefonos CYPE" title="Teléfonos de contacto y servicios al usuario" name="btnTelefono" width="23" height="20" border="0" align="bottom" id="btnTelefono" /></a></li>
+				</ul>
+			</div>
+			<div id="sub_secciones">
+				<ul>
+					<li>| <a href="http://programas.cype.es"><strong>Programas</strong></a> | </li>
+					<li><a href="http://publicaciones.cype.es">Publicaciones</a> | </li>
+					<li><a href="http://edu.cype.es/">Versi&oacute;n estudiantes</a> | </li>
+					<li><a href="http://www.cype.cat/">Software en catal&agrave;</a> | </li>
+					<li><a href="http://encuentros.cype.es/">Encuentros</a> | </li>
+					<li><a href="http://pedidos.cype.es/">Pedidos <i>online</i></a> | </li>
+				</ul>
+			</div>
+			<div id="ruta">
+				<ul>
+					<li><a href="http://www.cype.es/">CYPE</a> &gt;&nbsp;</li>
+					<li><a href="http://programas.cype.es/">productos</a> &gt;&nbsp;</li>
+					
+					
+					<li><a href="http://programas.cype.es/">programas</a> &gt;&nbsp;</li>
+					<!-- InstanceBeginEditable name="ruta_programa" -->
+			        <li class="pagina_actual">CYPECAD</li>
+			        <li> > <a href="#programas_relacionados">Programas relacionados</a></li>
+		          <!-- InstanceEndEditable -->
+	          </ul>
+		    </div>
+			<div id="contenido">
+			  <div id="contenido_superior">		
+				<div id="columna_izquierda">
+				  <!-- InstanceBeginEditable name="foto_splash" --><img src="imagen/cypecad/imagen_producto_cypecad.jpg" alt="CYPECAD" width="120" height="120" /><!-- InstanceEndEditable -->
+				  <!-- InstanceBeginEditable name="demo_online" -->
+				  <p><a href="http://www.cype.es/posventa/formulario_demos_personalizadas.htm" target="_blank"><img src="imagen/demo_personalizada_cype.gif" alt="Demostración en su lugar de trabajo del funcionamiento de los programas de CYPE Ingenieros" width="120" height="41" border="0" /></a></p>
+				  <!-- InstanceEndEditable -->
+				  <!-- InstanceBeginEditable name="compre_ahora" --><a href="http://www.store.cype.com/estructuras/362-cypecad-base.html" target="_blank"><img src="imagen/compre_online_cype_20.gif" alt="Compre CYPECAD a través de Internet y obtenga un 20% de descuento sobre el PVP" width="120" height="43" border="0" /></a><!-- InstanceEndEditable -->
+				  <!-- InstanceBeginEditable name="ultimas_novedades" -->
+				  <p><a href="http://novedades.cype.es/"><img src="imagen/ultimas_novedades.gif" alt="Últimas novedades en CYPECAD de CYPE Ingenieros" width="120" height="43" border="0" /></a></p>
+				  <!-- InstanceEndEditable -->
+				  <!-- InstanceBeginEditable name="cte" -->
+				  <div align="center"><a href="http://cte.cype.es/"><img src="imagen/cype_adaptado_cte.png" alt="Programa adaptado al Código Técnico de la Edificación CTE" width="60" height="60" border="0" /></a></div>
+				  <!-- InstanceEndEditable -->
+			  </div>
+			  <div id="titular">
+				  <div id="titular_texto"><!-- InstanceBeginEditable name="titulo_programa" -->CYPECAD<!-- InstanceEndEditable --></div>
+				  <div id="titular_iconos">
+				  	<!-- InstanceBeginEditable name="iconos" -->
+						<a href="http://www.store.cype.com/estructuras/362-cypecad-base.html" target="_blank"><img src="imagen/icono_comprar_cype.gif" alt="Compre CYPECAD a través de Internet y obtenga un 20% de descuento sobre el PVP" width="32" height="30" border="0" /></a>
+				  		 <a href="formulario_info_productos.htm" target="_blank"><img src="imagen/icono_infoformularios.gif" alt="Solicite información sobre los programas de CYPE Ingenieros" width="28" height="30" border="0" /></a>
+						<a href="http://faq.cype.es/C3D/"><img src="imagen/icono_FAQ.gif" alt="FAQ. Consulte las respuestas a las preguntas más frecuentes de los programas de CYPE Ingenieros" width="28" height="30" border="0" /></a>					<!-- InstanceEndEditable -->			    </div>
+			  </div>
+				<div id="contenido_inicial">
+				<!-- InstanceBeginEditable name="contenido_inicial" -->
+			      <p><font color="#FF3300"></font>CYPECAD  realiza el diseño, cálculo y dimensionado de estructuras para edificación y obra civil, sometidas a acciones horizontales, verticales y a la acción del fuego.</p>
+			      <p>Calcula y dimensiona:</p>
+			      <ul>
+			        <li><strong>Soportes</strong><br />
+		            Pilares (de hormigón, metálicos, mixtos y de madera), Pantallas (de hormigón) y Muros (de hormigón, fábrica y bloque)<br />
+		            <br />
+                    </li>
+			        <li><strong>Vigas</strong><br />
+			          De hormigón, metálicas, mixtas<br />
+			          <br />
+                    </li>
+			        <li><strong>Forjados</strong><br />
+		            Unidireccionales, Placas aligeradas, Losas mixtas, Reticulares, Losas macizas, Postesados (unidireccionales, reticulares y losas)<br />
+		            <br />
+			        </li>
+			        <li>	              <strong>Estructuras de nudos y barras</strong><br />
+		            De hormigón, acero, aluminio,  madera y material genérico (este último sólo cálculo de esfuerzos).<br />
+		            <br />
+			        </li>
+			        <li>	              <strong>Cimentaciones</strong><br />
+			          Losas, vigas de cimentación, zapatas y encepados<br />
+			          <br />
+			        </li>
+			        <li>		            <strong>Uniones metálicas</strong><br />
+			          Soldadas y atornilladas (incluidas las placas de anclaje).<br />
+			          <br />
+			        </li>
+			        <li>		            <strong>Láminas planas</strong><br />
+		            Cálculo de esfuerzos de láminas de hormigón, acero laminado, acero conformado, aluminio o material genérico.<br />
+		            <br />
+                    </li>
+                </ul>
+<p>CYPECAD está incluido en el flujo de trabajo <a href="http://open-bim.cype.es/">Open BIM</a>.</p>
+<p>&nbsp;</p>
+<div id="indice">
+  <p id="rotulo_indice">ÍNDICE</p>
+				    <ul>
+				      <li><a href="#Entrada_de_datos">Entrada de datos</a>
+<ul>
+              <li><a href="#datosgenerales">Datos generales y opciones</a></li>
+              <li><a href="#Geometria_de_la_estructura">Geometría de la estructura</a>				      </li>
+</ul>
+				      </li>
+				      <li class="traducirEN traducirFR traducirIT traducirPT"><a href="#elementos_estructurales_analizados">Elementos estructurales analizados
+				      </a>
+				        <ul>
+				          <li><a href="#soportes">Soportes</a></li>
+				          <li><a href="#vigas">Vigas</a></li>
+				          <li><a href="#forjados">Forjados</a></li>
+				          <li><a href="#escaleras">Escaleras</a></li>
+				          <li><a href="#cimentacion">Cimentación</a></li>
+				          <li><a href="#uniones">Uniones soldadas y atornilladas</a></li>
+			            </ul>
+				      </li>
+				      <li><a href="#solicitaciones">Análisis de solicitaciones</a></li>
+				      <li><a href="#sismico">Cálculo sísmico</a></li>
+				      <li><a href="#resistencia_fuego">Comprobación de resistencia al fuego</a><br />
+			          </li>
+				      <li><a href="#analisis_de_resultados">Análisis de resultados</a>
+
+<ul>
+  <li><a href="#Editor_avanzado_de_vigas">Editor  de vigas</a></li>
+  <li><a href="#Editor_avanzado_de_pilares">Editor  de pilares</a></li>
+  <li><a href="#Otras_herramientas_analisis_resultados">Otras herramientas de análisis de resultados</a></li>
+</ul></li>
+                      <li class="traducirEN traducirFR traducirIT traducirPT"><a href="#Documentacion_obtenida">Documentación obtenida</a>
+                        <ul>
+                          <li><a href="#planos">Planos</a></li>
+                          <li><a href="#listados">Listados</a></li>
+                          <li><a href="#medicion_y_presupuesto_en_cypecad">Medición y presupuesto en CYPECAD</a></li>
+                        </ul>
+                      </li>
+                      <li class="traducirEN traducirFR traducirIT traducirPT"><a href="#Flujo_de_trabajo_Open_BIM">Flujo de trabajo Open BIM</a></li>
+                          <li><a href="#Mas_prestaciones_CYPECAD">Más prestaciones de CYPECAD
+                            </a>
+                            <ul>
+                              <li><a href="#sistemas_proteccion_colectiva">Sistemas de protección colectiva</a></li>
+                              <li><a href="#memoria">Memoria del proyecto de edificación</a></li>
+                            </ul>
+                          </li>
+                      <li><a href="#Exportacion">Exportación</a>
+				        <ul>
+				          <li><a href="#exportacion_a_ifc">Exportación en formato IFC</a></li>
+				          <li><a href="#exportacion_tekla_structures_tecnometal_4d">Exportación a TEKLA® Structures y TecnoMETAL&reg;<!-- 4D y CIS/2--></a></li>
+			            </ul>
+			          </li>
+                      <li><a href="#multiprocesadores">Cálculo con multiprocesadores</a></li>
+<li><a href="#normas_incluidas_licencia">Normas incluidas en la licencia de usuario </a><br />
+  <br />
+</li>
+<li><a href="#versiones">Versiones  y m&oacute;dulos de CYPECAD</a><br />
+                  <br />
+                  </li>
+			        </ul>
+</div>
+				<!-- InstanceEndEditable -->
+			    </div>	<!--contenido_inicial -->
+			  </div>
+			    <div id="contenido_central">
+			    <!-- InstanceBeginEditable name="contenido_central" -->
+<p class="quitar_alineacion"> </p>
+                  <div id="contenido_margen_izq">
+<div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+    <p class="imagen_centro"><a href="ampliadas/cypecad_datos_generales_02.htm" title="CYPECAD. Datos generales" target="_blank"><img src="imagen/cypecad_datos_generales/cypecad_datos_generales_02_300.png" alt="CYPECAD. Datos generales" border="0" /></a></p>
+    <p class="imagen_centro">&nbsp;</p>
+    <p class="imagen_centro"><a href="ampliadas/cypecad_datos_generales_04.htm" title="CYPECAD. Datos generales" target="_blank"><img src="imagen/cypecad_datos_generales/cypecad_datos_generales_04_300.png" alt="CYPECAD. Datos generales" border="0" /></a></p>
+</div>
+                    <h1 class="titulo"><a name="Entrada_de_datos" id="Entrada_de_datos"></a><a name="datosgenerales" id="datosgenerales"></a>Entrada de datos</h1>
+                    <h2 class="subtitulo">Datos generales y opciones</h2>
+                    <p>Con  CYPECAD el usuario tiene control total de todos los datos generales que van a condicionar el cálculo y dimensionamiento de la estructura que desea introducir.                    </p>
+                    <ul>
+                      <li><strong>Selección de normativa a emplear</strong><br />
+                        <br />
+                      </li>
+                      <li><strong>Selección de materiales</strong></li>
+                      <li><strong>Opciones de cálculo y tablas de armado</strong></li>
+                      <li><strong>Definición de acciones</strong><br />
+                Cargas permanentes,   sobrecargas de uso, viento, <a href="http://cypecad.cype.es/cypecad_calculo_sismico.htm">sismo</a>, <a href="http://resistencia-al-fuego.cype.es/">comprobación de la resistencia al fuego</a>, hipótesis adicionales.<br />
+                            <br />
+                          
+                      </li>
+                      <li><strong>Coeficientes de pandeo de pilares<br />
+                        <br />
+                      </strong></li>
+                      <li><strong>Ambiente para vigas y encepados</strong><br />
+                        <br />
+                      </li>
+                    </ul>
+                    <p>&nbsp;</p>
+<p><strong><a href="http://cypecad.cype.es/cypecad_datos_generales.htm">MÁS INFORMACION</a></strong>.</p>
+<p class="quitar_alineacion">&nbsp;</p>
+<h2 class="subtitulo"><a name="Geometria_de_la_estructura" id="Geometria_de_la_estructura"></a>Geometría de la estructura</h2>
+                    <p>Para la introducción de una estructura en CYPECAD se pueden combinar varios de los modos que se detallan a continuación según convenga. La elección del procedimiento dependerá de las preferencias del usuario, del modo en que éste reciba los datos del proyecto o del elemento o información a introducir:</p>
+<p>&nbsp;</p>
+<div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+    <p class="imagen_centro">&nbsp;</p>
+    <p class="imagen_centro">&nbsp;</p>
+    <p class="imagen_centro"><a href="ampliadas/cypecad_62.htm" title="CYPECAD" target="_blank"><img src="imagen/CYPECAD/cypecad_62_300.png" alt="CYPECAD" border="0" /></a></p>
+    <p class="imagen_centro">&nbsp;</p>
+    <p class="imagen_centro">&nbsp;</p>
+    <p class="imagen_centro">&nbsp;</p>
+    <p class="imagen_centro">&nbsp;</p>
+</div>
+				            <ul>
+				              <li><strong>Introducción manual por coordenadas globales o relativas</strong><br />
+				                Puede combinarse en cualquier momento con todos los modos de introducción.</li>
+				              <li><strong>Introducción manual con ayuda de ficheros DXF o DWG usados como plantillas</strong><br />
+			                  Puede combinarse en cualquier momento con todos los modos de introducción.				              </li>
+				              <li><strong>Introducción automática mediante la importación de una estructura de CYPE 3D</strong><br />
+				                Puede combinarse en cualquier momento con todos los modos de introducción.</li>
+				              <li><strong>Introducción automática, mediante la interpretación de la información de ficheros DXF o DWG</strong><br />
+				                Es un procedimiento iniciador. Puede combinarse con el resto de procedimientos excepto con la importación de ficheros en formato IFC
+				              y la conexión al modelo BIM.</li>
+				              <li><strong>Introducción automática, mediante la importación de ficheros en formato IFC generados por programas CAD/BIM<br />
+			                  </strong>Es un procedimiento iniciador. Puede combinarse con el resto de procedimientos excepto con la interpretación de ficheros DXF o DWG y la conexión al modelo BIM. </li>
+				              <li><strong>Importación de datos mediante la conexión a un modelo Open BIM</strong><br />
+				              Es un procedimiento iniciador. Puede combinarse con el resto de procedimientos excepto con la importación de ficheros en formato IFC
+				              y la interpretación de ficheros DXF o DWG.<br />
+				              <br />
+                              </li>
+			                </ul>
+                    <p>Esta versatilidad proporciona  rapidez, fiabilidad y eficacia al proceso de introducción de la estructura.</p>
+                    <p>&nbsp;</p>
+<p><strong><a href="http://cypecad.cype.es/cypecad_introduccion_estructura.htm">MÁS INFORMACION</a></strong>.</p>
+<p class="quitar_alineacion">&nbsp;</p>
+<h1 class="titulo"><a name="elementos_estructurales_analizados" id="elementos_estructurales_analizados"></a><span class="subtitulo"><a name="soportes"></a></span>Elementos estructurales analizados</h1>
+<div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+<p class="imagen_centro"><a href="ampliadas/cypecad_59.htm" title="CYPECAD. Pilares. Pulse para ampliar imagen" target="_blank"><img src="imagen/CYPECAD/cypecad_59_300.png" alt="CYPECAD. Pilares" border="0" /></a></p>
+<p class="imagen_centro"><a href="ampliadas/cypecad_04.htm" target="_blank"><img src="imagen/CYPECAD/cypecad_04_300.png" alt="CYPECAD - Entrada de pantalla. Pulse para ampliar imagen" border="0" /></a></p>
+<p class="imagen_centro"><a href="ampliadas/cypecad_15.htm"  target="_blank"><img src="imagen/CYPECAD/cypecad_15_300.png" alt="CYPECAD - Huecos en muros. Pulse para ampliar imagen" border="0" /></a></p>
+</div>
+<h2 class="subtitulo">Soportes</h2>
+<p>Los soportes estructurales que CYPECAD analiza y dimensiona son:</p>
+<p>&nbsp;</p>
+ <ul>
+  <li><strong>Pilares</strong><br />
+    <br />
+<ul>
+                      <li><strong>Pilares de hormig&oacute;n armado<br />
+                        </strong>De sección
+rectangular y circular o genérica poligonal.<br />
+<br />
+                        <a href="http://cypecad.cype.es/cypecad_pilares_hormigon.htm">Más información</a><br />
+                        <br />
+                      </li>
+                      <li><strong>Pilares met&aacute;licos</strong><br />
+                        Laminados, armados y conformados.
+                        <br />
+                        <br />
+                        <a href="http://cypecad.cype.es/cypecad_pilares_metalicos.htm">Más información</a> <br />
+                        <br />
+                      </li>
+                      <li><strong>Pilares mixtos de hormigón y acero</strong><br />
+                        Con perfil embebido
+                        en hormigón o secciones de perfiles cerradas rellenas de hormigón.<br />
+                        <br />
+                        <a href="http://pilares-mixtos-hormigon-acero.cype.es/">Más información</a><br />
+                        <br />
+                      </li>
+                      <li><strong>Pilares de madera</strong><br />
+                        De sección rectangular y circular.<br />
+                        <br />
+                        <a href="http://pilares-de-madera.cype.es/">Más información</a><br />
+  <br />
+                  </li>
+                </ul>
+  </li>
+  <li><strong>Pantallas</strong><br />
+    <br />
+    <ul>
+      <li><strong>Rectangulares</strong><br />
+        <br />
+      </li>
+      <li><strong>Cualquier forma geom&eacute;trica compuesta por rect&aacute;ngulos</strong><br />
+        <br />
+        <br />
+        <br />
+      </li>
+    </ul>
+  </li>
+  <li><strong>Muros</strong><br />
+    <br />
+    <ul>
+      <li><b>Muros de hormig&oacute;n armado</b><br />
+        <br />
+      </li>
+      <li><b>Muros de tensión plana<br />
+        </b><a href="http://cypecad.cype.es/cypecad_muros_de_tension_plana.htm">Más información<b>        <br />
+        </b></a><b><br />
+        </b></li>
+      <li><b>        Muros
+        de f&aacute;brica gen&eacute;ricos</b><br />
+        <br />
+        </li>
+      <li><b>Muros de bloques de hormig&oacute;n<br />
+        </b>Pueden dimensionarse con
+        o sin armadura. El usuario puede indicar las dimensiones de los bloques o utilizar bloques de fabricantes como NORMABLOC (Asociaci&oacute;n Nacional de Fabricantes
+        de Bloques y Mamposter&iacute;a de Hormig&oacute;n).<br />
+        <br />
+        </li>
+      </ul>
+    Los muros pueden tener huecos. El programa calcula los refuerzos necesarios en los huecos de muros de hormigón armado (dintel, antepecho, laterales y diagonales) y el armado del dintel en el caso de que los huecos se introduzcan en muros de bloques de hormigón. Además, es posible obtener los listados de las comprobaciones realizadas en el cálculo de estos refuerzos en pantalla y por impresora.<br />
+  <br />
+    También se calculan la viga de coronación en todos los tipos de muro y la viga intermedia a nivel de planta en muros de fábrica genéricos y muros de bloques de hormigón.  </li>
+  </ul>
+<p class="quitar_alineacion">&nbsp;</p>
+<p><span class="subtitulo"><a name="vigas"></a></span></p>
+<div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+  <p class="imagen_centro"><a href="ampliadas/cypecad_vigas_hormigon_01.htm" title="CYPECAD - Vigas de hormigón. Pulse para ampliar imagen" target="_blank"><img src="imagen/CYPECAD/modulos/vigas_hormigon_01_300.png" alt="CYPECAD - Vigas de hormigón. Pulse para ampliar imagen" border="0" /></a></p>
+  <p class="imagen_centro"><a href="ampliadas/cypecad_03.htm"  target="_blank"><img src="imagen/cypecad/cypecad_03_200.gif" alt="CYPECAD - Despiece. Pulse para ampliar imagen" border="0" /></a></p>
+</div>
+<h2 class="subtitulo">Vigas</h2>
+                    <p>Las vigas de los forjados pueden ser de hormig&oacute;n,
+                      met&aacute;licas (de alma llena o aligerada), mixtas y de madera. Adem&aacute;s, podr&aacute; introducir <b>m&eacute;nsulas
+                        cortas</b>.</p>
+                    <p>&nbsp;</p>
+                    <ul>
+                      <li><strong>Vigas de hormigón</strong><br />
+                        <a href="http://cypecad.cype.es/cypecad_vigas_hormigon.htm">Más información</a><br />
+                      <br />
+                      </li>
+                      <li><strong>Vigas met&aacute;licas y mixtas</strong><br />
+                        <a href="http://cypecad.cype.es/cypecad_vigas_metalicas.htm">Más información</a><br />
+                      <br />
+                      </li>
+                      <li><strong>Vigas de madera</strong><br />
+                      <a href="http://vigas-de-madera.cype.es/">Más información</a><br />
+                      <br />
+                      </li>
+                    </ul>
+                    <p class="quitar_alineacion">&nbsp;</p>
+                    <p><span class="subtitulo"><a name="forjados"></a></span></p>
+<div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+  <p class="imagen_centro"><a href="ampliadas/cypecad_02.htm" title="CYPECAD. Forjados de viguetas. Pulse para ampliar imagen" target="_blank"><img src="imagen/cypecad/cypecad_02_300.png" alt="CYPECAD. Forjados de viguetas" border="0" /></a></p>
+  <p class="imagen_centro"><a href="ampliadas/cypecad_61.htm" title="CYPECAD. Forjados reticulares. Pulse para ampliar imagen" target="_blank"><img src="imagen/CYPECAD/cypecad_61_300.png" alt="CYPECAD. Forjados reticulares" border="0" /></a></p>
+  <p class="imagen_centro"><a href="ampliadas/cypecad_losas_postesadas_10.htm" title="CYPECAD. Losas postesadas para edificación. Vistas 3D de tendones postesados. Pulse para ampliar la imagen" target="_blank"><img src="imagen/CYPECAD/modulos/postesadas/losas_postesadas_10_300.png" alt="CYPECAD. Losas postesadas para edificación. Vistas 3D de tendones postesados" border="0" /></a></p>
+</div>
+<h2 class="subtitulo">Forjados</h2>
+<p>Con CYPECAD es posible dimensionar forjados:</p>
+                    <ul>
+                      <li><strong>Unidireccionales</strong><br />
+                        <br />
+                        <ul>
+                          <li> De vigueta de hormigón<br />
+                            <br />
+                            <ul>
+                              <li>                                <a href="http://cypecad.cype.es/cypecad_forjado_unidireccional.htm">Genéricas</a><br />
+                              </li>
+                              <li><a href="http://cypecad.cype.es/cypecad_forjado_viguetas_in_situ_prefabricadas_metalicas.htm">Prefabricadas armadas</a><br />
+                              </li>
+                              <li><a href="http://cypecad.cype.es/cypecad_forjado_viguetas_in_situ_prefabricadas_metalicas.htm">Prefabricadas pretensadas</a><br />
+                              </li>
+                              <li><a href="http://cypecad.cype.es/cypecad_forjado_viguetas_in_situ_prefabricadas_metalicas.htm">In situ armadas</a><br />
+                              </li>
+                              <li><a href="http://descargas.cype.es/2019/version_2019_a.htm#Forjados_reticulares_y_unidireccionales_postesados">In situ postesadas</a><br />
+                              </li>
+                            </ul>
+                          </li>
+                          <li><a href="http://cypecad.cype.es/cypecad_forjado_viguetas_in_situ_prefabricadas_metalicas.htm">De vigueta metálica</a></li>
+                          <li><a href="http://forjados-de-viguetas-de-madera.cype.es/">De vigueta de madera</a><br />
+                          </li>
+                          <li><a href="http://cypecad.cype.es/cypecad_forjado_viguetas_in_situ_prefabricadas_metalicas.htm">JOIST, Celosía metálica</a><br />
+                            <br />
+                          </li>
+                        </ul>
+                      </li>
+                      <li><strong>Losa maciza</strong><br />
+                        <br />
+                        <ul>
+                          <li>Armadas</li>
+                          <li><a href="http://cypecad.cype.es/cypecad_losas_postesadas_edificacion.htm">Postesadas</a><br />
+                            <br />
+                          </li>
+                        </ul>
+                      </li>
+                      <li><strong>Reticulares</strong><br />
+                        <br />
+                        <ul>
+                          <li>Armados</li>
+                          <li><a href="http://descargas.cype.es/2019/version_2019_a.htm#Forjados_reticulares_y_unidireccionales_postesados">Postesados</a><strong> <br />
+                          </strong><br />
+                      </li>
+                        </ul>
+                      </li>
+                      <li><strong>Placa aligerada (alveolar)</strong><br />
+                        <br />
+                      </li>
+                      <li><strong>Losas mixtas (steel deck)</strong><br />
+                        <br />
+                        <br />
+                      </li>
+                    </ul>
+                    <p>CYPECAD permite realizar la comprobación del Estado Límite de Agotamiento frente a punzonamiento en forjados reticulares, en forjados de losa maciza y en losas de cimentación mediante dos métodos: Comprobación de tensiones tangenciales puntuales y Comprobación según criterios normativos. <a href="http://cypecad.cype.es/CYPECAD_comprobacion_punzonamiento.htm">Más información sobre la comprobación de punzonamiento</a><a href="http://cypecad.cype.es/CYPECAD_comprobacion_punzonamiento.htm"></a>.</p>
+                    <p class="quitar_alineacion">&nbsp;</p>
+                    <p><span class="subtitulo"><a name="escaleras" id="escaleras"></a></span></p>
+<div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+<p class="imagen_centro">
+  <script type="text/javascript">
+							AC_AX_RunContent( 'width','300','height','182','src','http://www.youtube.com/v/HQBH_TbkraY&hl=es_ES&fs=1&rel=0','type','application/x-shockwave-flash','allowscriptaccess','always','allowfullscreen','true','movie','http://www.youtube.com/v/HQBH_TbkraY&hl=es_ES&fs=1&rel=0' ); //end AC code
+						</script>
+  <noscript>
+    <object width="300" height="182">
+      <param name="movie" value="http://www.youtube.com/v/HQBH_TbkraY&hl=es_ES&fs=1&rel=0"></param>
+      <param name="allowFullScreen" value="true"></param>
+      <param name="allowscriptaccess" value="always"></param>
+      <embed src="http://www.youtube.com/v/HQBH_TbkraY&hl=es_ES&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed>
+    </object>
+    </noscript>
+  
+</p>
+<p class="imagen_centro">&nbsp;</p>
+<p class="imagen_centro"><a href="ampliadas/cypecad_31.htm" title="CYPECAD. Escaleras. Pulse para ampliar imagen" target="_blank"><img src="imagen/CYPECAD/cypecad_31_300.png" alt="CYPECAD. Escaleras" border="0"/></a>
+</p>
+<p class="imagen_centro"><a href="ampliadas/cypecad_60.htm" title="CYPECAD. Escaleras. Pulse para ampliar imagen" target="_blank"><img src="imagen/CYPECAD/cypecad_60_210.png" alt="CYPECAD. Escaleras" border="0"/></a>
+</p>
+<p class="imagen_centro">
+
+</p>
+</div>
+<h2 class="subtitulo">Escaleras</h2>
+                    <p>&nbsp;</p>
+                    <p>CYPECAD calcula y dimensiona armaduras de losas de  escaleras de tiros rectos y curvos como elementos aislados de la estructura. Según la geometría,  tipo y disposición de los apoyos y las cargas gravitatorias aplicadas, el  programa determina las reacciones sobre la estructura principal, que se  traducen en cargas lineales y superficiales (para los recrecidos) en las  hipótesis de carga permanente y sobrecarga de uso.</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>El programa calcula las escaleras por el método de los elementos  finitos, considerando las dos hipótesis habituales para el cálculo de  escaleras: cargas permanentes y sobrecarga de uso.</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>CYPECAD muestra en pantalla el armado de cada uno de los tramos que componen el núcleo de escaleras. También es posible consultar, en una vista  tridimensional, los desplazamientos, esfuerzos, y ver la deformada de cada tramo. </p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p><strong>MÁS INFORMACIÓN EN:</strong></p>
+                    <p>&nbsp;</p>
+                    <ul>
+                      <li>Novedades 2008.1 - <a href="http://20081.novedades.cype.es/novedades_20081_cypecad.htm#moduloEscaleras">Módulo Escaleras de hormigón armado</a><br />
+                        <br />
+                      </li>
+                      <li>Novedades 2009.1 - <a href="http://20091.novedades.cype.es/20091_cypecad.htm#escaleras">Mejoras en la introducción de datos de escaleras</a><br />
+                        <br />
+                      </li>
+                      <li>Novedades 2017.c - <a href="http://descargas.cype.es/2017/version_2017_c.htm#Escaleras_curvas">Escaleras curvas</a><br />
+                        <br />
+                        <br />
+                      </li>
+                    </ul>
+                    <p class="quitar_alineacion">&nbsp;</p>
+<p class="imagen_centro">
+<a href="ampliadas/cypecad_33.htm" title="CYPECAD. Escaleras. Pulse para ampliar imagen" target="_blank"><img src="imagen/CYPECAD/cypecad_33_300.png" alt="CYPECAD. Escaleras" hspace="20" border="0"  /></a>
+<a href="ampliadas/cypecad_32.htm" title="CYPECAD. Escaleras. Pulse para ampliar imagen" target="_blank"><img src="imagen/CYPECAD/cypecad_32_300.png" alt="CYPECAD. Escaleras" hspace="20" border="0" /></a>
+</p>
+                    <p>&nbsp;</p>
+<p class="quitar_alineacion"> </p>
+                    <p><span class="subtitulo"><a name="cimentacion"></a></span></p>
+                    <div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+<p class="imagen_centro">&nbsp;
+</p>
+<p class="imagen_centro"><a href="ampliadas/cimentaciones_zapatas_05.htm" title="CYPECAD. Cálculo y dimensionamiento de zapatas, correas de atado y vigas centradoras. Pulse para ampliar la imagen" target="_blank"><img src="imagen/cimentaciones/zapatas_05_300.png" alt="CYPECAD. Cálculo y dimensionamiento de zapatas, correas de atado y vigas centradoras" border="0" /></a>
+</p>
+<p class="imagen_centro">
+<a href="ampliadas/cimentaciones_zapatas_06.htm" title="CYPECAD. Cálculo y dimensionamiento de zapatas, correas de atado y vigas centradoras. Pulse para ampliar la imagen" target="_blank"><img src="imagen/cimentaciones/zapatas_06_300.png" alt="CYPECAD. Cálculo y dimensionamiento de zapatas, correas de atado y vigas centradoras" border="0" /></a>
+</p>
+<p class="imagen_centro"> <a href="ampliadas/cypecad_05.htm" title="CYPECAD. Encepados. Pulse para ampliar la imagen" target="_blank"><img src="imagen/CYPECAD/cypecad_05_300.png" alt="CYPECAD. Encepados" border="0" /></a> </p>
+<p class="imagen_centro"> <a href="ampliadas/cimentaciones_losas_01.htm" title="CYPECAD. Losas de cimentación. Pulse para ampliar la imagen" target="_blank"><img src="imagen/cimentaciones/losas_cimentacion_01_300.png" alt="CYPECAD. Losas de cimentación" border="0" /></a></p>
+<p class="imagen_centro"> <a href="ampliadas/unionSoldada_T39_07.htm" title="CYPECAD. Cimentación. Placas de anclaje. Pulse para ampliar la imagen" target="_blank"><img src="imagen/nuevoMetal3D/union_soldada_T39_07_200.gif" alt="CYPECAD. Cimentación. Placas de anclaje" border="0" /></a></p>
+                    </div>
+<h2 class="subtitulo">Cimentaci&oacute;n</h2>
+                    <p>La cimentación que dimensiona CYPECAD puede ser: fija (por zapatas
+                      o encepados) o flotante (con vigas y losas de cimentaci&oacute;n, definiendo el coeficiente de balasto al aplicar la teor&iacute;a de
+                      Winkler).</p>
+                    <p>&nbsp;</p>
+                    <p>Además, el programa permite calcular s&oacute;lo la cimentaci&oacute;n (sin estructura superior) mediante la introducción de arranques de pilares.</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <ul>
+                      <li><strong>Zapatas</strong><br />
+                        Pueden ser de hormigón armado o de hormigón en masa, aisladas o combinadas de múltiples soportes (pilares, pantallas y muros), con libre disposición sobre el mismo elemento de cimentación.<br />
+                        <br />
+                        <br />
+                        <br />
+                      </li>
+                      <li><strong>Encepados</strong> <br />
+                        Admiten múltiples soportes (pilares, pantallas y muros), con libre disposición sobre el mismo elemento de cimentación.<br />
+                        La tipología de los encepados es muy amplia:<br />
+                        <br />
+                        <br />
+                        <ul>
+                          <li> Encepados
+                            rectangulares de uno, dos, cuatro y cinco pilotes</li>
+                          <li>  Encepados triangulares de tres pilotes</li>
+                          <li>  Encepados
+                            lineales de tres a treinta pilotes</li>
+                          <li> Encepados
+                            rectangulares de múltiples pilotes (distribución mallada
+                            de tres a treinta pilotes por lado) </li>
+                          <li> Encepados
+                            pentagonales de cinco o seis pilotes </li>
+                          <li> Encepados
+                            hexagonales con seis o siete pilotes <br />
+                            <br />
+                            <br />
+                          </li>
+                        </ul>
+                      </li>
+                      <li><strong>Vigas centradoras y correas de atado</strong><br />
+                        Act&uacute;an
+                      sobre zapatas y  encepados.<br />
+                      <br />
+                      <br />
+                      <br />
+                      </li>
+                      <li><strong>Losas y vigas de cimentación</strong><br />
+                        Se consideran apoyadas sobre un suelo elástico (método del coeficiente de balasto), de acuerdo al modelo de Winkler, basado en una constante de proporcionalidad entre fuerzas y desplazamientos, cuyo valor es el coeficiente de balasto.<br />
+                        <br />
+                        <br />
+                        Las vigas y losas de cimentación forman parte de la globalidad de la estructura por lo que interaccionan con el resto de la estructura (forman parte de la matriz global de rigidez de la estructura). Por tanto, se pueden aplicar cargas sobre dichos elementos, al igual que sobre cualquier viga o losa de la estructura de la que forman parte.<br />
+                        <br />
+                        <br />
+                        Los estados límite a comprobar son los correspondientes al dimensionado de elementos de hormigón armado (estados límite últimos), y a la comprobación de tensiones, equilibrio y despegue (estados límite de servicio).<br />
+                        <br />
+                        <br />
+                        CYPECAD realiza la comprobación de cortante y punzonamiento en las losas y vigas de cimentación.<br />
+                        <br />
+                        <br />
+<br />
+                      </li>
+                      <li><b>Placa de anclaje<br />
+                      </b>Para cualquier disposici&oacute;n de
+                      pilar met&aacute;lico (perfiles simples y compuestos).<br />
+                      <br />
+                      <br />
+                      <br />
+                      </li>
+                    </ul>
+<p><strong>MÁS INFORMACIÓN:</strong></p>
+<ul>
+  <li><a href="http://cimentaciones.cype.es/">Cálculo y dimensionamiento de cimentaciones</a><br />
+    Descripción general.</li>
+  <li><a href="http://cimentaciones.cype.es/zapatas.htm">Cálculo y dimensionamiento de zapatas</a><br />
+  Incluye referencias a vigas  centradoras y correas de atado.</li>
+  <li><a href="http://cimentaciones.cype.es/encepados_sobre_pilotes.htm">Cálculo y dimensionamiento de encepados sobre pilotes</a><br />
+  Incluye referencias a vigas  centradoras y correas de atado.</li>
+  <li><a href="http://cimentaciones.cype.es/calculo_avanzado_de_cimentaciones_superficiales.htm">Cálculo avanzado de cimentaciones superficiales</a><br />
+  Módulo que complementa a cálculo y dimensionado de zapatas y encepados.</li>
+  <li><a href="http://cypecad.cype.es/CYPECAD_comprobacion_punzonamiento.htm">Comprobación de punzonamiento en CYPECAD</a><br />
+    En forjados reticulares, en forjados de losa maciza y en losas de cimentación.</li>
+  <li><a href="http://cype3d.cype.es/#placas_anclaje">Placas de anclaje</a>.<br />
+    <br />
+  </li>
+  </ul>
+<p class="quitar_alineacion">&nbsp;</p>
+  <p><span class="subtitulo"><a name="uniones" id="uniones"></a></span></p>
+<div style="width:230px; float:right;  text-align:right; margin-left:20px;">
+  <p class="imagen_centro"><a href="http://uniones.cype.es/ampliadas/nuevoMetal3D_T23.htm" target="_blank"><img src="http://programas.cype.es/imagen/nuevoMetal3D/T23_pilar_2dintel_empotrada_cartela_1viga_pasante_200.gif" title="Unión soldada de pilar con dos dinteles empotrados con cartelas, y con una viga ortogonal articulada (pilar pasante)" alt="Unión soldada de pilar con dos dinteles empotrados con cartelas, y con una viga ortogonal articulada (pilar pasante)" border="0" /></a></p>
+  <p class="imagen_centro"><a href="http://uniones.cype.es/ampliadas/union_II_atornillada_2043.htm" target="_blank"><img src="http://programas.cype.es/imagen/nuevoMetal3D/uniones_II_atornilladas_2043_200.gif" title="Unión atornillada de pilar con dintel con cartela inferior empotrado mediante chapa frontal, y con una viga ortogonal articulada mediante chapa lateral  (en transición de pilares)" alt="Unión atornillada de pilar con dintel con cartela inferior empotrado mediante chapa frontal, y con una viga ortogonal articulada mediante chapa lateral  (en transición de pilares)" border="0" /></a></p>
+<p class="imagen_centro"><a href="http://uniones.cype.es/ampliadas/union_III_soldada_33.htm" target="_blank"><img src="http://programas.cype.es/imagen/cypecad/modulos/uniones_III_soldadas_33_200.gif" title="Unión soldada de una viga empotrada al ala del pilar (en transición de pilares), y con una viga ortogonal articulada" alt="Unión soldada de una viga empotrada al ala del pilar (en transición de pilares), y con una viga ortogonal articulada" border="0" /></a></p>
+<p class="imagen_centro"></p>
+  <p>&nbsp;</p>
+</div>
+  <p>&nbsp;</p>
+<h2 class="subtitulo">Uniones soldadas y atornilladas</h2>
+					<p>CYPECAD y CYPE 3D disponen de cinco módulos para el cálculo y dimensionamiento de uniones de perfiles metálicos.</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<ul>
+					  <li><strong>Uniones
+				      I. Soldadas. Naves con perfiles laminados y armados en doble T</strong><br />
+				      <strong><a href="http://cype3d.cype.es/uniones_soldadas.htm">MÁS INFORMACION</a></strong><br />
+				      <br />
+				      <br />
+                      </li>
+					  <li><strong>Uniones
+				      II. Atornilladas. Naves con perfiles laminados y armados en doble T</strong><br />
+				      <strong><a href="http://cype3d.cype.es/uniones_atornilladas.htm">MÁS INFORMACION</a></strong><br />
+				      <br />
+				      <br />
+                      </li>
+					  <li><strong>Uniones
+	          III. Soldadas. Pórticos de edificación con perfiles laminados y armados en doble T</strong><br />
+	          <strong><a href="http://cypecad.cype.es/uniones_soldadas_edificacion.htm">MÁS INFORMACION</a></strong><br />
+				      <br />
+				      <br />
+                      </li>
+					  <li><strong>Uniones
+			          IV. Atornilladas. Pórticos de edificación con perfiles laminados y armados en doble T</strong><br />
+			          <strong><a href="http://cypecad.cype.es/uniones_atornilladas_edificacion.htm">MÁS INFORMACION</a></strong><br />
+				      <br />
+				      <br />
+                      </li>
+					  <li><strong>Uniones V. Celosías planas con perfiles tubulares</strong><br />
+					    <a href="http://uniones.cype.es/uniones_celosias_planas_perfiles_tubulares.htm"><strong>MÁS INFORMACION</strong></a><br />
+				      <br />
+				      <br />
+				      <br />
+					  </li>
+				    </ul>
+					<p class="quitar_alineacion">&nbsp;</p>
+<p class="imagen_centro">
+<a href="http://programas.cype.es/ampliadas/uniones_V_celosias_planas_5015.htm" target="_blank"><img src="http://programas.cype.es/imagen/uniones/uniones_V_celosias_planas_5015_200.gif" title="Nudo en L" alt="Nudo en L" border="0" /></a><a href="http://programas.cype.es/ampliadas/uniones_V_celosias_planas_5009.htm" target="_blank"><img src="http://programas.cype.es/imagen/uniones/uniones_V_celosias_planas_5009_200.png" title="Nudo KT con espaciamiento" alt="Nudo KT con espaciamiento" border="0" /></a>
+<a href="http://uniones.cype.es/ampliadas/uniones_IV_atornillada_4048.htm" target="_blank"><img src="http://programas.cype.es/imagen/uniones/uniones_IV_atornillada_4048_200.png" title="Empalme de dos piezas mediante cubrejuntas atornillados (cubrejuntas exterior en las alas)" alt="Empalme de dos piezas mediante cubrejuntas atornillados (cubrejuntas exterior en las alas)" border="0" /></a></p>
+					<p class="quitar_alineacion">&nbsp;</p>
+<p>Los módulos Uniones I, Uniones
+				         II y Uniones V tiene mayor campo de aplicación en las naves diseñadas en CYPE
+                      3D y en las Estructuras 3D integradas de CYPECAD, mientras que la tipología
+                      de uniones que dimensionan los módulos Uniones III y Uniones IV tienen un campo de aplicación
+                      más amplio en las estructuras de edificación formadas por pórticos que
+                      se calculan en CYPECAD.</p>
+<p>En cualquier caso, los módulos Uniones I, Uniones II, Uniones III y Uniones IV tienen tipos de uniones
+  comunes que se resuelve del mismo modo en cada módulo.</p>
+<p class="quitar_alineacion">&nbsp;</p>
+<h1 class="titulo"><a name="solicitaciones" id="solicitaciones"></a><a name="calculo"></a>Análisis de solicitaciones</h1>
+                    <p>El análisis de las solicitaciones se realiza mediante un cálculo espacial en 3D, por métodos matriciales de rigidez, formando todos los elementos que definen la estructura: pilares, pantallas H.A., muros, vigas y forjados.</p>
+                    <p>Se establece la compatibilidad de deformaciones en todos los nudos, considerando 6 grados de libertad, y se crea la hipótesis de indeformabilidad del plano de cada planta, para simular el comportamiento rígido del forjado, impidiendo los desplazamientos relativos entre nudos del mismo (diafragma rígido). Por tanto, cada planta sólo podrá girar y desplazarse en su conjunto (3 grados de libertad).</p>
+                    <p>La consideración de diafragma rígido para cada zona independiente de una planta se mantiene aunque se introduzcan vigas, y no forjados, en la planta, salvo para las vigas exentas que el usuario desconecte del diafragma rígido y salvo para los muros que no estén en contacto con forjados (a partir de la v.2012.a). En la página web &quot;<a href="http://cypecad.cype.es/cypecad_diafragma_rigido.htm">Diafragma rígido a nivel de planta en CYPECAD</a>&quot; puede encontrar más información al respecto.</p>
+                    <p>Cuando en una misma planta existan zonas independientes, se considerará cada una de éstas como una parte distinta de cara a la indeformabilidad de esa zona y no se tendrá en cuenta en su conjunto. Por tanto, las plantas se comportarán como planos indeformables independientes. Un pilar no conectado se considera zona independiente.</p>
+                    <p>Para todos los estados de carga se realiza un cálculo estático (excepto cuando se consideran acciones dinámicas por sismo, en cuyo caso se emplea el análisis modal espectral) y se supone un comportamiento lineal de los materiales y, por tanto, un cálculo de primer orden, de cara a la obtención de desplazamientos y esfuerzos.</p>
+                    <p>En las Estructuras 3D integradas dispondrá siempre de 6 grados de libertad por nudo. <a href="http://union-cypecad-metal3d.cype.es/">Más información sobre estructuras 3D integradas</a>.</p>
+                    <p>Las escaleras también disponen de 6 grados de libertad y se resuelven de forma aislada. El  programa determina las reacciones sobre la estructura principal, que se  traducen como cargas lineales y superficiales (en el caso de los recrecidos) en las  hipótesis de carga permanente y sobrecarga de uso. <a href="http://cypecad.cype.es/#escaleras">Más información sobre escaleras</a>.</p>
+                    <p>En el manual &quot;CYPECAD – Memoria de cálculo&quot; puede encontrar  información detallada sobre este aspecto. El manual es accesible desde el menú principal de los programas de CYPE o desde el menú desplegable &quot;Ayuda&quot; de CYPECAD.</p>
+                    <p class="quitar_alineacion">&nbsp;</p>
+                    <p><span class="titulo"><a name="sismico" id="sismico"></a></span></p>
+<div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+    <p class="imagen_centro"><a href="ampliadas/cypecad_datos_generales_03.htm" title="CYPECAD. Datos generales" target="_blank"><img src="imagen/cypecad_datos_generales/cypecad_datos_generales_03_300.png" alt="CYPECAD. Datos generales" border="0" /></a></p>
+</div>
+                    <h1 class="titulo">Cálculo sísmico</h1>
+                    <p>El cálculo sísmico se realiza mediante un análisis modal
+                      espectral completo que resuelve cada modo como una hipótesis y realiza
+                    la expansión modal y la combinación modal para la obtención de esfuerzos.</p>
+                    <p>&nbsp;</p>
+                    <p>Más información en <strong><a href="http://cypecad.cype.es/cypecad_calculo_sismico.htm">CYPECAD. Cálculo sísmico</a></strong>:</p>
+                    <ul>
+                      <li>Efecto de los elementos no estructurales en el comportamiento sísmico del edificio </li>
+                      <li>Criterios de diseño sísmico por capacidad para soportes vigas y losas</li>
+                      <li>Corrección por cortante basal</li>
+                      <li>Periodo fundamental de la estructura con valores de usuario</li>
+                      <li>Espectro sísmico especificado por el usuario</li>
+                    </ul>
+<p>&nbsp;</p>
+                    <p>También, dispone de información detallada del cálculo sísmico en el manual &quot;CYPECAD – Memoria de cálculo&quot;, accesible desde el menú principal de los programas de CYPE o desde el menú desplegable &quot;Ayuda&quot; de CYPECAD.</p>
+                    <p>&nbsp;</p>
+                    <p class="quitar_alineacion">&nbsp;</p>
+<h1 class="titulo"><a name="resistencia_fuego" id="resistencia_fuego"></a>Comprobación de resistencia al fuego</h1>
+                    <div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+                      <p class="imagen_centro"><a href="ampliadas/cypecad_35.htm" target="_blank"><img src="imagen/CYPECAD/cypecad_35_300.png" alt="CYPECAD - Comprobación de resistencia al fuego. Pulse para ampliar imagen" border="0" /></a></p>
+                    </div>
+<p>Con el módulo &quot;Comprobación de resistencia al fuego&quot;, CYPECAD y CYPE 3D realizan:                    </p>
+<ul>
+         <li><strong>Para elementos estructurales de acero y hormigón</strong><br />
+           La comprobación de resistencia al fuego y el  dimensionamiento de los revestimientos de protección para que cumplan con la normativa seleccionada.<br />
+           <br />
+         </li>
+         <li><strong>Para Perfiles de madera</strong><br />
+           La comprobación de resistencia al fuego y el dimensionamiento de las secciones de madera frente a la acción del fuego para que cumplan con la normativa seleccionada.<br />
+                <br />
+              </li>
+			        </ul>
+<p>Más información en <strong><a href="http://resistencia-al-fuego.cype.es/">Comprobación de resistencia al fuego</a></strong>.</p>
+<p class="quitar_alineacion">&nbsp;</p>
+                    <h1 class="titulo"><a name="analisis_de_resultados" id="analisis_de_resultados"></a><span class="subtitulo"><a name="Editor_avanzado_de_vigas" id="Editor_avanzado_de_vigas"></a></span>Análisis de resultados</h1>
+                    <div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+                      <p class="imagen_centro"><a href="ampliadas/cypecad_vigas_hormigon_17.htm" title="CYPECAD. Editor de vigas avanzado. Pulse para ampliar imagen" target="_blank"><img src="imagen/CYPECAD/modulos/vigas_hormigon_17_300.png" alt="CYPECAD. Editor de vigas avanzado" border="0" /></a></p>
+</div>
+                    <h2 class="subtitulo">Editor  de vigas</h2>
+                    <p>El editor de vigas muestra la información de un  pórtico y la actualiza automáticamente con los cambios realizados. Proporciona una edición gráfica, rápida y cómoda (armaduras de refuerzo, perfiles metálicos, macizados, celosías, conectores, etc.). Permite obtener:</p>
+                    <ul>
+                      <li>Listados detallados de comprobaciones E.L.U. y E.L.S. de vigas de hormigón (con comprobación de agotamiento por torsión y criterios de diseño por sismo)<br />
+                      </li>
+                      <li>Listados de E.L.U y E.L.S. de vigas metálicas<br />
+                      </li>
+                      <li>Gráficas de áreas de armadura, necesaria y efectiva</li>
+                      <li>Esquemas de doblado de las armaduras y configuración del despiece de armados en los planos de pórticos</li>
+                      <li>Huecos horizontales y verticales en vigas de hormigón</li>
+                      <li>Vigas de descolgadas rectangulares de sección variable<br />
+                        <br />
+                      </li>
+                    </ul>
+                    <p>Más información en <a href="http://cypecad.cype.es/cypecad_vigas_hormigon.htm#editores_de_vigas"><strong>Editores de vigas en CYPECAD</strong></a>.</p>
+                    <p class="quitar_alineacion">&nbsp;</p>
+                    <p><span class="subtitulo"><a name="Editor_avanzado_de_pilares" id="Editor_avanzado_de_pilares"></a></span></p>
+                    <div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+                      <p class="imagen_centro"><a href="ampliadas/cypecad_pilares_hormigon_24.htm" title="CYPECAD. Editor de pilares avanzado. Pulse para ampliar imagen" target="_blank"><img src="imagen/CYPECAD/modulos/pilares_hormigon_24_300.png" alt="CYPECAD. Editor de pilares avanzado" border="0" /></a></p>
+</div>
+<h2 class="subtitulo">Editor de pilares</h2>
+<p>CYPECAD dispone de un editor de armados de pilares que:</p>
+<ul>
+  <li>Muestra toda la información relacionada con su dimensionamiento y comprobación incluyendo la generación de listados detallados de comprobaciones de estados límite últimos (E.L.U.).</li>
+  <li>Permite organizar las agrupaciones del cuadro de pilares.</li>
+  <li>Comprueba todas las modificaciones realizadas.</li>
+  <li>Redimensiona los pilares de hormigón armado y metálicos.<br />
+    <br />
+  </li>
+</ul>
+<p>Más información en <strong><a href="http://cypecad.cype.es/cypecad_pilares_hormigon.htm#Analisis_de_resultados">Editores de pilares en CYPECAD</a></strong>.</p>
+<p>&nbsp;</p>
+<p class="quitar_alineacion">&nbsp;</p>
+<p><span class="subtitulo"><a name="Otras_herramientas_analisis_resultados" id="Otras_herramientas_analisis_resultados"></a></span></p>
+<div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+<p class="imagen_centro"><a href="ampliadas/cypecad_13.htm" title="CYPECAD - Deformada de la estructura en 3D. Pulse para ampliar imagen" target="_blank"><img src="imagen/cypecad/cypecad_13_300.png" alt="CYPECAD - Deformada de la estructura en 3D" border="0" /></a></p>
+<p class="imagen_centro"><a href="ampliadas/cypecad_08.htm" title="CYPECAD - Isovalores. Pulse para ampliar imagen" target="_blank"><img src="imagen/cypecad/cypecad_08_300.png" alt="CYPECAD - Isovalores" border="0" /></a></p>
+<p class="imagen_centro"><a href="ampliadas/cypecad_09.htm" title="CYPECAD - Vistas de armaduras. Pulse para ampliar imagen" target="_blank"><img src="imagen/cypecad/cypecad_09_300.png" alt="CYPECAD - Vistas de armaduras" border="0" /></a></p>
+</div>
+<h2 class="subtitulo">Otras herramientas de análisis de resultados</h2>
+<p>&nbsp;</p>
+<p>Dispone de numerosas herramientas que permiten comprobar todos los resultados gráficos en pantalla.</p>
+<p>&nbsp; </p>
+<p>Tras el cálculo es posible visualizar la deformada de la estructura en 3D (con escala de colores), producida por las hipótesis simples o por combinaciones de hipótesis. También es posible observar una animación del proceso de deformación que produce la combinación de hipótesis seleccionada.</p>
+<p>&nbsp;</p>
+<p>Los desplazamientos, esfuerzos, combinaciones de esfuerzos y cuantías de losas macizas, losas de cimentación y forjados reticulares se pueden representar en diagramas de isovalores (gráficos de colores en el que cada color representa un valor) y en diagramas de isolíneas (curvas que unen puntos geométricos con el mismo valor).</p>
+<p>&nbsp;</p>
+<p>Realiza también la consulta gráfica de envolventes de esfuerzos, flechas, etc.</p>
+<p>&nbsp;</p>
+<p>Puede modificar los armados de todos los elementos con la consiguiente comprobación en zapatas, encepados, vigas, pilares y forjados de viguetas.</p>
+<p>&nbsp;</p>
+<p>Puede igualar automáticamente los armados de negativos en forjados de viguetas, teniendo en cuenta criterios de longitudes o cuantías y longitudes. De ese modo, obtiene armados más uniformes y, por tanto, de mayor facilidad constructiva.</p>
+<p>&nbsp;</p>
+<p>Modifica los armados de reticulares y losas por medio de tablas a la vista. Puede copiar el armado de una planta a otra, modificar la geometría después del cálculo e introducir armaduras sin calcular.</p>
+<p>&nbsp;</p>
+<p>La edición de zapatas, encepados, placas de anclaje, y vigas centradoras y de atado es una herramienta muy potente que posibilita la comprobación de cualquier geometría y armado definido por el usuario. Permite obtener los listados de todas las comprobaciones efectuadas en la cimentación y observar su grado de cumplimiento. Es posible igualar la geometría, la tipología y los armados de zapatas, encepados, vigas centradoras, vigas de atado y placas de anclaje. <a href="#cimentacion">Más información de la cimentación</a>.</p>
+<p class="quitar_alineacion">&nbsp;</p>
+        
+<h1 class="titulo"><a name="Documentacion_obtenida" id="Documentacion_obtenida"></a>Documentación obtenida</h1>
+<h2 class="subtitulo"><a name="planos"></a>Planos </h2>
+<div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+<p class="imagen_centro"><a href="ampliadas/cypecad_10.htm" title="CYPECAD - Planos. Pulse para ampliar imagen" target="_blank"><img src="imagen/CYPECAD/cypecad_10_300.png" alt="CYPECAD - Planos" border="0" /></a></p>
+</div>
+<p>Los planos de proyecto se pueden configurar en diferentes formatos y tamaños de papel, ya sean estándar o definidos por el usuario. Además, se pueden dibujar por impresora, plotter o exportar a formato DXF y DWG. En los planos de planta es posible incluir los DXF o DWG que se han utilizado para definir la obra. Se pueden integrar en su totalidad o solamente las capas que se deseen, como por ejemplo las escaleras.</p>
+<p>En las plantas de la propia obra dispone de un editor de dibujo, que permite utilizar múltiples recursos: añadir cotas, textos, secciones del edificio, detalles constructivos en formato DXF, secciones de forjado, modificar la situación de textos, etc. Estas modificaciones se graban con el proyecto.</p>
+<p>CYPECAD posee una extensa biblioteca de detalles constructivos metálicos, de hormigón, mixtos y de forjados inclinados disponibles para incorporar a cualquiera de los planos generados por el programa. También puede adquirir esta biblioteca editada en dos volúmenes que incluye los detalles en formato DXF y DWG. Más información: </p>
+<ul>
+  <li><a href="http://publicaciones.cype.es/detallesinclinados/">Biblioteca Detalles Constructivos, Forjados inclinados</a></li>
+  <li><a href="http://publicaciones.cype.es/detalles4/">Biblioteca de Detalles Constructivos met&aacute;licos, de hormig&oacute;n y mixto</a><br />
+    <br />
+  </li>
+</ul>
+<p>Puede aplicar cualquier escala, grosor de trazos, tamaño de letra, cajetín, etc. De esta forma puede personalizar completamente el dibujo del plano.</p>
+<p>CYPECAD proporciona planos completos y claros. Puede obtener planos de replanteo, de planta, de cimentación, de vigas, cuadro de pilares, despiece de pilares y pantallas, cargas a cimentación, alzado de muros, despiece de escaleras, cargas, ménsulas cortas, etc. Incluyen de modo opcional las tablas de medición y el despiece de armaduras. Son configurables para que cada usuario obtenga los planos ajustados a sus necesidades. CYPECAD dispone de un editor que permite mover textos durante la visualización de los planos en pantalla.</p>
+<p class="quitar_alineacion">&nbsp;</p>
+<p><span class="subtitulo"><a name="listados"></a></span></p>
+<div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+<p class="imagen_centro"><a href="ampliadas/cypecad_11.htm" title="CYPECAD - Listados. Pulse para ampliar imagen" target="_blank"><img src="imagen/cypecad/cypecad_11_300.png" alt="CYPECAD - Listados" border="0" /></a></p>
+</div>
+<h2 class="subtitulo">Listados</h2>
+<p>Obtendrá con gran facilidad los listados de todos los datos introducidos y de los resultados: listado de datos de obra, combinaciones usadas en el cálculo, de cimentación, ménsulas cortas, envolventes, armados y medición de todos los elementos, cuantías de obra, cargas horizontales de viento, coeficientes de participación (sismo), efectos de segundo orden, etc.</p>
+<p>Todo ello se obtiene en pantalla o por impresora, pero también puede crear ficheros en formato HTML, DXF, DWG, RTF, PDF, etc.</p>
+<p>Entre los listados que se generan destacamos los siguientes:</p>
+<p>&nbsp;</p>
+<ul>
+  <li><a href="#estados_limite">Listados detallados de comprobaciones de estados límite últimos</a></li>
+  <li><a href="#justificacion_de_la_accion_del_viento">Listado de justificación de la acción del viento</a></li>
+</ul>
+<p class="quitar_alineacion">&nbsp;</p>
+<p><span class="subsubtitulo"><a name="estados_limite" id="estados_limite"></a></span></p>
+<div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+  <p class="imagen_centro">&nbsp;
+</p>
+  <p class="imagen_centro"><a href="ampliadas/estados_limite_ultimos_pilar_hormigon_10.htm" target="_blank"><img src="imagen/estados_limite_ultimos/estados_limite_ultimos_pilar_hormigon_10_200.png" alt="CYPECAD - Pilares metálicos. Pulse para ampliar imagen" hspace="10" border="0" /></a>
+  <a href="ampliadas/estados_limite_ultimos_pilar_hormigon_01.htm" target="_blank"><img src="imagen/estados_limite_ultimos/estados_limite_ultimos_pilar_hormigon_01_200.png" alt="CYPECAD - Pilares metálicos. Pulse para ampliar imagen" hspace="10" border="0" /></a>
+  </p>
+</div>
+<h3 class="subsubtitulo">Listados detallados de comprobaciones de estados límite últimos</h3>
+<p><a href="http://cypecad.cype.es/">CYPECAD</a>, <a href="http://cype3d.cype.es/">CYPE 3D</a> y <a href="http://porticos.cype.es/">Generador de pórticos</a> generan listados detallados de comprobaciones de estados límite últimos (E.L.U.). Los listados E.L.U. contienen todas las comprobaciones que estos programas realizan para dimensionar determinados elementos de hormigón, acero, aluminio o madera. Cada comprobación hace referencia
+                      a la norma y al artículo que la requiere, o al criterio que se ha tenido en cuenta para realizarla. El detalle de los  listados E.L.U. los convierte en  documentos esenciales con los que el usuario puede verificar,  justificar y optimizar  el dimensionamiento de los elementos estructurales analizados.</p>
+                    <p>El nivel de detalle de estos listados también les otorga un carácter didáctico que
+				    permite al usuario conocer todas las comprobaciones a las que está sometido
+				    un perfil.</p>
+				    <p><a href="http://estados-limite-ultimos.cype.es/"><strong>MÁS INFORMACIÓN</strong></a>.</p>
+				    <p class="quitar_alineacion">&nbsp;</p>
+				    <p><span class="subsubtitulo"><a name="justificacion_de_la_accion_del_viento" id="justificacion_de_la_accion_del_viento"></a></span></p>
+                    <div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+                      <p class="imagen_centro"><a href="http://www.cype.net/cypecad/justificacion_de_la_accion_del_viento_ASCE_SEI 7_05.pdf" title="CYPECAD. Justificación de la acción del viento con ASCE/SEI 7-05. Pulse para descargar PDF" target="_blank"><img src="imagen/CYPECAD/justificacion_accion_viento_02_125.png" alt="CYPECAD. Justificación de la acción del viento con ASCE/SEI 7-05" border="0" /></a></p>
+</div>
+				    <h3 class="subsubtitulo">Listado de justificación de la acción del viento</h3>
+				    <p>&nbsp;</p>
+				    <p>CYPECAD también genera listados de justificación de la acción del viento. Seleccionando la imagen que aparece a continuación puede descargar un PDF que muestra un ejemplo de este listado.				    </p>
+				    <p><strong><a href="http://justificacion-de-la-accion-del-viento.cype.es">MÁS INFORMACIÓN.</a></strong></p>
+				    <p class="quitar_alineacion">&nbsp;</p>
+				    <p><span class="subtitulo"><a name="medicion_y_presupuesto_en_cypecad" id="medicion_y_presupuesto_en_cypecad"></a><a name="medicion" id="medicion"></a></span></p>
+		            <div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+		              <p class="imagen_centro"><a href="ampliadas/cypecad_medicion_presupuestos_01.htm" title="Generación y exportación de la medición y presupuesto en CYPECAD. Pulse para ampliar la imagen" target="_blank"><img src="imagen/CYPECAD/modulos/mediciones_presupuestos_01_300.png" alt="Generación y exportación de la medición y presupuesto en CYPECAD" border="0" /></a></p>
+</div>
+                    <h2 class="subtitulo">Medici&oacute;n y presupuesto en CYPECAD</h2>
+		            <p>El presupuesto y la medición de la estructura calculada en CYPECAD puede generarse y exportarse
+		              a cualquiera de las versiones operativas de Arquímedes (Arquímedes, Arquímedes y Control
+		              de obra, Arquímedes Edición ASEMAS, Arquímedes Sólo visualizador) o al
+		              formato estándar FIEBDC-3. De este modo, se puede editar e imprimir el presupuesto de
+		              la estructura calculada en CYPECAD en cualquier programa de mediciones y presupuestos,
+		              lo que supone un ahorro considerable de tiempo a la hora de realizar el presupuesto.
+		              Los precios se obtienen del &quot;<a href="http://generadorprecios.cype.es/">Generador
+	                de precios</a>&quot; de la construcción de CYPE Ingenieros.</p>
+	<p>CYPECAD también genera el presupuesto y la medición de los sistemas de protección colectiva introducidos por el usuario mediante el módulo &quot;<a href="#sistemas_proteccion_colectiva">Sistemas de protección colectiva</a>&quot;.</p>
+	<p><strong><a href="http://cypecad.cype.es/medicion_y_presupuesto_en_cypecad.htm">MÁS INFORMACIÓN</a>.</strong></p>
+	<p class="quitar_alineacion">&nbsp;</p>
+<p><span class="subtitulo"><a name="Flujo_de_trabajo_Open_BIM" id="Flujo_de_trabajo_Open_BIM"></a></span></p>
+  <div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+    <p class="imagen_centro"> <a href="http://descargas.cype.es/2017/ampliadas/2017c_cypecad_bim_06.htm" title="CYPECAD en el flujo de trabajo Open BIM. Pulse para ampliar imagen" target="_blank"><img src="http://descargas.cype.es/2017/imagen/2017c_cypecad_bim_06_300.png" alt="CYPECAD en el flujo de trabajo Open BIM" border="0" align="texttop" /></a></p>
+    <p class="imagen_centro"> <a href="ampliadas/flujo_open_bim_cypecad_01.htm" title="IFC Builder. Flujo de trabajo Open BIM en CYPECAD. Pulse para ampliar imagen" target="_blank"><img src="imagen/open_bim/cypecad_flujo_open_bim_01_300.png" alt="IFC Builder. Flujo de trabajo Open BIM en CYPECAD" border="0" align="texttop" /></a></p>
+  </div>
+  <h1 class="titulo">Flujo de trabajo Open BIM</h1>
+<p>&nbsp; </p>
+<p>CYPECAD forma parte del grupo de programas integrados en el flujo de trabajo Open BIM de CYPE. El programa puede crear obras vinculadas a un proyecto BIM alojado en la plataforma BIMserver.center.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>CYPECAD puede importar los ficheros IFC del proyecto vinculado que el usuario seleccione y obtener información del modelo arquitectónico, del modelo que contiene la información de &quot;seguridad en caso de incendio y la vista 3D de cualquier de los modelos que generen los programas de otras especialidades  (instalaciones de aire acondicionado, circuitos de suelo radiante, luminarias, centros de transformación…).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>El modelo estructural introducido calculado y dimensionado en CYPECAD se puede exportar a la plataforma BIMserver.center para complementar el Proyecto Open BIM. Una vez exportado, el resto de aplicaciones integradas en el flujo de trabajo podrán visualizar el modelo estructural del edificio (consolidación del modelo BIM).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><a href="http://cypecad.cype.es/cypecad_flujo_open_bim.htm">MÁS INFORMACIÓN</a></strong></p>
+<p class="quitar_alineacion">&nbsp;</p>
+	<h1 class="titulo" style="clear:both;"><a name="Mas_prestaciones_CYPECAD" id="Mas_prestaciones_CYPECAD"></a>Más prestaciones de CYPECAD</h1>
+	<h2 class="subtitulo" style="clear:both;"><a name="sistemas_proteccion_colectiva" id="sistemas_proteccion_colectiva"></a>Sistemas de protección colectiva</h2>
+					<div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+					  <p class="imagen_centro"><a href="ampliadas/cypecad_sistemas_proteccion_colectiva_01.htm" target="_blank"><img src="imagen/CYPECAD/modulos/sistemas_proteccion_colectiva_01_300.png" alt="CYPECAD - Sistemas de protección colectiva. Pulse para ampliar imagen" border="0" /></a></p>
+  <p class="imagen_centro"><a href="ampliadas/open_bim_health_and_safety_01.htm" title="Open BIM Health and safety. Sistemas de protección colectiva. Pulse para ampliar imagen" target="_blank"><img src="imagen/open_bim_health_and_safety/open_bim_health_and_safety_01_300.png" alt="Open BIM Health and safety. Sistemas de protección colectiva" border="0" /></a></p>
+					</div>
+					<p>&nbsp;</p>
+					<p>El módulo &quot;Sistemas de protección colectiva&quot; permite generar   los planos y el presupuesto de los sistemas de protección colectiva de una obra   de CYPECAD.</p>
+                    <p>&nbsp;</p>
+                    <p>Existen dos modos de generar esta información:</p>
+                    <p>&nbsp;</p>
+                    <ul>
+                      <li><strong>Solapa Seguridad y Salud de CYPECAD</strong><br />
+                        En esta solapa (ubicada en la parte inferior de la ventana de CYPECAD) puede encontrar herramientas que permiten introducir la información necesaria para generar los planos y el presupuesto de los sistemas de protección colectiva.<br />
+                        <br />
+                        <strong><a href="http://cypecad.cype.es/cypecad_sistemas_proteccion_colectiva.htm">MÁS INFORMACIÓN</a></strong><br />
+                        <br />
+                        <br />
+                      </li>
+                      <li><strong>Programa   Open BIM Health and safety</strong><br />
+                        Programa creado para asistir al usuario en la elaboración de los planos de los sistemas de protección colectiva para que sean incorporarlos al Proyecto de Seguridad y Salud y generar su presupuesto.<br />
+                        <br />
+                        A diferencia de la
+herramienta ubicada en la solapa &quot;Seguridad y Salud&quot;  CYPECAD, este programa está incluido en <a href="http://open-bim.cype.es/">el flujo de trabajo Open BIM</a> y con ello la información que genera.<br />
+<br />
+<strong><a href="http://open-bim-health-and-safety.cype.es/">MÁS INFORMACIÓN</a></strong><br />
+<br />
+                      </li>
+                    </ul>
+                    <p class="quitar_alineacion">&nbsp;</p>
+                    <p><span class="subtitulo"><a name="memoria" id="memoria"></a></span></p>
+<div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+  <p class="imagen_centro"><a href="ampliadas/memorias_proyectos_cte_01.htm" target="_blank" title="Memorias CTE. Datos generales. Pulse para ampliar la imagen"><img src="imagen/memorias_cte/memorias_proyectos_cte_01_13f_datos_generales_300.png" alt="Memorias CTE. Datos generales" border="0" align="top" /></a></p>
+    <p class="imagen_centro"><a href="ampliadas/open_bim_memorias_cte_01.htm" title="Open BIM Memorias CTE. Tipología de los proyectos generados. Pulse para ampliar imagen" target="_blank"><img src="imagen/open_bim_memorias_cte/open_bim_memorias_cte_01_300.png" alt="Open BIM Memorias CTE. Tipología de los proyectos generados" border="0" /></a></p>
+</div>
+<h2 class="subtitulo">Memoria del proyecto de edificación</h2>
+<p>&nbsp;</p>
+<p>Los programas &quot;Memorias CTE&quot; y &quot;Open BIM Memorias CTE generan y gestionan un proyecto de edificación (Memoria del proyecto básico, Memoria del proyecto básico + ejecución, Planos, Pliego de condiciones, Mediciones y Presupuesto) con el contenido y el orden establecidos en Anejo I -Contenido del Proyecto- de la Parte I del CTE y en el Manual del Proyecto Arquitectónico del CSCAE.</p>
+<p>&nbsp;</p>
+<p>La diferencia entre ambos programas y, por tanto, la gran ventaja de &quot;Open BIM Memorias CTE&quot; es su inclusión en el flujo de trabajo Open BIM, una metodología multidisciplinar y multiusuario que permite el desarrollo de proyectos de forma abierta, coordinada y simultánea entre los distintos técnicos o agentes intervinientes.</p>
+<p>&nbsp;</p>
+<p>Ambos programas importan de CYPECAD y
+  de otros programas de CYPE Ingenieros los datos necesarios para confeccionar numerosos
+  apartados del proyecto de edificación.</p>
+<p>&nbsp;</p>
+<p><strong>MÁS INFORMACIÓN de <a href="http://memorias-cte.cype.es/">Memorias CTE</a></strong></p>
+<p>&nbsp;</p>
+<p><strong>MÁS INFORMACIÓN de <a href="http://open-bim-memorias-cte.cype.es/">Open BIM Memorias CTE</a></strong></p>
+<p class="quitar_alineacion">&nbsp;</p>
+                    <h1 class="titulo"><a name="Exportacion" id="Exportacion"></a><span class="subtitulo"><a name="exportacion_a_ifc" id="exportacion_a_ifc"></a></span>Exportación</h1>
+                    <div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+                      <p class="imagen_centro"><a href="ampliadas/cypecad_43.htm" target="_blank" title="CYPECAD. Exportación en formato IFC. Pulse para ampliar la imagen"><img src="imagen/CYPECAD/cypecad_43_13m_exportacion_a_ifc_200.png" alt="CYPECAD. Exportación en formato IFC" align="top" /></a></p>
+</div>
+                    <h2 class="subtitulo">Exportación en formato IFC      </h2>
+      <p>CYPECAD permite la exportación  al formato IFC (Industry Foundation Classes - versiones 2x3 o 4) de todos los elementos estructurales dimensionados.</p>
+      <p><a href="#Flujo_de_trabajo_Open_BIM">Además de ser el formato por el que todos los programas incluidos en el flujo de trabajo Open BIM intercambian información</a>, CYPECAD también genera ficheros en formato IFC sin vincularse a un proyecto Open BIM para generar estos ficheros de modo que la información generada en CYPECAD pueda leerse en programas CAD/BIM como Allplan®, Archicad®, Revit®   Architecture, etc.</p>
+      <p>Este modo de conexión con otros programas CAD/BIM pierde las importantes ventajas del flujo de trabajo Open BIM, pero es una prestación más que existe en CYPECAD desde antiguas versiones.</p>
+<p>Para realizar la exportación existe en CYPECAD la opción &quot;Exportación en formato IFC&quot; (Menú Archivo &gt;   Exportar).</p>
+<p>&nbsp;</p>
+        <div style="width:250px; float:right;  text-align:right; margin-left:5px;">
+<p class="imagen_centro"><a href="ampliadas/cypecad_47.htm" target="_blank" title="CYPECAD. Vista 3D de forjados unidireccionales con viguetas Joist y viguetas pretensadas. Pulse para ampliar la imagen"><img src="imagen/CYPECAD/cypecad_47_13a_vista_3D_viguetas_joist_y_pretensadas_200.png" alt="CYPECAD. Vista 3D de forjados unidireccionales con viguetas Joist y viguetas pretensadas" align="top" /></a></p>        
+        <p class="imagen_centro"><a href="ampliadas/cypecad_53.htm" title="CYPECAD. Exportación en formato IFC. Variación para Allplan®. Pulse para ampliar la imagen" target="_blank"><img src="imagen/CYPECAD/cypecad_53_13b_ifc_allplan_bovedillas_celosia_armadas_200.png" alt="CYPECAD. Exportación en formato IFC. Variación para Allplan®" border="0" align="top" /></a></p>
+          <p class="imagen_centro"><a href="ampliadas/cypecad_51.htm" title="CYPECAD. Exportación en formato IFC. Variación para Archicad®. Pulse para ampliar la imagen" target="_blank"><img src="imagen/CYPECAD/cypecad_51_13b_ifc_archicad_bovedillas_celosia_armadas_200.png" alt="CYPECAD. Exportación en formato IFC. Variación para Archicad®" border="0" align="top" /></a></p>
+          <p class="imagen_centro"><a href="ampliadas/cypecad_49.htm" title="CYPECAD. Exportación en formato IFC. Variación para Revit® Architecture. Pulse para ampliar la imagen" target="_blank"><img src="imagen/CYPECAD/cypecad_49_13b_ifc_revit_joist_200.png" alt="CYPECAD. Exportación en formato IFC. Variación para Revit® Architecture" border="0" align="top" /></a></p>
+        </div>
+<p>El diálogo &quot;Exportación  en formato IFC&quot; (menú Archivo &gt; Exportar &gt; IFC) permite elegir diferentes variaciones del formato IFC para generar el fichero de exportación:</p>
+        <p>&nbsp;</p>
+<ul>
+  <li><strong>IFC 2x3</strong></li>
+          <li><strong>IFC4</strong></li>
+          <li><strong>IFC 2x3 para Revit </strong>(versiones 2012, 2013 y 2014)<br />
+          </li>
+          <li><strong>IFC 2x3 para Archicad</strong></li>
+          <li><strong>IFC 2x3 Allplan</strong> (versión 2014 y anteriores)</li>
+        </ul>
+        <p>&nbsp;</p>
+<p>CYPECAD exporta  a IFC  los siguientes elementos:</p>
+        <ul>
+          <li><strong>En forjados unidireccionales</strong><br />
+            <br />
+  <ul>
+    <li><strong>Viguetas armadas</strong></li>
+    <li><strong>Viguetas in situ</strong></li>
+    <li><strong>Viguetas metálicas</strong></li>
+    <li><strong>Viguetas Joist</strong></li>
+    <li><strong>Bovedillas</strong><br />
+      <br />
+    </li>
+  </ul>
+          </li>
+          <li><strong>En losas mixtas</strong><br />
+            <br />
+  <ul>
+    <li><strong>Chapa de la losa</strong></li>
+    <li><strong>Capa de hormigón</strong><br />
+      <br />
+    </li>
+    </ul>
+          </li>
+          <li><strong>En losas postesadas<br />
+            <br />
+            </strong>
+            <ul>
+              <li><strong>Tendones</strong><br />
+                <br />
+                </li>
+              </ul>
+          </li>
+          </ul>
+        <p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<p>CYPECAD también permite la importación de ficheros en formato IFC generados por programas CAD/BIM, gracias a su módulo <strong>Introducción automática de obras: DXF, DWG y modelos
+  CAD/BIM</strong>. Más información en la página Web <a href="http://cypecad.cype.es/cypecad_introduccion_estructura.htm">CYPECAD. Introducción de la estructura</a>.</p>
+<p>Para que CYPECAD realice la exportación  de la obra en formato IFC, no es necesario que la licencia de uso disponga del módulo &quot;Introducción automática de obras: DXF, DWG y modelos CAD/BIM&quot;.</p>
+<p class="quitar_alineacion">&nbsp;</p>
+                   <h2 class="subtitulo"><a name="exportacion_tekla_structures_tecnometal_4d" id="exportacion_tekla_structures_tecnometal_4d"></a>Exportación a TEKLA® Structures y TecnoMETAL&reg;<!-- 4D y CIS/2--></h2>
+	<p>Una vez calculada la estructura, es posible exportar los pilares,
+	    las vigas y el despiece de uniones (dimensionadas con los módulos <a href="http://cype3d.cype.es/uniones_soldadas.htm">Uniones
+	      I</a>, <a href="http://cype3d.cype.es/uniones_atornilladas.htm">Uniones II</a>, <a href="http://cypecad.cype.es/uniones_soldadas_edificacion.htm">Uniones
+	        III</a> y <a href="http://uniones.cype.es/uniones_atornilladas_edificacion.htm">Uniones IV</a>)
+	    de CYPECAD a los programas:</p>
+	<p>&nbsp;</p>
+	<ul>
+	  <li><strong>TEKLA®	Structures </strong>(También se incluyen las uniones dimensionadas con el módulo <a href="http://uniones.cype.es/uniones_celosias_planas_perfiles_tubulares.htm">Uniones V</a>)<br />
+	    <a href="http://exportacion-a-tekla.cype.es/"><strong>MÁS INFORMACIÓN</strong></a><br />
+	    <br />
+      </li>
+	  <li><strong>TecnoMETAL®
+	    4D</strong><br />
+	    <a href="http://exportacion-a-tecnometal.cype.es/"><strong>MÁS INFORMACIÓN</strong></a> <br />
+	    <br />
+      </li>
+<!--
+	  <li><strong>Formato &quot;CIS/2&quot;</strong><br />
+	    <a href="http://exportacion-a-cis2.cype.es/"><strong>MÁS INFORMACIÓN</strong></a> <strong><br />
+	    </strong><br />
+	    </li>
+-->
+	  </ul>
+	<p class="quitar_alineacion">&nbsp;</p>
+<p><span class="titulo"><a name="multiprocesadores" id="multiprocesadores"></a></span></p>
+                    <div style="width:310px; float:right;  text-align:right; margin-left:20px;">
+                      <p class="imagen_centro"><a href="ampliadas/cypecad_37.htm" target="_blank"><img src="imagen/cypecad/cypecad_37_300.png" alt="CYPECAD - Cálculo con multiprocesadores. Pulse para ampliar imagen" border="0" /></a></p>
+</div>
+<h1 class="titulo">Cálculo con multiprocesadores</h1>
+                    <p>CYPECAD y CYPE 3D utilizan en el cálculo de
+                        sus estructuras el potencial que brindan los multiprocesadores.                    </p>
+                    <p>Para acceder a estas prestaciones, CYPECAD y CYPE 3D, dispone de dos módulos comunes que permiten ahorrar
+                        una sustancial cantidad de tiempo de cálculo:                    </p>
+                    <ul>
+                      <li><strong>Cálculo en paralelo con dos procesadores</strong><br />
+                        <br />
+                      </li>
+                      <li><strong>Cálculo en paralelo hasta ocho procesadores</strong><br />
+                        <br />
+                        <br />
+                      </li>
+                    </ul>
+                    <p><strong><a href="http://multiprocesadores.cype.es/">MÁS INFORMACIÓN</a></strong></p>
+                    <p class="quitar_alineacion">&nbsp;</p>
+                    <h1 class="titulo" style="clear:both;"><a name="normas_incluidas_licencia" id="normas_incluidas_licencia"></a>Normas incluidas en la licencia de usuario</h1>
+                    <p class="quitar_alineacion">Dependiendo del país desde donde el licenciatario adquiere la licencia, se activa únicamente la normativa implementada en cada programa para trabajar en ese país.</p>
+                    <p class="quitar_alineacion">En la página Web <a href="http://normativa.cype.es/#programas_normas_licencia">Programas y normas incluidos en la licencia de usuario</a> dispone de más información sobre este aspecto y sobre la posibilidad de adquirir normas no incluidas inicialmente. </p>
+                    <p style="clear:both;">&nbsp;</p>
+                    <h1 class="titulo" style="clear:both;"><a name="versiones" id="versiones"></a>Versiones
+                      y m&oacute;dulos de CYPECAD </h1>
+                    <h2 class="subtitulo"> Versiones de CYPECAD </h2>
+                    
+                    <p>Además de la versión<strong> CYPECAD</strong> (sin limitación), el programa también está disponible en dos versiones limitadas, denominadas LT30 y LT50, que mantienen las mismas herramientas y posibilidades de adquisición de módulos, con los siguientes condicionantes:</p>
+                    <p><strong>CYPECAD LT50</strong>: </p>
+                    <ul type="disc">
+                      <li>Cincuenta pilares.</li>
+                      <li>Cuatro grupos de plantas. (Grupo de plantas: plantas iguales y consecutivas).</li>
+                      <li>Cinco plantas en total.</li>
+                      <li>Cien metros lineales de muro.</li>
+                    </ul>
+                    <p><strong>CYPECAD LT30</strong>: </p>
+                    <ul type="disc">
+                      <li>Treinta pilares.</li>
+                      <li>Cuatro grupos de plantas. (Grupo de plantas: plantas iguales y consecutivas).</li>
+                      <li>Cinco plantas en total.</li>
+                      <li>Cien metros lineales de muro.</li>
+                    </ul>
+                    <p>Las estructuras 3D integradas de CYPECAD (también de LT50 y LT30) no es un módulo propiamente dicho. Para definir estas estructuras 3D dentro de CYPECAD es necesario que la licencia de uso disponga también de permisos para utilizar CYPE 3D y, opcionalmente, los módulos exclusivos de CYPE 3D.
+                    <h2 class="subtitulo"><a name="modulos_cypecad" id="modulos_cypecad"></a>M&oacute;dulos de CYPECAD</h2>
+                    <p>CYPECAD, CYPECAD LT30 y CYPECAD LT50 disponen de varios módulos que permiten desarrollar todas las utilidades del programa. Estos módulos pueden adquirirse conjuntamente o combinados entre sí:</p><ul>
+					  
+					  <li><a href="http://cypecad.cype.es/cypecad_pilares_metalicos.htm">Pilares met&aacute;licos</a></li>
+  <li><a href="http://pilares-de-madera.cype.es/">Pilares de madera</a></li>
+					  <li><a href="http://soportes-material-seccion-generica.cype.es/#Grupo_Estructuras">Soportes de sección y material genéricos, y de hormigón armado de sección genérica</a></li>
+					  <li><a href="http://cypecad.cype.es/cypecad_vigas_metalicas.htm">Vigas met&aacute;licas</a></li>
+					   <li><a href="http://cypecad.cype.es/cypecad_forjado_unidireccional.htm">Unidireccional (viguetas de hormig&oacute;n gen&eacute;ricas)</a></li>
+					   <li><a href="http://forjados-de-viguetas-de-madera.cype.es/">Forjados de viguetas de madera</a></li>
+					  <li><a href="http://cypecad.cype.es/cypecad_forjado_viguetas_in_situ_prefabricadas_metalicas.htm">Forjados de viguetas &ldquo;in situ&rdquo;, prefabricadas y met&aacute;licas (necesita del m&oacute;dulo
+				      Unidireccional)</a></li>
+					  <li><a href="http://cypecad.cype.es/#forjados">Reticular</a></li>
+					  <li><a href="http://cypecad.cype.es/#forjados">Losas macizas</a></li>
+					  <li><a href="http://cypecad.cype.es/CYPECAD_comprobacion_punzonamiento.htm">Comprobación de punzonamiento</a></li>
+					  <li><a href="http://cypecad.cype.es/#forjados">Losas mixtas</a></li>
+					  <li><a href="http://cypecad.cype.es/cypecad_losas_postesadas_edificacion.htm">Losas postesadas para edificación</a></li>
+					  <li><a href="http://cypecad.cype.es/#forjados">Placas aligeradas</a></li>
+					  <li><a href="http://cypecad.cype.es/#soportes">Pantallas</a></li>
+					  <li><a href="http://cypecad.cype.es/#soportes">Muros de edificaci&oacute;n</a></li>
+					  <li><a href="http://cypecad.cype.es/cypecad_muros_de_tension_plana.htm">Muros de tensión plana</a></li>
+					  <li><a href="http://cypecad.cype.es/#escaleras">Escaleras</a></li>
+					  <li><a href="http://cypecad.cype.es/#cimentacion">Losas y vigas de cimentaci&oacute;n</a></li>
+					  <li><a href="http://cypecad.cype.es/#soportes">Muros de bloques de hormig&oacute;n</a></li>
+					  <li><a href="http://cypecad.cype.es/cypecad_interaccion_estructura_elementos_constructivos.htm">Interacción de la estructura con los elementos constructivos</a></li>
+					  <li><a href="http://cypecad.cype.es/bim_ifc_dxf_dwg_cypecad.htm">Introducci&oacute;n autom&aacute;tica de obras: DXF, DWG y modelos CAD/BIM</a></li>
+  <li><a href="http://cypecad.cype.es/cypecad_sistemas_proteccion_colectiva.htm">Sistemas de protección colectiva</a></li>
+  <li><a href="http://union-cypecad-metal3d.cype.es/">Estructuras 3D Integradas (Se activa al adquirir CYPE 3D)</a><br />
+  </li>
+</ul>
+
+<p>M&oacute;dulos comunes a CYPECAD y CYPE 3D:</p>
+<ul>
+  <li><a href="http://cypecad.cype.es/cypecad_pilares_hormigon.htm">Pilares de hormig&oacute;n</a></li>
+  <li><a href="http://cypecad.cype.es/cypecad_vigas_hormigon.htm">Vigas de hormig&oacute;n</a></li>
+  <li><a href="http://vigas-de-madera.cype.es/">Perfiles de madera (incluye vigas de madera)</a></li>
+  <li><a href="http://pilares-mixtos-hormigon-acero.cype.es/">Pilares mixtos de hormigón y acero</a></li>
+  <li><a href="http://cimentaciones.cype.es/encepados_sobre_pilotes.htm">Encepados (incluye vigas centradoras y de atado) </a></li>
+  <li><a href="http://cimentaciones.cype.es/zapatas.htm">Zapatas (aisladas y continuas) (incluye vigas centradoras y de atado)</a></li>
+  <li><a href="http://cype3d.cype.es/#placas_anclaje">Placas de anclaje</a></li>
+  <li><a href="http://cimentaciones.cype.es/calculo_avanzado_de_cimentaciones_superficiales.htm">Cálculo avanzado de cimentaciones superficiales</a><br>
+    </li>
+  
+  <li><a href="http://resistencia-al-fuego.cype.es/">Comprobaci&oacute;n de resistencia
+    al fuego</a></li>
+  <li><a href="http://multiprocesadores.cype.es/">C&aacute;lculo en paralelo con dos procesadores</a></li>
+  <li><a href="http://multiprocesadores.cype.es/">Cálculo en paralelo hasta ocho procesadores</a></li>
+  <li><a href="http://uniones.cype.es/uniones_soldadas.htm">Uniones I. Soldadas.
+    Naves con perfiles laminados y armados en doble T</a></li>
+  <li><a href="http://uniones.cype.es/uniones_atornilladas.htm">Uniones II. Atornilladas.
+    Naves con perfiles laminados y armados en doble T</a></li>
+  <li><a href="http://uniones.cype.es/uniones_soldadas_edificacion.htm">Uniones III, Soldadas - Pórticos de edificación con perfiles laminados y armados
+    en doble T</a></li>
+  <li><a href="http://uniones.cype.es/uniones_atornilladas_edificacion.htm">Uniones IV, Atornilladas - Pórticos de edificación con perfiles laminados y armados
+    en doble T</a></li>
+  <li><a href="http://uniones.cype.es/uniones_celosias_planas_perfiles_tubulares.htm">Uniones V. Celosías planas con perfiles tubulares</a></li>
+  <li><a href="http://exportacion-a-tekla.cype.es/">Exportaci&oacute;n a TEKLA</a></li>
+<!--
+  <li><a href="http://exportacion-a-tecnometal.cype.es/">Exportaci&oacute;n a TecnoMETAL</a></li>
+-->
+<!--
+  <li><a href="http://exportacion-a-cis2.cype.es/">Exportaci&oacute;n al formato CIS/2</a><br />
+</li>
+-->
+</ul>
+
+                    <p align="center"><a href="#inicio">Inicio <img src="http://www.cype.es/principal/imagen/Volver_b.gif" width="15" height="15" align="bottom" border="0" alt="Volver al inicio" /></a></p>
+
+                    <div class="otros_programas">
+						<a name="programas_relacionados" id="programas_relacionados"></a>
+						<h1 class="titulo">Programas relacionados </h1>
+						<ul>
+<li><strong>Elementos arquitectónicos</strong>
+            	<ul>
+            	  <li><a href="http://ifc-builder.cype.es/#IFC_BUILDER">IFC Builder</a></li>
+            	  <li><a href="http://plugin-openbim-revit.cype.es">Complemento Open BIM para Revit</a></li>
+            	  <li><a href="http://open-bim-model-checker.cype.es/">Open BIM Model Checker</a></li>
+            	  <li><a href="http://open-bim-health-and-safety.cype.es">Open BIM Health and safety</a><br />
+                    <br />
+                    </li>
+       	      </ul>
+</li>
+<li><strong>Estructuras</strong></li>
+                  <ul>
+                    <li><a href="http://cypecad.cype.es" >CYPECAD</a></li>
+                    <li><a href="http://porticos.cype.es">Generador de pórticos</a></li>
+                    <li><a href="http://cype3d.cype.es">CYPE 3D</a></li>
+                    <li><a href="http://cype-connect.cype.es">CYPE-Connect</a></li>
+                    <li><a href="http://open-bim-health-and-safety.cype.es">Open BIM Health and safety</a></li>
+                    <li><a href="http://strubim-deep-beams.cype.es/#StruBIM_Deep_Beams">StruBIM Deep Beams</a></li>
+                    <li><a href="http://strubim-design-shear-walls.cype.es/">StruBIM Design Shear Walls</a></li>
+                    <li><a href="http://strubim-rebar.cype.es/">StruBIM REBAR</a></li>
+                    <li><a href="http://strubim-embedded-walls.cype.es/#StruBIM_Embedded_Walls">StruBIM Embedded Walls</a></li>
+                    <li><a href="http://strubim-anchors-aci-318.cype.es/#StruBIM_Anchors_ACI_318">StruBIM Anchors ACI 318</a></li>
+                    <li><a href="http://strubim-analysis-3d.cype.es/#StruBIM_Analysis_3D">StruBIM Analysis</a></li>
+                    <li><a href="http://strubim-design.cype.es/#StruBIM_Design">StruBIM Design</a></li>
+                    <li><a href="http://strubim-foundations.cype.es/#StruBIM_Foundations">StruBIM Foundations</a></li>
+                    <li><a href="http://opensees.cype.es/#Motor_de_calculo_OpenSees">Motor de cálculo OpenSees</a></li>
+                    <li><a href="http://murospantalla.cype.es">Muros pantalla</a></li>
+                    <li><a href="http://murosmensula.cype.es">Muros en ménsula de hormigón armado</a></li>
+                    <li><a href="http://comprobacion-punzonamiento.cype.es">Comprobación de punzonamiento</a></li>
+                    <li><a href="http://estructurales.cype.es" >Elementos estructurales</a></li>
+                    <li><a href="http://cimentacion.cype.es" >Elementos de cimentaci&oacute;n</a></li>
+                    <li><a href="http://vigas-continuas.cype.es">Vigas continuas</a></li>
+                    <li><a href="http://marcos.cype.es" >Marcos</a></li>
+                  </ul>
+</ul>
+
+                    </div>
+					<p align="center"><a href="#inicio">Inicio <img src="http://www.cype.es/principal/imagen/Volver_b.gif" width="15" height="15" align="bottom" border="0" alt="Volver al inicio" /></a></p>	
+                  </div> <!--padding -->
+			    <!-- InstanceEndEditable -->                </div> <!--contenido_central -->
+	  	    </div> <!--contenido -->
+		  </div> <!-- subcontenedor -->
+	  </div> <!-- borde --><style>
+	#resto_mapa hr{
+		border: 1px dotted #CCC;
+		margin-bottom:12px;
+	}
+	
+	#resto_mapa ul{
+		padding-left:0;
+		padding-right:10px;
+	}
+	
+	#resto_mapa li{
+		list-style:none;
+		line-height:12px;
+		padding-bottom:10px;
+	}
+</style>		  
+          <div id="pie">
+			  <a href="http://www.cype.es/"><b>&copy; CYPE Ingenieros, S.A.</b></a> - Avda. Eusebio
+			  Sempere, 5 - 03003 ALICANTE - Tel. 965 922 550 - Fax 965 124 950
+		  </div>
+		  <div id="secciones_mapa">
+				<!--<div>
+					<a href="http://www.cype.es/">Home</a>  | 
+					<a href="http://www.cype.es/cypeingenieros/">CYPE Ingenieros</a>  | 
+					<a href="http://novedades.cype.es/">Novedades</a> | 
+					<a href="http://programas.cype.es/">Productos</a> | 
+					<a href="http://www.cype.es/posventa/servicioposventa/">Posventa</a> | 
+					<a href="http://www.cype.es/formacion/">Formaci&oacute;n</a> | 
+					<a href="http://soporte.cype.es/">Soporte T&eacute;cnico</a>
+                </div>
+                
+				<div>
+					<a href="http://www.cype.es/principal/avisolegal/">Aviso Legal</a>  | 
+					<a href="http://www.cype.es/principal/formulario_actualizacion.htm" target="_blank">Actualización de datos</a> | 
+                    <a href="http://www.cype.es/posventa/futurasversiones/">Sugerencias</a> |
+                    <a href="http://www.cype.es/principal/bolsatrabajo/">Trabaje en CYPE</a> |
+					<a href="http://noticias.cype.es/">Noticias</a>
+                </div>-->
+                
+                <div>
+                	<a href="http://www.cype.es/"><strong>Home</strong></a>  | 
+					<a href="http://www.cype.es/cypeingenieros/">CYPE</a>  | 
+					<a href="http://novedades.cype.es/">Novedades</a> |
+					<a href="http://programas.cype.es/">Productos</a> | 
+					<a href="http://store.cype.com/" target="_blank">Tienda</a> | 
+					<a href="http://www.cype.es/posventa/servicioposventa/">Posventa</a> | 
+					<a href="http://www.cype.es/formacion/">Formaci&oacute;n</a> | 
+					<a href="http://soporte.cype.es/">Soporte T&eacute;cnico</a> | 
+					<img align="top" src="http://www.cype.es/principal/imagen/Botones/b_Sobre_a.gif" alt="Imagen contacto CYPE" title="Contactar con CYPE" />
+                   	<a  href="http://www.cype.es/principal/contacte/formulario_contacte_con_cype.htm"> Contacto</a> |
+                    <a href="http://www.cype.es/principal/telefonos"><img align="top" src="http://www.cype.es/principal/imagen/Botones/b_telefono_a.gif" alt="Imagen telefonos CYPE" title="Teléfonos de contacto y servicios al usuario"/></a>                    
+                    | <a href="https://www.facebook.com/CYPESoftware/" target="_blank"><img align="top" src="http://cype.es/imagen/cype_facebook.png" /></a>
+                    | <a href="https://www.linkedin.com/company/cypesoftware/" target="_blank"><img align="top" src="http://cype.es/imagen/cype_linkedin.png" /></a> 
+                    | <a href="https://twitter.com/cypesoftware/" target="_blank"><img align="top" src="http://cype.es/imagen/cype_twitter.png" /></a>
+                </div> 
+
+                
+                
+                <div>
+					<a href="http://www.cype.es/principal/avisolegal/">Aviso Legal</a>  | 
+					<a href="http://www.cype.es/principal/formulario_actualizacion.htm" target="_blank">Actualización de datos</a> | 
+                    <a href="http://www.cype.es/posventa/futurasversiones/">Sugerencias</a> |
+                    <a href="http://www.cype.es/principal/bolsatrabajo/">Trabaje en CYPE</a> |
+					<a href="http://noticias.cype.es/">Noticias</a>
+                </div>
+		  </div>
+		<br />
+		<div id="resto_mapa">
+			<!--<div>
+                <p><strong>Estructuras</strong></p>
+                  <ul>
+                    <li><a href="http://cypecad.cype.es/" >CYPECAD</a></li>
+                    <li><a href="http://porticos.cype.es/">Generador de pórticos  </a></li>
+                    <li><a href="http://cype3d.cype.es/">CYPE 3D</a></li>
+                    <li><a href="http://descargas.cype.es/2014/version_2014_f.htm#cype_connect">CYPE-Connect</a></li>
+                    <li><a href="http://murospantalla.cype.es/">Muros pantalla</a></li>
+                    <li><a href="http://murosmensula.cype.es/">Muros en ménsula de hormigón armado</a></li>
+                    <li><a href="http://comprobacion-punzonamiento.cype.es/">Comprobación de punzonamiento</a></li>
+                    <li><a href="http://estructurales.cype.es/" >Elementos estructurales</a></li>
+                    <li><a href="http://cimentacion.cype.es/" >Elementos de cimentaci&oacute;n</a></li>
+                    <li><a href="http://vigas-continuas.cype.es/">Vigas continuas</a></li>
+                    <li><a href="http://marcos.cype.es/" >Marcos</a></li>
+                  </ul>
+                  
+                <p><strong>Instalaciones</strong></p>
+				<ul>
+       	    		<li><a href="http://instalaciones.cype.es">CYPECAD MEP</a></li>
+       	    		<li><a href="http://cypelec-rebt.cype.es/">CYPELEC REBT</a></li>
+       	    		<li><a href="http://cypeterm-he.cype.es/">CYPETHERM HE</a></li>
+       	    		<li><a href="http://cypeterm-cargas.cype.es/">CYPETHERM ASHRAE LOADS</a></li>
+       	    		<li><a href="http://cypetherm-iso-10211.cype.es/">CYPETHERM ISO 10211</a></li>
+       	    		<li><a href="http://cype-uponor.cype.es/">CYPE UPONOR</a></li>
+       	    		<li>Instalaciones de<a href="http://fontaneria.cype.es/"> fontanería</a> y <a href="http://saneamiento.cype.es/">saneamiento</a></li>
+       	    		<li><a href="http://abastecimiento.cype.es/">Abastecimiento de agua</a></li>
+       	    		<li><a href="http://alcantarillado.cype.es/">Alcantarillado</a></li>
+       	    		<li><a href="http://electrificacion.cype.es/">Electrificación</a></li>
+       	    		<li><a href="http://iugas.cype.es/">Suministro de gas</a></li>
+       	    		<li><a href="http://cypelec.cype.es/mtd/">Cypelec MTD</a></li>
+           			<li><a href="http://edu.cype.es/instalaciones/">CYPECAD MEP Versi&oacute;n estudiantes</a></li>
+       	    		<li><a href="http://cypelec.cype.es/">Cypelec. Instalaciones el&eacute;ctricas de baja tensi&oacute;n</a> </li>
+           			<li><a href="http://edu.cype.es/cypelec">Cypelec. Versi&oacute;n estudiantes</a></li>
+					<li><a href="http://cypelec.cype.es/mtd/">Memorias Técnicas de Diseño (MTD)</a></li>
+				</ul>
+                
+                <p><strong>Gestión</strong></p>
+                  <ul>
+                    <li><a href="http://arquimedes.cype.es/" >Arqu&iacute;medes y Control de obra</a></li>
+                    <li><a href="http://generadorprecios.cype.es/" >Generador de precios de la construcción </a></li>
+                    <li><a href="http://generadorprecios.cype.es/rehabilitacion/" >Generador de precios de rehabilitación </a></li>
+                    <li><a href="http://generadorprecios.cype.es/espacios_urbanos/">Generador de precios para espacios urbanos</a></li>
+                    <li><a href="http://generadoresdepresupuestos.cype.es/" >Generadores de presupuestos</a></li>
+                    <li><a href="http://predimensionadoresdemedicionesypresupuestos.cype.es/" >Predimensionadores de mediciones y presupuestos</a></li>
+                  </ul>
+                 
+                <p><strong>Documentación</strong></p>
+                  <ul>
+                    <li><a href="http://memorias-cte.cype.es/">Memorias CTE</a></li>
+                    <li><a href="http://gestion.cype.es/estudio_basico_de_seguridad_y_salud.htm">Estudio básico de seguridad y salud</a></li>
+                    <li><a href="http://gestion.cype.es/estudio_de_seguridad_y_salud.htm">Estudio de seguridad y salud</a></li>
+                    <li><a href="http://gestion.cype.es/proyecto_de_demolicion.htm">Proyecto de demolición</a></li>
+                    <li><a href="http://detalles-constructivos.cype.es/">Detalles constructivos</a></li>
+                    <li><a href="http://detalles.cype.es/" >Biblioteca de detalles constructivos para estructuras</a></li>
+                    <li><a href="http://manualuso.cype.es/">Cypedoc. Manual de uso y mantenimiento del edificio</a></li>		
+                    <li><a href="http://libroedificio.cype.es/" >Cypedoc. Libro del edificio</a></li>
+                  </ul>
+			</div>
+            
+			<div>
+				<ul>
+					<li><a href="http://versiones.cype.es/">Versiones de los programas</a></li>
+					<li><a href="http://edu.cype.es/" >Versi&oacute;n estudiantes</a></li>
+					<li><a href="http://crack.cype.es/" >CYPE Ingenieros y la pirater&iacute;a</a></li>
+					<li><a href="http://www.cype.cat/" >Software en catal&agrave;</a></li>
+					<li><a href="http://publicaciones.cype.es/" >Publicaciones</a></li>
+					<li><a href="http://encuentros.cype.es/" >Encuentros</a></li>
+					<li><a href="http://www.cype.es/posventa/servicioposventa/" >Servicio posventa</a></li>	
+					<li><a href="http://www.cype.es/posventa/atencioncliente/" >Servicio de atenci&oacute;n al cliente</a></li>
+					<li><a href="http://soporte.cype.es/" >Consultas t&eacute;cnicas</a></li>
+				</ul>
+			</div>
+                
+			<div>
+				<ul>
+					<li><a href="http://www.cype.es/posventa/futurasversiones/" >Sugerencias a futuras versiones</a></li>
+					<li><a href="http://descargas.cype.es/" >&Aacute;rea de descarga</a></li>
+					<li><a href="http://faq.cype.es/" >FAQ</a></li>
+					<li><a href="http://www.cype.bg/">Búlgaro</a></li>
+					<li><a href="http://www.cype.fr/" >Francés</a></li>
+					<li><a href="http://www.cype.com/en/" >Inglés</a></li>
+					<li><a href="http://www.cype.it/" >Italiano</a></li>
+					<li><a href="http://www.cype.pt/" >Portugués</a></li>
+					<li><a href="http://www.cype.com.mx">M&eacute;xico</a></li>
+					<li><a href="http://www.cype.es/principal/distribuidores/" >M&aacute;s distribuidores</a></li>
+					<li><a href="http://www.cype.es/principal/bolsatrabajo/" >Bolsa de trabajo</a></li>
+					<li><a href="http://www.generadordeprecios.info/" target="_blank">Generador de precios on-line</a></li>
+				</ul>
+			</div> -->
+            
+            <div style="width:27%;">
+            
+            	<p><strong>Sistemas de fabricante</strong></p>
+            	<ul>
+        <li><a href="http://open-bim-aliaxis.cype.es/">Open BIM aliaxis<br />
+        Sistemas de saneamiento</a></li>
+        <li><a href="http://open-bim-bosch.cype.es/">Open BIM BOSCH<br />
+        Sistemas VRF</a></li>
+        <li><a href="http://open-bim-daikin.cype.es/">Open BIM DAIKIN.<br />
+          Sistemas VRV y aerotermia</a></li>
+                    <li><a href="http://open-bim-efi.cype.es/">Open BIM EFI<br />
+                    Bombas de calor para ACS</a></li>
+                    <li><a href="http://open-bim-fujitsu.cype.es/">Open BIM FUJITSU<br />
+                    Sistemas VRF</a></li>
+        <li><a href="http://cypetherm-fujitsu.cype.es/#CYPETHERM_FUJITSU">CYPETHERM FUJITSU.<br />
+          Simulación energética de edificios con sistemas FUJITSU GENERAL AMERICA        </a></li>
+          <li><a href="http://open-bim-renozeb-focchi-facades.cype.es/#Open_BIM_RenoZEB_Focchi_Facades">Open BIM RenoZEB - Focchi Facades.<br />
+          Fachadas para rehabilitación Focchi</a></li>
+        <li><a href="http://open-bim-giacomini.cype.es/">Open BIM GIACOMINI.<br />
+          Instalaciones de climatización        </a></li>
+  <li><a href="http://open-bim-inmesol.cype.es/#Open_BIM_Inmesol">Open BIM Inmesol.<br />
+    Grupos electrógenos</a></li>
+                    <li><a href="http://programas.cype.es/open_bim_kaysun.htm">Open BIM Kaysun.<br />
+                    Sistemas VRF</a></li>
+                    <li><a href="http://open-bim-midea.cype.es/">Open BIM MIDEA.<br />
+                    Sistemas VRF</a></li>
+                    <li><a href="http://open-bim-movair.cype.es/">Open BIM MOVAIR.<br />
+                    Conductos de aire                    </a></li>
+                    <li><a href="http://open-bim-orkli.cype.es/#Open_BIM_ORKLI">Open BIM ORKLI Suelo radiante.<br />
+                    Sistemas de suelo radiante</a></li>
+                    <li><a href="http://open-bim-orkli-vmc.cype.es/">Open BIM ORKLI VMC Ventilación Mecánica Controlada</a></li>
+                    <li><a href="http://open-bim-panasonic.cype.es/">Open BIM PANASONIC.<br />
+                    Sistemas VRF</a></li>
+                    <li><a href="http://open-bim-polytherm.cype.es/#Open_BIM_POLYTHERM">Open BIM POLYTHERM. Sistemas de suelo radiante</a></li>
+                    <li><a href="http://open-bim-roth.cype.es/" class="enlaces_novedades">Open BIM ROTH. Sistemas de suelo radiante</a></li>
+          <li><a href="http://open-bim-s3f-signs.cype.es/">Open BIM S3F Signs.<br />
+          Señalización</a></li>
+        <li><a href="http://open-bim-saunier-duval.cype.es/">Open BIM SAUNIER DUVAL<br />
+          Instalaciones de climatización        </a></li>
+        <li><a href="http://open-bim-schneider.cype.es/">Open BIM SCHNEIDER<br />
+        Instalaciones eléctricas</a></li>
+        <li><a href="http://easyduct.cype.es/">EasyDuct.<br />
+          Redes de conductos S&amp;P</a></li>
+        <li><a href="http://easyvmc.cype.es/">EasyVMC.<br />
+          Ventilación mecánica controlada S&amp;P</a></li>
+  <li><a href="http://itcalc.cype.es">iTCalc Televés.<br />
+Cálculo de Infraestructuras de Telecomunicaciones</a></li>
+  <li><a href="http://open-bim-tvitec.cype.es/">Open BIM TVITEC.<br />
+  Vidrio de
+  alto rendimiento</a></li>
+                    <li><a href="http://open-bim-toshiba.cype.es/">Open BIM TOSHIBA.<br />
+                    Sistemas VRF, Multisplit, Split 1x1 y Aerotermia.</a></li>
+                    <li><a href="http://open-bim-ursa-air.cype.es/">Open BIM URSA AIR.<br />
+                    Instalaciones de conductos de climatización y ventilación</a></li>
+  <li><a href="http://open-bim-vaillant.cype.es/">Open BIM VAILLANT.<br />
+    Sistemas aerotermia y geotermia</a></li>
+  <li><a href="http://open-bim-unex.cype.es/#Open_BIM_Unex">Open BIM Unex. Canalizaciones portacables </a></li>
+   	    		  <li><a href="http://cype-uponor.cype.es">CYPE UPONOR. Instalación de climatización invisible</a></li>
+            	  <li></li>
+          	  </ul>
+<p><strong>Elementos arquitectónicos</strong></p>
+<ul>
+            	  <li><a href="http://cype-architecture.cype.es/">CYPE Architecture<br />
+           	      Diseño y modelado 3D de edificios</a></li>
+            	  <li><a href="http://ifc-builder.cype.es/#IFC_BUILDER">IFC Builder. Generación de modelos BIM</a></li>
+            	  <li><a href="http://open-bim-covid-19.cype.es/">Open BIM COVID-19.<br />
+            	  Protección frente al contagio por COVID-19</a></li>
+            	  <li><a href="http://open-bim-construction-systems.cype.es/">Open BIM Construction Systems.<br />
+           	      Soluciones constructivas del Proyecto</a></li>
+            	  <li><a href="http://plugin-openbim-revit.cype.es">Complemento Open BIM para Revit</a></li>
+             	  <li><a href="http://bimeo2bimserver.cype.es/">BIMEO2BIMserver.<br />
+           	      Suibida de ficheros IFC de BIMEO a BIMserver.center</a></li>
+<li><a href="http://ifc-uploader.cype.es/">IFC Uploader.<br />
+  Subida de ficheros IFC a BIMserver.center</a></li>
+            	  <li><a href="http://open-bim-model-checker.cype.es/">Open BIM Model Checker.<br />
+            	  Análisis e inspección de modelos BIM</a></li>
+            	  <li><a href="http://open-bim-suspended-ceilings.cype.es">Open BIM Suspended ceilings. Diseño de falsos techos</a></li>
+            	  <li><a href="http://open-bim-carpentry.cype.es/#Open_BIM_Carpentry">Open BIM Carpentry. Diseño de carpintería</a></li>
+                  <li><a href="http://open-bim-water-equipment.cype.es/">Open BIM Water Equipment. Disposición de equipos sanitarios</a></li>
+                  <li><a href="http://open-bim-residential-furniture.cype.es/">Open BIM Residential Furniture.<br />
+                  Mobiliario para proyectos residenciales</a></li>
+                  <li><a href="http://open-bim-office-furniture.cype.es/">Open BIM Office Furniture.<br />
+                    Mobiliario para proyectos de oficinas</a></li>
+            	  <li><a href="http://open-bim-accessibility.cype.es/#Open_BIM_Accessibility">Open BIM Accessibility.<br />
+           	      Accesibilidad</a></li>
+            	  <li><a href="http://open-bim-layout.cype.es/">Open BIM Layout.<br />
+           	      Composición de planos</a></li>
+            	  <li><a href="http://open-bim-analytical-model.cype.es/">Open BIM Analytical Model.<br />
+           	      Modelos geométricos analíticos para su estudio energético y acústico </a></li>
+            	  <li><a href="http://kroqi-2-bimserver.cype.es/">KROQI 2 BIMserver.<br />
+           	      Comunicación entre las plataformas KROQI y BIMserver.center </a></li>
+            	  <li></li>
+</ul>
+            </div>
+            
+            <div style="width:27%;">
+<p><strong>Estructuras</strong></p>
+                  <ul>
+                    <li><a href="http://cypecad.cype.es" >CYPECAD<br />
+                    Cálculo de estructuras</a></li>
+                    <li><a href="http://porticos.cype.es">Generador de pórticos</a></li>
+                    <li><a href="http://cype3d.cype.es">CYPE 3D y<br />
+                      StruBIM CYPE 3D
+                    <br />
+                    Cálculo de estructuras</a></li>
+                    <li><a href="http://cype-connect.cype.es">CYPE-Connect. Uniones soldadas y atornilladas</a></li>
+                    <li><a href="http://strubim-steel.cype.es/">StruBIM Steel (Free Launch Edition)<br />
+                    Despiece de estructuras de acero <br />
+                    </a></li>
+                    <li><a href="http://open-bim-health-and-safety.cype.es">Open BIM Health and safety.  Elementos de protección colectiva</a></li>
+                    <li><a href="http://open-bim-sampling.cype.es/">Open BIM Sampling.  Generación de lotes y tomas de muestreo</a></li>
+                    <li><a href="http://strubim-uploader.cype.es/">StruBIM Uploader.<br />
+                    Incorporación de modelos estructurales a proyectos Open BIM</a></li>
+                    <li><a href="http://strubim-deep-beams.cype.es/#StruBIM_Deep_Beams">StruBIM Deep Beams. Vigas de gran canto</a></li>
+                    <li><a href="http://strubim-embedded-walls.cype.es/#StruBIM_Embedded_Walls">StruBIM Embedded Walls.  Muros Pantalla</a></li>
+                    <li><a href="http://strubim-shear-walls.cype.es/">StruBIM Shear Walls.<br />
+                    Muros de cortante                    </a></li>
+                    <li><a href="http://strubim-rebar.cype.es/">StruBIM Rebar.<br />
+                    Modelado BIM de armaduras en elementos de hormigón armado                    </a></li>
+                    <li><a href="http://strubim-anchors-aci-318.cype.es/#StruBIM_Anchors_ACI_318">StruBIM Anchors ACI 318. Anclajes a elementos de hormigón</a></li>
+                    <li><a href="http://strubim-analysis-3d.cype.es/#StruBIM_Analysis_3D">StruBIM Analysis. Generación, edición y cálculo de  modelos analíticos estructurales BIM</a></li>
+                    <li><a href="http://strubim-design.cype.es/#StruBIM_Design">StruBIM Design. Edición, comprobación y dimensionamiento de modelos estructurales BIM</a></li>
+                    <li><a href="http://strubim-foundations.cype.es/#StruBIM_Foundations">StruBIM Foundations. Edición, comprobación y dimensionamiento de modelos BIM de cimentaciones</a></li>
+                    <li><a href="http://opensees.cype.es/#Motor_de_calculo_OpenSees">Motor de cálculo OpenSees</a></li>
+                    <li><a href="http://murospantalla.cype.es">Muros pantalla</a></li>
+                    <li><a href="http://murosmensula.cype.es">Muros en ménsula de hormigón armado</a></li>
+                    <li><a href="http://comprobacion-punzonamiento.cype.es">Comprobación de punzonamiento</a></li>
+                    <li><a href="http://estructurales.cype.es" >Elementos estructurales</a></li>
+                    <li><a href="http://cimentacion.cype.es" >Elementos de cimentaci&oacute;n</a></li>
+                    <li><a href="http://vigas-continuas.cype.es">Vigas continuas</a></li>
+                    <li><a href="http://marcos.cype.es" >Marcos</a></li>
+            	  <li></li>
+                  </ul>
+			  <p><strong>HVAC</strong></p>
+			  <ul>
+                    <li><a href="http://cypehvac-schematics.cype.es/">CYPEHVAC Schematics. Esquemas de principio de sistemas de climatización</a></li>
+                    <li><a href="http://cypehvac-radiant-floor.cype.es/">CYPEHVAC Radiant floor.<br />
+                    Sistemas de suelo radiante genéricos</a></li>
+        <li><a href="http://cypehvac-hydronics.cype.es/" class="enlaces_novedades">CYPEHVAC Hydronics. Instalaciones hidráulicas de climatización</a></li>
+        <li><a href="http://cypehvac-ductwork.cype.es/">CYPEHVAC Ductwork.<br />
+          Redes de conductos </a></li>
+            	  <li></li>
+		      </ul>
+<p><strong>CYPETHERM</strong></p>
+			  <ul>
+            <li><a href="http://cypetherm-improvements.cype.es">CYPETHERM Improvements. Análisis de medidas de mejora</a></li>
+                    <li><a href="http://cypetherm-improvements-plus.cype.es">CYPETHERM Improvements Plus. Análisis de medidas de mejora</a><br />
+                    </li>
+                    <li><a href="http://cypetherm-loads.cype.es">CYPETHERM LOADS. Cargas térmicas del edificio</a></li>
+                    <li><a href="http://cypetherm-he-plus.cype.es">CYPETHERM HE Plus. Justificación del CTE&nbsp;DB&nbsp;HE 1 y HE 0</a></li>
+                    <li><a href="http://cypetherm-eplus.cype.es">CYPETHERM EPlus. Modelización y simulación energética con EnergyPlus™</a></li>
+       	    		<li><a href="http://cypetherm-iso-13788.cype.es">CYPETHERM HYGRO. Humedad superficial crítica y condensación intersticial</a></li>
+                    <li><a href="http://cypetherm-iso-10211.cype.es">CYPETHERM BRIDGES. Puentes térmicos en edificios</a></li>
+            	  <li></li>
+			  </ul>
+<p><strong>Gestión</strong></p>
+                  <ul>
+                    <li><a href="http://arquimedes.cype.es" >Arqu&iacute;medes y Control de obra. Mediciones y presupuestos</a></li>
+                    <li><a href="http://generadorprecios.cype.es" >Generador de precios de la construcción</a></li>
+                    <li><a href="http://generadorprecios.cype.es/rehabilitacion/" >Generador de precios de rehabilitación</a></li>
+                    <li><a href="http://generadorprecios.cype.es/espacios_urbanos/">Generador de precios para espacios urbanos</a></li>
+					<li><a href="http://www.generadordeprecios.info" target="_blank">Generador de precios on-line</a></li>
+                    <li><a href="http://generadoresdepresupuestos.cype.es" >Generadores de presupuestos</a></li>
+                    <li><a href="http://predimensionadoresdemedicionesypresupuestos.cype.es" >Predimensionadores de mediciones y presupuestos</a></li>
+                    <li><a href="http://open-bim-cost-estimator.cype.es/">Open BIM Cost Estimator. Estimación automática del presupuesto</a></li>
+                    <li><a href="http://open-bim-quantities.cype.es/">Open BIM Quantities.<br />
+                    Medición y presupuesto de modelos BIM                    </a></li>
+            	  <li></li>
+                  </ul>
+                            
+<p><strong>Documentación</strong></p>
+                  <ul>
+                    <li><a href="http://cypeurban.cype.es/">CYPEURBAN.  Documentación del cumplimiento urbanístico </a></li>
+                    <li><a href="http://open-bim-memorias-cte.cype.es/">Open BIM Memorias CTE. Proyecto de edificación</a></li>
+                    <li><a href="http://open-bim-estudio-basico-de-seguridad-y-salud.cype.es/#Open_BIM_Estudio_basico_de_seguridad_y_salud">Open BIM Estudio básico de seguridad y salud</a></li>
+                    <li><a href="http://gestion.cype.es/estudio_basico_de_seguridad_y_salud.htm">Estudio básico de seguridad y salud</a></li>
+                    <li><a href="http://gestion.cype.es/estudio_de_seguridad_y_salud.htm">Estudio de seguridad y salud</a></li>
+                    <li><a href="http://open-bim-proyecto-de-demolicion.cype.es/#Open_BIM_Proyecto_de_demolicion">Open BIM Proyecto de demolición</a><br />
+                    </li>
+                    <li><a href="http://proyecto-de-demolicion.cype.es">Proyecto de demolición</a></li>
+                    <li><a href="http://detalles-constructivos.cype.es">Detalles constructivos de edificación</a></li>
+                    <li><a href="http://detalles.cype.es" >Biblioteca de detalles constructivos para estructuras</a></li>
+                    <li><a href="http://manualuso.cype.es">Cypedoc. Manual de uso y mantenimiento del edificio</a></li>		
+                    <li><a href="http://libroedificio.cype.es" >Cypedoc. Libro del edificio</a></li>
+                    <li><a href="http://rehabilitacion-energetica.cype.es">Estudio de rehabilitación energética de edificios</a></li>
+            	  <li></li>
+                  </ul>                             	
+            </div>
+                        
+          <div style="width:27%;">            	                 
+<p><strong>MEP</strong></p>
+			  <ul>
+   	    		  <li><a href="http://instalaciones.cype.es">CYPECAD MEP. Envolvente e instalaciones del edificio</a></li>
+   	    		  <li><a href="http://cypelec-core.cype.es">CYPELEC Core. Instalaciones eléctricas de baja tensión</a></li>
+   	    		  <li><a href="http://cypelec-rebt.cype.es">CYPELEC REBT. Instalaciones eléctricas de baja tensión</a></li>
+        <li><a href="http://cypelec-retie.cype.es/" class="enlaces_novedades">CYPELEC RETIE. Instalaciones eléctricas de baja tensión</a></li>
+   	    		  <li><a href="http://cypelec-switchboard.cype.es/#CYPELEC_Switchboard">CYPELEC Switchboard. Envolventes de la instalación eléctrica</a></li>
+   	    		  <li><a href="http://cypelec-multiline.cype.es/">CYPELEC Multiline. Generación del esquema multifilar</a></li>
+   	    		  <li><a href="http://cypelec-rebt.cype.es/cypelec_rebt_memorias_tecnicas_de_diseno.htm">CYPELEC REBT. Memorias Técnicas de Diseño (MTD)</a></li>
+  <li><a href="http://cypelec-ct-centros-de-transformacion.cype.es">CYPELEC CT.
+    Centros de transformación</a></li>
+                  <li><a href="http://cypelec-electrical-mechanisms.cype.es/">CYPELEC Electrical Mechanisms. Disposición de mecanismos eléctricos</a></li>
+                  <li><a href="http://cypelec-distribution.cype.es/">CYPELEC Distribution.<br />
+Distribución de circuitos y cargas</a></li>
+  <li><a href="http://cypelec-pv.cype.es/">CYPELEC PV Systems. Instalaciones fotovoltaicas</a></li>
+  <li><a href="http://cypelec-grounding-iec.cype.es/">CYPELEC Grounding IEC. Sistemas de puesta a tierra</a></li>
+  <li><a href="http://cypelec-grounding-ieee.cype.es/">CYPELEC Grounding IEEE. Sistemas de puesta a tierra</a></li>
+  <li><a href="http://cypelec-grounding-unesa.cype.es/">CYPELEC Grounding UNESA. Sistemas de puesta a tierra</a></li>
+  <li><a href="http://cypelec-networks.cype.es/">CYPELEC Networks. Análisis de sistemas de potencia en redes eléctricas</a></li>
+  <li><a href="http://cypetel-project-ict.cype.es/">CYPETEL Project ICT. Infraestructura Común de Telecomunicaciones</a></li>
+  <li><a href="http://cypetel-wireless.cype.es/">CYPETEL Wireless. Redes inalámbricas</a></li>
+  <li><a href="http://cypetel-schematics.cype.es/">CYPETEL Schematics.<br />
+    Esquemas de sistemas de telecomunicaciones  </a></li>
+  <li><a href="http://cypetel-systems.cype.es/">CYPETEL Systems.<br />
+    Infraestructura de sistemas de telecomunicaciones  </a></li>
+  <li><a href="http://cypedoc-cte-hs1.cype.es/">CYPEDOC CTE HS 1. Protección frente a la humedad</a></li>
+  <li><a href="http://cypedoc-cte-hs2.cype.es/">CYPEDOC CTE HS 2. Recogida y evacuación de residuos</a></li>
+  <li><a href="http://open-bim-cte-hs3.cype.es/#Open_BIM_CTE_HS_3">CYPEDOC CTE HS 3. Cumplimiento del CTE HS 3</a></li>
+  <li><a href="http://cypedoc-cte-hs6.cype.es/">CYPEDOC CTE HS 6.<br />
+    Protección frente a la exposición al radón</a></li>
+  <li><a href="http://cypedoc-cte-sua8.cype.es/">Open BIM CTE SUA 8. Seguridad frente al riesgo causado por la acción del rayo</a></li>
+  <li><a href="http://open-bim-lightning.cype.es/">Open BIM Lightning. Instalación de seguridad frente al riesgo causado por la acción del rayo</a></li>
+  <li><a href="http://cypeplumbing-sanitary-systems.cype.es/">CYPEPLUMBING Sanitary Systems</a></li>
+  <li><a href="http://cypeplumbing-water-systems.cype.es/">CYPEPLUMBING Water Systems</a></li>
+  <li><a href="http://cypeplumbing-schematic-diagrams.cype.es/#CYPEPLUMBING_Schematic_diagrams">CYPEPLUMBING Schematic diagrams. Esquemas de instalaciones de suministro de agua</a></li>
+  <li><a href="http://cypeplumbing-solar-systems.cype.es/#CYPEPLUMBING_Solar_Systems">CYPEPLUMBING Solar Systems. Contribución de energía solar térmica para ACS y calefacción</a></li>
+  <li><a href="http://cypegas.cype.es/">CYPEGAS</a></li>
+  <li><a href="http://cypelux-cte.cype.es">CYPELUX CTE. Cálculo luminotécnico. Justificación del HE-3 y SUA-4</a></li>
+  <li><a href="http://cypelux-en.cype.es/">CYPELUX EN. Verificación de UNE EN 12464-1 para lugares de trabajo interiores</a></li>
+  <li><a href="http://cypelux-leed.cype.es/">CYPELUX LEED. Verificación del LEED v4.0 CAI CRÉDITO 8.1</a></li>
+  <li><a href="http://cypelux.cype.es/#CYPELUX">CYPELUX. Cálculo luminotécnico</a></li>
+  <li><a href="http://cypesound-cte.cype.es">CYPESOUND CTE. Diseño acústico y verificación del CTE&nbsp;DB&nbsp;HR</a></li>
+  <li><a href="http://acoubat.cype.es/">AcouBAT by CYPE. Aislamiento y acondicionamiento acústico de edificios</a></li>
+  <li><a href="http://cypefire-cte.cype.es">CYPEFIRE CTE<br />
+    Instalaciones de protección contra incendios</a></li>
+  <li><a href="http://cypefire-rsciei.cype.es/">CYPEFIRE RSCIEI<br />
+    Instalaciones de protección contra incendios en establecimientos industriales</a></li>
+  <li><a href="http://cypefire-design.cype.es">CYPEFIRE Design<br />
+    Instalaciones de protección contra incendios</a></li>
+  <li><a href="http://cypefire-hydraulic-systems.cype.es/">CYPEFIRE Hydraulic Systems<br />
+    Instalaciones hidráulicas de extinción de incendios</a></li>
+  <li><a href="http://cypefire-pressure-systems.cype.es/">CYPEFIRE Pressure Systems.<br />
+    Instalaciones de sobrepresión de escaleras  </a></li>
+  <li><a href="http://cypefire-fds.cype.es/">CYPEFIRE FDS. Simulación de evolución de incendios mediante FDS</a></li>
+  <li><a href="http://cypefire-fds-viewer.cype.es/">CYPEFIRE FDS Viewer. Visualización de simulaciones dinámicas de incendios</a></li>
+                  <li><a href="http://fontaneria.cype.es">Instalaciones de fontanería</a> y <a href="http://saneamiento.cype.es/">saneamiento</a></li>
+       			  <li><a href="http://edu.cype.es/instalaciones/">CYPECAD MEP Versi&oacute;n estudiantes</a></li>
+            	  <li></li>
+			  </ul>
+<p><strong>Infraestructuras urbanas</strong></p>
+                  <ul>
+                    <li><a href="http://abastecimiento.cype.es">Abastecimiento de agua</a><br />
+                    <a href="http://open-bim-water-supply.cype.es/">Open BIM Water Supply</a>                    </li>
+   	    		  <li><a href="http://alcantarillado.cype.es">Alcantarillado</a><br />
+   	    		    <a href="http://open-bim-sewerage.cype.es/">Open BIM Sewerage</a></li>
+   	    		  <li><a href="http://electrificacion.cype.es">Electrificación</a><br />
+   	    		    <a href="http://open-bim-electrification.cype.es/">Open BIM Electrification</a>   	    		  </li>
+   	    		  <li><a href="http://iugas.cype.es">Suministro de gas</a><br />
+   	    		    <a href="http://open-bim-gas-supply.cype.es/">Open BIM Gas Supply</a><br />
+          </li>
+            	  <li></li>
+                  </ul>
+
+            </div>
+            
+            <div style="width:19%">
+            	<ul>
+					<li><strong><a href="http://descargas.cype.es">Área de descarga</a></strong></li>
+					<li><strong><a href="http://versiones.cype.es">Versiones de los programas</a></strong></li>
+					<li><strong><a href="http://normativa.cype.es" >Normativa implementada</a></strong></li>
+					<li><strong><a href="http://crack.cype.es" >CYPE y la pirater&iacute;a</a></strong></li>
+                <hr>
+            	  	<li><strong><a href="http://faq.cype.es" >FAQ</a></strong></li>
+            	  	<li><strong><a href="https://www.youtube.com/user/CYPESoftware">Videos</a></strong></li>
+            	  	<li><strong><a href="http://www.manuales.cype.es">Manuales</a></strong></li>
+            	  	<li><strong><a href="http://encuentros.cype.es" >Calendario de encuentros</a></strong></li>           	  
+          	  	<hr>
+            	  	<li><strong><a href="http://www.cype.com/de/">Alemán</a></strong></li>
+            	  	<li><strong><a href="http://www.cype.bg">Búlgaro</a></strong></li>
+					<li><strong><a href="http://www.cype.fr" >Francés</a></strong></li>
+					<li><strong><a href="http://www.cype.com/en" >Inglés</a></strong></li>
+					<li><strong><a href="http://www.cype.it" >Italiano</a></strong></li>
+					<li><strong><a href="http://www.cype.pt" >Portugués</a></strong></li>
+					<li><strong><a href="http://www.cype.com/en/">Ruso</a></strong></li>
+				<hr>
+            	  <li><strong><a href="http://www.cype.cat" >Software en catal&agrave;</a></strong></li>
+            	<hr>
+            	  <li><strong><a href="http://www.cype.es/principal/distribuidores/" >Distribuidores</a></strong></li>  
+				</ul>
+            </div>
+            
+		</div>
+        
+			<div id="pie_logos">
+				<div id="pie_logo_ISO">
+					<a href="http://noticias.cype.es/2004/07-19.htm" target="_blank"><img src="http://www.cype.es/imagen/logo_bvqi_cype.gif" alt="CYPE Ingenieros certifica  su sistema de gesti&oacute;n de calidad  en la comercializaci&oacute;n y servicio posventa de software para arquitectura ingenier&iacute;a y construcci&oacute;n. Norma ISO 9001:2000" width="50" height="36" border="0" align="left" style="margin-right:5px;"></a>
+					<a href="http://noticias.cype.es/2004/07-19.htm" target="_blank"><br /><b>1&ordf; Empresa Espa&ntilde;ola</b> de Software T&eacute;cnico<br>
+            		  con certificaci&oacute;n <b>ISO 9001:2000</b></a>
+				</div>
+				<div id="pie_logo_CYPE">
+					<a href="http://www.cype.es"><img src="http://www.cype.es/imagen/logo_cype_castellano.gif" alt="CYPE Ingenieros, S.A." width="316" height="166" border="0"></a>
+				</div>
+			</div>
+</div> 
+	<!--contenedor -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1027109-3']);
+  _gaq.push(['_setDomainName', 'cype.es']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+<!-- InstanceEnd --></html>

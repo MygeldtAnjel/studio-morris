@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>procesos &#8211; ARQcoaching</title>
+	<atom:link href="https://www.coachingarquitectos.com/tag/procesos/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.coachingarquitectos.com</link>
+	<description>Coaching para arquitectos por arquitectos</description>
+	<lastBuildDate>Sun, 23 Jun 2019 19:15:17 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+
+<image>
+	<url>https://www.coachingarquitectos.com/wp-content/uploads/2018/10/logo-ARQcoaching-fav-icon-1.png</url>
+	<title>procesos &#8211; ARQcoaching</title>
+	<link>https://www.coachingarquitectos.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>¿ANALIZAS LOS PROCESOS DE TRABAJO EN EL ESTUDIO DE ARQUITECTURA?</title>
+		<link>https://www.coachingarquitectos.com/procesos-de-trabajo-en-el-estudio-de-arquitectura/</link>
+					<comments>https://www.coachingarquitectos.com/procesos-de-trabajo-en-el-estudio-de-arquitectura/#respond</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 21 Nov 2017 07:30:17 +0000</pubDate>
+				<category><![CDATA[estudio]]></category>
+		<category><![CDATA[procesos]]></category>
+		<category><![CDATA[productividad]]></category>
+		<category><![CDATA[rentabilidad]]></category>
+		<guid isPermaLink="false">http://www.coachingarquitectos.com/?p=4723</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/procesos-de-trabajo-en-el-estudio-de-arquitectura/">¿ANALIZAS LOS PROCESOS DE TRABAJO EN EL ESTUDIO DE ARQUITECTURA?</a></p>
+<p>Los procesos de trabajo en el estudio de arquitectura son grandes olvidados, pero tienen una gran importancia en la productividad y rentabilidad. Muchas veces funcionamos a salto de mata. Vale la pena analizarlos y optimizarlos, estableciendo procedimientos.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/procesos-de-trabajo-en-el-estudio-de-arquitectura/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

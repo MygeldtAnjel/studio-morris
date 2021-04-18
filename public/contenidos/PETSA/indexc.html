@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+  <!--[if IE 8]>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+  <![endif]-->
+  <!--[if !IE 8]>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+  <![endif]-->
+  <!--[if !IE]>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+  <![endif]-->
+
+  <html version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/1999/xhtml http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd">
+ <head>
+
+  
+
+<title>Prácticas ETSA: UPV</title> <meta http-equiv="X-UA-Compatible" content="IE=7, IE=11"/>
+  <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1"/>
+<link href="/css/upv_n.css"                 rel="stylesheet" type="text/css" />
+<link href="/css/upv_miwser2_n.css"         rel="stylesheet" type="text/css" />
+<link href="/miwser/estilos/miwsernof.css"      rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/yansu/js/mnuIzquierda.js"></script>
+
+<script type="text/javascript" src="/intupv2k7/lib/jquery/jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+  $.noConflict();
+  // Code that uses other library's $ can follow here.
+  </script>
+
+<script type="text/javascript" src="/intupv2k7/lib/jquery/addon/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/comun.js"></script>
+<script type="text/javascript" src="/js/tipografia.js"></script>
+<script type="text/javascript" src="/js/idioma.js"></script>
+    
+
+<script type="text/javascript">
+  jQuery(document).ready(function() {
+    establecer_tipografia();
+  });
+</script>
+    
+
+<script type="text/javascript">
+function pon_title(){
+  var ifr=document.getElementById('marco').contentDocument || document.getElementById('marco').contentWindow.document;
+  document.title=ifr.title;
+}
+  </script>
+
+<script type="text/javascript">
+
+function getInternetExplorerVersion()
+// Returns the version of Internet Explorer or a -1
+// (indicating the use of another browser).
+{
+  var rv = -1; // Return value assumes failure.
+  if (navigator.appName == 'Microsoft Internet Explorer')
+  {
+    var ua = navigator.userAgent;
+    var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+    if (re.exec(ua) != null)
+      rv = parseFloat( RegExp.$1 );
+  }
+
+  return rv;
+}
+
+</script>
+  
+<noscript>
+</noscript>
+<script type="text/javascript">function ajustapuntos() {}</script>
+</head>
+<body>
+
+<div id="body">
+  <div id="DIVpag">
+    <!-- cabecera pagina -->
+    <div id="DIVcab">
+      <div id="DIVsep1N2">
+        <img alt="-" src="/imagenes/NGR.png" style="float:left;width:342px;height:10px;"/>
+        <img alt="-" src="/imagenes/NGR.png" style="width:128px;height:10px;padding-left:30px;padding-right:30px;float:right;"/>
+      </div>
+      <div id="DIVcab1N2">
+        <div id="DIVescudoN2"><a href="/"><img src="/imagenes/marcaUPVN1.png" longdesc="/lawai/escudo-es.txt" id="escudoN2" alt="UPV" /></a></div>
+
+
+        <div id="DIVmenuHerramientas">
+          <ul>
+  
+<script language="javascript" type="text/javascript">
+function cambio_idioma_ruta(idioma_destino, idi_cad_destino,idioma_actual, idi_cad_actual,url_cache){
+
+            var ir_url = window.location.href; 
+            var tmp_url = ir_url;
+            var ir_cache = 0;
+            var busco = "p_idioma=" + idioma_actual;
+            var reemp = "p_idioma=" + idioma_destino;
+
+            ir_url = ir_url.replace(new RegExp(busco,"gi") ,reemp);
+            if ( ir_url != tmp_url ) { ir_cache = 1;}
+             
+            busco = "([0-9]+)normal" + idioma_actual + ".html";
+            reemp = "$1normal" + idioma_destino + ".html";
+            ir_url = ir_url.replace(new RegExp(busco,"gi") ,reemp);
+            if (ir_url != tmp_url) { ir_cache = 1;}
+            
+            busco = "menu_([0-9]+)" + idioma_actual + ".html";
+            reemp = "menu_$1" + idioma_destino + ".html";
+            ir_url = ir_url.replace(new RegExp(busco,"gi") ,reemp);
+            if (ir_url != tmp_url) { ir_cache = 1;}
+
+            busco = "noticia_([0-9]+)" + idioma_actual + ".html";
+            reemp = "noticia_$1" + idioma_destino + ".html";
+            ir_url = ir_url.replace(new RegExp(busco,"gi") ,reemp);
+            if (ir_url != tmp_url) { ir_cache = 1;}
+                      
+            busco = "index" + idioma_actual + ".html";
+            reemp = "index" + idioma_destino + ".html";
+            ir_url = ir_url.replace(new RegExp(busco,"gi") ,reemp);
+            if (ir_url != tmp_url) { ir_cache = 1;}
+
+            busco = "index-" + idi_cad_actual + ".html";
+            reemp = "index-" + idi_cad_destino + ".html";
+            ir_url = ir_url.replace(new RegExp(busco,"gi") ,reemp);
+            if (ir_url != tmp_url) { ir_cache = 1;}
+
+            busco = "\/$";
+            reemp = "/index-" + idi_cad_destino + ".html";
+            ir_url = ir_url.replace(new RegExp(busco,"gi") ,reemp);
+            if (ir_url != tmp_url) { ir_cache = 1;}
+
+            busco = "menu_url" + idioma_actual + ".html";
+            reemp = "menu_url" + idioma_destino + ".html";
+            ir_url = ir_url.replace(new RegExp(busco,"gi") ,reemp);
+            
+            if (ir_cache == 0 ) { ir_url = url_cache;}
+                        
+    
+  document.cookie = "ID="+idioma_destino+"; path=/;domain=.upv.es";
+  document.cookie = "UPV_IDIOMA="+idi_cad_destino+"; path=/;domain=.upv.es";
+  window.location.replace(ir_url);
+}
+</script>
+<li class="menuHerramientas" id="herramientaIdioma">
+<a class="menuHerramientas" href="#" onclick="return false;">Idioma &middot; language
+              <img src="/yansu/images/ico_minus_n.gif" border="0" style="vertical-align:middle"/></a>I<br/>
+<div class="menuidioma"><div>
+<!-- url_cache:/contenidos/PETSA/index-va.html -->
+<p><a class="menuHerramientas" href="/contenidos/PETSA/index-va.html" title="Valencià"  onclick="cambio_idioma_ruta('v', 'va', 'c', 'es', '/contenidos/PETSA/index-va.html'); return false;"  lang="es_CA">Valencià</a></p>
+<!-- url_cache:/contenidos/PETSA/index-en.html -->
+<p><a class="menuHerramientas" href="/contenidos/PETSA/index-en.html" title="English"  onclick="cambio_idioma_ruta('i', 'en', 'c', 'es', '/contenidos/PETSA/index-en.html'); return false;"  lang="en">English</a></p>
+</div></div>
+</li>
+
+    <li class="menuHerramientas"><a href="/bin2/tipoacc/a?%3A%2F%2F%3A" class="menuHerramientas"
+            onclick="return cambia_tipografia(tipo1);return false;"
+            title="Tamaño mediano">a</a> · <a
+            href="/bin2/tipoacc/A?%3A%2F%2F%3A" class="menuHerramientas"
+            onclick="return cambia_tipografia(tipo2);return false;"
+            title="Tamaño grande">A</a> &nbsp;I</li>
+
+            <li class="menuHerramientas"><a href="/pls/soalu/sic_mag.MetaBus?p_idioma=C" title="Buscador"
+                class="menuHerramientas">Buscar</a> &nbsp;I</li>
+            <li class="menuHerramientas"><a href="/pls/soalu/sic_per.Busca_Persona?p_idioma=C" title="Directorio"
+                class="menuHerramientas">Directorio</a></li>
+    </ul>
+<!-- LOGO para : MIWSERNOF -->
+<div id="banner_wrap">
+<div id="banner_image">
+<a class="upv_enlace" href="/contenidos/PETSA/indexc.html"><!-- NO LOGO NI NADA POR SER NOF --></a>
+</div>
+</div>
+
+  </div>
+  <div class="estabilizador">&nbsp; </div>
+  </div>
+  </div> <!-- /cabecera pagina -->
+    
+
+<!-- MENU Falta mensaje a traducir-->
+<div id="div_MENUH">
+      <div id="DIVbarraMenu">
+
+<script type="text/javascript">
+  function resizeMenu () {
+    jQuery(".menuopciones").each(function () {
+      var minWidth=185;
+      var width=jQuery(this).parent().parent().width();
+      if (width<minWidth) {
+        jQuery(this).parent().parent().css('text-align','right');
+        jQuery(this).parent().parent().width(minWidth);
+      }
+      jQuery(this).width(jQuery(this).parent().parent().width());
+    });
+  }
+  jQuery(function() { resizeMenu(); });
+  </script>
+<ul class="miw_menuopciones miwsernof">
+
+</ul><!-- /miw_menuopciones -->
+
+        <div class="estabilizador"> </div>
+      </div>
+</div>
+<!-- fin MENU -->
+    
+
+<script type="text/javascript">
+// <![CDATA[
+var ahora = new Date();
+var image = new Image();
+
+
+image.src="/pls/oalu/sic_cont.GetImage_MiwSer?P_AHORA=" + ahora.getTime();
+    
+
+// ]]>
+</script>
+  
+<div id="pagina">
+<div id="DIVrutaN3">
+<a href="http://www.upv.es">Inicio UPV</a> :: 
+<a href="/entidades/SIE/indexc.html">Servicio Integrado de Empleo</a> :: 
+<a href="/contenidos/PETSA/indexc.html">Prácticas ETSA</a>
+</div>
+<div id="contenido">
+<div id="contmenu">
+<div id="mnuIzquierda">
+
+  <SCRIPT language=javascript type=text/javascript>
+  total_elementos=0;
+  </SCRIPT>
+      
+<p>
+
+<a href="http://www.upv.es/contenidos/PETSA/infoweb/petsa/info/980994normalc.html">
+Prácticas en empresas 
+</a>
+</p>
+<p>
+
+<a href="http://www.upv.es/contenidos/PETSA/infoweb/petsa/info/726986normalc.html">
+Documentación 
+</a>
+</p>
+<p>
+
+<a href="http://www.upv.es/contenidos/PETSA/infoweb/petsa/info/932042normalc.html">
+Evaluación de la práctica 
+</a>
+</p>
+<p>
+
+<a href="http://www.upv.es/contenidos/PETSA/infoweb/petsa/info/727218normalc.html">
+Ofertas de prácticas ETSA 
+</a>
+</p>
+<p>
+
+<a href="http://www.upv.es/contenidos/PETSA/infoweb/petsa/info/887819normalc.html">
+Preguntas frecuentes (FAQs) 
+</a>
+</p>
+<p>
+
+<a href="http://www.upv.es/contenidos/PETSA/infoweb/petsa/info/781392normalc.html">
+Empleo 
+</a>
+</p>
+<p>
+
+<a href="http://www.upv.es/contenidos/PETSA/infoweb/petsa/info/1103828normalc.html">
+Contacto y Horario 
+</a>
+</p>
+<p>
+
+<a href="http://www.upv.es/contenidos/PETSA/infoweb/petsa/info/727291normalc.html">
+Enlaces de interés 
+</a>
+</p>
+<p>
+
+<a href="http://www.valencia-cityguide.com/" target="_blank">
+Visit Valencia 
+</a>
+</p>
+
+<style type="text/css">
+          #banners div#searchcontrol {
+            margin-top: 20px;
+            margin-left: 25px;
+          }
+          </style>
+<div id="bannersmenu">
+<!-- id:912902 name:U0686740.jpg-->
+<img src="/uplser/U0686740.jpg" align="center" alt="Logotipos" title="Logotipos" border="0"><br/><br/>
+</div>
+</div>
+</div>
+<div id="contprincipal">
+<div id="avisodestacado" style="width:auto;padding-right:155px;">
+<div id="avisodestacadocont" style="width:500px!important;">
+<img src="/uplser/U0879083.jpg" align="center" alt="Foto principal" title="Foto principal">
+<h2><br /></h2>
+<p>La Unidad de Prácticas en Empresa de la Escuela Técnica Superior de Arquitectura ofrece a sus alumnos la posibilidad de realizar prácticas en empresa así como la información y el asesoramiento necesarios.</p>
+</div>
+</div>
+<div id="news">
+<div id="newstitle_c"></div>
+<div id="news_azul">
+<a href="/contenidos/PETSA/noticia_867118c.html" target="_top">
+<div class="news_fecha">02/07/2020</div>
+<div class="news_titular">FIRMA ELECTRÓNICA OBLIGATORIA</div>
+<div class="news_resumen">
+
+          <style>
+          .news_resumen p{
+          margin: 0;
+          }
+          </style>
+<p>A partir del 15 de septiembre de 2020 solo se tramitar&aacute;n convenios de pr&aacute;cticas de manera ONLINE y debidamente firmados con FIRMA DIGITAL por todas las partes.</p>
+</div></a>
+</div>
+<div id="news_verde">
+<a href="/contenidos/PETSA/noticia_1102781c.html" target="_top">
+<div class="news_fecha">16/06/2020</div>
+<div class="news_titular">PRACTICAS ON LINE Y PRESENCIALES</div>
+<div class="news_resumen">
+
+          <style>
+          .news_resumen p{
+          margin: 0;
+          }
+          </style>
+<p>La UPV autoriza la tramitaci&oacute;n de pr&aacute;cticas en la modalidad PRESENCIAL aunque se priorizar&aacute;n las pr&aacute;cticas en la modalidad&nbsp; ONLINE/A DISTANCIA.</p>
+</div></a>
+<div id="news_anexo"><a class="upv_enlace" target="_top" href="http://www.upv.es/contenidos/PETSA/infoweb/petsa/info/1135260normalc.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('clip2','','/miwser/images/clip2.gif',1)" border="0">
+<img src="/miwser/images/clip.gif" name="clip2" width="10" height="14" border="0" align="absmiddle" alt="Acceder a enlace" title="Acceder a enlace"><u>PRÁCTICAS DURANTE EL COVID</u></a></div>
+</div>
+ <a class="imgrss" href=/pls/oalu/SIC_MIWSERS2.MicroWebServicio?P_ENTIDAD=PETSA&P_IDIOMA=C&P_URL=SIC_MIWSERS2.RSS_info?p_vista=MS%26p_entidad=PETSA%26p_idioma=C><img src=/miwser/images/logo_rss.jpg alt="RSS" title="RSS PETSA" border=0></a>
+<div class="news_more">
+ [<a class="upv_enlace" href="/contenidos/PETSA/noticiasc.html" target="_top">ver todas</a>]
+</div>
+<div style="background:transparent url(/miwser/images/puntos_men.gif) center left repeat-x; margin-top:12px;">&nbsp;</div>
+</div><!-- /news -->
+<style type="text/css">
+          #banners div#searchcontrol {
+            margin-top: 20px;
+            margin-left: 25px;
+          }
+          </style>
+<div id="banners">
+<!-- Buscador no activo para idweb : 706513 -->
+<a class="upv_enlace" href="http://www.upv.es/contenidos/PETSA/infoweb/petsa/info/1103828normalc.html">
+<!-- id:1132678 name:U0870423.jpg-->
+<img src="/uplser/U0870423.jpg" align="center" alt="Email practicas" title="Email practicas" border="0"><br/><br/>
+</a>
+<a class="upv_enlace" href="http://www.upv.es/contenidos/PETSA/infoweb/petsa/info/726986normalc.html">
+<!-- id:831788 name:U0600170.jpg-->
+<img src="/uplser/U0600170.jpg" align="center" alt="Documentación prácticas" title="Documentación prácticas" border="0"><br/><br/>
+</a>
+<a class="upv_enlace" href="http://www.upv.es/contenidos/PETSA/infoweb/petsa/info/932047normalc.html">
+<!-- id:995936 name:U0751106.jpg-->
+<img src="/uplser/U0751106.jpg" align="center" alt="Evaluación" title="Evaluación" border="0"><br/><br/>
+</a>
+<a class="upv_enlace" href="https://www.facebook.com/practicasenempresas.etsav" target="_new">
+<!-- id:832928 name:U0878987.jpg-->
+<img src="/uplser/U0878987.jpg" align="center" alt="Our Facebook page" title="Our Facebook page" border="0"><br/><br/>
+</a>
+</div>
+</div>
+<div id="panelIZQ">
+  <div class="estabilizador"> </div>
+</div>
+<!-- / contenido-->
+  <div class="estabilizador"> </div>
+</div>
+<!-- / pagina -->
+
+      <!-- Pie_Pagina_n -->
+    <div class="estabilizador"> </div>
+    <div id="DIVpiePagina">
+      <div id="DIVsepPie1N3"><br/></div>
+      <div style="float:right;margin-right:15px;">
+        <a href="http://www.upv.es/entidades/AMAPUOC/" title="EMAS"><img src="/imagenes/EMASupv.png" alt="EMAS upv" width="33" height="62" /></a>
+      </div>
+      <div class="texto_pie menuPieN2">
+        <a href="http://www.vlc-campus.com/" title="VLC-CAMPUS (abre ventana nueva)" rel="external" onclick="target='_blank'"><img src="/imagenes/campus_excelenciaVLC.png" alt="VLC-CAMPUS"  style="float:right;vertical-align:top;"/></a>
+        <a href="http://www.campushabitat5u.com/" title="CAMPUS HABITAT (abre ventana nueva)" rel="external" onclick="target='_blank'"><img src="/imagenes/campus_excelenciaH5.png" alt="CAMPUS HABITAT"  style="float:right;vertical-align:top;"/></a>
+        <div id="DIVpieMenu">
+          <ul>
+            <li class="menuPIE"><a href="http://www.upv.es/otros/como-llegar-upv/index-es.html" title="C&oacute;mo llegar" class="menuPIE">C&oacute;mo llegar</a>&nbsp;I</li>
+            <li class="menuPIE"><a href="http://www.upv.es/plano/plano-2d-es.html" title="Planos" class="menuPIE">Planos</a>&nbsp;I</li>
+            <li class="menuPIE"><a href="http://www.upv.es/otros/contacto-es.html" title="Contacto" class="menuPIE">Contacto</a></li>
+          </ul>
+        <div class="texto_contacto">Universitat Polit&egrave;cnica de Val&egrave;ncia &copy; 2020 &middot; Tel. (+34) 96 387 70 00</div>
+        </div>
+      </div>
+    </div>
+    <!-- /pie_pagina -->
+  
+
+  <div class="estabilizador"> </div>
+</div>
+<!-- /DIVpag -->
+  <div class="estabilizador"> </div>
+</div>
+<!-- /body -->
+</body></html>

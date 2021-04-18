@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>experiencia &#8211; ARQcoaching</title>
+	<atom:link href="https://www.coachingarquitectos.com/tag/experiencia/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.coachingarquitectos.com</link>
+	<description>Coaching para arquitectos por arquitectos</description>
+	<lastBuildDate>Wed, 14 Aug 2019 21:42:22 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+
+<image>
+	<url>https://www.coachingarquitectos.com/wp-content/uploads/2018/10/logo-ARQcoaching-fav-icon-1.png</url>
+	<title>experiencia &#8211; ARQcoaching</title>
+	<link>https://www.coachingarquitectos.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>¿CÓMO LOGRA UN ARQUITECTO SIN EXPERIENCIA UN TRABAJO?</title>
+		<link>https://www.coachingarquitectos.com/lograr-un-trabajo-de-arquitecto-sin-experiencia/</link>
+					<comments>https://www.coachingarquitectos.com/lograr-un-trabajo-de-arquitecto-sin-experiencia/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 02 Jan 2018 07:30:46 +0000</pubDate>
+				<category><![CDATA[empleo]]></category>
+		<category><![CDATA[empleabilidad]]></category>
+		<category><![CDATA[experiencia]]></category>
+		<category><![CDATA[identidad empleable]]></category>
+		<category><![CDATA[propuesta de valor]]></category>
+		<guid isPermaLink="false">http://www.coachingarquitectos.com/?p=4888</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/lograr-un-trabajo-de-arquitecto-sin-experiencia/">¿CÓMO LOGRA UN ARQUITECTO SIN EXPERIENCIA UN TRABAJO?</a></p>
+<p>Lograr un trabajo de arquitecto sin experiencia es algo a lo que todos nos hemos tenido que enfrentar, y no es fácil. Muchas veces el requisito se pide sin ninguna lógica y es una barrera fuerte que te impide trabajar. Veamos cómo saltar esa barrera.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/lograr-un-trabajo-de-arquitecto-sin-experiencia/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

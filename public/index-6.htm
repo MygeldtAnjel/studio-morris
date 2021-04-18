@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"6fd8f05cf6",applicationID:"338136417"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+					<script id="truendoAutoBlock" 				
+				type="text/javascript" 
+				src="https://cdn.priv.center/pc/truendo_cmp.pid.js"
+				data-siteid="cefbd4a4-d520-4469-814a-e338d9e1bad6"
+				>
+				</script>
+			<!-- This site has installed PayPal for WooCommerce v2.4.9 - https://www.angelleye.com/product/woocommerce-paypal-plugin/ -->
+
+	<!-- This site is optimized with the Yoast SEO plugin v15.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Timeular - easy and accurate time tracking</title>
+	<meta name="description" content="Timeular is an all-in-one solution to track, understand and improve your time management, making it easier to work smarter, not harder." />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://timeular.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Timeular - easy and accurate time tracking" />
+	<meta property="og:description" content="Timeular is an all-in-one solution to track, understand and improve your time management, making it easier to work smarter, not harder." />
+	<meta property="og:url" content="https://timeular.com/" />
+	<meta property="og:site_name" content="Timeular" />
+	<meta property="article:publisher" content="http://facebook.com/timeular" />
+	<meta property="article:modified_time" content="2021-02-17T12:19:28+00:00" />
+	<meta property="og:image" content="https://timeular.com/wp-content/uploads/2021/01/Timeular.png" />
+	<meta property="og:image:width" content="2400" />
+	<meta property="og:image:height" content="1350" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@timeular" />
+	<meta name="twitter:label1" content="Est. reading time">
+	<meta name="twitter:data1" content="1 minute">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://timeular.com/#organization","name":"Timeular","url":"https://timeular.com/","sameAs":["http://facebook.com/timeular","http://www.instagram.com/timeular","https://www.linkedin.com/company/timeular","https://twitter.com/timeular","https://soundcloud.com/productivity_masterminds","https://vimeo.com/timeular","https://www.producthunt.com/@timeular","https://www.youtube.com/channel/UCE7xkfKoPqI4B3SF8YrhsEQ","https://medium.com/@timeular","https://www.crunchbase.com/organization/timeular","https://play.google.com/store/apps/details?id=com.tmlr.zei.production&hl=en","https://apps.apple.com/us/app/timeular-make-your-time-count/id1215214688","https://www.kickstarter.com/projects/timeular/zeio-the-most-simple-time-tracking-solution","https://woocommerce.com/posts/time-tracking-dice-to-help-you-prioritize-the-important-things/","https://alifeofproductivity.com/timeular-review-my-time-tracker-of-choice/","https://www.capterra.com/p/176609/ZEI-by-Timeular/","https://q-software.com/portfolio/timeular/","https://formulae.brew.sh/cask/timeular","https://www.bloomberg.com/profile/company/1440943D:AV","https://dribbble.com/cieden/projects/1258795-Timeular","https://techcrunch.com/tag/timeular/","https://www.polidea.com/our-work/Take_Your_Time_Seriously_Thanks_to_IoT_Solution/"],"logo":{"@type":"ImageObject","@id":"https://timeular.com/#logo","inLanguage":"en-US","url":"https://timeular.com/wp-content/uploads/2016/11/LOGO-Black-400px.png","width":400,"height":93,"caption":"Timeular"},"image":{"@id":"https://timeular.com/#logo"}},{"@type":"WebSite","@id":"https://timeular.com/#website","url":"https://timeular.com/","name":"Timeular","description":"Track, understand and improve how you work.","publisher":{"@id":"https://timeular.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://timeular.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://timeular.com/#primaryimage","inLanguage":"en-US","url":"https://timeular.com/wp-content/uploads/2021/01/Timeular.png","width":2400,"height":1350,"caption":"Timeular is an all-in-one solution providing effortless time tracking to help you lead a more rewarding work-life."},{"@type":"WebPage","@id":"https://timeular.com/#webpage","url":"https://timeular.com/","name":"Timeular - easy and accurate time tracking","isPartOf":{"@id":"https://timeular.com/#website"},"about":{"@id":"https://timeular.com/#organization"},"primaryImageOfPage":{"@id":"https://timeular.com/#primaryimage"},"datePublished":"2020-04-01T16:29:36+00:00","dateModified":"2021-02-17T12:19:28+00:00","description":"Timeular is an all-in-one solution to track, understand and improve your time management, making it easier to work smarter, not harder.","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://timeular.com/"]}]},{"@id":"https://timeular.com//#/schema/VideoObject/HomeVideo","@type":"VideoObject","name":"Discover where your time really goes","description":"Easy to get accurate insights. It\u2019s effortless to track your time in detail and our playful dashboard provides you the insights to take action and improve how you spend your precious time.","thumbnailUrl":"https://timeular.com/wp-content/uploads/2019/06/timeular-video-how-to-time-tracking-device.jpg","uploadDate":"2019-05-01","contentUrl":"https://timeular.com/wp-content/uploads/2019/03/timeular-simple-time-tracking-showcase-video-1.mp4","duration":"PT23S"}]}</script>
+	<meta name="google-site-verification" content="mI3pRM7qbTP-RCSbEydYmFqB4taUvvlrAFSoiLW666U" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//timeular.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Timeular &raquo; Feed" href="https://timeular.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Timeular &raquo; Comments Feed" href="https://timeular.com/comments/feed/" />
+<link rel='stylesheet' id='alters-block-css'  href='https://timeular.com/wp-content/plugins/timeular-blocks/blocks/alters/style.css?ver=1615668255' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://timeular.com/wp-includes/css/dist/block-library/style.min.css?ver=1615668257' type='text/css' media='all' />
+<link rel='stylesheet' id='pricing-block-css'  href='https://timeular.com/wp-content/plugins/timeular-pricing-block/blocks/pricing/style.css?ver=1615668255' type='text/css' media='all' />
+<link rel='stylesheet' id='advanced-gutenberg-blocks-style-css'  href='https://timeular.com/wp-content/plugins/advanced-gutenberg-blocks/dist/blocks.style.build.css?ver=1.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='timeular/author-block-style-css'  href='https://timeular.com/wp-content/plugins/timeular-author-block/dist/style-index.css?ver=1615668254' type='text/css' media='all' />
+<link rel='stylesheet' id='checks-block-css'  href='https://timeular.com/wp-content/plugins/timeular-blocks/blocks/checks/style.css?ver=1615668255' type='text/css' media='all' />
+<link rel='stylesheet' id='testimonial-block-css'  href='https://timeular.com/wp-content/plugins/timeular-blocks/blocks/testimonial/style.css?ver=1615668255' type='text/css' media='all' />
+<link rel='stylesheet' id='timeular/card-block-style-css'  href='https://timeular.com/wp-content/plugins/timeular-card-block/dist/style-index.css?ver=1615668255' type='text/css' media='all' />
+<link rel='stylesheet' id='timeular/cta-block-style-css'  href='https://timeular.com/wp-content/plugins/timeular-cta-block/dist/style-index.css?ver=1615668255' type='text/css' media='all' />
+<link rel='stylesheet' id='timeular/hero-block-style-css'  href='https://timeular.com/wp-content/plugins/timeular-hero-block/dist/style-index.css?ver=1615668255' type='text/css' media='all' />
+<link rel='stylesheet' id='timeular/review-block-style-css'  href='https://timeular.com/wp-content/plugins/timeular-review-block/dist/style-index.css?ver=1615668255' type='text/css' media='all' />
+<link rel='stylesheet' id='timeular/visibility-switcher-block-style-css'  href='https://timeular.com/wp-content/plugins/timeular-visibility-switcher-block/dist/style-index.css?ver=1615668255' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='angelleye-express-checkout-css-css'  href='https://timeular.com/wp-content/plugins/paypal-for-woocommerce/assets/css/angelleye-express-checkout.css?ver=2.4.9' type='text/css' media='all' />
+<link rel='stylesheet' id='timeular-style-css'  href='https://timeular.com/wp-content/themes/timeular/dist/css/style.css?ver=1615668257' type='text/css' media='all' />
+<link rel='stylesheet' id='angelleye-cc-ui-css'  href='https://timeular.com/wp-content/plugins/paypal-for-woocommerce/assets/css/angelleye-cc-ui.css?ver=2.4.9' type='text/css' media='all' />
+<script type='text/javascript' id='timeular-tracking-base-object-js-after'>
+document.timeular_tracking = document.timeular_tracking || {};
+</script>
+<script type='text/javascript' id='timeular-tracking-currency-js-after'>
+document.timeular_tracking.currency = "USD";
+document.timeular_tracking.currency = "USD";
+document.timeular_tracking.currency = "USD";
+</script>
+<script type='text/javascript' src='https://timeular.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js' defer></script>
+<script type='text/javascript' src='https://timeular.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' defer></script>
+<script type='text/javascript' src='https://timeular.com/wp-content/plugins/truendo/public/js/truendo-public.js?ver=2.2.5' id='truendo_wordpress-js' defer></script>
+<script type='text/javascript' id='jquery-cookie-js-extra'>
+/* <![CDATA[ */
+var affwp_scripts = {"ajaxurl":"https:\/\/timeular.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://timeular.com/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1' id='jquery-cookie-js' defer></script>
+<script type='text/javascript' id='affwp-tracking-js-extra'>
+/* <![CDATA[ */
+var affwp_debug_vars = {"integrations":{"woocommerce":"WooCommerce"},"version":"2.6.3.1","currency":"USD"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://timeular.com/wp-content/plugins/affiliate-wp/assets/js/tracking.min.js?ver=2.6.3.1' id='affwp-tracking-js' defer></script>
+<link rel="https://api.w.org/" href="https://timeular.com/wp-json/" /><link rel="alternate" type="application/json" href="https://timeular.com/wp-json/wp/v2/pages/208310" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://timeular.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://timeular.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6" />
+<meta name="generator" content="WooCommerce 4.8.0" />
+<link rel='shortlink' href='https://timeular.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://timeular.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftimeular.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://timeular.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftimeular.com%2F&#038;format=xml" />
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-MFDX7JJ');</script>		<script type="text/javascript">
+		var AFFWP = AFFWP || {};
+		AFFWP.referral_var = 'ref';
+		AFFWP.expiration = 30;
+		AFFWP.debug = 0;
+
+
+		AFFWP.referral_credit_last = 0;
+		</script>
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<link rel="preconnect" href="https://cdn4.mxpnl.com/"><link rel="preconnect" href="https://connect.facebook.net"><link rel="preconnect" href="https://googleads.g.doubleclick.net"><link rel="preconnect" href="https://script.hotjar.com"><link rel="preconnect" href="https://static.hotjar.com"><link rel="preconnect" href="https://stats.g.doubleclick.net"><link rel="preconnect" href="https://vars.hotjar.com"><link rel="preconnect" href="https://vc.hotjar.io"><link rel="preconnect" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.google.com"><link rel="preconnect" href="https://www.googleadservices.com"><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="icon" href="https://timeular.com/wp-content/uploads/2021/01/cropped-Group-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://timeular.com/wp-content/uploads/2021/01/cropped-Group-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://timeular.com/wp-content/uploads/2021/01/cropped-Group-180x180.png" />
+<meta name="msapplication-TileImage" content="https://timeular.com/wp-content/uploads/2021/01/cropped-Group-270x270.png" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+
+<body class="home page-template-default page page-id-208310 theme-timeular woocommerce-no-js has_paypal_express_checkout header-ticker">
+
+<div class="page-wrapper">
+
+	<div class="offer top-row" style="background-color: #323c42; color: #ffffff;"><a href="/newsletter" style="background-color: #323c42; color: #ffffff;">Sign up to our newsletter</a></div>
+<header class="site-header">
+	<div class="container">
+		<a href="https://timeular.com" title="Track, understand and improve how you work.">
+			<?xml version="1.0" encoding="UTF-8"?>
+<svg width="183px" height="30px" viewBox="0 0 183 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Timeular • Track, understand and improve how you work.</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Color-+-black">
+            <path d="M114.603,4.86343 L114.603,15.9935 C114.603,17.4028 114.728,18.567 114.98,19.452 C115.232,20.3223 115.599,21.0025 116.069,21.4843 C116.54,21.9546 117.128,22.2856 117.807,22.4642 C119.212,22.8249 121.293,22.8137 122.699,22.4642 C123.392,22.2856 123.974,21.9546 124.438,21.4731 C124.903,20.9917 125.266,20.3108 125.509,19.4389 C125.736,18.6341 125.858,17.5801 125.876,16.3144 L125.878,15.9935 L125.878,4.86343 L127.665,4.86343 L127.665,16.0417 C127.665,17.3433 127.553,18.5389 127.333,19.5708 C127.106,20.6198 126.712,21.5233 126.157,22.252 C125.584,22.9958 124.81,23.5536 123.855,23.9367 C122.903,24.3198 121.683,24.5169 120.239,24.5169 C119.09,24.5169 118.101,24.3977 117.288,24.1562 C116.47,23.9054 115.773,23.5741 115.224,23.1651 C114.666,22.7338 114.236,22.252 113.912,21.6834 C113.59,21.129 113.347,20.5287 113.183,19.9072 C113.021,19.2865 112.915,18.6372 112.874,17.9772 C112.844,17.481 112.827,16.9961 112.821,16.5179 L112.818,16.0417 L112.818,4.86343 L114.603,4.86343 Z M58.3886,4.86343 L58.3886,6.64649 L51.7734,6.64649 L51.7734,24.167 L49.9811,24.167 L49.9811,6.64649 L43.4385,6.64649 L43.4385,4.86343 L58.3886,4.86343 Z M64.9661,4.86343 L64.9661,24.1674 L63.1815,24.1674 L63.1815,4.86343 L64.9661,4.86343 Z M71.0499,4.86343 L73.3927,4.86343 L80.1497,21.7038 L86.9622,4.86343 L89.2695,4.86343 L89.2695,24.167 L87.4796,24.167 L87.4796,8.35048 L81.0114,24.167 L79.2879,24.167 L72.8344,8.35048 L72.8344,24.167 L71.0499,24.167 L71.0499,4.86343 Z M134.465,4.86343 L134.465,22.3839 L144.235,22.3839 L144.235,24.167 L132.68,24.167 L132.68,4.86343 L134.465,4.86343 Z M155.965,4.84375 L163.857,24.167 L161.764,24.167 L159.447,18.0887 L159.297,17.6871 L159.038,17.005 L158.887,16.6034 L154.803,6.82588 L150.93,16.6034 L150.789,17.005 L150.554,17.6871 L150.411,18.0887 L150.017,19.2162 C149.881,19.6 149.74,19.9914 149.594,20.3895 L148.195,24.167 L146.3,24.167 L146.393,23.8958 L153.742,4.84375 L155.965,4.84375 Z M175.446,4.86343 C176.258,4.86343 177.054,4.9348 177.787,5.08255 C178.561,5.23416 179.254,5.50382 179.845,5.87378 C180.457,6.25609 180.947,6.79772 181.31,7.47862 C181.665,8.15913 181.851,9.03099 181.851,10.0703 C181.851,10.7242 181.769,11.3368 181.609,11.8935 C181.445,12.4671 181.191,12.9887 180.863,13.4265 C180.53,13.8814 180.106,14.2699 179.598,14.5804 C179.198,14.8331 178.736,15.0306 178.219,15.1826 C178.446,15.3724 178.642,15.5526 178.807,15.7312 C179.056,16.0155 179.257,16.2855 179.428,16.5849 C179.555,16.8025 179.676,17.0429 179.786,17.297 L179.892,17.5555 L182.406,24.167 L180.457,24.167 L178.52,19.0207 C178.338,18.5466 178.137,18.0964 177.916,17.6743 C177.7,17.2558 177.445,16.9063 177.162,16.6034 C176.879,16.3056 176.563,16.0753 176.194,15.904 C175.885,15.745 175.524,15.6652 175.109,15.6477 L174.927,15.644 L168.513,15.644 L168.513,24.167 L166.719,24.167 L166.719,4.86343 L175.446,4.86343 Z M108.94,22.3839 L108.94,24.167 L94.8703,24.167 L94.8703,22.3839 L108.94,22.3839 Z M105.924,13.2398 L105.924,15.0233 L94.8703,15.0233 L94.8703,13.2398 L105.924,13.2398 Z M175.271,6.6465 L168.512,6.6465 L168.512,13.8609 L174.871,13.8609 C175.811,13.8609 176.581,13.7892 177.23,13.6499 C177.876,13.5176 178.401,13.3077 178.807,13.0084 C179.201,12.7183 179.501,12.3279 179.7,11.8545 C179.892,11.3758 179.994,10.7751 179.994,10.0703 C179.994,8.82769 179.622,7.96856 178.848,7.44776 C178.112,6.94888 177.004,6.6793 175.548,6.64931 L175.271,6.6465 Z M108.473,4.86343 L108.473,6.64649 L94.8703,6.64649 L94.8703,4.86343 L108.473,4.86343 Z" id="Shape" fill="#1F2226"></path>
+            <path d="M22.7407,0 C24.4113,0 25.9576,0.882365 26.8074,2.32057 L32.762,12.3976 C33.638,13.8799 33.638,15.7214 32.762,17.2037 L26.8074,27.2808 C25.9576,28.719 24.4113,29.6013 22.7407,29.6013 L10.6782,29.6013 C9.0077,29.6013 7.4614,28.719 6.61155,27.2808 L0.65693,17.2037 C-0.218977,15.7214 -0.218977,13.8799 0.65693,12.3976 L6.61155,2.32057 C7.4614,0.882365 9.0077,0 10.6782,0 L22.7407,0 Z M9.78155,0.897152 C8.62499,0.897152 7.67646,1.78785 7.5845,2.92072 L7.57719,3.10151 L7.57719,26.4998 C7.57719,26.8793 7.67516,27.2523 7.8616,27.5829 C8.42827,28.5874 9.66478,28.9766 10.695,28.5062 L10.8646,28.4198 L31.604,16.7206 C31.9541,16.5231 32.2435,16.2337 32.4409,15.8837 C33.0076,14.8792 32.7011,13.6196 31.7657,12.9812 L31.604,12.8807 L10.8646,1.18156 C10.5341,0.995116 10.161,0.897152 9.78155,0.897152 Z M9.7816,2.78659 C9.81775,2.78659 9.85348,2.79281 9.88727,2.80485 L9.93633,2.82722 L30.6757,14.5264 C30.8272,14.6118 30.8807,14.8039 30.7953,14.9554 C30.7765,14.9887 30.7518,15.0182 30.7227,15.0425 L30.6757,15.0749 L9.93633,26.7741 C9.78485,26.8595 9.59278,26.806 9.50733,26.6545 C9.48957,26.6231 9.47743,26.5889 9.47131,26.5535 L9.4667,26.4998 L9.4667,3.1015 C9.4667,2.92758 9.60769,2.78659 9.7816,2.78659 Z" id="Shape" fill="#29303D"></path>
+        </g>
+    </g>
+</svg>
+		</a>
+
+		<button class="burger" type="button">
+			<span class="burger__box">
+				<span class="burger__inner"></span>
+			</span>
+		</button>
+
+		<nav class="site-header__navigation">
+			<ul id="menu-main-menu" class="navigation--main"><li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><span class="navigation-item__link menu-item-wrapper">Features&nbsp;<svg class="navigation-item__icon" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.891.69A.72.72 0 011.863.65L1.91.69 5 3.78 8.091.692a.72.72 0 01.972-.042L9.11.69a.72.72 0 01.042.972l-.042.046-3.6 3.6a.72.72 0 01-.972.042L4.49 5.31l-3.6-3.6a.72.72 0 010-1.018z" fill="#7D7D7D"/></svg></span><ul class="sub-menu sub-menu-depth-0"><li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/product/tracker/">Tracker</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/product/pro-subscription/">App</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/timeular-for-teams/">Team tracking</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/quicktrack/">Keyboard shortcuts</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/integrations-and-api/">Integrations and API</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/pricing/">Pricing</a></li>
+</ul>
+</li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children navigation-item--has-nested-submenu"><span class="navigation-item__link menu-item-wrapper">Learn&nbsp;<svg class="navigation-item__icon" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.891.69A.72.72 0 011.863.65L1.91.69 5 3.78 8.091.692a.72.72 0 01.972-.042L9.11.69a.72.72 0 01.042.972l-.042.046-3.6 3.6a.72.72 0 01-.972.042L4.49 5.31l-3.6-3.6a.72.72 0 010-1.018z" fill="#7D7D7D"/></svg></span><ul class="sub-menu sub-menu-depth-0"><li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><span class="navigation-item__link menu-item-wrapper">Timeular</span><ul class="sub-menu sub-menu-depth-1"><li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/about-us/#background">Our story</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/not-convinced/">Why track time?</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/newsletter/">Newsletter</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/reviews/">Reviews</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/blog/">Blog</a></li>
+<li class="navigation__item  menu-item menu-item-type-post_type menu-item-object-page"><a class="navigation-item__link" href="https://timeular.com/remote-working-guide/">Remote working guide</a></li>
+	</ul>
+</li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><span class="navigation-item__link menu-item-wrapper">Timeular for</span><ul class="sub-menu sub-menu-depth-1"><li class="navigation__item  menu-item menu-item-type-post_type menu-item-object-page"><a class="navigation-item__link" href="https://timeular.com/timeular-for-teams/">Teams</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/integrations-and-api/">Developers</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/be-more-productive/">Improving productivity</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/bill-accurately/">Billing accurately</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/submit-timesheets-easily/">Timesheet submissions</a></li>
+	</ul>
+</li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><span class="navigation-item__link menu-item-wrapper">Try for yourself</span><ul class="sub-menu sub-menu-depth-1"><li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/pricing/">Buy now</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/12m-coupon-code-redemption/">Redeem a code</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/download/">Download software</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/talk-to-sales/">Set up a team pilot</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><span class="navigation-item__link menu-item-wrapper">Company&nbsp;<svg class="navigation-item__icon" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.891.69A.72.72 0 011.863.65L1.91.69 5 3.78 8.091.692a.72.72 0 01.972-.042L9.11.69a.72.72 0 01.042.972l-.042.046-3.6 3.6a.72.72 0 01-.972.042L4.49 5.31l-3.6-3.6a.72.72 0 010-1.018z" fill="#7D7D7D"/></svg></span><ul class="sub-menu sub-menu-depth-0"><li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/about-us/">About Us</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="https://support.timeular.com/en/">Support</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/talk-to-sales/">Talk to Sales</a></li>
+<li class="navigation__item  menu-item menu-item-type-custom menu-item-object-custom"><a class="navigation-item__link" href="/press-media/">Press & Media</a></li>
+</ul>
+</li>
+<li class="menu-item navigation__item"><a class="navigation-item__link" title="Login" href="/shop-account-area">Login</a></li><li class="menu-item navigation__item"><a class="navigation-item__link" href="/cart">Cart</a></li><li class="navigation__item navigation__item--buy"><a href="/pricing" class="navigation-item__link button">View Pricing</a></li></ul>		</nav>
+	</div>
+</header>
+
+
+		<div class="container content-wrapper">
+		<div class="row">
+			<div class="col-12">
+
+
+
+		
+<article id="post-208310" class="post-208310 page type-page status-publish has-post-thumbnail hentry">
+
+	
+<div class="wp-block-timeular-hero-block"><div class="wp-block-timeular-hero-block__content"><h1 class="wp-block-timeular-hero-block__title">Unlock <span class="has-inline-color has-base-strong-color">your time</span>.</h1><p class="wp-block-timeular-hero-block__text">Effortless time tracking to help you lead a more rewarding work-life.<br><br><br><br></p></div><img class="wp-block-timeular-hero-block__image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/Primary.png"/><noscript><img class="wp-block-timeular-hero-block__image" src="https://timeular.com/wp-content/uploads/2021/01/Primary.png"/></noscript></div>
+
+
+
+<div class="wp-block-columns wp-block-timeular-card-column-container">
+<div class="wp-block-column">
+<div class="wp-block-timeular-card-block"><div class="wp-block-timeular-card-block__card"><img class="wp-block-timeular-card-block__image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/Balance.png"/><noscript><img class="wp-block-timeular-card-block__image" src="https://timeular.com/wp-content/uploads/2021/01/Balance.png"/></noscript><div class="wp-block-timeular-card-block__content"><h3 class="wp-block-timeular-card-block__title">Increase efficiency</h3><p class="wp-block-timeular-card-block__text">Quantify distractions and maximize billable hours.</p></div></div></div>
+
+
+
+<p></p>
+</div>
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-timeular-card-block"><div class="wp-block-timeular-card-block__card"><img class="wp-block-timeular-card-block__image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/highFive.png"/><noscript><img class="wp-block-timeular-card-block__image" src="https://timeular.com/wp-content/uploads/2021/01/highFive.png"/></noscript><div class="wp-block-timeular-card-block__content"><h3 class="wp-block-timeular-card-block__title">Be more productive</h3><p class="wp-block-timeular-card-block__text">Make data-driven changes to your routine and make time yours.</p></div></div></div>
+
+
+
+<p></p>
+</div>
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-timeular-card-block"><div class="wp-block-timeular-card-block__card"><img class="wp-block-timeular-card-block__image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/performance.png"/><noscript><img class="wp-block-timeular-card-block__image" src="https://timeular.com/wp-content/uploads/2021/01/performance.png"/></noscript><div class="wp-block-timeular-card-block__content"><h3 class="wp-block-timeular-card-block__title">Reach your goals</h3><p class="wp-block-timeular-card-block__text">Identify your natural rhythm and maximize potential.</p></div></div></div>
+</div>
+</div>
+
+
+
+<h2 class="has-text-align-center"><span class="has-inline-color has-base-strong-color">Work smarter</span>, not harder.</h2>
+
+
+
+<p class="has-text-align-center"><span class="has-inline-color has-gray-600-color">See where your time really goes and unleash your full potential.</span></p>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="468" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20468'%3E%3C/svg%3E" alt="" class="wp-image-269669" data-lazy-srcset="https://timeular.com/wp-content/uploads/2021/01/Devices@2x-1024x468.png 1024w, https://timeular.com/wp-content/uploads/2021/01/Devices@2x-300x137.png 300w, https://timeular.com/wp-content/uploads/2021/01/Devices@2x-768x351.png 768w, https://timeular.com/wp-content/uploads/2021/01/Devices@2x-1536x701.png 1536w, https://timeular.com/wp-content/uploads/2021/01/Devices@2x-2048x935.png 2048w, https://timeular.com/wp-content/uploads/2021/01/Devices@2x-555x253.png 555w, https://timeular.com/wp-content/uploads/2021/01/Devices@2x-720x329.png 720w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/Devices@2x-1024x468.png" /><noscript><img loading="lazy" width="1024" height="468" src="https://timeular.com/wp-content/uploads/2021/01/Devices@2x-1024x468.png" alt="" class="wp-image-269669" srcset="https://timeular.com/wp-content/uploads/2021/01/Devices@2x-1024x468.png 1024w, https://timeular.com/wp-content/uploads/2021/01/Devices@2x-300x137.png 300w, https://timeular.com/wp-content/uploads/2021/01/Devices@2x-768x351.png 768w, https://timeular.com/wp-content/uploads/2021/01/Devices@2x-1536x701.png 1536w, https://timeular.com/wp-content/uploads/2021/01/Devices@2x-2048x935.png 2048w, https://timeular.com/wp-content/uploads/2021/01/Devices@2x-555x253.png 555w, https://timeular.com/wp-content/uploads/2021/01/Devices@2x-720x329.png 720w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="has-text-align-center"><span class="has-inline-color has-pink-strong-color">Level up </span>your work processes.</h2>
+
+
+
+<p class="has-text-align-center"><span class="has-inline-color has-gray-600-color">Automate workflows, generate reports and submit timesheets easily.</span></p>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="854" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20854'%3E%3C/svg%3E" alt="" class="wp-image-268986" data-lazy-srcset="https://timeular.com/wp-content/uploads/2021/01/Recording-1024x854.png 1024w, https://timeular.com/wp-content/uploads/2021/01/Recording-300x250.png 300w, https://timeular.com/wp-content/uploads/2021/01/Recording-768x640.png 768w, https://timeular.com/wp-content/uploads/2021/01/Recording-1536x1280.png 1536w, https://timeular.com/wp-content/uploads/2021/01/Recording-555x463.png 555w, https://timeular.com/wp-content/uploads/2021/01/Recording-720x600.png 720w, https://timeular.com/wp-content/uploads/2021/01/Recording.png 1641w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/Recording-1024x854.png" /><noscript><img loading="lazy" width="1024" height="854" src="https://timeular.com/wp-content/uploads/2021/01/Recording-1024x854.png" alt="" class="wp-image-268986" srcset="https://timeular.com/wp-content/uploads/2021/01/Recording-1024x854.png 1024w, https://timeular.com/wp-content/uploads/2021/01/Recording-300x250.png 300w, https://timeular.com/wp-content/uploads/2021/01/Recording-768x640.png 768w, https://timeular.com/wp-content/uploads/2021/01/Recording-1536x1280.png 1536w, https://timeular.com/wp-content/uploads/2021/01/Recording-555x463.png 555w, https://timeular.com/wp-content/uploads/2021/01/Recording-720x600.png 720w, https://timeular.com/wp-content/uploads/2021/01/Recording.png 1641w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<h3>It&#8217;s as easy as <span class="has-inline-color has-pink-strong-color">rolling a dice</span>.</h3>
+
+
+
+<p><span class="has-inline-color has-gray-600-color">The Timeular Tracker is the world’s first 8-sided tracking dice, automatically tracking activities when flipped.</span></p>
+
+
+
+<ul class="has-pink-strong-color is-style-timeular-arrow"><li><span class="has-inline-color has-gray-600-color">Minute accurate time tracking, lightning fast</span></li><li><span class="has-inline-color has-gray-600-color">Improve your focus through physical reminder</span></li><li><span class="has-inline-color has-gray-600-color">No more over or under-estimating your time</span></li></ul>
+
+
+
+<div class="wp-block-buttons">
+<div class="wp-block-button"><a class="wp-block-button__link" href="/product/tracker/">Meet the Tracker</a></div>
+</div>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="728" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20728'%3E%3C/svg%3E" alt="" class="wp-image-271250" data-lazy-srcset="https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2-1024x728.png 1024w, https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2-300x213.png 300w, https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2-768x546.png 768w, https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2-1536x1092.png 1536w, https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2-555x395.png 555w, https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2-720x512.png 720w, https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2.png 1641w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2-1024x728.png" /><noscript><img loading="lazy" width="1024" height="728" src="https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2-1024x728.png" alt="" class="wp-image-271250" srcset="https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2-1024x728.png 1024w, https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2-300x213.png 300w, https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2-768x546.png 768w, https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2-1536x1092.png 1536w, https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2-555x395.png 555w, https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2-720x512.png 720w, https://timeular.com/wp-content/uploads/2021/01/Quicktrack-2.png 1641w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<h3><span class="has-inline-color has-pink-strong-color">QuickTrack:</span> your time tracking superpower.</h3>
+
+
+
+<p><span class="has-inline-color has-gray-600-color">Our desktop shortcut lets you track time with the least effort and interruption possible.</span></p>
+
+
+
+<ul class="has-pink-strong-color is-style-timeular-arrow"><li><span class="has-inline-color has-gray-600-color">Track unlimited activities</span></li><li><span class="has-inline-color has-gray-600-color">Super speedy notes &amp; tags</span></li><li><span class="has-inline-color has-gray-600-color">Create activities on the fly</span></li></ul>
+
+
+
+<div class="wp-block-buttons">
+<div class="wp-block-button"><a class="wp-block-button__link" href="/quicktrack/">Learn about QuickTrack</a></div>
+</div>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="has-text-align-center">How does <span class="has-inline-color has-blue-strong-color">Timeular</span> work?</h2>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="593" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20593'%3E%3C/svg%3E" alt="" class="wp-image-268990" data-lazy-srcset="https://timeular.com/wp-content/uploads/2021/01/CreateAssign-1024x593.png 1024w, https://timeular.com/wp-content/uploads/2021/01/CreateAssign-300x174.png 300w, https://timeular.com/wp-content/uploads/2021/01/CreateAssign-768x445.png 768w, https://timeular.com/wp-content/uploads/2021/01/CreateAssign-1536x889.png 1536w, https://timeular.com/wp-content/uploads/2021/01/CreateAssign-555x321.png 555w, https://timeular.com/wp-content/uploads/2021/01/CreateAssign-720x417.png 720w, https://timeular.com/wp-content/uploads/2021/01/CreateAssign.png 1648w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/CreateAssign-1024x593.png" /><noscript><img loading="lazy" width="1024" height="593" src="https://timeular.com/wp-content/uploads/2021/01/CreateAssign-1024x593.png" alt="" class="wp-image-268990" srcset="https://timeular.com/wp-content/uploads/2021/01/CreateAssign-1024x593.png 1024w, https://timeular.com/wp-content/uploads/2021/01/CreateAssign-300x174.png 300w, https://timeular.com/wp-content/uploads/2021/01/CreateAssign-768x445.png 768w, https://timeular.com/wp-content/uploads/2021/01/CreateAssign-1536x889.png 1536w, https://timeular.com/wp-content/uploads/2021/01/CreateAssign-555x321.png 555w, https://timeular.com/wp-content/uploads/2021/01/CreateAssign-720x417.png 720w, https://timeular.com/wp-content/uploads/2021/01/CreateAssign.png 1648w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+
+
+
+<p></p>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center">
+<h3><span class="has-inline-color has-blue-strong-color">1. </span>Assign</h3>
+
+
+
+<ul class="has-blue-soft-color is-style-timeular-arrow"><li><span class="has-inline-color has-gray-600-color">Set activities and tasks within the app.</span></li><li><span class="has-inline-color has-gray-600-color">If you&#8217;re using a Tracker, assign and customize each side of the dice.</span></li><li><span class="has-inline-color has-gray-600-color">Create spaces for teams, projects, yourself or anything you like.</span></li></ul>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column is-vertically-aligned-center">
+<h3><span class="has-inline-color has-blue-strong-color">2. </span>Track</h3>
+
+
+
+<ul class="has-blue-soft-color is-style-timeular-arrow"><li><span class="has-inline-color has-gray-600-color">Use the Tracker or QuickTrack to start recording.</span></li><li><span class="has-inline-color has-gray-600-color">Start/stop tracking from any device. Everything syncs.</span></li><li><span class="has-inline-color has-gray-600-color">Capture, analyze and bill more time.</span></li></ul>
+
+
+
+<p></p>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center">
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="592" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20592'%3E%3C/svg%3E" alt="" class="wp-image-268996" data-lazy-srcset="https://timeular.com/wp-content/uploads/2021/01/Tracking-1024x592.png 1024w, https://timeular.com/wp-content/uploads/2021/01/Tracking-300x173.png 300w, https://timeular.com/wp-content/uploads/2021/01/Tracking-768x444.png 768w, https://timeular.com/wp-content/uploads/2021/01/Tracking-1536x887.png 1536w, https://timeular.com/wp-content/uploads/2021/01/Tracking-555x321.png 555w, https://timeular.com/wp-content/uploads/2021/01/Tracking-720x416.png 720w, https://timeular.com/wp-content/uploads/2021/01/Tracking.png 1641w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/Tracking-1024x592.png" /><noscript><img loading="lazy" width="1024" height="592" src="https://timeular.com/wp-content/uploads/2021/01/Tracking-1024x592.png" alt="" class="wp-image-268996" srcset="https://timeular.com/wp-content/uploads/2021/01/Tracking-1024x592.png 1024w, https://timeular.com/wp-content/uploads/2021/01/Tracking-300x173.png 300w, https://timeular.com/wp-content/uploads/2021/01/Tracking-768x444.png 768w, https://timeular.com/wp-content/uploads/2021/01/Tracking-1536x887.png 1536w, https://timeular.com/wp-content/uploads/2021/01/Tracking-555x321.png 555w, https://timeular.com/wp-content/uploads/2021/01/Tracking-720x416.png 720w, https://timeular.com/wp-content/uploads/2021/01/Tracking.png 1641w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="485" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20485'%3E%3C/svg%3E" alt="" class="wp-image-268991" data-lazy-srcset="https://timeular.com/wp-content/uploads/2021/01/Group-426-1024x485.png 1024w, https://timeular.com/wp-content/uploads/2021/01/Group-426-300x142.png 300w, https://timeular.com/wp-content/uploads/2021/01/Group-426-768x364.png 768w, https://timeular.com/wp-content/uploads/2021/01/Group-426-1536x727.png 1536w, https://timeular.com/wp-content/uploads/2021/01/Group-426-555x263.png 555w, https://timeular.com/wp-content/uploads/2021/01/Group-426-720x341.png 720w, https://timeular.com/wp-content/uploads/2021/01/Group-426.png 1580w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/Group-426-1024x485.png" /><noscript><img loading="lazy" width="1024" height="485" src="https://timeular.com/wp-content/uploads/2021/01/Group-426-1024x485.png" alt="" class="wp-image-268991" srcset="https://timeular.com/wp-content/uploads/2021/01/Group-426-1024x485.png 1024w, https://timeular.com/wp-content/uploads/2021/01/Group-426-300x142.png 300w, https://timeular.com/wp-content/uploads/2021/01/Group-426-768x364.png 768w, https://timeular.com/wp-content/uploads/2021/01/Group-426-1536x727.png 1536w, https://timeular.com/wp-content/uploads/2021/01/Group-426-555x263.png 555w, https://timeular.com/wp-content/uploads/2021/01/Group-426-720x341.png 720w, https://timeular.com/wp-content/uploads/2021/01/Group-426.png 1580w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+
+
+
+<p></p>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center">
+<h3><span class="has-inline-color has-blue-strong-color">3. </span>Get insights and reports</h3>
+
+
+
+<ul class="has-blue-soft-color is-style-timeular-arrow"><li><span class="has-inline-color has-gray-600-color">Export customized reports.</span></li><li><span class="has-inline-color has-gray-600-color">See where every minute of your working day is spent.</span></li><li><span class="has-inline-color has-gray-600-color">Sync data and build powerful workflows in 3,000+ apps.</span></li></ul>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="183" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20183'%3E%3C/svg%3E" alt="" class="wp-image-270944" data-lazy-srcset="https://timeular.com/wp-content/uploads/2021/01/OS-2-1024x183.png 1024w, https://timeular.com/wp-content/uploads/2021/01/OS-2-300x54.png 300w, https://timeular.com/wp-content/uploads/2021/01/OS-2-768x138.png 768w, https://timeular.com/wp-content/uploads/2021/01/OS-2-1536x275.png 1536w, https://timeular.com/wp-content/uploads/2021/01/OS-2-555x99.png 555w, https://timeular.com/wp-content/uploads/2021/01/OS-2-720x129.png 720w, https://timeular.com/wp-content/uploads/2021/01/OS-2.png 1641w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/OS-2-1024x183.png" /><noscript><img loading="lazy" width="1024" height="183" src="https://timeular.com/wp-content/uploads/2021/01/OS-2-1024x183.png" alt="" class="wp-image-270944" srcset="https://timeular.com/wp-content/uploads/2021/01/OS-2-1024x183.png 1024w, https://timeular.com/wp-content/uploads/2021/01/OS-2-300x54.png 300w, https://timeular.com/wp-content/uploads/2021/01/OS-2-768x138.png 768w, https://timeular.com/wp-content/uploads/2021/01/OS-2-1536x275.png 1536w, https://timeular.com/wp-content/uploads/2021/01/OS-2-555x99.png 555w, https://timeular.com/wp-content/uploads/2021/01/OS-2-720x129.png 720w, https://timeular.com/wp-content/uploads/2021/01/OS-2.png 1641w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+
+
+
+<h3 class="has-text-align-center">Everything you need, <span class="has-inline-color has-base-strong-color">everywhere</span></h3>
+
+
+
+<p class="has-text-align-center"><span class="has-inline-color has-gray-600-color">Timeular is available on macOS, Linux, Windows, Android and iOS.</span></p>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="183" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20183'%3E%3C/svg%3E" alt="" class="wp-image-269028" data-lazy-srcset="https://timeular.com/wp-content/uploads/2021/01/Intrations-1024x183.png 1024w, https://timeular.com/wp-content/uploads/2021/01/Intrations-300x54.png 300w, https://timeular.com/wp-content/uploads/2021/01/Intrations-768x138.png 768w, https://timeular.com/wp-content/uploads/2021/01/Intrations-1536x275.png 1536w, https://timeular.com/wp-content/uploads/2021/01/Intrations-555x99.png 555w, https://timeular.com/wp-content/uploads/2021/01/Intrations-720x129.png 720w, https://timeular.com/wp-content/uploads/2021/01/Intrations.png 1641w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/Intrations-1024x183.png" /><noscript><img loading="lazy" width="1024" height="183" src="https://timeular.com/wp-content/uploads/2021/01/Intrations-1024x183.png" alt="" class="wp-image-269028" srcset="https://timeular.com/wp-content/uploads/2021/01/Intrations-1024x183.png 1024w, https://timeular.com/wp-content/uploads/2021/01/Intrations-300x54.png 300w, https://timeular.com/wp-content/uploads/2021/01/Intrations-768x138.png 768w, https://timeular.com/wp-content/uploads/2021/01/Intrations-1536x275.png 1536w, https://timeular.com/wp-content/uploads/2021/01/Intrations-555x99.png 555w, https://timeular.com/wp-content/uploads/2021/01/Intrations-720x129.png 720w, https://timeular.com/wp-content/uploads/2021/01/Intrations.png 1641w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+
+
+
+<h3 class="has-text-align-center">Connect with your <span class="has-inline-color has-base-strong-color">favorite tools</span></h3>
+
+
+
+<p class="has-text-align-center"><span class="has-inline-color has-gray-600-color">Integrations to Zapier, Jira, Harvest and Toggl. Build anything with our API.</span></p>
+</div>
+</div>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="has-text-align-center">Over <span class="has-inline-color has-blue-strong-color">50,000 customers</span> can’t be wrong</h2>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20317%2034'%3E%3C/svg%3E" alt="" class="wp-image-269026" width="317" height="34" data-lazy-srcset="https://timeular.com/wp-content/uploads/2021/01/Group-405.png 953w, https://timeular.com/wp-content/uploads/2021/01/Group-405-300x32.png 300w, https://timeular.com/wp-content/uploads/2021/01/Group-405-768x83.png 768w, https://timeular.com/wp-content/uploads/2021/01/Group-405-555x60.png 555w, https://timeular.com/wp-content/uploads/2021/01/Group-405-720x78.png 720w" data-lazy-sizes="(max-width: 317px) 100vw, 317px" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/Group-405.png" /><noscript><img loading="lazy" src="https://timeular.com/wp-content/uploads/2021/01/Group-405.png" alt="" class="wp-image-269026" width="317" height="34" srcset="https://timeular.com/wp-content/uploads/2021/01/Group-405.png 953w, https://timeular.com/wp-content/uploads/2021/01/Group-405-300x32.png 300w, https://timeular.com/wp-content/uploads/2021/01/Group-405-768x83.png 768w, https://timeular.com/wp-content/uploads/2021/01/Group-405-555x60.png 555w, https://timeular.com/wp-content/uploads/2021/01/Group-405-720x78.png 720w" sizes="(max-width: 317px) 100vw, 317px" /></noscript></figure></div>
+
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div data-bg="https://timeular.com/wp-content/uploads/2021/01/bg-1.png" style="" class="wp-block-timeular-review-block rocket-lazyload"><div class="wp-block-timeular-review-block__container"><div class="wp-block-timeular-review-block__review review1">It’s incredibly easy for me to keep track of my time down to the minute. <div class="wp-block-timeular-review-block__author"><span class="wp-block-timeular-review-block__author-name">Ashlee B.</span><span class="wp-block-timeular-review-block__author-role">Founder &amp; CEO</span></div></div><div class="wp-block-timeular-review-block__review review2">Timeular has revolutionized my time-tracking efforts. <div class="wp-block-timeular-review-block__author"><span class="wp-block-timeular-review-block__author-name">Davis D. M</span><span class="wp-block-timeular-review-block__author-role">Managing Associate at Law firm</span></div></div><div class="wp-block-timeular-review-block__review review3">I work on projects on an hourly base, this tool has more than paid for itself. <div class="wp-block-timeular-review-block__author"><span class="wp-block-timeular-review-block__author-name">Earl L.</span><span class="wp-block-timeular-review-block__author-role">Senior Software Engineer</span></div></div><a href="https://www.capterra.com/p/176609/ZEI-by-Timeular/" class="wp-block-timeular-review-block__button button" target="_blank" rel="noreferrer noopener">Read Capterra reviews</a><div class="wp-block-timeular-review-block__logos"><img class="wp-block-timeular-review-block__image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://timeular.com/wp-content/uploads/2021/02/Google-logo.png"/><noscript><img class="wp-block-timeular-review-block__image" src="https://timeular.com/wp-content/uploads/2021/02/Google-logo.png"/></noscript><img class="wp-block-timeular-review-block__image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/We-Transfer.png"/><noscript><img class="wp-block-timeular-review-block__image" src="https://timeular.com/wp-content/uploads/2021/01/We-Transfer.png"/></noscript><img class="wp-block-timeular-review-block__image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/Audi.png"/><noscript><img class="wp-block-timeular-review-block__image" src="https://timeular.com/wp-content/uploads/2021/01/Audi.png"/></noscript><img class="wp-block-timeular-review-block__image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://timeular.com/wp-content/uploads/2021/01/Ricola-1.png"/><noscript><img class="wp-block-timeular-review-block__image" src="https://timeular.com/wp-content/uploads/2021/01/Ricola-1.png"/></noscript><img class="wp-block-timeular-review-block__image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://timeular.com/wp-content/uploads/2021/02/KPMG-logo.png"/><noscript><img class="wp-block-timeular-review-block__image" src="https://timeular.com/wp-content/uploads/2021/02/KPMG-logo.png"/></noscript></div></div></div>
+
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div data-bg="https://timeular.com/wp-content/uploads/2021/01/CA.png" style="" class="wp-block-timeular-cta-block rocket-lazyload"><div class="wp-block-timeular-cta-block__content"><p class="wp-block-timeular-cta-block__text">Ready to unlock <span class="has-inline-color has-base-strong-color">your time</span>?</p><a href="/pricing" class="wp-block-timeular-cta-block__button button">View Pricing</a></div></div>
+
+</article><!-- #post-208310 -->
+
+
+					</div> <!-- /end .col-12 -->
+			</div> <!-- /end .row -->
+		</div> <!-- /end .container.content-wrapper -->
+	</div> <!-- /end .page-wrapper -->
+
+
+	
+<footer class="site-footer">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-5 col-lg-3 description">
+				<div class="logo">
+										<a href="https://timeular.com" title="Track, understand and improve how you work.">
+												<?xml version="1.0" encoding="UTF-8"?>
+<svg width="183px" height="30px" viewBox="0 0 183 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Timeular • Track, understand and improve how you work.</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Color-+-black">
+            <path d="M114.603,4.86343 L114.603,15.9935 C114.603,17.4028 114.728,18.567 114.98,19.452 C115.232,20.3223 115.599,21.0025 116.069,21.4843 C116.54,21.9546 117.128,22.2856 117.807,22.4642 C119.212,22.8249 121.293,22.8137 122.699,22.4642 C123.392,22.2856 123.974,21.9546 124.438,21.4731 C124.903,20.9917 125.266,20.3108 125.509,19.4389 C125.736,18.6341 125.858,17.5801 125.876,16.3144 L125.878,15.9935 L125.878,4.86343 L127.665,4.86343 L127.665,16.0417 C127.665,17.3433 127.553,18.5389 127.333,19.5708 C127.106,20.6198 126.712,21.5233 126.157,22.252 C125.584,22.9958 124.81,23.5536 123.855,23.9367 C122.903,24.3198 121.683,24.5169 120.239,24.5169 C119.09,24.5169 118.101,24.3977 117.288,24.1562 C116.47,23.9054 115.773,23.5741 115.224,23.1651 C114.666,22.7338 114.236,22.252 113.912,21.6834 C113.59,21.129 113.347,20.5287 113.183,19.9072 C113.021,19.2865 112.915,18.6372 112.874,17.9772 C112.844,17.481 112.827,16.9961 112.821,16.5179 L112.818,16.0417 L112.818,4.86343 L114.603,4.86343 Z M58.3886,4.86343 L58.3886,6.64649 L51.7734,6.64649 L51.7734,24.167 L49.9811,24.167 L49.9811,6.64649 L43.4385,6.64649 L43.4385,4.86343 L58.3886,4.86343 Z M64.9661,4.86343 L64.9661,24.1674 L63.1815,24.1674 L63.1815,4.86343 L64.9661,4.86343 Z M71.0499,4.86343 L73.3927,4.86343 L80.1497,21.7038 L86.9622,4.86343 L89.2695,4.86343 L89.2695,24.167 L87.4796,24.167 L87.4796,8.35048 L81.0114,24.167 L79.2879,24.167 L72.8344,8.35048 L72.8344,24.167 L71.0499,24.167 L71.0499,4.86343 Z M134.465,4.86343 L134.465,22.3839 L144.235,22.3839 L144.235,24.167 L132.68,24.167 L132.68,4.86343 L134.465,4.86343 Z M155.965,4.84375 L163.857,24.167 L161.764,24.167 L159.447,18.0887 L159.297,17.6871 L159.038,17.005 L158.887,16.6034 L154.803,6.82588 L150.93,16.6034 L150.789,17.005 L150.554,17.6871 L150.411,18.0887 L150.017,19.2162 C149.881,19.6 149.74,19.9914 149.594,20.3895 L148.195,24.167 L146.3,24.167 L146.393,23.8958 L153.742,4.84375 L155.965,4.84375 Z M175.446,4.86343 C176.258,4.86343 177.054,4.9348 177.787,5.08255 C178.561,5.23416 179.254,5.50382 179.845,5.87378 C180.457,6.25609 180.947,6.79772 181.31,7.47862 C181.665,8.15913 181.851,9.03099 181.851,10.0703 C181.851,10.7242 181.769,11.3368 181.609,11.8935 C181.445,12.4671 181.191,12.9887 180.863,13.4265 C180.53,13.8814 180.106,14.2699 179.598,14.5804 C179.198,14.8331 178.736,15.0306 178.219,15.1826 C178.446,15.3724 178.642,15.5526 178.807,15.7312 C179.056,16.0155 179.257,16.2855 179.428,16.5849 C179.555,16.8025 179.676,17.0429 179.786,17.297 L179.892,17.5555 L182.406,24.167 L180.457,24.167 L178.52,19.0207 C178.338,18.5466 178.137,18.0964 177.916,17.6743 C177.7,17.2558 177.445,16.9063 177.162,16.6034 C176.879,16.3056 176.563,16.0753 176.194,15.904 C175.885,15.745 175.524,15.6652 175.109,15.6477 L174.927,15.644 L168.513,15.644 L168.513,24.167 L166.719,24.167 L166.719,4.86343 L175.446,4.86343 Z M108.94,22.3839 L108.94,24.167 L94.8703,24.167 L94.8703,22.3839 L108.94,22.3839 Z M105.924,13.2398 L105.924,15.0233 L94.8703,15.0233 L94.8703,13.2398 L105.924,13.2398 Z M175.271,6.6465 L168.512,6.6465 L168.512,13.8609 L174.871,13.8609 C175.811,13.8609 176.581,13.7892 177.23,13.6499 C177.876,13.5176 178.401,13.3077 178.807,13.0084 C179.201,12.7183 179.501,12.3279 179.7,11.8545 C179.892,11.3758 179.994,10.7751 179.994,10.0703 C179.994,8.82769 179.622,7.96856 178.848,7.44776 C178.112,6.94888 177.004,6.6793 175.548,6.64931 L175.271,6.6465 Z M108.473,4.86343 L108.473,6.64649 L94.8703,6.64649 L94.8703,4.86343 L108.473,4.86343 Z" id="Shape" fill="#1F2226"></path>
+            <path d="M22.7407,0 C24.4113,0 25.9576,0.882365 26.8074,2.32057 L32.762,12.3976 C33.638,13.8799 33.638,15.7214 32.762,17.2037 L26.8074,27.2808 C25.9576,28.719 24.4113,29.6013 22.7407,29.6013 L10.6782,29.6013 C9.0077,29.6013 7.4614,28.719 6.61155,27.2808 L0.65693,17.2037 C-0.218977,15.7214 -0.218977,13.8799 0.65693,12.3976 L6.61155,2.32057 C7.4614,0.882365 9.0077,0 10.6782,0 L22.7407,0 Z M9.78155,0.897152 C8.62499,0.897152 7.67646,1.78785 7.5845,2.92072 L7.57719,3.10151 L7.57719,26.4998 C7.57719,26.8793 7.67516,27.2523 7.8616,27.5829 C8.42827,28.5874 9.66478,28.9766 10.695,28.5062 L10.8646,28.4198 L31.604,16.7206 C31.9541,16.5231 32.2435,16.2337 32.4409,15.8837 C33.0076,14.8792 32.7011,13.6196 31.7657,12.9812 L31.604,12.8807 L10.8646,1.18156 C10.5341,0.995116 10.161,0.897152 9.78155,0.897152 Z M9.7816,2.78659 C9.81775,2.78659 9.85348,2.79281 9.88727,2.80485 L9.93633,2.82722 L30.6757,14.5264 C30.8272,14.6118 30.8807,14.8039 30.7953,14.9554 C30.7765,14.9887 30.7518,15.0182 30.7227,15.0425 L30.6757,15.0749 L9.93633,26.7741 C9.78485,26.8595 9.59278,26.806 9.50733,26.6545 C9.48957,26.6231 9.47743,26.5889 9.47131,26.5535 L9.4667,26.4998 L9.4667,3.1015 C9.4667,2.92758 9.60769,2.78659 9.7816,2.78659 Z" id="Shape" fill="#29303D"></path>
+        </g>
+    </g>
+</svg>
+					</a>
+				</div>
+				<div class="text">
+					We believe that time is the most valuable thing we have and it&#039;s in our hands to make it count. Follow us to receive insights how to do so.				</div>
+				<div class="socials">
+					<a href="https://www.facebook.com/timeular/" target="_blank" rel="me">
+						<i class="icon icon-facebook"></i>
+					</a>
+					<a href="https://www.youtube.com/timeular" target="_blank" rel="me">
+						<i class="icon icon-youtube-play"></i>
+					</a>
+					<a href="https://www.linkedin.com/company/timeular/" target="_blank" rel="me">
+						<i class="icon icon-linkedin"></i>
+					</a>
+					<a href="https://twitter.com/timeular" target="_blank" rel="me">
+						<i class="icon icon-twitter"></i>
+					</a>
+					<a href="https://www.instagram.com/timeular/" target="_blank" rel="me">
+						<i class="icon icon-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-7 col-lg-9 menu">
+				<nav>
+					<div class="row justify-content-md-end">
+						<div class="col-6 col-md-4 col-lg-3"><h4>Company</h4><ul><li class=""><a href="https://timeular.com/about-us/"target="">About us</a></li><li class=""><a href="https://timeular.com/press-media/"target="">Press &#038; media</a></li><li class=""><a href="https://timeular.com/affiliate-program/"target="">Affiliate program</a></li><li class=""><a href="https://timeular.com/newsletter/"target="">Newsletter</a></li><li class=""><a href="/about-us/#careers"target="">Careers</a></li></ul></div><div class="col-6 col-md-4 col-lg-3"><h4>Resources</h4><ul><li class=""><a href="https://timeular.com/pricing/"target="">Pricing</a></li><li class=""><a href="https://timeular.com/features/"target="">Features</a></li><li class=""><a href="https://timeular.com/download/"target="">Download software</a></li><li class=""><a href="https://timeular.com/reviews/"target="">Reviews</a></li><li class=""><a href="https://timeular.com/get-creative-with-your-tracker/"target="">Tracker inspiration</a></li><li class=""><a href="https://timeular.com/blog/"target="">Blog</a></li><li class=""><a href="https://timeular.com/timeular-dev-blog/"target="">Dev Blog</a></li><li class=""><a href="https://timeular.com/roadmap/"target="">Roadmap</a></li><li class=""><a href="https://developers.timeular.com"target="">Public API</a></li></ul></div><div class="col-6 col-md-4 col-lg-3"><h4>Support</h4><ul><li class=""><a href="https://support.timeular.com/en/"target="_blank">Help Center</a></li><li class=""><a href="https://timeular.com/contact/"target="">Contact</a></li><li class=""><a href="https://timeular.com/pricing/#faqs"target="">FAQs</a></li><li class=""><a href="https://timeular.com/shop-account-area/"target="">My Account</a></li></ul></div><div class="col-6 col-md-4 col-lg-3"><h4>Legal</h4><ul><li class=""><a href="https://timeular.com/tc/"target="">Terms</a></li><li class=""><a href="https://timeular.com/impressum/"target="">Imprint</a></li><li class=""><a href="https://timeular.com/privacy-policy/"target="">Privacy Policy</a></li><li class=""><a href="https://timeular.com/promotion-information-including-returns/"target="">Promotion Terms</a></li></ul></div>					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div id="cc-banner" class="cookie-consent__banner">
+		<div class="banner__overlay"></div>
+		<div class="banner__content">
+			<div class="container">
+				<h3 class="banner__title">Your Privacy</h3>
+				<div class="banner__text">
+					<p>We use cookies to improve your experience on our site and to show you personalized ads. Click &#039;Accept All&#039; to accept all cookies or &#039;My Options&#039; to find out more about the use of cookies and to change your cookie preferences.</p>
+				</div>
+				<div class="banner__buttons">
+					<button class="button--reverse banner__button" type="button" onclick="javascript:Truendo.openCookieSettings()">My Options</button>
+					<button class="button banner__button" type="button" onclick="javascript:Truendo.acceptAllCookies()">Accept All</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+	<script type='text/javascript' src='https://timeular.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70' id='jquery-blockui-js' defer></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/timeular.com\/cart\/","is_cart":"","cart_redirect_after_add":"yes"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://timeular.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=4.8.0' id='wc-add-to-cart-js' defer></script>
+<script type='text/javascript' src='https://timeular.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4' id='js-cookie-js' defer></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://timeular.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=4.8.0' id='woocommerce-js' defer></script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_e3aa87b4814e8dc623966e44c444120b","fragment_name":"wc_fragments_e3aa87b4814e8dc623966e44c444120b","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://timeular.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=4.8.0' id='wc-cart-fragments-js' defer></script>
+<script type='text/javascript' src='https://timeular.com/wp-content/themes/timeular/dist/js/app.js?ver=1615668257' id='timeular-app-js-js' defer></script>
+<script type='text/javascript' src='https://timeular.com/wp-includes/js/wp-embed.min.js?ver=1615668258' id='wp-embed-js' defer></script>
+<link rel="prerender" href="/pricing/"><link rel="prerender" href="/product/tracker/"><link rel="prerender" href="/product/pro-subscription/"><script>window.lazyLoadOptions = {
+                elements_selector: "img[data-lazy-src],.rocket-lazyload",
+                data_src: "lazy-src",
+                data_srcset: "lazy-srcset",
+                data_sizes: "lazy-sizes",
+                class_loading: "lazyloading",
+                class_loaded: "lazyloaded",
+                threshold: 300,
+                callback_loaded: function(element) {
+                    if ( element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible" ) {
+                        if (element.classList.contains("lazyloaded") ) {
+                            if (typeof window.jQuery != "undefined") {
+                                if (jQuery.fn.fitVids) {
+                                    jQuery(element).parent().fitVids();
+                                }
+                            }
+                        }
+                    }
+                }};
+        window.addEventListener('LazyLoad::Initialized', function (e) {
+            var lazyLoadInstance = e.detail.instance;
+
+            if (window.MutationObserver) {
+                var observer = new MutationObserver(function(mutations) {
+                    var image_count = 0;
+                    var iframe_count = 0;
+                    var rocketlazy_count = 0;
+
+                    mutations.forEach(function(mutation) {
+                        for (i = 0; i < mutation.addedNodes.length; i++) {
+                            if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') {
+                                return;
+                            }
+
+                           if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') {
+                                return;
+                            }
+
+                            images = mutation.addedNodes[i].getElementsByTagName('img');
+                            is_image = mutation.addedNodes[i].tagName == "IMG";
+                            iframes = mutation.addedNodes[i].getElementsByTagName('iframe');
+                            is_iframe = mutation.addedNodes[i].tagName == "IFRAME";
+                            rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');
+
+                            image_count += images.length;
+			                iframe_count += iframes.length;
+			                rocketlazy_count += rocket_lazy.length;
+
+                            if(is_image){
+                                image_count += 1;
+                            }
+
+                            if(is_iframe){
+                                iframe_count += 1;
+                            }
+                        }
+                    } );
+
+                    if(image_count > 0 || iframe_count > 0 || rocketlazy_count > 0){
+                        lazyLoadInstance.update();
+                    }
+                } );
+
+                var b      = document.getElementsByTagName("body")[0];
+                var config = { childList: true, subtree: true };
+
+                observer.observe(b, config);
+            }
+        }, false);</script><script data-no-minify="1" async src="https://timeular.com/wp-content/plugins/rocket-lazy-load/assets/js/16.1/lazyload.min.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6fd8f05cf6","applicationID":"338136417","transactionName":"M1AHZkdYDEoEARdQVgoaJFFBUA1XShICXlw=","queueTime":0,"applicationTime":394,"atts":"HxcEEA9CH0Q=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

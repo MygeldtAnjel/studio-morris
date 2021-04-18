@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>concursos &#8211; ARQcoaching</title>
+	<atom:link href="https://www.coachingarquitectos.com/tag/concursos/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.coachingarquitectos.com</link>
+	<description>Coaching para arquitectos por arquitectos</description>
+	<lastBuildDate>Sun, 10 May 2020 10:00:57 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+
+<image>
+	<url>https://www.coachingarquitectos.com/wp-content/uploads/2018/10/logo-ARQcoaching-fav-icon-1.png</url>
+	<title>concursos &#8211; ARQcoaching</title>
+	<link>https://www.coachingarquitectos.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>CONCURSOS DE ARQUITECTURA: UNA RUINA. DÓNDE ENCONTRARLOS, CÓMO ELEGIRLOS Y TENER OPCIONES</title>
+		<link>https://www.coachingarquitectos.com/costes-concursos-arquitectura/</link>
+					<comments>https://www.coachingarquitectos.com/costes-concursos-arquitectura/#comments</comments>
+		
+		<dc:creator><![CDATA[Joan Vergara Martí]]></dc:creator>
+		<pubDate>Tue, 23 Oct 2018 06:30:51 +0000</pubDate>
+				<category><![CDATA[destacados]]></category>
+		<category><![CDATA[estudio]]></category>
+		<category><![CDATA[concursos]]></category>
+		<category><![CDATA[coste de adquisición de clientes]]></category>
+		<category><![CDATA[honorarios]]></category>
+		<category><![CDATA[rentabilidad]]></category>
+		<guid isPermaLink="false">https://www.coachingarquitectos.com/?p=6666</guid>
+
+					<description><![CDATA[<p><a rel="nofollow" href="https://www.coachingarquitectos.com/costes-concursos-arquitectura/">CONCURSOS DE ARQUITECTURA: UNA RUINA. DÓNDE ENCONTRARLOS, CÓMO ELEGIRLOS Y TENER OPCIONES</a></p>
+<p>Presentarse constantemente a concursos de arquitectura es insostenible. Los costes que supone hacerlo son enormes. Si aun así decides hacerlo, aquí te doy consejos para localizarlos, elegirlos y presentarte con mejores opciones para ganarlos.</p>
+<p>Este artículo es un contenido original del Blog de <a rel="»nofollow»" href="//www.coachingarquitectos.com/»">ARQcoaching</a></p>
+]]></description>
+		
+					<wfw:commentRss>https://www.coachingarquitectos.com/costes-concursos-arquitectura/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

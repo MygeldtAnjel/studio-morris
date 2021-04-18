@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-920646c45ee053f8968f53555b7ec39c404fff778495833e903de5155bf39a3b.ico" />
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"027fe37ffd","applicationID":"450021","transactionName":"IVpbFkpXXVldRRYNVQxRXAxfF1hbXFJB","queueTime":37,"applicationTime":22,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"027fe37ffd",applicationID:"450021"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes' name='viewport'>
+<meta content='yes' name='apple-mobile-web-app-capable'>
+<meta content='app-id=442415567' name='apple-itunes-app'>
+<meta content='app-id=com.brainscape.mobile.portal' name='google-play-app'>
+<meta content='1P2vFUF7itqW3sooITl73g3z1PYfjgq84szjKa10vpE' name='google-site-verification'>
+<meta content='Brainscape&#39;s spaced repetition system is proven to DOUBLE learning results! Find, make, and study flashcards online or in our mobile app. Serious learners only.' name='description'>
+<meta content='flashcards, best flashcards app, online flashcards, make flashcards' name='keywords'>
+<meta content='/assets/bsc-share-icon.png' property='og:image'>
+<meta content='image/png' property='og:image:type'>
+<meta content='200' property='og:image:width'>
+<meta content='200' property='og:image:height'>
+<meta name="JSSentryEnv" content="production" />
+<meta name="JSSentryOn" content="false" />
+<link rel="icon" sizes="192x192" href="/touch-icon-192x192.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/apple-touch-icon-180x180-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"><!-- 57×57px -->
+
+<link href="https://www.brainscape.com/" rel="canonical">
+<link href='/manifest.json' rel='manifest'>
+<link href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;display=swap' rel='stylesheet'>
+<link href='https://unpkg.com/aos@next/dist/aos.css' rel='stylesheet'>
+<title>
+Brainscape: The Best Flashcards App | Make Flashcards Online
+</title>
+<!-- enable partner to track his/her page: -->
+<script>
+  (function() {
+    var _fbq = window._fbq || (window._fbq = []);
+    if (!_fbq.loaded) {
+      var fbds = document.createElement('script');
+      fbds.async = true;
+      fbds.src = '//connect.facebook.net/en_US/fbds.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(fbds, s);
+      _fbq.loaded = true;
+    }
+    _fbq.push(['addPixelId', '1462782130672996']);
+  })();
+  window._fbq = window._fbq || [];
+  window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1462782130672996&ev=PixelInitialized" /></noscript>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="EfKLgVBueHROZdl06C/vxH0EHjl+ZJSRPIh5w/SZ88ua5ttLNQ5q1A6tfLZkauTngH3MY+SY/tgUI8ppopQAxQ==" />
+<link rel="stylesheet" media="screen" href="/pks/cms-marketing-landing-page-styles-94075159a666320fc30581e8010dd321.css" />
+<script>
+  /**
+  * If browser back button was used, flush cache
+  * This ensures that user will always see an accurate, up-to-date view based on their state
+  * https://stackoverflow.com/questions/8788802/prevent-safari-loading-from-cache-when-back-button-is-clicked
+  */
+  (function () {
+    window.onpageshow = function(event) {
+      if (event.persisted) {
+        window.location.reload();
+      }
+    };
+  })();
+</script>
+</head>
+
+<body>
+<div class='navbar'>
+<div class='navbar-logo-container'>
+<div class='navbar-logo'>
+<a class='brainscape-link' href='/'>
+Brainscape
+</a>
+</div>
+</div>
+<div class='navbar-items desktop'>
+<ul class='navbar-options'>
+<li class='navbar-option find-flashcards'>
+<a class='option-link' href='/subjects'>
+Find Flashcards
+</a>
+</li>
+<li class='navbar-option make-flashcards'>
+<div data-react-class="registration/RegistrationButton" data-react-props="{&quot;source&quot;:&quot;make-flashcards&quot;,&quot;text&quot;:&quot;Make Flashcards&quot;}" data-react-cache-id="registration/RegistrationButton-0"></div>
+</li>
+<li class='navbar-option why-it-works'>
+<a class='option-link' href='/spaced-repetition'>
+Why It Works
+</a>
+</li>
+<li class='navbar-option educators dropdown'>
+Educators
+<ul class='dropdown-options menu-options'>
+<li class='dropdown-option menu-option teachers-and-professors'>
+<a class='option-link' href='/teachers'>
+Teachers & professors
+</a>
+</li>
+<li class='dropdown-option menu-option partnerships'>
+<a class='option-link' href='https://share.hsforms.com/1Q4v_EZBjQM-AJEeV5ycMRA1fype' target='_blank'>
+Content partnerships
+</a>
+</li>
+<li class='dropdown-option menu-option tutors-and-resellers'>
+<a class='option-link' href='https://share.hsforms.com/1LAePiB4LRQerTmf7UlMxVQ1fype' target='_blank'>
+Tutors & resellers
+</a>
+</li>
+</ul>
+</li>
+<li class='navbar-option dropdown businesses'>
+Businesses
+<ul class='dropdown-options menu-options'>
+<li class='dropdown-option menu-option employee-training'>
+<a class='option-link' href='/companies'>
+Employee training
+</a>
+</li>
+<li class='dropdown-option menu-option partnerships'>
+<a class='option-link' href='https://share.hsforms.com/1Q4v_EZBjQM-AJEeV5ycMRA1fype' target='_blank'>
+Content partnerships
+</a>
+</li>
+<li class='dropdown-option menu-option tutors-and-resellers'>
+<a class='option-link' href='https://share.hsforms.com/1LAePiB4LRQerTmf7UlMxVQ1fype' target='_blank'>
+Tutors & resellers
+</a>
+</li>
+</ul>
+</li>
+<li class='navbar-option academy'>
+<a class='option-link' href='/academy'>
+Academy
+</a>
+</li>
+<li class='navbar-option more dropdown'>
+more...
+<ul class='dropdown-options menu-options'>
+<li class='dropdown-option menu-option educators'>
+Educators
+<ul class='dropdown-options menu-options nested-dropdown-options'>
+<li class='dropdown-option menu-option teachers-and-professors'>
+<a class='option-link' href='/teachers'>
+Teachers & professors
+</a>
+</li>
+<li class='dropdown-option menu-option partnerships'>
+<a class='option-link' href='https://share.hsforms.com/1Q4v_EZBjQM-AJEeV5ycMRA1fype' target='_blank'>
+Content partnerships
+</a>
+</li>
+<li class='dropdown-option menu-option tutors-and-resellers'>
+<a class='option-link' href='https://share.hsforms.com/1LAePiB4LRQerTmf7UlMxVQ1fype' target='_blank'>
+Tutors & resellers
+</a>
+</li>
+</ul>
+</li>
+<li class='dropdown-option menu-option businesses'>
+Businesses
+<ul class='dropdown-options menu-options nested-dropdown-options'>
+<li class='dropdown-option menu-option employee-training'>
+<a class='option-link' href='/companies'>
+Employee training
+</a>
+</li>
+<li class='dropdown-option menu-option partnerships'>
+<a class='option-link' href='https://share.hsforms.com/1Q4v_EZBjQM-AJEeV5ycMRA1fype' target='_blank'>
+Content partnerships
+</a>
+</li>
+<li class='dropdown-option menu-option tutors-and-resellers'>
+<a class='option-link' href='https://share.hsforms.com/1LAePiB4LRQerTmf7UlMxVQ1fype' target='_blank'>
+Tutors & resellers
+</a>
+</li>
+</ul>
+</li>
+<li class='dropdown-option menu-option academy'>
+<a class='option-link' href='/academy'>
+Academy
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='navbar-ctas'>
+<li class='navbar-cta login'>
+<div data-react-class="registration/LoginButton" data-react-props="{}" data-react-cache-id="registration/LoginButton-0"></div>
+</li>
+<li class='navbar-cta register emphasized'>
+<div data-react-class="registration/RegistrationButton" data-react-props="{&quot;source&quot;:null}" data-react-cache-id="registration/RegistrationButton-0"></div>
+</li>
+</ul>
+</div>
+
+<div class='navbar-items mobile'>
+<ul class='navbar-options'>
+<li class='navbar-option opt-1 find-flashcards'>
+<a class='option-link' href='/subjects'>
+Find Flashcards
+</a>
+</li>
+<li class='navbar-option opt-2 make-flashcards'>
+<div data-react-class="registration/RegistrationButton" data-react-props="{&quot;source&quot;:&quot;make-flashcards&quot;,&quot;text&quot;:&quot;Make Flashcards&quot;}" data-react-cache-id="registration/RegistrationButton-0"></div>
+</li>
+<li class='navbar-option opt-3 why-it-works'>
+<a class='option-link' href='/spaced-repetition'>
+Why It Works
+</a>
+</li>
+<li class='navbar-option opt-4 educators dropdown'>
+Educators
+<ul class='dropdown-options menu-options'>
+<li class='dropdown-option opt-1 menu-option teachers-and-professors'>
+<a class='option-link' href='/teachers'>
+Teachers & professors
+</a>
+</li>
+<li class='dropdown-option opt-2 menu-option partnerships'>
+<a class='option-link' href='https://share.hsforms.com/1Q4v_EZBjQM-AJEeV5ycMRA1fype' target='_blank'>
+Content partnerships
+</a>
+</li>
+<li class='dropdown-option opt-3 menu-option tutors-and-resellers'>
+<a class='option-link' href='https://share.hsforms.com/1LAePiB4LRQerTmf7UlMxVQ1fype' target='_blank'>
+Tutors & resellers
+</a>
+</li>
+</ul>
+</li>
+<li class='navbar-option opt-5 dropdown businesses'>
+Businesses
+<ul class='dropdown-options menu-options'>
+<li class='dropdown-option opt-1 menu-option employee-training'>
+<a class='option-link' href='/companies'>
+Employee training
+</a>
+</li>
+<li class='dropdown-option opt-2 menu-option partnerships'>
+<a class='option-link' href='https://share.hsforms.com/1Q4v_EZBjQM-AJEeV5ycMRA1fype' target='_blank'>
+Content partnerships
+</a>
+</li>
+<li class='dropdown-option opt-3 menu-option tutors-and-resellers'>
+<a class='option-link' href='https://share.hsforms.com/1LAePiB4LRQerTmf7UlMxVQ1fype' target='_blank'>
+Tutors & resellers
+</a>
+</li>
+</ul>
+</li>
+<li class='navbar-option opt-6 academy'>
+<a class='option-link' href='/academy'>
+Academy
+</a>
+</li>
+</ul>
+<ul class='navbar-ctas'>
+<li class='navbar-cta login'>
+<div data-react-class="registration/LoginButton" data-react-props="{}" data-react-cache-id="registration/LoginButton-0"></div>
+</li>
+<li class='navbar-cta register emphasized'>
+<div data-react-class="registration/RegistrationButton" data-react-props="{&quot;source&quot;:null}" data-react-cache-id="registration/RegistrationButton-0"></div>
+</li>
+</ul>
+</div>
+
+<div class='hamburger-button' title='Explore brainscape'>
+<div class='top-bun'></div>
+<div class='meat'></div>
+<div class='bottom-bun'></div>
+</div>
+<div class='genome-dropdown'>
+<div class='genome-search-bar'>
+<div data-react-class="shared/SearchBar" data-react-props="{}" data-react-cache-id="shared/SearchBar-0"></div>
+</div>
+<div class='genome'>
+<div class='close-dropdown'></div>
+<div class='genome-titling'>
+<h2 class='genome-heading'>
+Brainscape's Knowledge Genome<sup class="tm">TM</sup>
+</h2>
+</div>
+<div class='genome-blurb'>
+Browse over 1 million classes created by top students, professors, publishers, and experts.
+</div>
+<ul class='subject-listing'>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/entrance-exams">Entrance Exams</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/professional-certifications/">Professional Certifications</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/foreign-languages/">Foreign Languages</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/medical-nursing/">Medical &amp; Nursing</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/science/">Science</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/english">English</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/humanities-social-studies/">Humanities &amp; Social Studies</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/mathematics/">Mathematics</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/law/">Law</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/vocations/">Vocations</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/health-fitness/">Health &amp; Fitness</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/business-finance/">Business &amp; Finance</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/technology-engineering/">Technology &amp; Engineering</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/food-beverage/">Food &amp; Beverage</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/fine-arts/">Fine Arts</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name'>
+<a class="subject-link" href="/subjects/random-knowledge/">Random Knowledge</a>
+</h4>
+</li>
+<li class='subject'>
+<h4 class='subject-name full-index'>
+<a class="subject-link" href="/subjects">See full index</a>
+</h4>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+<div data-react-class="controllers/RegistrationController" data-react-props="{&quot;alert&quot;:null,&quot;appleBsKey&quot;:&quot;eyJhbGciOiJSUzI1NiJ9.eyJleHAiOjE2MTU3NzU4ODQsImlhdCI6MTYxNTY4OTQ4NCwiaXNzIjoiaHR0cHM6Ly93d3cuYnJhaW5zY2FwZS5jb20iLCJhdWQiOiJyZWdpc3RyYXRpb24ifQ.H1rRvbMRt3SDayQ8RlMV5cEVGNwc2k9kNy95WYr4ZxSBocw5AbtLksksdYknfiez5Tnyvsj5BbRVHICijwU1wdMIquptr0SvxlvIOTtMxCK3gj2wuVk2TTxw4dkw2kKQ_9gubGr8su1IPR3wxPbvOez1knBEsWI48oe1-OxfL9Q5iyqmqk-bXNkQSnH1m9dSfQOXokw6z3HCJeiL5x5l00ShOZZoaH175AoEPP2epi-uVFl0OoHrJKruQpn-rEcqlw_mj1jRDUvgqxrBxF761IL-s83sBza3GAJLiDnqvmXtRZ1O_IJlF-zjAkFkoAledFsuf2uXRSJgshvcEJt4Jg&quot;,&quot;appleClientId&quot;:&quot;com.brainscape.web.auth&quot;,&quot;appleFlipper&quot;:true,&quot;appleRedirectUri&quot;:&quot;https://www.brainscape.com/auth/apple/callback&quot;,&quot;authenticityToken&quot;:&quot;6YDV2To7kKwzsDxjYhMHEWMgCdOI8PSbVQLCNLrexBdilIUTX1uCDHN4maHuVgwynlnbiRIMntJ9qXGe7NM3GQ==&quot;}" data-react-cache-id="controllers/RegistrationController-0"></div>
+
+<div class='cms-content marketing-page landing-page'>
+
+
+
+<!--kg-card-begin: html-->  <section class="band band-1">
+  
+    <div class="overlay"></div>
+  
+    <div class="band-messaging">
+      <h3 class="landing-band-heading">Rise to
+        your challenge.</h3>
+      <h1 class="landing-band-sub-heading">Flashcards for <b> serious learners.</b></h1>
+      <div class="primary-ctas">
+        <div class="rect-button primary-cta"><a href="https://brainscape.com/subjects">Find flashcards</a>
+        </div>
+        <div class="rect-button primary-cta neutral cms-registration-button">Make flashcards</div>
+        <div class="watch-video-button desktop" data-video-url="https://www.youtube.com/embed/mAxlGrrEsYs">Watch video
+        </div>
+      </div>
+    </div>
+  
+    <div class="carousel-infinite">
+      <div class="carousel-infinite-wrapper">
+        <div class="watch-video-button mobile" data-video-url="https://www.youtube.com/embed/mAxlGrrEsYs">Watch video
+        </div>
+        <ul class="carousel-infinite-slides">
+          <li class="carousel-infinite-slide background-1" data-slide="1">
+            <div class="overlay"></div>
+            <div class="slider-testifier-and-quote">
+              <div class="slider-testifier">
+                Nikita B.
+              </div>
+              <div class="slider-quote">
+                Conquered biology final
+              </div>
+            </div>
+          </li>
+          <li class="carousel-infinite-slide background-2 custom-lazy-load" data-slide="2">
+            <div class="overlay"></div>
+            <div class="slider-testifier-and-quote">
+              <div class="slider-testifier">
+                Brandon W.
+              </div>
+              <div class="slider-quote">
+                Simplified sales training
+              </div>
+            </div>
+          </li>
+          <li class="carousel-infinite-slide background-3 custom-lazy-load" data-slide="3">
+            <div class="overlay"></div>
+            <div class="slider-testifier-and-quote">
+              <div class="slider-testifier">
+                Jordan S.
+              </div>
+              <div class="slider-quote">
+                Became a certified sommelier
+              </div>
+            </div>
+          </li>
+          <li class="carousel-infinite-slide background-4 custom-lazy-load" data-slide="4">
+            <div class="overlay"></div>
+            <div class="slider-testifier-and-quote">
+              <div class="slider-testifier">
+                Fletch M.
+              </div>
+              <div class="slider-quote">
+                Learned Spanish in 2 months
+              </div>
+            </div>
+          </li>
+          <li class="carousel-infinite-slide background-5 custom-lazy-load" data-slide="5">
+            <div class="overlay"></div>
+            <div class="slider-testifier-and-quote">
+              <div class="slider-testifier">
+                Carissa Z.
+              </div>
+              <div class="slider-quote">
+                Voted teacher of the year
+              </div>
+            </div>
+          </li>
+          <li class="carousel-infinite-slide background-6 custom-lazy-load" data-slide="6">
+            <div class="overlay"></div>
+            <div class="slider-testifier-and-quote">
+              <div class="slider-testifier">
+                Elizabeth J.
+              </div>
+              <div class="slider-quote">
+                Crushed the Series 7
+              </div>
+            </div>
+          </li>
+          <li class="carousel-infinite-slide background-7 custom-lazy-load" data-slide="7">
+            <div class="overlay"></div>
+            <div class="slider-testifier-and-quote">
+              <div class="slider-testifier">
+                Ryan K.
+              </div>
+              <div class="slider-quote">
+                Aced the bar exam
+              </div>
+            </div>
+          </li>
+          <li class="carousel-infinite-slide background-8 custom-lazy-load" data-slide="8">
+            <div class="overlay"></div>
+            <div class="slider-testifier-and-quote">
+              <div class="slider-testifier">
+                Giselle D.
+              </div>
+              <div class="slider-quote">
+                Mastered med school
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="indicators-list">
+        <div class="indicator" data-slide="1"></div>
+        <div class="indicator" data-slide="2"></div>
+        <div class="indicator" data-slide="3"></div>
+        <div class="indicator" data-slide="4"></div>
+        <div class="indicator" data-slide="5"></div>
+        <div class="indicator" data-slide="6"></div>
+        <div class="indicator" data-slide="7"></div>
+        <div class="indicator" data-slide="8"></div>
+        <div class="pause-play play"></div>
+      </div>
+    </div>
+  
+  </section><!--kg-card-end: html--><!--kg-card-begin: html--><section class="band band-2">
+
+  <div class="mobile-animation-container">
+    <div class="mobile-animation aos-init aos-animate" id="mobile-dashboard-animation" data-aos="fade-right"></div>
+  </div>
+
+  <div class="band-messaging" data-aos="fade-left">
+    <h2 class="band-heading">Attack 
+        your weaknesses.</h2>
+    <p class="band-blurb">Brainscape's online flashcards optimize your studying, by repeating harder concepts 
+        in the perfect interval for maximum memory retention.</p>
+<div class="primary-ctas">
+      <div class="rect-button primary-cta">
+   <a href="https://brainscape.com/spaced-repetition/">
+       See the brain science</a>
+      </div>
+    </div>
+  </div>
+
+</section><!--kg-card-end: html--><!--kg-card-begin: html--><section class="band band-3">
+
+  <div class="smartest-flashcard-app-container">
+    <div class="band-messaging">
+ <h2 class="band-heading desktop">The world's smartest<br>flashcard app.</h2>
+<h2 class="band-heading mobile">The flashcard
+    app tailored
+    to you.</h2>
+      <div class="primary-ctas mobile">
+      <div class="rect-button primary-cta">
+   <a href="https://brainscape.com/spaced-repetition">
+       See the brain science</a>
+      </div>
+    </div>
+
+      <div class="band-blurb-and-platform-icons">
+        <div class="platform-icons">
+          <div class="mobile"></div>
+          <div class="tablet"></div>
+          <div class="desktop"></div>
+        </div>
+        <p class="band-blurb">Available on all platforms</p>
+      </div>
+    </div>
+
+    <ul class="app-features">
+
+      <li class="app-feature" style="--animation-order: 1;">
+        <div class="app-feature-icon organize"></div>
+        <h3 class="app-feature-desc"><b>Make</b> better flashcards</h3>
+      </li>
+
+      <li class="app-feature" style="--animation-order: 2;">
+        <div class="app-feature-icon sync"></div>
+        <h3 class="app-feature-desc"><b>Sync </b> between more devices</h3>
+      </li>
+
+      <li class="app-feature" style="--animation-order: 3;">
+        <div class="app-feature-icon share"></div>
+        <h3 class="app-feature-desc"><b>Share </b> or secure your cards</h3>
+      </li>
+
+      <li class="app-feature" style="--animation-order: 4;">
+        <div class="app-feature-icon find"></div>
+        <h3 class="app-feature-desc"><b>Trust </b> the flashcards you find</h3>
+      </li>
+
+      <li class="app-feature" style="--animation-order: 5;">
+        <div class="app-feature-icon study"></div>
+        <h3 class="app-feature-desc"><b>Study </b> more efficiently</h3>
+      </li>
+
+      <li class="app-feature" style="--animation-order: 6;">
+        <div class="app-feature-icon track"></div>
+        <h3 class="app-feature-desc"><b>Track </b> better metrics</h3>
+      </li>
+
+    </ul>
+  </div>
+</section><!--kg-card-end: html--><!--kg-card-begin: html-->  <section class="band band-4">
+  
+    <div class="band-header">
+      <div class="band-messaging">
+        <h2 class="band-heading">Trusted by millions
+          to reach their goals.</h2>
+      </div>
+    </div>
+  
+    <div class="carousel-grid">
+  
+      <div class="carousel-grid-container">
+  
+        <ul class="testimonials-grid carousel-grid-list">
+  
+          <li class="testimonial carousel-grid-slide lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/testimonials-grid/doctor.jpg)" id="block-1">
+            <div class="overlay"></div>
+            <div class="color-overlay"></div>
+            <h2 class="position">Doctor</h2>
+            <div class="testifier-position-quote">
+              <h3 class="testifier">Carmen H.</h3>
+              <h2 class="position">Imperial College London</h2>
+              <div class="quote">
+                A brilliant learning resource that has been developed for many years. Many flashcards produced and shared
+                by students worldwide. I would highly recommend this service!
+              </div>
+            </div>
+          </li>
+  
+          <li class="testimonial carousel-grid-slide lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/testimonials-grid/lawyer.jpg)" id="block-2">
+            <div class="overlay"></div>
+            <div class="color-overlay"></div>
+            <h2 class="position">Lawyer</h2>
+            <div class="testifier-position-quote">
+              <h3 class="testifier">Matthew B.</h3>
+              <h2 class="position">Bar review founder</h2>
+              <div class="quote">
+Brainscape helps our students optimize their bar prep by using smart technology to improve memorization & recall, while adapting to their strengths & weaknesses... all in an easy to use mobile study platform!
+              </div>
+            </div>
+          </li>
+  
+          <li class="testimonial carousel-grid-slide lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/testimonials-grid/nurse.jpg)" id="block-3">
+            <div class="overlay"></div>
+            <div class="color-overlay"></div>
+            <h2 class="position">Nurse</h2>
+            <div class="testifier-position-quote">
+              <h3 class="testifier">Jenson R.</h3>
+              <h2 class="position">Registered Nurse</h2>
+              <div class="quote">
+                I used to hate flashcards, but Brainscape made studying a breeze. So intuitive and simple... convenient to
+                practice daily. I solidified the information I had issues with.
+              </div>
+            </div>
+          </li>
+  
+          <li class="testimonial carousel-grid-slide lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/testimonials-grid/sommelier.jpg)" id="block-4">
+            <div class="overlay"></div>
+            <div class="color-overlay"></div>
+            <h2 class="position">Sommelier</h2>
+            <div class="testifier-position-quote">
+              <h3 class="testifier">Sarah Sutel</h3>
+              <h2 class="position">Master Wine Educator</h2>
+              <div class="quote">
+                Brainscape helped prepare me for my wine exams better than any other study tool I've ever used, period.
+                Hard-to-remember facts into learning at my fingertips. I'm hooked.
+              </div>
+            </div>
+          </li>
+  
+          <li class="testimonial carousel-grid-slide lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/testimonials-grid/teacher.jpg)" id="block-5">
+            <div class="overlay"></div>
+            <div class="color-overlay"></div>
+            <h2 class="position">Teacher</h2>
+            <div class="testifier-position-quote">
+              <h3 class="testifier">Father Scott Hastings</h3>
+              <h2 class="position">Pontifical Gregorian University (Rome)</h2>
+              <div class="quote">
+                Brainscape is probably the most significant change in our seminary students' study habits since the
+                widespread use of the laptop!
+              </div>
+            </div>
+          </li>
+  
+          <li class="testimonial carousel-grid-slide lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/testimonials-grid/traveller.jpg)" id="block-6">
+            <div class="overlay"></div>
+            <div class="color-overlay"></div>
+            <h2 class="position">Traveller</h2>
+            <div class="testifier-position-quote">
+              <h3 class="testifier">Sophie Parker</h3>
+              <h2 class="position">Spanish Learner</h2>
+              <div class="quote">
+                In days my Spanish has gone from elementary to conversational; incredibly in depth & easy to use.
+              </div>
+            </div>
+          </li>
+  
+          <div class="carousel-grid-exit"></div>
+          <div class="nested-carousel">
+            <ul class="nested-carousel-list">
+              <div class="drag-to-scroll-icon"></div>
+              <li class="nested-carousel-slide lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/testimonials-grid/doctor.jpg)" id="block-1">
+                <div class="overlay"></div>
+                <div class="color-overlay"></div>
+                <div class="testifier-position-quote">
+                  <h2 class="position">Doctor</h2>
+                </div>
+              </li>
+  
+              <li class="nested-carousel-slide lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/testimonials-grid/lawyer.jpg)" id="block-2">
+                <div class="overlay"></div>
+                <div class="color-overlay"></div>
+                <div class="testifier-position-quote">
+                  <h2 class="position">Lawyer</h2>
+                </div>
+              </li>
+  
+              <li class="nested-carousel-slide lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/testimonials-grid/nurse.jpg)" id="block-3">
+                <div class="overlay"></div>
+                <div class="color-overlay"></div>
+                <div class="testifier-position-quote">
+                  <h2 class="position">Nurse</h2>
+                </div>
+              </li>
+              <li class="nested-carousel-slide lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/testimonials-grid/sommelier.jpg)" id="block-4">
+                <div class="overlay"></div>
+                <div class="color-overlay"></div>
+                <div class="testifier-position-quote">
+                  <h2 class="position">Sommelier</h2>
+                </div>
+              </li>
+  
+              <li class="nested-carousel-slide lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/testimonials-grid/teacher.jpg)" id="block-5">
+                <div class="overlay"></div>
+                <div class="color-overlay"></div>
+                <div class="testifier-position-quote">
+                  <h2 class="position">Teacher</h2>
+                </div>
+              </li>
+  
+              <li class="nested-carousel-slide lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/testimonials-grid/traveller.jpg)" id="block-6">
+                <div class="overlay"></div>
+                <div class="color-overlay"></div>
+                <div class="testifier-position-quote">
+                  <h2 class="position">Traveller</h2>
+                </div>
+              </li>
+            </ul>
+          </div>
+  
+        </ul><!-- END carousel-grid-list ---->
+  
+      </div><!-- END carousel-grid-container ---->
+  
+    </div><!-- END carousel-grid ---->
+  
+  </section><!--kg-card-end: html--><!--kg-card-begin: html-->  <section class="band band-5">
+  
+    <div class="band-header">
+      <div class="band-messaging">
+        <h2 class="band-heading desktop">Thousands of<br>subjects.</h2>
+        <h2 class="band-heading mobile">Most popular<br>subjects.</h2>
+      </div>
+    </div>
+  
+    <div class="subjects">
+  
+      <h3 class="subject-options-header">Most popular subjects</h3>
+  
+      <ul class="subject-options">
+  
+        <li class="subject-option">
+          <a href="https://www.brainscape.com/subjects/nclex">
+            <div class="subject-option-icon nclex lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/band-5/nclex.png)"></div>
+            <h4 class="subject-option-title">NCLEX</h4>
+          </a>
+        </li>
+  
+        <li class="subject-option">
+          <a href="https://www.brainscape.com/learn/wset-level-2-wine">
+            <div class="subject-option-icon wset lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/band-5/WSET3.png)"></div>
+            <h4 class="subject-option-title">WSET ® Level 2</h4>
+          </a>
+        </li>
+  
+        <li class="subject-option">
+          <a href="https://brainscape.com/learn/spanish">
+            <div class="subject-option-icon spanish lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/band-5/spanish.png)"></div>
+            <h4 class="subject-option-title">Spanish</h4>
+          </a>
+        </li>
+  
+        <li class="subject-option">
+          <a href="https://brainscape.com/learn/mbe">
+            <div class="subject-option-icon mbe lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/band-5/bar-exam.png)"></div>
+            <h4 class="subject-option-title">MBE</h4>
+          </a>
+        </li>
+  
+        <li class="subject-option">
+          <a href="https://brainscape.com/learn/world-geography">
+            <div class="subject-option-icon world_geography lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/band-5/world_geography.png)"></div>
+            <h4 class="subject-option-title">World geography</h4>
+          </a>
+        </li>
+  
+      </ul>
+  
+      <h3 class="more-subjects-options-header desktop">And more subjects...
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </h3>
+      <h3 class="more-subjects-options-header mobile">And more subjects</h3>
+  
+      <ul class="more-subjects-options">
+  
+        <li class="subject-option">
+          <a href="https://brainscape.com/learn/mcat"></a>
+          <div class="subject-option-title">MCAT</div>
+        </li>
+  
+        <li class="subject-option">
+          <a href="https://brainscape.com/learn/gre-psychology"></a>
+          <div class="subject-option-title">GRE psychology</div>
+        </li>
+  
+        <li class="subject-option">
+          <a href="https://brainscape.com/learn/chinese-mandarin"></a>
+          <div class="subject-option-title">Learn Chinese</div>
+        </li>
+  
+        <li class="subject-option">
+          <a href="https://brainscape.com/subjects/world%20history"></a>
+          <div class="subject-option-title">World history</div>
+        </li>
+  
+        <li class="subject-option">
+          <a href="https://brainscape.com/subjects/medical-nursing/"></a>
+          <div class="subject-option-title">Medical & nursing</div>
+        </li>
+  
+        <li class="subject-option">
+          <a href="https://brainscape.com/learn/cpa"></a>
+          <div class="subject-option-title">CPA</div>
+        </li>
+  
+        <li class="subject-option">
+          <a href="https://brainscape.com/learn/knowledge-rehab"></a>
+          <div class="subject-option-title">Knowledge rehab</div>
+        </li>
+  
+        <li class="subject-option">
+          <a href="https://brainscape.com/learn/usmle-step-1"></a>
+          <div class="subject-option-title">USMLE</div>
+        </li>
+  
+        <li class="subject-option">
+          <a href="https://brainscape.com/learn/sie-exam"></a>
+          <div class="subject-option-title">SIE Exam</div>
+        </li>
+  
+        <li class="subject-option-cta">
+          <div class="primary-ctas">
+            <div class="rect-button primary-cta"> <a href="https://brainscape.com/subjects">See all flashcards
+              </a>
+            </div>
+          </div>
+  
+        </li>
+  
+      </ul>
+    </div>
+  
+    <div class="search-action"></div>
+  
+  </section><!--kg-card-end: html--><!--kg-card-begin: html--><section class="band band-6">
+
+  <div class="band-header">
+    <div class="band-messaging">
+      <h2 class="band-heading">Flexible content <br> authoring.</h2>
+      <p class="band-blurb">Brainscape allows trainers to organize "decks", add images & sounds, and
+          collaborate with multiple editors for real-time content deployment.</p>
+    </div>
+  </div>
+
+  <div class="desktop-animation-container">
+    <div class="desktop-animation" id="content-authoring-animation">
+  	</div>
+  </div>
+
+</section><!--kg-card-end: html--><!--kg-card-begin: html-->  <section class="band band-7">
+
+    <div class="band-header">
+      <div class="band-messaging">
+        <h2 class="band-heading desktop">Also perfect for <br> schools and companies.</h2>
+        <h2 class="band-heading mobile">Perfect for
+          classes and
+          groups.</h2>
+      </div>
+
+      <div class="primary-ctas mobile">
+        <div class="rect-button primary-cta"> <a href="https://brainscape.com/teachers">Brainscape for schools</a>
+        </div>
+        <div class="rect-button primary-cta neutral"><a href="https://brainscape.com/companies">Brainscape for
+            companies </a></div>
+      </div>
+    </div>
+
+    <ul class="message-sequence">
+
+      <li class="message-inner message-inner-1" style="--animation-order: 1;">
+        <div class="message-inner-1-icon lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/band-7/compose.png)"></div>
+        <h4 class="message-heading">Create custom <br> flashcards</h4>
+        <p class="message-blurb">Brainscape supports text, images, sounds, videos, and any other media that works well in
+          a bite-sized study format.</p>
+      </li>
+
+      <li class="message-inner message-inner-2" style="--animation-order: 2;">
+        <div class="message-inner-2-icon lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/band-7/globe.png)"></div>
+        <h4 class="message-heading">Share with your <br> team</h4>
+        <p class="message-blurb">Securely invite students or employees to access both online and on their mobile devices,
+          and manage their editing permissions.</p>
+      </li>
+
+      <li class="message-inner message-inner-3" style="--animation-order: 3;">
+        <div class="message-inner-3-icon lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/band-7/sequence-track.png)"></div>
+        <h4 class="message-heading">Track students <br> progress</h4>
+        <p class="message-blurb">Learners can study in our web and mobile app, and you can see detailed activity data.
+          Learners can also search for specific flashcards as a quick mobile reference tool.</p>
+      </li>
+
+      <div class="primary-ctas desktop">
+        <div class="rect-button primary-cta"> <a href="https://brainscape.com/teachers">Brainscape for schools</a>
+        </div>
+        <div class="rect-button primary-cta neutral"><a href="https://brainscape.com/companies">Brainscape for
+            companies </a></div>
+      </div>
+
+    </ul>
+
+  </section><!--kg-card-end: html--><!--kg-card-begin: html--><section class="band band-8">
+
+    <div class="twice-as-effective-container">
+
+  <div class="animation-container">
+    <div id="proven-twice-animation"></div>
+  </div>
+        
+ <div class="band-messaging">
+<h2 class="band-heading">Proven twice as effective as traditional methods.</h2>
+<p class="band-blurb">At a study at Columbia University, students using Brainscape for <i>just 30 minutes</i> scored an average of 2x higher on post-tests than students who used books or paper flashcards. These learning benefits accrue exponentially when you have <i>weeks or months'</i> worth of content to study.</p>
+
+<div class="primary-ctas mobile">
+<div class="rect-button primary-cta"><a href="https://staging.brainscape.com/spaced-repetition">See why it works</a></div>
+</div>
+ </div>
+
+ </div>
+
+</section><!--kg-card-end: html--><!--kg-card-begin: html-->  <section class="band band-9">
+
+    <div class="carousel-infinite-wrapper">
+      <div class="free-and-pro-features carousel-infinite-slides">
+      
+        <div class="free-features-container carousel-infinite-slide">
+          <ul class="features">
+      
+            <li class="feature-header">
+              <h2 class="feature-title">Free
+                features</h2>
+              <div class="feature-price">$0/mo.</div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 1;">
+              <h3 class="feature-title">Find great flashcards</h3>
+              <div class="feature-desc">Browse thousands of classes created by
+                publishers, teachers, & students.
+              </div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 2;">
+              <h3 class="feature-title">Create great flashcards</h3>
+              <div class="feature-desc">Use easy authoring tools on both our website
+                and our mobile & tablet apps.</div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 3;">
+              <h3 class="feature-title">Study with spaced repetition</h3>
+              <div class="feature-desc">Learn twice as much in half the time, with Brainscape's
+                scientifically proven methods.</div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 4;">
+              <h3 class="feature-title">Track your progress</h3>
+              <div class="feature-desc">Take control of your pace of learning, and benchmark
+                yourself against global leaderboards.</div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 5;">
+              <h3 class="feature-title">Sync between devices</h3>
+              <div class="feature-desc">All your flashcards and metrics are magically kept in
+                sync across our web & mobile apps.</div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 6;">
+              <h3 class="feature-title">Collaborate with classmates</h3>
+              <div class="feature-desc">Manage editing permissions to help spread the work across
+                multiple collaborating authors.</div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 7;">
+              <h3 class="feature-title">Share your class</h3>
+              <div class="feature-desc">Post a link to your class website,
+                or tweet it out to the rest of the world!</div>
+            </li>
+      
+          </ul>
+        </div>
+      
+        <div class="pro-features-container carousel-infinite-slide">
+          <ul class="features">
+      
+            <li class="feature-header">
+              <h2 class="feature-title">Pro
+                features</h2>
+              <div class="feature-price">$5/mo.</div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 1;">
+              <h3 class="feature-title">Study unlimited premium cards</h3>
+              <div class="feature-desc">Need to cram? Remove daily study limits on
+                strangers' and publishers' flashcards.</div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 2;">
+              <h3 class="feature-title">Upload unlimited images & sounds</h3>
+              <div class="feature-desc">Visual and audio aids can help support deeper learning
+                for multiple subject types.</div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 3;">
+              <h3 class="feature-title">Copy other users' flashcards</h3>
+              <div class="feature-desc">Create your own editable copy of any class or deck, and
+                modify the flashcards as your own.</div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 4;">
+              <h3 class="feature-title">Import & export CSVs</h3>
+              <div class="feature-desc">Create cards faster using a spreadsheet, or download backups
+                to repurpose elsewhere.</div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 5;">
+              <h3 class="feature-title">Study bookmarked flashcards</h3>
+              <div class="feature-desc">Mark tricky cards to study later with your
+                teacher, friend, or tutor.</div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 6;">
+              <h3 class="feature-title">Reset your statistics</h3>
+              <div class="feature-desc">Reset your confidence ratings for a single
+                deck or for a whole class.</div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 7;">
+              <h3 class="feature-title">Make classes private</h3>
+              <div class="feature-desc">Restrict access to only the students or employees
+                who you invite directly.</div>
+            </li>
+      
+            <li class="feature" style="--animation-order: 8;">
+              <h3 class="feature-title">See detailed student stats</h3>
+              <div class="feature-desc">Track how often students are studying, & rank them
+                by cards studied or % mastery.</div>
+            </li>
+      
+          </ul>
+        </div>
+      
+      </div>
+    </div>
+    
+  </section><!--kg-card-end: html--><!--kg-card-begin: html-->  <section class="band band-10 lazy-load" data-bg="url(/assets/cms/marketing/pages/landing/band-10/band-10-background.jpg)">
+    <div class="overlay"></div>
+    <div class="dream-learn-achieve-container">
+
+      <div class="band-messaging">
+        <h2 class="band-heading">Dream. <br> Learn. <br> Achieve.</h2>
+        <p class="band-blurb">With Brainscape, the journey to your aspirations
+          just became a lot simpler.
+          Tailored to you and how you learn.</p>
+        <div class="primary-ctas">
+          <div class="rect-button primary-cta emphasized cms-registration-button">Register today
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section><!--kg-card-end: html-->
+
+</div>
+<div class='modals'></div>
+<div class='band band-footer'>
+<div class='footer-main'>
+<ul class='sections'>
+<li class='section key-links'>
+<h6 class='section-heading'>
+Key Links
+</h6>
+<ul class='options-list'>
+<li class='option'>
+<a id="footer-pricing-link" class="option-link" href="/pricing?paywall=upgrade">Pricing</a>
+</li>
+<li class='option'>
+<a class="option-link" href="/companies">Corporate Training</a>
+</li>
+<li class='option'>
+<a class="option-link" href="/teachers">Teachers &amp; Schools</a>
+</li>
+<li class='option'>
+<a class="option-link" target="_blank" rel="nofollow noopener noreferrer" href="https://itunes.apple.com/us/app/brainscape-smart-flashcards/id442415567?mt=8">iOS App</a>
+</li>
+<li class='option'>
+<a class="option-link" target="_blank" rel="nofollow noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.brainscape.mobile.portal">Android App</a>
+</li>
+<li class='option'>
+<a class="option-link" target="_blank" rel="noopener" href="https://www.brainscape.com/faq">Help Center</a>
+</li>
+</ul>
+</li>
+<li class='section subjects'>
+<h6 class='section-heading'>
+Subjects
+</h6>
+<ul class='options-list'>
+<li class='option'>
+<a class="option-link" href="/subjects/medical-nursing">Medical &amp; Nursing</a>
+</li>
+<li class='option'>
+<a class="option-link" href="/subjects/law">Law Education</a>
+</li>
+<li class='option'>
+<a class="option-link" href="/subjects/foreign-languages">Foreign Languages</a>
+</li>
+<li class='option'>
+<a class="option-link" href="/subjects-directory/a">All Subjects A-Z</a>
+</li>
+<li class='option certified-classes'>
+<a class="option-link" href="/learn">All Certified Classes</a>
+</li>
+</ul>
+</li>
+<li class='section company'>
+<h6 class='section-heading'>
+Company
+</h6>
+<ul class='options-list'>
+<li class='option'>
+<a class="option-link" href="/about">About Us</a>
+</li>
+<li class='option'>
+<a target="_blank" class="option-link" rel="nofollow noopener noreferrer" href="https://brainscape.zendesk.com/hc/en-us/articles/115002370011-Can-I-earn-money-from-my-flashcards-">Earn Money!</a>
+</li>
+<li class='option'>
+<a target="_blank" class="option-link" href="https://www.brainscape.com/academy">Academy</a>
+</li>
+<li class='option'>
+<a target="_blank" rel="nofollow noopener" class="option-link" href="/contact">Contact</a>
+</li>
+</ul>
+</li>
+<li class='section find-us'>
+<h6 class='section-heading'>
+Find Us
+</h6>
+<ul class='options-list'>
+<li class='option app-store-badge apple'>
+<a target="_blank" class="option-link" rel="nofollow noopener noreferrer" href="https://itunes.apple.com/us/app/brainscape-smart-flashcards/id442415567?mt=8"><img alt="Download on the App Store" width="100" src="/assets/apple_badge-556abe1c3851f18df958ab083c2f4b53649c9fbf99ab06f617d6320ff4e5f164.svg" /></a>
+</li>
+<li class='option app-store-badge google-play'>
+<a target="_blank" class="option-link" rel="nofollow noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.brainscape.mobile.portal&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Get it on Google Play" width="120" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" /></a>
+</li>
+<li class='option network-badge facebook'>
+<a target="_blank" class="option-link" rel="nofollow noopener noreferrer" href="https://www.facebook.com/Brainscape"><img alt="Download on the App Store" src="/assets/cms/marketing/shared/find-on-fb-icon.png" /></a>
+</li>
+<li class='option network-badge twitter'>
+<a class="option-link" target="_blank" rel="nofollow noopener noreferrer" href="https://twitter.com/Brainscape">@brainscape</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class='footer-blurb'>
+Brainscape is a web and mobile study platform that helps you learn things faster. Our mission is to create a smarter world by simplifying and accelerating the learning process.
+&copy; 2021 Bold Learning Solutions. <a class="option-link" href="/terms">Terms and Conditions</a>
+</div>
+</div>
+
+<script>
+  if (typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === 'object') {
+    __REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function() {};
+  }
+</script>
+<script src="/pks/application-4601b93d6c8145f5b5e2.js"></script>
+<script src="/pks/cms-marketing-landing-page-b07b984375906b6863fc.js"></script>
+
+<script src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+
+<script src="//js.stripe.com/v3/"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    Util.setGaDimension("dimension1","No");
+  });
+</script>
+<script src="/assets/analytics-production-006d5e32c833480a83dd2e6362af4e7d9c2238bb05b14f50c30d7cab77e6dfac.js"></script>
+
+</body>
+</html>
